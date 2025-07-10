@@ -2,14 +2,14 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const app = express();
-const PORT = 3000;
+const PORT = 5501;
 
 // Serve static files (frontend)
 app.use(express.static(__dirname));
 
 // Endpoint to list TTL files
-app.get('/ttl_files', (req, res) => {
-    const dirPath = path.join(__dirname, '');
+app.get('/list-ttl-files', (req, res) => {
+    const dirPath = path.join(__dirname, 'ttl_files');
     fs.readdir(dirPath, (err, files) => {
         if (err) {
             return res.status(500).json({ error: 'Failed to read directory' });

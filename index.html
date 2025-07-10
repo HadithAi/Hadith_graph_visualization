@@ -370,9 +370,9 @@
         // Fetch TTL files dynamically
         async function fetchTtlFiles() {
             try {
-                const res = await fetch('/list-ttl-files');
-                if (!res.ok) throw new Error('Failed to fetch TTL files');
-                ttlFiles = await res.json();
+                const response = await fetch('/list-ttl-files');
+                if (!response.ok) throw new Error('Failed to fetch TTL files');
+                ttlFiles = await response.json();
             } catch (e) {
                 ttlFiles = [];
                 showNotification('Could not load TTL file list.', 'error');
