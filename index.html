@@ -357,7 +357,10 @@
         const fileInfoDisplay = document.getElementById('fileInfoDisplay');
         const loadButton = document.getElementById('loadButton');
         let selectedTtlFile = null;
-        let ttlFiles = [];
+        // Hardcoded TTL file list (without .ttl extension)
+        const ttlFiles = [
+            "hadith_215_graph", "hadith_216_graph", "hadith_217_graph", "hadith_218_graph", "hadith_219_graph", "hadith_220_graph", "hadith_221_graph", "hadith_222_graph", "hadith_223_graph", "hadith_224_graph", "hadith_225_graph", "hadith_226_graph", "hadith_227_graph", "hadith_228_graph", "hadith_229_graph", "hadith_230_graph", "hadith_231_graph", "hadith_232_graph", "hadith_233_graph", "hadith_234_graph", "hadith_235_graph", "hadith_236_graph", "hadith_237_graph", "hadith_238_graph", "hadith_239_graph", "hadith_240_graph", "hadith_241_graph", "hadith_242_graph", "hadith_243_graph", "hadith_244_graph", "hadith_245_graph", "hadith_246_graph", "hadith_247_graph", "hadith_248_graph", "hadith_249_graph", "hadith_250_graph", "hadith_251_graph", "hadith_252_graph", "hadith_253_graph", "hadith_254_graph", "hadith_255_graph", "hadith_256_graph", "hadith_257_graph", "hadith_258_graph", "hadith_259_graph", "hadith_260_graph", "hadith_261_graph", "hadith_262_graph", "hadith_263_graph", "hadith_264_graph", "hadith_265_graph", "hadith_266_graph", "hadith_267_graph", "hadith_268_graph", "hadith_269_graph", "hadith_270_graph", "hadith_271_graph", "hadith_272_graph", "hadith_273_graph", "hadith_274_graph", "hadith_275_graph", "hadith_276_graph", "hadith_277_graph", "hadith_278_graph", "hadith_279_graph", "hadith_280_graph", "hadith_281_graph", "hadith_282_graph", "hadith_283_graph", "hadith_284_graph", "hadith_285_graph", "hadith_286_graph", "hadith_287_graph", "hadith_288_graph", "hadith_289_graph", "hadith_290_graph", "hadith_291_graph", "hadith_292_graph", "hadith_293_graph", "hadith_294_graph", "hadith_295_graph", "hadith_296_graph", "hadith_297_graph", "hadith_298_graph", "hadith_299_graph", "hadith_300_graph", "hadith_301_graph", "hadith_302_graph", "hadith_303_graph", "hadith_304_graph", "hadith_305_graph", "hadith_306_graph", "hadith_307_graph", "hadith_308_graph", "hadith_309_graph", "hadith_310_graph", "hadith_311_graph", "hadith_312_graph", "hadith_313_graph", "hadith_314_graph", "hadith_315_graph", "hadith_316_graph", "hadith_317_graph", "hadith_318_graph", "hadith_319_graph", "hadith_320_graph", "hadith_321_graph", "hadith_322_graph", "hadith_323_graph", "hadith_324_graph", "hadith_325_graph", "hadith_326_graph", "hadith_327_graph", "hadith_328_graph", "hadith_329_graph", "hadith_330_graph", "hadith_331_graph", "hadith_332_graph", "hadith_333_graph", "hadith_334_graph", "hadith_335_graph", "hadith_336_graph", "hadith_337_graph", "hadith_338_graph", "hadith_339_graph", "hadith_340_graph", "hadith_341_graph", "hadith_342_graph", "hadith_343_graph", "hadith_344_graph", "hadith_345_graph", "hadith_346_graph", "hadith_347_graph", "hadith_348_graph", "hadith_349_graph", "hadith_350_graph", "hadith_351_graph-1", "hadith_351_graph", "hadith_352_graph", "hadith_353_graph", "hadith_354_graph", "hadith_355_graph", "hadith_356_graph", "hadith_357_graph", "hadith_358_graph", "hadith_359_graph", "hadith_360_graph", "hadith_361_graph", "hadith_362_graph", "hadith_363_graph", "hadith_364_graph", "hadith_365_graph", "hadith_366_graph", "hadith_367_graph", "hadith_368_graph", "hadith_369_graph", "hadith_370_graph", "hadith_371_graph", "hadith_372_graph", "hadith_373_graph", "hadith_374_graph", "hadith_375_graph", "hadith_376_graph", "hadith_377_graph", "hadith_378_graph", "hadith_379_graph", "hadith_380_graph", "hadith_381_graph", "hadith_382_graph", "hadith_383_graph", "hadith_384_graph", "hadith_385_graph", "hadith_386_graph", "hadith_387_graph", "hadith_388_graph", "hadith_389_graph", "hadith_390_graph", "hadith_391_graph", "hadith_392_graph", "hadith_393_graph", "hadith_394_graph", "hadith_395_graph", "hadith_396_graph", "hadith_397_graph", "hadith_398_graph", "hadith_399_graph", "hadith_400_graph", "hadith_401_graph", "hadith_402_graph", "hadith_403_graph", "hadith_404_graph", "hadith_405_graph", "hadith_406_graph", "hadith_407_graph", "hadith_408_graph", "hadith_409_graph", "hadith_410_graph", "hadith_411_graph", "hadith_412_graph", "hadith_413_graph", "hadith_414_graph", "hadith_415_graph", "hadith_416_graph", "hadith_417_graph", "hadith_418_graph", "hadith_419_graph", "hadith_420_graph", "hadith_421_graph", "hadith_422_graph", "hadith_423_graph", "hadith_424_graph", "hadith_425_graph", "hadith_426_graph", "hadith_427_graph", "hadith_428_graph", "hadith_429_graph", "hadith_430_graph", "hadith_431_graph", "hadith_432_graph", "hadith_433_graph"
+        ];
 
         // Define progressive loading configuration
         window.PROGRESSIVE_LOADING_CONFIG = {
@@ -367,27 +370,8 @@
             maxLinks: 1000
         };
 
-        // Fetch TTL files dynamically
-        async function fetchTtlFiles() {
-            try {
-                const response = await fetch('ttl_files.json');
-                if (!response.ok) throw new Error('Failed to fetch TTL files');
-                ttlFiles = await response.json();
-            } catch (e) {
-                ttlFiles = [];
-                showNotification('Could not load TTL file list.', 'error');
-            }
-        }
-
         // Populate dropdown
         async function populateTtlDropdown() {
-            // First, trigger backend to regenerate the ttl_files.json
-            try {
-                await fetch('/generate-ttl-list', { method: 'POST' });
-            } catch (e) {
-                showNotification('Could not update TTL file list.', 'error');
-            }
-            await fetchTtlFiles();
             ttlDropdown.innerHTML = '';
             if (ttlFiles.length === 0) {
                 const item = document.createElement('div');
