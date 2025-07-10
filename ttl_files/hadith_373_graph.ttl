@@ -1,13 +1,15 @@
-
-@prefix : <http://etratnet.ir/graph/> .
 @prefix ex: <http://etratnet.ir/graph/proposition/373#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix bt: <http://borhan-onto.ir/ontology/time#> .
+    @prefix go: <http://etratnet.ir/ontology#> .
+    @prefix owl: <http://www.w3.org/2002/07/owl#> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+    @base <http://etratnet.ir/ontology/> .
+    
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -33,15 +35,6 @@ ex:Human a go:Agent ;
   a ex:HumanBeing .
 go:Event rdfs:label "رخداد"@fa.
 go:Agent rdfs:label "عامل"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/373#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -58,15 +51,6 @@ ex:SpeechEvent1 a go:SpeechEvent , go:Event ;
 ex:Statement1 a go:Statement ;
     rdfs:label "No one is able to predetermine or create."@en .
 go:Event rdfs:label "رخداد"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/373#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -79,15 +63,6 @@ ex:Abu_Abdullah a go:Person ;
 ex:saying_1 a go:SpeechEvent ;
     go:HasAgent ex:Abu_Abdullah ;
     go:HasTheme "لا مقدّراً ولا مكوّناً" .
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/373#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -113,15 +88,6 @@ ex:TimePeriodNotMentioned a go:Event ;
     rdfs:label "A period of time when man was not a thing mentioned" .
 go:Event rdfs:label "رخداد"@fa.
 go:Substance rdfs:label "شی"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/373#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .

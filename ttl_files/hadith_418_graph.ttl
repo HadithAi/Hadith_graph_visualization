@@ -1,13 +1,15 @@
-
-@prefix : <http://etratnet.ir/graph/> .
 @prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix bt: <http://borhan-onto.ir/ontology/time#> .
+    @prefix go: <http://etratnet.ir/ontology#> .
+    @prefix owl: <http://www.w3.org/2002/07/owl#> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+    @base <http://etratnet.ir/ontology/> .
+    
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -28,15 +30,6 @@ event:NonAnswering_1 a go:Event ;
     go:HasAgent ex:AbuAbdullah ;
     go:HasTheme ex:Researcher .
 go:Event rdfs:label "رخداد"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -70,15 +63,6 @@ ex:emotionEvent1 a go:Event ;
     rdfs:label "emotional state caused by communication" .
 go:Event rdfs:label "رخداد"@fa.
 go:Substance rdfs:label "شی"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -94,15 +78,6 @@ ex:AbuAbdullah rdf:type go:Person ;
 
 ex:Statement1 rdf:type go:Proposition ;
   go:hasContent "Indeed, whatever is in your heart will not harm you." .
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -132,15 +107,6 @@ ex:Proposition1 a go:Proposition ;
 
 ex:God a go:Deity .
 ex:Servants a go:PersonGroup .
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -164,15 +130,6 @@ ex:Servants a go:theme ;
 ex:CanBear a go:constraint ;
     go:description "The capability of bearing the burden" .
 go:Event rdfs:label "رخداد"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .
@@ -201,15 +158,6 @@ ex:actionDoing go:conditionedBy ex:willOfGod, ex:decreeOfGod, ex:determinationOf
 go:Event rdfs:label "رخداد"@fa.
 go:Substance rdfs:label "شی"@fa.
 go:Agent rdfs:label "عامل"@fa.
-@prefix : <http://etratnet.ir/graph/> .
-@prefix ex: <http://etratnet.ir/graph/proposition/418#> .
-@prefix bt: <http://borhan-onto.ir/ontology/time#> .
-@prefix go: <http://etratnet.ir/ontology#> .
-@prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 
 @base <http://etratnet.ir/ontology/> .

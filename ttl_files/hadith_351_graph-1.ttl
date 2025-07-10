@@ -1,0 +1,156 @@
+
+@prefix ex: <http://etratnet.ir/graph/proposition/351#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+### Core Entity
+ex:God rdf:type go:Deity ;
+    rdfs:label "الله"@ar ;
+    go:hasAttribute ex:Blessed, ex:Exalted, ex:PraiseWorthy, ex:Glorified, ex:Sanctified,
+                    ex:Unique, ex:Unified, ex:First, ex:Last, ex:Manifest, ex:Hidden,
+                    ex:MostHigh, ex:MajesticStructure, ex:ToweringPillars, ex:GreatAuthority ;
+    go:hasState ex:EternalExistence ;
+    go:hasKnowledge ex:DivineKnowledge ;
+    go:hasEssence ex:DivineEssence .
+
+### Divine Attributes
+ex:Blessed rdf:type go:Attribute ; rdfs:label "Blessed"@en .
+ex:Exalted rdf:type go:Attribute ; rdfs:label "Exalted"@en .
+ex:PraiseWorthy rdf:type go:Attribute ; rdfs:label "PraiseWorthy"@en .
+ex:Glorified rdf:type go:Attribute ; rdfs:label "Glorified"@en .
+ex:Sanctified rdf:type go:Attribute ; rdfs:label "Sanctified"@en .
+ex:Unique rdf:type go:Attribute ; rdfs:label "Unique"@en .
+ex:Unified rdf:type go:Attribute ; rdfs:label "Unified"@en .
+ex:First rdf:type go:Attribute ; rdfs:label "First"@en .
+ex:Last rdf:type go:Attribute ; rdfs:label "Last"@en .
+ex:Manifest rdf:type go:Attribute ; rdfs:label "Manifest"@en .
+ex:Hidden rdf:type go:Attribute ; rdfs:label "Hidden"@en .
+ex:MostHigh rdf:type go:Attribute ; rdfs:label "Most High"@en .
+ex:MajesticStructure rdf:type go:Attribute ; rdfs:label "Majestic in structure"@en .
+ex:ToweringPillars rdf:type go:Attribute ; rdfs:label "Towering in pillars"@en .
+ex:GreatAuthority rdf:type go:Attribute ; rdfs:label "Great Authority"@en .
+
+### Eternal Existence
+ex:EternalExistence rdf:type go:State ;
+    go:StateType go:Eternal ;
+    go:isContinuous "true"^^xsd:boolean ;
+    go:HasAgent ex:God ;
+    rdfs:label "Eternal existence without beginning or end"@en .
+
+### Divine Essence & Inaccessibility
+ex:DivineEssence rdf:type go:Essence ;
+    go:isPartOf ex:God ;
+    rdfs:label "Essence of God"@en .
+
+ex:Describers rdf:type go:Agent ; rdfs:label "Describers"@en .
+
+ex:IncapacityToComprehendEssence rdf:type go:Event ;
+    go:EventType go:Incapacity ;
+    go:HasAgent ex:Describers ;
+    go:HasTheme ex:DivineEssence ;
+    go:hasResult "Cannot reach the reality of His attributes"@en ;
+    rdfs:label "Inability to describe Divine Essence"@en .
+
+### Divine Knowledge & Human Limitation
+ex:DivineKnowledge rdf:type go:Knowledge ;
+    go:isKnowledgeOf ex:God ;
+    rdfs:label "Divine Knowledge"@en .
+
+ex:Humans rdf:type go:Agent ; rdfs:label "Humans"@en .
+
+ex:InabilityToBearDivineKnowledge rdf:type go:Event ;
+    go:EventType go:Incapacity ;
+    go:HasAgent ex:Humans ;
+    go:HasTheme ex:DivineKnowledge ;
+    go:hasResult "Cannot bear the burden of divine knowledge"@en .
+
+### Denial of Boundaries
+ex:GodBoundaries rdf:type go:Concept ;
+    rdfs:label "Boundaries of God"@en .
+
+ex:DenialOfBoundaries rdf:type go:ActionEvent ;
+    go:HasAgent ex:Describers ;
+    go:HasTheme ex:GodBoundaries ;
+    go:hasNegation true ;
+    rdfs:label "No limits can be imposed on God"@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/351#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+### Core Entity
+ex:God rdf:type go:Deity ;
+    rdfs:label "الله"@ar ;
+    go:hasAttribute ex:Blessed, ex:Exalted, ex:PraiseWorthy, ex:Glorified, ex:Sanctified,
+                    ex:Unique, ex:Unified, ex:First, ex:Last, ex:Manifest, ex:Hidden,
+                    ex:MostHigh, ex:MajesticStructure, ex:ToweringPillars, ex:GreatAuthority ;
+    go:hasState ex:EternalExistence ;
+    go:hasKnowledge ex:DivineKnowledge ;
+    go:hasEssence ex:DivineEssence .
+
+### Divine Attributes
+ex:Blessed rdf:type go:Attribute ; rdfs:label "Blessed"@en .
+ex:Exalted rdf:type go:Attribute ; rdfs:label "Exalted"@en .
+ex:PraiseWorthy rdf:type go:Attribute ; rdfs:label "PraiseWorthy"@en .
+ex:Glorified rdf:type go:Attribute ; rdfs:label "Glorified"@en .
+ex:Sanctified rdf:type go:Attribute ; rdfs:label "Sanctified"@en .
+ex:Unique rdf:type go:Attribute ; rdfs:label "Unique"@en .
+ex:Unified rdf:type go:Attribute ; rdfs:label "Unified"@en .
+ex:First rdf:type go:Attribute ; rdfs:label "First"@en .
+ex:Last rdf:type go:Attribute ; rdfs:label "Last"@en .
+ex:Manifest rdf:type go:Attribute ; rdfs:label "Manifest"@en .
+ex:Hidden rdf:type go:Attribute ; rdfs:label "Hidden"@en .
+ex:MostHigh rdf:type go:Attribute ; rdfs:label "Most High"@en .
+ex:MajesticStructure rdf:type go:Attribute ; rdfs:label "Majestic in structure"@en .
+ex:ToweringPillars rdf:type go:Attribute ; rdfs:label "Towering in pillars"@en .
+ex:GreatAuthority rdf:type go:Attribute ; rdfs:label "Great Authority"@en .
+
+### Eternal Existence
+ex:EternalExistence rdf:type go:State ;
+    go:StateType go:Eternal ;
+    go:isContinuous "true"^^xsd:boolean ;
+    go:HasAgent ex:God ;
+    rdfs:label "Eternal existence without beginning or end"@en .
+
+### Divine Essence & Inaccessibility
+ex:DivineEssence rdf:type go:Essence ;
+    go:isPartOf ex:God ;
+    rdfs:label "Essence of God"@en .
+
+ex:Describers rdf:type go:Agent ; rdfs:label "Describers"@en .
+
+ex:IncapacityToComprehendEssence rdf:type go:Event ;
+    go:EventType go:Incapacity ;
+    go:HasAgent ex:Describers ;
+    go:HasTheme ex:DivineEssence ;
+    go:hasResult "Cannot reach the reality of His attributes"@en ;
+    rdfs:label "Inability to describe Divine Essence"@en .
+
+### Divine Knowledge & Human Limitation
+ex:DivineKnowledge rdf:type go:Knowledge ;
+    go:isKnowledgeOf ex:God ;
+    rdfs:label "Divine Knowledge"@en .
+
+ex:Humans rdf:type go:Agent ; rdfs:label "Humans"@en .
+
+ex:InabilityToBearDivineKnowledge rdf:type go:Event ;
+    go:EventType go:Incapacity ;
+    go:HasAgent ex:Humans ;
+    go:HasTheme ex:DivineKnowledge ;
+    go:hasResult "Cannot bear the burden of divine knowledge"@en .
+
+### Denial of Boundaries
+ex:GodBoundaries rdf:type go:Concept ;
+    rdfs:label "Boundaries of God"@en .
+
+ex:DenialOfBoundaries rdf:type go:ActionEvent ;
+    go:HasAgent ex:Describers ;
+    go:HasTheme ex:GodBoundaries ;
+    go:hasNegation true ;
+    rdfs:label "No limits can be imposed on God"@en .
