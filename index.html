@@ -370,7 +370,7 @@
         // Fetch TTL files dynamically
         async function fetchTtlFiles() {
             try {
-                const response = await fetch('/list-ttl-files');
+                const response = await fetch('ttl_files.json');
                 if (!response.ok) throw new Error('Failed to fetch TTL files');
                 ttlFiles = await response.json();
             } catch (e) {
@@ -381,6 +381,12 @@
 
         // Populate dropdown
         async function populateTtlDropdown() {
+            // First, trigger backend to regenerate the ttl_files.json
+            try {
+                await fetch('/generate-ttl-list', { method: 'POST' });
+            } catch (e) {
+                showNotification('Could not update TTL file list.', 'error');
+            }
             await fetchTtlFiles();
             ttlDropdown.innerHTML = '';
             if (ttlFiles.length === 0) {
