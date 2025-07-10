@@ -1,0 +1,88 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/385#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/385-1> rdf:type owl:Ontology .
+
+ex:Thing rdf:type go:Object .
+ex:Earth rdf:type go:Location .
+ex:Sky rdf:type go:Location .
+
+ex:Will rdf:type go:Attribute ;
+    rdfs:label "Will" .
+ex:Desire rdf:type go:Attribute ;
+    rdfs:label "Desire" .
+ex:Fate rdf:type go:Attribute ;
+    rdfs:label "Fate" .
+ex:Decree rdf:type go:Attribute ;
+    rdfs:label "Decree" .
+ex:Permission rdf:type go:Attribute ;
+    rdfs:label "Permission" .
+ex:Book rdf:type go:Attribute ;
+    rdfs:label "Book" .
+ex:Term rdf:type go:Attribute ;
+    rdfs:label "Term" .
+
+ex:Thing go:existsIn ex:Earth .
+ex:Thing go:existsIn ex:Sky .
+
+ex:Thing go:hasAttribute ex:Will, ex:Desire, ex:Fate, ex:Decree, ex:Permission, ex:Book, ex:Term .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/385#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/385-2> rdf:type owl:Ontology .
+
+# Entities
+ex:Whoever a go:Agent ;
+    go:label "Whoever" .
+
+ex:SevenTraits a go:Collection ;
+    go:label "These seven traits" ;
+    go:hasMember ex:Trait1, ex:Trait2, ex:Trait3, ex:Trait4, ex:Trait5, ex:Trait6, ex:Trait7 .
+
+ex:Trait1 a go:Quality .
+ex:Trait2 a go:Quality .
+ex:Trait3 a go:Quality .
+ex:Trait4 a go:Quality .
+ex:Trait5 a go:Quality .
+ex:Trait6 a go:Quality .
+ex:Trait7 a go:Quality .
+
+# Events
+ex:ClaimEvent a go:Event ;
+    go:HasAgent ex:Whoever ;
+    go:HasTheme ex:AbilityToRefuteOneTrait .
+
+ex:AbilityToRefuteOneTrait a go:Capability ;
+    go:HasTheme ex:OneTrait .
+
+ex:OneTrait a go:Quality ;
+    go:partOf ex:SevenTraits .
+
+ex:BecomingUnbeliever a go:StateChangeEvent ;
+    go:HasPatient ex:Whoever ;
+    go:HasCause ex:ClaimEvent ;
+    go:label "Becoming Unbeliever" .
+go:Event rdfs:label "رخداد"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+go:Agent rdfs:label "عامل"@fa.

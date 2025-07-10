@@ -1,0 +1,116 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/387#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/387-1> rdf:type owl:Ontology .
+
+ex:Allah a go:entity .
+ex:Nothing a go:entity .
+
+ex:WillEvent a ex:event ;
+  go:HasAgent ex:Allah ;
+  go:HasTheme ex:Nothing .
+
+ex:IntendEvent a ex:event ;
+  go:HasAgent ex:Allah ;
+  go:HasTheme ex:Nothing .
+
+ex:DecreeEvent a ex:event ;
+  go:HasAgent ex:Allah ;
+  go:HasTheme ex:Nothing .
+
+ex:DecideEvent a ex:event ;
+  go:HasAgent ex:Allah ;
+  go:HasTheme ex:Nothing .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/387#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/387-2> rdf:type owl:Ontology .
+
+ex:Sha_a a go:Concept ;
+    go:hasMeaning ex:Initiation_of_action .
+
+ex:Initiation_of_action a go:Concept .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/387#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/387-3> rdf:type owl:Ontology .
+
+ex:Qadr rdf:type go:Concept ;
+    rdfs:label "Qadr"@en ;
+    go:hasDefinition ex:EstimationProcess .
+
+ex:EstimationProcess rdf:type go:Event ;
+    rdfs:label "Estimation"@en ;
+    go:HasTheme ex:ObjectToEstimate ;
+    go:usesProperty ex:Length , ex:Width .
+
+ex:ObjectToEstimate rdf:type go:Substance ;
+    rdfs:label "Object"@en .
+
+ex:Length rdf:type go:Property ;
+    rdfs:label "Length"@en .
+
+ex:Width rdf:type go:Property ;
+    rdfs:label "Width"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/387#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/387-4> rdf:type owl:Ontology .
+
+ex:QadaEvent a go:Event ;
+    go:HasAgent ex:Agent ;
+    go:HasTheme ex:ExecutionAction ;
+    ex:isIrrevocable true .
+
+ex:ExecutionAction a go:EventAction ;
+    go:HasAgent ex:Agent ;
+    go:fulfills ex:Obligation .
+
+ex:Agent a go:person .
+
+ex:Obligation a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

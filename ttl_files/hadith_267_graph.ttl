@@ -1,0 +1,139 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/267#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/267-1> rdf:type owl:Ontology .
+
+ex:Sun a go:Substance ;
+    go:isPartOf ex:LightOfThrone_SeventyParts .
+
+ex:LightOfThrone_SeventyParts a go:Substance ;
+    go:hasQuantity ex:SeventyParts .
+
+ex:SeventyParts a go:quantity ;
+    go:quantityValue 70 .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/267#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/267-2> rdf:type owl:Ontology .
+
+ex:chair a go:Substance ;
+    go:isPartOf ex:seventyPartsOfLightOfThrone .
+
+ex:seventyPartsOfLightOfThrone a go:aggregate ;
+    go:quantity "70"^^<http://www.w3.org/2001/XMLSchema#int> ;
+    go:hasPart ex:lightOfThrone .
+
+ex:lightOfThrone a go:Substance ;
+    go:associatedWith ex:throne .
+
+ex:throne a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/267#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/267-3> rdf:type owl:Ontology .
+
+ex:Throne a go:Substance ;
+    go:isPartOf ex:SeventyPartsLightOfVeil .
+
+ex:SeventyPartsLightOfVeil a go:quantifiedEntity ;
+    go:quantity "70"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    go:partOf ex:LightOfVeil .
+
+ex:LightOfVeil a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/267#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/267-4> rdf:type owl:Ontology .
+
+ex:Hijab a go:Substance .
+ex:LightOfModesty a go:Substance .
+
+# Representing 'seventy parts of light of modesty' as a conceptual entity
+ex:SeventyPartsOfLightOfModesty a go:ConceptualEntity ;
+    go:hasCount "70"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    go:hasWhole ex:LightOfModesty .
+
+# Hijab is part of seventy parts of light of modesty
+ex:Hijab go:isPartOf ex:SeventyPartsOfLightOfModesty .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/267#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/267-5> rdf:type owl:Ontology .
+
+ex:Sun a go:Substance .
+ex:Clouds a go:Substance .
+ex:They a go:agent .
+
+ex:HonestyCondition a go:Event ;
+  a ex:ConditionalEvent ;
+  go:HasAgent ex:They ;
+  ex:condition "honest"^^xsd:boolean .
+
+ex:FillingEyes a go:Event ;
+  a ex:ImperativeEvent ;
+  go:HasAgent ex:They ;
+  go:HasTheme ex:Sun ;
+  ex:action "fill eyes with sun" .
+
+ex:NoCloudsBelowSun a go:Event ;
+  a ex:SpatialRelationEvent ;
+  ex:subject ex:Clouds ;
+  ex:location "below sun" ;
+  ex:existence "absent"^^xsd:boolean .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

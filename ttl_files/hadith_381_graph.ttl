@@ -1,0 +1,72 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/381#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/381-1> rdf:type owl:Ontology .
+
+ex:event1 a go:ProphecyEvent ;
+    go:HasAgent ex:Prophet ;
+    go:HasTheme ex:FiveAttributesOfGod ;
+    go:condition "The prophet must acknowledge the five attributes of God before prophesying." .
+
+ex:Prophet a go:Person ;
+    go:role "Prophet" .
+
+ex:God a go:Deity .
+
+ex:FiveAttributesOfGod a go:Attribute ;
+    go:partOf ex:God ;
+    go:quantity "Five" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/381#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/381-2> rdf:type owl:Ontology .
+
+ex:Prophet a go:Agent ;
+    rdfs:label "Prophet"@en .
+
+ex:God a go:Agent ;
+    rdfs:label "God"@en .
+
+ex:Beginning a ex:Attribute ;
+    rdfs:label "Beginning"@en .
+
+ex:Will a ex:Attribute ;
+    rdfs:label "Will"@en .
+
+ex:Prostration a ex:Attribute ;
+    rdfs:label "Prostration"@en .
+
+ex:Servitude a ex:Attribute ;
+    rdfs:label "Servitude"@en .
+
+ex:Obedience a ex:Attribute ;
+    rdfs:label "Obedience"@en .
+
+ex:AscribingAttributesToGod a go:Event , ex:Ascription ;
+    go:HasAgent ex:Prophet ;
+    go:HasTheme ex:Beginning , ex:Will , ex:Prostration , ex:Servitude , ex:Obedience ;
+    go:HasRecipient ex:God ;
+    rdfs:label "Ascription of five attributes to God by the Prophet"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.

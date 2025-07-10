@@ -1,0 +1,143 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/232#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/232-1> rdf:type owl:Ontology .
+
+ex:KnowledgeFundamental a go:Substance ;
+    go:hasTheme ex:AcknowledgmentEvent .
+
+ex:AcknowledgmentEvent a go:Event ;
+    go:hasTheme ex:NoGodButAllahStatement .
+
+ex:NoGodButAllahStatement a go:Concept ;
+    go:expresses "There is no god but Allah" ;
+    go:refersTo ex:Allah .
+
+ex:Allah a go:NamedEntity .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/232#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/232-2> rdf:type owl:Ontology .
+
+ex:minimalKnowledge a go:Substance ;
+    rdfs:label "Minimal Knowledge"@en ;
+    ex:isAcknowledgmentOf ex:godUniqueness .
+
+ex:godUniqueness a ex:Concept ;
+    rdfs:label "God has no likeness or counterpart"@en ;
+    ex:concerns ex:God .
+
+ex:God a go:Deity ;
+    rdfs:label "God"@en ;
+    ex:hasNoLike ex:None ;
+    ex:hasNoEqual ex:None .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/232#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/232-3> rdf:type owl:Ontology .
+
+ex:MinimumKnowledge a go:Concept .
+ex:God a go:Deity .
+
+ex:Eternal a go:Attribute .
+ex:Confirmed a go:Attribute .
+
+ex:God ex:hasAttribute ex:Eternal , ex:Confirmed .
+
+ex:Acknowledgment a go:Event ;
+    go:HasTheme ex:MinimumKnowledge ;
+    go:HasAgent ex:UnknownAgent ;
+    go:HasFocus ex:God .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/232#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/232-4> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+    ex:exists true ;
+    ex:absent false .
+
+ex:MinimalKnowledge a go:concept .
+
+ex:Acknowledgment1 a go:Event ;
+    go:HasAgent ex:MinimalKnowledge ;
+    go:HasTheme [
+        a go:proposition ;
+        ex:about ex:God ;
+        ex:statesExists true ;
+        ex:statesAbsent false
+    ] .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/232#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/232-5> rdf:type owl:Ontology .
+
+ex:SimplestKnowledge a go:Substance ;
+    rdfs:label "Simplest form of knowledge"@en .
+
+ex:Uniqueness a go:Substance ;
+    rdfs:label "Nothing like it (uniqueness)"@en .
+
+ex:AcknowledgmentEvent a go:Event ;
+    go:HasAgent ex:SimplestKnowledge ;
+    go:HasTheme ex:Uniqueness ;
+    rdfs:label "Acknowledgment that there is nothing like it"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

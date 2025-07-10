@@ -1,0 +1,163 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/258#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/258-1> rdf:type owl:Ontology .
+
+ex:eventInstance rdf:type go:Event ;
+    go:HasAgent ex:Bird ;
+    go:HasTheme ex:HeartOfSonOfAdam .
+
+ex:Bird rdf:type go:animal ;
+    go:hasState ex:NotSatiated .
+
+ex:HeartOfSonOfAdam a go:Substance .
+
+ex:NotSatiated a go:state ;
+    go:IsPropertyOf ex:Bird ;
+    go:hasValue "false"^^xsd:boolean .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/258#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/258-2> rdf:type owl:Ontology .
+
+ex:cloth a go:Substance ;
+    rdfs:label "cloth"@en .
+
+ex:needle a go:Substance ;
+    rdfs:label "needle"@en .
+
+ex:eye a go:Substance ;
+    rdfs:label "eye"@en .
+
+ex:sonOfAdam a go:agent ;
+    rdfs:label "son of Adam"@en .
+
+ex:placingEvent a go:Event ;
+    go:HasAgent ex:agentPlacer ;
+    go:HasTheme ex:cloth ;
+    go:HasGoal ex:eye ;
+    rdfs:label "placing cloth on eye"@en .
+
+ex:agentPlacer a go:agent ;
+    rdfs:label "agent placing cloth"@en .
+
+ex:coveringEvent a go:Event ;
+    go:HasAgent ex:cloth ;
+    go:HasTheme ex:eye ;
+    rdfs:label "cloth covers eye"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/258#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/258-3> rdf:type owl:Ontology .
+
+ex:SonOfAdam a go:Person ;
+    rdfs:label "Son of Adam"@en .
+
+ex:WantToKnowEvent a go:WantEvent ;
+    go:HasAgent ex:SonOfAdam ;
+    go:HasTheme ex:KnowThatEvent .
+
+ex:KnowThatEvent a go:KnowEvent ;
+    go:HasAgent ex:SonOfAdam ;
+    go:HasTheme ex:SightHeartIsKingdom .
+
+ex:Sight a go:Substance ;
+    rdfs:label "Sight"@en .
+
+ex:Heart a go:Substance ;
+    rdfs:label "Heart"@en .
+
+ex:KingdomOfHeavensAndEarth a go:Location ;
+    rdfs:label "Kingdom of the heavens and the earth"@en .
+
+ex:SightHeartIsKingdom a go:Identity ;
+    go:HasPart ex:Sight , ex:Heart ;
+    go:RefersTo ex:KingdomOfHeavensAndEarth .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/258#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/258-4> rdf:type owl:Ontology .
+
+ex:Sun a go:Substance ;
+    go:CreatedBy ex:God .
+
+ex:God a go:agent .
+
+ex:CreationEvent1 a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Sun .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/258#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/258-5> rdf:type owl:Ontology .
+
+ex:SonOfAdam a go:Human ;
+    go:hasCapacity ex:FillEyesWithSun .
+
+ex:Sun a go:NaturalObject .
+
+ex:FillEyesWithSun a go:CapacityEvent ;
+    go:HasAgent ex:SonOfAdam ;
+    go:HasTheme ex:Sun .
+
+ex:Statement1 a go:IdentityStatement ;
+    go:refersTo ex:SonOfAdam ;
+    go:content "He is as the son of Adam says" .

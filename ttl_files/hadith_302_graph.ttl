@@ -1,0 +1,179 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-1> rdf:type owl:Ontology .
+
+ex:Knowledge a go:Concept ;
+    go:HasAgent dbr:God ;
+    ex:isNotEquivalentTo ex:GodsWill .
+
+ex:GodsWill a go:Concept ;
+    go:HasAgent dbr:God .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-2> rdf:type owl:Ontology .
+
+:human1 a go:Human ;
+  go:performs :event_say1 .
+
+:event_say1 a go:Event ;
+  go:name "saying"@en ;
+  go:HasAgent :human1 ;
+  go:HasTheme :event_intent1 .
+
+:event_intent1 a go:Event ;
+  go:name "intended action"@en ;
+  ex:hasCondition :condition_god_willing .
+
+:condition_god_willing a ex:Condition ;
+  ex:conditionRelatesTo :Allah .
+
+:Allah a go:Deity ;
+  go:name "Allah"@en .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-3> rdf:type owl:Ontology .
+
+ex:Human a go:Human ;
+    go:label "human" .
+
+ex:God a go:Deity ;
+    go:label "God" .
+
+ex:SayingEvent a go:SpeechEvent ;
+    go:HasAgent ex:Human ;
+    go:HasTheme ex:SpeechContent ;
+    go:hasPolarity "negative"^^xsd:string .
+
+ex:SpeechContent a go:ConditionalStatement ;
+    go:HasActor ex:Human ;
+    go:FutureAction "do such a thing"^^xsd:string ;
+    go:Condition ex:GodKnows .
+
+ex:GodKnows a go:KnowingEvent ;
+    go:HasAgent ex:God .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-4> rdf:type owl:Ontology .
+
+ex:Person1 a go:Human .
+ex:God a go:Deity .
+
+ex:SayingInshaAllah a go:Saying ;
+    go:HasAgent ex:Person1 ;
+    go:HasTheme ex:PhraseInshaAllah .
+
+ex:PhraseInshaAllah a go:Concept ;
+    rdfs:label "إن شاء الله"@ar ;
+    rdfs:label "Insha'Allah"@en .
+
+# The state indicated by the saying event:
+ex:SayingInshaAllah go:indicates ex:GodHasNotWilledYet .
+
+ex:GodHasNotWilledYet a go:State ;
+    go:HasTheme ex:God ;
+    go:hasStatus "false"^^xsd:boolean ; # meaning God has not yet willed
+    rdfs:comment "Indicates that God has not willed the event yet."@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-5> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:GodWillingEvent a ex:WillEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:DesiredEvent .
+
+ex:DesiredEvent a ex:Event ;
+    ex:isResultOf ex:GodWillingEvent ;
+    go:HasAgent ex:God .
+
+ex:ConditionalEvent a ex:ConditionalEvent ;
+    ex:ifCondition ex:GodWillingEvent ;
+    ex:thenResult ex:DesiredEvent .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-6> rdf:type owl:Ontology .
+
+# Define God as an agent
+god:God a go:Agent .
+
+# Define attributes knowledge and will as qualities of God
+god:Knowledge a go:Quality ;
+    go:QualityOf god:God .
+
+god:Will a go:Quality ;
+    go:QualityOf god:God .
+
+# Express that knowledge precedes will
+god:Knowledge ex:precedes god:Will .
+go:Quality rdfs:label "ویژگی"@fa.
+go:Agent rdfs:label "عامل"@fa.

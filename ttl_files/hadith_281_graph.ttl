@@ -1,0 +1,245 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-1> rdf:type owl:Ontology .
+
+ex:SomePeople a go:HumanGroup ;
+    rdfs:label "Some people who come to us" .
+
+ex:Us a go:Agent ;
+    rdfs:label "Us (the speaker group)" .
+
+ex:Monotheism a go:Belief ;
+    rdfs:label "Monotheism" .
+
+ex:ApproachEvent a go:Event ;
+    rdfs:label "Approach Event" ;
+    go:HasAgent ex:SomePeople ;
+    go:HasTheme ex:Us .
+
+ex:DifferEvent a go:Event ;
+    rdfs:label "Differ in Monotheism" ;
+    go:HasAgent ex:SomePeople ;
+    go:HasTheme ex:Monotheism .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-2> rdf:type owl:Ontology .
+
+ex:SayEvent1 a go:Event ;
+  go:HasAgent ex:SomePeople ;
+  go:HasTheme ex:Proposition1 .
+
+ex:SomePeople a go:Agent .
+
+ex:Proposition1 a go:State ;
+  go:HasSubject ex:God ;
+  go:HasAttribute ex:Body .
+
+ex:God a go:Agent .
+ex:Body a go:Object .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-3> rdf:type owl:Ontology .
+
+ex:sayingEvent1 a go:Event ;
+    go:HasAgent ex:somePeople ;
+    go:HasTheme ex:proposition1 .
+
+ex:somePeople a go:group ;
+    go:hasMember ex:thisPerson1, ex:thisPerson2 ;
+    go:hasQuantity "some"^^xsd:string .
+
+ex:proposition1 a ex:eventInstance ;
+    ex:claims a ex:claimGodIsForm .
+
+ex:claimGodIsForm a go:statement ;
+    go:hasSubject god:God ;
+    go:hasPredicate go:isA ;
+    go:hasObject go:Form .
+
+god:God a go:Substance .
+go:Form a go:Quality .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-4> rdf:type owl:Ontology .
+
+ex:Man_PeaceBeUponHim rdf:type go:Person ;
+    rdfs:label "The man, peace be upon him"@en .
+
+ex:God rdf:type go:Deity ;
+    rdfs:label "God"@en .
+
+ex:Utterance1 rdf:type go:SpeechEvent ;
+    go:HasAgent ex:Man_PeaceBeUponHim ;
+    go:HasTheme ex:Quotation1 .
+
+ex:Quotation1 rdf:type go:Quote ;
+    rdfs:label "Glory be to God, who is unlimited."@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-5> rdf:type owl:Ontology .
+
+ex:Speech1 a go:Speech ;
+    go:HasAgent ex:Man_PeaceBeUponHim ;
+    go:HasTheme ex:Proposition1 .
+
+ex:Man_PeaceBeUponHim a go:Person ;
+    rdfs:label "الرجل عليه السلام"@ar .
+
+ex:Proposition1 a go:Proposition ;
+    go:HasSubject ex:God ;
+    go:hasProperty ex:Indescribable ;
+    go:hasPolarity "Negative"^^xsd:boolean .
+
+ex:God a go:Deity ;
+    rdfs:label "الله"@ar .
+
+ex:Indescribable a go:Property ;
+    go:hasLabel "Cannot be described"@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-6> rdf:type owl:Ontology .
+
+exEvent:speech1 a go:Speak ;
+  go:HasAgent ex:man_peace_be_upon_him ;
+  go:HasTheme ex:statement1 .
+
+ex:man_peace_be_upon_him a go:Person ;
+  rdfs:label "الرجل عليه السلام" .
+
+ex:Allah a go:deity ;
+  rdfs:label "الله" .
+
+ex:statement1 a go:Proposition ;
+  go:hasSubject ex:Allah ;
+  go:hasPredicate ex:not_similar_to ;
+  go:hasObject ex:anything .
+
+ex:not_similar_to a go:Relation ;
+  go:label "is not similar to" .
+
+ex:anything a go:Thing .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-7> rdf:type owl:Ontology .
+
+ex:man_ALayhisSalaam a go:Individual ;
+    rdfs:label "الرجل عليه السلام"@ar .
+
+ex:speechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:man_ALayhisSalaam ;
+    go:HasTheme "There is nothing like him."^^xsd:string .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-8> rdf:type owl:Ontology .
+
+ex:man_AlayhisSalam a go:Person ;
+    go:hasTitle "peace be upon him" .
+
+ex:God a go:Deity ;
+    go:hasAttribute go:AllHearing , go:AllSeeing .
+
+go:AllHearing a go:Attribute ;
+    rdfs:label "All-Hearing"@en .
+
+go:AllSeeing a go:Attribute ;
+    rdfs:label "All-Seeing"@en .
+
+ex:sayingEvent1 a go:CommunicationEvent ;
+    go:HasAgent ex:man_AlayhisSalam ;
+    go:HasTheme ex:God .

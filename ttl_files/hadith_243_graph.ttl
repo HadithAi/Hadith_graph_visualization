@@ -1,0 +1,439 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-1> rdf:type owl:Ontology .
+
+ex:Event_Speech1 a go:Communication ;
+  go:HasAgent ex:Leader_Goliath ;
+  go:HasRecipient ex:Jews ;
+  go:HasTheme ex:Event_Claim_Ali .
+
+ex:Leader_Goliath a go:Person ;
+  rdfs:label "Leader of the Goliath"@en .
+
+ex:Jews a go:Group ;
+  rdfs:label "Jews"@en .
+
+ex:Muslims a go:Group ;
+  rdfs:label "Muslims"@en .
+
+ex:Ali a go:Person ;
+  rdfs:label "Ali"@en ;
+  ex:Attribute ex:Disputatious ;
+  ex:Attribute ex:Knowledgeable .
+
+ex:Event_Claim_Ali a go:Claim ;
+  go:HasAgent ex:Muslims ;
+  go:HasTheme ex:Ali .
+
+ex:Disputatious a go:Quality ;
+  rdfs:label "Most disputatious person"@en .
+
+ex:Knowledgeable a go:Quality ;
+  rdfs:label "Most knowledgeable person"@en .
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-2> rdf:type owl:Ontology .
+
+ex:LeaderGiant a foaf:Person ;
+    foaf:name "Leader of the Giants" .
+
+ex:Jews a foaf:Group ;
+    foaf:name "Jews" .
+
+ex:Ali a foaf:Person ;
+    foaf:name "Ali" .
+
+ex:SpeechAct_1 a go:Event ;
+    go:HasAgent ex:LeaderGiant ;
+    go:HasRecipient ex:Jews ;
+    go:hasContent ex:Proposal_1 .
+
+ex:Proposal_1 a go:Event ;
+    go:HasAgent ex:LeaderGiant ;
+    go:HasTheme ex:JourneyToAli .
+
+ex:JourneyToAli a go:Event ;
+    go:HasAgent ex:LeaderGiant ;
+    go:HasTheme ex:Questioning_1 ;
+    go:HasPurpose ex:MisleadAli .
+
+ex:Questioning_1 a go:Event ;
+    go:HasAgent ex:LeaderGiant ;
+    go:HasTheme ex:Question .
+
+ex:Question a go:Substance ;
+    rdf:value "A question" .
+
+ex:MisleadAli a go:Event ;
+    go:HasAgent ex:LeaderGiant ;
+    go:HasTheme ex:Ali ;
+    rdf:value "to mislead Ali on the question" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-3> rdf:type owl:Ontology .
+
+ex:HeadOfGalut a go:Person ;
+    rdfs:label "Head of the Galut" .
+
+ex:Ali a go:Person ;
+    rdfs:label "Ali" ;
+    go:hasTitle "Commander of the Faithful" .
+
+ex:Matter a go:Topic ;
+    rdfs:label "matter" .
+
+ex:Event_ComeToAli a go:Event , ex:ComingEvent ;
+    go:HasAgent ex:HeadOfGalut ;
+    go:HasTheme ex:Ali .
+
+ex:Event_AskAboutMatter a go:Event , ex:AskingEvent ;
+    go:HasAgent ex:HeadOfGalut ;
+    go:HasRecipient ex:Ali ;
+    go:HasTheme ex:Matter .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-4> rdf:type owl:Ontology .
+
+ex:event1 a go:SpeechEvent ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:Male1 ;
+    go:HasTheme ex:Directive1 .
+
+ex:Ali a go:Substance ;
+    rdfs:label "Ali" .
+
+ex:Male1 a go:Substance .
+
+ex:Directive1 a go:speechContent ;
+    go:content "Ask about whatever you want" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-5> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 a go:Communication ;
+    go:HasAgent ex:HeadOfPhilistines ;
+    go:HasRecipient ex:Ali ;
+    go:HasTheme ex:QuestionAboutOurLord .
+
+ex:HeadOfPhilistines a go:Person ;
+    rdfs:label "Head of the Philistines" .
+
+ex:Ali a go:Person ;
+    rdfs:label "Ali" ;
+    go:hasTitle "Commander of the Faithful" .
+
+ex:QuestionAboutOurLord a go:InformationContentEntity ;
+    go:hasContent "When was our Lord?" .
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-6> rdf:type owl:Ontology .
+
+ex:speechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:HeadOfGoliath ;
+    go:HasTheme ex:QuotedSpeech1 .
+
+ex:Ali a go:Person ;
+    go:name "Ali" .
+
+ex:HeadOfGoliath a go:Person ;
+    go:name "Head of Goliath" .
+
+ex:QuotedSpeech1 a go:SpeechContent ;
+    go:text "O Jew, it is said: 'When was' for the one who never was." .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-7> rdf:type owl:Ontology .
+
+ex:Ali a go:Person .
+ex:HeadOfGoliath a go:Person .
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:HeadOfGoliath ;
+    go:HasTheme ex:Quote1 .
+
+ex:Quote1 a go:Concept ;
+    ex:hasText "'Whenever it was' is an existent being without existence" ;
+    ex:isParadoxicalExistence true .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-8> rdf:type owl:Ontology .
+
+ex:Ali a go:Person ;
+    rdfs:label "Ali" .
+
+ex:HeadOfGoliath a go:Person ;
+    rdfs:label "Head of Goliath" .
+
+ex:SayEvent1 a go:CommunicationEvent ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:HeadOfGoliath ;
+    go:HasTheme "He was without how he could be." .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-9> rdf:type owl:Ontology .
+
+ex:Ali a go:Person ;
+    rdfs:label "Ali" .
+
+ex:HeadOfGoliath a go:Person ;
+    rdfs:label "Head of Goliath" .
+
+ex:SpeechEvent1 a go:SpeechAct ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:HeadOfGoliath ;
+    go:HasTheme ex:QuestionContent1 .
+
+ex:QuestionContent1 a go:Content ;
+    rdfs:label "How can he have a forehead?" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-10> rdf:type owl:Ontology .
+
+ex:event1 a go:SpeechAct ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:HeadOfGoliath ;
+    go:HasContent "It is before the before without purpose or end, purpose or goal to it." .
+
+ex:Ali a go:Person .
+ex:HeadOfGoliath a go:Person .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-11> rdf:type owl:Ontology .
+
+ex:SpeechEvent_1 a go:SpeechAct ;
+    go:HasAgent ex:Ali ;
+    go:HasRecipient ex:HeadOfGoliath ;
+    go:HasTheme ex:Proposition_1 .
+
+ex:Ali a go:Person .
+ex:HeadOfGoliath a go:Person .
+ex:Proposition_1 a go:Proposition ;
+    go:HasTheme ex:ArrowsRunOut .
+
+ex:Arrows a go:Substance .
+
+ex:ArrowsRunOut a go:State ;
+    go:HasTheme ex:Arrows ;
+    go:hasState ex:RunOut ;
+    go:Cause ex:HeadOfGoliath .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-12> rdf:type owl:Ontology .
+
+ex:Ali a go:Person .
+ex:HeadOfGoliath a go:Person .
+
+ex:Utterance_1 a go:Communication ;
+    go:hasAgent ex:Ali ;
+    go:hasRecipient ex:HeadOfGoliath ;
+    go:hasTheme ex:UtteredStatement_1 .
+
+ex:UtteredStatement_1 a go:MessageContent ;
+    rdf:value "He is the ultimate of all ultimates." .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-13> rdf:type owl:Ontology .
+
+# Entities
+ex:HeadOfGalut a go:Person ;
+    go:hasRole "HeadOfGalut"^^xsd:string .
+
+ex:Religion a go:Substance ;
+    rdfs:label "Religion"^^xsd:string ;
+    go:isTrue "true"^^xsd:boolean .
+
+# Event of speech
+ex:TestimonyEvent a go:Event ;
+    go:HasAgent ex:HeadOfGalut ;
+    go:HasTheme ex:TestimonyContent .
+
+# The content of the testimony
+ex:TestimonyContent a go:Utterance ;
+    go:expresses "I testify that your religion is the truth."^^xsd:string ;
+    go:about ex:Religion .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/243#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/243-14> rdf:type owl:Ontology .
+
+ex:LeaderOfGalut a go:Person ;
+    go:denotes "رَأسُ الجالوتِ" .
+
+ex:YourReligion a go:Religion ;
+    go:denotes "دينك" .
+
+# Event of bearing witness
+	evt:Testimony1 a go:Testimony, go:Event ;
+    go:HasAgent ex:LeaderOfGalut ;
+    go:HasTheme evt:OppositionIsFalse .
+
+# The proposition testified about
+	evt:OppositionIsFalse a go:Proposition ;
+    go:assertsFalsehoodOf evt:OppositionToYourReligion .
+	evt:OppositionToYourReligion a go:Opposition ;
+    go:Opposes ex:YourReligion .
+go:Event rdfs:label "رخداد"@fa.

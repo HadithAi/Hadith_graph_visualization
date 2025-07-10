@@ -1,0 +1,70 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/414#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/414-1> rdf:type owl:Ontology .
+
+ex:God a go:Agent , go:Deity ;
+    go:hasProperty ex:Generosity .
+
+ex:People a go:Person .
+
+ex:BurdeningEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:ImpossibleBurden ;
+    go:HasRecipient ex:People ;
+    go:Status ex:NotPerformed .
+
+ex:ImpossibleBurden a go:Burden ;
+    go:CanBeFinishedBy ex:People ;
+    go:Possibility go:Impossible .
+
+ex:Generosity a go:Property ;
+    rdfs:label "Generosity"@en .
+
+ex:NotPerformed a go:Status ;
+    rdfs:label "Not Performed"@en .
+
+go:Impossible a go:Possibility ;
+    rdfs:label "Impossible"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/414#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/414-2> rdf:type owl:Ontology .
+
+ex:God a ex:DivineEntity ;
+    ex:hasAttribute ex:Might .
+
+ex:Might a go:Quality ;
+    go:HasSubject ex:God .
+
+ex:Dominion a go:Region ;
+    go:ControlledBy ex:God .
+
+ex:GodWillingState a go:State ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Dominion ;
+    ex:excludesUndesiredContent true .
+go:Quality rdfs:label "ویژگی"@fa.

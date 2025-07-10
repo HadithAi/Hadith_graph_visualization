@@ -1,0 +1,205 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/411#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/411-1> rdf:type owl:Ontology .
+
+# Entities
+ex:God a go:DivineEntity ;
+    go:hasAttribute ex:Justice .
+
+ex:Justice a go:JusticeAttribute .
+
+ex:Servants a go:Group .
+
+ex:Sins a go:ActionType .
+
+# Event: CompelServantsToSin
+ex:CompelServantsToSin a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Servants ;
+    go:HasOutcome ex:Sins .
+
+# Statement of comparison linking God's justice attribute and the event of compelling
+ex:God go:isMoreJustThan ex:CompelServantsToSin .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/411#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/411-2> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+    rdfs:label "God" .
+
+ex:Servants a go:Substance ;
+    rdfs:label "Servants" .
+
+ex:Sins a go:Act ;
+    rdfs:label "Sins" .
+
+ex:ForceEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Servants ;
+    go:HasTheme ex:Sins ;
+    go:negated true .
+
+ex:PunishEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Sins ;
+    go:HasRecipient ex:Servants .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/411#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/411-3> rdf:type owl:Ontology .
+
+ex:event1 a go:DelegationEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Matter ;
+    go:HasRecipient ex:Servants ;
+    go:hasNegation true .
+
+ex:God a go:Substance ;
+    go:name "God" .
+
+ex:Matter a go:Object ;
+    go:name "the matter" .
+
+ex:Servants a go:SubstanceSet ;
+    go:name "the servants" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/411#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/411-4> rdf:type owl:Ontology .
+
+:Event1 a ex:DelegationEvent ;
+    go:HasAgent :God ;
+    go:HasTheme :TheMatter ;
+    go:HasRecipient :Servants .
+
+:Event2 a ex:RestrictionEvent ;
+    go:HasAgent :God ;
+    go:HasTheme :Servants ;
+    ex:RestrictedBy :CommandsAndProhibitions .
+
+:God a go:Agent ;
+    rdfs:label "God"@en .
+
+:Servants a go:Agent ;
+    rdfs:label "Servants"@en .
+
+:TheMatter a go:Substance ;
+    rdfs:label "The Matter"@en .
+
+:CommandsAndProhibitions a go:Substance ;
+    rdfs:label "Commands and Prohibitions"@en .
+
+# Conditional implied: If delegation happened (Event1), then restriction (Event2) does not occur.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/411#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/411-5> rdf:type owl:Ontology .
+
+ex:Algebra a go:Substance ;
+    rdfs:label "Algebra"@en .
+
+ex:Delegation a go:Substance ;
+    rdfs:label "Delegation"@en .
+
+ex:StatusBetweenAlgebraAndDelegation a go:state ;
+    rdfs:label "Status between Algebra and Delegation"@en ;
+    go:HasTheme ex:Algebra , ex:Delegation .
+
+ex:ExistenceEvent a go:Event ;
+    rdfs:label "Existence of status between Algebra and Delegation"@en ;
+    go:HasTheme ex:StatusBetweenAlgebraAndDelegation .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/411#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/411-6> rdf:type owl:Ontology .
+
+ex:ThisPosition a go:Substance ;
+    schema:name "This Position" .
+
+ex:Sky a go:Substance ;
+    schema:name "Sky" .
+
+ex:Earth a go:Substance ;
+    schema:name "Earth" .
+
+ex:SpaceSkyEarth a go:Substance ;
+    schema:name "Space between Sky and Earth" ;
+    go:HasBoundary ex:Sky , ex:Earth .
+
+ex:ComparisonEvent1 a go:Comparison ;
+    go:HasAgent ex:ThisPosition ;
+    go:ComparedTo ex:SpaceSkyEarth ;
+    go:property "width" ;
+    go:comparisonType "greaterThan" .
+go:Substance rdfs:label "شی"@fa.

@@ -1,0 +1,138 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/261#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/261-1> rdf:type owl:Ontology .
+
+ex:Writer a go:Person .
+ex:AbuMuhammad a go:Person .
+ex:Servant a go:Person .
+ex:Lord a go:Person .
+
+ex:AskEvent1 a go:Asking ;
+    go:HasAgent ex:Writer ;
+    go:HasTheme ex:AbuMuhammad ;
+    ex:QuestionContent "How does a servant worship his Lord while he does not see Him?" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/261#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/261-2> rdf:type owl:Ontology .
+
+ex:Speech1 a go:SpeechAct ;
+    go:HasAgent ex:He_PeaceBeUponHim ;
+    go:HasTheme ex:StatementAboutGod .
+
+ex:He_PeaceBeUponHim a go:Person ;
+    go:honorific "peace be upon him" .
+
+ex:God a go:Deity ;
+    ex:role ex:Master ;
+    ex:role ex:Lord ;
+    ex:role ex:Benefactor ;
+    go:hasAttribute ex:TheGloriousToBeSeen .
+
+ex:Master a go:Role .
+ex:Lord a go:Role .
+ex:Benefactor a go:Role .
+
+ex:Forefathers a go:CollectiveEntity .
+
+ex:StatementAboutGod a go:Statement ;
+    ex:about ex:God ;
+    ex:beneficiary ex:He_PeaceBeUponHim, ex:Forefathers .
+
+ex:TheGloriousToBeSeen a go:Attribute ;
+    rdfs:label "Glorious who is to be seen"^^xsd:string .
+
+ex:beneficiary a rdf:Property ;
+    rdfs:comment "Entities that benefit from the role" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/261#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/261-3> rdf:type owl:Ontology .
+
+ex:askEvent_001 a go:Event , ex:AskingEvent ;
+    go:hasAgent ex:Writer_001 ;
+    go:hasTheme ex:AlayhisSalam_001 ;
+    go:hasContent ex:Question_001 .
+
+ex:Writer_001 a go:Agent ;
+    go:label "Writer"@en .
+
+ex:AlayhisSalam_001 a go:Agent ;
+    go:label "Alayhis Salam"@en .
+
+ex:Question_001 a go:InformationItem ;
+    go:about ex:MessengerOfAllah_001 , ex:HisLord_001 ;
+    go:questionText "Did the Messenger of Allah, peace and blessings be upon him and his family, see his Lord?"@en .
+
+ex:MessengerOfAllah_001 a go:Agent ;
+    go:label "Messenger of Allah (PBUH)"@en .
+
+ex:HisLord_001 a go:Agent ;
+    go:label "His Lord"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/261#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/261-4> rdf:type owl:Ontology .
+
+ex:Allah a go:Deity .
+ex:Messenger a go:Person ;
+    rdfs:label "Messenger of Allah (Muhammad)" .
+ex:Heart a go:Organ ;
+    go:partOf ex:Messenger .
+ex:Light_of_Greatness a go:Substance ;
+    go:attributeOf ex:Allah ;
+    go:hasQuality "Greatness" .
+
+ex:ShowEvent a go:Event ;
+    go:HasAgent ex:Allah ;
+    go:HasTheme ex:Messenger ;
+    ex:showMedium ex:Heart ;
+    go:HasObject ex:Light_of_Greatness ;
+    go:EventDescription "Allah showed the Messenger the light of His greatness through his heart." .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

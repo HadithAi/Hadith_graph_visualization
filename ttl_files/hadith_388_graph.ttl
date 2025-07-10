@@ -1,0 +1,136 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/388#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/388-1> rdf:type owl:Ontology .
+
+ex:God a go:Substance .
+
+ex:WillingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:IntendingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:DecreeingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:DecidingEvent a go:Event ;
+    go:HasAgent ex:God .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/388#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/388-2> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+    go:performs ex:WillEvent, ex:DesireEvent, ex:DecreeEvent, ex:JudgmentEvent ;
+    go:doesNotPerform ex:LoveEvent .
+
+ex:WillEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:ObjectLedByWill .
+
+ex:DesireEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:ObjectLedByDesire .
+
+ex:LoveEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:ObjectLedByWillAndDesire .
+
+ex:DecreeEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:JudgmentEvent a go:Event ;
+    go:HasAgent ex:God .
+
+# Objects led by will and desire considered the same entity for clarity
+ex:ObjectLedByWill a go:Substance .
+ex:ObjectLedByDesire a go:Substance .
+ex:ObjectLedByWillAndDesire a go:Substance .
+
+# Negation represented by go:doesNotPerform property linking God to LoveEvent
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/388#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/388-3> rdf:type owl:Ontology .
+
+ex:God a go:agent ;
+    go:Substance true .
+
+ex:WillingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:DesiringEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:DecreeingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:OrdainingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:NotLovingEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme [
+        a go:EventCollection ;
+        go:hasEvent ex:WillingEvent , ex:DesiringEvent , ex:DecreeingEvent , ex:OrdainingEvent
+    ] .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/388#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/388-4> rdf:type owl:Ontology .
+
+ex:ComeOutEvent a go:Event ;
+    go:HasTheme ex:ThisEntity ;
+    go:HasRecipient ex:UsEntity .
+
+ex:ThisEntity a go:entity .
+ex:UsEntity a go:entity .
+go:Event rdfs:label "رخداد"@fa.

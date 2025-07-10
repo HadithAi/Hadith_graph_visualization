@@ -1,0 +1,168 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/293#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/293-1> rdf:type owl:Ontology .
+
+ex:God_Almighty a dbo:Deity, go:Agent ;
+    go:HasRole ex:Lord ;
+    go:HasAttribute ex:Knowledge_Essence , ex:Hearing_Essence , ex:Sight_Essence , ex:Power_Essence .
+
+# Define the essences as substances
+ex:Knowledge_Essence a go:Substance ;
+    rdfs:label "Essence of Knowledge" .
+
+ex:Hearing_Essence a go:Substance ;
+    rdfs:label "Essence of Hearing" .
+
+ex:Sight_Essence a go:Substance ;
+    rdfs:label "Essence of Sight" .
+
+ex:Power_Essence a go:Substance ;
+    rdfs:label "Essence of Power" .
+
+# Negations: No known object, no heard, no seen, no empowered
+ex:Known_Object a go:Object ;
+    a go:Negative ;
+    rdfs:label "No Known Object" .
+
+ex:Heard_Object a go:Object ;
+    a go:Negative ;
+    rdfs:label "No Heard Object" .
+
+ex:Seen_Object a go:Object ;
+    a go:Negative ;
+    rdfs:label "No Seen Object" .
+
+ex:Empowered_Object a go:Object ;
+    a go:Negative ;
+    rdfs:label "No Empowered Object" .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/293#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/293-2> rdf:type owl:Ontology .
+
+ex:God a go:God ;
+    rdfs:label "Allah" .
+
+ex:CreationEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:KnownThings .
+
+ex:KnownThings a go:KnownEntity .
+
+ex:Knowledge a go:Attribute .
+ex:Hearing a go:Attribute .
+ex:Sight a go:Attribute .
+ex:Power a go:Attribute .
+
+ex:Known a go:KnownEntity ;
+    go:hasAttribute ex:Knowledge .
+ex:Heard a go:KnownEntity ;
+    go:hasAttribute ex:Hearing .
+ex:Seen a go:KnownEntity ;
+    go:hasAttribute ex:Sight .
+ex:Powered a go:KnownEntity ;
+    go:hasAttribute ex:Power .
+
+# Relationships indicating the transmission of attributes from God to entities
+ex:Knowledge go:HasOrigin ex:God ;
+    go:HasRecipient ex:Known .
+ex:Hearing go:HasOrigin ex:God ;
+    go:HasRecipient ex:Heard .
+ex:Sight go:HasOrigin ex:God ;
+    go:HasRecipient ex:Seen .
+ex:Power go:HasOrigin ex:God ;
+    go:HasRecipient ex:Powered .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/293#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/293-3> rdf:type owl:Ontology .
+
+ex:Motion a go:Quality ;
+    go:hasCause ex:Action .
+
+ex:Action a go:Process .
+
+ex:God_Almighty a go:Agent ;
+    go:doesNotHaveQuality ex:Motion .
+go:Quality rdfs:label "ویژگی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/293#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/293-4> rdf:type owl:Ontology .
+
+ex:speech rdf:type go:attribute ;
+    go:hasAttributeValue ex:createdAttribute ;
+    go:lacksAttribute ex:eternalAttribute .
+
+ex:createdAttribute rdf:type go:attributeValue .
+ex:eternalAttribute rdf:type go:attributeValue .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/293#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/293-5> rdf:type owl:Ontology .
+
+ex:GodAlmighty a go:deity .
+
+ex:ExistenceEvent a go:StateOfExistence ;
+    go:HasAgent ex:GodAlmighty .
+
+# Statement that God is not a speaker is represented as no speaking event linked to God.
+# Alternatively, we can state a negative property explicitly (if supported):
+
+ex:GodAlmighty ex:isSpeaker false .

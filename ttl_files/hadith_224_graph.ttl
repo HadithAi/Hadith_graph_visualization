@@ -1,0 +1,100 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/224#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/224-1> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:CreationEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Creatures .
+
+ex:God a go:Substance ;
+    rdfs:label "God"@en .
+
+ex:Creatures a go:Substance ;
+    rdfs:label "Creatures"@en .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/224#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/224-2> rdf:type owl:Ontology .
+
+ex:creationEvent1 a go:CreationEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:void ;
+    go:HasSource ex:sourceEntity .
+
+ex:God a go:Agent ;
+    rdfs:label "God" .
+
+ex:void a go:Substance ;
+    rdfs:label "void" .
+
+ex:sourceEntity a go:Substance ;
+    rdfs:label "source" .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/224#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/224-3> rdf:type owl:Ontology .
+
+# Defining the entity class 'Thing' as things named "thing"
+ex:Thing a go:Substance ;
+    rdfs:label "شيء" .
+
+# Defining the entity Allah
+ex:Allah a go:Substance .
+
+# Creature class
+go:Creature a go:Class .
+
+# Event: classification of Thing as Creature
+ex:classificationEvent a go:Event ;
+    go:HasTheme ex:Thing ;
+    go:HasResult go:Creature .
+
+# Exception statement (informal representation using OWL negative property assertion)
+# Saying Allah is not a Creature even if named "thing"
+ex:Allah rdfs:label "شيء" .
+
+# State that ex:Allah is not classified as Creature despite having the name "شيء"
+[] a go:NegativePropertyAssertion ;
+   go:sourceIndividual ex:Allah ;
+   go:assertionProperty go:type ;
+   go:targetIndividual go:Creature .
+
+# General statement that everything named "شيء" is a Creature except Allah.
+# (This is represented by the classification event and exception above.)
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

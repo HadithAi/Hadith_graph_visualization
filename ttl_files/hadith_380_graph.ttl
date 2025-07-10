@@ -1,0 +1,66 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/380#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/380-1> rdf:type owl:Ontology .
+
+ex:Sentence1 a go:Statement ;
+  go:expresses ex:Event1 .
+
+ex:Event1 a go:Event, ex:NotKnowing ;
+  go:HasAgent ex:People ;
+  go:HasTheme ex:RewardForSpeech .
+
+ex:People a go:HumanGroup ;
+  rdfs:label "People"@en .
+
+ex:Speech a go:Speech ;
+  rdfs:label "Words of intention"@en .
+
+ex:RewardForSpeech a go:Concept ;
+  rdfs:label "Reward for words of intention"@en ;
+  ex:relatedToSpeech ex:Speech .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/380#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/380-2> rdf:type owl:Ontology .
+
+ex:People a go:Mammal ;  # general class for people, assuming
+    go:HasAgent ex:KnowledgeEvent , ex:TalkingEvent .
+
+ex:Reward a go:Substance .
+
+ex:SpeechAboutAlBada a go:Substance ;
+    go:hasTopic ex:AlBada .
+
+ex:KnowledgeEvent a go:Event ;
+    go:HasAgent ex:People ;
+    go:HasTheme ex:Reward .
+
+ex:TalkingEvent a go:Event ;
+    go:HasAgent ex:People ;
+    go:HasTheme ex:SpeechAboutAlBada ;
+    go:isCausedBy ex:KnowledgeEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

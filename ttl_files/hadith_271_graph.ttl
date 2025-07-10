@@ -1,0 +1,126 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/271#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/271-1> rdf:type owl:Ontology .
+
+ex:EmotionalIllusionsOfHeart a go:Phenomenon ;
+    go:associatedWith ex:Heart ;
+    go:hasQuality ex:FinenessLevel1 .
+
+ex:SightOfEyes a go:Phenomenon ;
+    go:associatedWith ex:Eyes ;
+    go:hasQuality ex:FinenessLevel2 .
+
+ex:FinenessLevel1 go:isFinerThan ex:FinenessLevel2 .
+
+ex:Heart a go:Organ .
+ex:Eyes a go:Organ .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/271#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/271-2> rdf:type owl:Ontology .
+
+# Entities
+ex:Human a go:agent ;
+    rdfs:label "Human" .
+
+ex:Sind a go:place ;
+    rdfs:label "Sind" .
+
+ex:India a go:place ;
+    rdfs:label "India" .
+
+ex:Countries a go:place ;
+    rdfs:label "Countries not entered or perceived" .
+
+ex:Illusions a go:Substance ;
+    rdfs:label "Illusions" .
+
+# Event
+ex:PerceivingEvent a go:Event, ex:Perception ;
+    go:HasAgent ex:Human ;
+    go:HasTheme ex:Sind, ex:India, ex:Countries ;
+    go:HasMedium ex:Illusions ;
+    ex:CanPerceiveWithoutEntry "true"^^xsd:boolean ;
+    ex:CanPerceiveWithoutSight "true"^^xsd:boolean .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/271#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/271-3> rdf:type owl:Ontology .
+
+ex:IllusionsOfHearts a ex:AbstractConcept ;
+    rdfs:label "Illusions of the hearts"@en .
+
+ex:He a go:Agent ;
+    rdfs:label "He"@en .
+
+ex:PerceptionEvent a go:Event ;
+    ex:negation true ;
+    go:HasAgent ex:IllusionsOfHearts ;
+    go:HasTheme ex:He ;
+    rdfs:label "Perception event - negated"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/271#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/271-4> rdf:type owl:Ontology .
+
+ex:Event_EyesPerceive a go:PerceptionEvent ;
+  go:HasAgent ex:Eyes ;
+  go:HasTheme ex:He .
+
+ex:Event_IllusionsHeartsNotPerceive a go:PerceptionEvent ;
+  go:HasAgent ex:Illusions_Hearts ;
+  go:HasTheme ex:He ;
+  go:Result "False"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+ex:Eyes a go:OrganismPart ;
+  go:PartOf ex:Human .
+
+ex:Illusions_Hearts a go:ConceptualEntity .
+
+ex:He a go:Person .

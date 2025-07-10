@@ -1,0 +1,103 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/344#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/344-1> rdf:type owl:Ontology .
+
+ex:BearersOfThrone a go:AgentGroup ;
+    go:bears ex:Throne ;
+    go:hasQuantity "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+
+ex:Throne a go:Object ;
+    go:isDefinedAs ex:Knowledge .
+
+ex:Knowledge a go:Concept .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/344#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/344-2> rdf:type owl:Ontology .
+
+ex:BearersOfThrone a go:Group ;
+    ex:hasNumber "43"^^xsd:integer ;
+    ex:hasGenealogicalOrigin ex:FamilyOfProphet .
+
+ex:FamilyOfProphet a go:GenealogicalGroup ;
+    go:refersTo <http://dbpedia.org/resource/Prophet> .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/344#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/344-3> rdf:type owl:Ontology .
+
+ex:BearersOfTheThrone a go:Agent .
+ex:FourBearersOfTheThrone a go:Substance ;
+    go:quantity "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
+    go:isMemberOf ex:BearersOfTheThrone ;
+    go:isFrom ex:UsGroup .
+
+ex:UsGroup a go:Group .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/344#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/344-4> rdf:type owl:Ontology .
+
+# Entities
+ex:Four a go:Quantity ;
+    rdfs:label "Four" .
+
+ex:BearerOfTheThrone a go:Substance ;
+    rdfs:label "Bearer of the Throne" .
+
+ex:God a go:agent ;
+    rdfs:label "God" .
+
+# Event: Selection/Inclusion of Four bearers by God's will
+ex:SelectionEvent_1 a go:Event ;
+    go:HasTheme ex:Four ;
+    go:HasAgent ex:God ;
+    go:HasTargetClass ex:BearerOfTheThrone ;
+    rdfs:comment "Four of the bearers of the Throne selected are those whom God wills." .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

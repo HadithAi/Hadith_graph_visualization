@@ -1,0 +1,154 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/379#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/379-1> rdf:type owl:Ontology .
+
+ex:Today a go:TemporalEntity ;
+    go:partOf ex:Day .
+
+ex:Yesterday a go:TemporalEntity ;
+    go:partOf ex:Day .
+
+ex:God a go:Person ;
+    go:name "الله" .
+
+ex:KnowledgeEvent a go:Event ;
+    go:EventType go:Knowledge ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:TodayThings ;
+    go:Time ex:Yesterday .
+
+ex:TodayThings a go:Thing ;
+    go:temporalContext ex:Today .
+
+# The statement: "There is no thing that belongs to today that was unknown to God yesterday."
+# We represent the negation:
+ex:NegationStatement a go:Negation ;
+    go:negatedStatement ex:UnknownStatement .
+
+ex:UnknownStatement a go:Statement ;
+    go:HasSubject ex:God ;
+    go:HasTheme ex:TodayThings ;
+    go:state go:Unknown ;
+    go:Time ex:Yesterday .
+
+# Final assertion that the above negation represents the meaning of the sentence.
+go:Event rdfs:label "رخداد"@fa.
+go:Time rdfs:label "زمان"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/379#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/379-2> rdf:type owl:Ontology .
+
+ex:Person1 a go:Person .
+ex:God a go:Deity .
+ex:Today a time:Instant .
+ex:Yesterday a time:Instant .
+
+ex:ClaimEvent a go:Event ;
+    go:HasAgent ex:Person1 ;
+    go:HasTheme ex:Proposition1 .
+
+ex:Proposition1 a go:Proposition ;
+    go:HasContent "Today is something that was not in God's knowledge yesterday" ;
+    go:HasTemporalContext ex:Today, ex:Yesterday ;
+    go:HasSubject ex:Today ;
+    go:HasObject ex:God ;
+    go:temporalProperty "not known yesterday by God" .
+
+ex:DisgraceEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Person1 ;
+    go:EventOutcome "disgraced" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/379#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/379-3> rdf:type owl:Ontology .
+
+ex:God a go:Agent .
+ex:DayOfResurrection a go:Event .
+ex:EverythingExistent a go:Substance .
+
+ex:KnowledgeOfGod a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:EverythingExistent ;
+    go:HasTemporalBoundary ex:DayOfResurrection .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/379#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/379-4> rdf:type owl:Ontology .
+
+# Entities
+ex:God a go:Agent .
+ex:Creation a go:Substance .
+ex:DayOfJudgment a go:Event .
+ex:AllEntities a go:Substance .
+
+# Events
+ex:KnowledgeOfAllEntities a go:State ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:AllEntities ;
+    go:TemporalRelation [
+        a go:TemporalRelation ;
+        go:BeforeEvent ex:Creation
+    ] .
+
+ex:CreationEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Creation .
+
+# Temporal context
+ex:AllEntities go:existsUntil ex:DayOfJudgment .
+
+# Explanation:
+# 1. God (agent) possesses knowledge (state) of all entities (theme) before the creation event.
+# 2. Creation event is performed by God.
+# 3. All entities exist until the Day of Judgment.
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

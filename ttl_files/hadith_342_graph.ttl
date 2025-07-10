@@ -1,0 +1,132 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/342#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/342-1> rdf:type owl:Ontology .
+
+ex:speechEvent1 a go:Event ;
+  go:HasAgent ex:God_Almighty ;
+  go:HasTheme ex:statement1 .
+
+ex:God_Almighty a go:agent ;
+  go:label "God Almighty" .
+
+ex:statement1 a go:proposition ;
+  go:content "His Throne extends over the heavens and the earth" ;
+  go:HasSubject ex:Throne ;
+  go:HasSpatialScope ex:Heavens, ex:Earth .
+
+ex:Throne a go:Substance ;
+  go:label "His Throne" .
+
+ex:Heavens a go:location ;
+  go:label "the heavens" .
+
+ex:Earth a go:location ;
+  go:label "the earth" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/342#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/342-2> rdf:type owl:Ontology .
+
+ex:Heavens rdf:type go:Substance ;
+    rdfs:label "Heavens" .
+
+ex:Earth rdf:type go:Substance ;
+    rdfs:label "Earth" .
+
+ex:Throne rdf:type go:Substance ;
+    rdfs:label "Throne" .
+
+# Composite entity: Heavens and Earth
+ex:HeavensAndEarth rdf:type go:Substance ;
+    ex:hasPart ex:Heavens, ex:Earth ;
+    rdfs:label "Heavens and Earth" .
+
+# Encompass event 1: Heavens and Earth encompass the Throne
+ex:EncompassEvent1 rdf:type go:SpatialRelation ;
+    go:HasAgent ex:HeavensAndEarth ;
+    go:HasTheme ex:Throne ;
+    rdfs:label "Heavens and Earth encompass the Throne" .
+
+# Encompass event 2: Throne encompasses the Heavens and Earth
+ex:EncompassEvent2 rdf:type go:SpatialRelation ;
+    go:HasAgent ex:Throne ;
+    go:HasTheme ex:HeavensAndEarth ;
+    rdfs:label "Throne encompasses the Heavens and Earth" .
+
+# The question about the above two events
+ex:Question rdf:type go:Question ;
+    go:hasOption ex:EncompassEvent1, ex:EncompassEvent2 ;
+    rdfs:label "Is it that the heavens and earth encompass the Throne, or the Throne encompasses the heavens and earth?" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/342#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/342-3> rdf:type owl:Ontology .
+
+ex:EncompassingEvent a ex:eventInstance ;
+    go:HasAgent ex:Chair ;
+    go:HasTheme ex:Heavens , ex:Earth , ex:Throne .
+
+ex:Chair a go:Substance .
+ex:Heavens a go:Substance .
+ex:Earth a go:Substance .
+ex:Throne a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/342#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/342-4> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasAgent ex:TheChair ;
+    go:HasTheme ex:Everything .
+
+ex:TheChair a go:Substance .
+
+ex:Everything a go:object .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

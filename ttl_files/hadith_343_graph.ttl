@@ -1,0 +1,115 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/343#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/343-1> rdf:type owl:Ontology .
+
+ex:GodAlmighty a go:Deity ;
+    rdfs:label "God Almighty" .
+
+ex:HisThrone a go:Artifact ;
+    rdfs:label "God's Throne" .
+
+ex:Heavens a go:CelestialBody ;
+    rdfs:label "Heavens" .
+
+ex:Earth a go:CelestialBody ;
+    rdfs:label "Earth" .
+
+ex:SpeechEvent1 a go:Utterance ;
+    rdfs:label "God Almighty's statement about His Throne" ;
+    go:HasAgent ex:GodAlmighty ;
+    go:HasTheme ex:UtteranceContent1 .
+
+ex:UtteranceContent1 a go:ConceptualEntity ;
+    rdfs:label "His Throne extends over the heavens and the earth" .
+
+ex:ThroneExtension a go:SpatialRelation ;
+    go:HasAgent ex:HisThrone ;
+    go:HasTheme ex:Heavens ;
+    go:HasTheme ex:Earth ;
+    rdfs:comment "The Throne extends over the heavens and the earth" .
+
+ex:HisThrone go:extendsOver ex:Heavens, ex:Earth .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/343#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/343-2> rdf:type owl:Ontology .
+
+ex:Heavens a go:PhysicalEntity ;
+    rdfs:label "Heavens" .
+
+ex:Earth a go:PhysicalEntity ;
+    rdfs:label "Earth" .
+
+ex:Throne a go:Object ;
+    rdfs:label "Throne" .
+
+ex:EncompassEvent a go:Event ;
+    go:HasAgent ex:Heavens , ex:Earth ;
+    go:HasTheme ex:Throne ;
+    rdfs:label "Encompassment of Throne by Heavens and Earth" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/343#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/343-3> rdf:type owl:Ontology .
+
+ex:ExpansionEvent1 a go:Event ;
+    go:HasAgent ex:Throne ;
+    go:HasTheme ex:Heavens , ex:Earth .
+
+ex:Throne a go:Substance .
+ex:Heavens a go:Substance .
+ex:Earth a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/343#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/343-4> rdf:type owl:Ontology .
+
+ex:Everything a go:entity .
+ex:Chair a go:physicalObject .
+
+ex:Everything go:isLocatedOn ex:Chair .

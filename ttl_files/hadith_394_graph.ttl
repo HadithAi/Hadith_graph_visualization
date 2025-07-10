@@ -1,0 +1,34 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/394#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/394-1> rdf:type owl:Ontology .
+
+ex:Allah a go:Deity ;
+    rdfs:label "Allah Almighty"@en .
+
+ex:CommandOrProhibition a go:Event ;
+    rdfs:label "Divine command or prohibition"@en ;
+    go:HasAgent ex:Allah ;
+    go:HasTheme ex:RestrictionOrExtension .
+
+ex:RestrictionOrExtension a go:Concept ;
+    rdfs:label "Restriction or Extension"@en .
+
+ex:TrialAndDecree a go:Event ;
+    rdfs:label "Divine trial and decree"@en ;
+    go:HasAgent ex:Allah ;
+    go:HasCause ex:CommandOrProhibition .
+
+ex:CommandOrProhibition go:HasResult ex:TrialAndDecree .
+go:Event rdfs:label "رخداد"@fa.

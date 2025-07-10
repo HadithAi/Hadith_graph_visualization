@@ -1,0 +1,401 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-1> rdf:type owl:Ontology .
+
+ex:God a go:Substance .
+ex:SolidLuminousBody a go:Substance ;
+	go:hasQuality ex:Solid , ex:Luminous .
+ex:Solid a go:Quality .
+ex:Luminous a go:Quality .
+
+# Negative statement that God is not a solid luminous body
+ex:God go:isNotInstanceOf ex:SolidLuminousBody .
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-2> rdf:type owl:Ontology .
+
+ex:KnowingGodEvent a go:Event ;
+    go:HasTheme ex:God ;
+    go:HasNecessity false .
+
+ex:God a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-3> rdf:type owl:Ontology .
+
+ex:event1 a go:Knowing ;
+    go:HasAgent god:God ;
+    go:HasTheme god:GodNature .
+
+# god:GodNature is the property or state describing 'how He is'
+
+# No other person has the agent role in knowing god:GodNature
+
+# Represent that no other person knows this:
+ex:NoOtherAgent a go:Knowing ;
+    go:HasAgent ex:SomeoneElse ;
+    go:HasTheme god:GodNature ;
+    go:KnowledgeNegation true .
+
+ex:SomeoneElse a foaf:Person .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-4> rdf:type owl:Ontology .
+
+ex:God a go:Deity, go:Substance .
+ex:Thing a go:Substance .
+
+ex:UniqueState a go:StateEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Thing ;
+    go:HasQuality ex:NonSimilarity .
+
+ex:NonSimilarity a go:Quality ;
+    rdfs:label "non similarity" .
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-5> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:HasAttribute ex:AllHearing ;
+    go:HasAttribute ex:AllSeeing .
+
+ex:AllHearing a go:Attribute ;
+    rdfs:label "All-Hearing"@en .
+
+ex:AllSeeing a go:Attribute ;
+    rdfs:label "All-Seeing"@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-6> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    ex:isLimitless true .
+
+# Explanation:
+# ex:God is an entity of type go:Deity.
+# ex:isLimitless is used here as a property to denote the attribute of having no limits.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-7> rdf:type owl:Ontology .
+
+ex:event1 a go:PerceptionEvent ;
+    go:HasAgent ex:God .
+
+# The sentence states 'God does not perceive', which implies that there is no such perception event by God. 
+# Therefore, semantically, ex:event1 does not occur or is false. This can be represented as a negative assertion in other logic layers, but here we document the intended meaning.
+
+ex:God a go:deity .
+
+# Note: RDF itself does not natively express negation, but this triple setup captures the semantic roles.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-8> rdf:type owl:Ontology .
+
+ex:God a go:Deity, go:Substance .
+ex:IncarnationEvent a go:Event ;
+    go:HasTheme ex:God .
+
+# Statement of negation: God is not incarnate
+# Implemented as negative property assertion, here expressed through a negative statement node
+
+ex:God ex:hasIncarnationStatus ex:NotIncarnate .
+
+ex:NotIncarnate a go:State .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-9> rdf:type owl:Ontology .
+
+# Entity: God
+ex:God rdf:type go:Deity .
+
+# Entity: Eyes
+ex:Eyes rdf:type go:Organ ;
+         go:senses go:Vision .
+
+# Statement: God cannot be perceived by eyes
+# We represent a hypothetical perception event
+ex:PerceptionEvent rdf:type go:Perception , go:Event ;
+                   go:HasAgent ex:Eyes ;
+                   go:HasTheme ex:God ;
+                   go:hasTruthValue "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+# Explanation: 'hasTruthValue' false means the perception does not actually happen; God is not accessible to eyes.
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-10> rdf:type owl:Ontology .
+
+ex:perceptionEvent a go:PerceptionEvent , go:Event ;
+    go:HasAgent ex:senses ;
+    go:HasTheme ex:God ;
+    go:negation "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+ex:God a go:Substance ;
+    go:label "God"@en .
+
+ex:senses a go:entity ;
+    go:label "the senses"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-11> rdf:type owl:Ontology .
+
+ex:God a go:God ;
+    rdfs:label "God" .
+
+# Defining 'anything' as any go:Substance (for demonstration)
+ex:anything a go:Substance .
+
+# Define the encompassing event class
+ex:EncompassEvent a go:Event ;
+    rdfs:label "Encompass Event" .
+
+# State that there is no event of encompassing where God is theme and anything is agent
+# In RDF, negation isn't directly expressible, so we model using a negative statement pattern
+
+ex:NoEncompassEvent a go:Event ;
+    go:HasTheme ex:God ;
+    go:HasAgent ex:anything ;
+    go:Negation true .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-12> rdf:type owl:Ontology .
+
+ex:God rdf:type go:Deity .
+ex:Body rdf:type go:Substance .
+
+# Assert that God is not a body using OWL negative property assertion
+# OWL does not directly allow negating rdf:type but we can use complement class
+
+ex:God rdf:type [
+  a owl:Class ;
+  owl:complementOf ex:Body
+] .
+
+# Alternatively, if ex:Body is a class, declare ex:God instance is not of class ex:Body by stating ex:God rdf:type go:Deity with no type ex:Body explicitly.
+
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-13> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+  ex:hasProperty ex:NoForm .
+
+ex:NoForm a go:PropertyValue ;
+  ex:negates ex:Form .
+
+ex:Form a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-14> rdf:type owl:Ontology .
+
+ex:God a go:deity ;
+    rdfs:label "God" .
+
+ex:PlanningEvent a go:Event ;
+    rdfs:label "Planning Event" .
+
+# Statement: God is not an agent of PlanningEvent
+# Using a negative statement pattern (not standard RDF, represented here as a comment)
+# There is no ex:eventInstance where ex:God go:HasAgent ex:eventInstance and ex:eventInstance a ex:PlanningEvent
+
+# Alternatively, express the negation as a negative statement in OWL or natural language annotations
+ex:NonPlanningRelation a rdf:Statement ;
+    rdf:subject ex:God ;
+    rdf:predicate go:HasAgent ;
+    rdf:object ex:PlanningEvent ;
+    rdfs:comment "God is not an agent of any planning event." .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-15> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:hasProperty ex:NotParticular .
+
+# or alternately represent the negation explicitly
+
+ex:NotParticular a go:Property ;
+    go:negates ex:Particular .
+
+ex:Particular a go:Property .

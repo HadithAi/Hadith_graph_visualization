@@ -1,0 +1,210 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/400#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/400-1> rdf:type owl:Ontology .
+
+ex:speechEvent1 a go:Event ;
+    go:HasAgent ex:GodAlmighty ;
+    go:HasTheme ex:Statement1 .
+
+ex:GodAlmighty a go:Person ;
+    rdfs:label "God Almighty" .
+
+ex:Statement1 a go:Message ;
+    go:hasText "I am God; there is no deity except Me." .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/400#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/400-2> rdf:type owl:Ontology .
+
+ex:Event_Said a go:Action, go:SpeechAct ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Claim_Creation_GoodEvil .
+
+ex:God_Almighty a go:Agent .
+
+ex:Claim_Creation_GoodEvil a go:Claim ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Good, ex:Evil .
+
+ex:Good a go:Substance .
+ex:Evil a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/400#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/400-3> rdf:type owl:Ontology .
+
+ex:speechEvent1 rdf:type go:SpeechEvent ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme "Blessed is the one upon whom good is done by his own hands." .
+
+ex:God_Almighty rdf:type go:Agent ;
+    rdfs:label "God Almighty" .
+
+ex:BeneficiaryPerson rdf:type go:Person ;
+    rdfs:label "The one upon whom good is done by his own hands" .
+
+ex:goodProductionEvent1 rdf:type go:ProductionEvent ;
+    go:HasAgent ex:BeneficiaryPerson ;
+    go:HasTheme go:Good .
+
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/400#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/400-4> rdf:type owl:Ontology .
+
+ex:GodAlmighty a go:Agent ;
+    rdfs:label "God Almighty" .
+
+ex:SpeechEvent1 a go:Event ;
+    go:HasAgent ex:GodAlmighty ;
+    go:HasTheme ex:Utterance1 .
+
+ex:Utterance1 a go:InformationObject ;
+    rdfs:label "Woe to the one upon whom evil is executed by his own hands." .
+
+ex:EvilExecutionEvent1 a go:Event ;
+    go:HasAgent ex:Person1 ;
+    go:HasTheme ex:Evil1 .
+
+ex:Person1 a go:Agent ;
+    rdfs:label "The one upon whom evil is executed by his own hands" .
+
+ex:Evil1 a go:Substance ;
+    rdfs:label "Evil" .
+
+ex:Utterance1 go:denotes ex:EvilExecutionEvent1 .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/400#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/400-5> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Deity ;
+    rdfs:label "God Almighty" .
+
+ex:God_speaking_event a go:SpeechEvent ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Speech_Content_Woe_to_Whoever .
+
+ex:Speech_Content_Woe_to_Whoever a go:SpeechContent ;
+    rdfs:label "Woe to whoever says: 'How is this?' and 'How is that?'" ;
+    go:HasTheme ex:Warning_to_Whoever .
+
+ex:Warning_to_Whoever a go:WarningEvent ;
+    go:HasRecipient ex:Whoever_Says_How_Questions .
+
+ex:Whoever_Says_How_Questions a go:AgentClass ;
+    rdfs:label "Whoever says 'How is this?' and 'How is that?'" ;
+    go:PerformsEvent ex:Saying_How_This_Questions .
+
+ex:Saying_How_This_Questions a go:SpeechEvent ;
+    go:HasAgent ex:Whoever_Says_How_Questions ;
+    go:HasTheme ex:Question_How_This , ex:Question_How_That .
+
+ex:Question_How_This a go:Utterance ;
+    rdfs:label "How is this?" .
+
+ex:Question_How_That a go:Utterance ;
+    rdfs:label "How is that?" .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/400#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/400-6> rdf:type owl:Ontology .
+
+ex:Younes a go:Person ;
+    rdfs:label "Younes" .
+
+ex:SpeechEvent1 a go:CommunicationEvent ;
+    go:HasAgent ex:Younes ;
+    go:HasTheme ex:Proposition1 .
+
+ex:Matter1 a go:AbstractEntity ;
+    rdfs:label "this matter" .
+
+ex:DenialEvent1 a go:Event ;
+    go:HasAgent ex:Denier ;
+    go:HasTheme ex:Matter1 .
+
+ex:IgnoranceState1 a go:State ;
+    go:HasHolder ex:Denier ;
+    go:CausedBy ex:DenialEvent1 .
+
+ex:Proposition1 a go:Proposition ;
+    go:expresses ex:ConditionalRelationship1 .
+
+ex:ConditionalRelationship1 a go:Conditional ;
+    go:hasIf ex:DenialEvent1 ;
+    go:hasThen ex:IgnoranceState1 .
+
+# Note: ex:Denier is a variable or generic agent representing "whoever" in the proposition.
+go:Event rdfs:label "رخداد"@fa.

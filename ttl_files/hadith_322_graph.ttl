@@ -1,0 +1,66 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/322#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/322-1> rdf:type owl:Ontology .
+
+ex:AskingEvent1 a go:Event ;
+    go:HasAgent ex:Speaker ;
+    go:HasRecipient ex:AbaAbdullah_PeaceBeUponHim ;
+    go:HasTheme ex:MeaningOfDivinePhrase1 .
+
+ex:Speaker a go:Person .
+ex:AbaAbdullah_PeaceBeUponHim a go:Person ;
+    go:HasHonorific "peace be upon him" .
+ex:MeaningOfDivinePhrase1 a go:Concept ;
+    go:refersToPhrase "سبحان الله" ;
+    go:MeaningRelatedTo ex:God .
+ex:God a go:DivineBeing .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/322#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/322-2> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person ;
+    rdfs:label "Abu Abdullah" .
+
+ex:Tasneeh_Allah a go:Concept ;
+    rdfs:label "Tasneeh Allah (تعظيم الله عز وجل)" .
+
+ex:Subhan_Allah a go:Concept ;
+    rdfs:label "Subhan Allah (سبحان الله)" .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:MeaningStatement1 .
+
+ex:MeaningStatement1 a go:Statement ;
+    rdfs:label "'Tasneeh Allah, the Almighty and Glorious' means 'Subhan Allah'" ;
+    ex:explains ex:Tasneeh_Allah, ex:Subhan_Allah ;
+    ex:hasMeaningRelation [
+        a ex:MeaningRelation ;
+        ex:source ex:Tasneeh_Allah ;
+        ex:target ex:Subhan_Allah ;
+        rdfs:label "means"
+    ] .

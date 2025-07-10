@@ -1,0 +1,64 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/286#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/286-1> rdf:type owl:Ontology .
+
+ex:writing1 a go:Event , ex:WritingEvent ;
+    go:HasAgent ex:person1 ;
+    go:HasRecipient ex:abu_alhasan ;
+    go:HasPurpose ex:asking1 .
+
+ex:asking1 a go:Event , ex:AskingEvent ;
+    go:HasAgent ex:abu_alhasan ;
+    go:HasTheme ex:body , ex:form .
+
+ex:person1 a go:Person ;
+    go:Name "الشخص" .
+
+ex:abu_alhasan a go:Person ;
+    go:Name "أبي الحسن عليه السلام" .
+
+ex:body a go:Substance ;
+    go:Name "الجسم" .
+
+ex:form a go:Substance ;
+    go:Name "الصورة" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/286#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/286-2> rdf:type owl:Ontology .
+
+ex:event1 a go:Event, go:SpeechAct ;
+    go:HasAgent ex:Abu_al_Hasan ;
+    go:Utterance "Glory be to the One for whom there is nothing like Him, no body and no form." .
+
+ex:Abu_al_Hasan a go:Person ;
+    go:name "Abu al-Hasan (peace be upon him)" .
+
+ex:The_One a go:Substance ;
+    go:description "The unique being for whom there is nothing like Him, no body and no form." .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

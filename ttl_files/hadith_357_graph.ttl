@@ -1,0 +1,55 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/357#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/357-1> rdf:type owl:Ontology .
+
+ex:PerishEvent a go:Event .
+
+ex:Everything a go:entity .
+ex:FaceOfGod a go:entity .
+ex:God a go:entity .
+
+ex:FaceOfGod go:isPartOf ex:God .
+
+ex:PerishEvent go:HasTheme ex:Everything .
+
+# Exception: FaceOfGod does not perish
+# This can be modeled by stating that FaceOfGod is not a theme of PerishEvent.
+
+# Alternatively, we can define that FaceOfGod is exempt from perish state
+
+ex:FaceOfGod ex:isImmortal true .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/357#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/357-2> rdf:type owl:Ontology .
+
+ex:GivingEvent a go:Event ;
+    go:HasAgent ex:God .
+
+ex:God a go:Agent , go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

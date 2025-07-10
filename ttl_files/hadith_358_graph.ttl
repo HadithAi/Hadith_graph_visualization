@@ -1,0 +1,101 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/358#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/358-1> rdf:type owl:Ontology .
+
+ex:PerishableState a go:State ;
+    go:HasTheme ex:Everything .
+
+ex:Everything a go:PhysicalEntity .
+
+ex:GodAlmighty a go:Deity ;
+    rdfs:label "Allah Almighty"@en .
+
+ex:FaceOfGod a go:PhysicalEntity ;
+    go:partOf ex:GodAlmighty ;
+    rdfs:label "Face of God"@en .
+
+# Exception statement: Everything is perishable except the Face of God
+ex:PerishableState ex:Excepts ex:FaceOfGod .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/358#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/358-2> rdf:type owl:Ontology .
+
+ex:ComeToGodEvent1 a go:Event ;
+    go:HasAgent ex:Agent1 ;
+    go:HasTheme ex:ObedienceToMuhammad ;
+    go:HasRecipient go:God .
+
+ex:Agent1 a go:Agent ;
+    ex:hasCharacteristic ex:ImmortalFace .
+
+ex:ObedienceToMuhammad a go:Action ;
+    ex:commandedBy ex:Muhammad .
+
+ex:Muhammad a go:Agent .
+
+go:God a go:Agent .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/358#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/358-3> rdf:type owl:Ontology .
+
+ex:Messenger a go:Agent ;
+    rdfs:label "Messenger"@en .
+
+ex:Allah a go:Agent ;
+    rdfs:label "Allah"@en .
+
+ex:ObeyMessenger a go:Obedience ;
+    go:HasAgent ex:AnyPerson ;
+    go:HasTheme ex:Messenger .
+
+ex:ObeyAllah a go:Obedience ;
+    go:HasAgent ex:AnyPerson ;
+    go:HasTheme ex:Allah .
+
+# Logical implication node
+_:implicationNode a go:LogicalRelation ;
+    go:implies [
+        a go:Condition ;
+        go:hasEvent ex:ObeyMessenger
+    ] ;
+    go:resultsIn [
+        a go:Condition ;
+        go:hasEvent ex:ObeyAllah
+    ] .
+go:Agent rdfs:label "عامل"@fa.

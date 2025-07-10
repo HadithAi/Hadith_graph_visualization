@@ -1,0 +1,158 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/403#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/403-1> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+  go:hasAttribute ex:TooMighty .
+
+ex:Servants a go:Substance .
+
+ex:Matter a go:Substance .
+
+ex:DelegationEvent a go:Event ;
+  go:HasAgent ex:God ;
+  go:HasTheme ex:Matter ;
+  go:HasRecipient ex:Servants .
+
+# Statement that God is too mighty to delegate the matter to servants
+ex:God go:cannotDelegate ex:DelegationEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/403#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/403-2> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:hasAttribute go:Justice , go:Wisdom .
+
+ex:People a go:Person .
+
+ex:Sins a go:Sin .
+
+ex:CompelEvent a go:Event ;
+    go:HasTheme ex:People ;
+    go:HasGoal ex:Sins .
+
+# Statement that God is more just and wise than the event of compelling people to sins
+ex:Comparison a go:Comparison ;
+    go:Comparator ex:God ;
+    go:ComparedTo ex:CompelEvent ;
+    go:ComparisonAttribute go:Justice , go:Wisdom ;
+    go:ComparisonDirection "more" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/403#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/403-3> rdf:type owl:Ontology .
+
+ex:God a go:Agent ;
+    rdfs:label "God" .
+
+ex:SonOfAdam a go:Agent ;
+    rdfs:label "son of Adam" .
+
+ex:goodDeeds a go:Substance ;
+    rdfs:label "good deeds" .
+
+ex:SpeechEvent1 a go:SpeechAct, ex:eventInstance ;
+    go:HasAgent ex:God ;
+    go:HasRecipient ex:SonOfAdam ;
+    go:HasTheme ex:DeservingnessStatement .
+
+ex:DeservingnessStatement a go:Claim ;
+    rdfs:label "God is more deserving of your good deeds than you are" ;
+    go:about ex:goodDeeds ;
+    go:HasSubject ex:God ;
+    go:HasComparativeEntity ex:SonOfAdam .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/403#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/403-4> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:hasAgent ex:Allah ;
+    go:hasRecipient ex:SonOfAdam ;
+    go:hasTheme "You are more deserving of your misdeeds than Me." .
+
+ex:Allah a go:Person .
+ex:SonOfAdam a go:Person .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/403#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/403-5> rdf:type owl:Ontology .
+
+ex:event1 a go:speechEvent ;
+  go:HasAgent ex:God ;
+  go:HasRecipient ex:SonOfAdam ;
+  go:HasTheme ex:event2 .
+
+ex:event2 a go:sinCommittedEvent ;
+  go:HasAgent ex:God ;
+  go:HasInstrument ex:powerInSonOfAdam .
+
+ex:God a go:Agent ;
+  rdfs:label "God"^^xsd:string .
+
+ex:SonOfAdam a go:Agent ;
+  rdfs:label "SonOfAdam"^^xsd:string .
+
+ex:powerInSonOfAdam a go:Substance ;
+  go:relationshipTo ex:SonOfAdam ;
+  go:description "power given to SonOfAdam"^^xsd:string .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

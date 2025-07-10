@@ -1,0 +1,61 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/347#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/347-1> rdf:type owl:Ontology .
+
+# Entities
+ex:SpiritOfGod a go:Spirit, go:Substance ;
+    go:derivedFrom ex:God .
+
+ex:God a go:Deity .
+
+# Event: Creation of the Spirit
+ex:CreationEvent1 a go:Event, go:Creation ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:SpiritOfGod .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/347#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/347-2> rdf:type owl:Ontology .
+
+ex:creationEvent1 a go:Event , ex:Creation ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Spirit_of_God ;
+    go:HasRecipient ex:Adam , ex:Jesus .
+
+ex:God a go:Substance ;
+    rdfs:label "God" .
+
+ex:Spirit_of_God a go:Substance ;
+    rdfs:label "Spirit of God" .
+
+ex:Adam a go:Substance ;
+    rdfs:label "Adam" .
+
+ex:Jesus a go:Substance ;
+    rdfs:label "Jesus" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

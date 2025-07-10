@@ -1,0 +1,111 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/248#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/248-1> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Deity .
+ex:End_Times a go:TimeInterval .
+ex:Peoples_End_Times a go:Group ;
+    ex:hasCharacteristic ex:Deeply_Involved .
+
+ex:Deeply_Involved a go:State ;
+    go:HasTheme ex:End_Times .
+
+ex:Event_Knowing_EndTimes a go:Event ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Peoples_End_Times .
+go:Event rdfs:label "رخداد"@fa.
+go:Time rdfs:label "زمان"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/248#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/248-2> rdf:type owl:Ontology .
+
+ex:Event1 a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:DivineSaying1 .
+
+ex:God a go:Substance ;
+    go:Name "God" .
+
+ex:DivineSaying1 a go:statement ;
+    go:Text "Say, He is God, the One." .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/248#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/248-3> rdf:type owl:Ontology .
+
+ex:RevelationEvent1 a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Verses_Surah_AlHadid .
+
+ex:God a go:Substance .
+
+ex:Verses_Surah_AlHadid a go:Substance ;
+    ex:fromSurah "Al-Hadid" ;
+    ex:containsQuote "وهو عليمٌ بذات الصدور" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/248#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/248-4> rdf:type owl:Ontology .
+
+ex:SeekingBeyondVerses a go:Event ;
+    go:HasAgent ex:Seeker ;
+    go:HasTheme ex:QuranicVerses_SurahAlHadid_To_KnowingOfInnermostHearts ;
+    go:HasConsequence ex:Perished .
+
+ex:Seeker a go:agent ;
+    rdfs:label "Whoever seeks beyond the verses" .
+
+ex:QuranicVerses_SurahAlHadid_To_KnowingOfInnermostHearts a go:Information ;
+    rdfs:label "Verses from Surah Al-Hadid to 'And He is Knowing of the innermost hearts'" .
+
+ex:Perished a go:Event ;
+    rdfs:label "Perished due to seeking beyond the verses" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.

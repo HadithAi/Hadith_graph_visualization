@@ -1,0 +1,74 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/402#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/402-1> rdf:type owl:Ontology .
+
+# Entities
+ex:Agent a go:Person .
+ex:God a go:Deity .
+ex:Immorality a go:Concept ;
+    rdfs:label "immorality"@en .
+
+# Event of claim
+ex:ClaimEvent a go:Event ;
+    go:HasAgent ex:Agent ;
+    go:HasTheme ex:God ;
+    ex:claimsPredicate ex:CommandsImmorality .
+
+ex:CommandsImmorality a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Immorality ;
+    rdfs:label "God commands immorality (claimed)"@en .
+
+# Event of lying
+ex:LyingEvent a go:Event ;
+    go:HasAgent ex:Agent ;
+    go:HasRecipient ex:God ;
+    rdfs:label "agent lies to God"@en .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/402#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/402-2> rdf:type owl:Ontology .
+
+# Entities
+ex:Good rdf:type go:Concept .
+ex:Evil rdf:type go:Concept .
+ex:God rdf:type go:Deity .
+ex:Claimant rdf:type go:Person .
+
+# Events
+ex:EventInstance_Claim rdf:type go:Event .
+ex:EventInstance_Claim go:HasAgent ex:Claimant .
+ex:EventInstance_Claim go:HasTheme ex:Good .
+ex:EventInstance_Claim go:HasTheme ex:Evil .
+
+ex:EventInstance_Lie rdf:type go:Event .
+ex:EventInstance_Lie go:HasAgent ex:Claimant .
+ex:EventInstance_Lie go:HasTheme ex:LieAct .
+ex:EventInstance_Lie go:HasDestination ex:God .
+
+# Additional concept for lying
+ex:LieAct rdf:type go:Concept .
+go:Event rdfs:label "رخداد"@fa.

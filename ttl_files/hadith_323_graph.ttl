@@ -1,0 +1,71 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/323#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/323-1> rdf:type owl:Ontology .
+
+ex:AlWahid a go:Concept ;
+    go:hasAttribute ex:Oneness .
+
+ex:Oneness a go:Attribute .
+
+ex:consensusEvent a go:Event ;
+    go:HasAgent ex:Tongues ;
+    go:HasTheme ex:Oneness .
+
+ex:Tongues a go:Agent .
+
+ex:AlWahid go:isDescribedBy ex:consensusEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/323#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/323-2> rdf:type owl:Ontology .
+
+ex:askingEvent a go:Event ;
+    go:HasAgent ex:questioner ;
+    go:HasTheme ex:them ;
+    go:HasContent "Who created them?" .
+
+ex:sayingEvent a go:Event ;
+    go:HasAgent ex:them ;
+    go:HasTheme ex:sayingContent .
+
+ex:sayingContent a go:concept ;
+    go:refersTo ex:God .
+
+ex:God a go:agent ;
+    rdfs:label "Allah" .
+
+ex:them a go:agentGrp ;
+    rdfs:label "People" .
+
+ex:creatorRelation a go:relationship ;
+    go:relates ex:God , ex:them ;
+    go:relationType go:creator .
+
+ex:theOneConcept a go:concept ;
+    go:hasMeaning "الْوَاحِد" ;
+    go:explainedBy ex:God .
+go:Event rdfs:label "رخداد"@fa.

@@ -1,0 +1,25 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/326#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/326-1> rdf:type owl:Ontology .
+
+ex:naming_event_1 a go:namingEvent ;
+    go:HasTheme ex:description_1 ;
+    go:HasAgent ex:entity_As_Samad .
+
+ex:description_1 a go:description ;
+    go:hasText "the one to whom refuge is sought in little and much" .
+
+ex:entity_As_Samad a go:Human ;
+    rdfs:label "As-Samad" .

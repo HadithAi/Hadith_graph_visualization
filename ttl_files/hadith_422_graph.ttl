@@ -1,0 +1,57 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/422#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/422-1> rdf:type owl:Ontology .
+
+ex:Sentence1 a ex:SpeechEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Quotation1 .
+
+ex:God a go:Deity .
+
+ex:Quotation1 a ex:Statement ;
+    ex:containsEvent ex:GuidanceEvent1 .
+
+ex:GuidanceEvent1 a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Person1 ;
+    go:HasGoal ex:TwoPaths .
+
+ex:Person1 a go:Person .
+ex:TwoPaths a ex:Path .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/422#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/422-2> rdf:type owl:Ontology .
+
+ex:An_Najdan a go:Collection ;
+    rdfs:label "An-Najdan"@en ;
+    go:hasPart ex:Najd_al_Khayr , ex:Najd_al_Shar .
+
+ex:Najd_al_Khayr a go:Place ;
+    rdfs:label "Najd al-Khayr"@en .
+
+ex:Najd_al_Shar a go:Place ;
+    rdfs:label "Najd al-Shar"@en .

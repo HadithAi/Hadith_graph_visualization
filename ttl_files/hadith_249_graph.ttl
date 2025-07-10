@@ -1,0 +1,101 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/249#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/249-1> rdf:type owl:Ontology .
+
+ex:Event1 a go:Event ;
+    a go:ReadEvent ;
+    go:HasAgent ex:AnyPerson ;
+    go:HasTheme ex:Verse_Qul_Huwa_Allah_Ahad .
+
+ex:Event2 a go:Event ;
+    a go:BelieveEvent ;
+    go:HasAgent ex:AnyPerson ;
+    go:HasTheme ex:Verse_Qul_Huwa_Allah_Ahad .
+
+ex:State1 a go:State ;
+    go:HasAgent ex:AnyPerson ;
+    go:HasTheme ex:Monotheism ;
+    go:ResultOf ex:Event2 .
+
+ex:AnyPerson a go:Agent ;
+    rdf:type go:Human .
+
+ex:Verse_Qul_Huwa_Allah_Ahad a go:Substance ;
+    rdf:type go:Text ;
+    rdfs:label "قل هو الله أحد" .
+
+ex:Monotheism a go:Concept ;
+    rdfs:label "التوحيد" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/249#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/249-2> rdf:type owl:Ontology .
+
+ex:RecitationEvent1 a go:Event ;
+    go:HasTheme ex:QuranVerse_SayHeIsAllahOne ;
+    go:HasAgent ex:People ;
+    rdfs:label "Recitation of 'Say, He is Allah, [Who is] One' as done by people" .
+
+ex:QuranVerse_SayHeIsAllahOne a go:Substance ;
+    rdfs:label "Quran verse 'Say, He is Allah, [Who is] One'" .
+
+ex:People a go:Agent ;
+    rdfs:label "People" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/249#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/249-3> rdf:type owl:Ontology .
+
+ex:RecitationIncreaseEvent1 a go:Event , ex:RecitationIncreaseEvent ;
+    go:hasTheme ex:PhraseLikewiseGodMyLord ;
+    ex:hasContext ex:VerseQulHuwaAllahAhad ;
+    ex:hasModality ex:ModalityNecessity .
+
+ex:PhraseLikewiseGodMyLord a go:Substance ;
+    go:denotedBy "Likewise, God is my Lord, likewise, God is my Lord" .
+
+ex:VerseQulHuwaAllahAhad a go:Substance ;
+    go:denotedBy "Say, He is God, [who is] One" .
+
+ex:ModalityNecessity a ex:Modality ;
+    ex:modalityType "Should/Required" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

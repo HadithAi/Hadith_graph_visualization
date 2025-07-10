@@ -1,0 +1,239 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-1> rdf:type owl:Ontology .
+
+ex:Ayah1 a go:Substance ;
+    go:hasPart ex:Quote1 ;
+    ex:isPartOf ex:Quran .
+
+ex:Quran a go:Substance .
+
+ex:Quote1 a ex:eventInstance ;
+    ex:content "وهو الذي في السماء إله وفي الأرض إله" ;
+    ex:HasAgent ex:God ;
+    ex:location ex:Sky, ex:Earth ;
+    ex:describes ex:God .
+
+ex:God a go:agent .
+
+ex:Sky a go:location .
+
+ex:Earth a go:location .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-2> rdf:type owl:Ontology .
+
+ex:Statement1 a ex:Statement ;
+    ex:quotedContent "He is God in the heaven and God on the earth" .
+
+ex:HereticalSpeech1 a ex:HereticalSpeech, go:badQuality ;
+    ex:hasSubject ex:Statement1 ;
+    rdfs:label "foul heretical speech" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-3> rdf:type owl:Ontology .
+
+ex:Human a go:Human .
+ex:Speaker a go:Person .
+ex:Verse a go:Text .
+ex:Kufa a go:Place ;
+    go:name "Kufa" .
+
+ex:ReturningEvent a go:Event ;
+    go:HasAgent ex:Human ;
+    go:HasTheme ex:Speaker ;
+    go:EventType go:Returning .
+
+ex:AskingEvent a go:Event ;
+    go:HasAgent ex:Human ;
+    go:HasRecipient ex:Speaker ;
+    go:HasTheme ex:NameInKufa ;
+    go:EventType go:Asking .
+
+ex:NameInKufa a go:Substance ;
+    go:Description "Name of the speaker in Kufa" ;
+    go:LocatedIn ex:Kufa .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-4> rdf:type owl:Ontology .
+
+ex:AskingEvent a go:Event ;
+    go:HasAgent ex:You ;
+    go:HasTheme ex:Speaker ;
+    ex:askedProperty ex:Name ;
+    ex:location ex:Kufa .
+
+ex:AnsweringEvent a go:Event ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme "فلان"^^xsd:string ;
+    ex:answersTo ex:AskingEvent .
+
+ex:Speaker a go:Person .
+ex:You a go:Person .
+ex:Kufa a go:Place .
+ex:Name a go:Property .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-5> rdf:type owl:Ontology .
+
+ex:eventAsk a go:Event ;
+  go:HasAgent ex:Person_You ;
+  go:HasTheme ex:Person_Speaker ;
+  go:HasLocation ex:Place_Basra .
+
+ex:eventSay a go:Event ;
+  go:HasAgent ex:Person_Speaker ;
+  go:HasTheme ex:Name_SoAndSo ;
+  go:isSubEventOf ex:eventInteraction .
+
+ex:Person_You a go:Person ;
+  go:label "You" .
+
+ex:Person_Speaker a go:Person ;
+  go:label "Speaker" .
+
+ex:Place_Basra a go:Place ;
+  go:label "Basra" .
+
+ex:Name_SoAndSo a go:Name ;
+  go:label "so-and-so" .
+
+ex:eventInteraction a go:Event .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-6> rdf:type owl:Ontology .
+
+ex:sayingEvent a go:Event ;
+    go:HasAgent ex:You ;
+    go:HasRecipient ex:Speaker ;
+    go:HasTheme ex:GodAsDeityStatement .
+
+ex:You a go:Person .
+ex:Speaker a go:Person .
+
+ex:God a go:Deity ;
+    go:ExistsIn ex:Sky, ex:Earth, ex:Seas, ex:Deserts, ex:EveryPlace .
+
+ex:Sky a go:Location .
+ex:Earth a go:Location .
+ex:Seas a go:Location .
+ex:Deserts a go:Location .
+ex:EveryPlace a go:Location .
+
+ex:GodAsDeityStatement a go:Statement ;
+    go:About ex:God ;
+    go:HasProperty ex:DeityInSky, ex:DeityOnEarth, ex:DeityInSeas, ex:DeityInDeserts, ex:DeityEverywhere .
+
+ex:DeityInSky a go:Property ;
+    go:PropertyValue "God is Lord in the sky" .
+
+ex:DeityOnEarth a go:Property ;
+    go:PropertyValue "God is Lord on the earth" .
+
+ex:DeityInSeas a go:Property ;
+    go:PropertyValue "God is Lord in the seas" .
+
+ex:DeityInDeserts a go:Property ;
+    go:PropertyValue "God is Lord in the deserts" .
+
+ex:DeityEverywhere a go:Property ;
+    go:PropertyValue "God is Lord in every place" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/338-7> rdf:type owl:Ontology .
+
+ex:TransmissionEvent1 a go:Event ;
+    go:HasTheme ex:Sayings1 ;
+    go:HasSource ex:HejazRegion .
+
+ex:Sayings1 a go:Substance ;
+    rdfs:label "Sayings"@en .
+
+ex:HejazRegion a go:Place ;
+    rdfs:label "Hejaz"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

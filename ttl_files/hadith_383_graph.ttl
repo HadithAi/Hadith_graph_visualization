@@ -1,0 +1,59 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/383#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/383-1> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:Alcohol a go:Substance ;
+    rdfs:label "Alcohol" .
+
+ex:Prophet a go:Person ;
+    rdfs:label "Prophet" .
+
+ex:SendProphet a go:Event ;
+    rdfs:label "Sending a prophet" ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Prophet .
+
+ex:ProhibitAlcohol a go:Event ;
+    rdfs:label "Prohibition of alcohol" ;
+    go:HasTheme ex:Alcohol .
+
+# Universal relation indicating that for every instance of sending a prophet by God, there is a related prohibition of alcohol
+ex:SendProphet ex:leadsTo ex:ProhibitAlcohol .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/383#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/383-2> rdf:type owl:Ontology .
+
+ex:God rdf:type ex:Deity .
+ex:Beginning rdf:type ex:Event .
+
+ex:BlessingEvent1 rdf:type ex:Blessing ;
+  go:HasAgent ex:God ;
+  go:HasTheme ex:Beginning .

@@ -1,0 +1,91 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/360#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/360-1> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:TheMostBeautifulNames .
+
+ex:God a go:deity .
+ex:TheMostBeautifulNames a go:entity .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/360#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/360-2> rdf:type owl:Ontology .
+
+ex:CallUponEvent_1 a go:CallUponEvent ;
+    go:HasAgent ex:Servants ;
+    go:HasTheme ex:God ;
+    go:HasManner ex:BestNames .
+
+ex:Servants a go:Agent .
+
+ex:God a go:Deity .
+
+ex:BestNames a go:Name .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/360#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/360-3> rdf:type owl:Ontology .
+
+# Entities
+ex:God a go:agent ;
+    rdfs:label "God"@en .
+
+ex:Servants a go:agent ;
+    rdfs:label "Servants"@en .
+
+ex:BeautifulNames a go:Substance ;
+    rdfs:label "Beautiful Names"@en .
+
+# Event instance of a deed
+ex:Deed1 a go:Event ;
+    rdfs:label "Deed performed by Servants"@en ;
+    go:HasAgent ex:Servants .
+
+# Statement: God does not accept deeds except via knowledge of Beautiful Names
+ex:AcceptanceCondition a go:state ;
+    rdfs:label "Acceptance of deeds by God only through knowledge of Beautiful Names"@en ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Deed1 ;
+    go:HasCause ex:KnowledgeOfBeautifulNames .
+
+ex:KnowledgeOfBeautifulNames a go:state ;
+    rdfs:label "Knowledge of the Beautiful Names"@en ;
+    go:HasTheme ex:BeautifulNames .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

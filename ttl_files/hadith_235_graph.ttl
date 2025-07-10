@@ -1,0 +1,251 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-1> rdf:type owl:Ontology .
+
+ex:Abdullah rdf:type go:Person .
+ex:Delusion rdf:type go:State .
+ex:DisbeliefEvent rdf:type go:EventInstance ;
+    go:instanceOf ex:Kufr ;
+    go:HasAgent ex:Abdullah ;
+    go:HasCause ex:Delusion .
+
+ex:Kufr rdf:type go:EventClass .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-2> rdf:type owl:Ontology .
+
+ex:Person1 a go:Agent .
+ex:AbdName a go:Substance ;
+    go:hasLabel "'Abd" .
+
+ex:DenialEvent1 a go:Event ;
+    go:HasAgent ex:Person1 ;
+    go:HasTheme ex:MeaningOfAbd .
+
+ex:DisbeliefEvent1 a go:Event ;
+    go:HasAgent ex:Person1 ;
+    go:causedBy ex:DenialEvent1 .
+
+ex:MeaningOfAbd a go:concept .
+
+# Statement: If a person denies the meaning of 'Abd but keeps its name, then that person is involved in DisbeliefEvent.
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-3> rdf:type owl:Ontology .
+
+ex:Abd a go:Concept ;
+    rdfs:label "Abd" ;
+    go:hasMeaning "servant or slave" ;
+    go:associatedWith ex:Shirk .
+
+ex:Shirk a go:Event ;
+    rdfs:label "Polytheism (shirk)" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-4> rdf:type owl:Ontology .
+
+# Entities
+ex:Abd_al_Ma'na a go:Person ;
+    rdfs:label "Abd al-Ma'na" .
+
+ex:Others a go:Agent .
+
+ex:Heart_Abd_al_Ma'na a go:Organ ;
+    go:isPartOf ex:Abd_al_Ma'na .
+
+ex:Names a go:Substance ;
+    go:hasAttributes "attributes described by Abd al-Ma'na about himself" .
+
+# Event: Imposing names
+ex:ImposingNamesEvent a go:Event ;
+    go:HasAgent ex:Others ;
+    go:HasTheme ex:Names ;
+    go:HasRecipient ex:Abd_al_Ma'na .
+
+# State: Heart bound
+ex:HeartBoundState a go:Event ;
+    go:HasTheme ex:Heart_Abd_al_Ma'na ;
+    go:Cause ex:ImposingNamesEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-5> rdf:type owl:Ontology .
+
+ex:AbdulMaana a go:Person .
+ex:Names a go:Substance .
+ex:Attributes a go:Attribute .
+
+# Event 1: Attribution of names to AbdulMaana by an implicit agent
+ex:AttributionEvent1 a ex:AttributionEvent ;
+    go:HasAgent ex:GeneralAgent ;
+    go:HasTheme ex:Names ;
+    ex:HasRecipient ex:AbdulMaana ;
+    ex:HasCause ex:Attributes .
+
+# Event 2: Pronouncement of these names by AbdulMaana's tongue in secrets and openness
+ex:PronouncementEvent1 a ex:PronouncementEvent ;
+    go:HasAgent ex:AbdulMaanaTongue ;
+    go:HasTheme ex:Names ;
+    ex:InSecret "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
+    ex:InOpen "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+# Linking the tongue to AbdulMaana
+ex:AbdulMaanaTongue a go:BodyPart ;
+    ex:PartOf ex:AbdulMaana .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-6> rdf:type owl:Ontology .
+
+ex:CommanderOfFaithful a go:Person ;
+    rdfs:label "Commander of the Faithful" .
+
+ex:CompanionsOfCommanderOfFaithful a go:Group ;
+    rdfs:label "Companions of the Commander of the Faithful" ;
+    go:HasRelationTo ex:CommanderOfFaithful .
+
+ex:Meaning a go:Substance ;
+    rdfs:label "Meaning" .
+
+ex:Names a go:Concept ;
+    rdfs:label "Names" .
+
+ex:Attributes a go:Concept ;
+    rdfs:label "Attributes" .
+
+ex:WorshipEvent a go:Event ;
+    rdfs:label "Worshiping the Meaning" ;
+    go:HasAgent ex:CompanionsOfCommanderOfFaithful ;
+    go:HasTheme ex:Meaning ;
+    go:HasInstrument ex:AttributingNamesPerAttributes .
+
+ex:AttributingNamesPerAttributes a go:Event ;
+    rdfs:label "Attributing names according to attributes" ;
+    go:HasTheme ex:Meaning ;
+    go:HasInstrument ex:Names, ex:Attributes .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-7> rdf:type owl:Ontology .
+
+ex:CommanderOfFaithful a go:Person ;
+    rdfs:label "Commander of the Faithful" .
+
+ex:Truth a go:Concept ;
+    rdfs:label "Truth" .
+
+ex:CompanionsOfCommanderOfFaithful a go:Group ;
+    rdfs:label "Companions of the Commander of the Faithful" ;
+    go:relatedTo ex:CommanderOfFaithful .
+
+ex:CompanionsOfTruth a go:Group ;
+    rdfs:label "Companions of Truth" ;
+    go:relatedTo ex:Truth .
+
+ex:CompanionsOfCommanderOfFaithful owl:equivalentClass ex:CompanionsOfTruth .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-8> rdf:type owl:Ontology .
+
+ex:TrueBelievers a go:Person ;
+    ex:isTrue true .
+
+ex:These a go:Group ;
+    ex:identifiesTo ex:TrueBelievers .

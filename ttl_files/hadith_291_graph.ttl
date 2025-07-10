@@ -1,0 +1,301 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-1> rdf:type owl:Ontology .
+
+ex:event1 a go:ClaimEvent ;
+    go:HasAgent ex:Hisham_ibn_alHakam ;
+    go:HasTheme ex:God_Properties_Statement .
+
+ex:Hisham_ibn_alHakam a go:Person ;
+    rdfs:label "Hisham ibn al-Hakam" .
+
+ex:God a go:Deity ;
+    rdfs:label "Allah" ;
+    go:hasAttribute ex:GodBody, ex:GodUnique, ex:GodKnowledgeable, ex:GodHearing, ex:GodSeeing, ex:GodPowerful, ex:GodSpeaking, ex:GodArticulate .
+
+ex:GodBody a go:Body .
+ex:GodUnique a go:NotLikeAnyThing .
+ex:GodKnowledgeable a go:Knowledgeable .
+ex:GodHearing a go:Hearing .
+ex:GodSeeing a go:Seeing .
+ex:GodPowerful a go:Powerful .
+ex:GodSpeaking a go:Speaking .
+ex:GodArticulate a go:Articulate .
+
+ex:God_Properties_Statement a go:Statement ;
+    go:refersTo ex:God ;
+    go:asserts (ex:GodBody ex:GodUnique ex:GodKnowledgeable ex:GodHearing ex:GodSeeing ex:GodPowerful ex:GodSpeaking ex:GodArticulate) .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-2> rdf:type owl:Ontology .
+
+# Entity: Hisham ibn al-Hakam
+ex:Hisham_ibn_al_Hakam a go:Agent ;
+    rdfs:label "Hisham ibn al-Hakam" .
+
+# Entities: speech, power, knowledge
+ex:speech a go:Substance ;
+    rdfs:label "speech" .
+ex:power a go:Substance ;
+    rdfs:label "power" .
+ex:knowledge a go:Substance ;
+    rdfs:label "knowledge" .
+
+# Event: claim
+ex:claim1 a go:Event ;
+    go:hasAgent ex:Hisham_ibn_al_Hakam ;
+    go:hasTheme ex:claimContent1 .
+
+# Claim content: the equivalence of speech, power and knowledge in their path
+ex:claimContent1 a go:ConceptualContent ;
+    go:expressesRelation ex:speechPowerKnowledgeEquivalence .
+
+# Relation expressing 'following the same course'
+ex:speechPowerKnowledgeEquivalence a go:Relation ;
+    go:hasParticipant ex:speech , ex:power , ex:knowledge ;
+    go:relationType ex:sameCourse .
+
+# Define relationType sameCourse
+ex:sameCourse a go:RelationType ;
+    go:hasMeaning "follow the same course" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-3> rdf:type owl:Ontology .
+
+ex:Hisham_ibn_al_Hakam a go:Person ;
+    rdfs:label "Hisham ibn al-Hakam" .
+
+ex:Claim1 a go:Claim ;
+    go:HasAgent ex:Hisham_ibn_al_Hakam ;
+    go:HasTheme ex:ClaimContent1 .
+
+ex:Speech a go:Substance ;
+    rdfs:label "speech" .
+
+ex:Power a go:Substance ;
+    rdfs:label "power" .
+
+ex:Knowledge a go:Substance ;
+    rdfs:label "knowledge" .
+
+ex:ClaimContent1 a go:Proposition ;
+    go:propositionText "Nothing of speech, power, and knowledge is created." ;
+    go:assertionNegation true ;
+    go:concerns ex:Speech, ex:Power, ex:Knowledge .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-4> rdf:type owl:Ontology .
+
+ex:Hisham_ibn_al_Hakam a go:Person .
+ex:Allah a go:Deity .
+
+event:KillingHisham a go:Event ;
+    go:HasAgent ex:Allah ;
+    go:HasTheme ex:Hisham_ibn_al_Hakam .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-5> rdf:type owl:Ontology .
+
+ex:Body a go:PhysicalObject ;
+    go:hasProperty ex:LimitedProperty .
+
+ex:LimitedProperty a go:Property ;
+    go:propertyValue "limited" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-6> rdf:type owl:Ontology .
+
+ex:speech rdf:type go:Substance ;
+          rdf:type ex:Speech .
+
+ex:speaker rdf:type go:agent ;
+           rdf:type ex:Speaker .
+
+ex:speech owl:disjointWith ex:speaker .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-7> rdf:type owl:Ontology .
+
+ex:God a go:Deity .
+ex:Body a go:PhysicalBody .
+ex:Image a go:Image .
+ex:Determination a go:Determination .
+
+ex:TranscendenceState a go:State ;
+    go:hasTheme ex:God ;
+    go:negationProperty ex:Body , ex:Image , ex:Determination .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-8> rdf:type owl:Ontology .
+
+# Define God as an entity
+ex:God rdf:type go:Agent ;
+       rdfs:label "God" .
+
+# Define Everything as all things (universe)
+ex:Everything rdf:type go:Substance .
+
+# Created entities are everything except God
+ex:CreatedEntities rdf:type go:Substance ;
+                   go:excluding ex:God .
+
+# Creation event
+ex:CreationEvent rdf:type go:Event ;
+                 go:HasTheme ex:CreatedEntities .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-9> rdf:type owl:Ontology .
+
+ex:CreationEvent1 a go:Event ;
+    go:HasTheme ex:Things ;
+    go:HasAgent ex:God ;
+    go:HasCause ex:GodWill, ex:GodDecree .
+
+ex:Things a go:Substance .
+ex:God a go:Agent .
+ex:GodWill a go:Will ;
+    go:HasMaster ex:God .
+ex:GodDecree a go:Decree ;
+    go:HasMaster ex:God .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-10> rdf:type owl:Ontology .
+
+ex:Things a go:Substance .
+ex:Speech a go:Event ;
+    rdfs:label "speech" .
+ex:Hesitation a go:Event ;
+    rdfs:label "hesitation in soul" .
+ex:Utterance a go:Event ;
+    rdfs:label "utterance by tongue" .
+
+# Statement that things do NOT come into being via those processes
+ex:ExistenceCause a go:NegativeRelation ;
+    go:Subject ex:Things ;
+    go:Object ex:Speech , ex:Hesitation , ex:Utterance ;
+    rdfs:comment "Things do not exist through speech, hesitation in soul, or utterance by tongue." .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

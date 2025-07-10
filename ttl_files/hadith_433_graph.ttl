@@ -1,0 +1,109 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/433#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/433-1> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:name "God" .
+
+ex:Servant a go:Person ;
+    go:name "Servant" .
+
+ex:Angel a go:Spirit ;
+    go:name "Angel" .
+
+ex:DesireGoodFor a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Servant ;
+    go:description "God desires good for a servant" .
+
+ex:CommandAngel a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Angel ;
+    go:causes ex:AngelSeizingServant ;
+    go:description "God commands an angel" .
+
+ex:AngelSeizingServant a go:Event ;
+    go:HasAgent ex:Angel ;
+    go:HasTheme ex:Servant ;
+    go:description "Angel seizes servant by the neck" .
+
+ex:SeizureLocation a go:Location ;
+    go:name "neck" .
+
+ex:AngelSeizingServant go:HasLocation ex:SeizureLocation .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/433#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/433-2> rdf:type owl:Ontology .
+
+ex:King a go:Person ;
+    go:label "king" .
+
+ex:Slave a go:Person ;
+    go:label "slave" .
+
+ex:TakingSweatEvent a go:Event ;
+    go:HasAgent ex:King ;
+    go:HasTheme ex:SlaveSweat .
+
+ex:SlaveSweat a go:Substance ;
+    go:label "slave's sweat" .
+
+ex:ForcingEvent a go:Event ;
+    go:HasAgent ex:King ;
+    go:HasTheme ex:Slave ;
+    go:HasRecipient ex:Matter ;
+    go:hasModality "willingly or unwillingly" .
+
+ex:Matter a go:Object ;
+    go:label "this matter" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/433#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/433-3> rdf:type owl:Ontology .
+
+ex:InvitationEvent1 a go:Event ;
+    go:HasTheme ex:ThisMatter ;
+    go:HasRecipient ex:People ;
+    go:EventPolarity "Negative"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+ex:People a go:Agent .
+ex:ThisMatter a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

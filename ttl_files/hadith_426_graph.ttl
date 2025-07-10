@@ -1,0 +1,92 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/426#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/426-1> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+   rdfs:label "God" .
+
+ex:Creation a go:Substance ;
+   rdfs:label "Creation" .
+
+ex:KnowEvent a go:Event ;
+   rdfs:label "Knowing Event" ;
+   go:HasAgent ex:Creation ;
+   go:HasTheme ex:God .
+
+ex:NegativeAssertion a ex:Negation ;
+   ex:Negates ex:KnowEvent .
+
+# Asserts that it is negated that Creation knows God, corresponding to the sentence meaning.
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/426#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/426-2> rdf:type owl:Ontology .
+
+ex:DefiningEvent a go:EventInstance ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Them ;
+    go:HasRecipient ex:Creation .
+
+ex:God a go:Substance ;
+    rdfs:label "God"@en .
+
+ex:Them a go:Substance ;
+    rdfs:label "an unspecified group"@en .
+
+ex:Creation a go:Substance ;
+    rdfs:label "Creation"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/426#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/426-3> rdf:type owl:Ontology .
+
+ex:God a go:Substance .
+ex:Creation a go:Substance .
+ex:CommandAcceptance a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Creation ;
+    ex:predicate "accept" ;
+    ex:condition ex:GodKnowsCreation .
+
+ex:GodKnowsCreation a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Creation ;
+    ex:predicate "know" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

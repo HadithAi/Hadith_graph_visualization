@@ -1,0 +1,89 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/408#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/408-1> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Servants ;
+    go:Causes ex:Sins ;
+    go:hasPolarity "negative" .
+
+ex:God a go:Agent ;
+    rdfs:label "God" .
+
+ex:Servants a go:Theme ;
+    rdfs:label "Servants" .
+
+ex:Sins a go:Theme ;
+    rdfs:label "Sins" .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/408#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/408-2> rdf:type owl:Ontology .
+
+ex:DelegationEvent1 a go:Event , ex:DelegationEvent ;
+    ex:negation true ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:TheMatter ;
+    go:HasRecipient ex:Servants .
+
+ex:God a go:Substance ;
+    go:label "God"@en .
+
+ex:TheMatter a go:entity ;
+    go:label "The matter"@en .
+
+ex:Servants a go:Substance ;
+    go:label "The servants"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/408#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/408-3> rdf:type owl:Ontology .
+
+ex:Matter a go:Substance ;
+    ex:between ex:Predestination , ex:Delegation ;
+    ex:hasQuality ex:Kindness .
+
+ex:Kindness a go:Property ;
+    go:HasAgent ex:YourLord .
+
+ex:Predestination a go:Concept .
+ex:Delegation a go:Concept .
+ex:YourLord a go:Substance .
+go:Substance rdfs:label "شی"@fa.

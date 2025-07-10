@@ -1,0 +1,49 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/372#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/372-1> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasAgent ex:GodAlmighty ;
+    go:HasTheme ex:FixedSpecifiedTerm .
+
+ex:GodAlmighty a go:Deity ;
+    go:label "God Almighty" .
+
+ex:FixedSpecifiedTerm a go:TemporalEntity ;
+    go:label "Fixed and Specified Term" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/372#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/372-2> rdf:type owl:Ontology .
+
+ex:Fate a go:Substance .
+ex:PredeterminedFate a go:Substance ;
+    rdfs:subClassOf ex:Fate ;
+    rdfs:label "Predetermined Fate"@en .
+ex:ConditionalFate a go:Substance ;
+    rdfs:subClassOf ex:Fate ;
+    rdfs:label "Conditional Fate"@en .
+go:Substance rdfs:label "شی"@fa.

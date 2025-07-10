@@ -1,0 +1,432 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-1> rdf:type owl:Ontology .
+
+ex:event1 a go:SpeechEvent ;
+  go:HasTheme ex:personSubhat .
+
+ex:personSubhat a foaf:Person ;
+  foaf:name "Subhat"@ar ;
+  ex:hasEthnicity ex:Jew ;
+  rdfs:label "يهودي"@ar .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-2> rdf:type owl:Ontology .
+
+ex:Subhat a go:Person ;
+  rdfs:label "Subhat" .
+
+ex:MessengerOfAllah a go:Person ;
+  rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+
+ex:Event1 a go:Event ;
+  go:HasAgent ex:Subhat ;
+  go:HasRecipient ex:MessengerOfAllah ;
+  rdfs:label "Arrival of Subhat to the Messenger of Allah" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-3> rdf:type owl:Ontology .
+
+ex:event1 rdf:type go:Event , ex:AskingEvent ;
+    go:HasAgent ex:Subiht ;
+    go:HasRecipient ex:MessengerOfAllah ;
+    go:HasTheme ex:HisLord .
+
+ex:Subiht rdf:type go:Person .
+ex:MessengerOfAllah rdf:type go:Person .
+ex:HisLord rdf:type go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-4> rdf:type owl:Ontology .
+
+ex:MessengerOfAllah a go:Agent, go:Person ;
+    rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+
+ex:Subhat a go:Agent, go:Person ;
+    rdfs:label "Subhat" .
+
+ex:SayingEvent1 a go:CommunicationEvent ;
+    go:HasAgent ex:MessengerOfAllah ;
+    go:HasRecipient ex:Subhat ;
+    go:HasContent ex:DirectiveToAsk .
+
+ex:DirectiveToAsk a go:DirectiveContent ;
+    go:hasText "Ask whatever you wish." .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-5> rdf:type owl:Ontology .
+
+ex:InterrogationEvent1 a go:InterrogationEvent ;
+    go:hasAgent ex:Subiha ;
+    go:hasRecipient ex:MessengerOfAllah ;
+    go:hasTheme "Where is your Lord?" .
+
+ex:Subiha a go:Person .
+ex:MessengerOfAllah a go:Person .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-6> rdf:type owl:Ontology .
+
+# Entity: Messenger of God
+ex:MessengerOfGod a foaf:Person ;
+    foaf:name "Messenger of God (Peace be upon him and his family)" .
+
+# Entity: God
+ex:God a go:Deity ;
+    foaf:name "My Lord" ;
+    go:isEverywhere true .
+
+# Event: Answering event
+ex:AnswerEvent1 a go:CommunicationEvent ;
+    go:HasAgent ex:MessengerOfGod ;
+    go:HasTheme ex:GodPresenceStatement .
+
+# Statement about God's presence
+ex:GodPresenceStatement a go:Statement ;
+    go:refersTo ex:God ;
+    go:property "isEverywhere" ;
+    go:value true .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-7> rdf:type owl:Ontology .
+
+ex:AnswerEvent1 a go:Event ;
+  go:HasAgent ex:MessengerOfAllah ;
+  go:HasTheme ex:Proposition1 .
+
+ex:MessengerOfAllah a go:Agent ;
+  rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+
+ex:MyLord a go:Agent ;
+  rdfs:label "My Lord" .
+
+ex:Proposition1 a go:Proposition ;
+  go:containsStatement ex:Statement1 .
+
+ex:Statement1 a go:Statement ;
+  go:subject ex:MyLord ;
+  go:predicate ex:IsNotInLocation ;
+  go:object ex:LimitedPlace .
+
+ex:LimitedPlace a go:Substance ;
+  rdfs:label "any limited place" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-8> rdf:type owl:Ontology .
+
+ex:Subiha a go:Person .
+
+ex:AskEvent1 a go:asking ;
+    go:HasAgent ex:Subiha ;
+    go:HasTheme ex:Question_HowIsYourLord .
+
+ex:Question_HowIsYourLord a go:Question ;
+    rdfs:label "How is your Lord?" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-9> rdf:type owl:Ontology .
+
+ex:answeringEvent rdf:type ex:AnsweringEvent , go:Communication ;
+    go:HasAgent ex:MessengerOfAllah ;
+    go:HasTheme ex:rhetoricalQuestion .
+
+ex:MessengerOfAllah rdf:type go:Agent ;
+    rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+
+ex:rhetoricalQuestion rdf:type go:Event ;
+    rdfs:label "Rhetorical question about describing my Lord by 'how'" ;
+    go:HasTheme ex:myLordAndHowConcept .
+
+ex:myLordAndHowConcept rdf:type go:Substance ;
+    go:relatedTo ex:MyLord , ex:HowConcept .
+
+ex:MyLord rdf:type go:Substance ;
+    rdfs:label "My Lord" .
+
+ex:HowConcept rdf:type go:Substance ;
+    rdfs:label "How (الكيف)" ;
+    go:hasProperty ex:IsCreated .
+
+ex:IsCreated rdf:type go:Property ;
+    rdfs:label "is created" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-10> rdf:type owl:Ontology .
+
+ex:answerEvent a ex:AnswerEvent ;
+    a go:Event ;
+    go:HasAgent ex:MessengerOfAllah ;
+    go:HasTheme ex:Statement .
+
+ex:MessengerOfAllah a go:Substance ;
+    go:hasTitle "Messenger of Allah (peace be upon him and his family)" .
+
+ex:Allah a go:Substance ;
+    rdfs:label "Allah" .
+
+ex:Statement a go:InformationContent ;
+    go:content "Allah is not described by His creation" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-11> rdf:type owl:Ontology .
+
+ex:Subihat a go:Person ;
+    rdfs:label "Subihat"@en .
+
+ex:AskEvent1 a go:Interrogation ;
+    go:HasAgent ex:Subihat ;
+    go:HasTheme "How is it known that you are a prophet of God?"^^xsd:string .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-12> rdf:type owl:Ontology .
+
+ex:speechEvent1 a go:Event ;
+    go:HasAgent ex:stone , ex:surroundings ;
+    go:HasTheme ex:speechContent1 ;
+    go:HasRecipient ex:Subhat .
+
+ex:stone a go:Substance .
+ex:surroundings a go:Substance .
+ex:Subhat a go:agent .
+ex:MessengerOfGod a go:agent .
+
+ex:speechContent1 a go:InformationObject ;
+    go:hasLanguage "Arabic" ;
+    go:hasText "O Subhat, he is the Messenger of God." .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-13> rdf:type owl:Ontology .
+
+ex:Subhat a go:Agent ;
+    rdfs:label "سُبِحَتْ" .
+
+ex:ThisDay a go:TimeEntity ;
+    go:label "هذا اليوم" .
+
+ex:Matter1 a go:Substance ;
+    go:label "أمر أبلغ" ;
+    go:about ex:ThisDay .
+
+ex:SpeechEvent1 a go:Speech ;
+    go:HasAgent ex:Subhat ;
+    go:HasTheme ex:SpeechContent1 .
+
+ex:SpeechContent1 a go:Statement ;
+    go:hasText "ما رأيت كاليوم أمراً أبلغ من هذا" ;
+    go:refersTo ex:Matter1 .
+go:Time rdfs:label "زمان"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-14> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasAgent ex:Subhat ;
+    go:HasTheme ex:Proposition_NoGodButAllah .
+
+ex:Subhat a go:Person .
+
+ex:Proposition_NoGodButAllah a go:Statement ;
+    go:refersTo ex:Allah ;
+    go:content "There is no god but Allah" .
+
+ex:Allah a go:Deity .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-15> rdf:type owl:Ontology .
+
+ex:eventWitnessPraise15 a go:WitnessingAndPraisingEvent ;
+    go:HasAgent ex:communityWitnessing ;
+    go:HasTheme ex:statementMessengerIdentity .
+
+ex:statementMessengerIdentity a go:Statement ;
+    go:refersTo ex:MessengerOfGod ;
+    go:asserts "MessengerOfGod is MessengerOfGod" .
+
+ex:MessengerOfGod a go:Person .
+
+ex:communityWitnessing a go:Community .

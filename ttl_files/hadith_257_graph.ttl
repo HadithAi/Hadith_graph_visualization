@@ -1,0 +1,64 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/257#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/257-1> rdf:type owl:Ontology .
+
+ex:avoidThinkingEvent a go:Action ;
+    go:HasAgent ex:human1 ;
+    go:HasTheme ex:thinkingAboutGodAloneWithoutUnderstanding .
+
+ex:human1 a go:Human .
+ex:god1 a go:Deity .
+
+ex:thinkingAboutGodAloneWithoutUnderstanding a go:CognitiveProcess ;
+    go:HasTheme ex:god1 ;
+    go:Context "alone without understanding" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/257#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/257-2> rdf:type owl:Ontology .
+
+ex:Human a go:Agent .
+ex:God a go:Deity .
+ex:GreatnessOfGod a go:Property ;
+    go:inheresIn ex:God .
+ex:GreatCreationOfGod a go:Object ;
+    go:createdBy ex:God ;
+    go:hasQuality ex:Greatness .
+
+ex:WantToLookAtGreatness a go:DesireEvent ;
+    go:HasAgent ex:Human ;
+    go:HasTheme ex:GreatnessOfGod .
+
+ex:LookAtGreatness a go:PerceptionEvent ;
+    go:HasAgent ex:Human ;
+    go:HasTheme ex:GreatnessOfGod .
+
+ex:LookAtCreation a go:PerceptionEvent ;
+    go:HasAgent ex:Human ;
+    go:HasTheme ex:GreatCreationOfGod .
+
+# Logical condition expressed in ontology (informally, not actual RDF logic):
+# To satisfy looking at greatness, human must look at creation.
+go:Agent rdfs:label "عامل"@fa.

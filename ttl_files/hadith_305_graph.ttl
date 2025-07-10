@@ -1,0 +1,145 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/305#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/305-1> rdf:type owl:Ontology .
+
+ex:Allah a go:Deity ;
+    rdfs:label "Allah" .
+
+ex:Quran a go:Text ;
+    go:hasTitle "Quran" .
+
+ex:Saying1 a go:Statement ;
+    go:HasAgent ex:Allah ;
+    go:hasContent "And whoever brings upon himself My anger has certainly fallen" ;
+    go:IsPartOf ex:Quran .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/305#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/305-2> rdf:type owl:Ontology .
+
+# Entities
+ex:Anger a go:Substance ;
+    rdfs:label "Anger"@en .
+
+ex:Punishment a go:Substance ;
+    rdfs:label "Punishment"@en .
+
+quran:Verse17_8 a go:text ;
+    rdfs:label "Quranic verse \"And whoever is granted My anger has certainly fallen\""@en .
+
+# Event mention
+quran:Verse17_8 ex:mentions ex:Anger .
+
+# Semantic relation
+ex:Anger ex:isEquivalentTo ex:Punishment .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/305#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/305-3> rdf:type owl:Ontology .
+
+# Entities
+ex:God a go:DivineBeing ;
+    rdfs:label "الله" .
+
+ex:Claimant a go:Agent ;
+    go:hasRole "generic claimant" .
+
+ex:State1 a go:Thing ;
+    rdfs:label "a state or thing" .
+
+ex:State2 a go:Thing ;
+    rdfs:label "another state or thing" .
+
+ex:CreatedAttribute a go:Attribute ;
+    go:attributeOf go:CreatedBeing ;
+    rdfs:label "صفة مخلوق (attribute of a created being)" .
+
+# Events
+ex:ClaimingEvent a go:Event ;
+    go:HasAgent ex:Claimant ;
+    go:HasTheme ex:ChangeClaim .
+
+ex:ChangeClaim a go:Event ;
+    go:HasTheme ex:God ;
+    go:HasProperty ex:ChangeFromOneToAnother .
+
+ex:ChangeFromOneToAnother a go:Event ;
+    go:HasAgent ex:God ;
+    go:From ex:State1 ;
+    go:To ex:State2 .
+
+ex:AttributionEvent a go:Event ;
+    go:HasAgent ex:Claimant ;
+    go:HasTheme ex:God ;
+    go:HasProperty ex:CreatedAttribute .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/305#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/305-4> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:HasName "God Almighty" .
+
+ex:Anything a go:Object ;
+    go:Label "anything" .
+
+ex:ChangeEvent a go:Event ;
+    go:HasTheme ex:God ;
+    go:Type "Change" .
+
+# Statement that no entity provokes God to change
+# Represented as a negative property assertion or a property indicating no causation
+
+[] a go:Negation ;
+   go:NegatedProperty [
+       a go:Causation ;
+       go:Agent ex:Anything ;
+       go:Event ex:ChangeEvent
+   ] .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.

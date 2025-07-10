@@ -1,0 +1,89 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/333#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/333-1> rdf:type owl:Ontology .
+
+ex:GodAlmighty a go:Deity ;
+    rdfs:label "God Almighty" .
+
+ex:TheMostMerciful a go:Deity ;
+    rdfs:label "The Most Merciful" .
+
+ex:Throne a go:Object ;
+    rdfs:label "Throne" .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:GodAlmighty ;
+    go:HasTheme ex:Statement1 .
+
+ex:Statement1 a go:Statement ;
+    go:describes ex:EstablishmentEvent1 .
+
+ex:EstablishmentEvent1 a go:EstablishmentEvent ;
+    go:HasAgent ex:TheMostMerciful ;
+    go:HasLocation ex:Throne .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/333#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/333-2> rdf:type owl:Ontology .
+
+ex:establishmentEvent1 a ex:EstablishmentEvent ;
+    go:HasAgent ex:TheMerciful ;
+    go:HasTheme ex:Everything .
+
+ex:TheMerciful a go:Substance ;
+    go:label "The Merciful"@en .
+
+ex:Everything a go:Substance ;
+    go:label "Everything"@en .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/333#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/333-3> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Substance ;
+    go:label "God Almighty" .
+
+ex:Anything_Else a go:Substance ;
+    go:label "Anything Else" .
+
+ex:Closeness_Comparison a go:ComparativeState ;
+    go:subject ex:Anything_Else ;
+    go:object ex:God_Almighty ;
+    go:relation go:closeness ;
+    go:comparison "equal" .
+
+# The statement implies no entity is closer to God than another, modeled as equal closeness.
+go:Substance rdfs:label "شی"@fa.

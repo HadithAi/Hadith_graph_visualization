@@ -1,0 +1,224 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-1> rdf:type owl:Ontology .
+
+ex:CreationEvent1 a go:Creation, go:Event ;
+    go:HasAgent ex:TheLord ;
+    go:HasTheme ex:Livestock ;
+    go:HasRecipient ex:PeopleOfUnderstanding .
+
+ex:TheLord a go:Substance .
+ex:Livestock a go:Substance ;
+    ex:sufficient "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+ex:PeopleOfUnderstanding a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-2> rdf:type owl:Ontology .
+
+ex:Event1 a go:State ;
+    go:HasAgent ex:LordGodAlmighty ;
+    go:HasTheme ex:WisePeople ;
+    go:StateType ex:Sufficiency .
+
+ex:LordGodAlmighty a go:Deity ;
+    rdfs:label "Lord God Almighty"@en .
+
+ex:WisePeople a go:PersonGroup ;
+    rdfs:label "those who have understanding"@en .
+
+ex:Sufficiency a go:StateType ;
+    rdfs:label "sufficiency"@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-3> rdf:type owl:Ontology .
+
+ex:ManifestLordMajesty a go:Substance ;
+    rdfs:label "Manifest Lord's Majesty"@en .
+
+ex:PeopleOfUnderstanding a go:Substance ;
+    rdfs:label "People of Understanding"@en .
+
+ex:SufficiencyEvent a go:Event ;
+    rdfs:label "Sufficiency"@en ;
+    go:HasTheme ex:ManifestLordMajesty ;
+    go:HasRecipient ex:PeopleOfUnderstanding .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-4> rdf:type owl:Ontology .
+
+ex:BrightLightOfLord a go:Substance ;
+    rdfs:label "Bright Light of the Lord"@en .
+
+ex:PeopleOfUnderstanding a go:group ;
+    rdfs:label "People of Understanding"@en .
+
+ex:SufficiencyState a go:State ;
+    rdfs:label "Sufficiency of Bright Light for People of Understanding"@en ;
+    go:HasTheme ex:BrightLightOfLord ;
+    go:HasRecipient ex:PeopleOfUnderstanding ;
+    go:hasProperty ex:Sufficiency .
+
+ex:Sufficiency a go:Property ;
+    rdfs:label "Sufficient"@en .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-5> rdf:type owl:Ontology .
+
+ex:ProofOfTruthfulLord a go:Substance ;
+    ex:hasAttribute ex:TruthfulLord .
+
+ex:ThoseOfSoundUnderstanding a go:group .
+
+ex:SufficiencyRelation a go:state ;
+    go:HasTheme ex:ProofOfTruthfulLord ;
+    go:HasRecipient ex:ThoseOfSoundUnderstanding .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-6> rdf:type owl:Ontology .
+
+ex:Event_Pronouncing a go:Event ;
+    go:HasAgent ex:Entity_Tongues_of_Servants ;
+    go:HasTheme ex:Entity_Statement_Uttered .
+
+ex:Entity_Tongues_of_Servants a go:Agent ;
+    go:PartOf ex:Entity_Servants .
+
+ex:Entity_Statement_Uttered a go:Substance ;
+    go:IsEvidenceOf ex:Entity_Lord_Almighty .
+
+ex:Entity_Servants a go:Group .
+
+ex:Entity_Lord_Almighty a go:Deity ;
+    go:HasAttribute ex:Attribute_Almighty .
+
+ex:Attribute_Almighty a go:Attribute .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-7> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasAgent ex:Messengers ;
+    ex:isEvidenceOf ex:Lord_Almighty .
+
+ex:Messengers a go:agent .
+ex:Lord_Almighty a go:deity .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-8> rdf:type owl:Ontology .
+
+ex:Guidance a go:Substance ;
+    go:label "guidance" .
+
+ex:Servants a go:Agent ;
+    go:label "servants" .
+
+ex:Lord_a a go:Agent ;
+    go:label "Lord, the Almighty" .
+
+ex:SendingDownGuidance a go:Event ;
+    go:HasTheme ex:Guidance ;
+    go:HasRecipient ex:Servants ;
+    go:HasTopic ex:Lord_a ;
+    go:EventStatus "notOccurred"^^<http://www.w3.org/2001/XMLSchema#string> .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

@@ -1,0 +1,237 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/264#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/264-1> rdf:type owl:Ontology .
+
+exEvent:WritingEvent1 a go:Event ;
+    go:HasAgent ex:Writer1 ;
+    go:HasRecipient ex:AbuAlHasanAlThalith ;
+    go:HasTheme ex:QuestionAboutVision .
+
+ex:Writer1 a go:Person ;
+    rdfs:label "الكاتب" .
+
+ex:AbuAlHasanAlThalith a go:Person ;
+    rdfs:label "أبي الحسن الثالث عليه‌السلام" .
+
+ex:QuestionAboutVision a go:Information ;
+    go:aboutTopic ex:Vision ;
+    go:aboutTopic ex:DifferencesAmongPeople .
+
+ex:Vision a go:Concept ;
+    rdfs:label "الرؤية" .
+
+ex:DifferencesAmongPeople a go:Concept ;
+    rdfs:label "اختلاف الناس فيها" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/264#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/264-2> rdf:type owl:Ontology .
+
+ex:Abu_al_Hasan_al_Thalith_III_peace_be_upon_him a go:Person ;
+    rdfs:label "Abu al-Hasan al-Thaaliq al-Thalith (peace be upon him)" .
+
+ex:WritingEvent1 a go:Event ;
+    go:HasAgent ex:Abu_al_Hasan_al_Thalith_III_peace_be_upon_him ;
+    go:HasTheme ex:Statement_on_Vision .
+
+ex:Statement_on_Vision a go:Concept ;
+    go:hasContent "Vision is not valid unless there is air between the viewer and the object viewed that permits sight" .
+
+ex:Vision a go:Concept .
+
+ex:Air a go:Substance ;
+    go:hasProperty "Permits sight between viewer and viewed object" .
+
+ex:Viewer a go:Person .
+
+ex:ObjectViewed a go:Object .
+
+ex:VisionCondition a go:Condition ;
+    go:hasTheme ex:Vision ;
+    go:requires [ a go:Relation ;
+        go:HasAgent ex:Air ;
+        go:HasTheme [ a go:Relation ;
+            go:HasAgent ex:Viewer ;
+            go:HasTheme ex:ObjectViewed 
+        ]
+    ] .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/264#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/264-3> rdf:type owl:Ontology .
+
+ex:visionEvent a go:perceptionEvent ;
+    go:HasAgent ex:observer ;
+    go:HasTheme ex:observed ;
+    go:HasCondition ex:airPresence .
+
+ex:airPresence a go:condition ;
+    go:DependsOn ex:airBetween .
+
+ex:airBetween a go:Substance ;
+    go:Between ex:observer , ex:observed .
+
+ex:airCutOffEvent a go:Event ;
+    go:HasTheme ex:airBetween .
+
+ex:failureOfVision a go:state ;
+    go:HasCause ex:airCutOffEvent ;
+    skos:definition "Vision is not correct if the air is cut off between observer and observed." .
+
+ex:observer a go:agent ;
+    skos:prefLabel "observer"@en .
+
+ex:observed a go:theme ;
+    skos:prefLabel "observed"@en .
+
+ex:airBetween a go:Substance ;
+    skos:prefLabel "air between observer and observed"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/264#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/264-4> rdf:type owl:Ontology .
+
+ex:InterruptionOfAir a go:process, go:Event ;
+    go:HasTheme ex:Air ;
+    go:HasAgent ex:Seer ;
+    go:HasRecipient ex:Seen ;
+    go:causes ex:ConfusionInSeeing .
+
+ex:Air a go:Substance .
+ex:Seer a go:agent .
+ex:Seen a go:agent .
+
+ex:ConfusionInSeeing a go:Event ;
+    go:HasTheme ex:Things .
+
+ex:Things a go:object .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/264#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/264-5> rdf:type owl:Ontology .
+
+# Entities
+ex:Perceiver a go:Substance ;
+  rdfs:label "Perceiver"@en .
+
+ex:Perceived a go:Substance ;
+  rdfs:label "Perceived"@en .
+
+ex:PositiveCause a go:Cause ;
+  rdfs:label "Positive Cause"@en .
+
+# Events
+ex:VisionEvent a go:Event ;
+  rdfs:label "Vision Event"@en ;
+  go:HasAgent ex:Perceiver ;
+  go:HasTheme ex:Perceived ;
+  go:HasCause ex:PositiveCause .
+
+ex:EqualityCondition a go:Event ;
+  rdfs:label "Equality of positive cause between perceiver and perceived"@en ;
+  go:HasAgent ex:Perceiver ;
+  go:HasTheme ex:Perceived ;
+  go:HasCause ex:PositiveCause .
+
+ex:ConfusionEvent a go:Event ;
+  rdfs:label "Confusion"@en ;
+  go:resultsIn ex:EqualityCondition .
+
+# Conditional statement
+ex:EqualityCondition go:resultsIn ex:ConfusionEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/264#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/264-6> rdf:type owl:Ontology .
+
+ex:suspicion6 a go:MentalState , go:Substance ;
+    go:label "suspicion 6" .
+
+ex:reasons a go:Substance ;
+    go:label "reasons" .
+
+ex:causes a go:Substance ;
+    go:label "causes" .
+
+ex:ResemblanceEvent6 a go:Event ;
+    go:HasTheme ex:suspicion6 ;
+    go:description "This suspicion resembles something" .
+
+ex:ConnectionEvent6 a go:Event ;
+    go:HasAgent ex:reasons ;
+    go:HasTheme ex:causes ;
+    go:description "Reasons must be connected to causes" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

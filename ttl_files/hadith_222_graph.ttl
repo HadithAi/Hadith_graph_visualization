@@ -1,0 +1,206 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-1> rdf:type owl:Ontology .
+
+ex:Abu_Jaafar a go:Person ;
+    go:hasHonorific "peace be upon him"^^xsd:string ;
+    go:label "Mr. Abu Ja'far"^^xsd:string .
+
+ex:Monotheism a go:Concept ;
+    go:label "Monotheism"^^xsd:string ;
+    ex:isNotRational true ;
+    ex:isNotLimited true .
+
+ex:Utterance1 a go:SpeechAct ;
+    go:HasAgent ex:Abu_Jaafar ;
+    go:HasTheme ex:Monotheism ;
+    go:expresses ex:Proposition1 .
+
+ex:Proposition1 a go:Proposition ;
+    go:hasSubject ex:Monotheism ;
+    ex:hasProperty ex:NonRational ;
+    ex:hasProperty ex:NonLimited .
+
+ex:NonRational a go:Property ;
+    go:label "not rational"^^xsd:string .
+
+ex:NonLimited a go:Property ;
+    go:label "not limited"^^xsd:string .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-2> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme ex:ContraryToMonotheismCondition .
+
+ex:Speaker a go:agent ;
+    go:denotedBy "المتحدث"@ar .
+
+ex:ContraryToMonotheismCondition a go:state ;
+    go:HasQuality ex:ContraryToMonotheismQuality .
+
+ex:ContraryToMonotheismQuality a go:Quality ;
+    go:denotedBy "خلاف التوحيد"@ar .
+
+ex:Monotheism a go:concept ;
+    go:denotedBy "التوحيد"@ar .
+go:Event rdfs:label "رخداد"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-3> rdf:type owl:Ontology .
+
+ex:Monotheism a go:Substance ;
+    go:notSimilarTo [ a go:Substance ] .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-4> rdf:type owl:Ontology .
+
+ex:Illusions a go:Substance ;
+    rdfs:label "Illusions"@en .
+
+ex:Monotheism a go:Concept ;
+    rdfs:label "Monotheism"@en .
+
+ex:ComprehensionEvent a go:Event ;
+    go:HasAgent ex:Illusions ;
+    go:HasTheme ex:Monotheism ;
+    go:Negated true .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-5> rdf:type owl:Ontology .
+
+ex:Delusions a go:Substance ;
+    rdfs:label "Delusions"@en .
+
+ex:Monotheism a go:Substance ;
+    rdfs:label "Monotheism"@en .
+
+ex:NotComprehendEvent a go:Event ;
+    go:HasAgent ex:Delusions ;
+    go:HasTheme ex:Monotheism ;
+    go:hasResult ex:Negation .
+
+ex:Negation a go:state ;
+    rdfs:label "Negation of comprehension"@en .
+
+ex:ContraryToComprehension a go:state ;
+    rdfs:label "Contrary to what is comprehensible"@en .
+
+ex:NotComprehendEvent go:hasCause ex:ContraryToComprehension .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-6> rdf:type owl:Ontology .
+
+ex:Delusions a go:Substance ;
+    rdfs:label "Delusions"@en .
+
+ex:Monotheism a go:Substance ;
+    rdfs:label "Monotheism"@en .
+
+ex:ContradictionWithImaginedConceptsInDelusions a go:state ;
+    rdfs:label "Contradiction with imagined concepts in delusions"@en .
+
+ex:ComprehensionFailureEvent a go:Event ;
+    rdfs:label "Failure to comprehend monotheism by delusions"@en ;
+    go:HasAgent ex:Delusions ;
+    go:HasTheme ex:Monotheism ;
+    go:HasCause ex:ContradictionWithImaginedConceptsInDelusions .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-7> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasTheme ex:thing1 .
+
+ex:thing1 a go:Substance ;
+    go:hasQuality "unreasonable" ;
+    go:hasQuality "unlimited" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

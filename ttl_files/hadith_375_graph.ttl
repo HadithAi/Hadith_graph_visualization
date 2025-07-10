@@ -1,0 +1,83 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/375#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/375-1> rdf:type owl:Ontology .
+
+ex:pendingMattersEvent a go:Event ;
+    go:HasTheme ex:matters ;
+    go:HasAgent ex:Allah .
+
+ex:matters a go:Substance .
+
+ex:Allah a go:divineEntity .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/375#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/375-2> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Deity, go:Agent ;
+    rdfs:label "God_Almighty" .
+
+ex:Matters a go:Substance ;
+    rdfs:label "Matters" .
+
+ex:PresentEvent1 a go:Event ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Matters ;
+    go:IsCausedBy ex:GodsWill .
+
+ex:GodsWill a go:Event ;
+    rdfs:label "God's Will" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/375#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/375-3> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Substance ;
+    rdfs:label "God Almighty" .
+
+ex:Matters a go:Substance ;
+    rdfs:label "these matters" .
+
+ex:DelayEvent1 a go:Event ;
+    rdfs:label "Delaying matters event" ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Matters .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

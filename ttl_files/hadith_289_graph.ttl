@@ -1,0 +1,160 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/289#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/289-1> rdf:type owl:Ontology .
+
+ex:writing1 a go:CommunicativeEvent ;
+    go:HasAgent ex:speaker ;
+    go:HasRecipient ex:Abi_al-Hasan ;
+    go:HasTheme ex:asking1 .
+
+ex:asking1 a go:InquiryEvent ;
+    go:HasAgent ex:speaker ;
+    go:HasTheme ex:speechHisham ;
+    go:About ex:body .
+
+ex:speechHisham a go:SpeechAct ;
+    go:HasAgent ex:Hisham_ibn_al-Hakam .
+
+ex:speaker a go:Person .
+ex:Abi_al-Hasan a go:Person ;
+    go:Honorific "alayhi as-salam" .
+ex:Hisham_ibn_al-Hakam a go:Person .
+ex:body a go:PhysicalObject .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/289#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/289-2> rdf:type owl:Ontology .
+
+ex:event1 a go:WrittenCommunication ;
+    go:HasAgent ex:speaker ;
+    go:HasRecipient ex:AlHasan ;
+    go:HasTheme ex:askEvent .
+
+ex:askEvent a go:InformationRequest ;
+    go:HasAgent ex:speaker ;
+    go:HasTheme ex:speechHisham .
+
+ex:speechHisham a go:Speech ;
+    go:HasAgent ex:HishamBinSalim ;
+    go:About ex:image .
+
+ex:speaker a go:Person .
+ex:AlHasan a go:Person .
+ex:HishamBinSalim a go:Person .
+ex:image a go:Image .
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/289#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/289-3> rdf:type owl:Ontology .
+
+ex:AbuAlHasan a go:Person ;
+    rdfs:label "Abu al-Hasan (peace be upon him)" .
+
+ex:SpeechEvent1 a go:Say ;
+    go:HasAgent ex:AbuAlHasan ;
+    go:HasTheme ex:Message1 .
+
+ex:Message1 a go:Message ;
+    rdfs:label "Leave aside the confusion of the confused" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/289#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/289-4> rdf:type owl:Ontology .
+
+ex:AlHassan a go:Person ;
+    rdfs:label "Al-Hassan" ;
+    go:honorific "peace be upon him" .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:Satan a go:SupernaturalBeing ;
+    rdfs:label "Satan" .
+
+ex:Speech1 a go:SpeechAct , go:Event ;
+    go:HasAgent ex:AlHassan ;
+    go:hasContent ex:RefugeRequest .
+
+ex:RefugeRequest a go:Proposition ;
+    go:hasEvent ex:SeekRefugeEvent .
+
+ex:SeekRefugeEvent a go:Event ;
+    go:HasAgent ex:Listener ; # implicit, unspecified
+    go:HasTheme ex:God ;
+    ex:sourceOfRefuge ex:Satan .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/289#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/289-5> rdf:type owl:Ontology .
+
+ex:AlHassan a go:Person ;
+    rdfs:label "Al-Hassan (peace be upon him)" .
+
+ex:TwoHishams a go:Person ;
+    rdfs:label "The two Hishams" .
+
+ex:SayingEvent a go:Event ;
+    go:HasAgent ex:AlHassan ;
+    go:HasTheme ex:NegationOfTwoHishamsStatement .
+
+ex:NegationOfTwoHishamsStatement a go:Concept ;
+    go:refersTo ex:TwoHishams ;
+    go:hasAttribute ex:Negation .
+
+ex:Negation a go:Attribute ;
+    go:hasValue "not"^^xsd:string .
+go:Event rdfs:label "رخداد"@fa.

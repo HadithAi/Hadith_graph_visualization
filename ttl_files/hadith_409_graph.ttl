@@ -1,0 +1,111 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/409#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/409-1> rdf:type owl:Ontology .
+
+ex:God a go:Agent ;
+    go:hasAttribute ex:Mercy .
+
+ex:Creation a go:Patient .
+
+ex:CompelToSin a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Creation ;
+    go:EventType "CompellingCreationToCommitSins" .
+
+ex:PunishForSin a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Creation ;
+    go:EventType "Punishment" .
+
+ex:Mercy a go:Attribute ;
+    go:AttributeOf ex:God ;
+    go:GreaterThan ex:CompelToSin , ex:PunishForSin .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/409#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/409-2> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    rdfs:label "God"@en .
+
+ex:WillingEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:IntendedEvent .
+
+ex:IntendedEvent a go:Event .
+
+# Expressing that God's willing causes the intended event necessarily to happen
+ex:WillingEvent go:Causes ex:IntendedEvent .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/409#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/409-3> rdf:type owl:Ontology .
+
+ex:Predestination a go:concept ;
+    rdfs:label "Predestination"@en .
+
+ex:Fate a go:concept ;
+    rdfs:label "Fate"@en .
+
+ex:ThirdPosition a go:concept ;
+    rdfs:label "Third Position"@en ;
+    ex:between [ a rdf:Seq ; rdf:_1 ex:Predestination ; rdf:_2 ex:Fate ] .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/409#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/409-4> rdf:type owl:Ontology .
+
+ex:House3 a ex:House ;
+    ex:hasNumber "3"^^xsd:integer ;
+    ex:isWiderThan ex:SpaceSkyEarth .
+
+ex:SpaceSkyEarth a ex:SpaceEntity ;
+    ex:between ex:Sky , ex:Earth .
+
+ex:Sky a ex:CelestialBody .
+ex:Earth a ex:CelestialBody .

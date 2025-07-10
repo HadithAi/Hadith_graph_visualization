@@ -1,0 +1,99 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/334#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/334-1> rdf:type owl:Ontology .
+
+ex:event_saying a go:SpeechEvent ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:utterance_1 .
+
+ex:utterance_1 a go:Utterance ;
+    go:HasTheme ex:event_establishing .
+
+ex:event_establishing a go:Event ;
+    go:HasAgent ex:The_Most_Merciful ;
+    go:HasLocation ex:Throne .
+
+ex:God_Almighty a go:Deity ;
+    rdfs:label "God Almighty" .
+
+ex:The_Most_Merciful a go:Deity ;
+    rdfs:label "The Most Merciful" .
+
+ex:Throne a go:Artefact ;
+    rdfs:label "Throne" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/334#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/334-2> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person ;
+    rdfs:label "أبا عبد الله" .
+
+ex:SpeechEvent1 a go:Communication ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:Quote1 .
+
+ex:Quote1 a go:Quote ;
+    go:hasText "استوى من كل شيء" ;
+    go:hasEvent ex:PerfectionEvent1 .
+
+ex:PerfectionEvent1 a ex:PerfectionEvent ;
+    go:HasAgent ex:ImplicitAgent ;
+    go:HasTheme ex:Everything .
+
+ex:ImplicitAgent a go:Person .
+ex:Everything a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/334#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/334-3> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person .
+
+ex:Speech_Act_1 a go:SpeechAct ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:Quote_1 .
+
+ex:Quote_1 a go:Statement ;
+    go:refersTo ex:Him, ex:Thing .
+
+ex:Him a go:Substance .
+ex:Thing a go:Substance .
+
+# Literal content of the quote
+ex:Quote_1 rdfs:label "Nothing is closer to Him than a thing." .
+go:Substance rdfs:label "شی"@fa.

@@ -1,0 +1,195 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/406#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/406-1> rdf:type owl:Ontology .
+
+ex:MessengerOfAllah a go:Person ;
+    rdfs:label "Messenger of Allah (peace be upon him and his family)"@en .
+
+ex:Allah a go:Deity ;
+    rdfs:label "Allah"@en .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:MessengerOfAllah ;
+    go:HasTheme ex:Proposition1 ;
+    rdfs:label "Saying by Messenger of Allah"@en .
+
+ex:Proposition1 a go:Proposition ;
+    rdfs:label "Whoever claims that Allah commands evil and immorality has lied about Allah"@en ;
+    go:HasSubject ex:Claimant ;
+    go:HasObject ex:LieAboutAllah .
+
+ex:Claimant a go:IndefinitePerson ;
+    rdfs:label "Whoever claims"@en .
+
+ex:LieAboutAllah a go:Lie ;
+    go:About ex:Allah ;
+    rdfs:label "Lying about Allah"@en .
+
+ex:CommandsEvilAndImmorality a go:ActionPredicate ;
+    rdfs:label "Allah commands evil and immorality"@en ;
+    go:Agent ex:Allah ;
+    go:Theme ex:EvilAndImmorality .
+
+ex:EvilAndImmorality a go:Concept ;
+    rdfs:label "evil and immorality"@en .
+
+ex:Proposition1 go:HasClaim ex:CommandsEvilAndImmorality .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/406#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/406-2> rdf:type owl:Ontology .
+
+# Entities
+ex:MessengerOfAllah rdf:type ex:Prophet ;
+    ex:honorific "peace be upon him and his family" .
+
+ex:Allah rdf:type ex:Deity .
+
+ex:Good rdf:type go:Substance ;
+    rdfs:label "good" .
+
+ex:Evil rdf:type go:Substance ;
+    rdfs:label "evil" .
+
+# Events
+ex:Speech1 rdf:type ex:SpeechEvent ;
+    go:HasAgent ex:MessengerOfAllah ;
+    go:HasTheme ex:Claim1 .
+
+ex:Claim1 rdf:type ex:Claim ;
+    ex:content "Good and evil do not happen without the will of Allah." ;
+    go:HasAgent ex:Claimant ;
+    go:HasTheme ex:GoodAndEvilWithoutWill .
+
+ex:GoodAndEvilWithoutWill rdf:type go:Event ;
+    go:HasTheme ex:Good, ex:Evil ;
+    ex:causedBy ex:WillOfAllah .
+
+ex:WillOfAllah rdf:type go:Substance ;
+    rdfs:label "will of Allah" ;
+    ex:belongsTo ex:Allah .
+
+ex:Removal rdf:type ex:RemovalFromAuthorityEvent ;
+    ex:cause ex:Claim1 ;
+    ex:effectedBy ex:Allah ;
+    ex:patient ex:Claimant .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/406#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/406-3> rdf:type owl:Ontology .
+
+ex:MessengerOfAllah a go:Agent, go:Person ;
+    rdfs:label "Messenger of Allah" .
+
+ex:Allah a go:Agent, go:Deity ;
+    rdfs:label "Allah" .
+
+ex:Sins a go:Event ;
+    rdfs:label "Sins" .
+
+ex:ClaimAboutSinsAndPower a go:Event ;
+    a go:Claim ;
+    go:HasAgent ex:UnknownClaimant ;
+    go:HasTheme ex:SinsWithoutAllahPower ;
+    rdfs:label "Claim that sins occur without the power of Allah" .
+
+ex:UnknownClaimant a go:Agent, go:Person ;
+    rdfs:label "Whoever" .
+
+ex:LyingAboutAllah a go:Event ;
+    a go:Lying ;
+    go:HasAgent ex:UnknownClaimant ;
+    go:HasTheme ex:Allah ;
+    rdfs:label "Lying about Allah" .
+
+ex:SinsWithoutAllahPower a go:Proposition ;
+    rdfs:label "Sins without the power of Allah" .
+
+ex:SayingEvent a go:SpeechAct ;
+    go:HasAgent ex:MessengerOfAllah ;
+    go:HasTheme [
+        a go:Proposition ;
+        go:Involves ex:ClaimAboutSinsAndPower, ex:LyingAboutAllah
+    ] ;
+    rdfs:label "Messenger of Allah said about claim and lying" .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/406#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/406-4> rdf:type owl:Ontology .
+
+ex:ProphetMuhammad a go:Person ;
+    rdfs:label "Prophet Muhammad (peace be upon him and his family)" .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:Hell a go:Place ;
+    rdfs:label "Hell" .
+
+ex:Liar a go:Person ;
+    go:hasRole "Whoever lies about God" .
+
+ex:ProphetSpeech a go:Event , ex:SpeechEvent ;
+    go:HasAgent ex:ProphetMuhammad ;
+    go:HasTheme ex:Statement .
+
+ex:Statement a go:Substance ;
+    go:hasContent "Whoever lies about God, God will admit him to Hell" .
+
+ex:LyingEvent a go:Event , ex:Lying ;
+    go:HasAgent ex:Liar ;
+    go:HasTheme ex:God .
+
+ex:AdmitToHellEvent a go:Event , ex:Admission ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Liar ;
+    go:HasLocation ex:Hell .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

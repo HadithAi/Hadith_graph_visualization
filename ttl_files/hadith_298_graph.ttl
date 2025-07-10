@@ -1,0 +1,208 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-1> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:HasName "God" .
+
+ex:KnowledgeOfOneness a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:God ;
+    go:EventTime "BeforeCreation" .
+
+ex:CreationEvent a go:Event ;
+    go:EventType "Creation" .
+
+ex:EventTime "BeforeCreation" ;
+    go:TemporalRelationBefore ex:CreationEvent .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-2> rdf:type owl:Ontology .
+
+# Entities
+ex:SomeScholars rdf:type go:Group ;
+    go:hasMember ex:Scholar1, ex:Scholar2 .
+ex:God rdf:type go:Deity .
+ex:Creatures rdf:type go:Collection ;
+    go:includes go:Creature .
+
+# Events
+ex:SpeakingEvent rdf:type go:CommunicationEvent ;
+    go:hasAgent ex:SomeScholars ;
+    go:HasTheme ex:Proposition .
+
+ex:KnowledgeEvent rdf:type go:KnowledgeEvent ;
+    go:hasAgent ex:God ;
+    go:TemporalContext ex:BeforeCreation .
+
+ex:CreationEvent rdf:type go:CreationEvent ;
+    go:hasAgent ex:God ;
+    go:HasTheme ex:Creatures .
+
+# Proposition content
+ex:Proposition rdf:type go:Proposition ;
+    go:asserts ex:KnowledgeEvent .
+
+# Temporal relation
+ex:BeforeCreation rdf:type go:TemporalContext ;
+    go:before ex:CreationEvent .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-3> rdf:type owl:Ontology .
+
+ex:event1 a go:SpeechEvent ;
+    go:HasAgent ex:SomeScholars ;
+    go:HasTheme ex:MeaningStatement .
+
+ex:SomeScholars a go:Group ;
+    go:hasRole go:Scholar .
+
+ex:MeaningStatement a go:Proposition ;
+    go:assertsEquivalence ex:KnowVerbMeaning , ex:DoVerbMeaning .
+
+ex:KnowVerbMeaning a go:LinguisticMeaning ;
+    go:label "to know" .
+
+ex:DoVerbMeaning a go:LinguisticMeaning ;
+    go:label "to do" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-4> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+  go:HasAgent ex:God ;
+  go:HasTheme _:b1 ;
+  time:hasDate ex:Today .
+
+ex:God a go:deity .
+
+ex:Today a time:TemporalEntity .
+
+_:b1 a go:proposition ;
+  go:HasTheme ex:NoOneElseBeforeGodInActions .
+
+ex:NoOneElseBeforeGodInActions a go:negatedStatement ;
+  go:Subject ex:NoOneElse ;
+  go:Predicate ex:BeforeInDoingThings ;
+  go:Object ex:God .
+
+ex:NoOneElse a go:agent .
+
+ex:BeforeInDoingThings a go:relation .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-5> rdf:type owl:Ontology .
+
+# Entities
+ex:God a go:Substance ;
+    go:hasRole ex:Knower .
+
+ex:AnotherKnower a go:Substance ;
+    go:hasRole ex:Knower .
+
+# States
+ex:GodOnlyKnowerState a go:State ;
+    go:hasPatient ex:God ;
+    go:hasAttribute ex:ExclusiveKnowledge .
+
+ex:CoExistKnowersState a go:State ;
+    go:hasPatient ex:God , ex:AnotherKnower ;
+    go:hasAttribute ex:SharedKnowledgeEternity .
+
+ex:ExclusiveKnowledge a go:Attribute ;
+    rdfs:label "exclusive knowledge" .
+
+ex:SharedKnowledgeEternity a go:Attribute ;
+    rdfs:label "existence of another knower in eternity with God" .
+
+# Events
+ex:ProvingEvent a go:Event ;
+    go:HasAgent ex:We ;
+    go:HasTheme ex:GodOnlyKnowerState ;
+    go:HasConsequence ex:CoExistKnowersState .
+
+ex:We a go:Agent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-6> rdf:type owl:Ontology .
+
+ex:God a go:God ;
+       go:hasKnowledge ex:Knowledge ;
+       go:hasContinuousState ex:StillKnowingState .
+
+ex:Knowledge a go:Property .
+ex:StillKnowingState a go:State ;
+                   go:relatesTo ex:God ;
+                   go:description "Continuous state of knowing attributed to God" .

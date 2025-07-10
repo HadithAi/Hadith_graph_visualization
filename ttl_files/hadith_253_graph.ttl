@@ -1,0 +1,63 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/253#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/253-1> rdf:type owl:Ontology .
+
+ex:People a go:Population ;
+    go:hasReason ex:Reason .
+
+ex:Reason a go:Concept ;
+    rdfs:label "Reason" .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:SpeakingAboutGod a go:EventInstance ;
+    go:HasAgent ex:People ;
+    go:HasTheme ex:God ;
+    rdfs:label "Speaking about God" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/253#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/253-2> rdf:type owl:Ontology .
+
+ex:hearingEvent a go:PerceptionEvent ;
+    go:HasAgent ex:you ;
+    go:HasTheme ex:speakingEvent .
+
+ex:speakingEvent a go:CommunicationEvent ;
+    go:HasAgent ex:people ;
+    go:HasTheme ex:God .
+
+ex:sayingEvent a go:CommunicationEvent ;
+    go:HasAgent ex:you ;
+    go:HasTheme ex:statement .
+
+ex:people a go:Group .
+ex:you a go:Group .
+ex:God a go:Deity .
+
+ex:statement a go:Message ;
+    rdf:value "There is no deity but Allah, the One, who is unlike anything else." .

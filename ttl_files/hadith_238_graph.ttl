@@ -1,0 +1,84 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/238#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/238-1> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Substance .
+ex:Existence a go:Event ;
+  go:HasAgent ex:God_Almighty .
+ex:Inform_Time a go:Event ;
+  go:HasAgent ex:God_Almighty ;
+  go:HasTheme ex:Time_of_Existence .
+
+ex:Existence go:isBefore ex:Inform_Time .
+
+ex:Time_of_Existence a go:theme .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/238#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/238-2> rdf:type owl:Ontology .
+
+ex:GodAlmighty a go:Deity ;
+    go:hasProperty ex:EternalExistence , ex:Unique , ex:SelfSufficient .
+
+ex:EternalExistence a go:Property ;
+    go:description "Has always existed and will never cease to exist" .
+
+ex:Unique a go:Property ;
+    go:description "Is singular and without equal" .
+
+ex:SelfSufficient a go:Property ;
+    go:description "Is independent and self-sustaining" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/238#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/238-3> rdf:type owl:Ontology .
+
+ex:GodAlmighty a go:Deity .
+
+# Representing the non-existence of the event of taking consort or child
+# No consort or child entity is related to GodAlmighty via go:hasConsort or go:hasChild
+
+# Define properties for clarity
+ex:hasConsort a rdf:Property ; rdfs:domain go:Deity ; rdfs:range go:Person .
+ex:hasChild a rdf:Property ; rdfs:domain go:Deity ; rdfs:range go:Person .
+
+# Assert that GodAlmighty does not have consort or child
+ex:GodAlmighty ex:hasConsort [] . # empty blank node indicating none
+ex:GodAlmighty ex:hasChild [] .
+
+# Alternatively, a negation can be indicated by negative statements or absence of triples
+# Here, we just state no consort or child exists for GodAlmighty

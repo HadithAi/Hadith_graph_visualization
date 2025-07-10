@@ -1,0 +1,142 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/237#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/237-1> rdf:type owl:Ontology .
+
+ex:speaker a go:Agent ;
+    rdfs:label "Speaker" .
+
+ex:jaafar a go:Agent ;
+    rdfs:label "Ja'far (peace be upon him)" .
+
+ex:allah a go:Substance ;
+    rdfs:label "Allah" ;
+    go:hasAttribute "Most Compassionate" , "Most Merciful" , "One" , "Only" , "Eternal Refuge" .
+
+ex:writeEvent a go:Event ;
+    go:hasAgent ex:speaker ;
+    go:hasTheme ex:jaafar ;
+    go:hasContent "I wrote to my father Ja'far (peace be upon him)" .
+
+ex:sayEvent a go:Event ;
+    go:hasAgent ex:speaker ;
+    go:hasTheme ex:jaafar ;
+    go:hasContent "I said to him: May God make me your ransom, we worship the Most Compassionate, the Most Merciful, the One, the Only, the Eternal Refuge" .
+
+ex:invocation a go:SpeechAct ;
+    go:expression "May God make me your ransom" ;
+    go:relatedTo ex:speaker, ex:jaafar, ex:allah .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/237#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/237-2> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+  go:HasAgent ex:Abu_Ja'far ;
+  go:utterance "Whoever worships the name instead of the named among the names has committed shirk, disbelieved, denied, and did not worship anything."^^xsd:string .
+
+ex:Abu_Ja'far a go:Person ;
+  go:name "Abu Ja'far" .
+
+ex:WorshipEvent1 a go:Worship ;
+  go:HasAgent ex:UnknownWorshipper ;
+  go:HasTheme ex:Name ;
+  go:wronglyDirectedTo ex:NamedEntity .
+
+ex:Name a go:Concept ;
+  go:denotes "name" .
+
+ex:NamedEntity a go:Substance ;
+  go:denotes "named" .
+
+ex:Shirk a go:Event ;
+  go:HasCause ex:WorshipEvent1 .
+
+ex:Disbelief a go:Event ;
+  go:HasCause ex:WorshipEvent1 .
+
+ex:Denial a go:Event ;
+  go:HasCause ex:WorshipEvent1 .
+
+ex:UnknownWorshipper a go:Person .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/237#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/237-3> rdf:type owl:Ontology .
+
+ex:Abu_Ja'far rdf:type go:Person ;
+  go:HasName "Abu Ja'far" .
+
+ex:SpeechEvent1 rdf:type go:Speech ;
+  go:HasAgent ex:Abu_Ja'far ;
+  go:HasTheme ex:Statement1 .
+
+ex:Statement1 rdf:type go:Directive ;
+  go:HasContent ex:WorshipEvent1 .
+
+ex:WorshipEvent1 rdf:type go:Worship ;
+  go:HasAgent ex:Believer ;
+  go:HasTheme ex:Allah .
+
+ex:Allah rdf:type go:Deity ;
+  go:HasName "Allah" ;
+  go:HasAttribute "The One" , "The Only" , "The Eternal Refuge" , "Named by these names instead of other names" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/237#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/237-4> rdf:type owl:Ontology .
+
+ex:Names rdf:type go:Attribute .
+ex:God rdf:type go:Deity .
+
+ex:DescribeEvent rdf:type go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Names ;
+    go:HasRecipient ex:God .
+go:Event rdfs:label "رخداد"@fa.

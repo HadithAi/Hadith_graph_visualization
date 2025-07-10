@@ -1,0 +1,206 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-1> rdf:type owl:Ontology .
+
+ex:event1 a go:Write ;
+    go:HasAgent ex:he ;
+    go:HasRecipient ex:man_peace ;
+    go:HasTheme ex:event2 .
+
+ex:event2 a go:Ask ;
+    go:HasAgent ex:he ;
+    go:HasRecipient ex:man_peace ;
+    go:About ex:disagreement .
+
+ex:disagreement a go:Difference ;
+    go:Involves ex:followers ;
+    go:Regarding ex:knowledge .
+
+ex:he a go:Person .
+ex:man_peace a go:Person ;
+    go:HasTitle "peace be upon him" .
+ex:followers a go:Group ;
+    go:BelongsTo ex:man_peace .
+ex:knowledge a go:Concept .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-2> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 rdf:type go:Communication ;
+    go:HasAgent ex:FollowersOfMan ;
+    go:HasTheme ex:Proposition1 .
+
+ex:FollowersOfMan rdf:type go:PersonGroup ;
+    go:aboutPerson ex:ManPeaceUponHim .
+
+ex:ManPeaceUponHim rdf:type go:Person ;
+    go:hasRespectfulTitle "peace be upon him" .
+
+ex:Proposition1 rdf:type go:Proposition ;
+    go:asserts ex:GodKnowledgeBeforeCreation .
+
+ex:GodKnowledgeBeforeCreation rdf:type go:State ;
+    go:hasSubject ex:God ;
+    go:hasProperty ex:AlwaysKnowledgeableBeforeCreation .
+
+ex:God rdf:type go:Deity .
+
+ex:AlwaysKnowledgeableBeforeCreation rdf:type go:TemporalProperty ;
+    go:before ex:CreationOfThings .
+
+ex:CreationOfThings rdf:type go:Event ;
+    go:hasTheme ex:Things .
+
+ex:Things rdf:type go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-3> rdf:type owl:Ontology .
+
+ex:speechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:someFollowersManPBUH ;
+    go:HasTheme ex:proposition1 .
+
+ex:someFollowersManPBUH a go:Group ;
+    go:represents ex:followersOfManPBUH .
+
+ex:followersOfManPBUH a go:Agent .
+
+ex:proposition1 a go:Proposition ;
+    go:concerns ex:God ;
+    go:states "We do not say that God ceased to know because the meaning of 'knowing' is 'acting'"^^xsd:string .
+
+ex:God a go:Agent .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-4> rdf:type owl:Ontology .
+
+ex:ProvingEvent1 a go:Event ;
+    go:HasAgent ex:We ;
+    go:HasTheme ex:Knowledge .
+
+ex:ProvingEvent2 a go:Event ;
+    go:HasAgent ex:We ;
+    go:HasTheme ex:Something ;
+    time:hasBeginning ex:Eternity .
+
+ex:We a go:agent .
+ex:Knowledge a go:Substance .
+ex:Something a go:entity .
+ex:Eternity a time:Instant .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-5> rdf:type owl:Ontology .
+
+ex:RequestEvent1 a go:RequestEvent ;
+    go:HasAgent ex:He ;
+    go:HasTheme ex:TeachingEvent1 ;
+    go:HasRecipient ex:Man_AlayhisSalam .
+
+ex:TeachingEvent1 a go:TeachingEvent ;
+    go:HasAgent ex:Man_AlayhisSalam ;
+    go:HasTheme ex:KnowledgeContent ;
+    go:HasRecipient ex:He .
+
+ex:He a go:Person .
+ex:Man_AlayhisSalam a go:Person ;
+    go:Honorific "peace be upon him" .
+ex:KnowledgeContent a go:Information ;
+    go:Description "from that what I can comprehend and not exceed" .
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-6> rdf:type owl:Ontology .
+
+ex:WritingEvent1 a go:Event ;
+    go:HasAgent ex:TheMan_PeaceBeUponHim ;
+    go:HasTheme ex:WrittenText1 .
+
+ex:TheMan_PeaceBeUponHim a go:Person ;
+    rdfs:label "the man (peace be upon him)" .
+
+ex:God a go:Substance ;
+    rdfs:label "God" ;
+    ex:hasAttribute ex:Knowledgeable ;
+    ex:isBlessedAndExalted true .
+
+ex:WrittenText1 a go:Statement ;
+    rdfs:label "God has always been knowledgeable; blessed and exalted be His mention" ;
+    ex:about ex:God ;
+    ex:expressesAttribute ex:Knowledgeable .
+
+ex:Knowledgeable a ex:Attribute ;
+    rdfs:label "knowledgeable" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

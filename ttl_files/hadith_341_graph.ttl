@@ -1,0 +1,70 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/341#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/341-1> rdf:type owl:Ontology .
+
+ex:God a go:Agent ;
+    go:hasPossession ex:Throne .
+
+ex:Throne a go:SpatialEntity ;
+    go:HasTheme ex:Heavens , ex:Earth ;
+    go:includes ex:AllThings .
+
+ex:Heavens a go:Place .
+ex:Earth a go:Place .
+ex:AllThings a go:Substance .
+
+ex:ThroneExtensionEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Throne ;
+    go:HasResult ex:ThroneExtendedOverHeavensAndEarth .
+
+ex:ThroneExtendedOverHeavensAndEarth a go:SpatialRelationEvent ;
+    go:HasTheme ex:Heavens , ex:Earth ;
+    go:involves ex:Throne .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/341#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/341-2> rdf:type owl:Ontology .
+
+ex:event_includes a go:Event ;
+    go:HasAgent ex:everything_in_chair ;
+    go:HasTheme ex:heavens, ex:earth .
+
+ex:everything_in_chair a go:Substance ;
+    go:IsLocatedIn ex:chair .
+
+ex:event_presence a go:Event ;
+    go:HasAgent ex:everything ;
+    go:IsLocatedIn ex:chair .
+
+ex:everything a go:Substance .
+ex:chair a go:object .
+ex:heavens a go:Substance .
+ex:earth a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.

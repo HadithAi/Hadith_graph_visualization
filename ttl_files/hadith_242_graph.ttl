@@ -1,0 +1,355 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-1> rdf:type owl:Ontology .
+
+ex:scholar a go:Person ;
+  rdfs:label "Religious Scholar from the Scholars" .
+
+ex:commander a go:Person ;
+  rdfs:label "Commander of the Faithful (peace be upon him)" .
+
+ex:lord a go:Divinity ;
+  rdfs:label "Lord" .
+
+ex:eventComing a go:Event ;
+  a go:MovementEvent ;
+  go:HasAgent ex:scholar ;
+  go:HasTheme ex:commander ;
+  rdfs:label "The scholar came to the commander" .
+
+ex:eventAsking a go:Event ;
+  a go:CommunicationEvent ;
+  go:HasAgent ex:scholar ;
+  go:HasRecipient ex:commander ;
+  go:HasTheme [
+    a go:InformationContent ;
+    rdfs:label "When was your Lord?" ;
+  ] ;
+  rdfs:label "The scholar asked the commander a question" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-2> rdf:type owl:Ontology .
+
+ex:event1 a go:SpeechEvent ;
+    go:HasAgent ex:CommanderOfTheFaithful ;
+    go:HasRecipient ex:Jurist ;
+    go:HasTheme "When was it not so that one can ask when it was?" .
+
+ex:CommanderOfTheFaithful a go:Person ;
+    rdfs:label "Commander of the Faithful (peace be upon him)" .
+
+ex:Jurist a go:Person ;
+    rdfs:label "Jurist" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-3> rdf:type owl:Ontology .
+
+ex:LordCommanderFaithful a go:Person ;
+    rdfs:label "رب أمير المؤمنين عليه‌السلام"@ar .
+
+ex:Qibla a go:Concept ;
+    rdfs:label "قبل"@ar .
+
+ex:HavingQiblaState a go:StateEvent ;
+    go:HasTheme ex:Qibla ;
+    go:HasAgent ex:LordCommanderFaithful ;
+    go:temporalRelation ex:BeforeQibla .
+
+ex:BeforeQibla a go:TimeInterval ;
+    rdfs:comment "Time before the establishment of the Qibla." .
+
+ex:noQiblaState a go:StateEvent ;
+    go:HasAgent ex:LordCommanderFaithful ;
+    go:negation true ;
+    go:HasTheme ex:Qibla ;
+    go:holdsDuring ex:BeforeQibla .
+go:Time rdfs:label "زمان"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-4> rdf:type owl:Ontology .
+
+ex:entity_AmirAl-Mu'minin a go:Deity ;
+    go:hasHonorific "عليه السلام" .
+
+ex:event_StateOfTranscendence a go:State ;
+    go:HasTheme ex:entity_AmirAl-Mu'minin ;
+    go:hasQuality ex:quality_BeyondDistance .
+
+ex:quality_BeyondDistance a go:Quality ;
+    go:description "Beyond distance after distance" .
+
+ex:entity_AmirAl-Mu'minin go:HasState ex:event_StateOfTranscendence .
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-5> rdf:type owl:Ontology .
+
+ex:LordCommanderFaithful a go:Substance ;
+    go:hasTitle "Lord of the Commander of the Faithful" ;
+    go:hasQuality ex:NoUltimateGoal, ex:NoEnd .
+
+ex:NoUltimateGoal a go:Quality ;
+    go:denies go:UltimateGoal .
+
+ex:NoEnd a go:Quality ;
+    go:denies go:End .
+
+# Define concepts
+ go:UltimateGoal a go:Quality .
+ go:End a go:Quality .
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-6> rdf:type owl:Ontology .
+
+ex:stopEvent a go:EventInstance ;
+    go:HasTheme ex:Aims ;
+    go:HasLocation ex:LordOfCommanderOfFaithful .
+
+ex:Aims a go:Substance ;
+    rdfs:label "Aims"@en .
+
+ex:LordOfCommanderOfFaithful a go:person ;
+    rdfs:label "Lord of the Commander of the Faithful (peace be upon him)"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-7> rdf:type owl:Ontology .
+
+ex:LordOfTheCommanderOfTheFaithful a go:Person ;
+    ex:isUltimateGoalOf ex:EveryObjective .
+
+ex:EveryObjective a go:Goal .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-8> rdf:type owl:Ontology .
+
+ex:Jurist a go:Person ;
+    rdfs:label "the jurist" .
+
+ex:CommanderOfFaithful a go:Person ;
+    rdfs:label "Commander of the Faithful" ;
+    ex:hasHonorific "peace be upon him" .
+
+ex:SpeechEvent1 a go:SpeechAct ;
+    go:HasAgent ex:Jurist ;
+    go:HasRecipient ex:CommanderOfFaithful ;
+    go:HasTheme ex:Question1 .
+
+ex:Question1 a ex:YesNoQuestion ;
+    ex:questionText "Am I the prophet?" ;
+    ex:aboutProperty ex:IsProphet ;
+    ex:aboutEntity ex:Jurist .
+
+ex:IsProphet a ex:Property .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-9> rdf:type owl:Ontology .
+
+ex:AmirAlMu_minin a go:Person ;
+    rdfs:label "Amir al-Mu'minin" .
+
+ex:AlHabir a go:Person ;
+    rdfs:label "The Scholar" .
+
+ex:Muhammad a go:Person ;
+    rdfs:label "Muhammad, peace be upon him and his family" .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:AmirAlMu_minin ;
+    go:HasRecipient ex:AlHabir ;
+    go:HasTheme "Woe to you, indeed I am a servant among the servants of Muhammad (peace be upon him and his family)." .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-10> rdf:type owl:Ontology .
+
+ex:CommanderOfFaithful a go:Person ;
+    go:hasTitle "Commander of the Faithful" .
+
+ex:OurLord a go:Deity ;
+    go:refersTo "our Lord" .
+
+ex:Heavens a go:Substance ;
+    rdfs:label "heavens" .
+
+ex:Earth a go:Substance ;
+    rdfs:label "earth" .
+
+ex:AskingEvent_001 a ex:QuestionEvent ;
+    go:HasAgent ex:UnnamedQuestioner ;
+    go:HasTheme ex:CommanderOfFaithful ;
+    go:HasRecipient ex:CommanderOfFaithful ;
+    go:hasContent "Where was our Lord before He created the heavens and the earth?" .
+
+ex:CreationEvent_001 a ex:CreationEvent ;
+    go:HasAgent ex:OurLord ;
+    go:HasTheme ex:Heavens, ex:Earth .
+
+ex:UnnamedQuestioner a go:Person .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-11> rdf:type owl:Ontology .
+
+ex:SayingEvent_1 rdf:type go:CommunicationEvent ;
+    go:HasAgent ex:AmirAlMu_minin_ImamAli ;
+    go:HasTheme ex:SpeechContent_1 .
+
+ex:AmirAlMu_minin_ImamAli rdf:type go:Person ;
+    dcterms:title "Amir al-Mu'minin, peace be upon him" .
+
+ex:SpeechContent_1 rdf:type go:AbstractContent ;
+    dcterms:description "The place to ask is about a place that does not exist." ;
+    ex:HasSubject ex:PlaceToAsk ;
+    ex:About ex:PlaceThatDoesNotExist .
+
+ex:PlaceToAsk rdf:type go:Place .
+ex:PlaceThatDoesNotExist rdf:type go:Place ;
+    ex:doesNotExist "true"^^xsd:boolean .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-12> rdf:type owl:Ontology .
+
+ex:God_Almighty a go:Deity .
+ex:Place a go:Location .
+ex:Existence_1 a go:State ;
+    go:HasAgent ex:God_Almighty .
+
+# Indicating God Almighty existed without place: no go:HasLocation property linking ex:Existence_1 to any place, or alternatively stating that the location is explicitly 'none' or 'absent' if supported by ontology.

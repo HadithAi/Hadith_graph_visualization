@@ -1,0 +1,151 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/233#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/233-1> rdf:type owl:Ontology .
+
+ex:event1 a go:Communication ;
+    go:HasAgent ex:man1 ;
+    go:HasRecipient ex:man2 ;
+    go:HasTheme ex:message1 .
+
+ex:man1 a go:Human ;
+    rdfs:label "the man" .
+
+ex:man2 a go:Human ;
+    rdfs:label "another man" .
+
+ex:message1 a go:InformationContent ;
+    go:hasText "What is indispensable in knowing the Creator without it?" .
+
+ex:Creator a go:Agent ;
+    rdfs:label "the Creator" .
+go:Information rdfs:label "اطلاعات"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/233#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/233-2> rdf:type owl:Ontology .
+
+ex:ThatMan rdf:type go:Person ;
+    go:performedEvent ex:WritingEvent1 .
+
+ex:WritingEvent1 rdf:type go:Writing ;
+    go:HasAgent ex:ThatMan ;
+    go:HasTheme ex:Response1 .
+
+ex:Response1 rdf:type go:Text ;
+    go:quoting ex:CreatorStatement .
+
+ex:Creator rdf:type go:Deity ;
+    go:hasAttribute ex:Knowledgeable , ex:Hearing , ex:Seeing , ex:EffectiveAgent .
+
+ex:CreatorStatement rdf:type go:Statement ;
+    go:about ex:Creator ;
+    go:hasProperty ex:Knowledgeable , ex:Hearing , ex:Seeing , ex:EffectiveAgent .
+
+ex:Knowledgeable rdf:type go:Attribute ;
+    rdfs:label "knowledgeable" .
+
+ex:Hearing rdf:type go:Attribute ;
+    rdfs:label "hearing" .
+
+ex:Seeing rdf:type go:Attribute ;
+    rdfs:label "seeing" .
+
+ex:EffectiveAgent rdf:type go:Attribute ;
+    rdfs:label "effective agent of will" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/233#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/233-3> rdf:type owl:Ontology .
+
+ex:Event1 a go:QuestionEvent ;
+    go:HasTheme ex:Abu_Jaafar_Alayh_Salaam ;
+    go:HasTopic ex:KnowledgeWithoutWhichInKnowingCreator .
+
+ex:Abu_Jaafar_Alayh_Salaam a go:Person ;
+    rdfs:label "Abu Ja'far (peace be upon him)" .
+
+ex:KnowledgeWithoutWhichInKnowingCreator a ex:Concept ;
+    ex:relatesTo ex:Creator .
+
+ex:Creator a go:Agent ;
+    rdfs:label "The Creator" .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/233#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/233-4> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Ja'far ;
+    go:HasTheme ex:GodUniquenessDescription .
+
+ex:Abu_Ja'far a go:Agent ;
+    rdfs:label "Abu Ja'far (peace be upon him)" .
+
+ex:God a go:Substance ;
+    rdfs:label "God" .
+
+ex:GodUniquenessDescription a go:Description ;
+    ex:NotLikeAnything ex:God ;
+    ex:NotComparableToAnything ex:God ;
+    ex:HasAttribute ex:AllKnowing, ex:AllHearing, ex:AllSeeing .
+
+ex:NotLikeAnything a go:Property ;
+    rdfs:label "not like anything" .
+
+ex:NotComparableToAnything a go:Property ;
+    rdfs:label "not comparable to anything" .
+
+ex:AllKnowing a go:Attribute ;
+    rdfs:label "all-knowing" .
+
+ex:AllHearing a go:Attribute ;
+    rdfs:label "all-hearing" .
+
+ex:AllSeeing a go:Attribute ;
+    rdfs:label "all-seeing" .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

@@ -1,0 +1,186 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/296#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/296-1> rdf:type owl:Ontology .
+
+ex:WritingEvent1 a go:Event ;
+    go:HasAgent ex:Person1 ;
+    go:HasRecipient ex:AbuAlHasan ;
+    go:HasTheme ex:AskingEvent1 .
+
+ex:Person1 a foaf:Person ;
+    foaf:name "الشخص" .
+
+ex:AbuAlHasan a foaf:Person ;
+    foaf:name "أبي الحسن عليه‌السلام" .
+
+ex:AskingEvent1 a go:Event ;
+    go:HasAgent ex:AbuAlHasan ;
+    go:HasTheme ex:QuestionAboutAllahKnowledge .
+
+ex:QuestionAboutAllahKnowledge a go:concept ;
+    go:about ex:Allah ;
+    rdfs:label "هل كان الله يعلم الأشياء قبل أن يخلق الأشياء ويكوِّنها؟" .
+
+ex:Allah a go:Substance ;
+    rdfs:label "الله عز وجل" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/296#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/296-2> rdf:type owl:Ontology .
+
+ex:Person a go:Human ;
+    rdfs:label "The person" .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:It a go:Object ;
+    go:hasReference "it" .
+
+ex:AskEvent a go:Event , ex:Questioning ;
+    go:HasAgent ex:Person ;
+    go:HasTheme ex:Question .
+
+ex:Question a go:InformationalContent ;
+    go:about ex:GodKnowledge, ex:GodCreation, ex:GodIntention .
+
+ex:GodKnowledge a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:It ;
+    go:hasPredicate "knowledge" .
+
+ex:GodCreation a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:It ;
+    go:hasPredicate "creation" .
+
+ex:GodIntention a go:Event ;
+    go:HasAgent ex:God ;
+    go:hasPredicate "intention" ;
+    go:HasTheme ex:It .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/296#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/296-3> rdf:type owl:Ontology .
+
+ex:Person a go:Person .
+ex:God a go:Deity .
+
+# Events representing creation and formation by God
+ex:CreationEvent a go:Creation ;
+    go:HasAgent ex:God .
+
+ex:FormationEvent a go:Formation ;
+    go:HasAgent ex:God .
+
+# The complex question as a thematic content
+ex:QuestionContent a go:QuestionContent ;
+    go:HasTheme ex:CreationEvent , ex:FormationEvent ;
+    go:AboutKnowledgeOf ex:God .
+
+# The main Ask event
+ex:AskEvent a go:Ask ;
+    go:HasAgent ex:Person ;
+    go:HasTheme ex:QuestionContent .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/296#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/296-4> rdf:type owl:Ontology .
+
+ex:WritingEvent1 a go:WritingEvent ;
+    go:HasAgent ex:AbuAlHasan_AlayhisSalam ;
+    go:HasTheme ex:DivineStatement .
+
+ex:AbuAlHasan_AlayhisSalam a go:Person ;
+    rdfs:label "Abu al-Hasan (peace be upon him)"@en .
+
+ex:DivineStatement a go:Text ;
+    go:content "God has always known the things before He created the things."@en .
+
+ex:God a go:Deity ;
+    go:agentIn ex:DivineKnowledgeEvent , ex:CreationEvent .
+
+ex:DivineKnowledgeEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Things ;
+    go:temporalExtent "Before creation" .
+
+ex:CreationEvent a go:CreationEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Things .
+
+ex:Things a go:Substance ;
+    rdfs:label "Things" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/296#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/296-5> rdf:type owl:Ontology .
+
+ex:Abi_al-Hasan_a_s a go:human ;
+    rdfs:label "Abi al-Hasan (peace be upon him)" .
+
+ex:WritingEvent1 a go:Event ;
+    go:HasAgent ex:Abi_al-Hasan_a_s ;
+    go:HasTheme ex:GodsKnowledge .
+
+ex:GodsKnowledge a go:concept ;
+    go:description "God's knowledge of things before their creation is like His knowledge of things after their creation." .
+go:Event rdfs:label "رخداد"@fa.

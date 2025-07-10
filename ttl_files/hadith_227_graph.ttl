@@ -1,0 +1,1960 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-1> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance ;
+    go:hasDifferenceFrom ex:OtherThings .
+
+ex:OtherThings a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-2> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasAgent ex:theThing ;
+    go:HasTheme ex:meaning .
+
+ex:theThing a go:Substance .
+ex:meaning a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-3> rdf:type owl:Ontology .
+
+ex:Thing a go:PhysicalObject ;
+    ex:hasProperty ex:RealityOfThingness .
+
+ex:RealityOfThingness a go:Quality .
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-4> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance .
+ex:Body a go:Substance .
+
+# Statement: Thing is not a body.
+# Represented as a negative triple - not subclass or instance of Body.
+
+# In standard RDF, negation is complex; here we annotate for clarity.
+
+ex:Thing go:isNotA ex:Body .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-5> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance ;
+    rdfs:label "Thing" .
+
+ex:Image a go:Substance ;
+    rdfs:label "Image" .
+
+ex:State1 a go:state ;
+    go:HasTheme ex:Thing ;
+    go:HasNegation true ;
+    go:RelatedConcept ex:Image .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-6> rdf:type owl:Ontology .
+
+ex:thing a go:Substance ;
+    rdfs:label "thing"@en .
+
+ex:feelingEvent a go:Event , ex:eventInstance ;
+    go:HasAgent ex:thing ;
+    go:negation true .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-7> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance ;
+    go:hasBody false .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-8> rdf:type owl:Ontology .
+
+ex:Thing a go:Object .
+ex:FiveSenses a go:Organ .
+
+ex:PerceptionEvent a go:Event ;
+    go:HasAgent ex:FiveSenses ;
+    go:HasTheme ex:Thing ;
+    go:hasStatus "negated" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-9> rdf:type owl:Ontology .
+
+ex:Illusions a go:Substance ;
+    rdfs:label "Illusions"@en .
+
+ex:TheThing a go:Substance ;
+    rdfs:label "The thing"@en .
+
+ex:PerceptionEvent a go:Event ;
+    rdfs:label "Perception event"@en ;
+    go:HasAgent ex:Illusions ;
+    go:HasTheme ex:TheThing .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-10> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance .
+ex:Ages a go:TemporalEntity ;
+	go:hasTemporalQuantity "ages"^^xsd:string .
+
+ex:PersistenceEvent a go:State ;
+	a go:Event ;
+	go:HasTheme ex:Thing ;
+	go:hasTemporalExtent ex:Ages ;
+	rdfs:comment "Event representing that the thing does not diminish over ages." .
+
+# Negation of diminishment
+ex:PersistenceEvent ex:negates ex:Diminishment .
+ex:Diminishment a go:State ;
+	go:HasTheme ex:Thing ;
+	go:hasTemporalExtent ex:Ages .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-11> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance ;
+    rdfs:label "thing" .
+
+ex:Times a go:Substance ;
+    rdfs:label "times" .
+
+ex:ChangeEvent a go:Event ;
+    go:HasAgent ex:Times ;
+    go:HasTheme ex:Thing .
+
+ex:Negation a go:negation ;
+    go:negates ex:ChangeEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-12> rdf:type owl:Ontology .
+
+ex:QuestionEvent12 a go:Event ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:QuestionContent12 .
+
+ex:Questioner a go:Agent .
+
+ex:QuestionContent12 a go:Content ;
+    ex:asksAbout ex:Thing .
+
+ex:Thing a go:Substance ;
+    ex:hasAttribute ex:AllHearing , ex:AllSeeing .
+
+ex:AllHearing a go:Quality .
+ex:AllSeeing a go:Quality .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-13> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+    go:hasQuality ex:AllHearing , ex:AllSeeing .
+
+ex:AllHearing a go:Quality .
+ex:AllSeeing a go:Quality .
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-14> rdf:type owl:Ontology .
+
+ex:Allah a go:Deity ;
+    go:hasProperty ex:AllHearingState .
+
+ex:AllHearingState a go:Property ;
+    go:isPropertyOf ex:Allah ;
+    go:hasNoAgent ex:Servant .
+
+ex:Servant a go:Role .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-15> rdf:type owl:Ontology .
+
+ex:event1 a go:Perceiving ;
+    go:HasAgent ex:God ;
+    go:HasManner ex:AnotherWay .
+
+ex:God a go:Agent ;
+    rdfs:label "God"@en .
+
+ex:AnotherWay a go:Device ;
+    rdfs:label "Another Way"@en .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-16> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:HasAgent ex:God .
+
+ex:God a go:Substance ;
+    go:name "God" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-17> rdf:type owl:Ontology .
+
+ex:SeeingEvent a go:Event ;
+  go:HasAgent ex:God ;
+  go:HasCause ex:God .
+
+ex:God a go:Role .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-18> rdf:type owl:Ontology .
+
+ex:Hearing a go:ActualEntity ;
+    rdfs:label "The Hearing (As-Sami')" .
+
+ex:Seeing a go:ActualEntity ;
+    rdfs:label "The Seeing (Al-Baseer)" .
+
+ex:Self a go:ActualEntity ;
+    rdfs:label "The Self (An-Nafs)" .
+
+ex:HearingEvent a go:Event ;
+    go:HasAgent ex:Hearing ;
+    go:HasAction ex:hearing .
+
+ex:SeeingEvent a go:Event ;
+    go:HasAgent ex:Seeing ;
+    go:HasAction ex:seeing .
+
+ex:hearing a go:Action ;
+    rdfs:label "hearing" .
+
+ex:seeing a go:Action ;
+    rdfs:label "seeing" .
+
+ex:negation1 a go:Negation ;
+    go:negates ex:equivalence1 .
+
+ex:equivalence1 a go:Equivalence ;
+    go:subject ex:Hearing , ex:Seeing ;
+    go:object ex:Self .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-19> rdf:type owl:Ontology .
+
+ex:IntendedMeaning a go:ConceptualEvent ;
+    go:HasTheme ex:SelfExpression ;
+    go:NegatesRelationship ex:DifferenceBetweenAllHearingAndAllSeeing .
+
+ex:SelfExpression a go:Concept .
+
+ex:DifferenceBetweenAllHearingAndAllSeeing a go:Relationship ;
+    go:Subject ex:AllHearing ;
+    go:Object ex:AllSeeing ;
+    go:Type ex:IntrinsicOrSemanticDifference .
+
+ex:AllHearing a go:Substance ;
+    rdfs:label "All-Hearing" .
+
+ex:AllSeeing a go:Substance ;
+    rdfs:label "All-Seeing" .
+
+ex:IntrinsicOrSemanticDifference a go:Quality .
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-20> rdf:type owl:Ontology .
+
+ex:Speaker a go:Person .
+ex:Questioner a go:Person .
+ex:Meaning a go:Concept .
+
+ex:WantingEvent a go:Event ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme ex:ExpressingEvent .
+
+ex:ExpressingEvent a go:Event ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme ex:Speaker .
+
+ex:UnderstandingEvent a go:Event ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:Meaning .
+
+ex:WantingEvent go:HasPurpose ex:UnderstandingEvent .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-21> rdf:type owl:Ontology .
+
+ex:DescribeEvent1 a go:Event ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme ex:God .
+
+ex:Speaker a go:Agent .
+ex:God a go:Substance ;
+    ex:hasQuality ex:AllHearing, ex:AllSeeing, ex:Knower, ex:Expert ;
+    ex:hasNoDifferenceInEssence true ;
+    ex:hasNoDifferenceInMeaning true .
+
+ex:AllHearing a go:Quality ;
+    rdfs:label "All-Hearing" .
+ex:AllSeeing a go:Quality ;
+    rdfs:label "All-Seeing" .
+ex:Knower a go:Quality ;
+    rdfs:label "Knower" .
+ex:Expert a go:Quality ;
+    rdfs:label "Expert" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-22> rdf:type owl:Ontology .
+
+ex:AskEvent1 a go:Event ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:QuestionContent1 .
+
+ex:Questioner a go:person .
+
+ex:QuestionContent1 a go:content ;
+    rdf:value "So what is it?" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-23> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah_AlaihAlSalam rdf:type go:Person .
+
+ex:SpeechEvent1 rdf:type go:Event ;
+  go:HasAgent ex:Abu_Abdullah_AlaihAlSalam ;
+  go:HasTheme "He is the Lord." .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-24> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah_a_s a foaf:Person .
+
+ex:saying1 a go:Event ;
+    go:HasAgent ex:Abu_Abdullah_a_s ;
+    go:HasTheme ex:statement1 .
+
+ex:statement1 a go:Event ;
+    go:HasTheme ex:he_entity .
+
+ex:he_entity a go:Substance ;
+    ex:isWorshipped true .
+
+ex:peace_be_upon_him rdf:value "peace be upon him" .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-25> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah_a.s. a go:Person ;
+    rdfs:label "Abu Abdullah" .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:sayingEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Abdullah_a.s. ;
+    go:HasTheme ex:utterance1 .
+
+ex:utterance1 a go:Utterance ;
+    go:hasContent "It is God"^^xsd:string .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-26> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person ;
+    rdfs:label "Abu Abdullah" ;
+    go:hasHonorific "peace be upon him" .
+
+ex:SpeechAct1 a go:SpeechAct ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:Statement1 .
+
+ex:Allah a go:Term ;
+    rdfs:label "Allah" .
+
+ex:Alif a go:Letter ; rdfs:label "Alif" .
+ex:Lam a go:Letter ; rdfs:label "Lam" .
+ex:Ha a go:Letter ; rdfs:label "Ha" .
+ex:Ra a go:Letter ; rdfs:label "Ra" .
+ex:Ba a go:Letter ; rdfs:label "Ba" .
+
+ex:Statement1 a go:Statement ;
+    ex:refersTo ex:Allah ;
+    ex:negatesAffirmationOf (ex:Alif ex:Lam ex:Ha ex:Ra ex:Ba) .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-27> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Agent ;
+    rdfs:label "Abu Abdullah (peace be upon him)" .
+
+ex:saying1 a go:CommunicativeAct ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:content_return .
+
+ex:content_return a go:Event ;
+    rdfs:label "Returning to meaning and creator" ;
+    go:HasTopic ex:meaning , ex:Creator_Maker .
+
+ex:meaning a go:InformationObject ;
+    rdfs:label "Meaning" .
+
+ex:Creator_Maker a go:Substance ;
+    rdfs:label "Creator and Maker of things" .
+
+ex:God a go:Substance ;
+    rdfs:label "God" .
+
+# Link Creator_Maker to God
+ex:Creator_Maker owl:sameAs ex:God .
+
+# The necessity aspect expressed as: 
+ex:content_return ex:hasModality ex:necessity .
+ex:necessity a go:Modality ;
+    rdfs:label "Necessity" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-28> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah_go_event1 a go:Speech ;
+  go:HasAgent ex:Abu_Abdullah ;
+  go:HasTheme ex:Content_Statement1 .
+
+ex:Content_Statement1 a go:Statement ;
+  go:HasTheme ex:Letters_Entity ;
+  go:HasDescription ex:Describing_Event1 , ex:Naming_Event1 .
+
+ex:Letters_Entity a go:Substance .
+
+ex:Meaning1 a go:Substance .
+
+ex:Describing_Event1 a go:Event ;
+  go:HasAgent ex:Describer_Undefined ; # implicit agent, possibly Abu Abdullah or general
+  go:HasTheme ex:Meaning1 ;
+  go:HasTheme ex:Letters_Entity .
+
+ex:Naming_Event1 a go:Event ;
+  go:HasAgent ex:Allah ;
+  go:HasTheme ex:Letters_Entity ;
+  go:HasName "this name" .
+
+ex:Allah a go:Substance .
+ex:Abu_Abdullah a go:Person .
+ex:Describer_Undefined a go:Person .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-29> rdf:type owl:Ontology .
+
+ex:SpeechAct_AbuAbdullah_1 a go:Event, ex:SpeechAct ;
+    go:HasAgent ex:AbuAbdullah ;
+    go:HasTheme ex:GodAttributes .
+
+ex:AbuAbdullah a go:Agent ;
+    rdfs:label "Abu Abdullah" .
+
+ex:God a go:Substance ;
+    rdfs:label ex:ArRahman , ex:ArRaheem , ex:AlAziz , ex:SimilarNames .
+
+ex:ArRahman a ex:DivineName ;
+    rdfs:label "Ar-Rahman (The Most Merciful)"@en .
+
+ex:ArRaheem a ex:DivineName ;
+    rdfs:label "Ar-Raheem (The Most Compassionate)"@en .
+
+ex:AlAziz a ex:DivineName ;
+    rdfs:label "Al-Aziz (The Almighty)"@en .
+
+ex:SimilarNames a ex:DivineNameCollection ;
+    rdfs:comment "Other similar divine names"@en .
+
+ex:GodAttributes a go:Theme .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-30> rdf:type owl:Ontology .
+
+ex:SpeechEvent_AbuAbdullah_1 a go:SpeechEvent ;
+    go:HasAgent ex:AbuAbdullah_pbuh ;
+    go:HasTheme ex:Statement_1 .
+
+ex:AbuAbdullah_pbuh a go:Person ;
+    go:hasHonorific "peace be upon him" .
+
+ex:Statement_1 a go:Proposition ;
+    go:expressesProperty ex:God_worshipped .
+
+ex:God_worshipped a go:Substance ;
+    go:hasTitle "God" ;
+    go:hasProperty go:Worshipped ;
+    go:hasAttribute go:Mighty , go:Glorious .
+
+go:Worshipped a go:Quality .
+go:Mighty a go:Quality .
+go:Glorious a go:Quality .
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-31> rdf:type owl:Ontology .
+
+ex:Event_Saying_1 a go:EventInstance ;
+    go:HasAgent ex:Entity_Questioner ;
+    go:HasTheme ex:Proposition_NoImaginedWithoutCreation .
+
+ex:Entity_Questioner a go:agent ;
+    rdfs:label "السائل"@ar .
+
+ex:ImaginedThing a go:Substance ;
+    rdfs:label "موهوم"@ar .
+
+ex:Proposition_NoImaginedWithoutCreation a ex:Proposition ;
+    ex:subject ex:ImaginedThing ;
+    ex:predicate ex:IsCreated ;
+    ex:quantifier "none except" .
+
+ex:IsCreated a ex:Relation ;
+    rdfs:label "مخلوق"@ar .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-32> rdf:type owl:Ontology .
+
+ex:Monotheism a go:Substance ;
+    rdfs:label "Monotheism"@en .
+
+ex:PeopleOfMonotheism a go:agentSet ;
+    rdfs:label "People of Monotheism"@en .
+
+ex:statement1 a rdf:Statement ;
+    rdf:subject ex:Monotheism ;
+    rdf:predicate ex:isHigherThan ;
+    rdf:object ex:PeopleOfMonotheism ;
+    ex:negation "true"^^xsd:boolean .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-33> rdf:type owl:Ontology .
+
+ex:PeopleOfMonotheism a go:Agent ;
+    rdfs:label "People of Monotheism" .
+
+ex:ImaginaryMatters a go:Substance ;
+    rdfs:label "Imaginary Matters" .
+
+# The event of assignment (not occurred)
+ex:AssignmentEvent a go:Event ;
+    go:HasAgent ex:PeopleOfMonotheism ;
+    go:HasTheme ex:ImaginaryMatters .
+
+# Negation represented as a property indicating non-occurrence
+ex:AssignmentEvent ex:didNotOccur true .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-34> rdf:type owl:Ontology .
+
+ex:ImaginaryThing a go:Substance .
+ex:Senses a go:Substance .
+
+ex:PerceptionEvent a go:Event ;
+    go:HasAgent ex:Senses ;
+    go:HasTheme ex:ImaginaryThing .
+
+ex:ImaginaryThing ex:canBePerceivedBy ex:Senses .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-35> rdf:type owl:Ontology .
+
+ex:Senses a go:Substance ;
+    rdfs:label "The Senses"@en .
+
+ex:Illusion a go:Substance ;
+    rdfs:label "The Illusion"@en .
+
+ex:DetermineIllusion a go:Event , ex:eventInstance ;
+    go:HasAgent ex:Senses ;
+    go:HasTheme ex:Illusion ;
+    rdfs:label "Determination of the Illusion"@en .
+
+ex:RepresentIllusion a go:Event , ex:eventInstance ;
+    go:HasAgent ex:Senses ;
+    go:HasTheme ex:Illusion ;
+    rdfs:label "Representation of the Illusion"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-36> rdf:type owl:Ontology .
+
+# Define classes
+ex:Illusion a go:Substance .
+ex:Creature a go:Substance .
+ex:Senses a go:Substance .
+
+g1:PerceptionEvent a go:Event .
+
+# For every illusion, it is perceived by senses
+ex:IllusionPerception a g1:PerceptionEvent ;
+    go:HasTheme ex:Illusion ;
+    go:HasAgent ex:Senses .
+
+# Every illusion is a creature (rdf:type relationship)
+ex:Illusion rdf:type ex:Creature .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-37> rdf:type owl:Ontology .
+
+ex:ProvingEvent a go:Event ;
+    go:hasTheme ex:CreatorOfThings ;
+    go:isModality ex:Necessity ;
+    go:contextualExclusion ex:Negation, ex:Analogy .
+
+ex:CreatorOfThings a go:agent .
+
+ex:Negation a go:Substance .
+ex:Analogy a go:Substance .
+ex:Necessity a go:modalCondition .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-38> rdf:type owl:Ontology .
+
+ex:Negation a go:Substance ;
+    go:definedAs ex:Cancellation , ex:NonExistence .
+
+ex:Cancellation a go:Substance .
+ex:NonExistence a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-39> rdf:type owl:Ontology .
+
+ex:Simile a go:Attribute ;
+    go:isAttributeOf ex:Creature .
+
+ex:Creature a go:Substance ;
+    go:hasVisibleProperty ex:ComplexStructure ;
+    go:hasVisibleProperty ex:Composition .
+    
+ex:ComplexStructure a go:Property ;
+    rdfs:label "complex structure"@en .
+
+ex:Composition a go:Property ;
+    rdfs:label "composition"@en .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-40> rdf:type owl:Ontology .
+
+ex:Makers a go:Agent ;
+    rdfs:label "makers" .
+
+ex:MadeThings a go:Object ;
+    rdfs:label "made things" .
+
+ex:ExistenceEvent_Makers a go:Existence ;
+    go:HasTheme ex:Makers .
+
+ex:ExistenceEvent_MadeThings a go:Existence ;
+    go:HasTheme ex:MadeThings .
+
+ex:ExistenceEvent_Makers go:necessaryFor ex:ExistenceEvent_MadeThings .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-41> rdf:type owl:Ontology .
+
+ex:MadeOnes a go:Substance ;
+    ex:isObligedToBe ex:BeingMade .
+
+ex:BeingMade a go:Event .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-42> rdf:type owl:Ontology .
+
+ex:Maker a go:Agent ;
+    rdfs:label "the maker" .
+
+ex:MadeBeings a go:CreatedEntity ;
+    rdfs:label "the made beings" .
+
+ex:DisparityEvent a go:State ;
+    go:HasAgent ex:Maker ;
+    go:HasTheme ex:MadeBeings ;
+    rdfs:comment "The maker is not like the made beings." .
+
+# Expressing the negation as a class inequality or dissimilarity
+ex:Maker go:isNotLike ex:MadeBeings .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-43> rdf:type owl:Ontology .
+
+ex:SimilarityEvent a go:State ;
+    go:HasAgent ex:Maker ;
+    go:HasTheme ex:MadeThings ;
+    ex:hasComposition ex:Composition ;
+    ex:hasArrangement ex:Arrangement ;
+    go:leadsTo ex:Analogy .
+
+ex:Maker a go:Substance .
+ex:MadeThings a go:Substance .
+ex:Composition a go:attribute .
+ex:Arrangement a go:attribute .
+ex:Analogy a go:State .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-44> rdf:type owl:Ontology .
+
+ex:ManufacturedObjects a go:PhysicalObject .
+ex:NonExistenceState a go:State ;
+    rdfs:label "Non-existence state" .
+ex:OccurrenceEvent a go:Event ;
+    go:HasTheme ex:ManufacturedObjects ;
+    go:HasCause ex:NonExistenceState .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-45> rdf:type owl:Ontology .
+
+ex:ManufacturedGoods a go:Substance ;
+    rdfs:label "Manufactured Goods"@en .
+
+ex:FundingEvent1 a go:Event , ex:Funding ;
+    go:HasTheme ex:ManufacturedGoods ;
+    time:hasBeginning ex:Childhood ;
+    time:hasEnd ex:Adulthood .
+
+ex:Childhood a time:Instant ;
+    rdfs:label "Childhood"@en .
+
+ex:Adulthood a time:Instant ;
+    rdfs:label "Adulthood"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-46> rdf:type owl:Ontology .
+
+ex:ManufacturedItems a go:ManufacturedObject .
+ex:Black a go:ColorSubstance ;
+    go:colorName "Black" .
+ex:White a go:ColorSubstance ;
+    go:colorName "White" .
+
+ex:ColoringEvent1 a go:ColoringEvent ;
+    go:HasTheme ex:ManufacturedItems ;
+    go:StartsWithColor ex:Black ;
+    go:EndsWithColor ex:White .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-47> rdf:type owl:Ontology .
+
+ex:Manufacturers a go:Agent ;
+    rdfs:label "Manufacturers"@en .
+
+ex:TransferEvent_1 a go:Event ;
+    go:HasAgent ex:Manufacturers ;
+    go:HasTheme ex:StateChange_1 .
+
+ex:StateChange_1 a ex:StateChange ;
+    ex:FromState ex:Strength ;
+    ex:ToState ex:Weakness .
+
+ex:Strength a go:Quality ;
+    rdfs:label "Strength"@en .
+
+ex:Weakness a go:Quality ;
+    rdfs:label "Weakness"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-48> rdf:type owl:Ontology .
+
+ex:existenceEvent1 a go:Event ;
+    go:HasTheme ex:StateRangeBlackToWhite .
+
+ex:StateRangeBlackToWhite a go:State ;
+    go:HasStart ex:Black ;
+    go:HasEnd ex:White .
+
+ex:Black a go:Substance .
+ex:White a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-49> rdf:type owl:Ontology .
+
+ex:Condition1 a go:Condition ;
+    go:hasQualityRange [
+        go:fromQuality ex:Strength ;
+        go:toQuality ex:Weakness
+    ] .
+
+ex:Strength a go:Quality .
+ex:Weakness a go:Quality .
+
+ex:ExistenceEvent1 a go:ExistenceEvent ;
+    go:HasTheme ex:Condition1 .
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-50> rdf:type owl:Ontology .
+
+ex:ExistingStates a go:State ;
+    go:HasExistence ex:ExistenceEvent1 ;
+    go:NeedsExplanation "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+
+ex:ExistenceEvent1 a go:ExistenceEvent ;
+    go:HasTheme ex:ExistingStates .
+
+ex:We a go:Agent .
+
+ex:ExplanationNegation a go:Event ;
+    go:HasAgent ex:We ;
+    go:HasTheme ex:ExistingStates ;
+    go:EventDescription "No need to explain to clarify nature and existence" .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-51> rdf:type owl:Ontology .
+
+ex:Questioner a go:agent ;
+    rdfs:label "The Questioner"@en .
+
+ex:SayingEvent a go:Event ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:ReportedSpeech .
+
+ex:ReportedSpeech a go:proposition ;
+    rdfs:label "I have determined his existence when I confirmed his existence"@en ;
+    go:includesEvent ex:DeterminationEvent , ex:ConfirmationEvent .
+
+ex:DeterminationEvent a go:Event ;
+    rdfs:label "Determined his existence"@en ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:HisExistence .
+
+ex:ConfirmationEvent a go:Event ;
+    rdfs:label "Confirmed his existence"@en ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:HisExistence .
+
+ex:HisExistence a go:entity ;
+    rdfs:label "His Existence"@en .
+
+ex:DeterminationEvent go:occursAfter ex:ConfirmationEvent .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-52> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah_a_s a go:Person ;
+    rdfs:label "Abu Abdullah (peace be upon him)" .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Abdullah_a_s ;
+    go:HasTheme ex:ExistenceOf_His .
+
+ex:ExistenceOf_His a go:AbstractEntity ;
+    ex:specificated false ;
+    ex:asserted true .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-53> rdf:type owl:Ontology .
+
+ex:Existence a go:Substance .
+ex:Negation a go:Substance .
+ex:Affirmation a go:Substance .
+
+ex:IntermediateRelation a go:State ;
+    go:HasTheme ex:Existence ;
+    go:RelatesTo ex:Negation , ex:Affirmation ;
+    go:Description "Existence being intermediate between negation and affirmation" .
+
+ex:NegationOfIntermediate a go:NegationEvent ;
+    go:HasTheme ex:IntermediateRelation ;
+    go:Description "Negation of existence being intermediate between negation and affirmation" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-54> rdf:type owl:Ontology .
+
+ex:questioner a go:Agent ;
+    rdfs:label "السائل"@ar, "questioner"@en .
+
+ex:necessity a go:Substance ;
+    rdfs:label "إنا"@ar, "necessity"@en .
+
+ex:possibility a go:Substance ;
+    rdfs:label "إمكانية"@ar, "possibility"@en .
+
+ex:askingEvent1 a go:AskingEvent ;
+    go:hasAgent ex:questioner ;
+    go:hasTheme ex:necessity, ex:possibility ;
+    rdfs:label "سؤال عن الإنا والإمكانية"@ar, "asking about necessity and possibility"@en .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-55> rdf:type owl:Ontology .
+
+ex:AbuAbdullah a go:Person ;
+    rdfs:label "Abu Abdullah (peace be upon him)" .
+
+ex:SayingEvent1 a go:Communication ;
+    go:HasAgent ex:AbuAbdullah ;
+    go:HasContent "Indeed, nothing is established except by certainty and possibility." .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-56> rdf:type owl:Ontology .
+
+ex:SpeechAct_1 a go:SpeechAct ;
+    go:HasAgent ex:Questioner ;
+    ex:hasUtterance "هل له كيفية؟" .
+
+ex:Questioner a go:Agent .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-57> rdf:type owl:Ontology .
+
+# Define the person Abu Abdullah
+person:Abu_Abdullah a go:Substance ;
+    rdfs:label "Abu Abdullah (peace be upon him)" .
+
+# Define the speech event
+ex:sayingEvent a go:Event ;
+    go:HasAgent person:Abu_Abdullah ;
+    go:HasTheme ex:utterance .
+
+# The utterance
+ex:utterance a go:InformationContent ;
+    go:hasText "No, because modality pertains to the manner of the attribute and comprehension." ;
+    go:hasPart ex:negation, ex:causalExplanation .
+
+ex:negation a concept:Negation ;
+    go:hasText "No" .
+
+ex:causalExplanation a concept:Explanation ;
+    go:hasText "Because modality pertains to the manner of the attribute and comprehension" ;
+    go:relatesTo concept:Modality, concept:Manner_of_Attribute, concept:Comprehension .
+
+# Concepts
+concept:Modality a go:Substance ;
+    rdfs:label "Modality" .
+concept:Manner_of_Attribute a go:Quality ;
+    rdfs:label "Manner of the Attribute" .
+concept:Comprehension a go:Quality ;
+    rdfs:label "Comprehension" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-58> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Agent , go:Person ;
+    rdfs:label "Abu Abdullah"^^xsd:string .
+
+ex:Saying_1 a ex:Saying , go:Event ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:NecessityStatement_1 .
+
+ex:NecessityStatement_1 a ex:NecessityStatement ;
+    ex:rejectsConcept ex:Deactivation , ex:Anthropomorphism .
+
+ex:Deactivation a go:Concept ;
+    rdfs:label "deactivation"^^xsd:string .
+
+ex:Anthropomorphism a go:Concept ;
+    rdfs:label "anthropomorphism"^^xsd:string .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-59> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person ;
+    rdfs:label "Abu Abdullah" .
+
+ex:Statement1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:DenialConsequences .
+
+ex:DenialConsequences a go:Concept ;
+    ex:denialRepudiates ex:Repudiation ;
+    ex:denialRejects ex:LordshipRejection ;
+    ex:denialInvalidates ex:Invalidation .
+
+ex:Repudiation a go:Concept .
+ex:LordshipRejection a go:Concept .
+ex:Invalidation a go:Concept .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-60> rdf:type owl:Ontology .
+
+ex:AbuAbdullah a go:Person ;
+    rdfs:label "Abu Abdullah" ;
+    go:honorific "عليه السلام" .
+
+ex:SayStatement1 a go:Saying, ex:EventInstance ;
+    go:HasAgent ex:AbuAbdullah ;
+    go:HasTheme ex:ConditionalStatement1 .
+
+ex:ConditionalStatement1 a ex:ConditionalStatement ;
+    ex:condition ex:LikeningEvent1 ;
+    ex:consequence ex:Affirmation1 .
+
+ex:LikeningEvent1 a ex:Attribution ;
+    go:HasAgent ex:UnknownPerson ;
+    go:HasTheme ex:Deity ;
+    ex:likenedTo ex:Others .
+
+ex:Deity a go:Deity ;
+    rdfs:label "Him" .
+
+ex:Others a go:CreatedMadeBeings .
+
+ex:Affirmation1 a ex:AttributeAssertion ;
+    go:HasTheme ex:Deity ;
+    ex:hasAttributes ex:CreatedMadeAttributes ;
+    ex:context "Which do not deserve divinity" .
+
+ex:CreatedMadeAttributes a go:AttributeSet ;
+    go:includes ex:CreatedBeings, ex:MadeBeings .
+
+ex:CreatedBeings a go:CreatedBeing .
+ex:MadeBeings a go:MadeBeing .
+
+ex:UnknownPerson a go:Person ;
+    go:role "who likens" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-61> rdf:type owl:Ontology .
+
+ex:AbuAbdullah a go:Person ;
+    rdfs:label "Abu Abdullah" .
+
+ex:SpeechEvent1 a go:CommunicationEvent ;
+    go:HasAgent ex:AbuAbdullah ;
+    go:HasTheme ex:Content1 .
+
+ex:Content1 a go:Assertion ;
+    go:asserts ex:UniqueNatureOfHe .
+
+ex:UniqueNatureOfHe a go:Property ;
+    go:about ex:He ;
+    go:hasProperty ex:UniqueHow .
+
+ex:He a go:Person .
+
+ex:UniqueHow a go:Quality ;
+    ex:NotDeservedByOthers true ;
+    ex:NotSharedByOthers true ;
+    ex:NotEncompassedByOthers true ;
+    ex:NotKnownByOthers true .
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-62> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 a go:Event, ex:SpeechEvent ;
+    go:HasAgent ex:Questioner ;
+    go:HasTheme ex:Question1 .
+
+ex:Questioner a go:Agent, go:Person .
+
+ex:Question1 a go:Proposition ;
+    go:HasSubject ex:Thing ;
+    go:HasEvent ex:SufferingEvent1 .
+
+ex:Thing a go:IndependentContinuant .
+
+ex:SufferingEvent1 a go:Event, ex:SufferingEvent ;
+    go:HasAgent ex:Thing .
+
+ex:Thing go:HasSelfCause ex:SufferingEvent1 .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-63> rdf:type owl:Ontology .
+
+ex:He a go:Person ;
+    go:HasQuality ex:NobilityGreaterThanStandard .
+
+ex:Suffering ex:HasAgent ex:He ;
+    go:HasTheme ex:Things .
+
+ex:SufferingDirectly a go:Event ;
+    go:IsModeOf ex:Suffering ;
+    go:HasAgent ex:He .
+
+ex:SufferingByHandling a go:Event ;
+    go:IsModeOf ex:Suffering ;
+    go:HasAgent ex:He .
+
+ex:HeNegatesSufferingDirectly a go:State ;
+    go:Subject ex:He ;
+    go:NegatesEvent ex:SufferingDirectly .
+
+ex:HeNegatesSufferingByHandling a go:State ;
+    go:Subject ex:He ;
+    go:NegatesEvent ex:SufferingByHandling .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-64> rdf:type owl:Ontology .
+
+ex:DirectingThings a go:Capability ;
+    rdfs:label "Directing things" .
+
+ex:ProcessingThings a go:Capability ;
+    rdfs:label "Processing things" .
+
+ex:DirectingProcessingProperty a go:Property ;
+    rdfs:label "Directing and processing property" ;
+    go:HasTheme ex:DirectingThings , ex:ProcessingThings .
+
+ex:Creature a go:LivingBeing ;
+    rdfs:label "Creature" ;
+    go:HasProperty ex:DirectingProcessingProperty .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-65> rdf:type owl:Ontology .
+
+ex:Thing a go:Substance .
+ex:Creature a go:Organism .
+ex:Directness a go:Method .
+ex:Processing a go:Method .
+
+ex:ReceiveEvent a go:Event ;
+    go:HasAgent ex:Thing ;
+    go:HasRecipient ex:Creature ;
+    go:HasCause ex:Directness , ex:Processing .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-66> rdf:type owl:Ontology .
+
+ex:He a go:Person .
+
+ex:Supreme a go:Quality ;
+    rdfs:label "supreme"@en .
+
+ex:Will a go:Concept ;
+    rdfs:label "will"@en .
+
+ex:Desire a go:Concept ;
+    rdfs:label "desire"@en .
+
+ex:StateInstance a go:State .
+
+ex:StateInstance go:HasAgent ex:He ;
+    go:HasTheme ex:Supreme , ex:Will , ex:Desire .
+go:Quality rdfs:label "ویژگی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/227#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/227-67> rdf:type owl:Ontology .
+
+ex:He a go:Agent .
+
+[] a go:Event ;
+   go:HasAgent ex:He ;
+   go:HasCause ex:He .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.

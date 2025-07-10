@@ -1,0 +1,251 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-1> rdf:type owl:Ontology .
+
+ex:God a go:Agent ;
+    go:hasAttribute ex:Will1 , ex:Will2 , ex:Intention1 , ex:Intention2 .
+
+ex:Will1 a go:Concept .
+ex:Will2 a go:Concept .
+ex:Intention1 a go:Concept .
+ex:Intention2 a go:Concept .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-2> rdf:type owl:Ontology .
+
+ex:DeterministicWill a go:Concept .
+ex:Prohibition a go:Concept .
+
+ex:DeterministicWill owl:equivalentClass ex:Prohibition .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-3> rdf:type owl:Ontology .
+
+ex:God a go:Substance .
+ex:NecessaryWill a go:Substance ;
+    rdfs:label "Necessary Will"@en .
+
+ex:CommandingEvent a go:Event ;
+    go:HasAgent ex:God ;
+    rdfs:label "God commands"@en .
+
+ex:NotDesiringEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:NecessaryWill ;
+    rdfs:label "God does not desire in necessary will"@en .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-4> rdf:type owl:Ontology .
+
+ex:Willpower a go:Concept .
+ex:Determination a go:Concept .
+
+ex:Willpower owl:equivalentClass ex:Determination .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-5> rdf:type owl:Ontology .
+
+ex:God a go:Substance .
+ex:SupremeWill a go:thematicArea .
+
+ex:ForbiddingEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasLocation ex:SupremeWill .
+
+ex:WillingEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasLocation ex:SupremeWill .
+
+ex:NoWilling a go:Negation ;
+    go:Negates ex:WillingEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-6> rdf:type owl:Ontology .
+
+ex:ProhibitionEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Adam , ex:AdamsWife ;
+    go:HasPatient ex:Tree ;
+    go:EventDescription "God forbade Adam and his wife from eating the tree." .
+
+ex:DivineWillEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:Causes ex:ProhibitionEvent ;
+    go:EventDescription "God willed the prohibition." .
+
+ex:God a go:Deity .
+ex:Adam a go:Person .
+ex:AdamsWife a go:Person .
+ex:Tree a go:Substance .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-7> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+    rdfs:label "God" .
+
+ex:Adam a go:Substance ;
+    rdfs:label "Adam" .
+
+ex:Adam_Wife a go:Substance ;
+    rdfs:label "Adam's wife" .
+
+ex:Tree a go:Substance ;
+    rdfs:label "Tree" .
+
+ex:Eating_Event a go:Event ;
+    go:HasAgent ex:Adam , ex:Adam_Wife ;
+    go:HasTheme ex:Tree ;
+    go:CausedBy ex:God_Will .
+
+ex:God_Will a go:Will ;
+    go:hasHolder ex:God ;
+    go:concernsEvent ex:Eating_Event .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-8> rdf:type owl:Ontology .
+
+ex:God a go:Substance .
+ex:Abraham a go:Substance .
+ex:Isaac a go:Substance .
+
+ex:CommandSacrificeEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasRecipient ex:Abraham ;
+    go:HasTheme ex:SacrificeIsaacAction .
+
+ex:SacrificeIsaacAction a go:Event ;
+    go:HasAgent ex:Abraham ;
+    go:HasTheme ex:Isaac .
+
+ex:AbrahamUnwillingToSacrifice a go:Event ;
+    go:HasAgent ex:Abraham ;
+    go:HasTheme ex:SacrificeIsaacAction ;
+    go:HasProperty go:Unwillingness .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-9> rdf:type owl:Ontology .
+
+ex:God a go:DivinePerson ;
+    go:hasWill ex:Will_God .
+
+ex:Ibrahim a go:Person ;
+    go:hasWill ex:Will_Ibrahim .
+
+ex:Will_God a go:Will .
+ex:Will_Ibrahim a go:Will .
+
+ex:PrevailingEvent_1 a go:PrevailingEvent ;
+    go:HasAgent ex:Will_Ibrahim ;
+    go:HasTheme ex:Will_God .

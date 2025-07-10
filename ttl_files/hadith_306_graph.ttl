@@ -1,0 +1,215 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-1> rdf:type owl:Ontology .
+
+ex:Satisfaction a go:EmotionalState ;
+  go:HasExistence ex:ExistenceEvent1 .
+
+ex:Dissatisfaction a go:EmotionalState ;
+  go:HasExistence ex:ExistenceEvent1 .
+
+ex:ExistenceEvent1 a go:Existence .
+
+ex:Creatures a go:Organism .
+
+# The emotions exist
+ex:ExistenceEvent1 go:HasTheme ex:Satisfaction, ex:Dissatisfaction .
+
+# But the emotions are not directed at creatures (negated thematic role)
+ex:Satisfaction go:NotDirectedAt ex:Creatures .
+ex:Dissatisfaction go:NotDirectedAt ex:Creatures .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-2> rdf:type owl:Ontology .
+
+ex:Satisfaction a go:State ;
+    rdfs:label "Satisfaction" .
+
+ex:Creature a go:Creature ;
+    rdfs:label "Creature" .
+
+ex:TransitionEvent a go:Event ;
+    go:HasAgent ex:Satisfaction ;
+    go:HasTheme ex:Creature ;
+    go:HasCause ex:Satisfaction ;
+    go:HasStartState [ a go:State ; rdfs:label "Initial State" ] ;
+    go:HasEndState [ a go:State ; rdfs:label "Resulting State" ] .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-3> rdf:type owl:Ontology .
+
+ex:Creature a go:Substance ;
+    ex:isHollow true ;
+    ex:isDefective true ;
+    ex:isComposite true ;
+    ex:hasEntrance ex:Entrance .
+
+ex:Entrance a ex:Entrance ;
+    ex:allowsEntryOf ex:Object .
+
+ex:Object a go:object .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-4> rdf:type owl:Ontology .
+
+ex:Creator a go:Substance ;
+    go:hasUnity "one"^^xsd:string ;
+    ex:hasSingularityOfEssence true ;
+    ex:hasSingularityOfMeaning true .
+
+ex:Things a go:Substance .
+
+# Statement: Things do not have entry into Creator
+ex:Creator ex:hasNoEntryFor ex:Things .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-5> rdf:type owl:Ontology .
+
+:God a go:Agent ;
+    ex:hasPleasure :GodPleasure ;
+    ex:hasAnger :GodAnger .
+
+:GodPleasure a go:EmotionalState ;
+    ex:resultsIn :Reward .
+
+:GodAnger a go:EmotionalState ;
+    ex:resultsIn :Punishment .
+
+:Reward a go:Substance .
+:Punishment a go:Substance .
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-6> rdf:type owl:Ontology .
+
+ex:Pleasure a go:EmotionalState ;
+    rdfs:label "Pleasure"@en .
+
+ex:Displeasure a go:EmotionalState ;
+    rdfs:label "Displeasure"@en .
+
+ex:Creator a go:Agent ;
+    rdfs:label "Creator"@en .
+
+ex:PleasureOccurrence a go:Event ;
+    go:HasTheme ex:Pleasure ;
+    go:HasAgent ex:Creator ;
+    go:OccursWithoutIntervention _:noEntity .
+
+ex:DispleasureOccurrence a go:Event ;
+    go:HasTheme ex:Displeasure ;
+    go:HasAgent ex:Creator ;
+    go:OccursWithoutIntervention _:noEntity .
+
+_:noEntity a go:Nothing .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-7> rdf:type owl:Ontology .
+
+ex:ExcitingAndMoving a go:Property ;
+    rdfs:label "Exciting and Moving from one state to another" .
+
+ex:Creator a go:Substance ;
+    rdfs:label "Creator" .
+
+ex:Creature a go:Substance ;
+    rdfs:label "Creatures" ;
+    ex:hasAttribute ex:Incapacitated ;
+    ex:hasAttribute ex:Needy .
+
+ex:Incapacitated a go:Attribute ;
+    rdfs:label "Incapacitated" .
+
+ex:Needy a go:Attribute ;
+    rdfs:label "Needy" .
+
+# Negation of attribute for Creator
+ex:Creator ex:doesNotHaveAttribute ex:ExcitingAndMoving .
+
+# Creatures have the attribute
+ex:Creature ex:hasAttribute ex:ExcitingAndMoving .
+go:Substance rdfs:label "شی"@fa.

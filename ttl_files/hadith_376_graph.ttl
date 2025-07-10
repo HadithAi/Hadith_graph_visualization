@@ -1,0 +1,150 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/376#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/376-1> rdf:type owl:Ontology .
+
+ex:God a go:Deity .
+
+ex:Science1 a go:Science .
+ex:Science2 a go:Science .
+
+ex:God go:HasTheme ex:Science1 .
+ex:God go:HasTheme ex:Science2 .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/376#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/376-2> rdf:type owl:Ontology .
+
+ex:FirstKnowledge rdf:type go:Substance ;
+    rdfs:label "The first knowledge"@en ;
+    rdfs:comment "Hidden and stored knowledge"@en .
+
+ex:God rdf:type go:Agent ;
+    rdfs:label "God"@en .
+
+ex:KnowingEvent1 rdf:type go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:FirstKnowledge ;
+    rdfs:comment "An event of knowing that only God participates as agent"@en .
+
+# To express exclusivity, a note as comment or a property stating no other agent knows this knowledge can be added, but since standard ontologies don't usually encode exclusivity in triples directly, a comment is sufficient here.
+
+ex:FirstKnowledge ex:knownOnlyBy ex:God .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/376#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/376-3> rdf:type owl:Ontology .
+
+ex:God a go:Agent ;
+    go:HasKnowledge ex:HiddenKnowledge .
+
+ex:HiddenKnowledge a go:Substance ;
+    go:hasAttribute "hidden" , "stored" .
+
+ex:BeginningEvent a go:Event ;
+    go:HasCause ex:HiddenKnowledge ;
+    go:HasAgent ex:God .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/376#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/376-4> rdf:type owl:Ontology .
+
+ex:TheSecondKnowledge a go:Knowledge ;
+    go:label "the second knowledge" .
+
+ex:Allah a go:DivineBeing ;
+    go:label "Allah" .
+
+ex:Angels a go:SpiritualBeings ;
+    go:label "angels" .
+
+ex:Messengers a go:SpiritualBeings ;
+    go:label "messengers" .
+
+ex:Prophets a go:SpiritualBeings ;
+    go:label "prophets" .
+
+ex:TeachingEvent a go:TeachingEvent ;
+    go:hasAgent ex:Allah ;
+    go:hasTheme ex:TheSecondKnowledge ;
+    go:hasRecipient ex:Angels , ex:Messengers , ex:Prophets .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/376#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/376-5> rdf:type owl:Ontology .
+
+ex:God a go:Agent, ex:DivineBeing .
+ex:Angels a go:RecipientGroup .
+ex:Messengers a go:RecipientGroup .
+ex:Prophets a go:RecipientGroup .
+ex:SecondKnowledge a go:Knowledge .
+
+ex:TeachingEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:SecondKnowledge ;
+    go:HasRecipient ex:Angels , ex:Messengers , ex:Prophets .
+
+ex:We a go:Agent, ex:GroupOfPeople .
+
+ex:KnowingEvent a go:Event ;
+    go:HasAgent ex:We ;
+    go:HasTheme ex:SecondKnowledge .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.

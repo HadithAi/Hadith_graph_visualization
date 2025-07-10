@@ -1,0 +1,82 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/260#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/260-1> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:hasAgent ex:Abu_Jaafar ;
+    go:hasTheme ex:Abu_Jaafar_Hand ;
+    go:hasLocation ex:Sky ;
+    rdfs:label "Raising hand event" .
+
+ex:Abu_Jaafar a go:person ;
+    rdfs:label "Abu Ja'far (peace be upon him)" .
+
+ex:Abu_Jaafar_Hand a go:bodyPart ;
+    go:isPartOf ex:Abu_Jaafar ;
+    rdfs:label "Hand of Abu Ja'far" .
+
+ex:Sky a go:place ;
+    rdfs:label "Sky" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/260#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/260-2> rdf:type owl:Ontology .
+
+ex:Abu_Ja'far rdf:type go:Person ;
+    go:honorific "peace_be_upon_him" .
+
+ex:The_Mighty rdf:type go:Deity ;
+    go:title "The Mighty" .
+
+ex:Saying_Abu_Ja'far_1 rdf:type go:SpeechAct ;
+    go:HasAgent ex:Abu_Ja'far ;
+    go:HasTheme ex:Utterance_1 .
+
+ex:Utterance_1 rdf:type go:SpeechContent ;
+    go:IncludesStatement ex:Exaltation_1 , ex:Exaltation_2 , ex:Warning .
+
+ex:Exaltation_1 rdf:type go:SpeechStatement ;
+    go:HasContent "The Mighty is exalted" ;
+    go:HasTheme ex:The_Mighty ;
+    go:hasRepetition 1 .
+
+ex:Exaltation_2 rdf:type go:SpeechStatement ;
+    go:HasContent "The Mighty is exalted" ;
+    go:HasTheme ex:The_Mighty ;
+    go:hasRepetition 2 .
+
+ex:Warning rdf:type go:SpeechStatement ;
+    go:HasContent "Whoever takes that perishes" ;
+    go:HasAgent ex:Any_Person ;
+    go:HasTheme ex:That_Action ;
+    go:IndicatesConsequences ex:PerishingEvent .
+
+ex:Any_Person rdf:type go:Person .
+
+ex:That_Action rdf:type go:Action .
+
+ex:PerishingEvent rdf:type go:Destruction ;
+    go:HasTheme ex:Any_Person .

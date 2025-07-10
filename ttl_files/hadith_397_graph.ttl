@@ -1,0 +1,164 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-1> rdf:type owl:Ontology .
+
+ex:Al_Saeed a go:Person .
+ex:People a go:People .
+ex:Path_of_Miserable a go:Path .
+
+ex:Likening_Event a go:Event ;
+    go:HasTheme ex:Al_Saeed ;
+    go:HasTarget ex:Path_of_Miserable .
+
+ex:Speaking_Event a go:Event ;
+    go:HasAgent ex:People ;
+    go:HasTheme ex:Al_Saeed ;
+    go:HasContent "He resembles them; indeed, he is one of them." .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-2> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:HasAgent ex:Happiness ;
+    go:HasTheme ex:Person ;
+    go:hasTime ex:Later .
+
+ex:Happiness a go:Substance .
+
+ex:Person a go:agent .
+
+ex:Later a go:Time .
+go:Event rdfs:label "رخداد"@fa.
+go:Time rdfs:label "زمان"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-3> rdf:type owl:Ontology .
+
+ex:LeadingEvent a go:Event ;
+    go:HasAgent ex:PathOfTheHappy ;
+    go:HasTheme ex:TheWicked .
+
+ex:TheWicked a go:Person .
+ex:PathOfTheHappy a go:Path .
+ex:People a go:Group .
+
+# Representation of people's perception can be modeled as well, but based on sentence focus, main event mapping is above.
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-4> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+  go:HasAgent ex:Misery ;
+  go:HasTheme ex:Person ;
+  go:hasTemporalContext "afterward" .
+
+ex:Misery a go:Substance ;
+  rdfs:label "Misery" .
+
+ex:Person a go:person .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-5> rdf:type owl:Ontology .
+
+ex:PredestinationEvent1 a go:PredestinationEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:He ;
+    go:HasResult ex:HappinessState1 .
+
+ex:God a go:Deity .
+ex:He a go:Person .
+ex:HappinessState1 a go:State ;
+    go:Description "Happiness" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-6> rdf:type owl:Ontology .
+
+ex:Event_WritingHappiness a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:Person ;
+    go:Type "writing_happiness" .
+
+ex:Event_SealingHappiness a go:Event ;
+    go:HasTheme ex:Person ;
+    go:Type "sealing_with_happiness" ;
+    go:Condition ex:Condition_DepartureSheCamel .
+
+ex:God a go:Agent .
+ex:Person a go:Agent .
+
+ex:Condition_DepartureSheCamel a go:Condition ;
+    go:Description "Nothing remains in the world except the departure of a she-camel"^^xsd:string .
+go:Event rdfs:label "رخداد"@fa.
+go:Agent rdfs:label "عامل"@fa.

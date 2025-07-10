@@ -1,0 +1,188 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/319#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/319-1> rdf:type owl:Ontology .
+
+ex:Man a go:Substance ;
+    rdfs:label "الرجل" .
+
+ex:Abu_Abdullah a go:Substance ;
+    rdfs:label "أبي عبد الله عليه السلام" .
+
+ex:SpeechEvent1 a go:speechEvent ;
+    go:HasAgent ex:Man ;
+    go:HasRecipient ex:Abu_Abdullah ;
+    go:HasTheme "الله أكبر" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/319#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/319-2> rdf:type owl:Ontology .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasRecipient ex:Man ;
+    go:HasTheme ex:Question1 .
+
+ex:Abu_Abdullah a go:Person ;
+    rdfs:label "Abu Abdullah (peace be upon him)" .
+
+ex:Man a go:Person ;
+    rdfs:label "Man" .
+
+ex:Question1 a go:InformationContent ;
+    rdfs:label "Is God greater than anything?" ;
+    go:refersTo ex:God , ex:Anything .
+
+ex:God a go:Deity ;
+    rdfs:label "God" .
+
+ex:Anything a go:Thing ;
+    rdfs:label "Anything" .
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/319#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/319-3> rdf:type owl:Ontology .
+
+ex:man a go:Person ;
+    rdfs:label "man"@en .
+
+ex:God a go:Deity ;
+    rdfs:label "God"@en .
+
+ex:everything a go:Concept ;
+    rdfs:label "everything"@en .
+
+ex:speech1 a go:CommunicationEvent ;
+    go:HasAgent ex:man ;
+    go:HasTheme ex:statement1 .
+
+ex:statement1 a go:ComparativeStatement ;
+    go:HasSubject ex:God ;
+    go:HasObject ex:everything ;
+    go:GreaterThan true .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/319#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/319-4> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person ;
+  rdfs:label "Abu Abdullah" .
+
+ex:God a go:Deity ;
+  rdfs:label "God" .
+
+ex:SayEvent1 a go:SayEvent , go:Event ;
+  go:HasAgent ex:Abu_Abdullah ;
+  go:HasTheme ex:DefineEvent1 ;
+  rdfs:label "Speech by Abu Abdullah: 'I have defined God.'" .
+
+ex:DefineEvent1 a go:DefinitionEvent , go:Event ;
+  go:HasAgent ex:Abu_Abdullah ;
+  go:HasTheme ex:God ;
+  rdfs:label "Defining God" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/319#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/319-5> rdf:type owl:Ontology .
+
+ex:Man1 a go:Person ;
+    rdfs:label "الرجل"@ar .
+
+ex:QuestionContent1 a go:InformationObject ;
+    go:hasText "كيف أقول ذلك؟"@ar .
+
+ex:Event1 a go:Event ;
+    go:HasAgent ex:Man1 ;
+    go:HasTheme ex:QuestionContent1 ;
+    rdfs:label "Questioning event" .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/319#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/319-6> rdf:type owl:Ontology .
+
+ex:Abu_Abdullah a go:Person ;
+    go:hasTitle "Peace be upon him" .
+
+ex:SpeechEvent1 a go:SpeechEvent ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:CommandEvent1 .
+
+ex:CommandEvent1 a go:CommandEvent ;
+    go:HasAgent ex:Abu_Abdullah ;
+    go:HasTheme ex:Utterance1 .
+
+ex:Utterance1 a go:Utterance ;
+    go:utteredText "God is greater than can be described." .
+
+ex:God a go:Deity .
+
+ex:Description a go:Property ;
+    go:propertyOf ex:God ;
+    go:propertyType "Descriptive capacity" ;
+    go:propertyValue "Greater than can be described" .

@@ -1,0 +1,35 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/419#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/419-1> rdf:type owl:Ontology .
+
+ex:God a go:Agent, go:Substance ;
+  go:hasGiven ex:Blessings .
+
+ex:People a go:Population .
+
+ex:Blessings a go:Substance .
+
+ex:protest_1 a go:Event ;
+  go:HasAgent ex:God ;
+  go:HasTheme ex:Blessings ;
+  go:HasRecipient ex:People .
+
+ex:recognition_1 a go:Event ;
+  go:HasAgent ex:God ;
+  go:HasTheme ex:Blessings ;
+  go:HasRecipient ex:People .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Agent rdfs:label "عامل"@fa.

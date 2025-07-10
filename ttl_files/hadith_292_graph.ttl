@@ -1,0 +1,90 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/292#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/292-1> rdf:type owl:Ontology .
+
+ex:event1 a go:Event ;
+    go:HasAgent ex:I ;
+    go:HasRecipient ex:Abu_al_Hasan ;
+    go:HasTheme ex:statement_Hisham .
+
+ex:I a go:Person .
+ex:Abu_al_Hasan a go:Person .
+ex:Hisham_al_Jawaliqi a go:Person .
+
+ex:statement_Hisham a go:Information ;
+    go:HasSource ex:Hisham_al_Jawaliqi ;
+    go:describes ex:Successful_Young_Man .
+
+ex:Successful_Young_Man a go:Person .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/292#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/292-2> rdf:type owl:Ontology .
+
+ex:Speaker a go:Agent .
+ex:AbuAlHasan a go:Agent .
+ex:HishamIbnAlHakam a go:Agent .
+
+# The statement uttered by Hisham ibn al-Hakam
+ex:Statement1 a go:InformationObject ;
+    go:HasAgent ex:HishamIbnAlHakam .
+
+# Narration event where the speaker narrates the statement to Abu Al Hasan
+ex:NarrationEvent1 a go:Communication ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme ex:Statement1 ;
+    go:HasRecipient ex:AbuAlHasan .
+go:Information rdfs:label "اطلاعات"@fa.
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/292#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/292-3> rdf:type owl:Ontology .
+
+:AbuAlHasan a go:Person ;
+    rdfs:label "Abu al-Hasan (peace be upon him)" .
+
+:Allah a go:Deity ;
+    rdfs:label "Allah" .
+
+:SayEvent1 a go:SpeechEvent ;
+    go:hasAgent :AbuAlHasan ;
+    go:hasTheme :Utterance1 .
+
+:Utterance1 a go:Message ;
+    rdfs:label "Indeed, nothing resembles Allah." ;
+    ex:deniesResemblanceTo :Allah .

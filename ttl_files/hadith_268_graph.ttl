@@ -1,0 +1,96 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/268#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/268-1> rdf:type owl:Ontology .
+
+ex:Prophet_Muhammad a go:Person ;
+    rdfs:label "Prophet Muhammad (peace be upon him and his family)" .
+
+ex:Gabriel a go:Person ;
+    rdfs:label "Gabriel" .
+
+ex:AscensionEvent a go:Event ;
+    go:HasAgent ex:Prophet_Muhammad ;
+    go:HasLocation ex:Heavens .
+
+ex:GabrielReachesPlace a go:Event ;
+    go:HasAgent ex:Gabriel ;
+    go:HasTheme ex:UniquePlace .
+
+ex:UniquePlace a go:Place ;
+    go:description "A place in the heavens that Gabriel had never set foot on before" .
+
+ex:Utterance1 a go:Event ;
+    go:HasAgent ex:Prophet_Muhammad ;
+    go:expresses ex:AscensionEvent, ex:GabrielReachesPlace .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/268#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/268-2> rdf:type owl:Ontology .
+
+ex:God a go:Agent .
+ex:Gabriel a go:Agent .
+ex:ThatPlace a go:Place .
+
+ex:revelationEvent1 a ex:RevelationEvent ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:ThatPlace ;
+    go:HasRecipient ex:Gabriel .
+go:Agent rdfs:label "عامل"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/268#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/268-3> rdf:type owl:Ontology .
+
+ex:God a go:Substance ;
+    go:denotes <http://dbpedia.org/resource/God> .
+
+ex:Gabriel a go:Substance ;
+    go:denotes <http://dbpedia.org/resource/Gabriel> .
+
+ex:LightOfGreatness a go:Substance ;
+    go:denotes "Light symbolizing God's greatness" .
+
+ex:ShowingLightEvent a go:Event, ex:eventInstance ;
+    go:HasAgent ex:God ;
+    go:HasRecipient ex:Gabriel ;
+    go:HasTheme ex:LightOfGreatness ;
+    go:hasManner ex:GodsLove .
+
+ex:GodsLove a go:Quality ;
+    go:inheresIn ex:God .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+go:Quality rdfs:label "ویژگی"@fa.

@@ -1,0 +1,124 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/288#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/288-1> rdf:type owl:Ontology .
+
+ex:Hisham_ibn_alHakam a go:Person ;
+    rdfs:label "Hisham ibn al-Hakam" .
+
+ex:Body a go:Substance ;
+    rdfs:label "body" .
+
+ex:SayingEvent1 a go:Event ;
+    rdfs:label "Hisham says that it is a body" ;
+    go:hasAgent ex:Hisham_ibn_alHakam ;
+    go:hasTheme ex:Proposition1 .
+
+ex:Proposition1 a go:Proposition ;
+    rdfs:label "it is a body" ;
+    go:refersTo ex:Body .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/288#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/288-2> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    rdfs:label "God Almighty"@en .
+
+ex:AnyEntity a go:Substance ;
+    rdfs:label "Anything"@en .
+
+ex:SimilarityEvent a go:Event ;
+    go:HasAgent ex:God ;
+    go:HasTheme ex:AnyEntity .
+
+ex:NegativeSimilarity a go:Negation ;
+    go:NegatedEvent ex:SimilarityEvent .
+go:Event rdfs:label "رخداد"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/288#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/288-3> rdf:type owl:Ontology .
+
+ex:Statement1 a go:Concept ;
+    go:HasAgent ex:Speaker ;
+    go:HasTheme ex:Creator ;
+    go:Describes ex:AttributesOfCreator ;
+    go:HasProperty ex:Obscene ;
+    go:HasProperty ex:Treacherous .
+
+ex:Creator a go:Substance .
+
+ex:AttributesOfCreator a go:Concept ;
+    go:IncludesDescription "body" , "image" , "creation" , "definition" , "limbs" .
+
+ex:Obscene a go:Attribute ;
+    rdfs:label "Obscene" .
+
+ex:Treacherous a go:Attribute ;
+    rdfs:label "Treacherous" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/288#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/288-4> rdf:type owl:Ontology .
+
+ex:God a go:Deity ;
+    go:HasProperty ex:Exaltedness .
+
+ex:Exaltedness a go:Quality ;
+    go:description "Exalted, far beyond being described by such attributes" .
+
+ex:Attributes a go:AttributeSet ;
+    rdfs:label "these attributes" .
+
+ex:DescriptionEvent a go:State ;
+    go:HasAgent [] ;
+    go:HasTheme ex:Attributes ;
+    go:status "negated" ;
+    go:refersTo ex:God .
+go:Quality rdfs:label "ویژگی"@fa.

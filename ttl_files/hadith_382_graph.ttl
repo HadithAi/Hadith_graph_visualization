@@ -1,0 +1,118 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/382#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/382-1> rdf:type owl:Ontology .
+
+ex:event1 a go:CommunicationEvent ;
+  go:HasAgent ex:God_Almighty ;
+  go:HasRecipient ex:Muhammad ;
+  go:HasTheme ex:Information_since_world_existence .
+
+ex:God_Almighty a go:Substance ;
+  rdfs:label "God Almighty" .
+
+ex:Muhammad a go:Substance ;
+  rdfs:label "Muhammad (peace be upon him and his family)" .
+
+ex:Information_since_world_existence a go:InformationContent ;
+  rdfs:label "What has been since the existence of the world" .
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/382#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/382-2> rdf:type owl:Ontology .
+
+ex:InformingEvent1 a ex:InformingEvent ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasRecipient ex:Muhammad ;
+    go:HasTheme ex:FutureEventsUntilEndOfWorld .
+
+ex:God_Almighty a go:Substance ;
+    rdfs:label "God Almighty" .
+
+ex:Muhammad a go:Substance ;
+    rdfs:label "Muhammad, peace be upon him and his family" .
+
+ex:FutureEventsUntilEndOfWorld a go:Substance ;
+    rdfs:label "Information about what will happen until the end of the world" .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/382#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/382-3> rdf:type owl:Ontology .
+
+ex:eventInstance1 a go:Event ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Inevitable_Content ;
+    go:HasRecipient ex:Muhammad_PBUH .
+
+ex:God_Almighty a go:divineBeing ;
+    rdfs:label "God Almighty" .
+
+ex:Muhammad_PBUH a go:person ;
+    rdfs:label "Muhammad (peace be upon him and his family)" .
+
+ex:Inevitable_Content a go:content ;
+    go:description "the inevitable outcome regarding that matter" .
+go:Event rdfs:label "رخداد"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/382#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/382-4> rdf:type owl:Ontology .
+
+ex:event1 a go:Event, ex:ExemptionEvent ;
+    go:HasAgent ex:God_Almighty ;
+    go:HasTheme ex:Muhammad ;
+    ex:ExceptFor ex:Inevitable .
+
+ex:God_Almighty a go:God ;
+    go:label "God Almighty"@en .
+
+ex:Muhammad a go:Person ;
+    go:label "Muhammad, peace be upon him and his family"@en .
+
+ex:Inevitable a go:Concept ;
+    go:label "the inevitable that God informed him about"@en .
+go:Event rdfs:label "رخداد"@fa.

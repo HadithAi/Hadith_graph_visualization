@@ -1,0 +1,162 @@
+
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/266#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/266-1> rdf:type owl:Ontology .
+
+ex:Scholar a go:person ;
+    rdfs:label "Scholar"@en .
+
+ex:CommanderOfFaithful a go:person ;
+    rdfs:label "Commander of the Faithful (peace be upon him)"@en .
+
+ex:ComingEvent1 a go:ComingEvent ;
+    go:HasAgent ex:Scholar ;
+    go:HasTheme ex:CommanderOfFaithful ;
+    rdfs:label "Scholar came to Commander of the Faithful"@en .
+
+ex:AskEvent1 a go:AskingEvent ;
+    go:HasAgent ex:Scholar ;
+    go:HasRecipient ex:CommanderOfFaithful ;
+    go:HasTheme "Did he see his Lord when he worshipped Him?"^^xsd:string ;
+    rdfs:label "Scholar asked Commander did he see his Lord when worshipping"@en .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/266#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/266-2> rdf:type owl:Ontology .
+
+ex:Commander_of_the_Faithful a go:Person ;
+    rdfs:label "Amir al-Mu'minin (peace be upon him)" .
+
+ex:Scholar a go:Person ;
+    rdfs:label "the scholar (al-Ḥabir)" .
+
+ex:SayingEvent1 a go:Saying ;
+    go:HasAgent ex:Commander_of_the_Faithful ;
+    go:HasRecipient ex:Scholar ;
+    go:HasTheme ex:ReproachContent .
+
+ex:ReproachContent a go:MessageContent ;
+    go:hasText "Woe to you, I never worshipped a Lord whom I did not see." .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/266#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/266-3> rdf:type owl:Ontology .
+
+ex:Event_Speech_1 a go:CommunicationEvent ;
+    rdfs:label "Speech by ink to Commander of the Faithful"@en ;
+    go:HasAgent ex:Ink ;
+    go:HasRecipient ex:CommanderOfTheFaithful ;
+    go:HasContent ex:Question_1 .
+
+ex:Ink a go:Substance ;
+    rdfs:label "Ink"@en .
+
+ex:CommanderOfTheFaithful a go:Person ;
+    rdfs:label "Commander of the Faithful"@en .
+
+ex:Lord a go:Person ;
+    rdfs:label "Your Lord"@en .
+
+ex:Question_1 a go:Question ;
+    rdfs:label "And how did you see your Lord?"@en ;
+    go:HasTheme ex:Lord ;
+    go:DirectedTo ex:CommanderOfTheFaithful .
+go:Substance rdfs:label "شی"@fa.
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/266#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/266-4> rdf:type owl:Ontology .
+
+ex:event1 a go:SpeechEvent ;
+    go:HasAgent ex:CommanderOfTheFaithful ;
+    go:HasRecipient ex:Scholar ;
+    go:HasTheme "Woe to you, the eyes do not perceive him in the sight of visions." .
+
+ex:CommanderOfTheFaithful a go:Person ;
+    go:title "Commander of the Faithful" ;
+    go:honorific "peace be upon him" .
+
+ex:Scholar a go:Person ;
+    go:title "Scholar" .
+@prefix : <http://etratnet.ir/graph/> .
+@prefix ex: <http://etratnet.ir/graph/proposition/266#> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/266-5> rdf:type owl:Ontology .
+
+ex:Commander_of_the_Faithful a go:Substance ;
+    rdfs:label "Commander of the Faithful (peace be upon him)" .
+
+ex:saying_event_1 a go:Event , ex:eventInstance ;
+    go:HasAgent ex:Commander_of_the_Faithful ;
+    go:HasTheme ex:statement_1 .
+
+ex:hearts a go:Substance ;
+    rdfs:label "Heart(s)" .
+
+ex:realities_of_faith a go:Substance ;
+    rdfs:label "Realities of Faith" .
+
+ex:perception_event_1 a go:Event ;
+    go:HasAgent ex:hearts ;
+    go:HasTheme ex:faith_object ;
+    ex:perceived_through ex:realities_of_faith .
+
+ex:faith_object a go:Substance ;
+    rdfs:label "It (implicit object of perception)" .
+
+ex:statement_1 a go:Information_object ;
+    ex:containsEvent ex:perception_event_1 .
+go:Event rdfs:label "رخداد"@fa.
+go:Information rdfs:label "اطلاعات"@fa.
+go:Substance rdfs:label "شی"@fa.
