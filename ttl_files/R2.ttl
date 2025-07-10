@@ -1,0 +1,97 @@
+@prefix ex: <http://majles.tavasi.ir/graph/example#> .
+@prefix go: <http://majles.tavasi.ir/graph/ontology#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:GuardOfOilIndustry rdf:type go:Organization .
+ex:GuardOfOilIndustry go:hasMember ex:GuardPersonnel .
+ex:GuardOfOilIndustry rdfs:label "گارد صنعت نفت"@fa .
+
+ex:GuardPersonnel rdf:type go:PersonGroup .
+ex:GuardPersonnel go:hasRole ex:MilitaryOfficerRole .
+ex:GuardPersonnel go:hasDuty ex:WatchDuty .
+ex:GuardPersonnel rdfs:label "پرسنل گارد"@fa .
+
+ex:WatchDuty rdf:type go:Duty .
+ex:WatchDuty go:isPerformedDuring ex:GuardingEvent .
+ex:WatchDuty go:hasAssociatedResponsibility ex:MilitaryOfficerResponsibilities .
+ex:WatchDuty rdfs:label "وظیفه نگهبانی"@fa .
+
+ex:GuardingEvent rdf:type go:Event .
+ex:GuardingEvent go:hasAgent ex:GuardPersonnel .
+ex:GuardingEvent rdfs:label "رویداد نگهبانی"@fa .
+
+ex:MilitaryOfficerRole rdf:type go:Role .
+ex:MilitaryOfficerRole go:hasLegalBasis ex:LegalRequirement .
+ex:MilitaryOfficerRole rdfs:label "نقش افسر نظامی"@fa .
+
+ex:MilitaryOfficerResponsibilities rdf:type go:ResponsibilityCollection .
+ex:MilitaryOfficerResponsibilities go:hasDescription "وظایف، اختیارات و مسئولیت‌های ضابطین نظامی"@fa .
+ex:MilitaryOfficerResponsibilities rdfs:label "مسئولیت‌های افسر نظامی"@fa .
+
+ex:LegalRequirement rdf:type go:LegalEntity .
+
+# Class Labels
+go:Event rdfs:label "رخداد"@fa .
+go:LegalEntity rdfs:label "هویت حقوقی"@fa .
+go:LegalDocument rdfs:label "سند حقوقی"@fa .
+go:Organization rdfs:label "سازمان"@fa .
+go:Entity rdfs:label "موجودیت"@fa .
+go:Regulation rdfs:label "مقررات"@fa .
+go:Activity rdfs:label "فعالیت"@fa .
+go:LegalObligation rdfs:label "تعهد قانونی"@fa .
+go:Insurance rdfs:label "بیمه"@fa .
+go:Incident rdfs:label "حادثه"@fa .
+
+# Property Labels
+go:hasPurpose rdfs:label "هدف"@fa .
+go:hasTheme rdfs:label "موضوع"@fa .
+go:hasAgent rdfs:label "عامل"@fa .
+go:hasDescription rdfs:label "توضیح"@fa .
+go:hasMember rdfs:label "عضو"@fa .
+go:hasRole rdfs:label "نقش"@fa .
+go:hasDuty rdfs:label "وظیفه"@fa .
+go:wasPassedInYear rdfs:label "تصویب در سال"@fa .
+go:hasJurisdiction rdfs:label "حوزه قضایی"@fa .
+go:isPartOf rdfs:label "جزئی از"@fa .
+go:includes rdfs:label "شامل"@fa .
+go:hasLegalBasis rdfs:label "مبنای قانونی"@fa .
+go:isPerformedDuring rdfs:label "انجام می‌شود در"@fa .
+go:hasAssociatedResponsibility rdfs:label "مسئولیت مرتبط"@fa .
+go:hasExclusivePreparationBy rdfs:label "تهیه‌کننده انحصاری"@fa .
+go:isBasedOn rdfs:label "مبتنی بر"@fa .
+
+# Instance Labels
+ex:GuardOfOilIndustry rdfs:label "گارد صنعت نفت"@fa .
+ex:ProtectionPurpose rdfs:label "هدف حفاظت"@fa .
+ex:OilIndustryAssets rdfs:label "دارایی‌های صنعت نفت"@fa .
+ex:NationalIranianOilCompany rdfs:label "شرکت ملی نفت ایران"@fa .
+ex:FormationEvent rdfs:label "رویداد تشکیل"@fa .
+ex:LegalRequirement rdfs:label "الزام قانونی"@fa .
+ex:OilFacilities rdfs:label "تأسیسات نفتی"@fa .
+ex:OilDocuments rdfs:label "اسناد نفتی"@fa .
+ex:OilProperties rdfs:label "اموال نفتی"@fa .
+ex:EmploymentRegulations rdfs:label "مقررات مربوط به استخدام افراد گارد صنعت نفت"@fa .
+ex:EmploymentRegulationDocument rdfs:label "آیین‌نامه استخدام افراد گارد صنعت نفت"@fa .
+ex:TrainingRegulations rdfs:label "مقررات آموزشی افراد گارد صنعت نفت"@fa .
+ex:TrainingRegulationDocument rdfs:label "آیین‌نامه آموزشی افراد گارد صنعت نفت"@fa .
+ex:FirearmUseRegulation rdfs:label "آیین‌نامه مربوط به استفاده از اسلحه توسط افراد گارد صنعت نفت"@fa .
+ex:MinistryOfFinance rdfs:label "وزارت دارایی"@fa .
+ex:MinistryOfWar rdfs:label "وزارت جنگ"@fa .
+ex:MilitaryCommission rdfs:label "کمیسیون نظام"@fa .
+ex:WarCommission rdfs:label "کمیسیون جنگ"@fa .
+ex:JudiciaryCommission rdfs:label "کمیسیون دادگستری"@fa .
+ex:OilIndustryGuard rdfs:label "افراد گارد صنعت نفت"@fa .
+ex:NIOC rdfs:label "شرکت ملی نفت ایران"@fa .
+ex:GuardInsuranceObligation rdfs:label "الزام بیمه گارد"@fa .
+ex:OilIndustryGuardInsurance rdfs:label "بیمه گارد صنعت نفت"@fa .
+ex:DutyRelatedIncidents rdfs:label "حوادث ناشی از انجام وظیفه"@fa .
+ex:IranInsuranceCompany rdfs:label "شرکت سهامی بیمه ایران"@fa .
+ex:DisciplinaryRules rdfs:label "آیین‌نامه انضباطی"@fa .
+ex:MilitaryLawsAndRegulations rdfs:label "قوانین و آیین‌نامه‌های نیروهای مسلح شاهنشاهی"@fa .
+ex:CriminalRules rdfs:label "قوانین کیفری"@fa .
+ex:DutyPerformanceAccordingToRegulations rdfs:label "اجرای وظایف طبق مقررات"@fa .
+ex:RegulationByNIOC rdfs:label "مقررات شرکت ملی نفت ایران"@fa .
+ex:EmploymentTrainingAndDuty rdfs:label "آموزش و انجام وظیفه"@fa .
+ex:CabinetOfMinisters rdfs:label "هیئت وزیران"@fa . 
