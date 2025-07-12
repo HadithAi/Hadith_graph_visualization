@@ -1,341 +1,344 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/416#> .
+@prefix ex: <http://etratnet.ir/graph/example/416#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/416> rdf:type go:ontology ;
+        go:hascontent "2.  از مردى از اهالى بصره: از امام صادق عليه‌السلام درباره استطاعت پرسيدم. فرمود: «آيا تو مى‌توانى كارى را كه بود نشده است انجام دهى؟» عرض كرد: خير. فرمود: «آيا مى‌توانى كارى را كه بود شده است انجام ندهى؟» عرض كرد: خير. حضرت صادق عليه‌السلام به او فرمود: «پس چه وقت استطاعت دارى؟» عرض كرد: نمى‌دانم. حضرت صادق عليه‌السلام به او فرمود: «خداوند مخلوقاتى را آفريد و ابزار استطاعت را در وجود آنها نهاد. اما [كار را] به آنها تفويض نكرد؛ بنابراين، ايشان زمانى كه كارى انجام دهند، در زمان فعل و همراه با فعل بر آن كار استطاعت دارند، و زمانى كه آن فعل را در مملكت خدا انجام ندادند بر انجام دادن فعلى كه انجامش نداده‌اند استطاعت نداشته‌اند؛ زيرا خداوند عز و جل مقتدرتر از آن است كه در سلطنتش كسى با او مخالفت كند». مرد بصرى عرض كرد: پس، مردم مجبورند؟ فرمود: «اگر مجبور بودند معذور مى‌بودند». عرض كرد: پس [كار را] به آنها تفويض كرده است؟ فرمود: «خير». عرض كرد: پس، چگونه‌اند؟ فرمود: «خدا مى‌دانست كه فعلى را انجام مى‌دهند، لذا ابزار انجام دادن را در ايشان قرار داد. پس، هرگاه انجام دهند همزمان با فعل استطاعت مى‌يابند». مرد بصرى عرض كرد: گواهى مى‌دهم كه همين درست است، و شما خاندان نبوت و رسالت هستيد."@fa,
+        "2.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنِ الاِسْتِطَاعَةِ، فَقَالَ: «أَ تَسْتَطِيعُ أَنْ تَعْمَلَ مَا لَمْ يُكَوَّنْ؟»، قَالَ: لاَ، قَالَ: «فَتَسْتَطِيعُ أَنْ تَنْتَهِيَ عَمَّا قَدْ كُوِّنَ؟» قَالَ: لاَ، قَالَ: فَقَالَ لَهُ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «فَمَتى أَنْتَ مُسْتَطِيعٌ؟»، قَالَ: لاَ أَدْرِي. قَالَ: فَقَالَ لَهُ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «إِنَّ اللّه‌َ خَلَقَ خَلْقاً، فَجَعَلَ فِيهِمْ آلَةَ الاِسْتِطَاعَةِ، ثُمَّ لَمْ يُفَوِّضْ إِلَيْهِمْ، فَهُمْ مُسْتَطِيعُونَ لِلْفِعْلِ وَقْتَ الْفِعْلِ مَعَ الْفِعْلِ إِذَا فَعَلُوا ذلِكَ الْفِعْلَ، فَإِذَا لَمْ يَفْعَلُوهُ فِي مُلْكِهِ، لَمْ يَكُونُوا مُسْتَطِيعِينَ أَنْ يَفْعَلُوا فِعْلاً لَمْ يَفْعَلُوهُ ؛ لِأَنَّ اللّه‌َ ـ عَزَّ وجَلَّ ـ أَعَزُّ مِنْ أَنْ يُضَادَّهُ فِي مُلْكِهِ أَحَدٌ». قَالَ الْبَصْرِيُّ: فَالنَّاسُ مَجْبُورُونَ؟ قَالَ: «لَوْ كَانُوا مَجْبُورِينَ، كَانُوا مَعْذُورِينَ». قَالَ: فَفَوَّضَ إِلَيْهِمْ؟ قَالَ: «لاَ». قَالَ: فَمَا هُمْ؟ قَالَ: «عَلِمَ مِنْهُمْ فِعْلاً، فَجَعَلَ فِيهِمْ آلَةَ الْفِعْلِ، فَإِذَا فَعَلُوا كَانُوا مَعَ الْفِعْلِ مُسْتَطِيعِينَ». قَالَ الْبَصْرِيُّ: أَشْهَدُ أَنَّهُ الْحَقُّ، وَأَنَّكُمْ أَهْلُ بَيْتِ النُّبُوَّةِ وَالرِّسَالَةِ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-1> rdf:type owl:ontology .
 
-ex:utterance1 a go:CommunicativeAct ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme "Can you do what has not been created?" .
+ex:utterance1 a go:communicativeact ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme "can you do what has not been created?" .
 
-ex:AbuAbdullah a go:Person ;
-    rdfs:label "Abu Abdullah (peace be upon him)" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/416-2> rdf:type owl:Ontology .
-
-ex:event1 a go:Communication ;
-    go:HasAgent ex:person1 ;
-    go:HasTheme "He cannot work unless he is formed" .
-
-ex:person1 a go:Person .
+ex:abuabdullah a go:person ;
+    rdfs:label "abu abdullah (peace be upon him)" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-2> rdf:type owl:ontology .
 
-person:Abu_Abdullah a go:Person .
+ex:event1 a go:communication ;
+    go:hasagent ex:person1 ;
+    go:hastheme "he cannot work unless he is formed" .
 
-ex:Utterance_1 a go:Communication ;
-    go:HasAgent person:Abu_Abdullah ;
-    go:hasContent "Can you then stop what has been formed?" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/416-4> rdf:type owl:Ontology .
-
-ex:speechEvent1 a go:Event ;
-  go:HasAgent ex:person1 ;
-  go:HasTheme ex:utterance1 .
-
-ex:person1 a go:Substance .
-
-ex:utterance1 a ex:Utterance ;
-  ex:content "He cannot finish what has been formed." .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:person1 a go:person .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-3> rdf:type owl:ontology .
 
-ex:AbuAbdAllah a go:Person ;
-    rdfs:label "Abu Abd Allah (peace be upon him)" .
+person:abu_abdullah a go:person .
 
-ex:SpeechEvent1 a go:Event ;
-    go:HasAgent ex:AbuAbdAllah ;
-    go:HasTheme ex:Question1 ;
-    go:hasType "speech" .
-
-ex:Question1 a go:SpeechContent ;
-    go:hasText "When are you able?" .
-go:Event rdfs:label "رخداد"@fa.
+ex:utterance_1 a go:communication ;
+    go:hasagent person:abu_abdullah ;
+    go:hascontent "can you then stop what has been formed?" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-4> rdf:type owl:ontology .
 
-ex:person_1 rdf:type go:Person .
+ex:speechevent1 a go:event ;
+  go:hasagent ex:person1 ;
+  go:hastheme ex:utterance1 .
 
-ex:saying_1 rdf:type go:SpeechEvent ;
-    go:HasAgent ex:person_1 ;
-    go:HasTheme ex:reported_speech_1 .
+ex:person1 a go:substance .
 
-ex:reported_speech_1 rdf:type go:EpistemicContent ;
-    go:hasEpistemicState go:Unknown ;
-    go:RefersToEvent ex:ability_event_1 .
-
-ex:ability_event_1 rdf:type go:AbilityEvent ;
-    go:HasAgent ex:person_2 ;
-    go:hasTemporalScope go:Future .
-
-ex:person_2 rdf:type go:Person .
+ex:utterance1 a ex:utterance ;
+  ex:content "he cannot finish what has been formed." .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-5> rdf:type owl:ontology .
 
-ex:Abu_Abdillah a go:Person ;
+ex:abuabdallah a go:person ;
+    rdfs:label "abu abd allah (peace be upon him)" .
+
+ex:speechevent1 a go:event ;
+    go:hasagent ex:abuabdallah ;
+    go:hastheme ex:question1 ;
+    go:hastype "speech" .
+
+ex:question1 a go:speechcontent ;
+    go:hastext "when are you able?" .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/416-6> rdf:type owl:ontology .
+
+ex:person_1 rdf:type go:person .
+
+ex:saying_1 rdf:type go:speechevent ;
+    go:hasagent ex:person_1 ;
+    go:hastheme ex:reported_speech_1 .
+
+ex:reported_speech_1 rdf:type go:epistemiccontent ;
+    go:hasepistemicstate go:unknown ;
+    go:referstoevent ex:ability_event_1 .
+
+ex:ability_event_1 rdf:type go:abilityevent ;
+    go:hasagent ex:person_2 ;
+    go:hastemporalscope go:future .
+
+ex:person_2 rdf:type go:person .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/416-7> rdf:type owl:ontology .
+
+ex:abu_abdillah a go:person ;
     go:honorific "peace be upon him" .
 
-ex:Allah a go:Person .
+ex:allah a go:person .
 
-ex:Creation a go:Substance .
+ex:creation a go:substance .
 
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Creation ;
-    go:bestows ex:FacultyOfAbility .
+ex:creationevent a go:event ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:creation ;
+    go:bestows ex:facultyofability .
 
-ex:FacultyOfAbility a go:Attribute ;
+ex:facultyofability a go:attribute ;
     rdfs:label "faculty of ability" .
 
-ex:StatementEvent a go:Event ;
-    go:HasAgent ex:Abu_Abdillah ;
-    go:HasTheme ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:statementevent a go:event ;
+    go:hasagent ex:abu_abdillah ;
+    go:hastheme ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-8> rdf:type owl:ontology .
 
-ex:God rdf:type go:Deity .
-ex:Creation rdf:type go:Substance .
+ex:god rdf:type go:deity .
+ex:creation rdf:type go:substance .
 
-ex:DelegationEvent rdf:type go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creation ;
-    go:HasLocation ex:GodsKingdom ;
-    ex:isNegated "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+ex:delegationevent rdf:type go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creation ;
+    go:haslocation ex:godskingdom ;
+    ex:isnegated "true"^^<http://www.w3.org/2001/xmlschema#boolean> .
 
-ex:GodsKingdom rdf:type go:Kingdom ;
-    go:isOwnedBy ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:godskingdom rdf:type go:kingdom ;
+    go:isownedby ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-9> rdf:type owl:ontology .
 
-ex:Creatures a go:agent ;
-    rdfs:label "Creatures"@en .
+ex:creatures a go:agent ;
+    rdfs:label "creatures"@en .
 
-ex:Action a go:Event ;
-    rdfs:label "Action"@en .
+ex:action a go:event ;
+    rdfs:label "action"@en .
 
-ex:PerformingAction a go:EventInstance ;
-    rdfs:label "Performing the action"@en ;
-    go:HasAgent ex:Creatures ;
-    go:HasTheme ex:Action ;
-    go:hasTime ex:TimeOfAction .
+ex:performingaction a go:eventinstance ;
+    rdfs:label "performing the action"@en ;
+    go:hasagent ex:creatures ;
+    go:hastheme ex:action ;
+    go:hastime ex:timeofaction .
 
-ex:TimeOfAction a go:temporalEntity ;
-    rdfs:label "Time of the action"@en .
+ex:timeofaction a go:temporalentity ;
+    rdfs:label "time of the action"@en .
 
-ex:Creatures ex:hasCapability [
-    a ex:Capability ;
-    ex:enables ex:PerformingAction
+ex:creatures ex:hascapability [
+    a ex:capability ;
+    ex:enables ex:performingaction
 ] .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-10> rdf:type owl:ontology .
 
-ex:Creation a go:agent ;
+ex:creation a go:agent ;
     rdfs:label "the creation"@en .
 
-ex:GodKingdom a go:location ;
-    rdfs:label "the dominion of God"@en .
+ex:godkingdom a go:location ;
+    rdfs:label "the dominion of god"@en .
 
-ex:PerformAct a go:Event ;
+ex:performact a go:event ;
     rdfs:label "perform the act"@en ;
-    go:HasAgent ex:Creation ;
-    go:HasTheme ex:ThisAct ;
-    go:location ex:GodKingdom .
+    go:hasagent ex:creation ;
+    go:hastheme ex:thisact ;
+    go:location ex:godkingdom .
 
-ex:ThisAct a go:Event ;
+ex:thisact a go:event ;
     rdfs:label "this act"@en .
 
-ex:CapabilityToPerformAct a ex:capability ;
-    ex:agent ex:Creation ;
-    ex:event ex:PerformAct ;
-    ex:condition "If the creation does not perform this act in the dominion of God, then they will not be able to perform an act they have not performed."^^xsd:string .
+ex:capabilitytoperformact a ex:capability ;
+    ex:agent ex:creation ;
+    ex:event ex:performact ;
+    ex:condition "if the creation does not perform this act in the dominion of god, then they will not be able to perform an act they have not performed."^^xsd:string .
 
-ex:NegationOfCapability a ex:negation ;
-    ex:target ex:CapabilityToPerformAct ;
-    rdfs:comment "Indicates the impossibility of performing an act not previously done by the creation." .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/416-11> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    go:hasDominion ex:GodDominion .
-
-ex:GodDominion a go:Kingdom ;
-    go:ownedBy ex:God .
-
-# Statement: no entity opposes God in His dominion
-# Represented as a universal negative assertion
-
-ex:OppositionEvent a go:Event ;
-    go:hasAgent ex:Opponent ;
-    go:hasTheme ex:GodDominion ;
-    go:opposes ex:God .
-
-# However, ex:Opponent is a class of agents such that no instance exists opposing God
-
-[] a go:NegativeAssertion ;
-    go:assertsNotExistence [ a ex:OppositionEvent ] .
-go:Event rdfs:label "رخداد"@fa.
+ex:negationofcapability a ex:negation ;
+    ex:target ex:capabilitytoperformact ;
+    rdfs:comment "indicates the impossibility of performing an act not previously done by the creation." .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-11> rdf:type owl:ontology .
 
-ex:People a go:Substance ;
-    go:isForced false .
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity ;
+    go:hasdominion ex:goddominion .
 
+ex:goddominion a go:kingdom ;
+    go:ownedby ex:god .
 
-@base <http://etratnet.ir/ontology/> .
+# statement: no entity opposes god in his dominion
+# represented as a universal negative assertion
 
-<http://etratnet.ir/ontology/416-13> rdf:type owl:Ontology .
+ex:oppositionevent a go:event ;
+    go:hasagent ex:opponent ;
+    go:hastheme ex:goddominion ;
+    go:opposes ex:god .
 
-ex:People a go:Agent .
+# however, ex:opponent is a class of agents such that no instance exists opposing god
 
-ex:CompulsionEvent a go:Event ;
-    go:HasAgent ex:People .
-
-ex:ExcuseEvent a go:Event ;
-    go:HasAgent ex:People .
-
-ex:CompulsionEvent go:causes ex:ExcuseEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/416-14> rdf:type owl:Ontology .
-
-ex:Event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:People ;
-    go:HasTheme ex:Actions ;
-    go:EventType "Delegation" ;
-    go:isNegated true .
-
-ex:God a go:Agent ;
-    go:label "God" .
-
-ex:People a go:Group ;
-    go:label "People" .
-
-ex:Actions a go:Action ;
-    go:label "Actions" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+[] a go:negativeassertion ;
+    go:assertsnotexistence [ a ex:oppositionevent ] .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-12> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Them ;
-    ex:hasCertainty "true"^^xsd:boolean .
+ex:people a go:substance ;
+    go:isforced false .
+go:substance rdfs:label "شی"@fa.
 
-ex:God a go:Agent ;
-    rdfs:label "God"@en .
 
-ex:Them a go:Substance ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/416-13> rdf:type owl:ontology .
+
+ex:people a go:agent .
+
+ex:compulsionevent a go:event ;
+    go:hasagent ex:people .
+
+ex:excuseevent a go:event ;
+    go:hasagent ex:people .
+
+ex:compulsionevent go:causes ex:excuseevent .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/416-14> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:people ;
+    go:hastheme ex:actions ;
+    go:eventtype "delegation" ;
+    go:isnegated true .
+
+ex:god a go:agent ;
+    go:label "god" .
+
+ex:people a go:group ;
+    go:label "people" .
+
+ex:actions a go:action ;
+    go:label "actions" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/416-15> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:them ;
+    ex:hascertainty "true"^^xsd:boolean .
+
+ex:god a go:agent ;
+    rdfs:label "god"@en .
+
+ex:them a go:substance ;
     rdfs:label "them"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-16> rdf:type owl:ontology .
 
-ex:event_jalasa_a_place_in_humans a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:CapacityForAction ;
-    go:HasRecipient ex:Humans .
+ex:event_jalasa_a_place_in_humans a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:capacityforaction ;
+    go:hasrecipient ex:humans .
 
-ex:God a go:Person .
-ex:Humans a go:Group .
-ex:CapacityForAction a go:AbstractEntity .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/416-17> rdf:type owl:Ontology .
-
-ex:people a go:HumanGroup .
-ex:something a go:Substance .
-ex:doEvent a go:Event ;
-    go:HasAgent ex:people ;
-    go:HasTheme ex:something .
-
-ex:capabilityState a go:State ;
-    go:HasAgent ex:people ;
-    go:HasTheme ex:doEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:person .
+ex:humans a go:group .
+ex:capacityforaction a go:abstractentity .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/416-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/416-17> rdf:type owl:ontology .
 
-ex:ExplanationEvent a go:Event ;
-    go:hasAgent ex:PeopleOfHouseProphethoodMessage ;
-    go:hasTheme ex:ThisMatter ;
-    ex:hasTruthValue true .
+ex:people a go:humangroup .
+ex:something a go:substance .
+ex:doevent a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:something .
 
-ex:PeopleOfHouseProphethoodMessage a go:AgentGroup .
-ex:ThisMatter a go:Theme .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:capabilitystate a go:state ;
+    go:hasagent ex:people ;
+    go:hastheme ex:doevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/416-18> rdf:type owl:ontology .
+
+ex:explanationevent a go:event ;
+    go:hasagent ex:peopleofhouseprophethoodmessage ;
+    go:hastheme ex:thismatter ;
+    ex:hastruthvalue true .
+
+ex:peopleofhouseprophethoodmessage a go:agentgroup .
+ex:thismatter a go:theme .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.

@@ -1,503 +1,506 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/275#> .
+@prefix ex: <http://etratnet.ir/graph/example/275#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/275> rdf:type go:ontology ;
+        go:hascontent "3. خدمت ابو الحسن على بن موسى الرضا عليه‌السلام رسيديم و براى آن حضرت [روايتى را] بازگو كرديم [كه مى‌گويد]: محمد صلى‌الله‌عليه‌و‌آله پروردگارش را به صورت جوان رشيد سى‌ساله‌اى ديد، و گفتيم: هشام بن سالم و صاحب طاق و ميثمى مى‌گويند كه خدا تا ناف ميان‌تهى و بقيه‌اش توپُر است. حضرت براى خدا به سجده افتاد، سپس گفت: «پاكى تو، تو را نشناختند و يگانه‌ات ندانستند. از اين رو، تو را [چنين]وصف كردند. پاكى تو، اگر تو را شناخته بودند بى‌گمان همان گونه وصفت مى‌كردند كه تو خود خويشتن را وصف كرده‌اى. پاكى تو، چگونه حاضر شدند تو را به غيرتو مانند كنند؟ بار خدايا، من تو را وصف نكنم مگر به آنچه تو خود در وصف خويش گفته‌اى، و تو را به آفريدگانت مانند نكنم. تو اهل همه خوبى‌ها هستى، پس مرا از مردمان ستمكار قرار مده». سپس، رو به ما كرد و فرمود: «هر آنچه در وهم خويش آورديد خدا را جز آن بدانيد». آن گاه افزود: «ما ـ خاندان محمد ـ راه ميانه‌ايم، جلو رونده [اهل غلو و افراط]به سوى ما بر نگردد و واپس مانده [اهل كوتاهى و تفريط] سوى ما نشتابد. اى محمد! پيامبر خدا صلى‌الله‌عليه‌و‌آله آن گاه كه عظمت پروردگارش را ديد، جوانى رشيد و سى‌ساله بود. اى محمد، خداوندگار من بزرگ‌تر و والاتر از آن است كه ويژگى آفريدگان را داشته باشد». عرض كردم: فدايت گردم، چه كسى دو پايش در سبزه [يا: حنا] بوده است؟ فرمود: «محمد. آن گاه كه با دل خويش به خداوندگارش نگريست، خدا او را در نورى مانند نور پرده‌ها [ى نورانى] قرار داد تا آنچه در پرده‌هاست برايش آشكار شود. نور خدا، برخى از آن سبز است، برخى سرخ، برخى سفيد و برخى رنگ‌هاى ديگر. اى محمد، آنچه قرآن و سنت گفته‌اند ما نيز همان را مى‌گوييم [و بدان معتقديم]»."@fa,
+        "3.  دَخَلْنَا عَلى أَبِي الْحَسَنِ عَلِىِّ بْنِ مُوسىَ الرِّضَا عليه‌السلام، فَحَكَيْنَا لَهُ أَنَّ مُحَمَّداً صلى‌الله‌عليه‌و‌آله رَأى رَبَّهُ فِي صُورَةِ الشَّابِّ الْمُوَفَّقِ فِي سِنِّ أَبْنَاءِ ثَلاَثِينَ سَنَةً، وَقُلْنَا: إِنَّ هِشَامَ بْنَ سَالِمٍ وَصَاحِبَ الطَّاقِ وَالْمِيثَمِيَّ يَقُولُونَ: إِنَّهُ أَجْوَفُ إِلَى السُّرَّةِ، وَالْبَقِيَّةُ صَمَدٌ. فَخَرَّ سَاجِداً لِلّهِ، ثُمَّ قَالَ: «سُبْحَانَكَ مَا عَرَفُوكَ، وَلاَ وَحَّدُوكَ، فَمِنْ أَجْلِ ذلِكَ وَصَفُوكَ، سُبْحَانَكَ لَوْ عَرَفُوكَ، لَوَصَفُوكَ بِمَا وَصَفْتَ بِهِ نَفْسَكَ، سُبْحَانَكَ كَيْفَ طَاوَعَتْهُمْ أَنْفُسُهُمْ أَنْ يُشَبِّهُوكَ بِغَيْرِكَ؟! اللّهُمَّ، لاَ أَصِفُكَ إِلاَّ بِمَا وَصَفْتَ بِهِ نَفْسَكَ، وَلاَ أُشَبِّهُكَ بِخَلْقِكَ، أَنْتَ أَهْلٌ لِكُلِّ خَيْرٍ، فَلاَ تَجْعَلْنِي مِنَ الْقَوْمِ الظَّالِمِينَ». ثُمَّ الْتَفَتَ إِلَيْنَا، فَقَالَ: «مَا تَوَهَّمْتُمْ مِنْ شَيْءٍ فَتَوَهَّمُوا اللّه‌َ غَيْرَهُ». ثُمَّ قَالَ: «نَحْنُ ـ آلَ مُحَمَّدٍ ـ النَّمَطُ الْأَوْسَطُ الَّذِي لاَ يُدْرِكُنَا الْغَالِي، وَلاَ يَسْبِقُنَا التَّالِي؛ يَا مُحَمَّدُ، إِنَّ رَسُولَ اللّه‌ِ صلى‌الله‌عليه‌و‌آله حِينَ نَظَرَ إِلى عَظَمَةِ رَبِّهِ كَانَ فِي هَيْئَةِ الشَّابِّ الْمُوَفَّقِ، وَسِنِّ أَبْنَاءِ ثَلاَثِينَ سَنَةً؛ يَا مُحَمَّدُ، عَظُمَ رَبِّي وَجَلَّ أَنْ يَكُونَ فِي صِفَةِ الْمَخْلُوقِينَ». قَالَ: قُلْتُ: جُعِلْتُ فِدَاكَ، مَنْ كَانَتْ رِجْلاَهُ فِي خُضْرَةٍ؟ قَالَ: «ذاكَ مُحَمَّدٌ، كَانَ إِذَا نَظَرَ إِلى رَبِّهِ بِقَلْبِهِ، جَعَلَهُ فِي نُورٍ مِثْلِ نُورِ الْحُجُبِ حَتّى يَسْتَبِينَ لَهُ مَا فِي الْحُجُبِ؛ إِنَّ نُورَ اللّه‌ِ: مِنْهُ أَخْضَرُ، وَمِنْهُ أَحْمَرُ، وَمِنْهُ أَبْيَضُ، وَمِنْهُ غَيْرُ ذلِكَ؛ يَا مُحَمَّدُ، مَا شَهِدَ لَهُ الْكِتَابُ وَالسُّنَّةُ، فَنَحْنُ الْقَائِلُونَ بِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-1> rdf:type owl:ontology .
 
-ex:VisionEvent1 rdf:type go:Event ;
-    go:HasAgent ex:Muhammad ;
-    go:HasTheme ex:LordYoungManForm ;
-    rdfs:label "Muhammad saw his Lord in the form of a young man" .
+ex:visionevent1 rdf:type go:event ;
+    go:hasagent ex:muhammad ;
+    go:hastheme ex:lordyoungmanform ;
+    rdfs:label "muhammad saw his lord in the form of a young man" .
 
-ex:Muhammad rdf:type go:Person ;
-    rdfs:label "Muhammad (peace be upon him and his family)" .
+ex:muhammad rdf:type go:person ;
+    rdfs:label "muhammad (peace be upon him and his family)" .
 
-ex:LordYoungManForm rdf:type go:DivineBeing ;
-    rdfs:label "Lord in the form of a successful young man around thirty years old" ;
-    ex:hasForm "young man" ;
-    ex:hasCharacteristic "successful" ;
-    ex:approximateAge "around 30 years" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-2> rdf:type owl:Ontology .
-
-ex:Hisham_bin_Salem a go:Person ;
-    rdfs:label "Hisham bin Salem" .
-
-ex:Sahib_al_Taq a go:Person ;
-    rdfs:label "Sahib al-Taq" .
-
-ex:Al_Muithami a go:Person ;
-    rdfs:label "Al-Muithami" .
-
-ex:God a go:Deity ;
-    rdfs:label "God" .
-
-ex:Image_of_God a go:Image ;
-    go:represents ex:God ;
-    ex:hasProperty ex:Hollow_up_to_Navel .
-
-ex:Hollow_up_to_Navel a go:Property ;
-    go:description "Hollow up to the navel" .
-
-ex:Say_Statement_1 a go:Event ;
-    a go:Say ;
-    go:hasAgent ex:Hisham_bin_Salem, ex:Sahib_al_Taq, ex:Al_Muithami ;
-    go:hasTheme ex:Statement_1 .
-
-ex:Statement_1 a go:Proposition ;
-    go:content "The image of God is hollow up to the navel" ;
-    go:refersTo ex:Image_of_God .
-go:Event rdfs:label "رخداد"@fa.
+ex:lordyoungmanform rdf:type go:divinebeing ;
+    rdfs:label "lord in the form of a successful young man around thirty years old" ;
+    ex:hasform "young man" ;
+    ex:hascharacteristic "successful" ;
+    ex:approximateage "around 30 years" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-2> rdf:type owl:ontology .
 
-ex:RestBodyImageOfGod a go:PhysicalObject ;
-    rdf:type ex:ImageOfGodBody ;
-    ex:hasName ex:Samad .
+ex:hisham_bin_salem a go:person ;
+    rdfs:label "hisham bin salem" .
 
-ex:Samad a go:Person .
+ex:sahib_al_taq a go:person ;
+    rdfs:label "sahib al-taq" .
+
+ex:al_muithami a go:person ;
+    rdfs:label "al-muithami" .
+
+ex:god a go:deity ;
+    rdfs:label "god" .
+
+ex:image_of_god a go:image ;
+    go:represents ex:god ;
+    ex:hasproperty ex:hollow_up_to_navel .
+
+ex:hollow_up_to_navel a go:property ;
+    go:description "hollow up to the navel" .
+
+ex:say_statement_1 a go:event ;
+    a go:say ;
+    go:hasagent ex:hisham_bin_salem, ex:sahib_al_taq, ex:al_muithami ;
+    go:hastheme ex:statement_1 .
+
+ex:statement_1 a go:proposition ;
+    go:content "the image of god is hollow up to the navel" ;
+    go:refersto ex:image_of_god .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-3> rdf:type owl:ontology .
 
-ex:Ali_ibn_Musa_al_Ridha rdf:type go:Person .
-ex:God rdf:type go:Deity .
+ex:restbodyimageofgod a go:physicalobject ;
+    rdf:type ex:imageofgodbody ;
+    ex:hasname ex:samad .
 
-ex:Prostration_Event_1 rdf:type go:WorshipEvent ;
-    go:HasAgent ex:Ali_ibn_Musa_al_Ridha ;
-    go:HasTheme ex:God .
+ex:samad a go:person .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-4> rdf:type owl:ontology .
 
-ex:Ali_ibn_Musa_al_Ridha a go:Person ;
-    rdfs:label "Ali ibn Musa al-Ridha" ;
+ex:ali_ibn_musa_al_ridha rdf:type go:person .
+ex:god rdf:type go:deity .
+
+ex:prostration_event_1 rdf:type go:worshipevent ;
+    go:hasagent ex:ali_ibn_musa_al_ridha ;
+    go:hastheme ex:god .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-5> rdf:type owl:ontology .
+
+ex:ali_ibn_musa_al_ridha a go:person ;
+    rdfs:label "ali ibn musa al-ridha" ;
     go:honorific "peace be upon him" .
 
-ex:sayingEvent1 a go:Event , ex:sayingEvent ;
-    go:HasAgent ex:Ali_ibn_Musa_al_Ridha ;
-    go:HasTheme ex:speechContent1 .
+ex:sayingevent1 a go:event , ex:sayingevent ;
+    go:hasagent ex:ali_ibn_musa_al_ridha ;
+    go:hastheme ex:speechcontent1 .
 
-ex:speechContent1 a go:SpeechContent ;
-    go:refersTo ex:God ;
-    go:mentionsAction ex:nonRecognition , ex:nonExclusiveWorship .
+ex:speechcontent1 a go:speechcontent ;
+    go:refersto ex:god ;
+    go:mentionsaction ex:nonrecognition , ex:nonexclusiveworship .
 
-ex:God a go:Deity ;
-    go:name "You" .
+ex:god a go:deity ;
+    go:name "you" .
 
-ex:nonRecognition a go:Action ;
-    go:description "did not recognize You" .
+ex:nonrecognition a go:action ;
+    go:description "did not recognize you" .
 
-ex:nonExclusiveWorship a go:Action ;
-    go:description "did not worship You exclusively" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-6> rdf:type owl:Ontology .
-
-ex:Ali_ibn_Musa_al_Ridha a foaf:Person ;
-    foaf:name "Ali ibn Musa al-Ridha" .
-
-ex:you a foaf:Person .
-
-ex:they a go:Group .
-
-ex:sayingEvent1 a go:Event ;
-    go:HasAgent ex:Ali_ibn_Musa_al_Ridha ;
-    go:HasTheme ex:descriptionEvent1 .
-
-ex:descriptionEvent1 a go:Event ;
-    go:HasAgent ex:they ;
-    go:HasTheme ex:you .
-go:Event rdfs:label "رخداد"@fa.
+ex:nonexclusiveworship a go:action ;
+    go:description "did not worship you exclusively" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-6> rdf:type owl:ontology .
 
-ex:AliIbnMusaAlRidha a go:Person ;
-    rdfs:label "Ali ibn Musa al-Ridha" .
+ex:ali_ibn_musa_al_ridha a foaf:person ;
+    foaf:name "ali ibn musa al-ridha" .
 
-ex:SpeechEvent1 a go:Event ;
-    go:HasAgent ex:AliIbnMusaAlRidha ;
-    rdfs:label "Ali ibn Musa al-Ridha (peace be upon him) said: \"Glory be to You if they knew You, they would describe You as You have described Yourself.\"" .
+ex:you a foaf:person .
 
-ex:God a go:Person ;
-    rdfs:label "God" .
+ex:they a go:group .
 
-ex:SpeechEvent1 go:HasTheme ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:sayingevent1 a go:event ;
+    go:hasagent ex:ali_ibn_musa_al_ridha ;
+    go:hastheme ex:descriptionevent1 .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-8> rdf:type owl:Ontology .
-
-ex:Ali_ibn_Musa_al_Ridha a go:Person ;
-    rdfs:label "Ali ibn Musa al-Ridha" .
-
-ex:God a go:Deity ;
-    rdfs:label "Allah" .
-
-ex:SpeechEvent_01 a go:Communication ;
-    go:HasAgent ex:Ali_ibn_Musa_al_Ridha ;
-    go:HasRecipient ex:God ;
-    go:hasContent "Glory be to You! How did their souls obey them to liken You to another?" .
+ex:descriptionevent1 a go:event ;
+    go:hasagent ex:they ;
+    go:hastheme ex:you .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-7> rdf:type owl:ontology .
 
-ex:SpeechEvent_1 rdf:type go:Speech ;
-    go:HasAgent ex:Ali_ibn_Musa_al_Ridha ;
-    go:HasTheme "O Allah, I do not intercede for You except with what You have described Yourself with." .
+ex:aliibnmusaalridha a go:person ;
+    rdfs:label "ali ibn musa al-ridha" .
 
-ex:Ali_ibn_Musa_al_Ridha rdf:type go:Person .
-ex:Allah rdf:type go:Deity .
+ex:speechevent1 a go:event ;
+    go:hasagent ex:aliibnmusaalridha ;
+    rdfs:label "ali ibn musa al-ridha (peace be upon him) said: \"glory be to you if they knew you, they would describe you as you have described yourself.\"" .
 
+ex:god a go:person ;
+    rdfs:label "god" .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-10> rdf:type owl:Ontology .
-
-ex:Ali_bn_Musa_al_Ridha a foaf:Person ;
-    foaf:name "Ali ibn Musa al-Ridha" .
-
-ex:Utterance_1 a go:Event ;
-    go:HasAgent ex:Ali_bn_Musa_al_Ridha ;
-    go:HasTheme ex:Content_1 .
-
-ex:Content_1 a go:ConceptualEntity ;
-    go:hasText "I do not resemble your creation." .
-go:Event rdfs:label "رخداد"@fa.
+ex:speechevent1 go:hastheme ex:god .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-8> rdf:type owl:ontology .
 
-ex:Ali_bin_Musa_al_Ridha a go:Person ;
-    rdfs:label "Ali bin Musa al-Ridha" ;
+ex:ali_ibn_musa_al_ridha a go:person ;
+    rdfs:label "ali ibn musa al-ridha" .
+
+ex:god a go:deity ;
+    rdfs:label "allah" .
+
+ex:speechevent_01 a go:communication ;
+    go:hasagent ex:ali_ibn_musa_al_ridha ;
+    go:hasrecipient ex:god ;
+    go:hascontent "glory be to you! how did their souls obey them to liken you to another?" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-9> rdf:type owl:ontology .
+
+ex:speechevent_1 rdf:type go:speech ;
+    go:hasagent ex:ali_ibn_musa_al_ridha ;
+    go:hastheme "o allah, i do not intercede for you except with what you have described yourself with." .
+
+ex:ali_ibn_musa_al_ridha rdf:type go:person .
+ex:allah rdf:type go:deity .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-10> rdf:type owl:ontology .
+
+ex:ali_bn_musa_al_ridha a foaf:person ;
+    foaf:name "ali ibn musa al-ridha" .
+
+ex:utterance_1 a go:event ;
+    go:hasagent ex:ali_bn_musa_al_ridha ;
+    go:hastheme ex:content_1 .
+
+ex:content_1 a go:conceptualentity ;
+    go:hastext "i do not resemble your creation." .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-11> rdf:type owl:ontology .
+
+ex:ali_bin_musa_al_ridha a go:person ;
+    rdfs:label "ali bin musa al-ridha" ;
     go:honorific "peace be upon him" .
 
-ex:Utterance1 a go:SpeechEvent ;
-    go:HasAgent ex:Ali_bin_Musa_al_Ridha ;
-    go:HasTheme ex:Content1 .
+ex:utterance1 a go:speechevent ;
+    go:hasagent ex:ali_bin_musa_al_ridha ;
+    go:hastheme ex:content1 .
 
-ex:Content1 a go:Proposition ;
-    go:expresses "You are deserving of all good" .
+ex:content1 a go:proposition ;
+    go:expresses "you are deserving of all good" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-12> rdf:type owl:ontology .
 
-ex:Ali_ibn_Musa_al_Ridha rdf:type go:Person ;
-    rdfs:label "Ali ibn Musa al-Ridha" .
+ex:ali_ibn_musa_al_ridha rdf:type go:person ;
+    rdfs:label "ali ibn musa al-ridha" .
 
-ex:Unjust_People rdf:type go:Group ;
-    go:hasQuality ex:Unjustice .
+ex:unjust_people rdf:type go:group ;
+    go:hasquality ex:unjustice .
 
-ex:Unjustice rdf:type go:Quality ;
+ex:unjustice rdf:type go:quality ;
     go:label "unjust" .
 
-exv:SpeechEvent1 rdf:type go:SpeechEvent ;
-    go:HasAgent ex:Ali_ibn_Musa_al_Ridha ;
-    go:HasTheme ex:Request_Not_To_Be_Among_Unjust .
+exv:speechevent1 rdf:type go:speechevent ;
+    go:hasagent ex:ali_ibn_musa_al_ridha ;
+    go:hastheme ex:request_not_to_be_among_unjust .
 
-ex:Request_Not_To_Be_Among_Unjust rdf:type go:Request ;
-    go:HasRecipient ex:Ibn_al_Ridha ;
-    go:HasContent "Do not make me among the unjust people" .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:request_not_to_be_among_unjust rdf:type go:request ;
+    go:hasrecipient ex:ibn_al_ridha ;
+    go:hascontent "do not make me among the unjust people" .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-13> rdf:type owl:ontology .
 
-ex:event1 a go:speechEvent ;
-    go:HasAgent go:God_Almighty ;
-    go:HasTheme ex:utterance1 .
+ex:event1 a go:speechevent ;
+    go:hasagent go:god_almighty ;
+    go:hastheme ex:utterance1 .
 
-go:God_Almighty a go:deity .
+go:god_almighty a go:deity .
 
 ex:utterance1 a go:utterance ;
-    go:HasContent ex:proposition1 .
+    go:hascontent ex:proposition1 .
 
 ex:proposition1 a go:proposition ;
-    go:HasSubject ex:imagination1 ;
-    go:HasPredicate ex:differsFromGod .
+    go:hassubject ex:imagination1 ;
+    go:haspredicate ex:differsfromgod .
 
 ex:imagination1 a ex:imagination ;
-    ex:HasObject ex:anythingImagined .
+    ex:hasobject ex:anythingimagined .
 
-ex:anythingImagined a go:entity .
+ex:anythingimagined a go:entity .
 
-ex:differsFromGod a go:relation ;
-    go:HasObject go:God_Almighty .
+ex:differsfromgod a go:relation ;
+    go:hasobject go:god_almighty .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-14> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:speechContent1 .
+ex:event1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:speechcontent1 .
 
-ex:God_Almighty a go:agent ;
-    rdfs:label "God Almighty"@en .
+ex:god_almighty a go:agent ;
+    rdfs:label "god almighty"@en .
 
-ex:speechContent1 a go:statement ;
-    rdfs:label "We are the family of Muhammad, the middle pattern whom neither the preceding can catch up with, nor the following can surpass."@en ;
-    ex:mentions ex:Family_of_Muhammad, ex:Preceding, ex:Following .
+ex:speechcontent1 a go:statement ;
+    rdfs:label "we are the family of muhammad, the middle pattern whom neither the preceding can catch up with, nor the following can surpass."@en ;
+    ex:mentions ex:family_of_muhammad, ex:preceding, ex:following .
 
-ex:Family_of_Muhammad a go:group ;
-    rdfs:label "Family of Muhammad"@en ;
-    ex:hasAttribute "Middle pattern" .
+ex:family_of_muhammad a go:group ;
+    rdfs:label "family of muhammad"@en ;
+    ex:hasattribute "middle pattern" .
 
-ex:Preceding a go:entity ;
+ex:preceding a go:entity ;
     rdfs:label "the preceding"@en .
 
-ex:Following a go:entity ;
+ex:following a go:entity ;
     rdfs:label "the following"@en .
 
-ex:Family_of_Muhammad ex:notCaughtBy ex:Preceding ;
-                             ex:notSurpassedBy ex:Following . 
-go:Event rdfs:label "رخداد"@fa.
+ex:family_of_muhammad ex:notcaughtby ex:preceding ;
+                             ex:notsurpassedby ex:following . 
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-15> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:DivineAgent ;
-    rdfs:label "God Almighty" .
+ex:godalmighty a go:divineagent ;
+    rdfs:label "god almighty" .
 
-ex:Muhammad a go:Person ;
-    rdfs:label "Muhammad" .
+ex:muhammad a go:person ;
+    rdfs:label "muhammad" .
 
-ex:MessengerOfGod a go:Person ;
-    rdfs:label "Messenger of God" ;
-    go:isSameAs ex:Muhammad .
+ex:messengerofgod a go:person ;
+    rdfs:label "messenger of god" ;
+    go:issameas ex:muhammad .
 
-ex:GreatnessOfLord a go:Attribute ;
-    rdfs:label "Greatness of his Lord" .
+ex:greatnessoflord a go:attribute ;
+    rdfs:label "greatness of his lord" .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasRecipient ex:Muhammad ;
-    go:hasContent "When the Messenger of God, peace be upon him and his family, looked at the greatness of his Lord, he was in the form of a successful young man" .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:godalmighty ;
+    go:hasrecipient ex:muhammad ;
+    go:hascontent "when the messenger of god, peace be upon him and his family, looked at the greatness of his lord, he was in the form of a successful young man" .
 
-ex:LookEvent a go:PerceptionEvent ;
-    go:HasAgent ex:MessengerOfGod ;
-    go:HasTheme ex:GreatnessOfLord ;
-    go:HasConsequence ex:StateOfSuccessfulYoungMan .
+ex:lookevent a go:perceptionevent ;
+    go:hasagent ex:messengerofgod ;
+    go:hastheme ex:greatnessoflord ;
+    go:hasconsequence ex:stateofsuccessfulyoungman .
 
-ex:StateOfSuccessfulYoungMan a go:Appearance ;
-    go:isStateOf ex:MessengerOfGod ;
-    rdfs:label "In the form of a successful young man" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-16> rdf:type owl:Ontology .
-
-ex:MessengerOfGod a go:Person ;
-    go:hasAge "30"^^xsd:integer .
-
-ex:Lord a go:Deity .
-
-ex:GreatnessOfLord a go:Quality ;
-    go:QualityOf ex:Lord .
-
-ex:LookingAtGreatness a go:PerceptionEvent ;
-    go:HasAgent ex:MessengerOfGod ;
-    go:HasTheme ex:GreatnessOfLord ;
-    go:hasTime ex:AgeThirty .
-
-ex:AgeThirty a time:Age ;
-    time:ageValue "30"^^xsd:integer .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:stateofsuccessfulyoungman a go:appearance ;
+    go:isstateof ex:messengerofgod ;
+    rdfs:label "in the form of a successful young man" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-16> rdf:type owl:ontology .
 
-ex:DivineCommunication1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasRecipient ex:Muhammad ;
-    go:HasTheme ex:Statement1 .
+ex:messengerofgod a go:person ;
+    go:hasage "30"^^xsd:integer .
 
-ex:God_Almighty a go:Person ;
-    rdfs:label "God Almighty" .
+ex:lord a go:deity .
 
-ex:Muhammad a go:Person ;
-    rdfs:label "Muhammad" .
+ex:greatnessoflord a go:quality ;
+    go:qualityof ex:lord .
 
-ex:Statement1 a go:Abstract ;
-    go:hasText "My Lord is magnificent and exalted and cannot be described by the attributes of created beings." .
-go:Event rdfs:label "رخداد"@fa.
+ex:lookingatgreatness a go:perceptionevent ;
+    go:hasagent ex:messengerofgod ;
+    go:hastheme ex:greatnessoflord ;
+    go:hastime ex:agethirty .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-18> rdf:type owl:Ontology .
-
-:Mohamed a go:Agent, go:Person ;
-    rdfs:label "Mohamed"@en .
-
-:AskingEvent1 a ex:AskingEvent ;
-    go:HasAgent :Mohamed ;
-    go:HasTheme :Question1 .
-
-:Question1 a ex:Question ;
-    rdfs:label "Who had legs in greenery?"@en .
-go:Agent rdfs:label "عامل"@fa.
+ex:agethirty a time:age ;
+    time:agevalue "30"^^xsd:integer .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-17> rdf:type owl:ontology .
 
-ex:Muhammad a go:Person .
+ex:divinecommunication1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hasrecipient ex:muhammad ;
+    go:hastheme ex:statement1 .
 
-ex:statement1 a go:InformationContentEntity ;
-    ex:refersTo ex:Muhammad .
+ex:god_almighty a go:person ;
+    rdfs:label "god almighty" .
 
-ex:sayingEvent a go:Communication ;
-    go:HasRecipient ex:Muhammad ;
-    go:HasTheme ex:statement1 .
-go:Information rdfs:label "اطلاعات"@fa.
+ex:muhammad a go:person ;
+    rdfs:label "muhammad" .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-20> rdf:type owl:Ontology .
-
-ex:eventLook a go:PerceptionEvent ;
-    go:HasAgent ex:Muhammad ;
-    go:HasTheme ex:Lord ;
-    go:HasManner ex:Heart .
-
-ex:eventLight a go:Event ;
-    go:HasAgent ex:Lord ;
-    go:HasTheme ex:Muhammad ;
-    go:resultsIn ex:LightInVeils .
-
-ex:LightInVeils a go:Substance ;
-    rdfs:label "Light like light of veils" .
-
-ex:eventLight go:HasCause ex:eventLook .
-
-ex:Muhammad a go:Person ;
-    rdfs:label "Muhammad" .
-
-ex:Lord a go:Deity ;
-    rdfs:label "Lord" .
-
-ex:Heart a go:AnatomicalStructure ;
-    rdfs:label "Heart" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:statement1 a go:abstract ;
+    go:hastext "my lord is magnificent and exalted and cannot be described by the attributes of created beings." .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-18> rdf:type owl:ontology .
 
-ex:NoorAllah a go:Substance .
-ex:Green a go:Substance .
+:mohamed a go:agent, go:person ;
+    rdfs:label "mohamed"@en .
 
-ex:NoorAllah go:hasPart ex:Green .
-go:Substance rdfs:label "شی"@fa.
+:askingevent1 a ex:askingevent ;
+    go:hasagent :mohamed ;
+    go:hastheme :question1 .
+
+:question1 a ex:question ;
+    rdfs:label "who had legs in greenery?"@en .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-19> rdf:type owl:ontology .
 
-ex:light_of_god a go:Substance ;
-    go:HasSource ex:him ;
-    go:hasColor ex:red .
+ex:muhammad a go:person .
+
+ex:statement1 a go:informationcontententity ;
+    ex:refersto ex:muhammad .
+
+ex:sayingevent a go:communication ;
+    go:hasrecipient ex:muhammad ;
+    go:hastheme ex:statement1 .
+go:information rdfs:label "اطلاعات"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-20> rdf:type owl:ontology .
+
+ex:eventlook a go:perceptionevent ;
+    go:hasagent ex:muhammad ;
+    go:hastheme ex:lord ;
+    go:hasmanner ex:heart .
+
+ex:eventlight a go:event ;
+    go:hasagent ex:lord ;
+    go:hastheme ex:muhammad ;
+    go:resultsin ex:lightinveils .
+
+ex:lightinveils a go:substance ;
+    rdfs:label "light like light of veils" .
+
+ex:eventlight go:hascause ex:eventlook .
+
+ex:muhammad a go:person ;
+    rdfs:label "muhammad" .
+
+ex:lord a go:deity ;
+    rdfs:label "lord" .
+
+ex:heart a go:anatomicalstructure ;
+    rdfs:label "heart" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-21> rdf:type owl:ontology .
+
+ex:noorallah a go:substance .
+ex:green a go:substance .
+
+ex:noorallah go:haspart ex:green .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-22> rdf:type owl:ontology .
+
+ex:light_of_god a go:substance ;
+    go:hassource ex:him ;
+    go:hascolor ex:red .
 
 ex:him a go:entity .
 
-ex:red a go:ColorProperty ;
-    go:colorValue "red" .
-go:Substance rdfs:label "شی"@fa.
+ex:red a go:colorproperty ;
+    go:colorvalue "red" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-23> rdf:type owl:ontology .
 
-ex:LightOfAllah a go:Substance ;
-    go:hasColor ex:White ;
-    go:hasSource ex:Allah .
+ex:lightofallah a go:substance ;
+    go:hascolor ex:white ;
+    go:hassource ex:allah .
 
-ex:White a go:Color .
+ex:white a go:color .
 
-ex:Allah a go:Person .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/275-24> rdf:type owl:Ontology .
-
-:NoorAllah a go:Substance, go:NamedIndividual .
-:ThatOther a go:Substance .
-
-:DifferenceEvent1 a ex:DifferentiationEvent ;
-    go:HasAgent :NoorAllah ;
-    go:HasTheme :ThatOther ;
-    ex:isDifferentFrom :ThatOther .
-go:Substance rdfs:label "شی"@fa.
+ex:allah a go:person .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/275-25> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/275-24> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:SpeechEvent ;
-    go:HasAgent dbr:God ;
-    go:HasRecipient dbr:Muhammad ;
-    go:HasTheme ex:TestimonyContent .
+:noorallah a go:substance, go:namedindividual .
+:thatother a go:substance .
 
-ex:TestimonyContent a go:Content ;
-    go:HasSource dbr:Quran , dbr:Sunnah .
+:differenceevent1 a ex:differentiationevent ;
+    go:hasagent :noorallah ;
+    go:hastheme :thatother ;
+    ex:isdifferentfrom :thatother .
+go:substance rdfs:label "شی"@fa.
 
-# Entity declarations
- dbr:God a go:Deity .
- dbr:Muhammad a go:Person .
- dbr:Quran a go:Book .
- dbr:Sunnah a go:ReligiousText .
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/275-25> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:speechevent ;
+    go:hasagent dbr:god ;
+    go:hasrecipient dbr:muhammad ;
+    go:hastheme ex:testimonycontent .
+
+ex:testimonycontent a go:content ;
+    go:hassource dbr:quran , dbr:sunnah .
+
+# entity declarations
+ dbr:god a go:deity .
+ dbr:muhammad a go:person .
+ dbr:quran a go:book .
+ dbr:sunnah a go:religioustext .

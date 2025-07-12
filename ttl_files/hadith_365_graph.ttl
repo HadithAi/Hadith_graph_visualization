@@ -1,48 +1,51 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/365#> .
+@prefix ex: <http://etratnet.ir/graph/example/365#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/365> rdf:type go:ontology ;
+        go:hascontent "9. ـ درباره سخن خداى عز و جل كه: «دريغا بر آنچه در پهلوى خدا كوتاهى كردم».  زمر: آيه 56 . ـ: «پهلوى خدا، امير المؤمنين است، و نيز ديگر اوصياى بلندپايه پس از ايشان تا آخرين نفرشان»."@fa,
+        "9.  عَنْ أَبِي الْحَسَنِ مُوسَى بْنِ جَعْفَرٍ عليهماالسلام فِي قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «يَحَسْرَتَى عَلَى مَافَرَّطتُ فِى جَنبِ اللَّهِ» قَالَ: «جَنْبُ اللّه‌ِ أَمِيرُ الْمُؤمِنِينَ عليه‌السلام، وَكَذلِكَ مَا كَانَ بَعْدَهُ مِنَ الْأَوْصِيَاءِ بِالْمَكَانِ الرَّفِيعِ إِلى أَنْ يَنْتَهِيَ الْأَمْرُ إِلى آخِرِهِمْ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/365-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/365-1> rdf:type owl:ontology .
 
-ex:SideOfGod a go:Substance .
-ex:CommanderOfTheFaithful a go:Substance ;
-    ex:hasRespectfulPhrase "peace be upon him" .
+ex:sideofgod a go:substance .
+ex:commanderofthefaithful a go:substance ;
+    ex:hasrespectfulphrase "peace be upon him" .
 
-ex:IdentityEvent a go:IdentityRelation ;
-    go:HasTheme ex:SideOfGod ;
-    go:HasTheme ex:CommanderOfTheFaithful .
-go:Substance rdfs:label "شی"@fa.
+ex:identityevent a go:identityrelation ;
+    go:hastheme ex:sideofgod ;
+    go:hastheme ex:commanderofthefaithful .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/365-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/365-2> rdf:type owl:ontology .
 
-ex:Amir_al_Mu_minin a go:Person ;
-    go:hasRole ex:Commander_of_the_Faithful .
+ex:amir_al_mu_minin a go:person ;
+    go:hasrole ex:commander_of_the_faithful .
 
-ex:Successors a go:Group ;
-    ex:relationTo ex:Amir_al_Mu_minin ;
-    ex:heldPosition ex:HighPosition ;
-    ex:heldPositionStart ex:After_Amir_al_Mu_minin ;
-    ex:heldPositionEnd ex:At_Last_Successor .
+ex:successors a go:group ;
+    ex:relationto ex:amir_al_mu_minin ;
+    ex:heldposition ex:highposition ;
+    ex:heldpositionstart ex:after_amir_al_mu_minin ;
+    ex:heldpositionend ex:at_last_successor .
 
-ex:HighPosition a go:Position .
+ex:highposition a go:position .
 
-ex:After_Amir_al_Mu_minin a ex:TemporalMarker ;
-    ex:after ex:Amir_al_Mu_minin .
+ex:after_amir_al_mu_minin a ex:temporalmarker ;
+    ex:after ex:amir_al_mu_minin .
 
-ex:At_Last_Successor a ex:TemporalMarker ;
-    ex:event ex:End_of_Successors .
+ex:at_last_successor a ex:temporalmarker ;
+    ex:event ex:end_of_successors .

@@ -1,109 +1,112 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/232#> .
+@prefix ex: <http://etratnet.ir/graph/example/232#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/232> rdf:type go:ontology ;
+        go:hascontent "1. از ابو الحسن عليه‌السلام درباره كمترين مرتبه شناخت پرسيدم. فرمود: «اقرار به اين كه خدايى جز او نيست، و مانند و همتايى ندارد، و ديرين و پايدار است. حاضر است و غايب نيست، و هيچ چيزى چون او نباشد»."@fa,
+        "1.  عَنْ أَبِي الْحَسَنِ عليه‌السلام، قَالَ: سَأَلْتُهُ عَنْ أَدْنَى الْمَعْرِفَةِ، فَقَالَ: «الاْءِقْرَارُ بِأَنَّهُ لاَ إِلهَ غَيْرُهُ، وَلاَ شِبْهَ لَهُ وَلاَ نَظِيرَ، وَأَنَّهُ قَدِيمٌ مُثْبَتٌ، مَوْجُودٌ غَيْرُ فَقِيدٍ، وَأَنَّهُ لَيْسَ كَمِثْلِهِ شَيْءٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/232-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/232-1> rdf:type owl:ontology .
 
-ex:KnowledgeFundamental a go:Substance ;
-    go:hasTheme ex:AcknowledgmentEvent .
+ex:knowledgefundamental a go:substance ;
+    go:hastheme ex:acknowledgmentevent .
 
-ex:AcknowledgmentEvent a go:Event ;
-    go:hasTheme ex:NoGodButAllahStatement .
+ex:acknowledgmentevent a go:event ;
+    go:hastheme ex:nogodbutallahstatement .
 
-ex:NoGodButAllahStatement a go:Concept ;
-    go:expresses "There is no god but Allah" ;
-    go:refersTo ex:Allah .
+ex:nogodbutallahstatement a go:concept ;
+    go:expresses "there is no god but allah" ;
+    go:refersto ex:allah .
 
-ex:Allah a go:NamedEntity .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/232-2> rdf:type owl:Ontology .
-
-ex:minimalKnowledge a go:Substance ;
-    rdfs:label "Minimal Knowledge"@en ;
-    ex:isAcknowledgmentOf ex:godUniqueness .
-
-ex:godUniqueness a ex:Concept ;
-    rdfs:label "God has no likeness or counterpart"@en ;
-    ex:concerns ex:God .
-
-ex:God a go:Deity ;
-    rdfs:label "God"@en ;
-    ex:hasNoLike ex:None ;
-    ex:hasNoEqual ex:None .
-go:Substance rdfs:label "شی"@fa.
+ex:allah a go:namedentity .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/232-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/232-2> rdf:type owl:ontology .
 
-ex:MinimumKnowledge a go:Concept .
-ex:God a go:Deity .
+ex:minimalknowledge a go:substance ;
+    rdfs:label "minimal knowledge"@en ;
+    ex:isacknowledgmentof ex:goduniqueness .
 
-ex:Eternal a go:Attribute .
-ex:Confirmed a go:Attribute .
+ex:goduniqueness a ex:concept ;
+    rdfs:label "god has no likeness or counterpart"@en ;
+    ex:concerns ex:god .
 
-ex:God ex:hasAttribute ex:Eternal , ex:Confirmed .
-
-ex:Acknowledgment a go:Event ;
-    go:HasTheme ex:MinimumKnowledge ;
-    go:HasAgent ex:UnknownAgent ;
-    go:HasFocus ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:god a go:deity ;
+    rdfs:label "god"@en ;
+    ex:hasnolike ex:none ;
+    ex:hasnoequal ex:none .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/232-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/232-3> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
+ex:minimumknowledge a go:concept .
+ex:god a go:deity .
+
+ex:eternal a go:attribute .
+ex:confirmed a go:attribute .
+
+ex:god ex:hasattribute ex:eternal , ex:confirmed .
+
+ex:acknowledgment a go:event ;
+    go:hastheme ex:minimumknowledge ;
+    go:hasagent ex:unknownagent ;
+    go:hasfocus ex:god .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/232-4> rdf:type owl:ontology .
+
+ex:god a go:substance ;
     ex:exists true ;
     ex:absent false .
 
-ex:MinimalKnowledge a go:concept .
+ex:minimalknowledge a go:concept .
 
-ex:Acknowledgment1 a go:Event ;
-    go:HasAgent ex:MinimalKnowledge ;
-    go:HasTheme [
+ex:acknowledgment1 a go:event ;
+    go:hasagent ex:minimalknowledge ;
+    go:hastheme [
         a go:proposition ;
-        ex:about ex:God ;
-        ex:statesExists true ;
-        ex:statesAbsent false
+        ex:about ex:god ;
+        ex:statesexists true ;
+        ex:statesabsent false
     ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/232-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/232-5> rdf:type owl:ontology .
 
-ex:SimplestKnowledge a go:Substance ;
-    rdfs:label "Simplest form of knowledge"@en .
+ex:simplestknowledge a go:substance ;
+    rdfs:label "simplest form of knowledge"@en .
 
-ex:Uniqueness a go:Substance ;
-    rdfs:label "Nothing like it (uniqueness)"@en .
+ex:uniqueness a go:substance ;
+    rdfs:label "nothing like it (uniqueness)"@en .
 
-ex:AcknowledgmentEvent a go:Event ;
-    go:HasAgent ex:SimplestKnowledge ;
-    go:HasTheme ex:Uniqueness ;
-    rdfs:label "Acknowledgment that there is nothing like it"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:acknowledgmentevent a go:event ;
+    go:hasagent ex:simplestknowledge ;
+    go:hastheme ex:uniqueness ;
+    rdfs:label "acknowledgment that there is nothing like it"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

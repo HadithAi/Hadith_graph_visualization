@@ -1,322 +1,325 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/265#> .
+@prefix ex: <http://etratnet.ir/graph/example/265#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/265> rdf:type go:ontology ;
+        go:hascontent "5.  در محضر امام باقر عليه‌السلام بودم كه مردى از خوارج وارد شد و گفت: اى ابا جعفر، چه چيزى را مى‌پرستى؟ حضرت فرمود: «خداوند متعال را». گفت: او را ديده‌اى؟ فرمود: «آرى، چشم‌ها او را با نگاه كردن نديده‌اند، بلكه دل‌ها از طريق حقايق ايمان [تصديقات و باورهاى عقلى يا انوار عقلىِ ناشى از ايمان]مشاهده‌اش كرده‌اند. او با مقايسه شناخت نمى‌شود؛ با حواس دريافت نمى‌گردد؛ به مردمْ همانندش نتوان كرد؛ به آيات معرفى شده، و با نشانه‌ها شناخته مى‌شود؛ در فرمانش [يا: قضاوتش]ستم نمى‌كند. اين است خدا، معبودى جز او نيست». سِنان گفت: آن مرد بيرون رفت در حالى كه مى‌گفت: «خدا بهتر مى‌داند رسالت خود را در كجا قرار دهد»."@fa,
+        "5.  حَضَرْتُ أَبَا جَعْفَرٍ عليه‌السلام، فَدَخَلَ عَلَيْهِ رَجُلٌ مِنَ الْخَوَارِجِ، فَقَالَ لَهُ: يَا أَبَا جَعْفَرٍ، أَيَّ شَيْءٍ تَعْبُدُ؟ قَالَ: «اللّه‌َ تَعَالى» قَالَ: رَأَيْتَهُ؟ قَالَ: «بَلى، لَمْ تَرَهُ الْعُيُونُ بِمُشَاهَدَةِ الاْءِبْصَارِ، وَلكِنْ رَأَتْهُ الْقُلُوبُ بِحَقَائِقِ الاْءِيمَانِ، لاَ يُعْرَفُ بِالْقِيَاسِ، وَلاَ يُدْرَكُ بِالْحَوَاسِّ، وَلاَ يُشَبَّهُ بِالنَّاسِ، مَوْصُوفٌ بِالاْيَاتِ، مَعْرُوفٌ بِالْعَلاَمَاتِ، لاَ يَجُورُ فِي حُكْمِهِ، ذلِكَ اللّه‌ُ لاَ إِلهَ إِلاَّ هُوَ». قَالَ: فَخَرَجَ الرَّجُلُ وَهُوَ يَقُولُ: «اللَّهُ أَعْلَمُ حَيْثُ يَجْعَلُ رِسَالَتَهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-1> rdf:type owl:ontology .
 
-ex:enterEvent1 a go:Event ;
-    go:HasAgent ex:man1 ;
-    go:HasTheme ex:Abu_Jaafar .
+ex:enterevent1 a go:event ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:abu_jaafar .
 
-ex:man1 a go:Person ;
-    go:memberOf ex:Kharijites .
+ex:man1 a go:person ;
+    go:memberof ex:kharijites .
 
-ex:Kharijites a go:Group .
+ex:kharijites a go:group .
 
-ex:Abu_Jaafar a go:Person .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/265-2> rdf:type owl:Ontology .
-
-ex:Man a go:Person .
-ex:AbuJaafar a go:Person ;
-    go:hasHonorific "peace be upon him" .
-
-ex:Speech1 a go:SpeechEvent ;
-    go:HasAgent ex:Man ;
-    go:HasRecipient ex:AbuJaafar ;
-    go:HasUtterance ex:Utterance1 .
-
-ex:Utterance1 a go:Utterance ;
-    go:containsSpeech "O Abu Ja'far, what do you worship?" ;
-    go:refersToEvent ex:Worship1 .
-
-ex:Worship1 a go:WorshipEvent ;
-    go:HasAgent ex:AbuJaafar ;
-    go:HasTheme ex:UnknownEntity .
-
-ex:UnknownEntity a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:abu_jaafar a go:person .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-2> rdf:type owl:ontology .
 
-ex:Jaafar a go:Person ;
-    rdfs:label "Ja'far" .
+ex:man a go:person .
+ex:abujaafar a go:person ;
+    go:hashonorific "peace be upon him" .
 
-ex:SayingEvent1 a go:Event, ex:SayingEvent ;
-    go:HasAgent ex:Jaafar ;
-    go:HasTheme ex:Allah .
+ex:speech1 a go:speechevent ;
+    go:hasagent ex:man ;
+    go:hasrecipient ex:abujaafar ;
+    go:hasutterance ex:utterance1 .
 
-ex:Allah a go:DivineEntity ;
-    rdfs:label "Allah Almighty" .
-go:Event rdfs:label "رخداد"@fa.
+ex:utterance1 a go:utterance ;
+    go:containsspeech "o abu ja'far, what do you worship?" ;
+    go:referstoevent ex:worship1 .
 
+ex:worship1 a go:worshipevent ;
+    go:hasagent ex:abujaafar ;
+    go:hastheme ex:unknownentity .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/265-4> rdf:type owl:Ontology .
-
-ex:theMan a go:Person .
-ex:sayingEvent a go:SpeechEvent ;
-    go:HasAgent ex:theMan ;
-    go:HasTheme "Have you seen God Almighty?" .
-
-ex:GodAlmighty a go:Deity .
+ex:unknownentity a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-3> rdf:type owl:ontology .
 
-ex:Abi_Ja'far a go:Person ;
-    rdfs:label "Abi Ja'far" .
+ex:jaafar a go:person ;
+    rdfs:label "ja'far" .
 
-ex:Saying1 a go:Event ;
-    go:EventType "Saying" ;
-    go:HasAgent ex:Abi_Ja'far ;
-    go:HasTheme ex:Quote1 .
+ex:sayingevent1 a go:event, ex:sayingevent ;
+    go:hasagent ex:jaafar ;
+    go:hastheme ex:allah .
 
-ex:Quote1 a go:Text ;
-    go:hasText "The eyes have not seen him with their own sight." .
-
-ex:Eyes a go:Organ ;
-    rdfs:label "Eyes" .
-
-ex:TargetPerson a go:Person ;
-    rdfs:label "Unspecified person (him)" .
-
-ex:SeeingEvent a go:Event ;
-    go:EventType "Seeing" ;
-    go:HasAgent ex:Eyes ;
-    go:HasTheme ex:TargetPerson ;
-    ex:didNotOccur true .
-go:Event rdfs:label "رخداد"@fa.
+ex:allah a go:divineentity ;
+    rdfs:label "allah almighty" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-4> rdf:type owl:ontology .
 
-ex:AbuJaafar a go:Person ;
-    rdfs:label "Abu Ja'far (peace be upon him)" .
+ex:theman a go:person .
+ex:sayingevent a go:speechevent ;
+    go:hasagent ex:theman ;
+    go:hastheme "have you seen god almighty?" .
 
-ex:Allah a go:Deity ;
-    rdfs:label "Allah the Exalted" .
-
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:AbuJaafar ;
-    go:utteredText "But He, the Exalted Allah, sees the hearts with the realities of faith."^^xsd:string .
-
-ex:PerceptionEvent1 a go:PerceptionEvent ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:HeartsWithFaithRealities .
-
-ex:HeartsWithFaithRealities a ex:Hearts ;
-    ex:qualifiedBy ex:RealitiesOfFaith .
-
-ex:RealitiesOfFaith a ex:FaithReality .
+ex:godalmighty a go:deity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-5> rdf:type owl:ontology .
 
-ex:Abi_Jaafar a foaf:Person ;
-    foaf:name "Abi Ja'far" .
+ex:abi_ja'far a go:person ;
+    rdfs:label "abi ja'far" .
 
-ex:Allah_The_Exalted a go:Substance ;
-    foaf:name "Allah the Exalted" .
+ex:saying1 a go:event ;
+    go:eventtype "saying" ;
+    go:hasagent ex:abi_ja'far ;
+    go:hastheme ex:quote1 .
 
-ex:Analogy a go:Concept ;
-    foaf:name "Analogy" .
+ex:quote1 a go:text ;
+    go:hastext "the eyes have not seen him with their own sight." .
 
-ex:SayingEvent1 a go:Event, ex:SayingEvent ;
-    go:HasAgent ex:Abi_Jaafar ;
-    go:HasTheme ex:Proposition1 ;
-    dcterms:description "Abi Ja'far (peace be upon him) said that Allah the Exalted is not known by analogy." .
+ex:eyes a go:organ ;
+    rdfs:label "eyes" .
 
-ex:Proposition1 a go:State ;
-    go:HasSubject ex:Allah_The_Exalted ;
-    go:HasProperty ex:NotKnownByAnalogy .
+ex:targetperson a go:person ;
+    rdfs:label "unspecified person (him)" .
 
-ex:NotKnownByAnalogy a go:Property ;
+ex:seeingevent a go:event ;
+    go:eventtype "seeing" ;
+    go:hasagent ex:eyes ;
+    go:hastheme ex:targetperson ;
+    ex:didnotoccur true .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/265-6> rdf:type owl:ontology .
+
+ex:abujaafar a go:person ;
+    rdfs:label "abu ja'far (peace be upon him)" .
+
+ex:allah a go:deity ;
+    rdfs:label "allah the exalted" .
+
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:abujaafar ;
+    go:utteredtext "but he, the exalted allah, sees the hearts with the realities of faith."^^xsd:string .
+
+ex:perceptionevent1 a go:perceptionevent ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:heartswithfaithrealities .
+
+ex:heartswithfaithrealities a ex:hearts ;
+    ex:qualifiedby ex:realitiesoffaith .
+
+ex:realitiesoffaith a ex:faithreality .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/265-7> rdf:type owl:ontology .
+
+ex:abi_jaafar a foaf:person ;
+    foaf:name "abi ja'far" .
+
+ex:allah_the_exalted a go:substance ;
+    foaf:name "allah the exalted" .
+
+ex:analogy a go:concept ;
+    foaf:name "analogy" .
+
+ex:sayingevent1 a go:event, ex:sayingevent ;
+    go:hasagent ex:abi_jaafar ;
+    go:hastheme ex:proposition1 ;
+    dcterms:description "abi ja'far (peace be upon him) said that allah the exalted is not known by analogy." .
+
+ex:proposition1 a go:state ;
+    go:hassubject ex:allah_the_exalted ;
+    go:hasproperty ex:notknownbyanalogy .
+
+ex:notknownbyanalogy a go:property ;
     go:negation true ;
-    go:relatedMethod ex:Analogy .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+    go:relatedmethod ex:analogy .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-8> rdf:type owl:ontology .
 
-ex:Abu_Jaafar a go:Person ;
-    rdfs:label "Abu Ja'far"@en .
+ex:abu_jaafar a go:person ;
+    rdfs:label "abu ja'far"@en .
 
-ex:Allah a go:Deity ;
-    rdfs:label "Allah"@en .
+ex:allah a go:deity ;
+    rdfs:label "allah"@en .
 
-ex:Saying_Abu_Jaafar_1 a go:SpeechEvent , ex:eventInstance ;
-    go:HasAgent ex:Abu_Jaafar ;
-    go:HasTheme ex:Proposition_1 .
+ex:saying_abu_jaafar_1 a go:speechevent , ex:eventinstance ;
+    go:hasagent ex:abu_jaafar ;
+    go:hastheme ex:proposition_1 .
 
-ex:Proposition_1 a go:Proposition ;
-    rdfs:label "Allah Almighty is not perceived by the senses"@en ;
-    go:aboutEntity ex:Allah ;
-    go:hasProperty ex:Not_perceived_by_senses .
+ex:proposition_1 a go:proposition ;
+    rdfs:label "allah almighty is not perceived by the senses"@en ;
+    go:aboutentity ex:allah ;
+    go:hasproperty ex:not_perceived_by_senses .
 
-ex:Not_perceived_by_senses a go:Property ;
+ex:not_perceived_by_senses a go:property ;
     rdfs:label "not perceived by the senses"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-9> rdf:type owl:ontology .
 
-ex:SpeechEvent1 rdf:type go:SpeechEvent ;
-    go:HasAgent ex:ImamAbuJafar ;
-    go:HasTheme ex:Statement1 .
+ex:speechevent1 rdf:type go:speechevent ;
+    go:hasagent ex:imamabujafar ;
+    go:hastheme ex:statement1 .
 
-ex:ImamAbuJafar rdf:type go:Person ;
+ex:imamabujafar rdf:type go:person ;
     rdfs:label "أبي جعفر" .
 
-ex:AllahAlmighty rdf:type go:DivineEntity ;
+ex:allahalmighty rdf:type go:divineentity ;
     rdfs:label "اللّه تعالى" .
 
-ex:PeopleGroup rdf:type go:Group ;
+ex:peoplegroup rdf:type go:group ;
     rdfs:label "الناس" .
 
-ex:Statement1 rdf:type go:Proposition ;
-    go:about ex:AllahAlmighty ;
-    go:states "Allah Almighty is not similar to people." ;
-    go:deniesSimilarityBetween ex:AllahAlmighty , ex:PeopleGroup .
+ex:statement1 rdf:type go:proposition ;
+    go:about ex:allahalmighty ;
+    go:states "allah almighty is not similar to people." ;
+    go:deniessimilaritybetween ex:allahalmighty , ex:peoplegroup .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-10> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:Abu_Ja'far_Al-Mansur ;
-    go:HasContent "Allah the Exalted is described by the signs and is known by the marks." .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:abu_ja'far_al-mansur ;
+    go:hascontent "allah the exalted is described by the signs and is known by the marks." .
 
-ex:Abu_Ja'far_Al-Mansur a go:Person ;
-    rdfs:label "Abu Ja'far (peace be upon him)" .
+ex:abu_ja'far_al-mansur a go:person ;
+    rdfs:label "abu ja'far (peace be upon him)" .
 
-ex:Allah_Al_Taala a go:DivineBeing ;
-    go:HasProperty ex:Signs ;
-    go:HasProperty ex:Marks .
+ex:allah_al_taala a go:divinebeing ;
+    go:hasproperty ex:signs ;
+    go:hasproperty ex:marks .
 
-ex:Signs a go:Sign .
-ex:Marks a go:Sign .
+ex:signs a go:sign .
+ex:marks a go:sign .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-11> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:Abu_Jaafar ;
-    go:HasTheme ex:JudgmentJusticeStatement .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:abu_jaafar ;
+    go:hastheme ex:judgmentjusticestatement .
 
-ex:Abu_Jaafar a go:Person ;
-    rdfs:label "Abu Ja'far (peace be upon him)" .
+ex:abu_jaafar a go:person ;
+    rdfs:label "abu ja'far (peace be upon him)" .
 
-ex:God_Almighty a go:Deity ;
+ex:god_almighty a go:deity ;
     go:name "الله تعالى" .
 
-ex:JudgmentJusticeStatement a go:State ;
-    go:about ex:God_Almighty ;
-    go:negates go:InjusticeInJudgment .
+ex:judgmentjusticestatement a go:state ;
+    go:about ex:god_almighty ;
+    go:negates go:injusticeinjudgment .
 
-go:InjusticeInJudgment a go:Concept . 
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/265-12> rdf:type owl:Ontology .
-
-ex:Speech1 a go:SpeechEvent ;
-  go:HasAgent ex:Abu_Jaafar ;
-  go:HasTheme ex:Statement1 .
-
-ex:Abu_Jaafar a foaf:Person ;
-  foaf:name "Abu Ja'far (peace be upon him)" .
-
-ex:Statement1 a go:Assertion ;
-  go:HasTopic ex:Allah ;
-  go:hasContent "That is Allah; there is no god but He." .
-
-ex:Allah a go:DivineBeing ;
-  foaf:name "Allah" .
+go:injusticeinjudgment a go:concept . 
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/265-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/265-12> rdf:type owl:ontology .
 
-ex:man_a a go:Substance ;
+ex:speech1 a go:speechevent ;
+  go:hasagent ex:abu_jaafar ;
+  go:hastheme ex:statement1 .
+
+ex:abu_jaafar a foaf:person ;
+  foaf:name "abu ja'far (peace be upon him)" .
+
+ex:statement1 a go:assertion ;
+  go:hastopic ex:allah ;
+  go:hascontent "that is allah; there is no god but he." .
+
+ex:allah a go:divinebeing ;
+  foaf:name "allah" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/265-13> rdf:type owl:ontology .
+
+ex:man_a a go:substance ;
     go:label "man" .
 
-ex:god_a a go:Substance ;
-    go:label "God" .
+ex:god_a a go:substance ;
+    go:label "god" .
 
-ex:message_a a go:Substance ;
-    go:label "His message" .
+ex:message_a a go:substance ;
+    go:label "his message" .
 
-# Event: man leaves
-ex:leave_event_1 a go:Event ;
-    go:hasAgent ex:man_a ;
+# event: man leaves
+ex:leave_event_1 a go:event ;
+    go:hasagent ex:man_a ;
     go:label "man leaves" .
 
-# Event: man says something
-ex:saying_event_1 a go:Event ;
-    go:hasAgent ex:man_a ;
-    go:hasTheme ex:speech_content_1 ;
+# event: man says something
+ex:saying_event_1 a go:event ;
+    go:hasagent ex:man_a ;
+    go:hastheme ex:speech_content_1 ;
     go:label "man saying" .
 
-# Speech content node
-ex:speech_content_1 a go:Substance ;
-    go:label "Speech: 'God knows best where He places His message.'" .
+# speech content node
+ex:speech_content_1 a go:substance ;
+    go:label "speech: 'god knows best where he places his message.'" .
 
-# Event: God knows
-ex:knowing_event_1 a go:Event ;
-    go:hasAgent ex:god_a ;
-    go:hasTheme ex:placing_event_1 ;
-    go:label "God knows" .
+# event: god knows
+ex:knowing_event_1 a go:event ;
+    go:hasagent ex:god_a ;
+    go:hastheme ex:placing_event_1 ;
+    go:label "god knows" .
 
-# Event: God places His message
-ex:placing_event_1 a go:Event ;
-    go:hasAgent ex:god_a ;
-    go:hasTheme ex:message_a ;
-    go:label "God places message" .
+# event: god places his message
+ex:placing_event_1 a go:event ;
+    go:hasagent ex:god_a ;
+    go:hastheme ex:message_a ;
+    go:label "god places message" .
 
-# Linking the knowing theme to placing event
-ex:knowing_event_1 go:hasTheme ex:placing_event_1 .
+# linking the knowing theme to placing event
+ex:knowing_event_1 go:hastheme ex:placing_event_1 .
 
-# Linking speech content to knowing event
-ex:speech_content_1 go:hasTheme ex:knowing_event_1 .
+# linking speech content to knowing event
+ex:speech_content_1 go:hastheme ex:knowing_event_1 .
 
-# Linking the two main events: leaving and saying (implied concurrency)
-ex:leave_event_1 go:precededBy ex:saying_event_1 .
+# linking the two main events: leaving and saying (implied concurrency)
+ex:leave_event_1 go:precededby ex:saying_event_1 .
 
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

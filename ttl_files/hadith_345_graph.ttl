@@ -1,467 +1,470 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/345#> .
+@prefix ex: <http://etratnet.ir/graph/example/345#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/345> rdf:type go:ontology ;
+        go:hascontent "7.  از امام صادق عليه‌السلام درباره سخن خداى عز و جل كه مى‌فرمايد: «و عرش او بر آب بود» پرسيدم. حضرت فرمود: «ديگران چه مى‌گويند؟» عرض كردم: مى‌گويند: عرش روى آب قرار داشت و پروردگار بر عرش بود. فرمود: «نادرست مى‌گويند. هر كس چنين معتقد باشد، در حقيقت خدا را حمل‌شده قرار داده و ويژگى مخلوق را برايش ثابت كرده است، و لازمه‌اش اين است كه آنچه خدا را حمل مى‌كند نيرومندتر از خدا باشد». عرض كردم: شما [حقيقت را] برايم روشن فرماييد، فدايتان شوم. فرمود: «پيش از آن كه زمين يا آسمان يا پرى يا انسان يا خورشيد يا ماهى وجود داشته باشد، خداوند دين و دانش خود را بر آب نشاند، و چون خواست آفريدگان را بيافريند آنها را در برابر خود پراكند و به آنها فرمود: خداوندگار شما كيست؟ نخستين كسانى كه زبان به سخن گشودند پيامبر خدا صلى‌الله‌عليه‌و‌آله و امير المؤمنين عليه‌السلام و امامان عليهم‌السلام بودند. گفتند: تويى خداوندگار ما پس، خدا دانش و دين را به ايشان محوّل كرد. سپس به فرشتگان فرمود: اينان حاملان دين و دانش من، و نمايندگان من در ميان خلقم هستند و از ايشان بايد پرسيد. آن گاه به فرزندان آدم فرمود: به خداوندگارى خدا، و به ولايت و فرمان‌بردارى از اين اشخاص اقرار كنيد. عرضه داشتند: آرى اى خداوندگار ما، اقرار داريم. سپس خدا به فرشتگان فرمود: گواه باشيد. فرشتگان عرضه داشتند: گواهى مى‌دهيم؛ تا فردا [ى قيامت]نگويند: «ما از آن خبر نداشتيم» يا بگويند: «پدران ما پيش از اين مشرك بوده‌اند و ما فرزندانى پس از ايشان بوديم. آيا ما را به خاطر آنچه باطل‌انديشان انجام داده‌اند هلاك مى‌كنى؟» اى داود، نسبت به ولايت ما از ايشان پيمان اكيد گرفته شده است»."@fa,
+        "7.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «وَ كَانَ عَرْشُهُ عَلَى الْمَآءِ» فَقَالَ: «مَا يَقُولُونَ؟» قُلْتُ: يَقُولُونَ: إِنَّ الْعَرْشَ كَانَ عَلَى الْمَاءِ، وَالرَّبُّ فَوْقَهُ، فَقَالَ: «كَذَبُوا، مَنْ زَعَمَ هذَا، فَقَدْ صَيَّرَ اللّه‌َ مَحْمُولاً، وَوَصَفَهُ بِصِفَةِ الْمَخْلُوقِ، وَلَزِمَهُ أَنَّ الشَّيْءَ الَّذِي يَحْمِلُهُ أَقْوى مِنْهُ». قُلْتُ: بَيِّنْ لِي جُعِلْتُ فِدَاكَ. فَقَالَ: «إِنَّ اللّه‌َ حَمَّلَ دِينَهُ وَعِلْمَهُ الْمَاءَ قَبْلَ أَنْ يَكُونَ أَرْضٌ أَوْ سَمَاءٌ، أَوْ جِنٌّ أَوْ إِنْسٌ، أَوْ شَمْسٌ أَوْ قَمَرٌ، فَلَمَّا أَرَادَ اللّه‌ُ أَنْ يَخْلُقَ الْخَلْقَ، نَثَرَهُمْ بَيْنَ يَدَيْهِ، فَقَالَ لَهُمْ: مَنْ رَبُّكُمْ؟ فَأَوَّلُ مَنْ نَطَقَ رَسُولُ اللّه‌ِ صلى‌الله‌عليه‌و‌آله وَأَمِيرُ الْمُؤمِنِينَ عليه‌السلام وَالْأَئِمَّةُ عليهم‌السلام، فَقَالُوا: أَنْتَ رَبُّنَا، فَحَمَّلَهُمُ الْعِلْمَ وَالدِّينَ، ثُمَّ قَالَ لِلْمَلاَئِكَةِ: هؤلاَءِ حَمَلَةُ دِينِي وَعِلْمِي، وَأُمَنَائِي فِي خَلْقِي، وَهُمُ الْمَسْؤُولُونَ، ثُمَّ قَالَ لِبَنِي آدَمَ: أَقِرُّوا لِلّهِ بِالرُّبُوبِيَّةِ، وَلِهؤلاَءِ النَّفَرِ بِالْوَلاَيَةِ وَالطَّاعَةِ، فَقَالُوا: نَعَمْ، رَبَّنَا أَقْرَرْنَا، فَقَالَ اللّه‌ُ لِلْمَلاَئِكَةِ: اشْهَدُوا، فَقَالَتِ الْمَلاَئِكَةُ: شَهِدْنَا عَلى أَنْ لاَ يَقُولُوا غَداً: «إِنَّا كُنَّا عَنْ‌هَذَا غَفِلِينَ» أَوْ يَقُولُوا: «إِنَّمَآ أَشْرَكَ ءَابَآؤُنَا مِن قَبْلُ وَكُنَّا ذُرِّيَّةً مِّن بَعْدِهِمْ أَفَتُهْلِكُنَا بِمَافَعَلَ الْمُبْطِلُونَ» يَا دَاوُدُ، وَلاَيَتُنَا مُؤكَّدَةٌ عَلَيْهِمْ فِي الْمِيثَاقِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-1> rdf:type owl:ontology .
 
-ex:sayEvent1 a go:SpeechAct, ex:EventInstance ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Statement1 .
+ex:sayevent1 a go:speechact, ex:eventinstance ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:statement1 .
 
-ex:God_Almighty a go:Deity ;
+ex:god_almighty a go:deity ;
     rdfs:label "الله عز وجل" .
 
-ex:Statement1 a go:Proposition ;
-    go:hasContent "وَ كَانَ عَرْشُهُ عَلَى الْمَآءِ" ;
-    go:refersTo ex:ThroneOverWater .
+ex:statement1 a go:proposition ;
+    go:hascontent "وَ كَانَ عَرْشُهُ عَلَى الْمَآءِ" ;
+    go:refersto ex:throneoverwater .
 
-ex:ThroneOverWater a go:State ;
-    go:hasSubject ex:His_Throne ;
-    go:hasLocation ex:Water .
+ex:throneoverwater a go:state ;
+    go:hassubject ex:his_throne ;
+    go:haslocation ex:water .
 
-ex:His_Throne a go:Object ;
-    go:hasPossessor ex:God_Almighty ;
+ex:his_throne a go:object ;
+    go:haspossessor ex:god_almighty ;
     go:label "عرشه" .
 
-ex:Water a go:Substance ;
+ex:water a go:substance ;
     go:label "الماء" .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-2> rdf:type owl:ontology .
 
-ex:People a go:Agent ;
-    rdfs:label "People" .
+ex:people a go:agent ;
+    rdfs:label "people" .
 
-ex:Throne a go:Object ;
-    rdfs:label "Throne" .
+ex:throne a go:object ;
+    rdfs:label "throne" .
 
-ex:Water a go:Substance ;
-    rdfs:label "Water" .
+ex:water a go:substance ;
+    rdfs:label "water" .
 
-ex:Lord a go:Agent ;
-    rdfs:label "Lord" .
+ex:lord a go:agent ;
+    rdfs:label "lord" .
 
-ex:SayEvent1 a go:Event , go:SayingEvent ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:Content1 .
+ex:sayevent1 a go:event , go:sayingevent ;
+    go:hasagent ex:people ;
+    go:hastheme ex:content1 .
 
-ex:Content1 a go:Content ;
-    go:statesPosition ex:Position1 , ex:Position2 .
+ex:content1 a go:content ;
+    go:statesposition ex:position1 , ex:position2 .
 
-ex:Position1 a go:SpatialRelation ;
-    go:subject ex:Throne ;
+ex:position1 a go:spatialrelation ;
+    go:subject ex:throne ;
     go:relation "on" ;
-    go:object ex:Water .
+    go:object ex:water .
 
-ex:Position2 a go:SpatialRelation ;
-    go:subject ex:Lord ;
+ex:position2 a go:spatialrelation ;
+    go:subject ex:lord ;
     go:relation "above" ;
-    go:object ex:Throne .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+    go:object ex:throne .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-3> rdf:type owl:ontology .
 
-ex:Claimant a go:Agent .
-ex:Throne a go:Object .
-ex:Water a go:Substance .
-ex:Lord a go:Agent .
+ex:claimant a go:agent .
+ex:throne a go:object .
+ex:water a go:substance .
+ex:lord a go:agent .
 
-ex:ClaimEvent a go:Claim ;
-    go:HasAgent ex:Claimant ;
-    go:HasTheme ex:ClaimedProposition .
+ex:claimevent a go:claim ;
+    go:hasagent ex:claimant ;
+    go:hastheme ex:claimedproposition .
 
-ex:ClaimedProposition a go:Proposition ;
-    ex:assertsRelation [ ex:subject ex:Throne ; ex:relation ex:isOn ; ex:object ex:Water ] ,
-                        [ ex:subject ex:Lord ; ex:relation ex:isAbove ; ex:object ex:Throne ] .
+ex:claimedproposition a go:proposition ;
+    ex:assertsrelation [ ex:subject ex:throne ; ex:relation ex:ison ; ex:object ex:water ] ,
+                        [ ex:subject ex:lord ; ex:relation ex:isabove ; ex:object ex:throne ] .
 
-ex:LieEvent a go:Lie ;
-    go:HasAgent ex:Claimant ;
-    go:Refutes ex:ClaimedProposition .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/345-4> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:WhoeverClaimedThat ;
-    go:HasTheme ex:God ;
-    go:HasEffect ex:GodIsBearer .
-
-ex:WhoeverClaimedThat a go:Agent .
-ex:God a go:Deity .
-ex:GodIsBearer a go:State ;
-    go:about ex:God ;
-    go:hasProperty ex:Bearer .
-
-ex:Bearer a go:Quality .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:lieevent a go:lie ;
+    go:hasagent ex:claimant ;
+    go:refutes ex:claimedproposition .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-4> rdf:type owl:ontology .
 
-ex:ClaimingEvent a go:Event ;
-  go:HasAgent ex:Claimant ;
-  go:HasTheme ex:Claim .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:whoeverclaimedthat ;
+    go:hastheme ex:god ;
+    go:haseffect ex:godisbearer .
 
-ex:DescribingEvent a go:Event ;
-  go:HasAgent ex:Claimant ;
-  go:HasTheme ex:GodDescription .
+ex:whoeverclaimedthat a go:agent .
+ex:god a go:deity .
+ex:godisbearer a go:state ;
+    go:about ex:god ;
+    go:hasproperty ex:bearer .
 
-ex:Claimant a go:Person .
+ex:bearer a go:quality .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
-ex:God a go:Thing ;
-  rdf:type ex:God .
 
-ex:CreatedAttribute a go:Attribute ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/345-5> rdf:type owl:ontology .
+
+ex:claimingevent a go:event ;
+  go:hasagent ex:claimant ;
+  go:hastheme ex:claim .
+
+ex:describingevent a go:event ;
+  go:hasagent ex:claimant ;
+  go:hastheme ex:goddescription .
+
+ex:claimant a go:person .
+
+ex:god a go:thing ;
+  rdf:type ex:god .
+
+ex:createdattribute a go:attribute ;
   rdfs:label "attribute of a created being"@en .
 
-ex:GodDescription a go:Description ;
-  go:describes ex:God ;
-  go:hasAttribute ex:CreatedAttribute .
+ex:goddescription a go:description ;
+  go:describes ex:god ;
+  go:hasattribute ex:createdattribute .
 
-ex:Claim a go:Claim .
+ex:claim a go:claim .
 
-# Causal relation: Claiming leads to Describing
-ex:ClaimingEvent go:causes ex:DescribingEvent .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/345-6> rdf:type owl:Ontology .
-
-# Entities
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
-
-ex:ThroneBearer a go:Substance ;
-    rdfs:label "Thing that carries the throne of God"@en .
-
-# Events
-ex:ClaimEvent a go:Event ;
-    go:HasAgent ex:Claimant ;
-    go:HasTheme ex:ClaimContent .
-
-ex:AcceptClaimEvent a go:Event ;
-    go:HasAgent ex:Claimant ;
-    go:HasTheme ex:ClaimContent .
-
-# Claim content as a statement node
-ex:ClaimContent a go:statement ;
-    ex:strongerThanRel ex:God , ex:ThroneBearer .
-
-# Relations
-ex:strongerThanRel a rdf:Property ;
-    rdfs:comment "Relates a thing being stronger than another"@en .
-
-# Structured claim content to state ThroneBearer is stronger than God
-ex:ClaimContent ex:strongerThan ex:God ;
-                ex:subject ex:ThroneBearer .
-
-# Agent
-ex:Claimant a go:agent ;
-    rdfs:label "Whoever claimed that"@en .
-
-# Necessary acceptance causally implied by the claim
-ex:ClaimEvent go:causes ex:AcceptClaimEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# causal relation: claiming leads to describing
+ex:claimingevent go:causes ex:describingevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-6> rdf:type owl:ontology .
 
-ex:EntrustingEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ReligionAndKnowledge ;
-    ex:Recipient ex:Water ;
-    ex:BeforeEntities (
-        ex:Earth
-        ex:Sky
-        ex:Jinn
-        ex:Humans
-        ex:Sun
-        ex:Moon
+# entities
+ex:god a go:substance ;
+    rdfs:label "god"@en .
+
+ex:thronebearer a go:substance ;
+    rdfs:label "thing that carries the throne of god"@en .
+
+# events
+ex:claimevent a go:event ;
+    go:hasagent ex:claimant ;
+    go:hastheme ex:claimcontent .
+
+ex:acceptclaimevent a go:event ;
+    go:hasagent ex:claimant ;
+    go:hastheme ex:claimcontent .
+
+# claim content as a statement node
+ex:claimcontent a go:statement ;
+    ex:strongerthanrel ex:god , ex:thronebearer .
+
+# relations
+ex:strongerthanrel a rdf:property ;
+    rdfs:comment "relates a thing being stronger than another"@en .
+
+# structured claim content to state thronebearer is stronger than god
+ex:claimcontent ex:strongerthan ex:god ;
+                ex:subject ex:thronebearer .
+
+# agent
+ex:claimant a go:agent ;
+    rdfs:label "whoever claimed that"@en .
+
+# necessary acceptance causally implied by the claim
+ex:claimevent go:causes ex:acceptclaimevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/345-7> rdf:type owl:ontology .
+
+ex:entrustingevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:religionandknowledge ;
+    ex:recipient ex:water ;
+    ex:beforeentities (
+        ex:earth
+        ex:sky
+        ex:jinn
+        ex:humans
+        ex:sun
+        ex:moon
     ) .
 
-ex:God a go:Deity .
-ex:ReligionAndKnowledge a go:Information .
-ex:Water a go:Substance .
-ex:Earth a go:Substance .
-ex:Sky a go:Substance .
-ex:Jinn a go:Substance .
-ex:Humans a go:Substance .
-ex:Sun a go:Substance .
-ex:Moon a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity .
+ex:religionandknowledge a go:information .
+ex:water a go:substance .
+ex:earth a go:substance .
+ex:sky a go:substance .
+ex:jinn a go:substance .
+ex:humans a go:substance .
+ex:sun a go:substance .
+ex:moon a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-8> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Creatures a go:Substance ;
+ex:creatures a go:substance ;
     rdfs:label "the creatures" .
 
-ex:WantToCreate a go:Event ;
-    rdfs:label "God wants to create creatures" ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creatures .
+ex:wanttocreate a go:event ;
+    rdfs:label "god wants to create creatures" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creatures .
 
-ex:Scattering a go:Event ;
-    rdfs:label "God scatters creatures" ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creatures ;
-    go:HasLocation ex:BeforeHim .
+ex:scattering a go:event ;
+    rdfs:label "god scatters creatures" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creatures ;
+    go:haslocation ex:beforehim .
 
-ex:BeforeHim a go:Location ;
-    rdfs:label "before Him" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/345-9> rdf:type owl:Ontology .
-
-ex:event1 a go:SpeechEvent ;
-  go:HasAgent ex:God ;
-  go:HasRecipient ex:Creatures ;
-  go:HasTheme ex:Question1 .
-
-ex:God a go:Deity .
-ex:Creatures a go:AgentGroup .
-ex:Question1 a go:Question ;
-  go:hasText "Who is your Lord?" .
-go:Agent rdfs:label "عامل"@fa.
+ex:beforehim a go:location ;
+    rdfs:label "before him" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-9> rdf:type owl:ontology .
 
-ex:FirstSpeech a go:Event ;
-    go:HasAgent ex:MessengerOfAllah , ex:CommanderOfFaithful , ex:Imams .
+ex:event1 a go:speechevent ;
+  go:hasagent ex:god ;
+  go:hasrecipient ex:creatures ;
+  go:hastheme ex:question1 .
 
-ex:MessengerOfAllah a go:agent ;
-    rdfs:label "Messenger of Allah (Peace be upon him and his family)" .
-
-ex:CommanderOfFaithful a go:agent ;
-    rdfs:label "Commander of the Faithful (Peace be upon him)" .
-
-ex:Imams a go:agent ;
-    rdfs:label "The Imams (Peace be upon them)" .
-go:Event rdfs:label "رخداد"@fa.
+ex:god a go:deity .
+ex:creatures a go:agentgroup .
+ex:question1 a go:question ;
+  go:hastext "who is your lord?" .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-10> rdf:type owl:ontology .
 
-# Entities
-ex:Imams a go:Group ;
+ex:firstspeech a go:event ;
+    go:hasagent ex:messengerofallah , ex:commanderoffaithful , ex:imams .
+
+ex:messengerofallah a go:agent ;
+    rdfs:label "messenger of allah (peace be upon him and his family)" .
+
+ex:commanderoffaithful a go:agent ;
+    rdfs:label "commander of the faithful (peace be upon him)" .
+
+ex:imams a go:agent ;
+    rdfs:label "the imams (peace be upon them)" .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/345-11> rdf:type owl:ontology .
+
+# entities
+ex:imams a go:group ;
     rdfs:label "الأئمة" .
 
-ex:You a go:Person ;
-    go:label "You" .
+ex:you a go:person ;
+    go:label "you" .
 
-ex:OurLord a go:Person ;
-    go:label "Our Lord" .
+ex:ourlord a go:person ;
+    go:label "our lord" .
 
-# The speech event
-ex:SayEvent1 a go:Event ;
-    go:HasAgent ex:Imams ;
-    go:HasTheme ex:SpeechContent1 .
+# the speech event
+ex:sayevent1 a go:event ;
+    go:hasagent ex:imams ;
+    go:hastheme ex:speechcontent1 .
 
-# Speech content as an identity assertion
-ex:SpeechContent1 a ex:SpeechContent ;
-    ex:asserts ex:IdentityAssertion1 .
+# speech content as an identity assertion
+ex:speechcontent1 a ex:speechcontent ;
+    ex:asserts ex:identityassertion1 .
 
-ex:IdentityAssertion1 a ex:IdentityAssertion ;
-    ex:subject ex:You ;
-    ex:object ex:OurLord .
+ex:identityassertion1 a ex:identityassertion ;
+    ex:subject ex:you ;
+    ex:object ex:ourlord .
 
-# Indicate that "Our Lord" is the referent for "You" within this context
-ex:You ex:refersTo ex:OurLord .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/345-12> rdf:type owl:Ontology .
-
-ex:event1 a go:Transfer ;
-  go:HasAgent ex:God ;
-  go:HasRecipient ex:The_Imams ;
-  go:HasTheme ex:Knowledge, ex:Religion .
-
-ex:God a go:Deity .
-ex:The_Imams a go:SocialGroup .
-ex:Knowledge a go:Concept .
-ex:Religion a go:Concept .
+# indicate that "our lord" is the referent for "you" within this context
+ex:you ex:refersto ex:ourlord .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-12> rdf:type owl:ontology .
 
-ex:God a go:DivineBeing ;
-    rdfs:label "God" .
+ex:event1 a go:transfer ;
+  go:hasagent ex:god ;
+  go:hasrecipient ex:the_imams ;
+  go:hastheme ex:knowledge, ex:religion .
 
-ex:Angels a go:CelestialBeing ;
-    rdfs:label "Angels" .
-
-ex:Religion a go:Substance ;
-    rdfs:label "Religion" .
-
-ex:Knowledge a go:Substance ;
-    rdfs:label "Knowledge" .
-
-ex:Hopes a go:Substance ;
-    rdfs:label "Hopes" .
-
-ex:Bearers a go:Agent ;
-    rdfs:label "Bearers of Religion, Knowledge, and Hopes" ;
-    go:HasTheme ex:Religion , ex:Knowledge , ex:Hopes ;
-    go:HasResponsibility "True" .
-
-ex:Speech_Event a go:Event ;
-    rdfs:label "Speech of God to Angels" ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Angels ;
-    go:HasTheme ex:Bearers .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:deity .
+ex:the_imams a go:socialgroup .
+ex:knowledge a go:concept .
+ex:religion a go:concept .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-13> rdf:type owl:ontology .
 
-:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:divinebeing ;
+    rdfs:label "god" .
 
-:Children_of_Adam a go:Substance ;
-    rdfs:label "Children of Adam" .
+ex:angels a go:celestialbeing ;
+    rdfs:label "angels" .
 
-ex:SpeechEvent1 a go:Event, ex:eventInstance ;
-    go:HasAgent :God ;
-    go:HasRecipient :Children_of_Adam ;
-    rdfs:label "God said to the Children of Adam" .
+ex:religion a go:substance ;
+    rdfs:label "religion" .
 
-ex:AcknowledgeLordship a go:Event ;
-    go:HasAgent :Children_of_Adam ;
-    go:HasTheme :God ;
-    rdfs:label "Acknowledgment of Lordship to God" .
+ex:knowledge a go:substance ;
+    rdfs:label "knowledge" .
 
-ex:AcknowledgeGuardianshipObedience a go:Event ;
-    go:HasAgent :Children_of_Adam ;
-    go:HasTheme :God ;
-    rdfs:label "Acknowledgment of Guardianship and Obedience to God" .
+ex:hopes a go:substance ;
+    rdfs:label "hopes" .
 
-ex:SpeechEvent1 go:HasSubEvent ex:AcknowledgeLordship, ex:AcknowledgeGuardianshipObedience .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:bearers a go:agent ;
+    rdfs:label "bearers of religion, knowledge, and hopes" ;
+    go:hastheme ex:religion , ex:knowledge , ex:hopes ;
+    go:hasresponsibility "true" .
+
+ex:speech_event a go:event ;
+    rdfs:label "speech of god to angels" ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:angels ;
+    go:hastheme ex:bearers .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-14> rdf:type owl:ontology .
 
-ex:ChildrenOfAdam a go:Agent ;
+:god a go:substance ;
+    rdfs:label "god" .
+
+:children_of_adam a go:substance ;
+    rdfs:label "children of adam" .
+
+ex:speechevent1 a go:event, ex:eventinstance ;
+    go:hasagent :god ;
+    go:hasrecipient :children_of_adam ;
+    rdfs:label "god said to the children of adam" .
+
+ex:acknowledgelordship a go:event ;
+    go:hasagent :children_of_adam ;
+    go:hastheme :god ;
+    rdfs:label "acknowledgment of lordship to god" .
+
+ex:acknowledgeguardianshipobedience a go:event ;
+    go:hasagent :children_of_adam ;
+    go:hastheme :god ;
+    rdfs:label "acknowledgment of guardianship and obedience to god" .
+
+ex:speechevent1 go:hassubevent ex:acknowledgelordship, ex:acknowledgeguardianshipobedience .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/345-15> rdf:type owl:ontology .
+
+ex:childrenofadam a go:agent ;
     rdfs:label "بنو آدم" .
 
-ex:OurLord a go:Substance ;
+ex:ourlord a go:substance ;
     rdfs:label "ربنا" .
 
-ex:SpeechEvent_1 a go:SpeechEvent ;
-    go:HasAgent ex:ChildrenOfAdam ;
-    go:HasTheme ex:AcknowledgmentStatement .
+ex:speechevent_1 a go:speechevent ;
+    go:hasagent ex:childrenofadam ;
+    go:hastheme ex:acknowledgmentstatement .
 
-ex:AcknowledgmentStatement a go:Statement ;
-    go:hasContent "Yes, our Lord, we have acknowledged." .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/345-16> rdf:type owl:Ontology .
-
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Angels ;
-    go:HasTheme ex:Command_BearWitness .
-
-ex:God a go:Deity .
-ex:Angels a go:SpiritualBeings .
-ex:Command_BearWitness a go:Command ;
-    go:hasContent "Bear witness" .
+ex:acknowledgmentstatement a go:statement ;
+    go:hascontent "yes, our lord, we have acknowledged." .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-16> rdf:type owl:ontology .
 
-ex:Angels a go:Agent ;
-    rdfs:label "Angels" .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:angels ;
+    go:hastheme ex:command_bearwitness .
 
-ex:SpeechEvent_11 a go:SpeechEvent ;
-    go:HasAgent ex:Angels ;
-    go:HasTheme ex:Testimony_11 .
-
-ex:Testimony_11 a go:Declaration ;
-    go:hasContent "They will not say tomorrow: 'Indeed, we were unaware of this'" .
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:deity .
+ex:angels a go:spiritualbeings .
+ex:command_bearwitness a go:command ;
+    go:hascontent "bear witness" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-17> rdf:type owl:ontology .
+
+ex:angels a go:agent ;
+    rdfs:label "angels" .
+
+ex:speechevent_11 a go:speechevent ;
+    go:hasagent ex:angels ;
+    go:hastheme ex:testimony_11 .
+
+ex:testimony_11 a go:declaration ;
+    go:hascontent "they will not say tomorrow: 'indeed, we were unaware of this'" .
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/345-18> rdf:type owl:ontology .
 
 ex:angels rdf:type go:agent ;
     rdfs:label "the angels" .
 
-ex:speechEvent1 rdf:type go:communicationEvent ;
-    go:HasAgent ex:angels ;
-    go:HasTheme ex:content1 .
+ex:speechevent1 rdf:type go:communicationevent ;
+    go:hasagent ex:angels ;
+    go:hastheme ex:content1 .
 
 ex:content1 rdf:type go:statement ;
-    rdfs:label "We bear witness that they will not say their fathers were polytheists and we are their descendants; should we be destroyed for others' deeds?" .
+    rdfs:label "we bear witness that they will not say their fathers were polytheists and we are their descendants; should we be destroyed for others' deeds?" .
 
 ex:ancestors rdf:type go:group ;
     rdfs:label "our fathers" .
@@ -472,48 +475,48 @@ ex:descendants rdf:type go:group ;
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-19> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:hasAgent ex:Some ;
-    go:hasTheme ex:Question1 .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:some ;
+    go:hastheme ex:question1 .
 
-ex:Some a go:Agent .
+ex:some a go:agent .
 
-ex:Question1 a go:Proposition ;
-    go:hasContent ex:DestructionEvent1 .
+ex:question1 a go:proposition ;
+    go:hascontent ex:destructionevent1 .
 
-ex:DestructionEvent1 a go:Event ;
-    go:hasAgent ex:CorruptAgents .
+ex:destructionevent1 a go:event ;
+    go:hasagent ex:corruptagents .
 
-ex:CorruptAgents a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:corruptagents a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/345-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/345-20> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:David ;
-    go:HasTheme ex:Statement1 .
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:david ;
+    go:hastheme ex:statement1 .
 
-ex:God a go:Substance ;
-    go:hasLabel "God" .
+ex:god a go:substance ;
+    go:haslabel "god" .
 
-ex:David a go:Substance ;
-    go:hasLabel "David" .
+ex:david a go:substance ;
+    go:haslabel "david" .
 
-ex:Statement1 a go:concept ;
-    go:hasLabel "Punishment in the covenant with them will not come upon us hastily" ;
-    go:relatedTo ex:Punishment , ex:Covenant .
+ex:statement1 a go:concept ;
+    go:haslabel "punishment in the covenant with them will not come upon us hastily" ;
+    go:relatedto ex:punishment , ex:covenant .
 
-ex:Punishment a go:concept ;
-    go:hasLabel "Punishment" .
+ex:punishment a go:concept ;
+    go:haslabel "punishment" .
 
-ex:Covenant a go:concept ;
-    go:hasLabel "Covenant" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:covenant a go:concept ;
+    go:haslabel "covenant" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

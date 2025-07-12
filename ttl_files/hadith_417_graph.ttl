@@ -1,328 +1,331 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/417#> .
+@prefix ex: <http://etratnet.ir/graph/example/417#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/417> rdf:type go:ontology ;
+        go:hascontent "3.  از امام صادق عليه‌السلام پرسيدم: آيا بندگان از استطاعت نصيبى دارند؟ به من فرمود: «زمانى كه فعل را انجام دهند بر آن استطاعت مى‌يابند و اين استطاعت را خدا در آنان قرار داده است». عرض كردم: آن استطاعت چيست؟ فرمود: «ابزار، مانند زناكننده كه چون زنا كند، در آن زمان كه زنا مى‌كند، بر زنا كردن استطاعت دارد، و اگر از زنا كردن خوددارى كرد و مرتكب آن نشد، در آن زمان كه ترك كرده، بر ترك آن استطاعت داشته است». سپس فرمود: «پيش از فعل هيچ استطاعتى، كم يا زياد، ندارد، اما همزمان با فعل يا ترك استطاعت مى‌يابد». عرض كردم: پس، به چه دليل عذابش مى‌كند؟ فرمود: «به دليل [وجود] حجّت رسا و ابزارى كه در وجود آنان نهاده است [يعنى قدرت و اختيار]. خداوند هيچ كس را بر معصيت خود اجبار نكرده، و براى هيچ كسى اراده كفر ـ به نحو اراده حتمى و قطعى ـ نكرده است؛ بلكه زمانى كه كافر شد [معلوم گردد كه] در اراده خدا اين بوده كه كافر شود، و در اراده و علم خداست كه كافران به چيزى از خير نگرايند». عرض كردم: از آنها خواسته است كه كافر شوند؟ فرمود: «من اين را نمى‌گويم؛ بلكه مى‌گويم خدا مى‌دانست كه آنان در آينده كافر مى‌شوند، پس، [براى آنها]اراده كفر كرد؛ چون به آنان علم و شناخت داشت. اين اراده، اراده محتوم نيست، بلكه اراده اختيارى است»."@fa,
+        "3.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام: هَلْ لِلْعِبَادِ مِنَ الاِسْتِطَاعَةِ شَيْءٌ؟ قَالَ: فَقَالَ لِي: «إِذَا فَعَلُوا الْفِعْلَ، كَانُوا مُسْتَطِيعِينَ بِالاِسْتِطَاعَةِ الَّتِي جَعَلَهَا اللّه‌ُ فِيهِمْ». قَالَ: قُلْتُ: وَمَا هِيَ؟ قَالَ: «الاْلَةُ مِثْلُ الزَّانِي إِذَا زَنى، كَانَ مُسْتَطِيعاً لِلزِّنى حِينَ زَنى: وَلَوْ أَنَّهُ تَرَكَ الزِّنى وَلَمْ يَزْنِ، كَانَ مُسْتَطِيعاً لِتَرْكِهِ إِذَا تَرَكَ». قَالَ: ثُمَّ قَالَ: «لَيْسَ لَهُ مِنَ الاِسْتِطَاعَةِ قَبْلَ الْفِعْلِ قَلِيلٌ وَلاَ كَثِيرٌ، وَلكِنْ مَعَ الْفِعْلِ وَالتَّرْكِ كَانَ مُسْتَطِيعاً». قُلْتُ: فَعَلى مَا ذَا يُعَذِّبُهُ؟ قَالَ: «بِالْحُجَّةِ الْبَالِغَةِ وَالاْلَةِ الَّتِي رَكَّبَ فِيهِمْ؛ إِنَّ اللّه‌َ لَمْ يُجْبِرْ أَحَداً عَلى مَعْصِيَتِهِ، وَلاَ أَرَادَ ـ إِرَادَةَ حَتْمٍ ـ الْكُفْرَ مِنْ أَحَدٍ، وَلكِنْ حِينَ كَفَرَ كَانَ فِي إِرَادَةِ اللّه‌ِ أَنْ يَكْفُرَ، وَهُمْ فِي إِرَادَةِ اللّه‌ِ وَفِي عِلْمِهِ أَنْ لاَ يَصِيرُوا إِلى شَيْءٍ مِنَ الْخَيْرِ». قُلْتُ: أَرَادَ مِنْهُمْ أَنْ يَكْفُرُوا؟ قَالَ: «لَيْسَ هكَذَا أَقُولُ، وَلكِنِّي أَقُولُ: عَلِمَ أَنَّهُمْ سَيَكْفُرُونَ، فَأَرَادَ الْكُفْرَ ؛ لِعِلْمِهِ فِيهِمْ، وَلَيْسَتْ هِيَ إِرَادَةَ حَتْمٍ، إِنَّمَا هِيَ إِرَادَةُ اخْتِيَارٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-1> rdf:type owl:ontology .
 
-ex:Servants a go:Substance .
-ex:God a go:Substance .
-ex:Capability a go:attribute .
-ex:CapabilityGrantedToServants a go:Event ;
-    go:HasTheme ex:Capability ;
-    go:HasRecipient ex:Servants ;
-    go:HasCause ex:God .
+ex:servants a go:substance .
+ex:god a go:substance .
+ex:capability a go:attribute .
+ex:capabilitygrantedtoservants a go:event ;
+    go:hastheme ex:capability ;
+    go:hasrecipient ex:servants ;
+    go:hascause ex:god .
 
-ex:ActionPerformance a go:Event ;
-    go:HasAgent ex:Servants ;
-    go:HasTheme ex:Action .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/417-2> rdf:type owl:Ontology .
-
-ex:Adulterer a go:Agent .
-ex:AdulteryEvent a go:Event ;
-    go:HasAgent ex:Adulterer ;
-    go:OccursAt ex:TimeOfAdultery .
-
-ex:Capability ex:CapabilityToCommitAdultery ;
-    go:HasAgent ex:Adulterer ;
-    go:HasTheme ex:AdulteryEvent ;
-    go:OccursAt ex:TimeOfAdultery .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:actionperformance a go:event ;
+    go:hasagent ex:servants ;
+    go:hastheme ex:action .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-2> rdf:type owl:ontology .
 
-ex:Person_TheFornicator a go:Person ;
+ex:adulterer a go:agent .
+ex:adulteryevent a go:event ;
+    go:hasagent ex:adulterer ;
+    go:occursat ex:timeofadultery .
+
+ex:capability ex:capabilitytocommitadultery ;
+    go:hasagent ex:adulterer ;
+    go:hastheme ex:adulteryevent ;
+    go:occursat ex:timeofadultery .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/417-3> rdf:type owl:ontology .
+
+ex:person_thefornicator a go:person ;
     rdfs:label "the fornicator" .
 
-ex:ForbiddingFornication a go:Action ;
-    go:hasTheme ex:Fornication ;
-    go:HasAgent ex:Person_TheFornicator .
+ex:forbiddingfornication a go:action ;
+    go:hastheme ex:fornication ;
+    go:hasagent ex:person_thefornicator .
 
-ex:Fornication a go:Event .
+ex:fornication a go:event .
 
-ex:AbstainingFromFornication a go:Event ;
-    go:HasAgent ex:Person_TheFornicator ;
-    go:HasTheme ex:Fornication .
+ex:abstainingfromfornication a go:event ;
+    go:hasagent ex:person_thefornicator ;
+    go:hastheme ex:fornication .
 
-ex:ConditionalAbstinence a go:Condition ;
-    ex:conditionEvent ex:ForbiddingFornication ;
-    ex:resultEvent ex:AbstainingFromFornication ;
-    ex:canAbstain true .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/417-4> rdf:type owl:Ontology .
-
-ex:Adulterer a go:Person .
-ex:AdulteryAct a go:Event .
-
-# The adulterer has no capability before the act
-ex:CapabilityBeforeAct a ex:CapabilityState ;
-    ex:hasAgent ex:Adulterer ;
-    ex:relatesToEvent ex:AdulteryAct ;
-    ex:hasCapability false ;
-    ex:capabilityTime ex:BeforeActTime .
-
-ex:BeforeActTime a ex:TimeInterval ;
-    ex:isBefore ex:AdulteryAct .
-go:Event rdfs:label "رخداد"@fa.
+ex:conditionalabstinence a go:condition ;
+    ex:conditionevent ex:forbiddingfornication ;
+    ex:resultevent ex:abstainingfromfornication ;
+    ex:canabstain true .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-4> rdf:type owl:ontology .
 
-ex:CapabilityEvent a go:EventInstance ;
-    go:HasAgent ex:Adulterer ;
-    go:HasTheme ex:Act , ex:Abandonment ;
-    go:hasTemporalState ex:PastState .
+ex:adulterer a go:person .
+ex:adulteryact a go:event .
 
-ex:Adulterer a go:Person .
-ex:Act a go:ThemeConcept .
-ex:Abandonment a go:ThemeConcept .
-ex:PastState a go:State .
-go:Event rdfs:label "رخداد"@fa.
+# the adulterer has no capability before the act
+ex:capabilitybeforeact a ex:capabilitystate ;
+    ex:hasagent ex:adulterer ;
+    ex:relatestoevent ex:adulteryact ;
+    ex:hascapability false ;
+    ex:capabilitytime ex:beforeacttime .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/417-6> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Human ;
-    go:HasInstrument ex:CompellingArgument, ex:InstrumentInHumans .
-
-ex:God a go:agent .
-ex:Human a go:Substance .
-ex:CompellingArgument a go:Substance .
-ex:InstrumentInHumans a go:Substance ;
-    go:InheresIn ex:Human .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:beforeacttime a ex:timeinterval ;
+    ex:isbefore ex:adulteryact .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-5> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:capabilityevent a go:eventinstance ;
+    go:hasagent ex:adulterer ;
+    go:hastheme ex:act , ex:abandonment ;
+    go:hastemporalstate ex:paststate .
 
-ex:Anyone a go:Person ;
-    rdfs:label "Anyone" .
-
-ex:Disobedience a go:NegativeAction ;
-    rdfs:label "Disobedience" .
-
-ex:CompellingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Anyone ;
-    go:HasPurpose ex:Disobedience ;
-    go:Polarity go:Negation .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:adulterer a go:person .
+ex:act a go:themeconcept .
+ex:abandonment a go:themeconcept .
+ex:paststate a go:state .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-6> rdf:type owl:ontology .
 
-ex:God a go:Agent .
-ex:Anyone a go:Person .
-ex:InevitableWillOfDisbelief a go:Event ;
-    go:HasAgent ex:Anyone .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:human ;
+    go:hasinstrument ex:compellingargument, ex:instrumentinhumans .
 
-ex:IntentionEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:InevitableWillOfDisbelief .
-
-ex:God ex:doesNotIntend ex:InevitableWillOfDisbelief .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/417-9> rdf:type owl:Ontology .
-
-ex:DisbeliefEvent rdf:type go:Event ;
-    go:HasAgent ex:Man ;
-    go:HasCause ex:God .
-
-ex:Man rdf:type go:Substance .
-ex:God rdf:type go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:agent .
+ex:human a go:substance .
+ex:compellingargument a go:substance .
+ex:instrumentinhumans a go:substance ;
+    go:inheresin ex:human .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-7> rdf:type owl:ontology .
 
-ex:Man a go:Human .
-ex:God a go:Deity .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:Man ex:withinWillOf ex:God .
-ex:Man ex:withinKnowledgeOf ex:God .
+ex:anyone a go:person ;
+    rdfs:label "anyone" .
 
-ex:NoGoodOutcome a go:Event ;
-    go:HasTheme ex:Man ;
-    go:HasCause ex:God ;
-    rdfs:label "Not coming to any good" .
+ex:disobedience a go:negativeaction ;
+    rdfs:label "disobedience" .
 
-ex:Man ex:isSubjectOf ex:NoGoodOutcome .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/417-11> rdf:type owl:Ontology .
-
-ex:speechAct1 rdf:type go:SpeechAct ;
-  go:HasAgent ex:I ;
-  go:HasContent ex:question1 .
-
-ex:question1 rdf:type go:Question ;
-  go:HasTheme ex:wantingEvent1 .
-
-ex:wantingEvent1 rdf:type go:Wanting ;
-  go:HasAgent ex:he ;
-  go:HasTheme ex:disbeliefEvent1 .
-
-ex:disbeliefEvent1 rdf:type go:Disbelief ;
-  go:HasAgent ex:them .
-
-ex:I rdf:type go:Person .
-ex:he rdf:type go:Person .
-ex:them rdf:type go:Group .
+ex:compellingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:anyone ;
+    go:haspurpose ex:disobedience ;
+    go:polarity go:negation .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-8> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:he ;
-    go:HasTheme ex:speechContent1 .
+ex:god a go:agent .
+ex:anyone a go:person .
+ex:inevitablewillofdisbelief a go:event ;
+    go:hasagent ex:anyone .
 
-ex:speechContent1 a go:Substance ;
-    rdfs:label "This is not how I speak." .
+ex:intentionevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:inevitablewillofdisbelief .
+
+ex:god ex:doesnotintend ex:inevitablewillofdisbelief .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/417-9> rdf:type owl:ontology .
+
+ex:disbeliefevent rdf:type go:event ;
+    go:hasagent ex:man ;
+    go:hascause ex:god .
+
+ex:man rdf:type go:substance .
+ex:god rdf:type go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/417-10> rdf:type owl:ontology .
+
+ex:man a go:human .
+ex:god a go:deity .
+
+ex:man ex:withinwillof ex:god .
+ex:man ex:withinknowledgeof ex:god .
+
+ex:nogoodoutcome a go:event ;
+    go:hastheme ex:man ;
+    go:hascause ex:god ;
+    rdfs:label "not coming to any good" .
+
+ex:man ex:issubjectof ex:nogoodoutcome .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/417-11> rdf:type owl:ontology .
+
+ex:speechact1 rdf:type go:speechact ;
+  go:hasagent ex:i ;
+  go:hascontent ex:question1 .
+
+ex:question1 rdf:type go:question ;
+  go:hastheme ex:wantingevent1 .
+
+ex:wantingevent1 rdf:type go:wanting ;
+  go:hasagent ex:he ;
+  go:hastheme ex:disbeliefevent1 .
+
+ex:disbeliefevent1 rdf:type go:disbelief ;
+  go:hasagent ex:them .
+
+ex:i rdf:type go:person .
+ex:he rdf:type go:person .
+ex:them rdf:type go:group .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/417-12> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:speechcontent1 .
+
+ex:speechcontent1 a go:substance ;
+    rdfs:label "this is not how i speak." .
 
 ex:he a go:agent ;
-    rdfs:label "He" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+    rdfs:label "he" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-13> rdf:type owl:ontology .
 
-ex:He a go:Person ;
-    go:hasGender "male" .
+ex:he a go:person ;
+    go:hasgender "male" .
 
-ex:They a go:Group .
+ex:they a go:group .
 
-ex:SayingEvent a go:Event ;
-    go:HasAgent ex:He ;
-    go:HasTheme ex:KnowingEvent .
+ex:sayingevent a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:knowingevent .
 
-ex:KnowingEvent a go:Event ;
-    go:HasAgent ex:He ;
-    go:HasTheme ex:DisbeliefEvent .
+ex:knowingevent a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:disbeliefevent .
 
-ex:DisbeliefEvent a go:Event ;
-    go:HasAgent ex:They ;
-    ex:hasTime "future"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/417-14> rdf:type owl:Ontology .
-
-ex:Event_Saying a go:SayingEvent ;
-    go:hasAgent ex:Entity_He ;
-    go:hasTheme ex:Event_Intending .
-
-ex:Event_Intending a go:IntentionEvent ;
-    go:hasAgent ex:Entity_He ;
-    go:hasTheme ex:Entity_Disbelief ;
-    go:hasCause ex:Event_Knowing .
-
-ex:Event_Knowing a go:KnowingEvent ;
-    go:hasAgent ex:Entity_He ;
-    go:hasTheme ex:Entity_Them .
-
-ex:Entity_He a go:Person .
-ex:Entity_Disbelief a go:Substance ;
-    go:label "Disbelief" .
-ex:Entity_Them a go:Group .
-go:Substance rdfs:label "شی"@fa.
+ex:disbeliefevent a go:event ;
+    go:hasagent ex:they ;
+    ex:hastime "future"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-14> rdf:type owl:ontology .
 
-entity:Disbelief a go:Substance ;
-    prop:IsNecessaryWill "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+ex:event_saying a go:sayingevent ;
+    go:hasagent ex:entity_he ;
+    go:hastheme ex:event_intending .
 
-event:SpeechEvent1 a go:Event ;
-    go:HasAgent entity:Speaker1 ;
-    go:HasTheme entity:Proposition1 .
+ex:event_intending a go:intentionevent ;
+    go:hasagent ex:entity_he ;
+    go:hastheme ex:entity_disbelief ;
+    go:hascause ex:event_knowing .
 
-entity:Proposition1 a go:proposition ;
-    go:denotes "Disbelief is not a necessary will"^^<http://www.w3.org/2001/XMLSchema#string> .
+ex:event_knowing a go:knowingevent ;
+    go:hasagent ex:entity_he ;
+    go:hastheme ex:entity_them .
 
-entity:Speaker1 a go:agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:entity_he a go:person .
+ex:entity_disbelief a go:substance ;
+    go:label "disbelief" .
+ex:entity_them a go:group .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/417-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/417-15> rdf:type owl:ontology .
 
-ex:speech1 rdf:type go:SpeechAct ;
-  go:HasAgent ex:He ;
-  go:HasTheme ex:prop1 .
+entity:disbelief a go:substance ;
+    prop:isnecessarywill "false"^^<http://www.w3.org/2001/xmlschema#boolean> .
 
-ex:He rdf:type go:Person .
+event:speechevent1 a go:event ;
+    go:hasagent entity:speaker1 ;
+    go:hastheme entity:proposition1 .
 
-ex:will rdf:type go:Concept ;
+entity:proposition1 a go:proposition ;
+    go:denotes "disbelief is not a necessary will"^^<http://www.w3.org/2001/xmlschema#string> .
+
+entity:speaker1 a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/417-16> rdf:type owl:ontology .
+
+ex:speech1 rdf:type go:speechact ;
+  go:hasagent ex:he ;
+  go:hastheme ex:prop1 .
+
+ex:he rdf:type go:person .
+
+ex:will rdf:type go:concept ;
   rdfs:label "will" .
 
-ex:willOfChoice rdf:type go:Concept ;
+ex:willofchoice rdf:type go:concept ;
   rdfs:label "will of choice" .
 
-ex:prop1 rdf:type go:Proposition ;
+ex:prop1 rdf:type go:proposition ;
   go:equals [
-    rdf:type go:EqualityRelation ;
-    go:HasTheme ex:will ;
-    go:HasTheme ex:willOfChoice
+    rdf:type go:equalityrelation ;
+    go:hastheme ex:will ;
+    go:hastheme ex:willofchoice
   ] .

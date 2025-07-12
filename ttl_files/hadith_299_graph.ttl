@@ -1,204 +1,207 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/299#> .
+@prefix ex: <http://etratnet.ir/graph/example/299#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/299> rdf:type go:ontology ;
+        go:hascontent "1. امام باقر عليه‌السلام درباره صفت خداى ديرين فرمود: «او يكتاست، بى‌نياز است، ذاتش يگانه [و بسيط]است، و كثرت و گوناگونى در ذاتش راه ندارد». عرض كردم: فدايت گردم، گروهى از عراقيان مى‌گويند او به غير از آن چيزى مى‌شنود كه مى‌بيند، و به جز از آن چيزى مى‌بيند كه مى‌شنود [شنيدن و ديدن عين ذات او نيست بلكه جهات مختلف در اوست]. حضرت فرمود: «بيجا مى‌گويند و به كجراهه رفته‌اند و مانند كرده‌اند. خدا برتر از اين حرف‌هاست. او شنوا و بيناست. با همان چيزى مى‌شنود كه مى‌بيند و با همان چيزى مى‌بيند كه مى‌شنود». عرض كردم: مى‌گويند او بيناست به همان معنايى كه خود از ديدن مى‌فهمند. فرمود: «خدا برتر است. اين گونه ديدن از ويژگى‌هاى مخلوق است و خدا مخلوق نيست»."@fa,
+        "1. عَنْ أَبِي جَعْفَرٍ عليه‌السلام أَنَّهُ قَالَ فِي صِفَةِ الْقَدِيمِ: «إِنَّهُ وَاحِدٌ، صَمَدٌ، أَحَدِيُّ الْمَعْنى، لَيْسَ بِمَعَانِي كَثِيرَةٍ مُخْتَلِفَةٍ». قَالَ: قُلْتُ: جُعِلْتُ فِدَاكَ، يَزْعُمُ قَوْمٌ مِنْ أَهْلِ الْعِرَاقِ أَنَّهُ يَسْمَعُ بِغَيْرِ الَّذِي يُبْصِرُ، وَيُبْصِرُ بِغَيْرِ الَّذِي يَسْمَعُ؟ قَالَ: فَقَالَ: «كَذَبُوا، وَأَلْحَدُوا، وَشَبَّهُوا، تَعَالَى اللّه‌ُ عَنْ ذلِكَ؛ إِنَّهُ سَمِيعٌ بَصِيرٌ، يَسْمَعُ بِمَا يُبْصِرُ، وَيُبْصِرُ بِمَا يَسْمَعُ». قَالَ: قُلْتُ: يَزْعُمُونَ أَنَّهُ بَصِيرٌ عَلى مَا يَعْقِلُونَهُ؟ قَالَ: فَقَالَ: «تَعَالَى اللّه‌ُ، إِنَّمَا يُعْقَلُ مَا كَانَ بِصِفَةِ الْمَخْلُوقِ وَلَيْسَ اللّه‌ُ كَذلِكَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-1> rdf:type owl:ontology .
 
-ex:AlQadeem a go:Substance ;
-    go:HasQuality ex:QualityOneness , ex:QualitySteadfastness , ex:QualityUnivocality .
+ex:alqadeem a go:substance ;
+    go:hasquality ex:qualityoneness , ex:qualitysteadfastness , ex:qualityunivocality .
 
-ex:QualityOneness a go:Quality ;
-    go:QualityValue "one" .
+ex:qualityoneness a go:quality ;
+    go:qualityvalue "one" .
 
-ex:QualitySteadfastness a go:Quality ;
-    go:QualityValue "steadfast" .
+ex:qualitysteadfastness a go:quality ;
+    go:qualityvalue "steadfast" .
 
-ex:QualityUnivocality a go:Quality ;
-    go:QualityValue "univocal" .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/299-2> rdf:type owl:Ontology .
-
-ex:alQadim a go:LinguisticExpression ;
-    go:hasMeaningCount "few" .
+ex:qualityunivocality a go:quality ;
+    go:qualityvalue "univocal" .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-2> rdf:type owl:ontology .
 
-ex:Iraq a go:GeopoliticalEntity .
-
-ex:God a go:Deity .
-
-ex:PeopleFromIraq a go:PersonGroup ;
-    go:hasOrigin ex:Iraq .
-
-ex:ClaimEvent1 a go:Event ;
-    go:HasAgent ex:PeopleFromIraq ;
-    go:HasTheme ex:ClaimContent1 .
-
-ex:ClaimContent1 a go:Event ;
-    go:HasAgent ex:God ;
-    ex:Property "hears without seeing" ;
-    ex:Explanation "God hears without seeing" .
-go:Event rdfs:label "رخداد"@fa.
+ex:alqadim a go:linguisticexpression ;
+    go:hasmeaningcount "few" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-3> rdf:type owl:ontology .
 
-ex:claimEvent a go:Event ;
-    go:HasAgent ex:peopleFromIraq ;
-    go:HasTheme ex:claimContent .
+ex:iraq a go:geopoliticalentity .
 
-ex:peopleFromIraq a go:Substance ;
-    rdfs:label "People from the inhabitants of Iraq" .
+ex:god a go:deity .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:peoplefromiraq a go:persongroup ;
+    go:hasorigin ex:iraq .
 
-ex:claimContent a go:conceptualEntity ;
-    go:expresses "God sees without that which hears" ;
-    go:referTo ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:claimevent1 a go:event ;
+    go:hasagent ex:peoplefromiraq ;
+    go:hastheme ex:claimcontent1 .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/299-5> rdf:type owl:Ontology .
-
-ex:Claim1 a go:Statement ;
-  go:hasQuality ex:Falsehood , ex:Atheism , ex:Metaphor .
-
-ex:Falsehood a go:Quality .
-ex:Atheism a go:Quality .
-ex:Metaphor a go:Quality .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:claimcontent1 a go:event ;
+    go:hasagent ex:god ;
+    ex:property "hears without seeing" ;
+    ex:explanation "god hears without seeing" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-4> rdf:type owl:ontology .
 
-ex:Allah a go:Agent ;
-    go:hasQuality ex:AllHearing , ex:AllSeeing .
+ex:claimevent a go:event ;
+    go:hasagent ex:peoplefromiraq ;
+    go:hastheme ex:claimcontent .
 
-ex:AllHearing a go:Quality ;
-    rdfs:label "All-Hearing"@en .
+ex:peoplefromiraq a go:substance ;
+    rdfs:label "people from the inhabitants of iraq" .
 
-ex:AllSeeing a go:Quality ;
-    rdfs:label "All-Seeing"@en .
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:substance ;
+    rdfs:label "god" .
+
+ex:claimcontent a go:conceptualentity ;
+    go:expresses "god sees without that which hears" ;
+    go:referto ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-5> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasInstrument ex:Perception .
+ex:claim1 a go:statement ;
+  go:hasquality ex:falsehood , ex:atheism , ex:metaphor .
 
-ex:God_Almighty a go:Agent ;
+ex:falsehood a go:quality .
+ex:atheism a go:quality .
+ex:metaphor a go:quality .
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/299-6> rdf:type owl:ontology .
+
+ex:allah a go:agent ;
+    go:hasquality ex:allhearing , ex:allseeing .
+
+ex:allhearing a go:quality ;
+    rdfs:label "all-hearing"@en .
+
+ex:allseeing a go:quality ;
+    rdfs:label "all-seeing"@en .
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/299-7> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hasinstrument ex:perception .
+
+ex:god_almighty a go:agent ;
     rdfs:label "الله تعالى"@ar .
 
-ex:Perception a go:Concept ;
-    go:hasDefinition "what is perceived" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:perception a go:concept ;
+    go:hasdefinition "what is perceived" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-8> rdf:type owl:ontology .
 
-ex:Allah a go:NamedEntity ;
-    go:hasTitle "Allah Almighty" .
+ex:allah a go:namedentity ;
+    go:hastitle "allah almighty" .
 
-ex:PerceptionEvent a go:Event ;
-    go:hasAgent ex:Allah ;
-    go:hasTheme ex:ThatWhichIsHeard .
+ex:perceptionevent a go:event ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:thatwhichisheard .
 
-ex:ThatWhichIsHeard a go:PerceptualInput ;
-    go:hasModality go:Hearing .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/299-9> rdf:type owl:Ontology .
-
-ex:eventClaim a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:eventGodAllSeeing .
-
-ex:People a go:Substance ;
-    go:hasLabel "people"@en .
-
-ex:God a go:Substance ;
-    go:hasLabel "God"@en ;
-    go:hasAttribute ex:AllSeeingOfUnderstanding .
-
-ex:eventGodAllSeeing a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasProperty ex:AllSeeingOfUnderstanding .
-
-ex:AllSeeingOfUnderstanding a go:Property ;
-    go:qualifies ex:God ;
-    go:relatesTo ex:WhatTheyUnderstand .
-
-ex:WhatTheyUnderstand a go:Concept ;
-    go:HasAgent ex:People .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:thatwhichisheard a go:perceptualinput ;
+    go:hasmodality go:hearing .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-9> rdf:type owl:ontology .
 
-ex:event_SayGod a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:event_Utterance1 .
+ex:eventclaim a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:eventgodallseeing .
 
-ex:God_Almighty a go:Deity .
+ex:people a go:substance ;
+    go:haslabel "people"@en .
 
-ex:event_Utterance1 a go:Utterance ;
-    go:hasContent ex:Concept_Comprehension .
+ex:god a go:substance ;
+    go:haslabel "god"@en ;
+    go:hasattribute ex:allseeingofunderstanding .
 
-ex:Concept_Comprehension a go:Concept ;
-    go:expresses "Only what was in the nature of the created can be comprehended" .
-go:Event rdfs:label "رخداد"@fa.
+ex:eventgodallseeing a go:event ;
+    go:hasagent ex:god ;
+    go:hasproperty ex:allseeingofunderstanding .
+
+ex:allseeingofunderstanding a go:property ;
+    go:qualifies ex:god ;
+    go:relatesto ex:whattheyunderstand .
+
+ex:whattheyunderstand a go:concept ;
+    go:hasagent ex:people .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/299-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/299-10> rdf:type owl:ontology .
 
-ex:God a go:DivineBeing ;
-    go:NotHasAttribute ex:CreatedBeing .
+ex:event_saygod a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:event_utterance1 .
 
-ex:CreatedBeing a go:SubstanceClass .
+ex:god_almighty a go:deity .
 
-# Note: go:NotHasAttribute indicates negation of attribute possession as per ontology.
-go:Substance rdfs:label "شی"@fa.
+ex:event_utterance1 a go:utterance ;
+    go:hascontent ex:concept_comprehension .
+
+ex:concept_comprehension a go:concept ;
+    go:expresses "only what was in the nature of the created can be comprehended" .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/299-11> rdf:type owl:ontology .
+
+ex:god a go:divinebeing ;
+    go:nothasattribute ex:createdbeing .
+
+ex:createdbeing a go:substanceclass .
+
+# note: go:nothasattribute indicates negation of attribute possession as per ontology.
+go:substance rdfs:label "شی"@fa.

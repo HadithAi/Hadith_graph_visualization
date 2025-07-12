@@ -1,61 +1,64 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/364#> .
+@prefix ex: <http://etratnet.ir/graph/example/364#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/364> rdf:type go:ontology ;
+        go:hascontent "8.  از امير المؤمنين عليه‌السلام شنيدم كه مى‌فرمايد: «منم چشم خدا، منم دست خدا، منم پهلوى خدا، و منم دَرِ خدا»."@fa,
+        "8.  سَمِعْتُ أَمِيرَ الْمُؤمِنِينَ عليه‌السلام يَقُولُ: «أَنَا عَيْنُ اللّه‌ِ، وَأَنَا يَدُ اللّه‌ِ، وَأَنَا جَنْبُ اللّه‌ِ، وَأَنَا بَابُ اللّه‌ِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/364-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/364-1> rdf:type owl:ontology .
 
-ex:CommanderOfTheFaithful a go:agent ;
-    ex:isIdenticalTo ex:EyeOfGod .
+ex:commanderofthefaithful a go:agent ;
+    ex:isidenticalto ex:eyeofgod .
 
-ex:EyeOfGod a go:agent .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/364-2> rdf:type owl:Ontology .
-
-ex:CommanderOfTheFaithful a go:agent ;
-    ex:isSymbolically ex:HandOfGod .
-
-ex:HandOfGod a go:symbolicEntity .
+ex:eyeofgod a go:agent .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/364-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/364-2> rdf:type owl:ontology .
 
-ex:CommanderOfTheFaithful a go:Substance ;
-    rdfs:label "Commander of the Faithful" .
+ex:commanderofthefaithful a go:agent ;
+    ex:issymbolically ex:handofgod .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
-
-ex:CommanderOfTheFaithful ex:isCloseTo ex:God .
-go:Substance rdfs:label "شی"@fa.
+ex:handofgod a go:symbolicentity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/364-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/364-3> rdf:type owl:ontology .
 
-# Entities
-ex:CommanderOfTheFaithful a go:Person ;
-    rdfs:label "Commander of the Faithful"@en .
+ex:commanderofthefaithful a go:substance ;
+    rdfs:label "commander of the faithful" .
 
-ex:GateOfGod a go:Role ;
-    rdfs:label "Gate of God"@en .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-# Relationship: equivalence of titles
-ex:CommanderOfTheFaithful ex:isEquivalentTo ex:GateOfGod .
+ex:commanderofthefaithful ex:iscloseto ex:god .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/364-4> rdf:type owl:ontology .
+
+# entities
+ex:commanderofthefaithful a go:person ;
+    rdfs:label "commander of the faithful"@en .
+
+ex:gateofgod a go:role ;
+    rdfs:label "gate of god"@en .
+
+# relationship: equivalence of titles
+ex:commanderofthefaithful ex:isequivalentto ex:gateofgod .

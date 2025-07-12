@@ -1,132 +1,135 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/425#> .
+@prefix ex: <http://etratnet.ir/graph/example/425#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/425> rdf:type go:ontology ;
+        go:hascontent "1.  «شش چيز است كه بندگان را در آنها دستى نيست: شناخت و عدم شناخت و خشنودى و خشم و خواب و بيدارى»."@fa,
+        "1.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «سِتَّةُ أَشْيَاءَ لَيْسَ لِلْعِبَادِ فِيهَا صُنْعٌ: الْمَعْرِفَةُ، وَالْجَهْلُ، وَالرِّضَا، وَالْغَضَبُ، وَالنَّوْمُ، وَالْيَقَظَةُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/425-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/425-1> rdf:type owl:ontology .
 
-ex:Humans a go:Agent ;
-    rdfs:label "Humans" .
+ex:humans a go:agent ;
+    rdfs:label "humans" .
 
-ex:Knowledge a go:Substance ;
-    rdfs:label "Knowledge" .
+ex:knowledge a go:substance ;
+    rdfs:label "knowledge" .
 
-ex:InfluenceEvent a go:Event , ex:InfluenceEvent;
-    go:HasTheme ex:Knowledge .
+ex:influenceevent a go:event , ex:influenceevent;
+    go:hastheme ex:knowledge .
     
-# Statement indicating humans do not have influence over knowledge:
-# Representing by a negative statement - no agent relation between humans and influence event
+# statement indicating humans do not have influence over knowledge:
+# representing by a negative statement - no agent relation between humans and influence event
 
-# Since RDF does not handle negation directly, the negation can be annotated semantically
-ex:NoInfluence a go:Event ;
-    rdfs:label "No influence of humans on knowledge" ;
-    go:HasAgent ex:Humans ;
-    go:HasTheme ex:Knowledge ;
+# since rdf does not handle negation directly, the negation can be annotated semantically
+ex:noinfluence a go:event ;
+    rdfs:label "no influence of humans on knowledge" ;
+    go:hasagent ex:humans ;
+    go:hastheme ex:knowledge ;
     ex:negation true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/425-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/425-2> rdf:type owl:ontology .
 
-ex:Servants a go:Person ;
-    go:HasPotentialRole ex:AbilityToCreate .
+ex:servants a go:person ;
+    go:haspotentialrole ex:abilitytocreate .
 
-ex:AbilityToCreate a go:Event ;
-    go:HasAgent ex:Servants ;
-    go:Negated true ;
-    go:Cause ex:Ignorance .
+ex:abilitytocreate a go:event ;
+    go:hasagent ex:servants ;
+    go:negated true ;
+    go:cause ex:ignorance .
 
-ex:Ignorance a go:Condition .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/425-3> rdf:type owl:Ontology .
-
-ex:Contentment a go:State ;
-    rdfs:label "Contentment" .
-
-ex:Humans a go:Agent ;
-    rdfs:label "Humans" .
-
-ex:ControlEvent a go:Event ;
-    go:HasAgent ex:Humans ;
-    go:HasTheme ex:Contentment ;
-    rdfs:label "Control over contentment" .
-
-ex:NegationEvent a go:Event ;
-    go:HasTheme ex:ControlEvent ;
-    rdfs:label "Negation of control" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:ignorance a go:condition .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/425-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/425-3> rdf:type owl:ontology .
 
-ex:People a go:Agent ;
-    rdfs:label "People" .
+ex:contentment a go:state ;
+    rdfs:label "contentment" .
 
-ex:Anger a go:Emotion ;
-    rdfs:label "Anger" .
+ex:humans a go:agent ;
+    rdfs:label "humans" .
 
-ex:LossOfControlInAnger a go:State ;
-    go:HasAgent ex:People ;
-    go:HasCause ex:Anger ;
-    ex:isControlled false ;
-    rdfs:label "Lack of control in anger" .
-go:Agent rdfs:label "عامل"@fa.
+ex:controlevent a go:event ;
+    go:hasagent ex:humans ;
+    go:hastheme ex:contentment ;
+    rdfs:label "control over contentment" .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/425-5> rdf:type owl:Ontology .
-
-ex:People a go:Agent .
-ex:Sleep a go:State .
-
-# People do not control Sleep
-ex:People go:CanControl ex:Sleep . # Negation implied by the sentence context
-go:Agent rdfs:label "عامل"@fa.
+ex:negationevent a go:event ;
+    go:hastheme ex:controlevent ;
+    rdfs:label "negation of control" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/425-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/425-4> rdf:type owl:ontology .
 
-ex:Wakefulness a go:State ;
-    rdfs:label "Wakefulness"@en .
+ex:people a go:agent ;
+    rdfs:label "people" .
 
-ex:People a go:Agent ;
-    rdfs:label "People"@en .
+ex:anger a go:emotion ;
+    rdfs:label "anger" .
 
-ex:NoPowerInWakefulness a go:Event ;
-    rdfs:comment "An event expressing that people have no power during wakefulness"@en ;
-    go:HasAgent ex:People ;
-    go:HasState ex:Wakefulness ;
-    go:HasTheme ex:Power .
+ex:lossofcontrolinanger a go:state ;
+    go:hasagent ex:people ;
+    go:hascause ex:anger ;
+    ex:iscontrolled false ;
+    rdfs:label "lack of control in anger" .
+go:agent rdfs:label "عامل"@fa.
 
-ex:Power a go:Substance ;
-    rdfs:label "Power"@en .
 
-ex:NoPowerInWakefulness go:hasPolarity "negative"^^xsd:boolean .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/425-5> rdf:type owl:ontology .
+
+ex:people a go:agent .
+ex:sleep a go:state .
+
+# people do not control sleep
+ex:people go:cancontrol ex:sleep . # negation implied by the sentence context
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/425-6> rdf:type owl:ontology .
+
+ex:wakefulness a go:state ;
+    rdfs:label "wakefulness"@en .
+
+ex:people a go:agent ;
+    rdfs:label "people"@en .
+
+ex:nopowerinwakefulness a go:event ;
+    rdfs:comment "an event expressing that people have no power during wakefulness"@en ;
+    go:hasagent ex:people ;
+    go:hasstate ex:wakefulness ;
+    go:hastheme ex:power .
+
+ex:power a go:substance ;
+    rdfs:label "power"@en .
+
+ex:nopowerinwakefulness go:haspolarity "negative"^^xsd:boolean .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

@@ -1,264 +1,267 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/396#> .
+@prefix ex: <http://etratnet.ir/graph/example/396#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/396> rdf:type go:ontology ;
+        go:hascontent "2. در محضر امام صادق عليه‌السلام نشسته بودم كه پرسنده‌اى از ايشان پرسيد و گفت: فدايتان شوم اى پسر رسول خدا، از چه رو بدبختى گريبان گنهكاران را گرفت تا جايى كه خداوند در علم خود، به عذاب آنان در برابر كردارشان حكم كرد؟ امام صادق عليه‌السلام فرمود: «اى پرسنده، حكم خداوند عز و جل چنان است كه احدى از آفريدگانش نمى‌تواند حقيقت آن را بشناسد. پس، چون حكم به آن (عذاب گنهكاران يا پاداش و كيفر) كرد، به دوستدارانش [يا: به كسانى كه خدا دوستشان دارد] نيروى شناخت خود را بخشيد و سنگينى عمل به حقيقت آنچه را كه اهل آن هستند (يعنى طاعت و عبادت خداوند) از دوش ايشان برداشت، و به نافرمانان نيروى نافرمانى كردن عطا فرمود؛ زيرا كه از پيش مى‌دانست نافرمانى‌اش مى‌كنند و توانايى پذيرش از خود را به آنان نداد. پس، كردار آنان با آنچه خداوند از پيش درباره ايشان مى‌دانست، مطابقت يافت، و نتوانستند كارى كنند كه آنها را از عذاب او برهاند؛ زيرا، علم خدا به تحقق يافتن سزاوارتر است. اين است معناى "خواست آنچه خواست" و اين راز اوست»."@fa,
+        "2. كُنْتُ بَيْنَ يَدَيْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام جَالِساً وَقَدْ سَأَلَهُ سَائِلٌ، فَقَالَ: جُعِلْتُ فِدَاكَ يَا ابْنَ رَسُولِ اللّه‌ِ، مِنْ أَيْنَ لَحِقَ الشَّقَاءُ أَهْلَ الْمَعْصِيَةِ حَتّى حَكَمَ اللّه‌ُ لَهُمْ فِي عِلْمِهِ بِالْعَذَابِ عَلى عَمَلِهِمْ؟ فَقَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «أَيُّهَا السَّائِلُ، حُكْمُ اللّه‌ِ ـ عَزَّ وَجَلَّ ـ لاَ يَقُومُ لَهُ أَحَدٌ مِنْ خَلْقِهِ بِحَقِّهِ، فَلَمَّا حَكَمَ بِذلِكَ، وَهَبَ لِأَهْلِ مَحَبَّتِهِ الْقُوَّةَ عَلى مَعْرِفَتِهِ، وَوَضَعَ عَنْهُمْ ثِقَلَ الْعَمَلِ بِحَقِيقَةِ مَا هُمْ أَهْلُهُ، وَوَهَبَ لِأَهْلِ الْمَعْصِيَةِ الْقُوَّةَ عَلى مَعْصِيَتِهِمْ؛ لِسَبْقِ عِلْمِهِ فِيهِمْ، وَمَنَعَهُمْ إِطَاقَةَ الْقَبُولِ مِنْهُ، فَوَاقَعُوا مَا سَبَقَ لَهُمْ فِي عِلْمِهِ، وَلَمْ يَقْدِرُوا أَنْ يَأْتُوا حَالاً تُنْجِيهِمْ مِنْ عَذَابِهِ؛ لِأَنَّ عِلْمَهُ أَوْلى بِحَقِيقَةِ التَّصْدِيقِ وَهُوَ مَعْنى «شَاءَ مَا شَاءَ» وَهُوَ سِرُّهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-1> rdf:type owl:ontology .
 
-ex:Event_Ask_001 a go:Event ;
-    go:HasAgent ex:Person_Questioner_001 ;
-    go:HasRecipient ex:Person_Abu_Abdullah_001 ;
-    go:HasTheme ex:Theme_Reason_For_Misery_Following_Disobedience .
+ex:event_ask_001 a go:event ;
+    go:hasagent ex:person_questioner_001 ;
+    go:hasrecipient ex:person_abu_abdullah_001 ;
+    go:hastheme ex:theme_reason_for_misery_following_disobedience .
 
-ex:Person_Questioner_001 a go:Person ;
-    go:label "Questioner" .
+ex:person_questioner_001 a go:person ;
+    go:label "questioner" .
 
-ex:Person_Abu_Abdullah_001 a go:Person ;
-    go:label "Abu Abdullah (peace be upon him)" .
+ex:person_abu_abdullah_001 a go:person ;
+    go:label "abu abdullah (peace be upon him)" .
 
-ex:Theme_Reason_For_Misery_Following_Disobedience a go:AbstractTheme ;
-    go:label "Reason why misery follows the people of disobedience despite God's punishment decree" ;
-    go:HasCause ex:Decree_Punishment_God_001, ex:State_Misery_001, ex:Group_People_Disobedience_001 .
+ex:theme_reason_for_misery_following_disobedience a go:abstracttheme ;
+    go:label "reason why misery follows the people of disobedience despite god's punishment decree" ;
+    go:hascause ex:decree_punishment_god_001, ex:state_misery_001, ex:group_people_disobedience_001 .
 
-ex:Decree_Punishment_God_001 a go:Event ;
-    go:HasAgent ex:Entity_God ;
-    go:label "God's knowledge-based decree of punishment for their deeds" .
+ex:decree_punishment_god_001 a go:event ;
+    go:hasagent ex:entity_god ;
+    go:label "god's knowledge-based decree of punishment for their deeds" .
 
-ex:Entity_God a go:Deity ;
-    go:label "Allah (God)" .
+ex:entity_god a go:deity ;
+    go:label "allah (god)" .
 
-ex:State_Misery_001 a go:State ;
-    go:label "Misery" .
+ex:state_misery_001 a go:state ;
+    go:label "misery" .
 
-ex:Group_People_Disobedience_001 a go:Group ;
-    go:label "People of Disobedience" .
-go:Event rdfs:label "رخداد"@fa.
+ex:group_people_disobedience_001 a go:group ;
+    go:label "people of disobedience" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-2> rdf:type owl:ontology .
 
-# Entities
-ex:God_Almighty a go:Deity .
-ex:Creatures a go:LivingBeing ;
-    go:subClassOf go:LivingBeing .
+# entities
+ex:god_almighty a go:deity .
+ex:creatures a go:livingbeing ;
+    go:subclassof go:livingbeing .
 
-# Event class: Standing to God's right (Authority recognition)
-ex:StandingToGodsRight a go:Event .
+# event class: standing to god's right (authority recognition)
+ex:standingtogodsright a go:event .
 
-# For all creatures, there is no instance of StandingToGodsRight where creature stands to God's right
+# for all creatures, there is no instance of standingtogodsright where creature stands to god's right
 
-# Represent the general negative claim via a statement that there is no event ex:StandingToGodsRight with go:HasAgent any creature and go:HasTheme ex:God_Almighty
+# represent the general negative claim via a statement that there is no event ex:standingtogodsright with go:hasagent any creature and go:hastheme ex:god_almighty
 
-# Since blank node or other complex expressions might overcomplicate, state the assertion as a negative statement in comment or meta statement
+# since blank node or other complex expressions might overcomplicate, state the assertion as a negative statement in comment or meta statement
 
-# Example event instance
-# ex:event1 a ex:StandingToGodsRight ;
-#     go:HasAgent ex:Creature ;
-#     go:HasTheme ex:God_Almighty .
+# example event instance
+# ex:event1 a ex:standingtogodsright ;
+#     go:hasagent ex:creature ;
+#     go:hastheme ex:god_almighty .
 
-# But according to sentence, no such event exists
+# but according to sentence, no such event exists
 
-# In RDF, can't express universal negation easily, so add a metadata triple:
+# in rdf, can't express universal negation easily, so add a metadata triple:
 
-# The concept:
-ex:GodsRight a go:Quality ;
-    rdfs:label "God's right" .
+# the concept:
+ex:godsright a go:quality ;
+    rdfs:label "god's right" .
 
-# Creatures cannot have events of standing to God's right
-# This can be indicated with a rule or annotation (informal here)
+# creatures cannot have events of standing to god's right
+# this can be indicated with a rule or annotation (informal here)
 
-# Summary triples:
+# summary triples:
 
-# Entities
-ex:God_Almighty a go:Deity .
-ex:Creature a go:LivingBeing .
+# entities
+ex:god_almighty a go:deity .
+ex:creature a go:livingbeing .
 
-# Event class
-ex:StandingToGodsRight a go:Event .
+# event class
+ex:standingtogodsright a go:event .
 
-# Event properties
-ex:StandingToGodsRight go:HasTheme ex:God_Almighty .
-ex:StandingToGodsRight go:HasAgent ex:Creature .
+# event properties
+ex:standingtogodsright go:hastheme ex:god_almighty .
+ex:standingtogodsright go:hasagent ex:creature .
 
-# Statement of negation - no instance
-[ a rdf:Statement ;
-  rdf:subject ex:StandingToGodsRight ;
-  rdf:predicate go:HasAgent ;
-  rdf:object ex:Creature ;
-  ex:truthValue "false"^^xsd:boolean
+# statement of negation - no instance
+[ a rdf:statement ;
+  rdf:subject ex:standingtogodsright ;
+  rdf:predicate go:hasagent ;
+  rdf:object ex:creature ;
+  ex:truthvalue "false"^^xsd:boolean
 ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-3> rdf:type owl:ontology .
 
-exEvent:JudgmentByGod a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasInstrument ex:Knowledge .
+exevent:judgmentbygod a go:event ;
+    go:hasagent ex:god ;
+    go:hasinstrument ex:knowledge .
 
-exEvent:GrantStrength a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Strength ;
-    go:HasRecipient ex:PeopleOfHisLove .
+exevent:grantstrength a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:strength ;
+    go:hasrecipient ex:peopleofhislove .
 
-ex:God a go:Agent .
-ex:Knowledge a go:Substance .
-ex:Strength a go:Substance .
-ex:PeopleOfHisLove a go:group .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/396-4> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:BurdenOfAction ;
-    go:HasRecipient ex:TruePeopleOfGodsLove .
-
-ex:God a go:Substance ;
-    rdfs:label "God" .
-
-ex:BurdenOfAction a go:Substance ;
-    rdfs:label "Burden of Action" .
-
-ex:TruePeopleOfGodsLove a go:Substance ;
-    rdfs:label "True People of God's Love" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:agent .
+ex:knowledge a go:substance .
+ex:strength a go:substance .
+ex:peopleofhislove a go:group .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-4> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasRecipient ex:PeopleOfSin ;
-  go:HasTheme ex:Strength .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:burdenofaction ;
+    go:hasrecipient ex:truepeopleofgodslove .
 
-ex:God a go:Agent ;
-  rdfs:label "God" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:PeopleOfSin a go:Group ;
-  go:characterizedBy ex:Sin .
+ex:burdenofaction a go:substance ;
+    rdfs:label "burden of action" .
 
-ex:Strength a go:Attribute .
-
-ex:Sin a go:Action ;
-  go:performedBy ex:PeopleOfSin .
-
-ex:PriorKnowledge a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:PeopleOfSin .
-
-ex:Event1 go:causedBy ex:PriorKnowledge .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:truepeopleofgodslove a go:substance ;
+    rdfs:label "true people of god's love" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-5> rdf:type owl:ontology .
 
-ex:preventingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:peopleOfSin ;
-    go:HasGoal ex:acceptanceFromGod .
+ex:event1 a go:event ;
+  go:hasagent ex:god ;
+  go:hasrecipient ex:peopleofsin ;
+  go:hastheme ex:strength .
 
-ex:God a go:agent ;
-    rdfs:label "God"@en .
+ex:god a go:agent ;
+  rdfs:label "god" .
 
-ex:peopleOfSin a go:Substance ;
+ex:peopleofsin a go:group ;
+  go:characterizedby ex:sin .
+
+ex:strength a go:attribute .
+
+ex:sin a go:action ;
+  go:performedby ex:peopleofsin .
+
+ex:priorknowledge a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:peopleofsin .
+
+ex:event1 go:causedby ex:priorknowledge .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/396-6> rdf:type owl:ontology .
+
+ex:preventingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:peopleofsin ;
+    go:hasgoal ex:acceptancefromgod .
+
+ex:god a go:agent ;
+    rdfs:label "god"@en .
+
+ex:peopleofsin a go:substance ;
     rdfs:label "people of sin"@en .
 
-ex:acceptanceFromGod a go:goal ;
-    rdfs:label "acceptance from God"@en ;
-    go:origin ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:acceptancefromgod a go:goal ;
+    rdfs:label "acceptance from god"@en ;
+    go:origin ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-7> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-    go:HasTheme ex:MattersOfSinningPeople ;
-    go:HasRecipient ex:SinningPeople .
+ex:event1 a go:event ;
+    go:hastheme ex:mattersofsinningpeople ;
+    go:hasrecipient ex:sinningpeople .
 
-ex:MattersOfSinningPeople a go:Substance .
+ex:mattersofsinningpeople a go:substance .
 
-ex:SinningPeople a go:group .
+ex:sinningpeople a go:group .
 
-ex:God a go:agent ;
-    ex:HasPriorKnowledge ex:MattersOfSinningPeople .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:agent ;
+    ex:haspriorknowledge ex:mattersofsinningpeople .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-8> rdf:type owl:ontology .
 
-ex:SinfulPeople a go:Substance ;
+ex:sinfulpeople a go:substance ;
     rdfs:label "the people who committed sin"@en .
 
-ex:DivinePunishment a go:Substance ;
-    rdfs:label "God's punishment"@en .
+ex:divinepunishment a go:substance ;
+    rdfs:label "god's punishment"@en .
 
-ex:StateToBeBrought a go:Substance ;
+ex:statetobebrought a go:substance ;
     rdfs:label "state that saves from punishment"@en .
 
-ex:FailureToBringState a go:Event ;
+ex:failuretobringstate a go:event ;
     rdfs:label "failure to bring a saving state"@en ;
-    go:HasAgent ex:SinfulPeople ;
-    go:HasTheme ex:StateToBeBrought ;
-    ex:PreventsSavingFrom ex:DivinePunishment .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+    go:hasagent ex:sinfulpeople ;
+    go:hastheme ex:statetobebrought ;
+    ex:preventssavingfrom ex:divinepunishment .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-9> rdf:type owl:ontology .
 
-ex:KnowledgeOfBeliefReality a go:KnowledgeEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:TrueRealityOfBelief .
+ex:knowledgeofbeliefreality a go:knowledgeevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:truerealityofbelief .
 
-ex:God a go:Agent .
-ex:TrueRealityOfBelief a go:Concept .
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:agent .
+ex:truerealityofbelief a go:concept .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/396-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/396-10> rdf:type owl:ontology .
 
-ex:Phrase_ShayaMaShaya a go:Concept ;
-    go:hasMeaning ex:SecretOfGod .
+ex:phrase_shayamashaya a go:concept ;
+    go:hasmeaning ex:secretofgod .
 
-ex:SecretOfGod a go:Secret ;
-    go:hasSubject ex:God .
+ex:secretofgod a go:secret ;
+    go:hassubject ex:god .
 
-ex:God a go:Deity .
+ex:god a go:deity .

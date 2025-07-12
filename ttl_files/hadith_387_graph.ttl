@@ -1,91 +1,94 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/387#> .
+@prefix ex: <http://etratnet.ir/graph/example/387#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/387> rdf:type go:ontology ;
+        go:hascontent "1. از ابو الحسن موسى بن جعفر عليه‌السلام شنيدم كه مى‌فرمايد: «هيچ چيزى به وجود نيايد مگر آن كه خدا خواهد و اراده كند و مقدّر نمايد و حتمى كند». عرض كردم خواستن به چه معناست؟ فرمود: «آغازيدن فعل». عرض كردم: مقدّر كردن به چه معناست؟ فرمود: «تعيين درازا و پهناى چيز». عرض كردم: قضا به چه معناست؟ فرمود: «هرگاه حكم صادر كرد آن را به اجرا در مى‌آورد، و اين همان چيزى است كه ناگزير و برگشت‌ناپذير است»."@fa,
+        "1.  سَمِعْتُ أَبَا الْحَسَنِ مُوسَى بْنَ جَعْفَرٍ عليهماالسلام يَقُولُ: «لاَ يَكُونُ شَيْءٌ إِلاَّ مَا شَاءَ اللّه‌ُ وَأَرَادَ، وَقَدَّرَ وَقَضى». قُلْتُ: مَا مَعْنى «شَاءَ»؟ قَالَ: «ابْتِدَاءُ الْفِعْلِ». قُلْتُ: مَا مَعْنى «قَدَّرَ»؟ قَالَ: «تَقْدِيرُ الشَّيْءِ مِنْ طُولِهِ وَعَرْضِهِ». قُلْتُ: مَا مَعْنى «قَضى»؟ قَالَ: «إِذَا قَضى أَمْضَاهُ، فَذلِكَ الَّذِي لاَ مَرَدَّ لَهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/387-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/387-1> rdf:type owl:ontology .
 
-ex:Allah a go:entity .
-ex:Nothing a go:entity .
+ex:allah a go:entity .
+ex:nothing a go:entity .
 
-ex:WillEvent a ex:event ;
-  go:HasAgent ex:Allah ;
-  go:HasTheme ex:Nothing .
+ex:willevent a ex:event ;
+  go:hasagent ex:allah ;
+  go:hastheme ex:nothing .
 
-ex:IntendEvent a ex:event ;
-  go:HasAgent ex:Allah ;
-  go:HasTheme ex:Nothing .
+ex:intendevent a ex:event ;
+  go:hasagent ex:allah ;
+  go:hastheme ex:nothing .
 
-ex:DecreeEvent a ex:event ;
-  go:HasAgent ex:Allah ;
-  go:HasTheme ex:Nothing .
+ex:decreeevent a ex:event ;
+  go:hasagent ex:allah ;
+  go:hastheme ex:nothing .
 
-ex:DecideEvent a ex:event ;
-  go:HasAgent ex:Allah ;
-  go:HasTheme ex:Nothing .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/387-2> rdf:type owl:Ontology .
-
-ex:Sha_a a go:Concept ;
-    go:hasMeaning ex:Initiation_of_action .
-
-ex:Initiation_of_action a go:Concept .
+ex:decideevent a ex:event ;
+  go:hasagent ex:allah ;
+  go:hastheme ex:nothing .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/387-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/387-2> rdf:type owl:ontology .
 
-ex:Qadr rdf:type go:Concept ;
-    rdfs:label "Qadr"@en ;
-    go:hasDefinition ex:EstimationProcess .
+ex:sha_a a go:concept ;
+    go:hasmeaning ex:initiation_of_action .
 
-ex:EstimationProcess rdf:type go:Event ;
-    rdfs:label "Estimation"@en ;
-    go:HasTheme ex:ObjectToEstimate ;
-    go:usesProperty ex:Length , ex:Width .
-
-ex:ObjectToEstimate rdf:type go:Substance ;
-    rdfs:label "Object"@en .
-
-ex:Length rdf:type go:Property ;
-    rdfs:label "Length"@en .
-
-ex:Width rdf:type go:Property ;
-    rdfs:label "Width"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:initiation_of_action a go:concept .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/387-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/387-3> rdf:type owl:ontology .
 
-ex:QadaEvent a go:Event ;
-    go:HasAgent ex:Agent ;
-    go:HasTheme ex:ExecutionAction ;
-    ex:isIrrevocable true .
+ex:qadr rdf:type go:concept ;
+    rdfs:label "qadr"@en ;
+    go:hasdefinition ex:estimationprocess .
 
-ex:ExecutionAction a go:EventAction ;
-    go:HasAgent ex:Agent ;
-    go:fulfills ex:Obligation .
+ex:estimationprocess rdf:type go:event ;
+    rdfs:label "estimation"@en ;
+    go:hastheme ex:objecttoestimate ;
+    go:usesproperty ex:length , ex:width .
 
-ex:Agent a go:person .
+ex:objecttoestimate rdf:type go:substance ;
+    rdfs:label "object"@en .
 
-ex:Obligation a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:length rdf:type go:property ;
+    rdfs:label "length"@en .
+
+ex:width rdf:type go:property ;
+    rdfs:label "width"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/387-4> rdf:type owl:ontology .
+
+ex:qadaevent a go:event ;
+    go:hasagent ex:agent ;
+    go:hastheme ex:executionaction ;
+    ex:isirrevocable true .
+
+ex:executionaction a go:eventaction ;
+    go:hasagent ex:agent ;
+    go:fulfills ex:obligation .
+
+ex:agent a go:person .
+
+ex:obligation a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

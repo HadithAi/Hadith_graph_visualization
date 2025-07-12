@@ -1,59 +1,62 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/380#> .
+@prefix ex: <http://etratnet.ir/graph/example/380#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/380> rdf:type go:ontology ;
+        go:hascontent "13.  از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «اگر مردم مى‌دانستند كه در اعتقاد به بداء چه اجرى است در سخن گفتن از آن سستى نمى‌ورزيدند [و ورد زبانشان مى‌شد]»."@fa,
+        "13.  سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام يَقُولُ: «لَوْ عَلِمَ النَّاسُ مَا فِي الْقَوْلِ بِالْبَدَاءِ مِنَ الْأَجْرِ، مَا فَتَرُوا عَنِ الْكَلاَمِ فِيهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/380-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/380-1> rdf:type owl:ontology .
 
-ex:Sentence1 a go:Statement ;
-  go:expresses ex:Event1 .
+ex:sentence1 a go:statement ;
+  go:expresses ex:event1 .
 
-ex:Event1 a go:Event, ex:NotKnowing ;
-  go:HasAgent ex:People ;
-  go:HasTheme ex:RewardForSpeech .
+ex:event1 a go:event, ex:notknowing ;
+  go:hasagent ex:people ;
+  go:hastheme ex:rewardforspeech .
 
-ex:People a go:HumanGroup ;
-  rdfs:label "People"@en .
+ex:people a go:humangroup ;
+  rdfs:label "people"@en .
 
-ex:Speech a go:Speech ;
-  rdfs:label "Words of intention"@en .
+ex:speech a go:speech ;
+  rdfs:label "words of intention"@en .
 
-ex:RewardForSpeech a go:Concept ;
-  rdfs:label "Reward for words of intention"@en ;
-  ex:relatedToSpeech ex:Speech .
-go:Event rdfs:label "رخداد"@fa.
+ex:rewardforspeech a go:concept ;
+  rdfs:label "reward for words of intention"@en ;
+  ex:relatedtospeech ex:speech .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/380-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/380-2> rdf:type owl:ontology .
 
-ex:People a go:Mammal ;  # general class for people, assuming
-    go:HasAgent ex:KnowledgeEvent , ex:TalkingEvent .
+ex:people a go:mammal ;  # general class for people, assuming
+    go:hasagent ex:knowledgeevent , ex:talkingevent .
 
-ex:Reward a go:Substance .
+ex:reward a go:substance .
 
-ex:SpeechAboutAlBada a go:Substance ;
-    go:hasTopic ex:AlBada .
+ex:speechaboutalbada a go:substance ;
+    go:hastopic ex:albada .
 
-ex:KnowledgeEvent a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:Reward .
+ex:knowledgeevent a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:reward .
 
-ex:TalkingEvent a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:SpeechAboutAlBada ;
-    go:isCausedBy ex:KnowledgeEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:talkingevent a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:speechaboutalbada ;
+    go:iscausedby ex:knowledgeevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

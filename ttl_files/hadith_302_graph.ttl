@@ -1,136 +1,139 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/302#> .
+@prefix ex: <http://etratnet.ir/graph/example/302#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/302> rdf:type go:ontology ;
+        go:hascontent "2.  به امام صادق عليه‌السلام عرض كردم: دانستن و خواستن خدا دو چيزند يا يك چيز؟ فرمود: «دانستن همان خواستن نيست. نمى‌بينى كه مى‌گويى: اگر خدا بخواهد، چنين خواهم كرد، و نمى‌گويى: اگر خدا بداند، چنين خواهم كرد. پس، اين سخن تو كه: «اگر خدا بخواهد» دليل بر اين است كه خدا نخواسته است [خواست خدا هنوز به تحقق يافتن كار مورد نظر تو تعلّق نگرفته است]؛ زيرا اگر خواسته بود آنچه مى‌خواست همان گونه كه مى‌خواست است تحقق مى‌يافت، و دانش خدا بر خواست او پيشى دارد»."@fa,
+        "2.  قُلْتُ لِأَبِي عَبْدِ اللّه‌ِ عليه‌السلام: عِلْمُ اللّه‌ِ وَمَشِيئَتُهُ هُمَا مُخْتَلِفَانِ أَوْ مُتَّفِقَانِ؟ فَقَالَ: «الْعِلْمُ لَيْسَ هُوَ الْمَشِيئَةَ؛ أَ لاَ تَرى أَنَّكَ تَقُولُ: سَأَفْعَلُ كَذَا إِنْ شَاءَ اللّه‌ُ، وَلاَ تَقُولُ: سَأَفْعَلُ كَذَا إِنْ عَلِمَ اللّه‌ُ، فَقَوْلُكَ: «إِنْ شَاءَ اللّه‌ُ» دَلِيلٌ عَلى أَنَّهُ لَمْ يَشَأْ؛ فَإِذَا شَاءَ، كَانَ الَّذِي شَاءَ كَمَا شَاءَ، وَعِلْمُ اللّه‌ِ السَّابِقُ لِلْمَشِيئَةِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/302-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/302-1> rdf:type owl:ontology .
 
-ex:Knowledge a go:Concept ;
-    go:HasAgent dbr:God ;
-    ex:isNotEquivalentTo ex:GodsWill .
+ex:knowledge a go:concept ;
+    go:hasagent dbr:god ;
+    ex:isnotequivalentto ex:godswill .
 
-ex:GodsWill a go:Concept ;
-    go:HasAgent dbr:God .
+ex:godswill a go:concept ;
+    go:hasagent dbr:god .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/302-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/302-2> rdf:type owl:ontology .
 
-:human1 a go:Human ;
+:human1 a go:human ;
   go:performs :event_say1 .
 
-:event_say1 a go:Event ;
+:event_say1 a go:event ;
   go:name "saying"@en ;
-  go:HasAgent :human1 ;
-  go:HasTheme :event_intent1 .
+  go:hasagent :human1 ;
+  go:hastheme :event_intent1 .
 
-:event_intent1 a go:Event ;
+:event_intent1 a go:event ;
   go:name "intended action"@en ;
-  ex:hasCondition :condition_god_willing .
+  ex:hascondition :condition_god_willing .
 
-:condition_god_willing a ex:Condition ;
-  ex:conditionRelatesTo :Allah .
+:condition_god_willing a ex:condition ;
+  ex:conditionrelatesto :allah .
 
-:Allah a go:Deity ;
-  go:name "Allah"@en .
-go:Event rdfs:label "رخداد"@fa.
+:allah a go:deity ;
+  go:name "allah"@en .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/302-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/302-3> rdf:type owl:ontology .
 
-ex:Human a go:Human ;
+ex:human a go:human ;
     go:label "human" .
 
-ex:God a go:Deity ;
-    go:label "God" .
+ex:god a go:deity ;
+    go:label "god" .
 
-ex:SayingEvent a go:SpeechEvent ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:SpeechContent ;
-    go:hasPolarity "negative"^^xsd:string .
+ex:sayingevent a go:speechevent ;
+    go:hasagent ex:human ;
+    go:hastheme ex:speechcontent ;
+    go:haspolarity "negative"^^xsd:string .
 
-ex:SpeechContent a go:ConditionalStatement ;
-    go:HasActor ex:Human ;
-    go:FutureAction "do such a thing"^^xsd:string ;
-    go:Condition ex:GodKnows .
+ex:speechcontent a go:conditionalstatement ;
+    go:hasactor ex:human ;
+    go:futureaction "do such a thing"^^xsd:string ;
+    go:condition ex:godknows .
 
-ex:GodKnows a go:KnowingEvent ;
-    go:HasAgent ex:God .
+ex:godknows a go:knowingevent ;
+    go:hasagent ex:god .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/302-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/302-4> rdf:type owl:ontology .
 
-ex:Person1 a go:Human .
-ex:God a go:Deity .
+ex:person1 a go:human .
+ex:god a go:deity .
 
-ex:SayingInshaAllah a go:Saying ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:PhraseInshaAllah .
+ex:sayinginshaallah a go:saying ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:phraseinshaallah .
 
-ex:PhraseInshaAllah a go:Concept ;
+ex:phraseinshaallah a go:concept ;
     rdfs:label "إن شاء الله"@ar ;
-    rdfs:label "Insha'Allah"@en .
+    rdfs:label "insha'allah"@en .
 
-# The state indicated by the saying event:
-ex:SayingInshaAllah go:indicates ex:GodHasNotWilledYet .
+# the state indicated by the saying event:
+ex:sayinginshaallah go:indicates ex:godhasnotwilledyet .
 
-ex:GodHasNotWilledYet a go:State ;
-    go:HasTheme ex:God ;
-    go:hasStatus "false"^^xsd:boolean ; # meaning God has not yet willed
-    rdfs:comment "Indicates that God has not willed the event yet."@en .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/302-5> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    rdfs:label "God" .
-
-ex:GodWillingEvent a ex:WillEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:DesiredEvent .
-
-ex:DesiredEvent a ex:Event ;
-    ex:isResultOf ex:GodWillingEvent ;
-    go:HasAgent ex:God .
-
-ex:ConditionalEvent a ex:ConditionalEvent ;
-    ex:ifCondition ex:GodWillingEvent ;
-    ex:thenResult ex:DesiredEvent .
+ex:godhasnotwilledyet a go:state ;
+    go:hastheme ex:god ;
+    go:hasstatus "false"^^xsd:boolean ; # meaning god has not yet willed
+    rdfs:comment "indicates that god has not willed the event yet."@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/302-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/302-5> rdf:type owl:ontology .
 
-# Define God as an agent
-god:God a go:Agent .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-# Define attributes knowledge and will as qualities of God
-god:Knowledge a go:Quality ;
-    go:QualityOf god:God .
+ex:godwillingevent a ex:willevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:desiredevent .
 
-god:Will a go:Quality ;
-    go:QualityOf god:God .
+ex:desiredevent a ex:event ;
+    ex:isresultof ex:godwillingevent ;
+    go:hasagent ex:god .
 
-# Express that knowledge precedes will
-god:Knowledge ex:precedes god:Will .
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:conditionalevent a ex:conditionalevent ;
+    ex:ifcondition ex:godwillingevent ;
+    ex:thenresult ex:desiredevent .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/302-6> rdf:type owl:ontology .
+
+# define god as an agent
+god:god a go:agent .
+
+# define attributes knowledge and will as qualities of god
+god:knowledge a go:quality ;
+    go:qualityof god:god .
+
+god:will a go:quality ;
+    go:qualityof god:god .
+
+# express that knowledge precedes will
+god:knowledge ex:precedes god:will .
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.

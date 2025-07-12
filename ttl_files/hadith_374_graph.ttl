@@ -1,172 +1,175 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/374#> .
+@prefix ex: <http://etratnet.ir/graph/example/374#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/374> rdf:type go:ontology ;
+        go:hascontent "7. از امام باقر عليه‌السلام شنيدم كه مى‌فرمايد: «علم [خداوند] بر دو گونه است: علمى كه در خزانه الهى نهفته است و احدى از آفريدگانش را بر آن آگاه نساخته است، و علمى كه آن را به فرشتگان و فرستادگانش آموخت. آنچه به فرشتگان و فرستادگانش آموخته است تحقق خواهد يافت [؛ زيرا]خداوند نه خودش را دروغزن از كار در مى‌آورد، نه فرشتگانش، و نه فرستادگانش را، و علمى كه نزد خودش اندوخته است، از آن هر چه را خواهد پس‌وپيش مى‌كند، و هر چه را خواهد بر جا نگه مى‌دارد»."@fa,
+        "7.  سَمِعْتُ أَبَا جَعْفَرٍ عليه‌السلام يَقُولُ: «الْعِلْمُ عِلْمَانِ: فَعِلْمٌ عِنْدَ اللّه‌ِ مَخْزُونٌ لَمْ يُطْلِعْ عَلَيْهِ أَحَداً مِنْ خَلْقِهِ؛ وَعِلْمٌ عَلَّمَهُ مَلاَئِكَتَهُ وَرُسُلَهُ، فَمَا عَلَّمَهُ مَلاَئِكَتَهُ وَرُسُلَهُ فَإِنَّهُ سَيَكُونُ؛ لاَ يُكَذِّبُ نَفْسَهُ وَلاَ مَلاَئِكَتَهُ وَلاَ رُسُلَهُ؛ وَعِلْمٌ عِنْدَهُ مَخْزُونٌ، يُقَدِّمُ مِنْهُ مَا يَشَاءُ، وَيُؤخِّرُ مِنْهُ مَا يَشَاءُ، وَيُثْبِتُ مَا يَشَاءُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/374-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/374-1> rdf:type owl:ontology .
 
-ex:Science a go:entity ;
-  ex:equivalentTo ex:TwoSciences .
+ex:science a go:entity ;
+  ex:equivalentto ex:twosciences .
 
-ex:TwoSciences a go:entity ;
+ex:twosciences a go:entity ;
   ex:quantity "2"^^xsd:integer ;
   rdfs:label "sciences" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/374-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/374-2> rdf:type owl:ontology .
 
-ex:FirstKnowledge a go:Substance ;
+ex:firstknowledge a go:substance ;
     rdfs:label "the first knowledge" .
 
-ex:God a go:person ;
-    rdfs:label "God" .
+ex:god a go:person ;
+    rdfs:label "god" .
 
-ex:CreaturesOfGod a go:population ;
-    rdfs:label "the creatures of God" .
+ex:creaturesofgod a go:population ;
+    rdfs:label "the creatures of god" .
 
-# Event: God stores the first knowledge
-ex:StorageEvent1 a go:Event ;
-    ex:HasAgent ex:God ;
-    ex:HasTheme ex:FirstKnowledge .
+# event: god stores the first knowledge
+ex:storageevent1 a go:event ;
+    ex:hasagent ex:god ;
+    ex:hastheme ex:firstknowledge .
 
-# Event: No creature has accessed the knowledge
-ex:NoAccessEvent1 a go:Event ;
-    ex:HasTheme ex:FirstKnowledge ;
-    ex:HasAgent ex:CreaturesOfGod ;
-    ex:AccessType "no access"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/374-3> rdf:type owl:Ontology .
-
-ex:SecondKnowledge a go:Concept ;
-    rdfs:label "The second knowledge taught by God." .
-
-ex:God a go:Agent .
-ex:Angels a go:AgentGroup .
-ex:Messengers a go:AgentGroup .
-
-ex:TeachingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SecondKnowledge ;
-    go:HasRecipient ex:Angels , ex:Messengers .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# event: no creature has accessed the knowledge
+ex:noaccessevent1 a go:event ;
+    ex:hastheme ex:firstknowledge ;
+    ex:hasagent ex:creaturesofgod ;
+    ex:accesstype "no access"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/374-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/374-3> rdf:type owl:ontology .
 
-ex:God a go:Agent .
-ex:AngelGroup a go:Agent ;
-    rdfs:label "Angels"@en .
-ex:MessengerGroup a go:Agent ;
-    rdfs:label "Messengers"@en .
+ex:secondknowledge a go:concept ;
+    rdfs:label "the second knowledge taught by god." .
 
-ex:TeachingEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:AngelGroup, ex:MessengerGroup .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:agent .
+ex:angels a go:agentgroup .
+ex:messengers a go:agentgroup .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/374-5> rdf:type owl:Ontology .
-
-ex:event1 a go:Lying ;
-    go:IsNegated true ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:God, ex:Angels, ex:Messengers .
-
-ex:God a go:DivineEntity .
-ex:Angels a go:SpiritualBeings .
-ex:Messengers a go:DivineMessengers .
+ex:teachingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:secondknowledge ;
+    go:hasrecipient ex:angels , ex:messengers .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/374-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/374-4> rdf:type owl:ontology .
 
-ex:knowledge a go:Substance .
-ex:God a go:Agent .
+ex:god a go:agent .
+ex:angelgroup a go:agent ;
+    rdfs:label "angels"@en .
+ex:messengergroup a go:agent ;
+    rdfs:label "messengers"@en .
 
-# Knowledge is stored with God
-ex:storageEvent a go:Event ;
-    go:HasTheme ex:knowledge ;
-    go:HasAgent ex:God ;
-    go:EventType "storage" .
-
-# God gives knowledge as He wills
-ex:givingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:knowledge ;
-    go:HasCause ex:GodsWill .
-
-ex:GodsWill a go:CognitiveState ;
-    go:HasAgent ex:God ;
-    go:Description "God's will to give knowledge" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:teachingevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:angelgroup, ex:messengergroup .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/374-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/374-5> rdf:type owl:ontology .
 
-ex:Knowledge a go:Substance ;
-    go:hasLocation ex:God .
+ex:event1 a go:lying ;
+    go:isnegated true ;
+    go:hasagent ex:god ;
+    go:hastheme ex:god, ex:angels, ex:messengers .
 
-ex:God a foaf:Agent .
-
-ex:DelayEvent a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Knowledge ;
-    go:causedBy ex:GodWill .
-
-ex:GodWill a go:Disposition ;
-    go:hasHolder ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:divineentity .
+ex:angels a go:spiritualbeings .
+ex:messengers a go:divinemessengers .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/374-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/374-6> rdf:type owl:ontology .
 
-ex:Knowledge a go:Substance .
-ex:God a go:Agent .
+ex:knowledge a go:substance .
+ex:god a go:agent .
 
-ex:StorageEvent a go:Event ;
-    go:HasTheme ex:Knowledge ;
-    go:HasAgent ex:God ;
-    go:LocatedAt ex:God .
+# knowledge is stored with god
+ex:storageevent a go:event ;
+    go:hastheme ex:knowledge ;
+    go:hasagent ex:god ;
+    go:eventtype "storage" .
 
-ex:ConfirmationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Knowledge ;
-    go:Confirms ex:DesiredContent .
+# god gives knowledge as he wills
+ex:givingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:knowledge ;
+    go:hascause ex:godswill .
 
-ex:DesiredContent a go:Concept ;
-    go:HasCause ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:godswill a go:cognitivestate ;
+    go:hasagent ex:god ;
+    go:description "god's will to give knowledge" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/374-7> rdf:type owl:ontology .
+
+ex:knowledge a go:substance ;
+    go:haslocation ex:god .
+
+ex:god a foaf:agent .
+
+ex:delayevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:knowledge ;
+    go:causedby ex:godwill .
+
+ex:godwill a go:disposition ;
+    go:hasholder ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/374-8> rdf:type owl:ontology .
+
+ex:knowledge a go:substance .
+ex:god a go:agent .
+
+ex:storageevent a go:event ;
+    go:hastheme ex:knowledge ;
+    go:hasagent ex:god ;
+    go:locatedat ex:god .
+
+ex:confirmationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:knowledge ;
+    go:confirms ex:desiredcontent .
+
+ex:desiredcontent a go:concept ;
+    go:hascause ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

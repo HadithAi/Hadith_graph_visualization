@@ -1,170 +1,173 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/406#> .
+@prefix ex: <http://etratnet.ir/graph/example/406#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/406> rdf:type go:ontology ;
+        go:hascontent "6.  «پيامبر خدا صلى‌الله‌عليه‌و‌آله فرمود: هر كس بگويد كه خدا به بدى و زشتكارى فرمان مى‌دهد بر خدا دروغ بسته است، هر كس بگويد كه خوبى و بدى به غير خواست خداست خدا را از پادشاهى‌اش خارج ساخته است، هر كس بگويد كه انجام دادن گناه با غير از نيروى خداست بر خدا دروغ بسته است و هر كس بر خدا دروغ بندد، خداوند او را به آتش [دوزخ]درآورد»."@fa,
+        "6.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «قَالَ رَسُولُ اللّه‌ِ صلى‌الله‌عليه‌و‌آله: مَنْ زَعَمَ أَنَّ اللّه‌َ يَأْمُرُ بِالسُّوءِ وَالْفَحْشَاءِ، فَقَدْ كَذَبَ عَلَى اللّه‌ِ؛ وَمَنْ زَعَمَ أَنَّ الْخَيْرَ وَالشَّرَّ بِغَيْرِ مَشِيئَةِ اللّه‌ِ، فَقَدْ أَخْرَجَ اللّه‌َ مِنْ سُلْطَانِهِ؛ وَمَنْ زَعَمَ أَنَّ الْمَعَاصِيَ بِغَيْرِ قُوَّةِ اللّه‌ِ، فَقَدْ كَذَبَ عَلَى اللّه‌ِ؛ وَمَنْ كَذَبَ عَلَى اللّه‌ِ، أَدْخَلَهُ اللّه‌ُ النَّارَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/406-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/406-1> rdf:type owl:ontology .
 
-ex:MessengerOfAllah a go:Person ;
-    rdfs:label "Messenger of Allah (peace be upon him and his family)"@en .
+ex:messengerofallah a go:person ;
+    rdfs:label "messenger of allah (peace be upon him and his family)"@en .
 
-ex:Allah a go:Deity ;
-    rdfs:label "Allah"@en .
+ex:allah a go:deity ;
+    rdfs:label "allah"@en .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:MessengerOfAllah ;
-    go:HasTheme ex:Proposition1 ;
-    rdfs:label "Saying by Messenger of Allah"@en .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:messengerofallah ;
+    go:hastheme ex:proposition1 ;
+    rdfs:label "saying by messenger of allah"@en .
 
-ex:Proposition1 a go:Proposition ;
-    rdfs:label "Whoever claims that Allah commands evil and immorality has lied about Allah"@en ;
-    go:HasSubject ex:Claimant ;
-    go:HasObject ex:LieAboutAllah .
+ex:proposition1 a go:proposition ;
+    rdfs:label "whoever claims that allah commands evil and immorality has lied about allah"@en ;
+    go:hassubject ex:claimant ;
+    go:hasobject ex:lieaboutallah .
 
-ex:Claimant a go:IndefinitePerson ;
-    rdfs:label "Whoever claims"@en .
+ex:claimant a go:indefiniteperson ;
+    rdfs:label "whoever claims"@en .
 
-ex:LieAboutAllah a go:Lie ;
-    go:About ex:Allah ;
-    rdfs:label "Lying about Allah"@en .
+ex:lieaboutallah a go:lie ;
+    go:about ex:allah ;
+    rdfs:label "lying about allah"@en .
 
-ex:CommandsEvilAndImmorality a go:ActionPredicate ;
-    rdfs:label "Allah commands evil and immorality"@en ;
-    go:Agent ex:Allah ;
-    go:Theme ex:EvilAndImmorality .
+ex:commandsevilandimmorality a go:actionpredicate ;
+    rdfs:label "allah commands evil and immorality"@en ;
+    go:agent ex:allah ;
+    go:theme ex:evilandimmorality .
 
-ex:EvilAndImmorality a go:Concept ;
+ex:evilandimmorality a go:concept ;
     rdfs:label "evil and immorality"@en .
 
-ex:Proposition1 go:HasClaim ex:CommandsEvilAndImmorality .
-go:Agent rdfs:label "عامل"@fa.
+ex:proposition1 go:hasclaim ex:commandsevilandimmorality .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/406-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/406-2> rdf:type owl:ontology .
 
-# Entities
-ex:MessengerOfAllah rdf:type ex:Prophet ;
+# entities
+ex:messengerofallah rdf:type ex:prophet ;
     ex:honorific "peace be upon him and his family" .
 
-ex:Allah rdf:type ex:Deity .
+ex:allah rdf:type ex:deity .
 
-ex:Good rdf:type go:Substance ;
+ex:good rdf:type go:substance ;
     rdfs:label "good" .
 
-ex:Evil rdf:type go:Substance ;
+ex:evil rdf:type go:substance ;
     rdfs:label "evil" .
 
-# Events
-ex:Speech1 rdf:type ex:SpeechEvent ;
-    go:HasAgent ex:MessengerOfAllah ;
-    go:HasTheme ex:Claim1 .
+# events
+ex:speech1 rdf:type ex:speechevent ;
+    go:hasagent ex:messengerofallah ;
+    go:hastheme ex:claim1 .
 
-ex:Claim1 rdf:type ex:Claim ;
-    ex:content "Good and evil do not happen without the will of Allah." ;
-    go:HasAgent ex:Claimant ;
-    go:HasTheme ex:GoodAndEvilWithoutWill .
+ex:claim1 rdf:type ex:claim ;
+    ex:content "good and evil do not happen without the will of allah." ;
+    go:hasagent ex:claimant ;
+    go:hastheme ex:goodandevilwithoutwill .
 
-ex:GoodAndEvilWithoutWill rdf:type go:Event ;
-    go:HasTheme ex:Good, ex:Evil ;
-    ex:causedBy ex:WillOfAllah .
+ex:goodandevilwithoutwill rdf:type go:event ;
+    go:hastheme ex:good, ex:evil ;
+    ex:causedby ex:willofallah .
 
-ex:WillOfAllah rdf:type go:Substance ;
-    rdfs:label "will of Allah" ;
-    ex:belongsTo ex:Allah .
+ex:willofallah rdf:type go:substance ;
+    rdfs:label "will of allah" ;
+    ex:belongsto ex:allah .
 
-ex:Removal rdf:type ex:RemovalFromAuthorityEvent ;
-    ex:cause ex:Claim1 ;
-    ex:effectedBy ex:Allah ;
-    ex:patient ex:Claimant .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:removal rdf:type ex:removalfromauthorityevent ;
+    ex:cause ex:claim1 ;
+    ex:effectedby ex:allah ;
+    ex:patient ex:claimant .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/406-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/406-3> rdf:type owl:ontology .
 
-ex:MessengerOfAllah a go:Agent, go:Person ;
-    rdfs:label "Messenger of Allah" .
+ex:messengerofallah a go:agent, go:person ;
+    rdfs:label "messenger of allah" .
 
-ex:Allah a go:Agent, go:Deity ;
-    rdfs:label "Allah" .
+ex:allah a go:agent, go:deity ;
+    rdfs:label "allah" .
 
-ex:Sins a go:Event ;
-    rdfs:label "Sins" .
+ex:sins a go:event ;
+    rdfs:label "sins" .
 
-ex:ClaimAboutSinsAndPower a go:Event ;
-    a go:Claim ;
-    go:HasAgent ex:UnknownClaimant ;
-    go:HasTheme ex:SinsWithoutAllahPower ;
-    rdfs:label "Claim that sins occur without the power of Allah" .
+ex:claimaboutsinsandpower a go:event ;
+    a go:claim ;
+    go:hasagent ex:unknownclaimant ;
+    go:hastheme ex:sinswithoutallahpower ;
+    rdfs:label "claim that sins occur without the power of allah" .
 
-ex:UnknownClaimant a go:Agent, go:Person ;
-    rdfs:label "Whoever" .
+ex:unknownclaimant a go:agent, go:person ;
+    rdfs:label "whoever" .
 
-ex:LyingAboutAllah a go:Event ;
-    a go:Lying ;
-    go:HasAgent ex:UnknownClaimant ;
-    go:HasTheme ex:Allah ;
-    rdfs:label "Lying about Allah" .
+ex:lyingaboutallah a go:event ;
+    a go:lying ;
+    go:hasagent ex:unknownclaimant ;
+    go:hastheme ex:allah ;
+    rdfs:label "lying about allah" .
 
-ex:SinsWithoutAllahPower a go:Proposition ;
-    rdfs:label "Sins without the power of Allah" .
+ex:sinswithoutallahpower a go:proposition ;
+    rdfs:label "sins without the power of allah" .
 
-ex:SayingEvent a go:SpeechAct ;
-    go:HasAgent ex:MessengerOfAllah ;
-    go:HasTheme [
-        a go:Proposition ;
-        go:Involves ex:ClaimAboutSinsAndPower, ex:LyingAboutAllah
+ex:sayingevent a go:speechact ;
+    go:hasagent ex:messengerofallah ;
+    go:hastheme [
+        a go:proposition ;
+        go:involves ex:claimaboutsinsandpower, ex:lyingaboutallah
     ] ;
-    rdfs:label "Messenger of Allah said about claim and lying" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+    rdfs:label "messenger of allah said about claim and lying" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/406-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/406-4> rdf:type owl:ontology .
 
-ex:ProphetMuhammad a go:Person ;
-    rdfs:label "Prophet Muhammad (peace be upon him and his family)" .
+ex:prophetmuhammad a go:person ;
+    rdfs:label "prophet muhammad (peace be upon him and his family)" .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Hell a go:Place ;
-    rdfs:label "Hell" .
+ex:hell a go:place ;
+    rdfs:label "hell" .
 
-ex:Liar a go:Person ;
-    go:hasRole "Whoever lies about God" .
+ex:liar a go:person ;
+    go:hasrole "whoever lies about god" .
 
-ex:ProphetSpeech a go:Event , ex:SpeechEvent ;
-    go:HasAgent ex:ProphetMuhammad ;
-    go:HasTheme ex:Statement .
+ex:prophetspeech a go:event , ex:speechevent ;
+    go:hasagent ex:prophetmuhammad ;
+    go:hastheme ex:statement .
 
-ex:Statement a go:Substance ;
-    go:hasContent "Whoever lies about God, God will admit him to Hell" .
+ex:statement a go:substance ;
+    go:hascontent "whoever lies about god, god will admit him to hell" .
 
-ex:LyingEvent a go:Event , ex:Lying ;
-    go:HasAgent ex:Liar ;
-    go:HasTheme ex:God .
+ex:lyingevent a go:event , ex:lying ;
+    go:hasagent ex:liar ;
+    go:hastheme ex:god .
 
-ex:AdmitToHellEvent a go:Event , ex:Admission ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Liar ;
-    go:HasLocation ex:Hell .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:admittohellevent a go:event , ex:admission ;
+    go:hasagent ex:god ;
+    go:hastheme ex:liar ;
+    go:haslocation ex:hell .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

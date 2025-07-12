@@ -1,391 +1,394 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/239#> .
+@prefix ex: <http://etratnet.ir/graph/example/239#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/239> rdf:type go:ontology ;
+        go:hascontent "2.  مردى از آن سوى رود بلخ (ماوراء النهر) نزد ابو الحسن الرضا عليه‌السلام آمد و عرض كرد: من پرسشى از شما مى‌كنم، اگر پاسخ آن رامطابق آنچه من مى‌دانم داديد به امامت شما ايمان مى‌آورم. ابو الحسن عليه‌السلام فرمود: «هر چه مى‌خواهى بپرس». مرد عرض كرد: به من خبر ده كه خداوندگارت كِى بوده؟ و چگونه بوده است؟ و بر چه چيز تكيه دارد؟ ابو الحسن عليه‌السلام فرمود: «خداى، تبارك و تعالى، جا را جا قرار داد بى آن كه خود جايى داشته باشد و چگونگى را چگونگى داد بى آن كه خود چگونگى داشته باشد، و تكيه‌اش هم بر قدرت خويش است». مرد به طرف حضرت رفت و سر ايشان را بوسيد و گفت: گواهى مى‌دهم كه معبودى جز خدا نيست، و محمد فرستاده خدا، و على وصىِّ پيامبر خدا صلى‌الله‌عليه‌و‌آله و جانشين و ادامه دهنده راه اوست، و شما پيشوايان راستين هستيد، و تو جانشين آنها مى‌باشى."@fa,
+        "2.  جَاءَ رَجُلٌ إِلى أَبِي الْحَسَنِ الرِّضَا عليه‌السلام مِنْ وَرَاءِ نَهَرِ بَلْخَ، فَقَالَ: إِنِّي أَسأَلُكَ عَنْ مَسْأَلَةٍ، فَإِنْ أَجَبْتَنِي فِيهَا بِمَا عِنْدِي، قُلْتُ بِإِمَامَتِكَ، فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «سَلْ عَمَّا شِئْتَ». فَقَالَ: أَخْبِرْنِي عَنْ رَبِّكَ مَتى كَانَ ؟ وَكَيْفَ كَانَ؟ وَعَلى أَيِّ شَيْءٍ كَانَ اعْتِمَادُهُ؟ فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «إِنَّ اللّه‌َ ـ تَبَارَكَ وَتَعَالى ـ أَيَّنَ الْأَيْنَ بِلاَ أَيْنٍ، وَكَيَّفَ الْكَيْفَ بِلاَ كَيْفٍ، وَكَانَ اعْتِمَادُهُ عَلى قُدْرَتِهِ». فَقَامَ إِلَيْهِ الرَّجُلُ، فَقَبَّلَ رَأْسَهُ، وَقَالَ: أَشْهَدُ أَنْ لاَ إِلهَ إِلاَّ اللّه‌ُ، وَأَنَّ مُحَمَّداً رَسُولُ اللّه‌ِ، وَأَنَّ عَلِيّاً وَصِيُّ رَسُولِ اللّه‌ِ صلى‌الله‌عليه‌و‌آله، وَالْقَيِّمُ بَعْدَهُ بِمَا قَامَ بِهِ رَسُولُ اللّه‌ِ صلى‌الله‌عليه‌و‌آله، وَأَنَّكُمُ الْأَئِمَّةُ الصَّادِقُونَ، وَأَنَّكَ الْخَلَفُ مِنْ بَعْدِهِمْ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-1> rdf:type owl:ontology .
 
-ex:Man1 a go:Person .
-ex:AbuAlHasanAlRidha a go:Person .
-ex:BalkhRiver a go:Place .
-ex:Question1 a go:InformationObject .
+ex:man1 a go:person .
+ex:abualhasanalridha a go:person .
+ex:balkhriver a go:place .
+ex:question1 a go:informationobject .
 
-ex:ArrivalEvent1 a go:MovementEvent ;
-    go:HasAgent ex:Man1 ;
-    go:HasDestination ex:AbuAlHasanAlRidha ;
-    go:HasOriginLocation ex:BalkhRiver .
+ex:arrivalevent1 a go:movementevent ;
+    go:hasagent ex:man1 ;
+    go:hasdestination ex:abualhasanalridha ;
+    go:hasoriginlocation ex:balkhriver .
 
-ex:AskEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:Man1 ;
-    go:HasRecipient ex:AbuAlHasanAlRidha ;
-    go:HasTheme ex:Question1 .
-go:Information rdfs:label "اطلاعات"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/239-2> rdf:type owl:Ontology .
-
-ex:event1 a go:SpeechEvent ;
-  go:HasAgent ex:Man ;
-  go:HasRecipient ex:AbuAlHasan ;
-  go:HasTheme ex:speechContent .
-
-ex:Man a go:Person .
-ex:AbuAlHasan a go:Person ;
-  go:hasHonorific "peace be upon him" .
-
-ex:speechContent a go:PropositionalContent ;
-  go:containsConditional ex:condition , ex:consequence .
-
-ex:condition a go:Proposition ;
-  go:describes "If Abu al-Hasan answers him with what he has" .
-
-ex:consequence a go:Proposition ;
-  go:describes "Then the man affirms the Imamate" .
-
-ex:Imamate a go:Concept .
-
-ex:affirmImamate a go:Action ;
-  go:agent ex:Man ;
-  go:theme ex:Imamate .
+ex:askevent1 a go:communicationevent ;
+    go:hasagent ex:man1 ;
+    go:hasrecipient ex:abualhasanalridha ;
+    go:hastheme ex:question1 .
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-2> rdf:type owl:ontology .
 
-ex:event1 a go:CommunicationEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasRecipient ex:Man ;
-    go:HasTheme ex:speechContent .
+ex:event1 a go:speechevent ;
+  go:hasagent ex:man ;
+  go:hasrecipient ex:abualhasan ;
+  go:hastheme ex:speechcontent .
 
-ex:Abu_al_Hasan a go:Substance ;
-    rdfs:label "Abu al-Hasan (peace be upon him)" .
+ex:man a go:person .
+ex:abualhasan a go:person ;
+  go:hashonorific "peace be upon him" .
 
-ex:Man a go:Substance ;
+ex:speechcontent a go:propositionalcontent ;
+  go:containsconditional ex:condition , ex:consequence .
+
+ex:condition a go:proposition ;
+  go:describes "if abu al-hasan answers him with what he has" .
+
+ex:consequence a go:proposition ;
+  go:describes "then the man affirms the imamate" .
+
+ex:imamate a go:concept .
+
+ex:affirmimamate a go:action ;
+  go:agent ex:man ;
+  go:theme ex:imamate .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/239-3> rdf:type owl:ontology .
+
+ex:event1 a go:communicationevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hasrecipient ex:man ;
+    go:hastheme ex:speechcontent .
+
+ex:abu_al_hasan a go:substance ;
+    rdfs:label "abu al-hasan (peace be upon him)" .
+
+ex:man a go:substance ;
     rdfs:label "man" .
 
-ex:speechContent a go:InformationContent ;
-    go:hasText "Ask about whatever you wish." .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:speechcontent a go:informationcontent ;
+    go:hastext "ask about whatever you wish." .
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-4> rdf:type owl:ontology .
 
-ex:askingEvent1 a go:Event ;
-    go:HasAgent ex:The_Man ;
-    go:HasRecipient ex:Abu_Al_Hasan_peace_be_upon_him ;
-    go:HasTheme ex:Question_About_Lord_Timing .
+ex:askingevent1 a go:event ;
+    go:hasagent ex:the_man ;
+    go:hasrecipient ex:abu_al_hasan_peace_be_upon_him ;
+    go:hastheme ex:question_about_lord_timing .
 
-ex:The_Man a go:Person .
+ex:the_man a go:person .
 
-ex:Abu_Al_Hasan_peace_be_upon_him a go:Person .
+ex:abu_al_hasan_peace_be_upon_him a go:person .
 
-ex:Lord_of_Abu_Al_Hasan a go:DivineEntity .
+ex:lord_of_abu_al_hasan a go:divineentity .
 
-ex:Question_About_Lord_Timing a go:Information ;
-    go:AboutEntity ex:Lord_of_Abu_Al_Hasan ;
-    go:Content "When was he?"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
+ex:question_about_lord_timing a go:information ;
+    go:aboutentity ex:lord_of_abu_al_hasan ;
+    go:content "when was he?"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-5> rdf:type owl:ontology .
 
-# Entities
-ex:Man a go:Person ;
+# entities
+ex:man a go:person ;
     rdfs:label "the man" .
 
-ex:Abi_al_Hasan a go:Person ;
-    rdfs:label "Abi al-Hasan (peace be upon him)" .
+ex:abi_al_hasan a go:person ;
+    rdfs:label "abi al-hasan (peace be upon him)" .
 
-ex:Lord a go:Substance ;
-    rdfs:label "his Lord" .
+ex:lord a go:substance ;
+    rdfs:label "his lord" .
 
-# Event
-ex:AskEvent a go:Communication, go:Event ;
-    go:HasAgent ex:Man ;
-    go:HasRecipient ex:Abi_al_Hasan ;
-    go:HasTheme ex:QuestionContent .
+# event
+ex:askevent a go:communication, go:event ;
+    go:hasagent ex:man ;
+    go:hasrecipient ex:abi_al_hasan ;
+    go:hastheme ex:questioncontent .
 
-# Question content as a node
-ex:QuestionContent a go:Statement ;
-    go:hasText "How was his Lord?" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# question content as a node
+ex:questioncontent a go:statement ;
+    go:hastext "how was his lord?" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-6> rdf:type owl:ontology .
 
-ex:askEvent1 a go:Event ;
-    go:HasAgent ex:man1 ;
-    go:HasTheme ex:AbuAlHasan1 ;
-    ex:asksAbout ex:RelianceOfLord1 .
+ex:askevent1 a go:event ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:abualhasan1 ;
+    ex:asksabout ex:relianceoflord1 .
 
-ex:man1 a go:Person ;
+ex:man1 a go:person ;
     rdfs:label "the man" .
 
-ex:AbuAlHasan1 a go:Person ;
-    rdfs:label "Abu al-Hasan (peace be upon him)" .
+ex:abualhasan1 a go:person ;
+    rdfs:label "abu al-hasan (peace be upon him)" .
 
-ex:RelianceOfLord1 a ex:AbstractConcept ;
-    ex:topic "the object of his Lord's reliance" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/239-7> rdf:type owl:Ontology .
-
-ex:utterance1 rdf:type ex:SpeechAct ;
-    go:HasAgent ex:Abu_al_Hasan_pbuh ;
-    go:HasTheme ex:statement1 .
-
-ex:statement1 rdf:type go:Concept ;
-    skos:prefLabel "Indicating al-ain without ain"@en ;
-    go:IndicatedBy ex:Allah_blessed_exalted .
-
-ex:Allah_blessed_exalted rdf:type go:Person ;
-    skos:prefLabel "Allah, the Blessed and Exalted"@en .
-
-ex:Abu_al_Hasan_pbuh rdf:type go:Person ;
-    skos:prefLabel "Abu al-Hasan (peace be upon him)"@en .
+ex:relianceoflord1 a ex:abstractconcept ;
+    ex:topic "the object of his lord's reliance" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-7> rdf:type owl:ontology .
 
-ex:event_saying_1 a go:SpeechAct ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:Quote_1 .
+ex:utterance1 rdf:type ex:speechact ;
+    go:hasagent ex:abu_al_hasan_pbuh ;
+    go:hastheme ex:statement1 .
 
-ex:Abu_al_Hasan a go:Person ;
-    go:name "Abu al-Hasan (peace be upon him)" .
+ex:statement1 rdf:type go:concept ;
+    skos:preflabel "indicating al-ain without ain"@en ;
+    go:indicatedby ex:allah_blessed_exalted .
 
-ex:God a go:Deity ;
-    go:name "God" .
+ex:allah_blessed_exalted rdf:type go:person ;
+    skos:preflabel "allah, the blessed and exalted"@en .
 
-ex:Quote_1 a go:Quotation ;
-    go:content "God creates the manner without manner" ;
-    go:HasEvent ex:event_creation_1 .
+ex:abu_al_hasan_pbuh rdf:type go:person ;
+    skos:preflabel "abu al-hasan (peace be upon him)"@en .
 
-ex:event_creation_1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Manner ;
-    go:HasAttribute ex:without_manner .
 
-ex:Manner a go:Concept ;
-    go:name "Manner" .
+@base <http://etratnet.ir/ontology/> .
 
-ex:without_manner a go:QualitativeModifier ;
+<http://etratnet.ir/ontology/239-8> rdf:type owl:ontology .
+
+ex:event_saying_1 a go:speechact ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:quote_1 .
+
+ex:abu_al_hasan a go:person ;
+    go:name "abu al-hasan (peace be upon him)" .
+
+ex:god a go:deity ;
+    go:name "god" .
+
+ex:quote_1 a go:quotation ;
+    go:content "god creates the manner without manner" ;
+    go:hasevent ex:event_creation_1 .
+
+ex:event_creation_1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:manner ;
+    go:hasattribute ex:without_manner .
+
+ex:manner a go:concept ;
+    go:name "manner" .
+
+ex:without_manner a go:qualitativemodifier ;
     go:description "without manner" .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-9> rdf:type owl:ontology .
 
-ex:Sentence9Event a go:Saying ;
-    go:HasAgent ex:Abu_al_Hasan_AlAskari_PA ;
-    go:HasTheme ex:RelianceOnPower .
+ex:sentence9event a go:saying ;
+    go:hasagent ex:abu_al_hasan_alaskari_pa ;
+    go:hastheme ex:relianceonpower .
 
-ex:Abu_al_Hasan_AlAskari_PA a go:Person ;
+ex:abu_al_hasan_alaskari_pa a go:person ;
     go:honorific "peace be upon him"^^xsd:string .
 
-ex:God a go:Deity .
+ex:god a go:deity .
 
-ex:RelianceOnPower a go:Assertion ;
-    go:subject ex:God ;
-    go:predicate ex:HasReliance ;
-    go:object ex:PowerOfGod .
+ex:relianceonpower a go:assertion ;
+    go:subject ex:god ;
+    go:predicate ex:hasreliance ;
+    go:object ex:powerofgod .
 
-ex:HasReliance a go:Relation .
+ex:hasreliance a go:relation .
 
-ex:PowerOfGod a go:Attribute ;
-    go:belongsTo ex:God .
+ex:powerofgod a go:attribute ;
+    go:belongsto ex:god .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-10> rdf:type owl:ontology .
 
-ex:Man a go:Person ;
+ex:man a go:person ;
     rdfs:label "the man" .
 
-ex:Abu_al-Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan (peace be upon him)" .
+ex:abu_al-hasan a go:person ;
+    rdfs:label "abu al-hasan (peace be upon him)" .
 
-ex:Man_Approaching_Abu_al-Hasan a go:ApproachEvent ;
-    go:HasAgent ex:Man ;
-    go:HasTheme ex:Abu_al-Hasan .
+ex:man_approaching_abu_al-hasan a go:approachevent ;
+    go:hasagent ex:man ;
+    go:hastheme ex:abu_al-hasan .
 
-ex:Man_Kissing_Head_of_Abu_al-Hasan a go:KissEvent ;
-    go:HasAgent ex:Man ;
-    go:HasTheme ex:Head_of_Abu_al-Hasan .
+ex:man_kissing_head_of_abu_al-hasan a go:kissevent ;
+    go:hasagent ex:man ;
+    go:hastheme ex:head_of_abu_al-hasan .
 
-ex:Head_of_Abu_al-Hasan a go:BodyPart ;
-    go:partOf ex:Abu_al-Hasan ;
-    rdfs:label "head of Abu al-Hasan" .
+ex:head_of_abu_al-hasan a go:bodypart ;
+    go:partof ex:abu_al-hasan ;
+    rdfs:label "head of abu al-hasan" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-11> rdf:type owl:ontology .
 
-ex:man a go:Substance ;
+ex:man a go:substance ;
     rdfs:label "the man"@en .
 
-ex:sayingEvent a go:Event ;
-    go:HasAgent ex:man ;
-    go:HasTheme "I bear witness that there is no god but Allah."@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:sayingevent a go:event ;
+    go:hasagent ex:man ;
+    go:hastheme "i bear witness that there is no god but allah."@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-12> rdf:type owl:ontology .
 
-ex:speechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:man1 ;
-    go:HasTheme ex:testimony1 .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:testimony1 .
 
-ex:man1 a go:Human ;
+ex:man1 a go:human ;
     rdfs:label "the man" .
 
-ex:testimony1 a ex:Testimony ;
+ex:testimony1 a ex:testimony ;
     ex:asserts ex:assertion1 .
 
-ex:assertion1 a ex:Assertion ;
-    ex:subject ex:Muhammad ;
-    ex:predicate ex:isMessengerOf ;
-    ex:object ex:God .
+ex:assertion1 a ex:assertion ;
+    ex:subject ex:muhammad ;
+    ex:predicate ex:ismessengerof ;
+    ex:object ex:god .
 
-ex:Muhammad a go:Human ;
-    rdfs:label "Muhammad" ;
-    ex:hasRole ex:MessengerOfGod .
+ex:muhammad a go:human ;
+    rdfs:label "muhammad" ;
+    ex:hasrole ex:messengerofgod .
 
-ex:MessengerOfGod a ex:Role .
+ex:messengerofgod a ex:role .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-13> rdf:type owl:ontology .
 
-ex:speechEvent13 a go:Communication ;
-  go:HasAgent ex:man1 ;
-  go:HasTheme ex:testimony13 .
+ex:speechevent13 a go:communication ;
+  go:hasagent ex:man1 ;
+  go:hastheme ex:testimony13 .
 
-ex:man1 a go:Person ;
+ex:man1 a go:person ;
   go:label "the man" .
 
-ex:testimony13 a go:Testimony ;
-  go:about ex:successionClaim1 .
+ex:testimony13 a go:testimony ;
+  go:about ex:successionclaim1 .
 
-ex:successionClaim1 a go:Succession ;
-  go:successor ex:Ali ;
-  go:predecessor ex:MessengerOfGod ;
-  go:context "Religious Testimony" .
+ex:successionclaim1 a go:succession ;
+  go:successor ex:ali ;
+  go:predecessor ex:messengerofgod ;
+  go:context "religious testimony" .
 
-ex:Ali a go:Person ;
-  go:label "Ali" .
+ex:ali a go:person ;
+  go:label "ali" .
 
-ex:MessengerOfGod a go:Person ;
-  go:label "Messenger of God" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/239-14> rdf:type owl:Ontology .
-
-ex:event1 a go:SpeechAct ;
-    go:HasAgent ex:Man ;
-    go:HasTheme ex:Testimony1 .
-
-ex:Man a go:Person .
-
-ex:Ali a go:Person .
-
-ex:MessengerOfGod a go:Person .
-
-ex:Testimony1 a go:Testimony ;
-    go:HasAgent ex:Man ;
-    go:HasContent ex:Content1 .
-
-ex:Content1 a go:Statement ;
-    go:AffirmsRelation ex:AliGuardianAfterMessenger .
-
-ex:AliGuardianAfterMessenger a go:Relation ;
-    go:Subject ex:Ali ;
-    go:Object ex:MessengerOfGod ;
-    go:RelationType ex:Guardianship ;
-    go:Qualifier ex:BasedOnMessengerActions .
-
-ex:BasedOnMessengerActions a go:ActionDescription ;
-    go:Describes ex:MessengerOfGodActions .
-
-ex:MessengerOfGodActions a go:Action .
+ex:messengerofgod a go:person ;
+  go:label "messenger of god" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-14> rdf:type owl:ontology .
 
-ex:man1 a go:Substance ;
+ex:event1 a go:speechact ;
+    go:hasagent ex:man ;
+    go:hastheme ex:testimony1 .
+
+ex:man a go:person .
+
+ex:ali a go:person .
+
+ex:messengerofgod a go:person .
+
+ex:testimony1 a go:testimony ;
+    go:hasagent ex:man ;
+    go:hascontent ex:content1 .
+
+ex:content1 a go:statement ;
+    go:affirmsrelation ex:aliguardianaftermessenger .
+
+ex:aliguardianaftermessenger a go:relation ;
+    go:subject ex:ali ;
+    go:object ex:messengerofgod ;
+    go:relationtype ex:guardianship ;
+    go:qualifier ex:basedonmessengeractions .
+
+ex:basedonmessengeractions a go:actiondescription ;
+    go:describes ex:messengerofgodactions .
+
+ex:messengerofgodactions a go:action .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/239-15> rdf:type owl:ontology .
+
+ex:man1 a go:substance ;
     rdfs:label "الرجل" .
 
-ex:imams1 a go:Substance ;
-    go:hasRole "الأئمة الصادقون" .
+ex:imams1 a go:substance ;
+    go:hasrole "الأئمة الصادقون" .
 
-ex:sayingEvent1 a go:Event, ex:eventInstance ;
-    go:HasAgent ex:man1 ;
-    go:HasTheme ex:imams1 ;
-    go:hasContent "أشهد أنكم الأئمة الصادقون" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:sayingevent1 a go:event, ex:eventinstance ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:imams1 ;
+    go:hascontent "أشهد أنكم الأئمة الصادقون" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/239-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/239-16> rdf:type owl:ontology .
 
-ex:speechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:theMan ;
-    go:HasTheme ex:testimony1 .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:theman ;
+    go:hastheme ex:testimony1 .
 
-ex:theMan a go:Person ;
-    go:hasRole "speaker" .
+ex:theman a go:person ;
+    go:hasrole "speaker" .
 
-ex:testimony1 a go:Testimony ;
+ex:testimony1 a go:testimony ;
     go:about ex:you ;
-    go:content "You are the successor after them" ;
-    go:relatesTo ex:them .
+    go:content "you are the successor after them" ;
+    go:relatesto ex:them .
 
-ex:you a go:Person .
-ex:them a go:Group .
+ex:you a go:person .
+ex:them a go:group .
 
-ex:you go:isSuccessorOf ex:them .
+ex:you go:issuccessorof ex:them .

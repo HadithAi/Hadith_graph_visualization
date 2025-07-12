@@ -1,235 +1,238 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/432#> .
+@prefix ex: <http://etratnet.ir/graph/example/432#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/432> rdf:type go:ontology ;
+        go:hascontent "3. از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «كارِ [تشيع و ولايت‌مدارى ] خود را براى خدا قرار دهيد و آن را براى مردم قرار ندهيد؛ زيرا، آنچه براى خدا باشد براى خداست [و پذيرفته درگاه او مى‌شود] و آنچه براى مردم باشد به درگاه خدا بالا نمى‌رود. براى دينتان با مردم بحث و ستيزه نكنيد؛ زيرا، ستيزه كردن دل را بيمار مى‌كند. خداوند متعال به پيامبرش فرمود: «تو نمى‌توانى هر كه را دوست داشته باشى هدايت كنى، بلكه خداوند هر كه را بخواهد هدايت مى‌كند»، و فرمود: «مگر تو مى‌توانى مردم را مجبور كنى كه ايمان بياورند؟»» مردم را واگذاريد؛ زيرا، مردم (مخالفان) از مردم فرا گرفتند، و شما از رسول خدا صلى‌الله‌عليه‌و‌آله فرا گرفتيد. من از پدرم عليه‌السلام شنيدم كه مى‌فرمود: هرگاه خداوند عز و جل براى بنده‌اى رقم زند كه به اين مذهب درآيد حركت او به سوى آن شتابنده‌تر از حركت پرنده به سوى آشيانه‌اش باشد»."@fa,
+        "3. سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام يَقُولُ: «اجْعَلُوا أَمْرَكُمْ لِلّهِ، وَلاَ تَجْعَلُوهُ لِلنَّاسِ؛ فَإِنَّهُ مَا كَانَ لِلّهِ، فَهُوَ لِلّهِ ؛ وَمَا كَانَ لِلنَّاسِ، فَلاَ يَصْعَدُ إِلَى اللّه‌ِ، وَلاَ تُخَاصِمُوا النَّاسَ لِدِينِكُمْ؛ فَإِنَّ الْمُخَاصَمَةَ مَمْرَضَةٌ لِلْقَلْبِ؛ إِنَّ اللّه‌َ تَعَالى قَالَ لِنَبِيِّهِ صلى‌الله‌عليه‌و‌آله: «إِنَّكَ لاَ تَهْدِى مَنْ أَحْبَبْتَ وَ لَكِنَّ اللّهَ يَهْدِى مَن يَشَآءُ» وَقَالَ: «أَفَأَنتَ تُكْرِهُ النَّاسَ حَتَّى يَكُونُوا مُؤْمِنِينَ» ذَرُوا النَّاسَ؛ فَإِنَّ النَّاسَ أَخَذُوا عَنِ النَّاسِ، وَإِنَّكُمْ أَخَذْتُمْ عَنْ رَسُولِ اللّه‌ِ صلى‌الله‌عليه‌و‌آله، إِنِّي سَمِعْتُ أَبِي عليه‌السلام يَقُولُ: إِنَّ اللّه‌َ ـ عَزَّ وَجَلَّ ـ إِذَا كَتَبَ عَلى عَبْدٍ أَنْ يَدْخُلَ فِي هذَا الْأَمْرِ، كَانَ أَسْرَعَ إِلَيْهِ مِنَ الطَّيْرِ إِلى وَكْرِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-1> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:group_you ;
-    go:HasTheme ex:matter_of_you ;
-    go:HasRecipient ex:God .
+ex:event1 a go:event ;
+    go:hasagent ex:group_you ;
+    go:hastheme ex:matter_of_you ;
+    go:hasrecipient ex:god .
 
-ex:group_you a go:Substance ;
-    rdfs:label "You (plural)" .
+ex:group_you a go:substance ;
+    rdfs:label "you (plural)" .
 
-ex:matter_of_you a go:Substance ;
-    go:partOf ex:group_you ;
-    rdfs:label "Your matter" .
+ex:matter_of_you a go:substance ;
+    go:partof ex:group_you ;
+    rdfs:label "your matter" .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/432-2> rdf:type owl:Ontology .
-
-ex:MakingKnownEvent a go:Event ;
-    go:HasAgent ex:AffairOwner ;
-    go:HasTheme ex:YourAffair ;
-    go:HasRecipient ex:People ;
-    go:hasNegation true .
-
-ex:YourAffair a go:Substance .
-ex:People a go:Organization .
-ex:AffairOwner a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-go:Organization rdfs:label "سازمان"@fa.
+ex:god a go:substance ;
+    rdfs:label "god" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-2> rdf:type owl:ontology .
 
-ex:StateForAllah a go:State ;
-    go:hasTheme ex:EntityForAllah ;
-    go:hasOwner ex:Allah .
+ex:makingknownevent a go:event ;
+    go:hasagent ex:affairowner ;
+    go:hastheme ex:youraffair ;
+    go:hasrecipient ex:people ;
+    go:hasnegation true .
 
-ex:Allah a go:Deity .
-
-ex:EntityForAllah a go:Substance ;
-    rdfs:label "That which is for Allah" .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/432-4> rdf:type owl:Ontology .
-
-# Entities
-ex:People a go:CollectiveAgent ;
-    rdfs:label "People"@en .
-
-ex:God a go:God ;
-    rdfs:label "God"@en .
-
-# Event
-ex:AscendToGodEvent a go:Event ;
-    rdfs:label "Ascend to God Event"@en ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:God .
-
-# Negation annotation (simple comment)
-# The event of 'People ascending to God' did not occur (negation).
-go:Event rdfs:label "رخداد"@fa.
+ex:youraffair a go:substance .
+ex:people a go:organization .
+ex:affairowner a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+go:organization rdfs:label "سازمان"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-3> rdf:type owl:ontology .
 
-ex:QuarrelEvent a go:Event ;
-    go:HasAgent ex:Agents_YouPlural ;
-    go:HasTheme go:People ;
-    go:HasCause ex:Religion_OfAgents_You ;
-    go:IsNegated true .
+ex:stateforallah a go:state ;
+    go:hastheme ex:entityforallah ;
+    go:hasowner ex:allah .
 
-ex:Agents_YouPlural a go:Group ;
-    go:represents ex:YouPlural .
+ex:allah a go:deity .
 
-ex:YouPlural a go:PersonGroup .
-
-go:People a go:Group .
-
-ex:Religion_OfAgents_You a go:Religion .
-go:Event rdfs:label "رخداد"@fa.
+ex:entityforallah a go:substance ;
+    rdfs:label "that which is for allah" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-4> rdf:type owl:ontology .
 
-ex:DisputeEvent a go:Event ;
-    go:HasEffect ex:HarmfulToHeart ;
-    go:HasTheme ex:Heart .
+# entities
+ex:people a go:collectiveagent ;
+    rdfs:label "people"@en .
 
-ex:Heart a go:Substance ;
-    rdfs:label "Heart"@en .
+ex:god a go:god ;
+    rdfs:label "god"@en .
 
-ex:HarmfulToHeart a go:state ;
-    rdfs:label "Harmful to the heart"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# event
+ex:ascendtogodevent a go:event ;
+    rdfs:label "ascend to god event"@en ;
+    go:hasagent ex:people ;
+    go:hastheme ex:god .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/432-7> rdf:type owl:Ontology .
-
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent go:God_Almighty ;
-    go:HasRecipient ex:Prophet ;
-    go:HasTheme ex:GuidanceStatement .
-
-ex:GuidanceStatement a go:Statement ;
-    go:content "Indeed, you do not guide whom you love, but God guides whom He wills." .
-
-go:God_Almighty a go:DivineEntity .
-ex:Prophet a go:Person .
+# negation annotation (simple comment)
+# the event of 'people ascending to god' did not occur (negation).
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-5> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Agent ;
-    rdfs:label "God Almighty" .
+ex:quarrelevent a go:event ;
+    go:hasagent ex:agents_youplural ;
+    go:hastheme go:people ;
+    go:hascause ex:religion_ofagents_you ;
+    go:isnegated true .
 
-ex:People a go:Agent ;
-    rdfs:label "People" .
+ex:agents_youplural a go:group ;
+    go:represents ex:youplural .
 
-ex:SayingEvent a go:CommunicationEvent ;
-    go:hasAgent ex:GodAlmighty ;
-    go:hasTheme ex:Utterance_Question .
+ex:youplural a go:persongroup .
 
-ex:Utterance_Question a go:Utterance ;
-    rdfs:label "Do you hate people until they become believers?" ;
-    go:hasAgent ex:GodAlmighty ;
-    go:hasTheme ex:People ;
-    go:hasCondition ex:BecomeBelievers .
+go:people a go:group .
 
-ex:BecomeBelievers a go:StateChange ;
-    go:hasAgent ex:People ;
+ex:religion_ofagents_you a go:religion .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/432-6> rdf:type owl:ontology .
+
+ex:disputeevent a go:event ;
+    go:haseffect ex:harmfultoheart ;
+    go:hastheme ex:heart .
+
+ex:heart a go:substance ;
+    rdfs:label "heart"@en .
+
+ex:harmfultoheart a go:state ;
+    rdfs:label "harmful to the heart"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/432-7> rdf:type owl:ontology .
+
+ex:speechevent1 a go:speechevent ;
+    go:hasagent go:god_almighty ;
+    go:hasrecipient ex:prophet ;
+    go:hastheme ex:guidancestatement .
+
+ex:guidancestatement a go:statement ;
+    go:content "indeed, you do not guide whom you love, but god guides whom he wills." .
+
+go:god_almighty a go:divineentity .
+ex:prophet a go:person .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/432-8> rdf:type owl:ontology .
+
+ex:godalmighty a go:agent ;
+    rdfs:label "god almighty" .
+
+ex:people a go:agent ;
+    rdfs:label "people" .
+
+ex:sayingevent a go:communicationevent ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:utterance_question .
+
+ex:utterance_question a go:utterance ;
+    rdfs:label "do you hate people until they become believers?" ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:people ;
+    go:hascondition ex:becomebelievers .
+
+ex:becomebelievers a go:statechange ;
+    go:hasagent ex:people ;
     rdfs:label "become believers" .
-go:Agent rdfs:label "عامل"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-9> rdf:type owl:ontology .
 
-ex:LeavePeopleEvent a go:ActionEvent ;
-    go:HasTheme ex:People .
+ex:leavepeopleevent a go:actionevent ;
+    go:hastheme ex:people .
 
-ex:PeopleLearningEvent a go:LearningEvent ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:People .
+ex:peoplelearningevent a go:learningevent ;
+    go:hasagent ex:people ;
+    go:hastheme ex:people .
 
-ex:LeavePeopleEvent go:causedBy ex:PeopleLearningEvent .
+ex:leavepeopleevent go:causedby ex:peoplelearningevent .
 
-ex:People a go:Group .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/432-10> rdf:type owl:Ontology .
-
-ex:eventInstance1 rdf:type go:Event ;
-    go:HasAgent ex:You ;
-    go:HasTheme ex:MessengerOfGod_PEACE .
-
-ex:You rdf:type go:Agent .
-
-ex:MessengerOfGod_PEACE rdf:type go:Person ;
-    go:hasHonorific "peace be upon him and his family" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:people a go:group .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/432-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/432-10> rdf:type owl:ontology .
 
-ex:DecreeEvent1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Servant ;
-    go:HasTheme ex:Affair .
+ex:eventinstance1 rdf:type go:event ;
+    go:hasagent ex:you ;
+    go:hastheme ex:messengerofgod_peace .
 
-ex:God_Almighty a go:Substance ;
-    go:hasAttribute go:DivineBeing .
+ex:you rdf:type go:agent .
 
-ex:Servant a go:Substance ;
-    go:hasRole go:Subject .
+ex:messengerofgod_peace rdf:type go:person ;
+    go:hashonorific "peace be upon him and his family" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
-ex:Affair a go:conceptual_entity .
 
-ex:SpeedComparisonEvent a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Servant ;
-    go:HasComparison ex:BirdToNestMovement .
+@base <http://etratnet.ir/ontology/> .
 
-ex:BirdToNestMovement a go:Event ;
-    go:HasAgent ex:Bird ;
-    go:HasTheme ex:Nest .
+<http://etratnet.ir/ontology/432-11> rdf:type owl:ontology .
 
-ex:Bird a go:Substance .
+ex:decreeevent1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:servant ;
+    go:hastheme ex:affair .
 
-ex:Nest a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god_almighty a go:substance ;
+    go:hasattribute go:divinebeing .
+
+ex:servant a go:substance ;
+    go:hasrole go:subject .
+
+ex:affair a go:conceptual_entity .
+
+ex:speedcomparisonevent a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:servant ;
+    go:hascomparison ex:birdtonestmovement .
+
+ex:birdtonestmovement a go:event ;
+    go:hasagent ex:bird ;
+    go:hastheme ex:nest .
+
+ex:bird a go:substance .
+
+ex:nest a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

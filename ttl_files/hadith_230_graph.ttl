@@ -1,275 +1,278 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/230#> .
+@prefix ex: <http://etratnet.ir/graph/example/230#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/230> rdf:type go:ontology ;
+        go:hascontent "2.  از امير المؤمنين عليه‌السلام سؤال شد: خداوندگارت را به چه شناختى؟ فرمود: «به شناختى كه او از خودش به من داد». عرض شد: چگونه خودش را به تو شناساند؟ فرمود: «هيچ صورتى مانند او نيست، و با حواس دريافت نمى‌شود، و با مردم سنجيده نمى‌گردد. در عين دور بودنش نزديك است، و در عين نزديك بودنش دور. بالاى هر چيزى است، و نتوان گفت: چيزى بالاى اوست. جلو هر چيزى است و نتوان گفت: او جلو دارد. درون چيزهاست اما نه چون داخل بودن چيزى در چيزى، و بيرون از چيزهاست اما نه چون بيرون بودن چيزى از چيزى. پاكا خدايى كه تنها او چنين است و جز او چنين نيست، و هر چيزى را سرآغاز است»."@fa,
+        "2.  سُئِلَ أَمِيرُ الْمُؤمِنِينَ عليه‌السلام: بِمَ عَرَفْتَ رَبَّكَ؟ قَالَ: «بِمَا عَرَّفَنِي نَفْسَهُ». قِيلَ: وَكَيْفَ عَرَّفَكَ نَفْسَهُ؟ قَالَ: «لاَ يُشْبِهُهُ صُورَةٌ، وَلاَ يُحَسُّ بِالْحَوَاسِّ، وَلاَ يُقَاسُ بِالنَّاسِ، قَرِيبٌ فِي بُعْدِهِ، بَعِيدٌ فِي قُرْبِهِ، فَوْقَ كُلِّ شَيْءٍ، وَلاَ يُقَالُ: شَيْءٌ فَوْقَهُ، أَمَامَ كُلِّ شَيْءٍ، وَلاَ يُقَالُ: لَهُ أَمَامٌ، دَاخِلٌ فِي الْأَشْيَاءِ لاَ كَشَيْءٍ دَاخِلٍ فِي شَيْءٍ، وَخَارِجٌ مِنَ الْأَشْيَاءِ لاَ كَشَيْءٍ خَارِجٍ مِنْ شَيْءٍ، سُبْحَانَ مَنْ هُوَ هكَذَا وَلاَ هكَذَا غَيْرُهُ، وَلِكُلِّ شَيْءٍ مُبْتَدَأٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-1> rdf:type owl:ontology .
 
-ex:event1 a ex:RecognitionEvent , go:Event ;
-    go:HasAgent ex:AmirAlMu_minin ;
-    go:HasTheme ex:HisLord ;
+ex:event1 a ex:recognitionevent , go:event ;
+    go:hasagent ex:amiralmu_minin ;
+    go:hastheme ex:hislord ;
     ex:manner [
-        a ex:KnowledgeBySoul ;
-        ex:knower ex:AmirAlMu_mininSoul
+        a ex:knowledgebysoul ;
+        ex:knower ex:amiralmu_mininsoul
     ] .
 
-ex:AmirAlMu_minin a go:Person ;
-    rdfs:label "Amir al-Mu'minin" ;
-    ex:honorific "Peace be upon him" ;
-    go:hasPart ex:AmirAlMu_mininSoul .
+ex:amiralmu_minin a go:person ;
+    rdfs:label "amir al-mu'minin" ;
+    ex:honorific "peace be upon him" ;
+    go:haspart ex:amiralmu_mininsoul .
 
-ex:AmirAlMu_mininSoul a go:Substance ;
-    rdfs:label "Soul of Amir al-Mu'minin" .
+ex:amiralmu_mininsoul a go:substance ;
+    rdfs:label "soul of amir al-mu'minin" .
 
-ex:HisLord a go:Deity ;
-    rdfs:label "His Lord" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/230-2> rdf:type owl:Ontology .
-
-# Entities
-ex:Commander_of_Faithful_Soul rdf:type ex:Person ;
-    rdfs:label "Soul of the Commander of the Faithful" .
-
-ex:Lord rdf:type go:Deity ;
-    rdfs:label "Lord" .
-
-# Event: defining
-ex:DefineEvent rdf:type go:CommunicationEvent ;
-    go:HasAgent ex:Commander_of_Faithful_Soul ;
-    go:HasTheme ex:Lord ;
-    go:HasProperty ex:No_Similar_Image_Attribute .
-
-# Property: no similar image
-ex:No_Similar_Image_Attribute rdf:type go:Property ;
-    rdfs:label "No similar image" ;
-    go:PropertyAbout ex:Lord .
+ex:hislord a go:deity ;
+    rdfs:label "his lord" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-2> rdf:type owl:ontology .
 
-# Entities
-ex:Soul_AmirMu_minin a go:Substance ;
-    go:denotedBy "Soul of Amir al-Mu'minin (Commander of the Faithful)" .
+# entities
+ex:commander_of_faithful_soul rdf:type ex:person ;
+    rdfs:label "soul of the commander of the faithful" .
 
-ex:Lord a go:Substance ;
-    go:denotedBy "Its Lord" .
+ex:lord rdf:type go:deity ;
+    rdfs:label "lord" .
 
-# Event
-ex:DefiningEvent1 a go:Event ;
-    go:HasAgent ex:Soul_AmirMu_minin ;
-    go:HasTheme ex:Lord ;
-    go:hasProperty [
-        a go:Property ;
-        go:propertyType "Not perceivable by the senses" ;
+# event: defining
+ex:defineevent rdf:type go:communicationevent ;
+    go:hasagent ex:commander_of_faithful_soul ;
+    go:hastheme ex:lord ;
+    go:hasproperty ex:no_similar_image_attribute .
+
+# property: no similar image
+ex:no_similar_image_attribute rdf:type go:property ;
+    rdfs:label "no similar image" ;
+    go:propertyabout ex:lord .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/230-3> rdf:type owl:ontology .
+
+# entities
+ex:soul_amirmu_minin a go:substance ;
+    go:denotedby "soul of amir al-mu'minin (commander of the faithful)" .
+
+ex:lord a go:substance ;
+    go:denotedby "its lord" .
+
+# event
+ex:definingevent1 a go:event ;
+    go:hasagent ex:soul_amirmu_minin ;
+    go:hastheme ex:lord ;
+    go:hasproperty [
+        a go:property ;
+        go:propertytype "not perceivable by the senses" ;
         rdfs:label "not perceivable by the senses"
     ] .
 
-# Literal annotation
-ex:DefiningEvent1 go:description "The soul defined its Lord as not perceivable by the senses." .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# literal annotation
+ex:definingevent1 go:description "the soul defined its lord as not perceivable by the senses." .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-4> rdf:type owl:ontology .
 
-ex:event1 a go:DefiningEvent ;
-    go:HasAgent ex:SelfCommanderFaithful ;
-    go:HasTheme ex:HisLord ;
-    go:HasContent "He (His Lord) is not comparable to people." .
+ex:event1 a go:definingevent ;
+    go:hasagent ex:selfcommanderfaithful ;
+    go:hastheme ex:hislord ;
+    go:hascontent "he (his lord) is not comparable to people." .
 
-ex:SelfCommanderFaithful a go:Individual ;
-    rdfs:label "Self of the Commander of the Faithful (peace be upon him)" .
+ex:selfcommanderfaithful a go:individual ;
+    rdfs:label "self of the commander of the faithful (peace be upon him)" .
 
-ex:HisLord a go:DivineEntity ;
-    rdfs:label "His Lord" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/230-5> rdf:type owl:Ontology .
-
-ex:HisLord a go:Substance ;
-    go:hasRole "lord" .
-
-ex:Person a go:Substance ;
-    go:hasRole "person" .
-
-ex:NearRelation a go:Relation ;
-    go:HasAgent ex:HisLord ;
-    go:HasTheme ex:Person ;
-    go:hasProperty ex:Proximity .
-
-ex:Proximity a go:AttributeValue ;
-    go:hasValue "near" .
-go:Substance rdfs:label "شی"@fa.
+ex:hislord a go:divineentity ;
+    rdfs:label "his lord" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-5> rdf:type owl:ontology .
 
-ex:Lord a go:Deity ;
-       go:hasProperty ex:Property_Distance , ex:Property_Nearness .
+ex:hislord a go:substance ;
+    go:hasrole "lord" .
 
-ex:Property_Distance a go:Property ;
-    go:propertyType "Distance" ;
-    go:propertyValue "Distant" .
+ex:person a go:substance ;
+    go:hasrole "person" .
 
-ex:Property_Nearness a go:Property ;
-    go:propertyType "Neartness" ;
-    go:propertyValue "Near" .
+ex:nearrelation a go:relation ;
+    go:hasagent ex:hislord ;
+    go:hastheme ex:person ;
+    go:hasproperty ex:proximity .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/230-7> rdf:type owl:Ontology .
-
-ex:HisLord a go:Substance ;
-    go:isAbove ex:Everything .
-
-ex:Everything a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:proximity a go:attributevalue ;
+    go:hasvalue "near" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-6> rdf:type owl:ontology .
 
-ex:speechEvent a go:SpeechEvent ;
-    go:HasAgent ex:anonymousSpeaker ;
-    go:HasTheme ex:nothing .
+ex:lord a go:deity ;
+       go:hasproperty ex:property_distance , ex:property_nearness .
 
-ex:nothing a go:Substance ;
-    go:HasRecipient ex:hisLord .
+ex:property_distance a go:property ;
+    go:propertytype "distance" ;
+    go:propertyvalue "distant" .
 
-ex:hisLord a go:Substance ;
-    go:hasTitle "Lord" .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/230-9> rdf:type owl:Ontology .
-
-ex:HisLord a go:Deity ;
-    go:HasPositionAbove go:AllThings .
-
-# go:AllThings represents the concept of all things (everything) in the ontology.
+ex:property_nearness a go:property ;
+    go:propertytype "neartness" ;
+    go:propertyvalue "near" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-7> rdf:type owl:ontology .
 
-ex:Person a go:Substance .
-ex:FrontLabel a go:name ; rdfs:label "front"@en .
+ex:hislord a go:substance ;
+    go:isabove ex:everything .
 
-# No naming event applies to ex:Person with label "front"
-# This is modeled as absence of event; alternatively, we state a negated axiom or use OWL constructs outside the triple here.
-
-# For representation, define a hypothetical naming event that would have ex:Person as theme and ex:FrontLabel as the name, but indicate it does not occur.
-
-ex:NonNamingEvent a go:Event ;
-    go:HasTheme ex:Person ;
-    go:HasName ex:FrontLabel ;
-    go:EventStatus "negated" .
-
-# Note: go:EventStatus with value "negated" is an indication of non-occurrence for clarity.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:everything a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-8> rdf:type owl:ontology .
 
-ex:Master a go:Substance .
-ex:Things a go:Substance .
-ex:Something a go:Substance .
-ex:Thing a go:Substance .
+ex:speechevent a go:speechevent ;
+    go:hasagent ex:anonymousspeaker ;
+    go:hastheme ex:nothing .
 
-ex:Inside_Master_Things a go:Event ;
-    go:HasAgent ex:Master ;
-    go:HasTheme ex:Things ;
-    a go:Inside .
+ex:nothing a go:substance ;
+    go:hasrecipient ex:hislord .
 
-ex:Inside_Something_Thing a go:Event ;
-    go:HasAgent ex:Something ;
-    go:HasTheme ex:Thing ;
-    a go:Inside .
-
-# Indicate the negation of this event
-ex:Inside_Something_Thing go:Negated "true" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:hislord a go:substance ;
+    go:hastitle "lord" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-9> rdf:type owl:ontology .
 
-ex:ownOutsideState a go:Event ;
-    go:HasAgent ex:Owner ;
-    go:HasTheme ex:Thing ;
-    go:hasRelation ex:OutsideRelation .
+ex:hislord a go:deity ;
+    go:haspositionabove go:allthings .
 
-ex:OutsideRelation a go:spatialRelation ;
-    go:relatesTo ex:Owner , ex:Thing .
-
-ex:Owner a go:agent ;
-    rdfs:label "Owner"@en .
-
-ex:Thing a go:Substance ;
-    rdfs:label "Thing"@en .
-
-ex:thingOutsideThing a go:Event ;
-    rdfs:comment "A thing outside of another thing, contrasted with the owner outside of things."@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# go:allthings represents the concept of all things (everything) in the ontology.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-10> rdf:type owl:ontology .
 
-ex:He a go:Deity .
+ex:person a go:substance .
+ex:frontlabel a go:name ; rdfs:label "front"@en .
 
-ex:GlorificationEvent a go:ExaltationEvent ;
-    go:HasAgent ex:He .
+# no naming event applies to ex:person with label "front"
+# this is modeled as absence of event; alternatively, we state a negated axiom or use owl constructs outside the triple here.
 
-ex:UniqueNature a go:Property ;
-    go:PropertyOf ex:He ;
-    go:hasValue "like this" ;
-    go:negatesValue "like that" , "others" .
+# for representation, define a hypothetical naming event that would have ex:person as theme and ex:frontlabel as the name, but indicate it does not occur.
+
+ex:nonnamingevent a go:event ;
+    go:hastheme ex:person ;
+    go:hasname ex:frontlabel ;
+    go:eventstatus "negated" .
+
+# note: go:eventstatus with value "negated" is an indication of non-occurrence for clarity.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/230-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/230-11> rdf:type owl:ontology .
 
-ex:Beginning a go:Event ;
-    go:HasTheme ex:Everything .
+ex:master a go:substance .
+ex:things a go:substance .
+ex:something a go:substance .
+ex:thing a go:substance .
 
-ex:Everything a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:inside_master_things a go:event ;
+    go:hasagent ex:master ;
+    go:hastheme ex:things ;
+    a go:inside .
+
+ex:inside_something_thing a go:event ;
+    go:hasagent ex:something ;
+    go:hastheme ex:thing ;
+    a go:inside .
+
+# indicate the negation of this event
+ex:inside_something_thing go:negated "true" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/230-12> rdf:type owl:ontology .
+
+ex:ownoutsidestate a go:event ;
+    go:hasagent ex:owner ;
+    go:hastheme ex:thing ;
+    go:hasrelation ex:outsiderelation .
+
+ex:outsiderelation a go:spatialrelation ;
+    go:relatesto ex:owner , ex:thing .
+
+ex:owner a go:agent ;
+    rdfs:label "owner"@en .
+
+ex:thing a go:substance ;
+    rdfs:label "thing"@en .
+
+ex:thingoutsidething a go:event ;
+    rdfs:comment "a thing outside of another thing, contrasted with the owner outside of things."@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/230-13> rdf:type owl:ontology .
+
+ex:he a go:deity .
+
+ex:glorificationevent a go:exaltationevent ;
+    go:hasagent ex:he .
+
+ex:uniquenature a go:property ;
+    go:propertyof ex:he ;
+    go:hasvalue "like this" ;
+    go:negatesvalue "like that" , "others" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/230-14> rdf:type owl:ontology .
+
+ex:beginning a go:event ;
+    go:hastheme ex:everything .
+
+ex:everything a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

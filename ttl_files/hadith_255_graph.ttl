@@ -1,38 +1,41 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/255#> .
+@prefix ex: <http://etratnet.ir/graph/example/255#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/255> rdf:type go:ontology ;
+        go:hascontent "6.  از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «هر كس در چگونه بودنِ خدا بينديشد، تباه شود»."@fa,
+        "6. سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام يَقُولُ: «مَنْ نَظَرَ فِي اللّه‌ِ: كَيْفَ هُوَ، هَلَكَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/255-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/255-1> rdf:type owl:ontology .
 
-ex:ContemplationEvent a go:Event ;
-    go:HasAgent ex:GenericHumanAgent ;
-    go:HasTheme ex:GodAlmighty ;
-    ex:hasManner ex:WonderingHowHeIs ;
-    go:hasConsequence ex:PerishingEvent .
+ex:contemplationevent a go:event ;
+    go:hasagent ex:generichumanagent ;
+    go:hastheme ex:godalmighty ;
+    ex:hasmanner ex:wonderinghowheis ;
+    go:hasconsequence ex:perishingevent .
 
-ex:GenericHumanAgent a go:Agent ;
-    a go:Human .
+ex:generichumanagent a go:agent ;
+    a go:human .
 
-ex:GodAlmighty a go:Substance ;
-    a go:Deity .
+ex:godalmighty a go:substance ;
+    a go:deity .
 
-ex:WonderingHowHeIs a ex:QuestioningManner .
+ex:wonderinghowheis a ex:questioningmanner .
 
-ex:PerishingEvent a go:Event ;
-    go:HasAgent ex:GenericHumanAgent ;
-    rdfs:label "Perishing" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:perishingevent a go:event ;
+    go:hasagent ex:generichumanagent ;
+    rdfs:label "perishing" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

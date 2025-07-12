@@ -1,64 +1,67 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/323#> .
+@prefix ex: <http://etratnet.ir/graph/example/323#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/323> rdf:type go:ontology ;
+        go:hascontent "12.  از ابو جعفر ثانى [امام جواد] عليه‌السلام پرسيدم: معناى «واحد» چيست؟ فرمود: «يعنى موجودى كه همه زبان‌ها بر يگانگى او هم‌سخن‌اند. خداوند متعال فرموده است: «اگر از آنان بپرسى كه چه كسى ايشان را آفريده است؟ هر آينه گويند: خدا»»."@fa,
+        "12.  سَأَلْتُ أَبَا جَعْفَرٍ الثَّانِيَ عليه‌السلام: مَا مَعْنَى «الْوَاحِدِ»؟ فَقَالَ: «إِجْمَاعُ الْأَلْسُنِ عَلَيْهِ بِالْوَحْدَانِيَّةِ، كَقَوْلِهِ تَعَالى: «وَ لَلءِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ اللَّهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/323-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/323-1> rdf:type owl:ontology .
 
-ex:AlWahid a go:Concept ;
-    go:hasAttribute ex:Oneness .
+ex:alwahid a go:concept ;
+    go:hasattribute ex:oneness .
 
-ex:Oneness a go:Attribute .
+ex:oneness a go:attribute .
 
-ex:consensusEvent a go:Event ;
-    go:HasAgent ex:Tongues ;
-    go:HasTheme ex:Oneness .
+ex:consensusevent a go:event ;
+    go:hasagent ex:tongues ;
+    go:hastheme ex:oneness .
 
-ex:Tongues a go:Agent .
+ex:tongues a go:agent .
 
-ex:AlWahid go:isDescribedBy ex:consensusEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:alwahid go:isdescribedby ex:consensusevent .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/323-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/323-2> rdf:type owl:ontology .
 
-ex:askingEvent a go:Event ;
-    go:HasAgent ex:questioner ;
-    go:HasTheme ex:them ;
-    go:HasContent "Who created them?" .
+ex:askingevent a go:event ;
+    go:hasagent ex:questioner ;
+    go:hastheme ex:them ;
+    go:hascontent "who created them?" .
 
-ex:sayingEvent a go:Event ;
-    go:HasAgent ex:them ;
-    go:HasTheme ex:sayingContent .
+ex:sayingevent a go:event ;
+    go:hasagent ex:them ;
+    go:hastheme ex:sayingcontent .
 
-ex:sayingContent a go:concept ;
-    go:refersTo ex:God .
+ex:sayingcontent a go:concept ;
+    go:refersto ex:god .
 
-ex:God a go:agent ;
-    rdfs:label "Allah" .
+ex:god a go:agent ;
+    rdfs:label "allah" .
 
-ex:them a go:agentGrp ;
-    rdfs:label "People" .
+ex:them a go:agentgrp ;
+    rdfs:label "people" .
 
-ex:creatorRelation a go:relationship ;
-    go:relates ex:God , ex:them ;
-    go:relationType go:creator .
+ex:creatorrelation a go:relationship ;
+    go:relates ex:god , ex:them ;
+    go:relationtype go:creator .
 
-ex:theOneConcept a go:concept ;
-    go:hasMeaning "الْوَاحِد" ;
-    go:explainedBy ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:theoneconcept a go:concept ;
+    go:hasmeaning "الْوَاحِد" ;
+    go:explainedby ex:god .
+go:event rdfs:label "رخداد"@fa.

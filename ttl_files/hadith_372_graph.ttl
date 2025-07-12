@@ -1,42 +1,45 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/372#> .
+@prefix ex: <http://etratnet.ir/graph/example/372#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/372> rdf:type go:ontology ;
+        go:hascontent "5. ـ درباره اين سخن خداى عز و جل پرسيدم كه: «اجلى را مقرر داشت و اجل حتمى نزد اوست».  انعام: آيه 2 . ـ: «اينها دو اجل است: اجل قطعى و اجل معلَّق»."@fa,
+        "5.  عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: سَأَلْتُهُ عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «قَضَى أَجَلاً وَأَجَلٌ مُّسَمًّى عِندَهُ» قَالَ: «هُمَا أَجَلاَنِ: أَجَلٌ مَحْتُومٌ، وَأَجَلٌ مَوْقُوفٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/372-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/372-1> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:FixedSpecifiedTerm .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:fixedspecifiedterm .
 
-ex:GodAlmighty a go:Deity ;
-    go:label "God Almighty" .
+ex:godalmighty a go:deity ;
+    go:label "god almighty" .
 
-ex:FixedSpecifiedTerm a go:TemporalEntity ;
-    go:label "Fixed and Specified Term" .
-go:Event rdfs:label "رخداد"@fa.
+ex:fixedspecifiedterm a go:temporalentity ;
+    go:label "fixed and specified term" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/372-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/372-2> rdf:type owl:ontology .
 
-ex:Fate a go:Substance .
-ex:PredeterminedFate a go:Substance ;
-    rdfs:subClassOf ex:Fate ;
-    rdfs:label "Predetermined Fate"@en .
-ex:ConditionalFate a go:Substance ;
-    rdfs:subClassOf ex:Fate ;
-    rdfs:label "Conditional Fate"@en .
-go:Substance rdfs:label "شی"@fa.
+ex:fate a go:substance .
+ex:predeterminedfate a go:substance ;
+    rdfs:subclassof ex:fate ;
+    rdfs:label "predetermined fate"@en .
+ex:conditionalfate a go:substance ;
+    rdfs:subclassof ex:fate ;
+    rdfs:label "conditional fate"@en .
+go:substance rdfs:label "شی"@fa.

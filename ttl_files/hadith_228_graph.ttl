@@ -1,62 +1,65 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/228#> .
+@prefix ex: <http://etratnet.ir/graph/example/228#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/228> rdf:type go:ontology ;
+        go:hascontent "7.  از امام باقر عليه‌السلام سؤال شد: آيا اطلاق «چيز» بر خدا رواست؟ فرمود: «آرى، اين كار او را از دو وضعيتِ تعطيل (توقف در شناخت خدا) و تشبيه (مانند كردن او به مخلوق) بيرون مى‌بَرَد»."@fa,
+        "7. سُئِلَ أَبُو جَعْفَرٍ عليه‌السلام: أَيَجُوزُ أَنْ يُقَالَ: إِنَّ اللّه‌َ شَيْءٌ؟ قَالَ: «نَعَمْ، يُخْرِجُهُ مِنَ الْحَدَّيْنِ: حَدِّ التَّعْطِيلِ، وَحَدِّ التَّشْبِيهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/228-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/228-1> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:hasAgent ex:Speaker .
+ex:event1 a go:event ;
+    go:hasagent ex:speaker .
 
-ex:Speaker a go:Agent .
+ex:speaker a go:agent .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:Thing a go:Substance ;
+ex:thing a go:substance ;
     rdfs:label "thing" .
 
-ex:Proposition1 a go:Proposition ;
-    go:subject ex:God ;
-    go:predicate ex:IsA ;
-    go:object ex:Thing .
+ex:proposition1 a go:proposition ;
+    go:subject ex:god ;
+    go:predicate ex:isa ;
+    go:object ex:thing .
 
-ex:event1 go:hasTheme ex:Proposition1 ;
-    go:modalProperty ex:Permissible .
+ex:event1 go:hastheme ex:proposition1 ;
+    go:modalproperty ex:permissible .
 
-ex:IsA a go:Relation .
+ex:isa a go:relation .
 
-ex:Permissible a go:ModalProperty .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:permissible a go:modalproperty .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/228-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/228-2> rdf:type owl:ontology .
 
-ex:event_elimination a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ExtremeNegation, ex:ExtremeLikening .
+ex:event_elimination a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:extremenegation, ex:extremelikening .
 
-ex:God a go:Agent .
+ex:god a go:agent .
 
-ex:ExtremeNegation a go:Concept ;
+ex:extremenegation a go:concept ;
     rdfs:label "the extreme of negation"@en .
 
-ex:ExtremeLikening a go:Concept ;
+ex:extremelikening a go:concept ;
     rdfs:label "the extreme of likening"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.

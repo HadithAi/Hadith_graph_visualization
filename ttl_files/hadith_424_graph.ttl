@@ -1,226 +1,229 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/424#> .
+@prefix ex: <http://etratnet.ir/graph/example/424#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/424> rdf:type go:ontology ;
+        go:hascontent "6. رسانده از امام صادق عليه‌السلام: «خداوند به هيچ بنده‌اى نعمتى نداد مگر اين كه در آن نعمت حجتى از جانب خود بر او قرار داد؛ مثلاً كسى كه خدا بر او منّت نهاده و توانايش ساخته است، حجتش بر او اين است كه وظايفى را كه بر عهده او نهاده است انجام دهد، و [بار] كسى را كه پايين‌تر يعنى ناتوان‌تر از اوست به دوش كشد [يا: ناتوان‌تر از خود را تحمل كند]. نيز كسى كه خدا بر او منّت نهاده و توانگرش ساخته است، حجتش بر او همان دارايى اوست [كه حقوق مالى واجبش را بپردازد]، سپس با كمك‌هاى داوطلبانه‌اش به تهيدستان رسيدگى كند، و يا كسى كه خداوند بر او منّت نهاده و وى را در خانواده‌اش بزرگ و زيبارو ساخته است حجتش بر او اين است كه خداى تعالى را بر اين نعمت‌ها سپاس گويد و بر ديگران گردن‌فرازى ننمايد و به خاطر بزرگى و زيبايى‌اش حقوق ناتوانان را پايمال نكند»."@fa,
+        "6. عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «إِنَّ اللّه‌َ لَمْ يُنْعِمْ عَلى عَبْدٍ نِعْمَةً إِلاَّ وَقَدْ أَلْزَمَهُ فِيهَا الْحُجَّةَ مِنَ اللّه‌ِ، فَمَنْ مَنَّ اللّه‌ُ عَلَيْهِ فَجَعَلَهُ قَوِيّاً، فَحُجَّتُهُ عَلَيْهِ الْقِيَامُ بِمَا كَلَّفَهُ، وَاحْتِمَالُ مَنْ هُوَ دُونَهُ مِمَّنْ هُوَ أَضْعَفُ مِنْهُ؛ وَمَنْ مَنَّ اللّه‌ُ عَلَيْهِ فَجَعَلَهُ مُوَسَّعاً عَلَيْهِ، فَحُجَّتُهُ عَلَيْهِ مَالُهُ، ثُمَّ تَعَاهُدُهُ الْفُقَرَاءَ بَعْدُ بِنَوَافِلِهِ؛ وَمَنْ مَنَّ اللّه‌ُ عَلَيْهِ فَجَعَلَهُ شَرِيفاً فِي بَيْتِهِ، جَمِيلاً فِي صُورَتِهِ، فَحُجَّتُهُ عَلَيْهِ أَنْ يَحْمَدَ اللّه‌َ تَعَالى عَلى ذلِكَ، وَأَنْ لاَ يَتَطَاوَلَ عَلى غَيْرِهِ؛ فَيَمْنَعَ حُقُوقَ الضُّعَفَاءِ لِحَالِ شَرَفِهِ وَجَمَالِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/424-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/424-1> rdf:type owl:ontology .
 
-ex:eventBlessing a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Blessing ;
-  go:HasRecipient ex:Servant .
+ex:eventblessing a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:blessing ;
+  go:hasrecipient ex:servant .
 
-ex:eventObligation a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Accountability ;
-  go:HasRecipient ex:Servant ;
-  go:causes ex:eventBlessing .
+ex:eventobligation a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:accountability ;
+  go:hasrecipient ex:servant ;
+  go:causes ex:eventblessing .
 
-ex:God a go:Substance ;
-  go:name "God" .
+ex:god a go:substance ;
+  go:name "god" .
 
-ex:Servant a go:Individual ;
-  go:name "Servant" .
+ex:servant a go:individual ;
+  go:name "servant" .
 
-ex:Blessing a go:Substance ;
-  go:name "Blessing" .
+ex:blessing a go:substance ;
+  go:name "blessing" .
 
-ex:Accountability a go:Substance ;
-  go:name "Accountability" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/424-2> rdf:type owl:Ontology .
-
-ex:GrantStrengthEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Person ;
-    go:HasTheme ex:Strength .
-
-ex:God a go:Agent .
-ex:Person a go:Agent .
-ex:Strength a go:Substance .
-
-ex:ObligationUponPerson a go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:AssignedDuty .
-
-ex:AssignedDuty a go:Task .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:accountability a go:substance ;
+  go:name "accountability" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/424-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/424-2> rdf:type owl:ontology .
 
-ex:God a go:Deity .
+ex:grantstrengthevent a go:event ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:person ;
+    go:hastheme ex:strength .
 
-ex:Person_Strong a go:Person .
-ex:Persons_Weaker a go:Group .
+ex:god a go:agent .
+ex:person a go:agent .
+ex:strength a go:substance .
 
-ex:GrantingStrength a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Person_Strong ;
-    rdf:type go:GrantingPowerEvent .
+ex:obligationuponperson a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:assignedduty .
 
-ex:BearingWeakPersons a go:Event ;
-    rdf:type go:EnduranceEvent ;
-    go:HasAgent ex:Person_Strong ;
-    go:HasTheme ex:Persons_Weaker ;
-    go:NormativeRequirement "must" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/424-4> rdf:type owl:Ontology .
-
-ex:God a go:Agent .
-ex:Person1 a go:Person .
-ex:Sustenance a go:Resource .
-ex:Wealth a go:Resource .
-
-ex:GrantingSustenanceEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Person1 ;
-    go:HasTheme ex:Sustenance .
-
-ex:HajjObligationEvent1 a go:Event ;
-    go:About ex:Person1 ;
-    ex:hasProof ex:Wealth .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:assignedduty a go:task .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/424-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/424-3> rdf:type owl:ontology .
 
-ex:GrantExpansionEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:RecipientPerson ;
-    go:hasObject ex:Sustenance .
+ex:god a go:deity .
 
-ex:MaintenanceAfterAlmsDecline a go:Event ;
-    go:HasAgent ex:RecipientPerson ;
-    go:HasTheme ex:PoorPeople ;
-    go:hasCondition ex:VoluntaryAlmsDecrease .
+ex:person_strong a go:person .
+ex:persons_weaker a go:group .
 
-ex:VoluntaryAlmsDecrease a go:Event ;
-    go:HasTheme ex:VoluntaryAlms .
+ex:grantingstrength a go:event ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:person_strong ;
+    rdf:type go:grantingpowerevent .
 
-ex:God a go:Deity .
-ex:RecipientPerson a go:Person .
-ex:Sustenance a go:Substance .
-ex:PoorPeople a go:Group ;
-    go:isClassifiedUnder ex:Poor .
-ex:VoluntaryAlms a go:Offering ;
-    go:hasType ex:Voluntary .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:bearingweakpersons a go:event ;
+    rdf:type go:enduranceevent ;
+    go:hasagent ex:person_strong ;
+    go:hastheme ex:persons_weaker ;
+    go:normativerequirement "must" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/424-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/424-4> rdf:type owl:ontology .
 
-# Entities
-ex:God a go:Substance ;
-    go:hasRole "Agent" .
+ex:god a go:agent .
+ex:person1 a go:person .
+ex:sustenance a go:resource .
+ex:wealth a go:resource .
 
-ex:Person a go:Substance .
+ex:grantingsustenanceevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:person1 ;
+    go:hastheme ex:sustenance .
 
-ex:House a go:physicalEntity .
-ex:Appearance a go:physicalEntity .
-
-# Events
-ex:GrantHonorBeauty a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Person ;
-    ex:hasHonorLocation ex:House ;
-    ex:hasBeautyAspect ex:Appearance .
-
-ex:JudgmentPraise a go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:God ;
-    ex:judgment "Person should praise God" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:hajjobligationevent1 a go:event ;
+    go:about ex:person1 ;
+    ex:hasproof ex:wealth .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/424-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/424-5> rdf:type owl:ontology .
 
-ex:GrantEvent a go:Event ;
-  go:HasAgent go:God ;
-  go:HasRecipient ex:Person ;
-  go:HasTheme ex:Honor , ex:Beauty .
+ex:grantexpansionevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:recipientperson ;
+    go:hasobject ex:sustenance .
 
-ex:Honor a go:Quality ;
-  go:QualityIn ex:ex:Home .
+ex:maintenanceafteralmsdecline a go:event ;
+    go:hasagent ex:recipientperson ;
+    go:hastheme ex:poorpeople ;
+    go:hascondition ex:voluntaryalmsdecrease .
 
-ex:Beauty a go:Quality ;
-  go:QualityIn ex:ex:Appearance .
+ex:voluntaryalmsdecrease a go:event ;
+    go:hastheme ex:voluntaryalms .
 
-ex:Person a go:Human .
-
-go:God a go:Deity .
-
-ex:ProhibitionEvent a go:NormativeEvent ;
-  go:HasAgent ex:Person ;
-  go:DeniesAction ex:ArroganceTowardsOthers .
-
-ex:ArroganceTowardsOthers a go:Action ;
-  go:ActionTarget ex:Others .
-
-ex:Others a go:HumanGroup .
-
-ex:Home a go:Place .
-ex:Appearance a go:PhysicalAttribute .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:god a go:deity .
+ex:recipientperson a go:person .
+ex:sustenance a go:substance .
+ex:poorpeople a go:group ;
+    go:isclassifiedunder ex:poor .
+ex:voluntaryalms a go:offering ;
+    go:hastype ex:voluntary .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/424-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/424-6> rdf:type owl:ontology .
 
-ex:PersonWithHonorAndBeauty a go:Agent ;
-    go:hasQuality ex:Honor, ex:Beauty .
+# entities
+ex:god a go:substance ;
+    go:hasrole "agent" .
 
-ex:WeakEntities a go:Substance ;
-    go:hasRight ex:RightsOfWeak .
+ex:person a go:substance .
 
-ex:PreventRightsEvent a go:Event ;
-    go:HasAgent ex:PersonWithHonorAndBeauty ;
-    go:HasTheme ex:RightsOfWeak ;
+ex:house a go:physicalentity .
+ex:appearance a go:physicalentity .
+
+# events
+ex:granthonorbeauty a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:person ;
+    ex:hashonorlocation ex:house ;
+    ex:hasbeautyaspect ex:appearance .
+
+ex:judgmentpraise a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:god ;
+    ex:judgment "person should praise god" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/424-7> rdf:type owl:ontology .
+
+ex:grantevent a go:event ;
+  go:hasagent go:god ;
+  go:hasrecipient ex:person ;
+  go:hastheme ex:honor , ex:beauty .
+
+ex:honor a go:quality ;
+  go:qualityin ex:ex:home .
+
+ex:beauty a go:quality ;
+  go:qualityin ex:ex:appearance .
+
+ex:person a go:human .
+
+go:god a go:deity .
+
+ex:prohibitionevent a go:normativeevent ;
+  go:hasagent ex:person ;
+  go:deniesaction ex:arrogancetowardsothers .
+
+ex:arrogancetowardsothers a go:action ;
+  go:actiontarget ex:others .
+
+ex:others a go:humangroup .
+
+ex:home a go:place .
+ex:appearance a go:physicalattribute .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/424-8> rdf:type owl:ontology .
+
+ex:personwithhonorandbeauty a go:agent ;
+    go:hasquality ex:honor, ex:beauty .
+
+ex:weakentities a go:substance ;
+    go:hasright ex:rightsofweak .
+
+ex:preventrightsevent a go:event ;
+    go:hasagent ex:personwithhonorandbeauty ;
+    go:hastheme ex:rightsofweak ;
     ex:negation true ;
-    ex:temporalScope ex:StateOfHonorAndBeauty .
+    ex:temporalscope ex:stateofhonorandbeauty .
 
-ex:StateOfHonorAndBeauty a go:State ;
-    go:HasTheme ex:PersonWithHonorAndBeauty .
+ex:stateofhonorandbeauty a go:state ;
+    go:hastheme ex:personwithhonorandbeauty .
 
-ex:Honor a go:Quality .
-ex:Beauty a go:Quality .
-ex:RightsOfWeak a go:Right .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:honor a go:quality .
+ex:beauty a go:quality .
+ex:rightsofweak a go:right .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.

@@ -1,190 +1,193 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/235#> .
+@prefix ex: <http://etratnet.ir/graph/example/235#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/235> rdf:type go:ontology ;
+        go:hascontent "1.  «كسى كه خدا را با توهم پرستد كافر است؛ كسى كه نام را پرستد بى معنا [و ذات و مسمّا]كافر است؛ كسى كه نام و معنا [هر دو] را پرستد مشرك است؛ كسى كه معنا را پرستد با اطلاق نام‌ها بر او و با صفاتى كه او خودش را با آنها وصف كرده است، و در دل بدان باور داشته باشد و در نهان و آشكار زبانش بدان گويا گردد، اينان ياران [و پيروان]راستين امير المؤمنين عليه‌السلام هستند». در حديثى ديگر آمده است: «اينان مؤمنان راستين هستند»."@fa,
+        "1.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «مَنْ عَبَدَ اللّه‌َ بِالتَّوَهُّمِ، فَقَدْ كَفَرَ؛ وَمَنْ عَبَدَ الاِسْمَ دُونَ الْمَعْنى، فَقَدْ كَفَرَ؛ وَمَنْ عَبَدَ الاِسْمَ وَالْمَعْنى، فَقَدْ أَشْرَكَ؛ وَمَنْ عَبَدَ الْمَعْنى بِإِيقَاعِ الْأَسْمَاءِ عَلَيْهِ بِصِفَاتِهِ الَّتِي وَصَفَ بِهَا نَفْسَهُ، فَعَقَدَ عَلَيْهِ قَلْبَهُ، وَنَطَقَ بِهِ لِسَانُهُ فِي سَرَائِرِهِ وَعَلاَنِيَتِهِ، فَأُولئِكَ أَصْحَابُ أَمِيرِ الْمُؤمِنِينَ عليه‌السلام حَقّاً». وَفِي حَدِيثٍ آخَرَ: «أُولئِكَ هُمُ الْمُؤمِنُونَ حَقّاً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/235-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/235-1> rdf:type owl:ontology .
 
-ex:Abdullah rdf:type go:Person .
-ex:Delusion rdf:type go:State .
-ex:DisbeliefEvent rdf:type go:EventInstance ;
-    go:instanceOf ex:Kufr ;
-    go:HasAgent ex:Abdullah ;
-    go:HasCause ex:Delusion .
+ex:abdullah rdf:type go:person .
+ex:delusion rdf:type go:state .
+ex:disbeliefevent rdf:type go:eventinstance ;
+    go:instanceof ex:kufr ;
+    go:hasagent ex:abdullah ;
+    go:hascause ex:delusion .
 
-ex:Kufr rdf:type go:EventClass .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/235-2> rdf:type owl:Ontology .
-
-ex:Person1 a go:Agent .
-ex:AbdName a go:Substance ;
-    go:hasLabel "'Abd" .
-
-ex:DenialEvent1 a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:MeaningOfAbd .
-
-ex:DisbeliefEvent1 a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:causedBy ex:DenialEvent1 .
-
-ex:MeaningOfAbd a go:concept .
-
-# Statement: If a person denies the meaning of 'Abd but keeps its name, then that person is involved in DisbeliefEvent.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:kufr rdf:type go:eventclass .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/235-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/235-2> rdf:type owl:ontology .
 
-ex:Abd a go:Concept ;
-    rdfs:label "Abd" ;
-    go:hasMeaning "servant or slave" ;
-    go:associatedWith ex:Shirk .
+ex:person1 a go:agent .
+ex:abdname a go:substance ;
+    go:haslabel "'abd" .
 
-ex:Shirk a go:Event ;
-    rdfs:label "Polytheism (shirk)" .
-go:Event rdfs:label "رخداد"@fa.
+ex:denialevent1 a go:event ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:meaningofabd .
 
+ex:disbeliefevent1 a go:event ;
+    go:hasagent ex:person1 ;
+    go:causedby ex:denialevent1 .
 
-@base <http://etratnet.ir/ontology/> .
+ex:meaningofabd a go:concept .
 
-<http://etratnet.ir/ontology/235-4> rdf:type owl:Ontology .
-
-# Entities
-ex:Abd_al_Ma'na a go:Person ;
-    rdfs:label "Abd al-Ma'na" .
-
-ex:Others a go:Agent .
-
-ex:Heart_Abd_al_Ma'na a go:Organ ;
-    go:isPartOf ex:Abd_al_Ma'na .
-
-ex:Names a go:Substance ;
-    go:hasAttributes "attributes described by Abd al-Ma'na about himself" .
-
-# Event: Imposing names
-ex:ImposingNamesEvent a go:Event ;
-    go:HasAgent ex:Others ;
-    go:HasTheme ex:Names ;
-    go:HasRecipient ex:Abd_al_Ma'na .
-
-# State: Heart bound
-ex:HeartBoundState a go:Event ;
-    go:HasTheme ex:Heart_Abd_al_Ma'na ;
-    go:Cause ex:ImposingNamesEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# statement: if a person denies the meaning of 'abd but keeps its name, then that person is involved in disbeliefevent.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/235-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/235-3> rdf:type owl:ontology .
 
-ex:AbdulMaana a go:Person .
-ex:Names a go:Substance .
-ex:Attributes a go:Attribute .
+ex:abd a go:concept ;
+    rdfs:label "abd" ;
+    go:hasmeaning "servant or slave" ;
+    go:associatedwith ex:shirk .
 
-# Event 1: Attribution of names to AbdulMaana by an implicit agent
-ex:AttributionEvent1 a ex:AttributionEvent ;
-    go:HasAgent ex:GeneralAgent ;
-    go:HasTheme ex:Names ;
-    ex:HasRecipient ex:AbdulMaana ;
-    ex:HasCause ex:Attributes .
-
-# Event 2: Pronouncement of these names by AbdulMaana's tongue in secrets and openness
-ex:PronouncementEvent1 a ex:PronouncementEvent ;
-    go:HasAgent ex:AbdulMaanaTongue ;
-    go:HasTheme ex:Names ;
-    ex:InSecret "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
-    ex:InOpen "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-
-# Linking the tongue to AbdulMaana
-ex:AbdulMaanaTongue a go:BodyPart ;
-    ex:PartOf ex:AbdulMaana .
-go:Substance rdfs:label "شی"@fa.
+ex:shirk a go:event ;
+    rdfs:label "polytheism (shirk)" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/235-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/235-4> rdf:type owl:ontology .
 
-ex:CommanderOfFaithful a go:Person ;
-    rdfs:label "Commander of the Faithful" .
+# entities
+ex:abd_al_ma'na a go:person ;
+    rdfs:label "abd al-ma'na" .
 
-ex:CompanionsOfCommanderOfFaithful a go:Group ;
-    rdfs:label "Companions of the Commander of the Faithful" ;
-    go:HasRelationTo ex:CommanderOfFaithful .
+ex:others a go:agent .
 
-ex:Meaning a go:Substance ;
-    rdfs:label "Meaning" .
+ex:heart_abd_al_ma'na a go:organ ;
+    go:ispartof ex:abd_al_ma'na .
 
-ex:Names a go:Concept ;
-    rdfs:label "Names" .
+ex:names a go:substance ;
+    go:hasattributes "attributes described by abd al-ma'na about himself" .
 
-ex:Attributes a go:Concept ;
-    rdfs:label "Attributes" .
+# event: imposing names
+ex:imposingnamesevent a go:event ;
+    go:hasagent ex:others ;
+    go:hastheme ex:names ;
+    go:hasrecipient ex:abd_al_ma'na .
 
-ex:WorshipEvent a go:Event ;
-    rdfs:label "Worshiping the Meaning" ;
-    go:HasAgent ex:CompanionsOfCommanderOfFaithful ;
-    go:HasTheme ex:Meaning ;
-    go:HasInstrument ex:AttributingNamesPerAttributes .
-
-ex:AttributingNamesPerAttributes a go:Event ;
-    rdfs:label "Attributing names according to attributes" ;
-    go:HasTheme ex:Meaning ;
-    go:HasInstrument ex:Names, ex:Attributes .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# state: heart bound
+ex:heartboundstate a go:event ;
+    go:hastheme ex:heart_abd_al_ma'na ;
+    go:cause ex:imposingnamesevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/235-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/235-5> rdf:type owl:ontology .
 
-ex:CommanderOfFaithful a go:Person ;
-    rdfs:label "Commander of the Faithful" .
+ex:abdulmaana a go:person .
+ex:names a go:substance .
+ex:attributes a go:attribute .
 
-ex:Truth a go:Concept ;
-    rdfs:label "Truth" .
+# event 1: attribution of names to abdulmaana by an implicit agent
+ex:attributionevent1 a ex:attributionevent ;
+    go:hasagent ex:generalagent ;
+    go:hastheme ex:names ;
+    ex:hasrecipient ex:abdulmaana ;
+    ex:hascause ex:attributes .
 
-ex:CompanionsOfCommanderOfFaithful a go:Group ;
-    rdfs:label "Companions of the Commander of the Faithful" ;
-    go:relatedTo ex:CommanderOfFaithful .
+# event 2: pronouncement of these names by abdulmaana's tongue in secrets and openness
+ex:pronouncementevent1 a ex:pronouncementevent ;
+    go:hasagent ex:abdulmaanatongue ;
+    go:hastheme ex:names ;
+    ex:insecret "true"^^<http://www.w3.org/2001/xmlschema#boolean> ;
+    ex:inopen "true"^^<http://www.w3.org/2001/xmlschema#boolean> .
 
-ex:CompanionsOfTruth a go:Group ;
-    rdfs:label "Companions of Truth" ;
-    go:relatedTo ex:Truth .
-
-ex:CompanionsOfCommanderOfFaithful owl:equivalentClass ex:CompanionsOfTruth .
+# linking the tongue to abdulmaana
+ex:abdulmaanatongue a go:bodypart ;
+    ex:partof ex:abdulmaana .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/235-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/235-6> rdf:type owl:ontology .
 
-ex:TrueBelievers a go:Person ;
-    ex:isTrue true .
+ex:commanderoffaithful a go:person ;
+    rdfs:label "commander of the faithful" .
 
-ex:These a go:Group ;
-    ex:identifiesTo ex:TrueBelievers .
+ex:companionsofcommanderoffaithful a go:group ;
+    rdfs:label "companions of the commander of the faithful" ;
+    go:hasrelationto ex:commanderoffaithful .
+
+ex:meaning a go:substance ;
+    rdfs:label "meaning" .
+
+ex:names a go:concept ;
+    rdfs:label "names" .
+
+ex:attributes a go:concept ;
+    rdfs:label "attributes" .
+
+ex:worshipevent a go:event ;
+    rdfs:label "worshiping the meaning" ;
+    go:hasagent ex:companionsofcommanderoffaithful ;
+    go:hastheme ex:meaning ;
+    go:hasinstrument ex:attributingnamesperattributes .
+
+ex:attributingnamesperattributes a go:event ;
+    rdfs:label "attributing names according to attributes" ;
+    go:hastheme ex:meaning ;
+    go:hasinstrument ex:names, ex:attributes .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-7> rdf:type owl:ontology .
+
+ex:commanderoffaithful a go:person ;
+    rdfs:label "commander of the faithful" .
+
+ex:truth a go:concept ;
+    rdfs:label "truth" .
+
+ex:companionsofcommanderoffaithful a go:group ;
+    rdfs:label "companions of the commander of the faithful" ;
+    go:relatedto ex:commanderoffaithful .
+
+ex:companionsoftruth a go:group ;
+    rdfs:label "companions of truth" ;
+    go:relatedto ex:truth .
+
+ex:companionsofcommanderoffaithful owl:equivalentclass ex:companionsoftruth .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/235-8> rdf:type owl:ontology .
+
+ex:truebelievers a go:person ;
+    ex:istrue true .
+
+ex:these a go:group ;
+    ex:identifiesto ex:truebelievers .

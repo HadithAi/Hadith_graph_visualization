@@ -1,68 +1,71 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/238#> .
+@prefix ex: <http://etratnet.ir/graph/example/238#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/238> rdf:type go:ontology ;
+        go:hascontent "1. نافع بن ازرق از امام باقر عليه‌السلام پرسيد: به من خبر دهيد كه خدا از چه زمانى بوده است؟ حضرت فرمود: «[تو به من بگو] چه زمانى نبوده است تا من به تو بگويم از چه زمانى بوده است؟ پاكا خدايى كه پيوسته يكتا و بى‌نياز بوده و خواهد بود، و همسرى و فرزندى نگرفته است»."@fa,
+        "1.  سَأَلَ نَافِعُ بْنُ الْأَزْرَقِ أَبَا جَعْفَرٍ عليه‌السلام، فَقَالَ: أَخْبِرْنِي عَنِ اللّه‌ِ مَتى كَانَ؟ فَقَالَ: «مَتى لَمْ يَكُنْ حَتّى أُخْبِرَكَ مَتى كَانَ؟ سُبْحَانَ مَنْ لَمْ يَزَلْ وَلاَ يَزَالُ فَرْداً صَمَداً، لَمْ يَتَّخِذْ صَاحِبَةً وَلاَ وَلَداً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/238-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/238-1> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Substance .
-ex:Existence a go:Event ;
-  go:HasAgent ex:God_Almighty .
-ex:Inform_Time a go:Event ;
-  go:HasAgent ex:God_Almighty ;
-  go:HasTheme ex:Time_of_Existence .
+ex:god_almighty a go:substance .
+ex:existence a go:event ;
+  go:hasagent ex:god_almighty .
+ex:inform_time a go:event ;
+  go:hasagent ex:god_almighty ;
+  go:hastheme ex:time_of_existence .
 
-ex:Existence go:isBefore ex:Inform_Time .
+ex:existence go:isbefore ex:inform_time .
 
-ex:Time_of_Existence a go:theme .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/238-2> rdf:type owl:Ontology .
-
-ex:GodAlmighty a go:Deity ;
-    go:hasProperty ex:EternalExistence , ex:Unique , ex:SelfSufficient .
-
-ex:EternalExistence a go:Property ;
-    go:description "Has always existed and will never cease to exist" .
-
-ex:Unique a go:Property ;
-    go:description "Is singular and without equal" .
-
-ex:SelfSufficient a go:Property ;
-    go:description "Is independent and self-sustaining" .
+ex:time_of_existence a go:theme .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/238-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/238-2> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity .
+ex:godalmighty a go:deity ;
+    go:hasproperty ex:eternalexistence , ex:unique , ex:selfsufficient .
 
-# Representing the non-existence of the event of taking consort or child
-# No consort or child entity is related to GodAlmighty via go:hasConsort or go:hasChild
+ex:eternalexistence a go:property ;
+    go:description "has always existed and will never cease to exist" .
 
-# Define properties for clarity
-ex:hasConsort a rdf:Property ; rdfs:domain go:Deity ; rdfs:range go:Person .
-ex:hasChild a rdf:Property ; rdfs:domain go:Deity ; rdfs:range go:Person .
+ex:unique a go:property ;
+    go:description "is singular and without equal" .
 
-# Assert that GodAlmighty does not have consort or child
-ex:GodAlmighty ex:hasConsort [] . # empty blank node indicating none
-ex:GodAlmighty ex:hasChild [] .
+ex:selfsufficient a go:property ;
+    go:description "is independent and self-sustaining" .
 
-# Alternatively, a negation can be indicated by negative statements or absence of triples
-# Here, we just state no consort or child exists for GodAlmighty
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/238-3> rdf:type owl:ontology .
+
+ex:godalmighty a go:deity .
+
+# representing the non-existence of the event of taking consort or child
+# no consort or child entity is related to godalmighty via go:hasconsort or go:haschild
+
+# define properties for clarity
+ex:hasconsort a rdf:property ; rdfs:domain go:deity ; rdfs:range go:person .
+ex:haschild a rdf:property ; rdfs:domain go:deity ; rdfs:range go:person .
+
+# assert that godalmighty does not have consort or child
+ex:godalmighty ex:hasconsort [] . # empty blank node indicating none
+ex:godalmighty ex:haschild [] .
+
+# alternatively, a negation can be indicated by negative statements or absence of triples
+# here, we just state no consort or child exists for godalmighty

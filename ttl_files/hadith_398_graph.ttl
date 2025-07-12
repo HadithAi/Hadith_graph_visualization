@@ -1,178 +1,181 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/398#> .
+@prefix ex: <http://etratnet.ir/graph/example/398#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/398> rdf:type go:ontology ;
+        go:hascontent "1.  از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «از جمله چيزهايى كه خداوند به موسى عليه‌السلام وحى فرمود و در تورات بر او فرو فرستاد اين بود كه: اين منم، خدا. خدايى جز من نيست. آفريدگان را آفريدم، و خوبى را خلق كردم، و آن را به دست كسى كه دوست دارم به اجرا درآوَرَم؛ پس، خوشا به حال كسى كه آن را با دستان او به اجرا درآورم. منم خدا، خدايى جز من نيست. آفريدگان را آفريدم و بدى را خلق كردم و آن را به دست هر كه بخواهم به اجرا در آورم؛ پس، بدا به حال كسى كه آن را با دستان او به اجرا درآورم»."@fa,
+        "1.  سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام يَقُولُ: «إِنَّ مِمَّا أَوْحَى اللّه‌ُ إِلى مُوسى عليه‌السلام، وَأَنْزَلَ عَلَيْهِ فِي التَّوْرَاةِ: أَنِّي أَنَا اللّه‌ُ لاَ إِلهَ إِلاَّ أَنَا، خَلَقْتُ الْخَلْقَ، وَخَلَقْتُ الْخَيْرَ، وَأَجْرَيْتُهُ عَلى يَدَيْ مَنْ أُحِبُّ، فَطُوبى لِمَنْ أَجْرَيْتُهُ عَلى يَدَيْهِ، وَأَنَا اللّه‌ُ لاَ إِلهَ إِلاَّ أَنَا، خَلَقْتُ الْخَلْقَ، وَخَلَقْتُ الشَّرَّ، وَأَجْرَيْتُهُ عَلى يَدَيْ مَنْ أُرِيدُهُ، فَوَيْلٌ لِمَنْ أَجْرَيْتُهُ عَلى يَدَيْهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/398-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/398-1> rdf:type owl:ontology .
 
-ex:God a go:DivineAgent ;
-    rdfs:label "Allah" .
+ex:god a go:divineagent ;
+    rdfs:label "allah" .
 
-ex:Moses a go:Person ;
-    rdfs:label "Moses" ;
-    go:hasTitle "peace be upon him" .
+ex:moses a go:person ;
+    rdfs:label "moses" ;
+    go:hastitle "peace be upon him" .
 
-ex:SpeechEvent1 a go:Event , ex:SayingEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:DivineStatement1 ;
-    go:HasRecipient ex:Moses .
+ex:speechevent1 a go:event , ex:sayingevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:divinestatement1 ;
+    go:hasrecipient ex:moses .
 
-ex:DivineStatement1 a go:Utterance ;
-    go:hasContent "I am God, there is no deity except Me." .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/398-2> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Creatures .
-
-ex:God a go:Substance ;
-  rdfs:label "God" .
-
-ex:Creatures a go:Substance ;
-  rdfs:label "Creatures" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:divinestatement1 a go:utterance ;
+    go:hascontent "i am god, there is no deity except me." .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/398-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/398-2> rdf:type owl:ontology .
 
-ex:CreationEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Good .
+ex:eventinstance1 a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:creatures .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:substance ;
+  rdfs:label "god" .
 
-ex:Good a go:Concept ;
-    rdfs:label "Good" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/398-4> rdf:type owl:Ontology .
-
-ex:event1 a ex:GoodCausingEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Good ;
-    go:HasInstrument ex:BelieversWhoLoveGod .
-
-ex:God a go:Agent .
-ex:Good a go:Substance .
-ex:BelieversWhoLoveGod a go:Agent .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:creatures a go:substance ;
+  rdfs:label "creatures" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/398-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/398-3> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:Event, ex:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Utterance1 .
+ex:creationevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:good .
 
-ex:God a go:agent .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Utterance1 a go:utterance ;
-    go:HasContent "Blessed is the one through whom I have channeled good deeds." ;
-    go:RefersTo ex:Beneficiary .
-
-ex:Beneficiary a go:agent ;
-    go:HasRole ex:ChannelOfGoodDeeds .
-
-ex:GoodDeeds a go:Event ;
-    go:HasInstrument ex:Beneficiary .
-go:Event rdfs:label "رخداد"@fa.
+ex:good a go:concept ;
+    rdfs:label "good" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/398-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/398-4> rdf:type owl:ontology .
 
-ex:creationEvent a go:Event ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Evil .
+ex:event1 a ex:goodcausingevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:good ;
+    go:hasinstrument ex:believerswholovegod .
 
-ex:Allah a go:Deity .
-
-ex:Evil a go:Substance ;
-    go:hasMoralPolarity go:Negative .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/398-7> rdf:type owl:Ontology .
-
-ex:God a go:Deity, go:Agent .
-
-# The evil event caused by God
-ex:EvilEvent a ex:NegativeEvent, go:Event .
-
-# The causation event where God causes the evil
-ex:CausationEvent1 a go:CausationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:EvilEvent .
-
-# The agent (person) willed by God, who is the cause/link of the evil happening
-ex:AgentWilledByGod a go:Agent .
-
-# The evil event has the agent who performs it
-ex:EvilEvent go:HasAgent ex:AgentWilledByGod .
-
-# Relationship showing God wills the agent
-ex:God ex:wills ex:AgentWilledByGod .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:agent .
+ex:good a go:substance .
+ex:believerswholovegod a go:agent .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/398-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/398-5> rdf:type owl:ontology .
 
-ex:Event_Speech_1 a go:CommunicationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Utterance_Statement_1 .
+ex:speechevent1 a go:event, ex:speechevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:utterance1 .
 
-ex:Utterance_Statement_1 a go:Utterance ;
-    go:HasTheme ex:Warning_1 .
+ex:god a go:agent .
 
-ex:Warning_1 a go:Warning ;
-    go:HasRecipient ex:You ;
-    go:HasTheme ex:Woe ;
-    go:HasCause ex:Evil_Event_1 .
+ex:utterance1 a go:utterance ;
+    go:hascontent "blessed is the one through whom i have channeled good deeds." ;
+    go:refersto ex:beneficiary .
 
-ex:Evil_Event_1 a go:Event ;
-    go:HasAgent ex:One ;
-    go:HasTheme ex:Evil ;
-    go:HasInstrument ex:Your_Hands .
+ex:beneficiary a go:agent ;
+    go:hasrole ex:channelofgooddeeds .
 
-ex:God a go:Agent .
-ex:One a go:Agent .
-ex:You a go:Agent .
-ex:Evil a go:Substance .
-ex:Your_Hands a go:PhysicalEntity .
-ex:Woe a go:Condition .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:gooddeeds a go:event ;
+    go:hasinstrument ex:beneficiary .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/398-6> rdf:type owl:ontology .
+
+ex:creationevent a go:event ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:evil .
+
+ex:allah a go:deity .
+
+ex:evil a go:substance ;
+    go:hasmoralpolarity go:negative .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/398-7> rdf:type owl:ontology .
+
+ex:god a go:deity, go:agent .
+
+# the evil event caused by god
+ex:evilevent a ex:negativeevent, go:event .
+
+# the causation event where god causes the evil
+ex:causationevent1 a go:causationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:evilevent .
+
+# the agent (person) willed by god, who is the cause/link of the evil happening
+ex:agentwilledbygod a go:agent .
+
+# the evil event has the agent who performs it
+ex:evilevent go:hasagent ex:agentwilledbygod .
+
+# relationship showing god wills the agent
+ex:god ex:wills ex:agentwilledbygod .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/398-8> rdf:type owl:ontology .
+
+ex:event_speech_1 a go:communicationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:utterance_statement_1 .
+
+ex:utterance_statement_1 a go:utterance ;
+    go:hastheme ex:warning_1 .
+
+ex:warning_1 a go:warning ;
+    go:hasrecipient ex:you ;
+    go:hastheme ex:woe ;
+    go:hascause ex:evil_event_1 .
+
+ex:evil_event_1 a go:event ;
+    go:hasagent ex:one ;
+    go:hastheme ex:evil ;
+    go:hasinstrument ex:your_hands .
+
+ex:god a go:agent .
+ex:one a go:agent .
+ex:you a go:agent .
+ex:evil a go:substance .
+ex:your_hands a go:physicalentity .
+ex:woe a go:condition .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

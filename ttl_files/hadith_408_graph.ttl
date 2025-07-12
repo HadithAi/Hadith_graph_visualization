@@ -1,73 +1,76 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/408#> .
+@prefix ex: <http://etratnet.ir/graph/example/408#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/408> rdf:type go:ontology ;
+        go:hascontent "8.  به امام صادق عليه‌السلام عرض كردم: آيا خداوند بندگان را به انجام دادن گناهان مجبور ساخته است؟ فرمود: «خير». عرض كردم: پس كار را به خودشان واگذار كرده [و اختيار مطلق]داده است؟ فرمود: «خير». عرض كردم: پس چيست؟ فرمود: «لطفى است از جانب پروردگار تو ميان اين دو»."@fa,
+        "8.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: قُلْتُ: أَجْبَرَ اللّه‌ُ الْعِبَادَ عَلَى الْمَعَاصِي؟ قَالَ: «لاَ». قال: قُلْتُ: فَفَوَّضَ إِلَيْهِمُ الْأَمْرَ؟ قَالَ: «لاَ». قَالَ: قُلْتُ: فَمَا ذَا؟ قَالَ: «لُطْفٌ مِنْ رَبِّكَ بَيْنَ ذلِكَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/408-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/408-1> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Servants ;
-    go:Causes ex:Sins ;
-    go:hasPolarity "negative" .
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servants ;
+    go:causes ex:sins ;
+    go:haspolarity "negative" .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:Servants a go:Theme ;
-    rdfs:label "Servants" .
+ex:servants a go:theme ;
+    rdfs:label "servants" .
 
-ex:Sins a go:Theme ;
-    rdfs:label "Sins" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:sins a go:theme ;
+    rdfs:label "sins" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/408-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/408-2> rdf:type owl:ontology .
 
-ex:DelegationEvent1 a go:Event , ex:DelegationEvent ;
+ex:delegationevent1 a go:event , ex:delegationevent ;
     ex:negation true ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:TheMatter ;
-    go:HasRecipient ex:Servants .
+    go:hasagent ex:god ;
+    go:hastheme ex:thematter ;
+    go:hasrecipient ex:servants .
 
-ex:God a go:Substance ;
-    go:label "God"@en .
+ex:god a go:substance ;
+    go:label "god"@en .
 
-ex:TheMatter a go:entity ;
-    go:label "The matter"@en .
+ex:thematter a go:entity ;
+    go:label "the matter"@en .
 
-ex:Servants a go:Substance ;
-    go:label "The servants"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:servants a go:substance ;
+    go:label "the servants"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/408-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/408-3> rdf:type owl:ontology .
 
-ex:Matter a go:Substance ;
-    ex:between ex:Predestination , ex:Delegation ;
-    ex:hasQuality ex:Kindness .
+ex:matter a go:substance ;
+    ex:between ex:predestination , ex:delegation ;
+    ex:hasquality ex:kindness .
 
-ex:Kindness a go:Property ;
-    go:HasAgent ex:YourLord .
+ex:kindness a go:property ;
+    go:hasagent ex:yourlord .
 
-ex:Predestination a go:Concept .
-ex:Delegation a go:Concept .
-ex:YourLord a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:predestination a go:concept .
+ex:delegation a go:concept .
+ex:yourlord a go:substance .
+go:substance rdfs:label "شی"@fa.

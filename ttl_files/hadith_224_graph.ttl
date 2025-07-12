@@ -1,84 +1,87 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/224#> .
+@prefix ex: <http://etratnet.ir/graph/example/224#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/224> rdf:type go:ontology ;
+        go:hascontent "3. «خداوند از آفريدگانش خالى است و آفريدگانش از او خالى‌اند. هر آنچه نام "چيز" بر او اطلاق شود آفريده است، مگر خدا»."@fa,
+        "3.  عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: قَالَ: «إِنَّ اللّه‌َ خِلْوٌ مِنْ خَلْقِهِ، وَخَلْقَهُ خِلْوٌ مِنْهُ، وَكُلُّ مَا وَقَعَ عَلَيْهِ اسْمُ "شَيْءٍ" فَهُوَ مَخْلُوقٌ مَا خَلاَ اللّه‌َ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/224-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/224-1> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:CreationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creatures .
+ex:eventinstance1 a go:creationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creatures .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:Creatures a go:Substance ;
-    rdfs:label "Creatures"@en .
-go:Substance rdfs:label "شی"@fa.
+ex:creatures a go:substance ;
+    rdfs:label "creatures"@en .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/224-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/224-2> rdf:type owl:ontology .
 
-ex:creationEvent1 a go:CreationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:void ;
-    go:HasSource ex:sourceEntity .
+ex:creationevent1 a go:creationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:void ;
+    go:hassource ex:sourceentity .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:void a go:Substance ;
+ex:void a go:substance ;
     rdfs:label "void" .
 
-ex:sourceEntity a go:Substance ;
+ex:sourceentity a go:substance ;
     rdfs:label "source" .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/224-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/224-3> rdf:type owl:ontology .
 
-# Defining the entity class 'Thing' as things named "thing"
-ex:Thing a go:Substance ;
+# defining the entity class 'thing' as things named "thing"
+ex:thing a go:substance ;
     rdfs:label "شيء" .
 
-# Defining the entity Allah
-ex:Allah a go:Substance .
+# defining the entity allah
+ex:allah a go:substance .
 
-# Creature class
-go:Creature a go:Class .
+# creature class
+go:creature a go:class .
 
-# Event: classification of Thing as Creature
-ex:classificationEvent a go:Event ;
-    go:HasTheme ex:Thing ;
-    go:HasResult go:Creature .
+# event: classification of thing as creature
+ex:classificationevent a go:event ;
+    go:hastheme ex:thing ;
+    go:hasresult go:creature .
 
-# Exception statement (informal representation using OWL negative property assertion)
-# Saying Allah is not a Creature even if named "thing"
-ex:Allah rdfs:label "شيء" .
+# exception statement (informal representation using owl negative property assertion)
+# saying allah is not a creature even if named "thing"
+ex:allah rdfs:label "شيء" .
 
-# State that ex:Allah is not classified as Creature despite having the name "شيء"
-[] a go:NegativePropertyAssertion ;
-   go:sourceIndividual ex:Allah ;
-   go:assertionProperty go:type ;
-   go:targetIndividual go:Creature .
+# state that ex:allah is not classified as creature despite having the name "شيء"
+[] a go:negativepropertyassertion ;
+   go:sourceindividual ex:allah ;
+   go:assertionproperty go:type ;
+   go:targetindividual go:creature .
 
-# General statement that everything named "شيء" is a Creature except Allah.
-# (This is represented by the classification event and exception above.)
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# general statement that everything named "شيء" is a creature except allah.
+# (this is represented by the classification event and exception above.)
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

@@ -1,30 +1,33 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/369#> .
+@prefix ex: <http://etratnet.ir/graph/example/369#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/369> rdf:type go:ontology ;
+        go:hascontent "2.  «خداوند به چيزى همچون بداء بزرگ داشته نشده است»."@fa,
+        "2.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام: «مَا عُظِّمَ اللّه‌ُ بِمِثْلِ الْبَدَاءِ».(24) باب البداء"@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/369-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/369-1> rdf:type owl:ontology .
 
-ex:God a go:Individual ;
-    rdfs:label "Allah"@en .
+ex:god a go:individual ;
+    rdfs:label "allah"@en .
 
-ex:Beginning a go:Substance ;
-    rdfs:label "Beginning"@en .
+ex:beginning a go:substance ;
+    rdfs:label "beginning"@en .
 
-ex:GlorificationEvent a go:Event ;
-    rdfs:label "Glorification of God"@en ;
-    go:HasTheme ex:God ;
-    go:HasAgent ex:Beginning .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:glorificationevent a go:event ;
+    rdfs:label "glorification of god"@en ;
+    go:hastheme ex:god ;
+    go:hasagent ex:beginning .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

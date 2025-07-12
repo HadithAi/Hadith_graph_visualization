@@ -1,82 +1,85 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/226#> .
+@prefix ex: <http://etratnet.ir/graph/example/226#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/226> rdf:type go:ontology ;
+        go:hascontent "5.  «خداوند از آفريدگانش خالى است و آفريدگانش از او خالى‌اند، و هر آنچه كلمه "چيز"، بر او اطلاق شود، بجز خداى تعالى، آن چيز آفريده است، و خدا آفريننده همه چيزهاست»."@fa,
+        "5.  عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: «إِنَّ اللّه‌َ خِلْوٌ مِنْ خَلْقِهِ، وَخَلْقَهُ خِلْوٌ مِنْهُ، وَكُلُّ مَا وَقَعَ عَلَيْهِ اسْمُ «شَيْءٍ» مَا خَلاَ اللّه‌َ تَعَالى، فَهُوَ مَخْلُوقٌ، وَاللّه‌ُ خَالِقُ كُلِّ شَيْءٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/226-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/226-1> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:Creatures a go:Substance ;
-    rdfs:label "Creatures" .
+ex:creatures a go:substance ;
+    rdfs:label "creatures" .
 
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creatures ;
-    rdfs:label "Creation Event" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/226-2> rdf:type owl:Ontology .
-
-ex:God a go:Agent ;
-    rdfs:label "God" .
-
-ex:Void a go:State ;
-    rdfs:label "Void" .
-
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Void ;
-    rdfs:label "Creation Event" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creatures ;
+    rdfs:label "creation event" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/226-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/226-2> rdf:type owl:ontology .
 
-# Define Allah as an entity
-ex:Allah a go:entity ;
-    go:HasName "Allah" ;
-    go:IsNotInstanceOf go:CreatedBeing .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-# Define a class of entities named "thing" excluding Allah
-ex:ThingNamedEntity a go:entity ;
-    go:HasName "thing" ;
-    go:IsInstanceOf go:CreatedBeing .
+ex:void a go:state ;
+    rdfs:label "void" .
 
-# Implicit understanding: ex:ThingNamedEntity does not include ex:Allah
-
-# Note: In OWL/RDF, exclusion often is modeled differently; here it's specified by naming and instance assertions.
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:void ;
+    rdfs:label "creation event" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/226-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/226-3> rdf:type owl:ontology .
 
-ex:creationEvent1 a go:CreationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme go:Everything .
+# define allah as an entity
+ex:allah a go:entity ;
+    go:hasname "allah" ;
+    go:isnotinstanceof go:createdbeing .
 
-ex:God a go:Deity .
+# define a class of entities named "thing" excluding allah
+ex:thingnamedentity a go:entity ;
+    go:hasname "thing" ;
+    go:isinstanceof go:createdbeing .
 
-go:Everything a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+# implicit understanding: ex:thingnamedentity does not include ex:allah
+
+# note: in owl/rdf, exclusion often is modeled differently; here it's specified by naming and instance assertions.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/226-4> rdf:type owl:ontology .
+
+ex:creationevent1 a go:creationevent ;
+    go:hasagent ex:god ;
+    go:hastheme go:everything .
+
+ex:god a go:deity .
+
+go:everything a go:substance .
+go:substance rdfs:label "شی"@fa.

@@ -1,277 +1,280 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/285#> .
+@prefix ex: <http://etratnet.ir/graph/example/285#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/285> rdf:type go:ontology ;
+        go:hascontent "1. به امام صادق عليه‌السلام عرض كردم: از هشام بن حكم شنيدم كه از شما روايت مى‌كند: خدا جسمى توپُر و نورانى است، و شناخت او ضرورى [بديهى و غير اكتسابى] است و اين شناخت را به هر كس از آفريدگانش كه بخواهد مرحمت مى‌كند. حضرت فرمود: «پاكا خدايى كه هيچ كس جز خود او نمى‌داند او چگونه است «هيچ چيزى همانندش نيست و او شنواى بيناست». نه حد مى‌پذيرد، نه به حس دريافت مى‌شود، و نه لمس‌شدنى است. بينايى‌ها او را در نمى‌يابند و حواس ادراكش نمى‌كنند، و هيچ چيزى او را در ميان نمى‌گيرد. نه جسم است و نه صورت [شكل] دارد، و نه مرزبندى و كرانه مى‌پذيرد»."@fa,
+        "1.  قُلْتُ لِأَبِي عَبْدِ اللّه‌ِ عليه‌السلام: سَمِعْتُ هِشَامَ بْنَ الْحَكَمِ يَرْوِي عَنْكُمْ: أَنَّ اللّه‌َ جِسْمٌ صَمَدِيٌّ نُورِيٌّ، مَعْرِفَتُهُ ضَرُورَةٌ، يَمُنُّ بِهَا عَلى مَنْ يَشَاءُ مِنْ خَلْقِهِ. فَقَالَ عليه‌السلام: «سُبْحَانَ مَنْ لاَ يَعْلَمُ أَحَدٌ كَيْفَ هُوَ إِلاَّ هُوَ «لَيْسَ كَمِثْلِهِ شَىْ‌ءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ» لاَ يُحَدُّ، وَلاَ يُحَسُّ، وَلاَ يُجَسُّ، وَلاَ تُدْرِكُهُ الْأَبْصَارُ وَلاَ الْحَوَاسُّ، وَلاَ يُحِيطُ بِهِ شَيْءٌ، وَلاَ جِسْمٌ وَلاَ صُورَةٌ، وَلاَ تَخْطِيطٌ وَلاَ تَحْدِيدٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-1> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:SolidLuminousBody a go:Substance ;
-	go:hasQuality ex:Solid , ex:Luminous .
-ex:Solid a go:Quality .
-ex:Luminous a go:Quality .
+ex:god a go:substance .
+ex:solidluminousbody a go:substance ;
+	go:hasquality ex:solid , ex:luminous .
+ex:solid a go:quality .
+ex:luminous a go:quality .
 
-# Negative statement that God is not a solid luminous body
-ex:God go:isNotInstanceOf ex:SolidLuminousBody .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/285-2> rdf:type owl:Ontology .
-
-ex:KnowingGodEvent a go:Event ;
-    go:HasTheme ex:God ;
-    go:HasNecessity false .
-
-ex:God a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# negative statement that god is not a solid luminous body
+ex:god go:isnotinstanceof ex:solidluminousbody .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-2> rdf:type owl:ontology .
 
-ex:event1 a go:Knowing ;
-    go:HasAgent god:God ;
-    go:HasTheme god:GodNature .
+ex:knowinggodevent a go:event ;
+    go:hastheme ex:god ;
+    go:hasnecessity false .
 
-# god:GodNature is the property or state describing 'how He is'
-
-# No other person has the agent role in knowing god:GodNature
-
-# Represent that no other person knows this:
-ex:NoOtherAgent a go:Knowing ;
-    go:HasAgent ex:SomeoneElse ;
-    go:HasTheme god:GodNature ;
-    go:KnowledgeNegation true .
-
-ex:SomeoneElse a foaf:Person .
+ex:god a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-3> rdf:type owl:ontology .
 
-ex:God a go:Deity, go:Substance .
-ex:Thing a go:Substance .
+ex:event1 a go:knowing ;
+    go:hasagent god:god ;
+    go:hastheme god:godnature .
 
-ex:UniqueState a go:StateEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Thing ;
-    go:HasQuality ex:NonSimilarity .
+# god:godnature is the property or state describing 'how he is'
 
-ex:NonSimilarity a go:Quality ;
+# no other person has the agent role in knowing god:godnature
+
+# represent that no other person knows this:
+ex:nootheragent a go:knowing ;
+    go:hasagent ex:someoneelse ;
+    go:hastheme god:godnature ;
+    go:knowledgenegation true .
+
+ex:someoneelse a foaf:person .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-4> rdf:type owl:ontology .
+
+ex:god a go:deity, go:substance .
+ex:thing a go:substance .
+
+ex:uniquestate a go:stateevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:thing ;
+    go:hasquality ex:nonsimilarity .
+
+ex:nonsimilarity a go:quality ;
     rdfs:label "non similarity" .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-5> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:HasAttribute ex:AllHearing ;
-    go:HasAttribute ex:AllSeeing .
+ex:god a go:deity ;
+    go:hasattribute ex:allhearing ;
+    go:hasattribute ex:allseeing .
 
-ex:AllHearing a go:Attribute ;
-    rdfs:label "All-Hearing"@en .
+ex:allhearing a go:attribute ;
+    rdfs:label "all-hearing"@en .
 
-ex:AllSeeing a go:Attribute ;
-    rdfs:label "All-Seeing"@en .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/285-6> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    ex:isLimitless true .
-
-# Explanation:
-# ex:God is an entity of type go:Deity.
-# ex:isLimitless is used here as a property to denote the attribute of having no limits.
+ex:allseeing a go:attribute ;
+    rdfs:label "all-seeing"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-6> rdf:type owl:ontology .
 
-ex:event1 a go:PerceptionEvent ;
-    go:HasAgent ex:God .
+ex:god a go:deity ;
+    ex:islimitless true .
 
-# The sentence states 'God does not perceive', which implies that there is no such perception event by God. 
-# Therefore, semantically, ex:event1 does not occur or is false. This can be represented as a negative assertion in other logic layers, but here we document the intended meaning.
-
-ex:God a go:deity .
-
-# Note: RDF itself does not natively express negation, but this triple setup captures the semantic roles.
+# explanation:
+# ex:god is an entity of type go:deity.
+# ex:islimitless is used here as a property to denote the attribute of having no limits.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-7> rdf:type owl:ontology .
 
-ex:God a go:Deity, go:Substance .
-ex:IncarnationEvent a go:Event ;
-    go:HasTheme ex:God .
+ex:event1 a go:perceptionevent ;
+    go:hasagent ex:god .
 
-# Statement of negation: God is not incarnate
-# Implemented as negative property assertion, here expressed through a negative statement node
+# the sentence states 'god does not perceive', which implies that there is no such perception event by god. 
+# therefore, semantically, ex:event1 does not occur or is false. this can be represented as a negative assertion in other logic layers, but here we document the intended meaning.
 
-ex:God ex:hasIncarnationStatus ex:NotIncarnate .
+ex:god a go:deity .
 
-ex:NotIncarnate a go:State .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# note: rdf itself does not natively express negation, but this triple setup captures the semantic roles.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-8> rdf:type owl:ontology .
 
-# Entity: God
-ex:God rdf:type go:Deity .
+ex:god a go:deity, go:substance .
+ex:incarnationevent a go:event ;
+    go:hastheme ex:god .
 
-# Entity: Eyes
-ex:Eyes rdf:type go:Organ ;
-         go:senses go:Vision .
+# statement of negation: god is not incarnate
+# implemented as negative property assertion, here expressed through a negative statement node
 
-# Statement: God cannot be perceived by eyes
-# We represent a hypothetical perception event
-ex:PerceptionEvent rdf:type go:Perception , go:Event ;
-                   go:HasAgent ex:Eyes ;
-                   go:HasTheme ex:God ;
-                   go:hasTruthValue "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+ex:god ex:hasincarnationstatus ex:notincarnate .
 
-# Explanation: 'hasTruthValue' false means the perception does not actually happen; God is not accessible to eyes.
-go:Event rdfs:label "رخداد"@fa.
+ex:notincarnate a go:state .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-9> rdf:type owl:ontology .
 
-ex:perceptionEvent a go:PerceptionEvent , go:Event ;
-    go:HasAgent ex:senses ;
-    go:HasTheme ex:God ;
-    go:negation "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+# entity: god
+ex:god rdf:type go:deity .
 
-ex:God a go:Substance ;
-    go:label "God"@en .
+# entity: eyes
+ex:eyes rdf:type go:organ ;
+         go:senses go:vision .
+
+# statement: god cannot be perceived by eyes
+# we represent a hypothetical perception event
+ex:perceptionevent rdf:type go:perception , go:event ;
+                   go:hasagent ex:eyes ;
+                   go:hastheme ex:god ;
+                   go:hastruthvalue "false"^^<http://www.w3.org/2001/xmlschema#boolean> .
+
+# explanation: 'hastruthvalue' false means the perception does not actually happen; god is not accessible to eyes.
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-10> rdf:type owl:ontology .
+
+ex:perceptionevent a go:perceptionevent , go:event ;
+    go:hasagent ex:senses ;
+    go:hastheme ex:god ;
+    go:negation "true"^^<http://www.w3.org/2001/xmlschema#boolean> .
+
+ex:god a go:substance ;
+    go:label "god"@en .
 
 ex:senses a go:entity ;
     go:label "the senses"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-11> rdf:type owl:ontology .
 
-ex:God a go:God ;
-    rdfs:label "God" .
+ex:god a go:god ;
+    rdfs:label "god" .
 
-# Defining 'anything' as any go:Substance (for demonstration)
-ex:anything a go:Substance .
+# defining 'anything' as any go:substance (for demonstration)
+ex:anything a go:substance .
 
-# Define the encompassing event class
-ex:EncompassEvent a go:Event ;
-    rdfs:label "Encompass Event" .
+# define the encompassing event class
+ex:encompassevent a go:event ;
+    rdfs:label "encompass event" .
 
-# State that there is no event of encompassing where God is theme and anything is agent
-# In RDF, negation isn't directly expressible, so we model using a negative statement pattern
+# state that there is no event of encompassing where god is theme and anything is agent
+# in rdf, negation isn't directly expressible, so we model using a negative statement pattern
 
-ex:NoEncompassEvent a go:Event ;
-    go:HasTheme ex:God ;
-    go:HasAgent ex:anything ;
-    go:Negation true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:noencompassevent a go:event ;
+    go:hastheme ex:god ;
+    go:hasagent ex:anything ;
+    go:negation true .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-12> rdf:type owl:ontology .
 
-ex:God rdf:type go:Deity .
-ex:Body rdf:type go:Substance .
+ex:god rdf:type go:deity .
+ex:body rdf:type go:substance .
 
-# Assert that God is not a body using OWL negative property assertion
-# OWL does not directly allow negating rdf:type but we can use complement class
+# assert that god is not a body using owl negative property assertion
+# owl does not directly allow negating rdf:type but we can use complement class
 
-ex:God rdf:type [
-  a owl:Class ;
-  owl:complementOf ex:Body
+ex:god rdf:type [
+  a owl:class ;
+  owl:complementof ex:body
 ] .
 
-# Alternatively, if ex:Body is a class, declare ex:God instance is not of class ex:Body by stating ex:God rdf:type go:Deity with no type ex:Body explicitly.
+# alternatively, if ex:body is a class, declare ex:god instance is not of class ex:body by stating ex:god rdf:type go:deity with no type ex:body explicitly.
 
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/285-13> rdf:type owl:Ontology .
-
-ex:God a go:Substance ;
-  ex:hasProperty ex:NoForm .
-
-ex:NoForm a go:PropertyValue ;
-  ex:negates ex:Form .
-
-ex:Form a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-13> rdf:type owl:ontology .
 
-ex:God a go:deity ;
-    rdfs:label "God" .
+ex:god a go:substance ;
+  ex:hasproperty ex:noform .
 
-ex:PlanningEvent a go:Event ;
-    rdfs:label "Planning Event" .
+ex:noform a go:propertyvalue ;
+  ex:negates ex:form .
 
-# Statement: God is not an agent of PlanningEvent
-# Using a negative statement pattern (not standard RDF, represented here as a comment)
-# There is no ex:eventInstance where ex:God go:HasAgent ex:eventInstance and ex:eventInstance a ex:PlanningEvent
-
-# Alternatively, express the negation as a negative statement in OWL or natural language annotations
-ex:NonPlanningRelation a rdf:Statement ;
-    rdf:subject ex:God ;
-    rdf:predicate go:HasAgent ;
-    rdf:object ex:PlanningEvent ;
-    rdfs:comment "God is not an agent of any planning event." .
-go:Event rdfs:label "رخداد"@fa.
+ex:form a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/285-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/285-14> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:hasProperty ex:NotParticular .
+ex:god a go:deity ;
+    rdfs:label "god" .
+
+ex:planningevent a go:event ;
+    rdfs:label "planning event" .
+
+# statement: god is not an agent of planningevent
+# using a negative statement pattern (not standard rdf, represented here as a comment)
+# there is no ex:eventinstance where ex:god go:hasagent ex:eventinstance and ex:eventinstance a ex:planningevent
+
+# alternatively, express the negation as a negative statement in owl or natural language annotations
+ex:nonplanningrelation a rdf:statement ;
+    rdf:subject ex:god ;
+    rdf:predicate go:hasagent ;
+    rdf:object ex:planningevent ;
+    rdfs:comment "god is not an agent of any planning event." .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/285-15> rdf:type owl:ontology .
+
+ex:god a go:deity ;
+    go:hasproperty ex:notparticular .
 
 # or alternately represent the negation explicitly
 
-ex:NotParticular a go:Property ;
-    go:negates ex:Particular .
+ex:notparticular a go:property ;
+    go:negates ex:particular .
 
-ex:Particular a go:Property .
+ex:particular a go:property .

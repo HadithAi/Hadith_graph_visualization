@@ -1,93 +1,96 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/382#> .
+@prefix ex: <http://etratnet.ir/graph/example/382#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/382> rdf:type go:ontology ;
+        go:hascontent "15.  «خداوند عز و جل محمد صلى‌الله‌عليه‌و‌آله را از آنچه از آغاز دنيا بوده و آنچه تا پايان دنيا خواهد بود، خبر داد، و از اين امور آنچه را قطعى و حتمى است به او خبر داد، و جز آنها را استثنا كرد»."@fa,
+        "15.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «إِنَّ اللّه‌َ ـ عَزَّ وَجَلَّ ـ أَخْبَرَ مُحَمَّداً صلى‌الله‌عليه‌و‌آله بِمَا كَانَ مُنْذُ كَانَتِ الدُّنْيَا، وَبِمَا يَكُونُ إِلَى انْقِضَاءِ الدُّنْيَا، وَأَخْبَرَهُ بِالْمَحْتُومِ مِنْ ذلِكَ، وَاسْتَثْنى عَلَيْهِ فِيمَا سِوَاهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/382-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/382-1> rdf:type owl:ontology .
 
-ex:event1 a go:CommunicationEvent ;
-  go:HasAgent ex:God_Almighty ;
-  go:HasRecipient ex:Muhammad ;
-  go:HasTheme ex:Information_since_world_existence .
+ex:event1 a go:communicationevent ;
+  go:hasagent ex:god_almighty ;
+  go:hasrecipient ex:muhammad ;
+  go:hastheme ex:information_since_world_existence .
 
-ex:God_Almighty a go:Substance ;
-  rdfs:label "God Almighty" .
+ex:god_almighty a go:substance ;
+  rdfs:label "god almighty" .
 
-ex:Muhammad a go:Substance ;
-  rdfs:label "Muhammad (peace be upon him and his family)" .
+ex:muhammad a go:substance ;
+  rdfs:label "muhammad (peace be upon him and his family)" .
 
-ex:Information_since_world_existence a go:InformationContent ;
-  rdfs:label "What has been since the existence of the world" .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/382-2> rdf:type owl:Ontology .
-
-ex:InformingEvent1 a ex:InformingEvent ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasRecipient ex:Muhammad ;
-    go:HasTheme ex:FutureEventsUntilEndOfWorld .
-
-ex:God_Almighty a go:Substance ;
-    rdfs:label "God Almighty" .
-
-ex:Muhammad a go:Substance ;
-    rdfs:label "Muhammad, peace be upon him and his family" .
-
-ex:FutureEventsUntilEndOfWorld a go:Substance ;
-    rdfs:label "Information about what will happen until the end of the world" .
-go:Substance rdfs:label "شی"@fa.
+ex:information_since_world_existence a go:informationcontent ;
+  rdfs:label "what has been since the existence of the world" .
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/382-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/382-2> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Inevitable_Content ;
-    go:HasRecipient ex:Muhammad_PBUH .
+ex:informingevent1 a ex:informingevent ;
+    go:hasagent ex:god_almighty ;
+    go:hasrecipient ex:muhammad ;
+    go:hastheme ex:futureeventsuntilendofworld .
 
-ex:God_Almighty a go:divineBeing ;
-    rdfs:label "God Almighty" .
+ex:god_almighty a go:substance ;
+    rdfs:label "god almighty" .
 
-ex:Muhammad_PBUH a go:person ;
-    rdfs:label "Muhammad (peace be upon him and his family)" .
+ex:muhammad a go:substance ;
+    rdfs:label "muhammad, peace be upon him and his family" .
 
-ex:Inevitable_Content a go:content ;
+ex:futureeventsuntilendofworld a go:substance ;
+    rdfs:label "information about what will happen until the end of the world" .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/382-3> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:inevitable_content ;
+    go:hasrecipient ex:muhammad_pbuh .
+
+ex:god_almighty a go:divinebeing ;
+    rdfs:label "god almighty" .
+
+ex:muhammad_pbuh a go:person ;
+    rdfs:label "muhammad (peace be upon him and his family)" .
+
+ex:inevitable_content a go:content ;
     go:description "the inevitable outcome regarding that matter" .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/382-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/382-4> rdf:type owl:ontology .
 
-ex:event1 a go:Event, ex:ExemptionEvent ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Muhammad ;
-    ex:ExceptFor ex:Inevitable .
+ex:event1 a go:event, ex:exemptionevent ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:muhammad ;
+    ex:exceptfor ex:inevitable .
 
-ex:God_Almighty a go:God ;
-    go:label "God Almighty"@en .
+ex:god_almighty a go:god ;
+    go:label "god almighty"@en .
 
-ex:Muhammad a go:Person ;
-    go:label "Muhammad, peace be upon him and his family"@en .
+ex:muhammad a go:person ;
+    go:label "muhammad, peace be upon him and his family"@en .
 
-ex:Inevitable a go:Concept ;
-    go:label "the inevitable that God informed him about"@en .
-go:Event rdfs:label "رخداد"@fa.
+ex:inevitable a go:concept ;
+    go:label "the inevitable that god informed him about"@en .
+go:event rdfs:label "رخداد"@fa.

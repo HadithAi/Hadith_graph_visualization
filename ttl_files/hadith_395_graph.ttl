@@ -1,267 +1,270 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/395#> .
+@prefix ex: <http://etratnet.ir/graph/example/395#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/395> rdf:type go:ontology ;
+        go:hascontent "1.  «خداوند پيش از آن كه آفريدگانش را بيافريند، خوشبختى و بدبختى را آفريد. بنابراين، خدا كسى را كه خوشبخت آفريده هرگز دشمن نمى‌دارد، و چنانچه كار بدى انجام دهد كار او را دشمن مى‌دارد و خودش را دشمن نمى‌دارد، و اگر بدبخت [آفريده شده] باشد هرگز او را دوست نمى‌دارد، و چنانچه كار نيكى انجام دهد كار او را دوست مى‌دارد امّا به خاطر سرانجامى كه به سوى آن مى‌رود، خودش را دشمن مى‌دارد. پس، هرگاه خدا چيزى را دوست داشته باشد هرگز منفورش نمى‌دارد، و هرگاه چيزى را منفور بدارد هرگز دوستش نمى‌دارد»."@fa,
+        "1.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «إِنَّ اللّه‌َ خَلَقَ السَّعَادَةَ وَالشَّقَاءَ قَبْلَ أَنْ يَخْلُقَ خَلْقَهُ، فَمَنْ خَلَقَهُ اللّه‌ُ سَعِيداً، لَمْ يُبْغِضْهُ أَبَداً، وَإِنْ عَمِلَ شَرّاً، أَبْغَضَ عَمَلَهُ وَلَمْ يُبْغِضْهُ، وَإِنْ كَانَ شَقِيّاً، لَمْ يُحِبَّهُ أَبَداً، وَإِنْ عَمِلَ صَالِحاً، أَحَبَّ عَمَلَهُ وَأَبْغَضَهُ؛ لِمَا يَصِيرُ إِلَيْهِ، فَإِذَا أَحَبَّ اللّه‌ُ شَيْئاً، لَمْ يُبْغِضْهُ أَبَداً، وَإِذَا أَبْغَضَ شَيْئاً، لَمْ يُحِبَّهُ أَبَداً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Happiness a go:Substance ;
-    rdfs:label "Happiness" .
+ex:happiness a go:substance ;
+    rdfs:label "happiness" .
 
-ex:Misery a go:Substance ;
-    rdfs:label "Misery" .
+ex:misery a go:substance ;
+    rdfs:label "misery" .
 
-ex:Creation a go:Substance ;
-    rdfs:label "Creation" .
+ex:creation a go:substance ;
+    rdfs:label "creation" .
 
-ex:Create_Happiness_Misery ex:before ex:Create_Creation .
+ex:create_happiness_misery ex:before ex:create_creation .
 
-ex:Create_Happiness_Misery a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Happiness , ex:Misery .
+ex:create_happiness_misery a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:happiness , ex:misery .
 
-ex:Create_Creation a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creation .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:create_creation a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creation .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-2> rdf:type owl:ontology .
 
-ex:hateEvent a go:Event ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:HappyCreature .
+ex:hateevent a go:event ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:happycreature .
 
-ex:Allah a go:Substance .
+ex:allah a go:substance .
 
-ex:HappyCreature a go:Substance ;
-    go:hasState ex:HappyState .
+ex:happycreature a go:substance ;
+    go:hasstate ex:happystate .
 
-ex:HappyState a go:Substance ;
-    go:description "Happy" .
+ex:happystate a go:substance ;
+    go:description "happy" .
 
-# Negation of the hate event
-ex:hateEvent a go:Event ;
+# negation of the hate event
+ex:hateevent a go:event ;
     go:negation true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-3> rdf:type owl:ontology .
 
-ex:God a go:Deity .
-ex:Al_Saeed a go:Person .
+ex:god a go:deity .
+ex:al_saeed a go:person .
 
-ex:Work_Al_Saeed a go:Event ;
-    go:HasAgent ex:Al_Saeed .
+ex:work_al_saeed a go:event ;
+    go:hasagent ex:al_saeed .
 
-ex:Doing_Evil a go:Event ;
-    go:HasAgent ex:Al_Saeed .
+ex:doing_evil a go:event ;
+    go:hasagent ex:al_saeed .
 
-ex:Hate_Action a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Work_Al_Saeed ;
-    go:HasCause ex:Doing_Evil .
+ex:hate_action a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:work_al_saeed ;
+    go:hascause ex:doing_evil .
 
-# capturing that God "hates" the work of Al-Saeed when he does evil
-ex:God ex:emotionalAttitude [
-    a ex:Dislike ;
-    ex:target ex:Work_Al_Saeed ;
-    ex:condition ex:Doing_Evil
+# capturing that god "hates" the work of al-saeed when he does evil
+ex:god ex:emotionalattitude [
+    a ex:dislike ;
+    ex:target ex:work_al_saeed ;
+    ex:condition ex:doing_evil
 ] .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-4> rdf:type owl:ontology .
 
-ex:God a go:Deity .
-ex:HappyCreature a go:Substance ;
-    go:hasQuality go:Happiness .
+ex:god a go:deity .
+ex:happycreature a go:substance ;
+    go:hasquality go:happiness .
 
-ex:CommitEvilEvent a go:Event ;
-    go:HasAgent ex:HappyCreature ;
-    go:HasTheme go:Evil .
+ex:commitevilevent a go:event ;
+    go:hasagent ex:happycreature ;
+    go:hastheme go:evil .
 
-# Conditional statement that God does not hate the HappyCreature if it commits evil
-_:condition a go:ConditionalEvent ;
-    go:condition ex:CommitEvilEvent ;
-    go:result [ a go:Negation ;
-                go:HasAgent ex:God ;
-                go:HasTheme ex:HappyCreature ;
-                go:Emotion go:Hate ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/395-5> rdf:type owl:Ontology .
-
-ex:God a go:Agent ;
-    rdfs:label "God" .
-
-ex:Creature a go:Substance ;
-    go:hasQuality ex:Miserable .
-
-ex:Miserable a go:Quality ;
-    go:qualifies ex:Creature .
-
-ex:LoveEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creature .
-
-ex:NotLovingMiserable a go:Negation ;
-    go:negates ex:LoveEvent ;
-    go:condition ex:Miserable .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# conditional statement that god does not hate the happycreature if it commits evil
+_:condition a go:conditionalevent ;
+    go:condition ex:commitevilevent ;
+    go:result [ a go:negation ;
+                go:hasagent ex:god ;
+                go:hastheme ex:happycreature ;
+                go:emotion go:hate ] .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-5> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:MiserableCreation1 ;
-    go:HasTheme ex:Work1 ;
-    ex:hasQuality ex:Righteousness .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:God a go:God ;
-    go:HasTheme ex:Work1 ;   # God loves the work
-    ex:loves ex:eventInstance1 .
+ex:creature a go:substance ;
+    go:hasquality ex:miserable .
 
-ex:MiserableCreation1 a go:Person ;
-    ex:hasAttribute ex:Miserable .
+ex:miserable a go:quality ;
+    go:qualifies ex:creature .
 
-ex:Work1 a go:Substance ;
-    ex:isCreatedBy ex:MiserableCreation1 .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:loveevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creature .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/395-7> rdf:type owl:Ontology .
-
-ex:event_hate_1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:work_1 .
-
-ex:God a go:Substance .
-
-ex:work_1 a go:Substance ;
-    go:HasPossessor ex:creature_miserable_1 .
-
-ex:creature_miserable_1 a go:Substance ;
-    go:hasProperty "miserable" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:notlovingmiserable a go:negation ;
+    go:negates ex:loveevent ;
+    go:condition ex:miserable .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-6> rdf:type owl:ontology .
 
-ex:eventLove a go:Event ;
-    go:HasAgent go:God ;
-    go:HasTheme ex:workOfWretchedCreation .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:miserablecreation1 ;
+    go:hastheme ex:work1 ;
+    ex:hasquality ex:righteousness .
 
-ex:workOfWretchedCreation a go:Work ;
-    go:HasCreator ex:wretchedCreation .
+ex:god a go:god ;
+    go:hastheme ex:work1 ;   # god loves the work
+    ex:loves ex:eventinstance1 .
 
-ex:wretchedCreation a go:Creagen ;
-    go:hasProperty ex:Wretchedness .
+ex:miserablecreation1 a go:person ;
+    ex:hasattribute ex:miserable .
 
-ex:eventReturn a go:Event ;
-    go:HasAgent ex:workOfWretchedCreation ;
-    go:HasTheme go:God .
-
-ex:eventLove go:hasCause ex:eventReturn .
-go:Event rdfs:label "رخداد"@fa.
+ex:work1 a go:substance ;
+    ex:iscreatedby ex:miserablecreation1 .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-7> rdf:type owl:ontology .
 
-ex:God a go:Agent .
-ex:Something a go:Substance .
+ex:event_hate_1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:work_1 .
 
-ex:LoveEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Something .
+ex:god a go:substance .
 
-ex:HateEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Something ;
-    owl:negativePropertyAssertion [ 
-        owl:sourceIndividual ex:HateEvent ;
-        owl:assertionProperty go:exists ;
-        owl:targetIndividual false
+ex:work_1 a go:substance ;
+    go:haspossessor ex:creature_miserable_1 .
+
+ex:creature_miserable_1 a go:substance ;
+    go:hasproperty "miserable" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/395-8> rdf:type owl:ontology .
+
+ex:eventlove a go:event ;
+    go:hasagent go:god ;
+    go:hastheme ex:workofwretchedcreation .
+
+ex:workofwretchedcreation a go:work ;
+    go:hascreator ex:wretchedcreation .
+
+ex:wretchedcreation a go:creagen ;
+    go:hasproperty ex:wretchedness .
+
+ex:eventreturn a go:event ;
+    go:hasagent ex:workofwretchedcreation ;
+    go:hastheme go:god .
+
+ex:eventlove go:hascause ex:eventreturn .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/395-9> rdf:type owl:ontology .
+
+ex:god a go:agent .
+ex:something a go:substance .
+
+ex:loveevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:something .
+
+ex:hateevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:something ;
+    owl:negativepropertyassertion [ 
+        owl:sourceindividual ex:hateevent ;
+        owl:assertionproperty go:exists ;
+        owl:targetindividual false
     ] .
 
-ex:ConditionalStatement a go:Condition ;
-    go:HasCondition [
-        a go:Event ;
-        go:HasAgent ex:God ;
-        go:HasTheme ex:Something ;
-        a ex:LoveEvent
+ex:conditionalstatement a go:condition ;
+    go:hascondition [
+        a go:event ;
+        go:hasagent ex:god ;
+        go:hastheme ex:something ;
+        a ex:loveevent
     ] ;
-    go:HasConsequence [
-        a go:Event ;
-        go:HasAgent ex:God ;
-        go:HasTheme ex:Something ;
-        a ex:HateEvent ;
-        owl:negativePropertyAssertion [ 
-            owl:sourceIndividual ex:HateEvent ;
-            owl:assertionProperty go:exists ;
-            owl:targetIndividual false
+    go:hasconsequence [
+        a go:event ;
+        go:hasagent ex:god ;
+        go:hastheme ex:something ;
+        a ex:hateevent ;
+        owl:negativepropertyassertion [ 
+            owl:sourceindividual ex:hateevent ;
+            owl:assertionproperty go:exists ;
+            owl:targetindividual false
         ]
     ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/395-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/395-10> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Something a go:Substance .
+ex:god a go:substance .
+ex:something a go:substance .
 
-ex:HateEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Something .
+ex:hateevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:something .
 
-ex:LoveEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Something .
+ex:loveevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:something .
 
-# Conditional rule representation (informal comment): if HateEvent occurs, then LoveEvent does not occur for the same theme.
-# This is captured semantically, but logically would require a rule beyond RDF triples.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# conditional rule representation (informal comment): if hateevent occurs, then loveevent does not occur for the same theme.
+# this is captured semantically, but logically would require a rule beyond rdf triples.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

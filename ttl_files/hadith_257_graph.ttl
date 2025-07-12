@@ -1,57 +1,60 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/257#> .
+@prefix ex: <http://etratnet.ir/graph/example/257#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/257> rdf:type go:ontology ;
+        go:hascontent "8.  «از انديشيدن درباره [ذات] خداوند بپرهيزيد؛ ولى هرگاه خواستيد عظمت او را ببينيد، به عظمت آفرينش او بنگريد»."@fa,
+        "8.  عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: «إِيَّاكُمْ وَالتَّفَكُّرَ فِي اللّه‌ِ، وَلكِنْ إِذَا أَرَدْتُمْ أَنْ تَنْظُرُوا إِلى عَظَمَتِهِ، فَانْظُرُوا إِلى عَظِيمِ خَلْقِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/257-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/257-1> rdf:type owl:ontology .
 
-ex:avoidThinkingEvent a go:Action ;
-    go:HasAgent ex:human1 ;
-    go:HasTheme ex:thinkingAboutGodAloneWithoutUnderstanding .
+ex:avoidthinkingevent a go:action ;
+    go:hasagent ex:human1 ;
+    go:hastheme ex:thinkingaboutgodalonewithoutunderstanding .
 
-ex:human1 a go:Human .
-ex:god1 a go:Deity .
+ex:human1 a go:human .
+ex:god1 a go:deity .
 
-ex:thinkingAboutGodAloneWithoutUnderstanding a go:CognitiveProcess ;
-    go:HasTheme ex:god1 ;
-    go:Context "alone without understanding" .
+ex:thinkingaboutgodalonewithoutunderstanding a go:cognitiveprocess ;
+    go:hastheme ex:god1 ;
+    go:context "alone without understanding" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/257-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/257-2> rdf:type owl:ontology .
 
-ex:Human a go:Agent .
-ex:God a go:Deity .
-ex:GreatnessOfGod a go:Property ;
-    go:inheresIn ex:God .
-ex:GreatCreationOfGod a go:Object ;
-    go:createdBy ex:God ;
-    go:hasQuality ex:Greatness .
+ex:human a go:agent .
+ex:god a go:deity .
+ex:greatnessofgod a go:property ;
+    go:inheresin ex:god .
+ex:greatcreationofgod a go:object ;
+    go:createdby ex:god ;
+    go:hasquality ex:greatness .
 
-ex:WantToLookAtGreatness a go:DesireEvent ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:GreatnessOfGod .
+ex:wanttolookatgreatness a go:desireevent ;
+    go:hasagent ex:human ;
+    go:hastheme ex:greatnessofgod .
 
-ex:LookAtGreatness a go:PerceptionEvent ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:GreatnessOfGod .
+ex:lookatgreatness a go:perceptionevent ;
+    go:hasagent ex:human ;
+    go:hastheme ex:greatnessofgod .
 
-ex:LookAtCreation a go:PerceptionEvent ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:GreatCreationOfGod .
+ex:lookatcreation a go:perceptionevent ;
+    go:hasagent ex:human ;
+    go:hastheme ex:greatcreationofgod .
 
-# Logical condition expressed in ontology (informally, not actual RDF logic):
-# To satisfy looking at greatness, human must look at creation.
-go:Agent rdfs:label "عامل"@fa.
+# logical condition expressed in ontology (informally, not actual rdf logic):
+# to satisfy looking at greatness, human must look at creation.
+go:agent rdfs:label "عامل"@fa.

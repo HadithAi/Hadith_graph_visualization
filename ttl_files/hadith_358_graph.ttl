@@ -1,85 +1,88 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/358#> .
+@prefix ex: <http://etratnet.ir/graph/example/358#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/358> rdf:type go:ontology ;
+        go:hascontent "2.  امام صادق عليه‌السلام درباره فرموده خداى عز و جل كه: «و هر چيزى نابود شدنى است مگر روى او»فرمود: «كسى كه با آنچه بدان فرمان داده شده است ـ يعنى اطاعت كردن از محمد صلى‌الله‌عليه‌و‌آله ـ نزد خدا رود، او همان رويى است كه نابود نمى‌شود. [خداى] اين چنين فرموده است: «هر كه از پيامبر فرمان برد از خدا فرمان برده است»»."@fa,
+        "2.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام فِي قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «كُلُّ شَىْ‌ءٍ هَالِكٌ إِلاَّ وَجْهَهُ» قَالَ: «مَنْ أَتَى اللّه‌َ بِمَا أُمِرَ بِهِ مِنْ طَاعَةِ مُحَمَّدٍ صلى‌الله‌عليه‌و‌آله، فَهُوَ الْوَجْهُ الَّذِي لاَ يَهْلِكُ، وَكَذلِكَ قَالَ: «مَنْ يُطِعِ الرَّسُولَ فَقَدْ أَطَاعَ اللَّهَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/358-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/358-1> rdf:type owl:ontology .
 
-ex:PerishableState a go:State ;
-    go:HasTheme ex:Everything .
+ex:perishablestate a go:state ;
+    go:hastheme ex:everything .
 
-ex:Everything a go:PhysicalEntity .
+ex:everything a go:physicalentity .
 
-ex:GodAlmighty a go:Deity ;
-    rdfs:label "Allah Almighty"@en .
+ex:godalmighty a go:deity ;
+    rdfs:label "allah almighty"@en .
 
-ex:FaceOfGod a go:PhysicalEntity ;
-    go:partOf ex:GodAlmighty ;
-    rdfs:label "Face of God"@en .
+ex:faceofgod a go:physicalentity ;
+    go:partof ex:godalmighty ;
+    rdfs:label "face of god"@en .
 
-# Exception statement: Everything is perishable except the Face of God
-ex:PerishableState ex:Excepts ex:FaceOfGod .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/358-2> rdf:type owl:Ontology .
-
-ex:ComeToGodEvent1 a go:Event ;
-    go:HasAgent ex:Agent1 ;
-    go:HasTheme ex:ObedienceToMuhammad ;
-    go:HasRecipient go:God .
-
-ex:Agent1 a go:Agent ;
-    ex:hasCharacteristic ex:ImmortalFace .
-
-ex:ObedienceToMuhammad a go:Action ;
-    ex:commandedBy ex:Muhammad .
-
-ex:Muhammad a go:Agent .
-
-go:God a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# exception statement: everything is perishable except the face of god
+ex:perishablestate ex:excepts ex:faceofgod .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/358-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/358-2> rdf:type owl:ontology .
 
-ex:Messenger a go:Agent ;
-    rdfs:label "Messenger"@en .
+ex:cometogodevent1 a go:event ;
+    go:hasagent ex:agent1 ;
+    go:hastheme ex:obediencetomuhammad ;
+    go:hasrecipient go:god .
 
-ex:Allah a go:Agent ;
-    rdfs:label "Allah"@en .
+ex:agent1 a go:agent ;
+    ex:hascharacteristic ex:immortalface .
 
-ex:ObeyMessenger a go:Obedience ;
-    go:HasAgent ex:AnyPerson ;
-    go:HasTheme ex:Messenger .
+ex:obediencetomuhammad a go:action ;
+    ex:commandedby ex:muhammad .
 
-ex:ObeyAllah a go:Obedience ;
-    go:HasAgent ex:AnyPerson ;
-    go:HasTheme ex:Allah .
+ex:muhammad a go:agent .
 
-# Logical implication node
-_:implicationNode a go:LogicalRelation ;
+go:god a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/358-3> rdf:type owl:ontology .
+
+ex:messenger a go:agent ;
+    rdfs:label "messenger"@en .
+
+ex:allah a go:agent ;
+    rdfs:label "allah"@en .
+
+ex:obeymessenger a go:obedience ;
+    go:hasagent ex:anyperson ;
+    go:hastheme ex:messenger .
+
+ex:obeyallah a go:obedience ;
+    go:hasagent ex:anyperson ;
+    go:hastheme ex:allah .
+
+# logical implication node
+_:implicationnode a go:logicalrelation ;
     go:implies [
-        a go:Condition ;
-        go:hasEvent ex:ObeyMessenger
+        a go:condition ;
+        go:hasevent ex:obeymessenger
     ] ;
-    go:resultsIn [
-        a go:Condition ;
-        go:hasEvent ex:ObeyAllah
+    go:resultsin [
+        a go:condition ;
+        go:hasevent ex:obeyallah
     ] .
-go:Agent rdfs:label "عامل"@fa.
+go:agent rdfs:label "عامل"@fa.

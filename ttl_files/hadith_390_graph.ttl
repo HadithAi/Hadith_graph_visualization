@@ -1,181 +1,184 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/390#> .
+@prefix ex: <http://etratnet.ir/graph/example/390#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/390> rdf:type go:ontology ;
+        go:hascontent "4.  «خداوند دو اراده و خواست دارد: اراده حتمى و اراده عزم. نهى مى‌كند در حالى كه مى‌خواهد [آنچه نهى كرده انجام پذيرد] و فرمان مى‌دهد در حالى كه نمى‌خواهد. مگر نمى‌بينى كه آدم و جفت او را از خوردن درخت نهى كرد ولى خواستش اين بود كه از آن بخورند، كه اگر نخواسته بود بخورند قطعا خواست آن دو بر خواست خداوند متعال چيره نمى‌آمد؛ و به ابراهيم فرمان داد كه اسحاق را قربانى كند ولى خواستش اين بود كه او را سر نبرد، كه اگر خواسته بود، قطعا خواست ابراهيم بر خواست خداوند متعال چيره نمى‌آمد»."@fa,
+        "4.  عَنْ أَبِي الْحَسَنِ عليه‌السلام، قَالَ: «إِنَّ لِلّهِ اِءِرَادَتَيْنِ وَمَشِيئَتَيْنِ: إِرَادَةَ حَتْمٍ، وَإِرَادَةَ عَزْمٍ، يَنْهى وَهُوَ يَشَاءُ، وَيَأْمُرُ وَهُوَ لاَ يَشَاءُ؛ أَ وَمَا رَأَيْتَ أَنَّهُ نَهى آدَمَ وَزَوْجَتَهُ أَنْ يَأْكُلاَ مِنَ الشَّجَرَةِ وَشَاءَ ذلِكَ؟ وَلَوْ لَمْ يَشَأْ أَنْ يَأْكُلاَ، لَمَا غَلَبَتْ مَشِيئَتُهُمَا مَشِيئَةَ اللّه‌ِ تَعَالى، وَأَمَرَ إِبْرَاهِيمَ أَنْ يَذْبَحَ إِسْحَاقَ وَلَمْ يَشَأْ أَنْ يَذْبَحَهُ، وَلَوْ شَاءَ، لَمَا غَلَبَتْ مَشِيئَةُ إِبْرَاهِيمَ مَشِيئَةَ اللّه‌ِ تَعَالى»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-1> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    go:hasAttribute ex:Will1 , ex:Will2 , ex:Intention1 , ex:Intention2 .
+ex:god a go:agent ;
+    go:hasattribute ex:will1 , ex:will2 , ex:intention1 , ex:intention2 .
 
-ex:Will1 a go:Concept .
-ex:Will2 a go:Concept .
-ex:Intention1 a go:Concept .
-ex:Intention2 a go:Concept .
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/390-2> rdf:type owl:Ontology .
-
-ex:DeterministicWill a go:Concept .
-ex:Prohibition a go:Concept .
-
-ex:DeterministicWill owl:equivalentClass ex:Prohibition .
+ex:will1 a go:concept .
+ex:will2 a go:concept .
+ex:intention1 a go:concept .
+ex:intention2 a go:concept .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-2> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:NecessaryWill a go:Substance ;
-    rdfs:label "Necessary Will"@en .
+ex:deterministicwill a go:concept .
+ex:prohibition a go:concept .
 
-ex:CommandingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    rdfs:label "God commands"@en .
-
-ex:NotDesiringEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:NecessaryWill ;
-    rdfs:label "God does not desire in necessary will"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:deterministicwill owl:equivalentclass ex:prohibition .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-3> rdf:type owl:ontology .
 
-ex:Willpower a go:Concept .
-ex:Determination a go:Concept .
+ex:god a go:substance .
+ex:necessarywill a go:substance ;
+    rdfs:label "necessary will"@en .
 
-ex:Willpower owl:equivalentClass ex:Determination .
+ex:commandingevent a go:event ;
+    go:hasagent ex:god ;
+    rdfs:label "god commands"@en .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/390-5> rdf:type owl:Ontology .
-
-ex:God a go:Substance .
-ex:SupremeWill a go:thematicArea .
-
-ex:ForbiddingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasLocation ex:SupremeWill .
-
-ex:WillingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasLocation ex:SupremeWill .
-
-ex:NoWilling a go:Negation ;
-    go:Negates ex:WillingEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:notdesiringevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:necessarywill ;
+    rdfs:label "god does not desire in necessary will"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-4> rdf:type owl:ontology .
 
-ex:ProhibitionEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Adam , ex:AdamsWife ;
-    go:HasPatient ex:Tree ;
-    go:EventDescription "God forbade Adam and his wife from eating the tree." .
+ex:willpower a go:concept .
+ex:determination a go:concept .
 
-ex:DivineWillEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:Causes ex:ProhibitionEvent ;
-    go:EventDescription "God willed the prohibition." .
-
-ex:God a go:Deity .
-ex:Adam a go:Person .
-ex:AdamsWife a go:Person .
-ex:Tree a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:willpower owl:equivalentclass ex:determination .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-5> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:substance .
+ex:supremewill a go:thematicarea .
 
-ex:Adam a go:Substance ;
-    rdfs:label "Adam" .
+ex:forbiddingevent a go:event ;
+    go:hasagent ex:god ;
+    go:haslocation ex:supremewill .
 
-ex:Adam_Wife a go:Substance ;
-    rdfs:label "Adam's wife" .
+ex:willingevent a go:event ;
+    go:hasagent ex:god ;
+    go:haslocation ex:supremewill .
 
-ex:Tree a go:Substance ;
-    rdfs:label "Tree" .
-
-ex:Eating_Event a go:Event ;
-    go:HasAgent ex:Adam , ex:Adam_Wife ;
-    go:HasTheme ex:Tree ;
-    go:CausedBy ex:God_Will .
-
-ex:God_Will a go:Will ;
-    go:hasHolder ex:God ;
-    go:concernsEvent ex:Eating_Event .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:nowilling a go:negation ;
+    go:negates ex:willingevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-6> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Abraham a go:Substance .
-ex:Isaac a go:Substance .
+ex:prohibitionevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:adam , ex:adamswife ;
+    go:haspatient ex:tree ;
+    go:eventdescription "god forbade adam and his wife from eating the tree." .
 
-ex:CommandSacrificeEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Abraham ;
-    go:HasTheme ex:SacrificeIsaacAction .
+ex:divinewillevent a go:event ;
+    go:hasagent ex:god ;
+    go:causes ex:prohibitionevent ;
+    go:eventdescription "god willed the prohibition." .
 
-ex:SacrificeIsaacAction a go:Event ;
-    go:HasAgent ex:Abraham ;
-    go:HasTheme ex:Isaac .
-
-ex:AbrahamUnwillingToSacrifice a go:Event ;
-    go:HasAgent ex:Abraham ;
-    go:HasTheme ex:SacrificeIsaacAction ;
-    go:HasProperty go:Unwillingness .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity .
+ex:adam a go:person .
+ex:adamswife a go:person .
+ex:tree a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/390-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/390-7> rdf:type owl:ontology .
 
-ex:God a go:DivinePerson ;
-    go:hasWill ex:Will_God .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:Ibrahim a go:Person ;
-    go:hasWill ex:Will_Ibrahim .
+ex:adam a go:substance ;
+    rdfs:label "adam" .
 
-ex:Will_God a go:Will .
-ex:Will_Ibrahim a go:Will .
+ex:adam_wife a go:substance ;
+    rdfs:label "adam's wife" .
 
-ex:PrevailingEvent_1 a go:PrevailingEvent ;
-    go:HasAgent ex:Will_Ibrahim ;
-    go:HasTheme ex:Will_God .
+ex:tree a go:substance ;
+    rdfs:label "tree" .
+
+ex:eating_event a go:event ;
+    go:hasagent ex:adam , ex:adam_wife ;
+    go:hastheme ex:tree ;
+    go:causedby ex:god_will .
+
+ex:god_will a go:will ;
+    go:hasholder ex:god ;
+    go:concernsevent ex:eating_event .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-8> rdf:type owl:ontology .
+
+ex:god a go:substance .
+ex:abraham a go:substance .
+ex:isaac a go:substance .
+
+ex:commandsacrificeevent a go:event ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:abraham ;
+    go:hastheme ex:sacrificeisaacaction .
+
+ex:sacrificeisaacaction a go:event ;
+    go:hasagent ex:abraham ;
+    go:hastheme ex:isaac .
+
+ex:abrahamunwillingtosacrifice a go:event ;
+    go:hasagent ex:abraham ;
+    go:hastheme ex:sacrificeisaacaction ;
+    go:hasproperty go:unwillingness .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/390-9> rdf:type owl:ontology .
+
+ex:god a go:divineperson ;
+    go:haswill ex:will_god .
+
+ex:ibrahim a go:person ;
+    go:haswill ex:will_ibrahim .
+
+ex:will_god a go:will .
+ex:will_ibrahim a go:will .
+
+ex:prevailingevent_1 a go:prevailingevent ;
+    go:hasagent ex:will_ibrahim ;
+    go:hastheme ex:will_god .

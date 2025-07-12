@@ -1,273 +1,276 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/229#> .
+@prefix ex: <http://etratnet.ir/graph/example/229#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/229> rdf:type go:ontology ;
+        go:hascontent "1.  «امير المؤمنين عليه‌السلام فرمود: خدا را به خدا بشناسيد و پيامبر را به پيام او، و اولو الامر را از طريق فرمان دادن [آنها] به معروف و دادگرى و نيكوكارى». معناى اين فرموده او كه: «خدا را به خدا بشناسيد» اين است كه خداوند اشخاص و انوار و جواهر و اعيان را آفريد. مراد از اعيان، تَن‌هاست، و از جواهر جان‌ها؛ و خداى عز و جل نه به تن شباهت دارد و نه به جان. هيچ كس را در آفريدن جانِ حسّاس و دريابنده، نقشى و تأثيرى نيست. او به تنهايى جان‌ها و تن‌ها را آفريد. پس، هرگاه كسى اين دو شباهت، يعنى شباهت به تن‌ها و جان‌ها را از خدا نفى كرد، در حقيقت، خدا را به خدا شناخته است، اما اگر او را به جان يا تن و يا نور مانند كرد خدا را به خدا نشناخته است»."@fa,
+        "1. عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام: قَالَ: «قَالَ أَمِيرُ الْمُؤمِنِينَ عليه‌السلام: اعْرِفُوا اللّه‌َ بِاللّه‌ِ، وَالرَّسُولَ بِالرِّسَالَةِ، وَأُولِي الْأَمْرِ بِالْأَمْر بِالْمَعْرُوفِ وَالْعَدْلِ وَالاْءِحْسَانِ». وَ مَعْنى قَوْلِهِ عليه‌السلام: «اعْرِفُوا اللّه‌َ بِاللّه‌ِ» يَعْنِي أَنَّ اللّه‌َ خَلَقَ الْأَشْخَاصَ وَالْأَنْوَارَ وَالْجَوَاهِرَ وَالْأَعْيَانَ، فَالْأَعْيَانُ: الْأَبْدَانُ، وَالْجَوَاهِرُ: الْأَرْوَاحُ، وَهُوَ ـ جَلَّ وَعَزَّ ـ لاَ يُشْبِهُ جِسْماً وَلاَ رُوحاً، وَلَيْسَ لِأَحَدٍ فِي خَلْقِ الرُّوحِ الْحَسَّاسِ الدَّرَّاكِ أَمْرٌ وَلاَ سَبَبٌ، هُوَ الْمُتَفَرِّدُ بِخَلْقِ الْأَرْوَاحِ وَالْأَجْسَامِ، فَإِذَا نَفى عَنْهُ الشَّبَهَيْنِ: شَبَهَ الْأَبْدَانِ، وَشَبَهَ الْأَرْوَاحِ، فَقَدْ عَرَفَ اللّه‌َ بِاللّه‌ِ، وَإِذَا شَبَّهَهُ بِالرُّوحِ أَوِ الْبَدَنِ أَوِ النُّورِ، فَلَمْ يَعْرِفِ اللّه‌َ بِاللّه‌ِ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-1> rdf:type owl:ontology .
 
-ex:KnowAllahEvent a go:KnowEvent ;
-    go:HasAgent ex:YouPlural ;
-    go:HasTheme ex:Allah ;
-    go:HasInstrument ex:Allah .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/229-2> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasAgent ex:Group_They ;
-    go:HasTheme ex:Messenger ;
-    go:HasInstrument ex:Message .
-
-ex:Messenger a go:person .
-ex:Message a go:message .
-ex:Group_They a go:group .
-go:Event rdfs:label "رخداد"@fa.
+ex:knowallahevent a go:knowevent ;
+    go:hasagent ex:youplural ;
+    go:hastheme ex:allah ;
+    go:hasinstrument ex:allah .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-2> rdf:type owl:ontology .
 
-ex:KnowingEvent1 rdf:type go:Event ;
-    go:HasAgent ex:GenericPerson ;
-    go:HasTheme ex:AuthoritiesKnownByMeans .
+ex:event1 a go:event ;
+    go:hasagent ex:group_they ;
+    go:hastheme ex:messenger ;
+    go:hasinstrument ex:message .
 
-ex:GenericPerson rdf:type go:Agent .
-
-ex:AuthoritiesKnownByMeans rdf:type go:ConceptualEntity ;
-    go:HasPart ex:AlAmrAlMarouf , ex:Justice , ex:Kindness .
-
-ex:AlAmrAlMarouf rdf:type go:Concept ;
-    rdfs:label "Al-Amr Al-Marouf (Known Matter)"@en .
-
-ex:Justice rdf:type go:Concept ;
-    rdfs:label "Justice"@en .
-
-ex:Kindness rdf:type go:Concept ;
-    rdfs:label "Kindness"@en .
-
-ex:Authorities rdf:type go:Authority ;
-    rdfs:label "Uli Al-Amr (Authorities)"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:messenger a go:person .
+ex:message a go:message .
+ex:group_they a go:group .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-3> rdf:type owl:ontology .
 
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:People , ex:Lights , ex:Jewels , ex:Essences .
+ex:knowingevent1 rdf:type go:event ;
+    go:hasagent ex:genericperson ;
+    go:hastheme ex:authoritiesknownbymeans .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:genericperson rdf:type go:agent .
 
-ex:People a go:Substance ;
-    rdfs:label "People"@en .
+ex:authoritiesknownbymeans rdf:type go:conceptualentity ;
+    go:haspart ex:alamralmarouf , ex:justice , ex:kindness .
 
-ex:Lights a go:Substance ;
-    rdfs:label "Lights"@en .
+ex:alamralmarouf rdf:type go:concept ;
+    rdfs:label "al-amr al-marouf (known matter)"@en .
 
-ex:Jewels a go:Substance ;
-    rdfs:label "Jewels"@en .
+ex:justice rdf:type go:concept ;
+    rdfs:label "justice"@en .
 
-ex:Essences a go:Substance ;
-    rdfs:label "Essences"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:kindness rdf:type go:concept ;
+    rdfs:label "kindness"@en .
+
+ex:authorities rdf:type go:authority ;
+    rdfs:label "uli al-amr (authorities)"@en .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-4> rdf:type owl:ontology .
 
-ex:Al-Ayan a go:Substance ;
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:people , ex:lights , ex:jewels , ex:essences .
+
+ex:god a go:substance ;
+    rdfs:label "god"@en .
+
+ex:people a go:substance ;
+    rdfs:label "people"@en .
+
+ex:lights a go:substance ;
+    rdfs:label "lights"@en .
+
+ex:jewels a go:substance ;
+    rdfs:label "jewels"@en .
+
+ex:essences a go:substance ;
+    rdfs:label "essences"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/229-5> rdf:type owl:ontology .
+
+ex:al-ayan a go:substance ;
     rdfs:label "الأعيان" .
 
-ex:Al-Abdan a go:Substance ;
+ex:al-abdan a go:substance ;
     rdfs:label "الأبدان" .
 
-ex:Al-Ayan owl:sameAs ex:Al-Abdan .
-go:Substance rdfs:label "شی"@fa.
+ex:al-ayan owl:sameas ex:al-abdan .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-6> rdf:type owl:ontology .
 
-ex:Jewels a go:Substance ;
-    go:equivalentTo ex:Souls .
+ex:jewels a go:substance ;
+    go:equivalentto ex:souls .
 
-ex:Souls a go:Substance .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/229-7> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    go:DoesNotResemble ex:Body , ex:Spirit .
-
-ex:Body a go:Substance .
-ex:Spirit a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:souls a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-7> rdf:type owl:ontology .
 
-# Entities
-ex:NoOne a go:Person .
-ex:SensitiveConsciousSoul a go:Substance ;
-    go:hasProperty ex:Sensitivity ;
-    go:hasProperty ex:Consciousness .
-ex:Anything a go:Object .
-ex:Cause a go:Object .
+ex:god a go:deity ;
+    go:doesnotresemble ex:body , ex:spirit .
 
-# Event: Possession
-ex:PossessionEvent a go:Event ;
-    go:HasAgent ex:NoOne ;
-    go:HasTheme ex:Anything , ex:Cause ;
-    go:pertainsTo ex:CreationOfSensitiveConsciousSoul .
-
-# Creation Event
-ex:CreationOfSensitiveConsciousSoul a go:Event ;
-    go:HasTheme ex:SensitiveConsciousSoul .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:body a go:substance .
+ex:spirit a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-8> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+# entities
+ex:noone a go:person .
+ex:sensitiveconscioussoul a go:substance ;
+    go:hasproperty ex:sensitivity ;
+    go:hasproperty ex:consciousness .
+ex:anything a go:object .
+ex:cause a go:object .
 
-ex:Souls a go:Substance ;
-    rdfs:label "Souls" .
+# event: possession
+ex:possessionevent a go:event ;
+    go:hasagent ex:noone ;
+    go:hastheme ex:anything , ex:cause ;
+    go:pertainsto ex:creationofsensitiveconscioussoul .
 
-ex:Bodies a go:Substance ;
-    rdfs:label "Bodies" .
-
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Souls, ex:Bodies ;
-    rdfs:label "Creation of souls and bodies" .
-
-ex:God ex:UniqueCreatorOf ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/229-10> rdf:type owl:Ontology .
-
-ex:NegationOfTwoSimilarities a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SimilarityOfBodies, ex:SimilarityOfSpirits .
-
-ex:God a go:Substance .
-
-ex:SimilarityOfBodies a go:Quality ;
-    go:relatedTo ex:Bodies .
-
-ex:SimilarityOfSpirits a go:Quality ;
-    go:relatedTo ex:Spirits .
-
-ex:Bodies a go:Substance .
-
-ex:Spirits a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+# creation event
+ex:creationofsensitiveconscioussoul a go:event ;
+    go:hastheme ex:sensitiveconscioussoul .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-9> rdf:type owl:ontology .
 
-:Person1 a go:agent ;
-    rdfs:label "Person" .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-:Bodies a go:Substance ;
-    rdfs:label "Bodies" .
+ex:souls a go:substance ;
+    rdfs:label "souls" .
 
-:Spirits a go:Substance ;
-    rdfs:label "Spirits" .
+ex:bodies a go:substance ;
+    rdfs:label "bodies" .
 
-:God a go:agent ;
-    rdfs:label "God" .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:souls, ex:bodies ;
+    rdfs:label "creation of souls and bodies" .
 
-:NegationEvent1 a ex:NegationEvent ;
-    go:HasAgent :Person1 ;
-    go:HasTheme :Bodies , :Spirits ;
-    ex:NegationAbout :God .
-
-:KnowledgeEvent1 a ex:KnowledgeEvent ;
-    go:HasAgent :Person1 ;
-    go:HasTheme :God ;
-    ex:KnowledgeBy :God .
-
-:ConditionalRelation1 a ex:ConditionalRelation ;
-    ex:IfEvent :NegationEvent1 ;
-    ex:ThenEvent :KnowledgeEvent1 .
-go:Substance rdfs:label "شی"@fa.
+ex:god ex:uniquecreatorof ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/229-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/229-10> rdf:type owl:ontology .
 
-ex:human a go:Agent ;
+ex:negationoftwosimilarities a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:similarityofbodies, ex:similarityofspirits .
+
+ex:god a go:substance .
+
+ex:similarityofbodies a go:quality ;
+    go:relatedto ex:bodies .
+
+ex:similarityofspirits a go:quality ;
+    go:relatedto ex:spirits .
+
+ex:bodies a go:substance .
+
+ex:spirits a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/229-11> rdf:type owl:ontology .
+
+:person1 a go:agent ;
+    rdfs:label "person" .
+
+:bodies a go:substance ;
+    rdfs:label "bodies" .
+
+:spirits a go:substance ;
+    rdfs:label "spirits" .
+
+:god a go:agent ;
+    rdfs:label "god" .
+
+:negationevent1 a ex:negationevent ;
+    go:hasagent :person1 ;
+    go:hastheme :bodies , :spirits ;
+    ex:negationabout :god .
+
+:knowledgeevent1 a ex:knowledgeevent ;
+    go:hasagent :person1 ;
+    go:hastheme :god ;
+    ex:knowledgeby :god .
+
+:conditionalrelation1 a ex:conditionalrelation ;
+    ex:ifevent :negationevent1 ;
+    ex:thenevent :knowledgeevent1 .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/229-12> rdf:type owl:ontology .
+
+ex:human a go:agent ;
     rdfs:label "human" .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:spirit a go:Substance ;
+ex:spirit a go:substance ;
     rdfs:label "spirit" .
 
-ex:body a go:Substance ;
+ex:body a go:substance ;
     rdfs:label "body" .
 
-ex:light a go:Substance ;
+ex:light a go:substance ;
     rdfs:label "light" .
 
-ex:compareEvent a go:Process ;
-    rdfs:label "comparison of God by human" ;
-    go:hasAgent ex:human ;
-    go:hasTheme ex:God ;
-    go:hasTheme ex:spirit, ex:body, ex:light .
+ex:compareevent a go:process ;
+    rdfs:label "comparison of god by human" ;
+    go:hasagent ex:human ;
+    go:hastheme ex:god ;
+    go:hastheme ex:spirit, ex:body, ex:light .
 
-ex:notKnowEvent a go:Process ;
-    rdfs:label "human does not know God" ;
-    go:hasAgent ex:human ;
-    go:hasTheme ex:God ;
-    go:hasLogicalNegation ex:know .
+ex:notknowevent a go:process ;
+    rdfs:label "human does not know god" ;
+    go:hasagent ex:human ;
+    go:hastheme ex:god ;
+    go:haslogicalnegation ex:know .
 
-ex:know a go:Process ;
-    rdfs:label "knowing God" .
+ex:know a go:process ;
+    rdfs:label "knowing god" .
 
-# The condition linking compareEvent causing notKnowEvent
-ex:compareEvent go:hasConsequence ex:notKnowEvent .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# the condition linking compareevent causing notknowevent
+ex:compareevent go:hasconsequence ex:notknowevent .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

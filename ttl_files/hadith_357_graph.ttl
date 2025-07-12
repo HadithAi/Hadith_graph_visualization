@@ -1,48 +1,51 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/357#> .
+@prefix ex: <http://etratnet.ir/graph/example/357#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/357> rdf:type go:ontology ;
+        go:hascontent "1.  از امام صادق عليه‌السلام درباره اين سخن خداوند ـ تبارك و تعالى ـ كه مى‌فرمايد: «هر چيزى نابود شونده است مگر روى او» پرسيده شد. حضرت فرمود: «[مردم يا مخالفان] درباره آن چه مى‌گويند؟» عرض كردم: مى‌گويند: هر چيزى از بين مى‌رود بجز روى خدا. فرمود: «سبحان اللّه‌! سخن دُشخوارى گفته‌اند. مقصود از روى خدا، جهتى است كه از آن به سوى خدا مى‌روند»."@fa,
+        "1.  سُئِلَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ تَبَارَكَ وَتَعَالى: «كُلُّ شَىْ‌ءٍ هَالِكٌ إِلاَّ وَجْهَهُ»فَقَالَ: «مَا يَقُولُونَ فِيهِ؟» قُلْتُ: يَقُولُونَ: يَهْلِكُ كُلُّ شَيْءٍ إِلاَّ وَجْهَ اللّه‌ِ، فَقَالَ: «سُبْحَانَ اللّه‌ِ! لَقَدْ قَالُوا قَوْلاً عَظِيماً، إِنَّمَا عَنى بِذلِكَ وَجْهَ اللّه‌ِ الَّذِي يُؤتى مِنْهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/357-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/357-1> rdf:type owl:ontology .
 
-ex:PerishEvent a go:Event .
+ex:perishevent a go:event .
 
-ex:Everything a go:entity .
-ex:FaceOfGod a go:entity .
-ex:God a go:entity .
+ex:everything a go:entity .
+ex:faceofgod a go:entity .
+ex:god a go:entity .
 
-ex:FaceOfGod go:isPartOf ex:God .
+ex:faceofgod go:ispartof ex:god .
 
-ex:PerishEvent go:HasTheme ex:Everything .
+ex:perishevent go:hastheme ex:everything .
 
-# Exception: FaceOfGod does not perish
-# This can be modeled by stating that FaceOfGod is not a theme of PerishEvent.
+# exception: faceofgod does not perish
+# this can be modeled by stating that faceofgod is not a theme of perishevent.
 
-# Alternatively, we can define that FaceOfGod is exempt from perish state
+# alternatively, we can define that faceofgod is exempt from perish state
 
-ex:FaceOfGod ex:isImmortal true .
-go:Event rdfs:label "رخداد"@fa.
+ex:faceofgod ex:isimmortal true .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/357-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/357-2> rdf:type owl:ontology .
 
-ex:GivingEvent a go:Event ;
-    go:HasAgent ex:God .
+ex:givingevent a go:event ;
+    go:hasagent ex:god .
 
-ex:God a go:Agent , go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:agent , go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

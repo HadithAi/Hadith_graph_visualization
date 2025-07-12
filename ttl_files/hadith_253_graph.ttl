@@ -1,56 +1,59 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/253#> .
+@prefix ex: <http://etratnet.ir/graph/example/253#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/253> rdf:type go:ontology ;
+        go:hascontent "4. امام صادق عليه‌السلام فرمود: «اى محمد، مردم هميشه در هر موضوعى بحث مى‌كنند تا جايى كه درباره ذات خدا هم سخن مى‌گويند. هرگاه شما چنين سخنانى را شنيديد، بگوييد: معبودى نيست جز خداى يگانه و بى‌همتا»."@fa,
+        "4.  قَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «يَا مُحَمَّدُ، إِنَّ النَّاسَ لاَ يَزَالُ بِهِمُ الْمَنْطِقُ حَتّى يَتَكَلَّمُوا فِي اللّه‌ِ، فَإِذَا سَمِعْتُمْ ذلِكَ، فَقُولُوا: لاَ إِلهَ إِلاَّ اللّه‌ُ الْوَاحِدُ الَّذِي لَيْسَ كَمِثْلِهِ شَيْءٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/253-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/253-1> rdf:type owl:ontology .
 
-ex:People a go:Population ;
-    go:hasReason ex:Reason .
+ex:people a go:population ;
+    go:hasreason ex:reason .
 
-ex:Reason a go:Concept ;
-    rdfs:label "Reason" .
+ex:reason a go:concept ;
+    rdfs:label "reason" .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:SpeakingAboutGod a go:EventInstance ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:God ;
-    rdfs:label "Speaking about God" .
-go:Event rdfs:label "رخداد"@fa.
+ex:speakingaboutgod a go:eventinstance ;
+    go:hasagent ex:people ;
+    go:hastheme ex:god ;
+    rdfs:label "speaking about god" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/253-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/253-2> rdf:type owl:ontology .
 
-ex:hearingEvent a go:PerceptionEvent ;
-    go:HasAgent ex:you ;
-    go:HasTheme ex:speakingEvent .
+ex:hearingevent a go:perceptionevent ;
+    go:hasagent ex:you ;
+    go:hastheme ex:speakingevent .
 
-ex:speakingEvent a go:CommunicationEvent ;
-    go:HasAgent ex:people ;
-    go:HasTheme ex:God .
+ex:speakingevent a go:communicationevent ;
+    go:hasagent ex:people ;
+    go:hastheme ex:god .
 
-ex:sayingEvent a go:CommunicationEvent ;
-    go:HasAgent ex:you ;
-    go:HasTheme ex:statement .
+ex:sayingevent a go:communicationevent ;
+    go:hasagent ex:you ;
+    go:hastheme ex:statement .
 
-ex:people a go:Group .
-ex:you a go:Group .
-ex:God a go:Deity .
+ex:people a go:group .
+ex:you a go:group .
+ex:god a go:deity .
 
-ex:statement a go:Message ;
-    rdf:value "There is no deity but Allah, the One, who is unlike anything else." .
+ex:statement a go:message ;
+    rdf:value "there is no deity but allah, the one, who is unlike anything else." .

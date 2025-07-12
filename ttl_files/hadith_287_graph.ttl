@@ -1,307 +1,310 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/287#> .
+@prefix ex: <http://etratnet.ir/graph/example/287#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/287> rdf:type go:ontology ;
+        go:hascontent "3. خدمت امام رضا عليه‌السلام رسيدم و از آن حضرت درباره توحيد پرسيدم. حضرت چنين بر من املا فرمود: «ستايش خداى را كه هستى‌بخش موجودات و ابداع كننده آنهاست با قدرت و حكمت خويش، نه از چيزى تا كه اختراع در كار نباشد، و نه با علتى تا كه ابداع صادق نيايد. [بلكه]آنچه را خواست، آن گونه كه خواست، يك‌تنه آفريد تا حكمت خويش و حقيقت خداوندگارى‌اش را نمايان سازد. خردها او را فرا چنگ نيارند، و وهم‌ها بدو نرسند، و ديدگان او را درنيابند، و هيچ اندازه‌اى او را در ميان نگيرد. در بيان نگنجد، و ديدگان از ديدنش ناتوان‌اند، و هر گونه وصفى درباره او نارساست. بى هيچ پرده‌اى در پرده است، و بى هيچ پوششى نهان است. بدون ديدن شناخته شده، و با صورت نداشتن و جسم نبودن وصف شده است. خدايى جز خداوند بزرگ و بلندمرتبه وجود ندارد»."@fa,
+        "3.  جِئْتُ إِلَى الرِّضَا عليه‌السلام أَسْأَلُهُ عَنِ التَّوْحِيدِ، فَأَمْلى عَلَيَّ: «الْحَمْدُ لِلّهِ فَاطِرِ الْأَشْيَاءِ إِنْشَاءً، وَمُبْتَدِعِهَا ابْتِدَاعاً بِقُدْرَتِهِ وَحِكْمَتِهِ، لاَ مِنْ شَيْءٍ؛ فَيَبْطُلَ الاِخْتِرَاعُ، وَلاَ لِعِلَّةٍ؛ فَلاَ يَصِحَّ الاِبْتِدَاعُ، خَلَقَ مَا شَاءَ كَيْفَ شَاءَ، مُتَوَحِّداً بِذلِكَ لاِءِظْهَارِ حِكْمَتِهِ، وَحَقِيقَةِ رُبُوبِيَّتِهِ، لاَ تَضْبِطُهُ الْعُقُولُ، وَلاَ تَبْلُغُهُ الْأَوْهَامُ، وَلاَ تُدْرِكُهُ الْأَبْصَارُ، وَلاَ يُحِيطُ بِهِ مِقْدَارٌ، عَجَزَتْ دُونَهُ الْعِبَارَةُ، وَكَلَّتْ دُونَهُ الْأَبْصَارُ، وَضَلَّ فِيهِ تَصَارِيفُ الصِّفَاتِ، احْتَجَبَ بِغَيْرِ حِجَابٍ مَحْجُوبٍ، وَاسْتَتَرَ بِغَيْرِ سِتْرٍ مَسْتُورٍ، عُرِفَ بِغَيْرِ رُؤيَةٍ، وَوُصِفَ بِغَيْرِ صُورَةٍ، وَنُعِتَ بِغَيْرِ جِسْمٍ، لاَ إِلهَ إِلاَّ اللّه‌ُ الْكَبِيرُ الْمُتَعَالِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-1> rdf:type owl:ontology .
 
-ex:God rdf:type go:Substance ;
-    go:HasAttribute ex:Power, ex:Wisdom .
+ex:god rdf:type go:substance ;
+    go:hasattribute ex:power, ex:wisdom .
 
-ex:Things rdf:type go:Substance .
+ex:things rdf:type go:substance .
 
-ex:CreationEvent rdf:type go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Things ;
-    go:HasAttribute ex:Creation, ex:Innovation .
+ex:creationevent rdf:type go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:things ;
+    go:hasattribute ex:creation, ex:innovation .
 
-ex:Creation rdf:type go:attribute .
+ex:creation rdf:type go:attribute .
 
-ex:Innovation rdf:type go:attribute .
+ex:innovation rdf:type go:attribute .
 
-ex:Power rdf:type go:attribute .
+ex:power rdf:type go:attribute .
 
-ex:Wisdom rdf:type go:attribute .
+ex:wisdom rdf:type go:attribute .
 
-ex:NoOtherSource rdf:type go:negation ;
-    go:Negates ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/287-2> rdf:type owl:Ontology .
-
-ex:Invention a go:Substance ;
-    go:HasState ex:Invalidated ;
-    go:HasRelation ex:NoConnection .
-
-ex:Innovation a go:concept ;
-    go:validityStatus "NotValid" .
-
-ex:Invalidated a go:Event .
-ex:NoConnection a go:relation .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:noothersource rdf:type go:negation ;
+    go:negates ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-2> rdf:type owl:ontology .
 
-ex:CreationEvent1 a ex:eventInstance , go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:CreatedThings ;
-    go:HasPurpose ex:ManifestWisdomAndLordship .
+ex:invention a go:substance ;
+    go:hasstate ex:invalidated ;
+    go:hasrelation ex:noconnection .
 
-ex:God a ex:DivineEntity ;
-    go:HasQuality ex:Wisdom ;
-    go:HasQuality ex:Lordship .
+ex:innovation a go:concept ;
+    go:validitystatus "notvalid" .
 
-ex:CreatedThings a go:Substance .
-
-ex:Wisdom a go:Quality .
-ex:Lordship a go:Quality .
-
-ex:ManifestWisdomAndLordship a go:abstractConcept ;
-    go:comprises ex:Wisdom , ex:Lordship .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:invalidated a go:event .
+ex:noconnection a go:relation .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-3> rdf:type owl:ontology .
 
-ex:GodPower a go:Power ;
-    go:isAttributeOf ex:God .
+ex:creationevent1 a ex:eventinstance , go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:createdthings ;
+    go:haspurpose ex:manifestwisdomandlordship .
 
-ex:Minds a go:Substance .
+ex:god a ex:divineentity ;
+    go:hasquality ex:wisdom ;
+    go:hasquality ex:lordship .
 
-ex:ControlEvent a go:ControlEvent ;
-    go:HasAgent ex:GodPower ;
-    go:HasTheme ex:Minds ;
-    ex:doesNotOccur "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-go:Substance rdfs:label "شی"@fa.
+ex:createdthings a go:substance .
 
+ex:wisdom a go:quality .
+ex:lordship a go:quality .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/287-5> rdf:type owl:Ontology .
-
-ex:God a go:Substance .
-ex:Illusions a go:Substance .
-ex:GodCapacity a go:capacity ;
-    go:inheresIn ex:God .
-
-ex:ReachIllusions a go:Event ;
-    go:HasAgent ex:GodCapacity ;
-    go:HasTheme ex:Illusions .
-
-# Express that GodCapacity does not reach Illusions:
-ex:GodCapacity ex:cannotReach ex:Illusions .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:manifestwisdomandlordship a go:abstractconcept ;
+    go:comprises ex:wisdom , ex:lordship .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-4> rdf:type owl:ontology .
 
-# Entities
-ex:God a go:Deity .
-ex:PowerOfGod a go:Property ;
-    go:isPropertyOf ex:God .
-ex:Eyes a go:PhysicalEntity ;
-    go:partOf go:HumanSense .
+ex:godpower a go:power ;
+    go:isattributeof ex:god .
 
-# Event
-ex:PerceptionEvent1 a go:Event ;
-    go:HasAgent ex:Eyes ;
-    go:HasTheme ex:PowerOfGod ;
-    ex:isNegated "true"^^xsd:boolean .
-go:Event rdfs:label "رخداد"@fa.
+ex:minds a go:substance .
+
+ex:controlevent a go:controlevent ;
+    go:hasagent ex:godpower ;
+    go:hastheme ex:minds ;
+    ex:doesnotoccur "true"^^<http://www.w3.org/2001/xmlschema#boolean> .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-5> rdf:type owl:ontology .
 
-ex:God a go:deity ;
-    ex:power ex:Immeasurable .
+ex:god a go:substance .
+ex:illusions a go:substance .
+ex:godcapacity a go:capacity ;
+    go:inheresin ex:god .
 
-ex:Immeasurable a ex:Quality .
+ex:reachillusions a go:event ;
+    go:hasagent ex:godcapacity ;
+    go:hastheme ex:illusions .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/287-8> rdf:type owl:Ontology .
-
-ex:FailureEvent a go:Event ;
-    go:HasAgent ex:Phrase ;
-    go:HasTheme ex:AbilityOfGod .
-
-ex:Phrase a go:InformationContentEntity .
-ex:AbilityOfGod a go:Attribute .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
+# express that godcapacity does not reach illusions:
+ex:godcapacity ex:cannotreach ex:illusions .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-6> rdf:type owl:ontology .
 
-ex:Veiling1 a go:Event ;
-    go:HasTheme ex:AllEyes ;
-    go:Prevents ex:Perceiving1 .
+# entities
+ex:god a go:deity .
+ex:powerofgod a go:property ;
+    go:ispropertyof ex:god .
+ex:eyes a go:physicalentity ;
+    go:partof go:humansense .
 
-ex:Perceiving1 a go:Event ;
-    go:HasAgent ex:AllEyes ;
-    go:HasTheme ex:PowerOfGod .
-
-ex:AllEyes a go:Substance .
-ex:PowerOfGod a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/287-10> rdf:type owl:Ontology .
-
-ex:Event1 a go:Event ;
-    go:HasAgent ex:DeclensionsOfAdjectives ;
-    go:HasTheme ex:PowerOfGod ;
-    go:HasState ex:Ambiguity .
-
-ex:DeclensionsOfAdjectives a go:Substance ;
-    rdfs:label "Declensions of Adjectives"@en .
-
-ex:PowerOfGod a go:Quality ;
-    go:RelatesTo ex:God ;
-    rdfs:label "Power of God"@en .
-
-ex:God a go:Deity ;
-    rdfs:label "God"@en .
-
-ex:Ambiguity a go:state ;
-    rdfs:label "Ambiguity"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+# event
+ex:perceptionevent1 a go:event ;
+    go:hasagent ex:eyes ;
+    go:hastheme ex:powerofgod ;
+    ex:isnegated "true"^^xsd:boolean .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-7> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:hasAttribute ex:ConcealedOne .
+ex:god a go:deity ;
+    ex:power ex:immeasurable .
 
-ex:Veil a go:Substance .
-
-ex:ConcealmentEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:God ;
-    ex:withoutVeil true .
-
-ex:ConcealedOne a go:Attribute ;
-    go:isAttributeOf ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:immeasurable a ex:quality .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-8> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:failureevent a go:event ;
+    go:hasagent ex:phrase ;
+    go:hastheme ex:abilityofgod .
 
-ex:ConcealmentEvent1 a go:Event ;
-    rdfs:label "Concealment of God" ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ConcealmentMethod1 .
+ex:phrase a go:informationcontententity .
+ex:abilityofgod a go:attribute .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
 
-ex:ConcealmentMethod1 a go:Substance ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/287-9> rdf:type owl:ontology .
+
+ex:veiling1 a go:event ;
+    go:hastheme ex:alleyes ;
+    go:prevents ex:perceiving1 .
+
+ex:perceiving1 a go:event ;
+    go:hasagent ex:alleyes ;
+    go:hastheme ex:powerofgod .
+
+ex:alleyes a go:substance .
+ex:powerofgod a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/287-10> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:declensionsofadjectives ;
+    go:hastheme ex:powerofgod ;
+    go:hasstate ex:ambiguity .
+
+ex:declensionsofadjectives a go:substance ;
+    rdfs:label "declensions of adjectives"@en .
+
+ex:powerofgod a go:quality ;
+    go:relatesto ex:god ;
+    rdfs:label "power of god"@en .
+
+ex:god a go:deity ;
+    rdfs:label "god"@en .
+
+ex:ambiguity a go:state ;
+    rdfs:label "ambiguity"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/287-11> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    go:hasattribute ex:concealedone .
+
+ex:veil a go:substance .
+
+ex:concealmentevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:god ;
+    ex:withoutveil true .
+
+ex:concealedone a go:attribute ;
+    go:isattributeof ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/287-12> rdf:type owl:ontology .
+
+ex:god a go:agent ;
+    rdfs:label "god" .
+
+ex:concealmentevent1 a go:event ;
+    rdfs:label "concealment of god" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:concealmentmethod1 .
+
+ex:concealmentmethod1 a go:substance ;
     rdfs:label "concealment other than concealment" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-13> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:KnowingGodWithoutSeeing a go:Event ;
-    go:HasTheme ex:God ;
-    go:hasMethod ex:WithoutSeeing .
+ex:knowinggodwithoutseeing a go:event ;
+    go:hastheme ex:god ;
+    go:hasmethod ex:withoutseeing .
 
-ex:WithoutSeeing a go:negation ;
-    go:negates ex:Seeing .
+ex:withoutseeing a go:negation ;
+    go:negates ex:seeing .
 
-ex:Seeing a go:Event ;
+ex:seeing a go:event ;
     rdfs:label "seeing"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-14> rdf:type owl:ontology .
 
-ex:God rdf:type go:Substance .
-ex:DescribingEvent1 rdf:type go:Event ;
-    go:HasTheme ex:God ;
-    ex:hasDescriptionForm "none" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/287-15> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-    go:HasTheme ex:Allah ;
-    go:HasDescription ex:AttributeWithoutBody .
-
-ex:Allah a go:Deity .
-
-ex:AttributeWithoutBody a go:Attribute ;
-    go:Negates go:Body .
-
-go:Body a go:Object .
-go:Event rdfs:label "رخداد"@fa.
+ex:god rdf:type go:substance .
+ex:describingevent1 rdf:type go:event ;
+    go:hastheme ex:god ;
+    ex:hasdescriptionform "none" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/287-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/287-15> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    go:hasAttribute ex:Greatness , ex:Highness .
+ex:eventinstance1 a go:event ;
+    go:hastheme ex:allah ;
+    go:hasdescription ex:attributewithoutbody .
 
-ex:Greatness a go:Quality ;
-    rdfs:label "Great"@en .
+ex:allah a go:deity .
 
-ex:Highness a go:Quality ;
-    rdfs:label "Most High"@en .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:attributewithoutbody a go:attribute ;
+    go:negates go:body .
+
+go:body a go:object .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/287-16> rdf:type owl:ontology .
+
+ex:allah a go:deity ;
+    go:hasattribute ex:greatness , ex:highness .
+
+ex:greatness a go:quality ;
+    rdfs:label "great"@en .
+
+ex:highness a go:quality ;
+    rdfs:label "most high"@en .
+go:quality rdfs:label "ویژگی"@fa.

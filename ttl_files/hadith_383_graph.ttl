@@ -1,52 +1,55 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/383#> .
+@prefix ex: <http://etratnet.ir/graph/example/383#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/383> rdf:type go:ontology ;
+        go:hascontent "16.  از امام رضا عليه‌السلام شنيدم كه مى‌فرمايد: «خداوند هرگز هيچ پيامبرى را نفرستاد مگر با حكم حرمت شراب، و اين كه براى خدا به بداء اقرار كند»."@fa,
+        "16.  سَمِعْتُ الرِّضَا عليه‌السلام يَقُولُ: «مَا بَعَثَ اللّه‌ُ نَبِيّاً قَطُّ إِلاَّ بِتَحْرِيمِ الْخَمْرِ، وَأَنْ يُقِرَّ لِلّهِ بِالْبَدَاءِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/383-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/383-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Alcohol a go:Substance ;
-    rdfs:label "Alcohol" .
+ex:alcohol a go:substance ;
+    rdfs:label "alcohol" .
 
-ex:Prophet a go:Person ;
-    rdfs:label "Prophet" .
+ex:prophet a go:person ;
+    rdfs:label "prophet" .
 
-ex:SendProphet a go:Event ;
-    rdfs:label "Sending a prophet" ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Prophet .
+ex:sendprophet a go:event ;
+    rdfs:label "sending a prophet" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:prophet .
 
-ex:ProhibitAlcohol a go:Event ;
-    rdfs:label "Prohibition of alcohol" ;
-    go:HasTheme ex:Alcohol .
+ex:prohibitalcohol a go:event ;
+    rdfs:label "prohibition of alcohol" ;
+    go:hastheme ex:alcohol .
 
-# Universal relation indicating that for every instance of sending a prophet by God, there is a related prohibition of alcohol
-ex:SendProphet ex:leadsTo ex:ProhibitAlcohol .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# universal relation indicating that for every instance of sending a prophet by god, there is a related prohibition of alcohol
+ex:sendprophet ex:leadsto ex:prohibitalcohol .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/383-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/383-2> rdf:type owl:ontology .
 
-ex:God rdf:type ex:Deity .
-ex:Beginning rdf:type ex:Event .
+ex:god rdf:type ex:deity .
+ex:beginning rdf:type ex:event .
 
-ex:BlessingEvent1 rdf:type ex:Blessing ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Beginning .
+ex:blessingevent1 rdf:type ex:blessing ;
+  go:hasagent ex:god ;
+  go:hastheme ex:beginning .

@@ -1,118 +1,121 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/225#> .
+@prefix ex: <http://etratnet.ir/graph/example/225#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/225> rdf:type go:ontology ;
+        go:hascontent "4.  از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «خدا از آفريدگانش خالى است و آفريدگانش از او خالى‌اند. هر آنچه كلمه "چيز"، بر او اطلاق شود، بجز خداوند، آن چيز آفريده است؛ و خدا آفريننده هر چيزى است. بزرگ است خدايى كه هيچ چيزى همانند او نيست، و او شنوا و بيناست»."@fa,
+        "4.  سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام يَقُولُ: «إِنَّ اللّه‌َ خِلْوٌ مِنْ خَلْقِهِ، وَخَلْقَهُ خِلْوٌ مِنْهُ، وَكُلُّ مَا وَقَعَ عَلَيْهِ اسْمُ "شَيْءٍ" مَا خَلاَ اللّه‌َ، فَهُوَ مَخْلُوقٌ، وَاللّه‌ُ خَالِقُ كُلِّ شَيْءٍ، تَبَارَكَ الَّذِي لَيْسَ كَمِثْلِهِ شَيْءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/225-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/225-1> rdf:type owl:ontology .
 
-ex:God a go:Deity .
-ex:Creation a go:CreatedEntity .
+ex:god a go:deity .
+ex:creation a go:createdentity .
 
-ex:God go:HasProperty [ a go:Property ;
-                         go:propertyType ex:AbsenceFrom ;
-                         go:propertyValue ex:Creation
+ex:god go:hasproperty [ a go:property ;
+                         go:propertytype ex:absencefrom ;
+                         go:propertyvalue ex:creation
                        ] .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/225-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/225-2> rdf:type owl:ontology .
 
-ex:CreationOfGod a go:Substance ;
-    rdfs:label "Creation of God"@en .
+ex:creationofgod a go:substance ;
+    rdfs:label "creation of god"@en .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:AbsenceEvent a go:Event ;
-    rdfs:label "Absence of God in Creation"@en ;
-    go:HasTheme ex:CreationOfGod ;
-    ex:HasAbsentEntity ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:absenceevent a go:event ;
+    rdfs:label "absence of god in creation"@en ;
+    go:hastheme ex:creationofgod ;
+    ex:hasabsententity ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/225-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/225-3> rdf:type owl:ontology .
 
-ex:Thing a go:Substance ;
+ex:thing a go:substance ;
     rdfs:label "thing" .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:Created a go:state ;
+ex:created a go:state ;
     rdfs:label "created" .
 
-# Universal statement: For any entity assigned the name "thing" and not God, the entity is created.
+# universal statement: for any entity assigned the name "thing" and not god, the entity is created.
 
-# Naming event
-ex:NamingEvent a go:Event ;
-    go:HasTheme ex:Thing .
+# naming event
+ex:namingevent a go:event ;
+    go:hastheme ex:thing .
 
-# Rule representation (in RDF form expressed as a blank node for clarity, actual logical rule formalization may be outside RDF scope)
-_:rule a ex:Condition ;
+# rule representation (in rdf form expressed as a blank node for clarity, actual logical rule formalization may be outside rdf scope)
+_:rule a ex:condition ;
     ex:if [
-        a go:Substance ;
-        ex:hasName ex:Thing ;
-        rdf:distinctFrom ex:God
+        a go:substance ;
+        ex:hasname ex:thing ;
+        rdf:distinctfrom ex:god
     ] ;
     ex:then [
         a go:state ;
         rdfs:label "created" ;
-        go:appliesTo _:subject
+        go:appliesto _:subject
     ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/225-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/225-4> rdf:type owl:ontology .
 
-ex:God a go:Deity .
-ex:Everything a go:Substance .
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Everything .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/225-5> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    go:hasAttribute ex:Blessed ;
-    go:hasNoEqual ex:Thing .
-
-ex:Blessed a go:Attribute .
-
-ex:Thing a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity .
+ex:everything a go:substance .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:everything .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/225-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/225-5> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    ex:hasAttribute ex:All_Hearing , ex:All_Seeing .
+ex:god a go:deity ;
+    go:hasattribute ex:blessed ;
+    go:hasnoequal ex:thing .
 
-ex:All_Hearing a go:Quality .
-ex:All_Seeing a go:Quality .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:blessed a go:attribute .
+
+ex:thing a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/225-6> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    ex:hasattribute ex:all_hearing , ex:all_seeing .
+
+ex:all_hearing a go:quality .
+ex:all_seeing a go:quality .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.

@@ -1,438 +1,441 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/328#> .
+@prefix ex: <http://etratnet.ir/graph/example/328#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/328> rdf:type go:ontology ;
+        go:hascontent "1. : در محضر ابو ابراهيم [موسى بن جعفر] عليه‌السلام گفته شد كه عده‌اى مى‌گويند: خداوند، تبارك و تعالى، به آسمان زيرين فرود مى‌آيد. حضرت فرمود: «خداوند نه فرود مى‌آيد و نه نيازى به فرود آمدن دارد. او دور و نزديك را به يكسان مى‌بيند. هيچ نزديكى از او دور نيست، و هيچ دورى به او نزديك نيست، و به چيزى نياز ندارد، بلكه به او نياز دارند. او صاحب بخشش و دِهِش است و معبودى جز آن شكست‌ناپذير استواركار نيست. اما اين سخن وصف‌كنندگان كه خداى، تبارك و تعالى، فرود مى‌آيد، اين را در حقيقت، كسى مى‌گويد كه او را به كاستى گرفتن يا فزونى يافتن نسبت مى‌دهد. در حالى كه هر جنبده‌اى نياز به كسى دارد كه او را بجنباند يا به واسطه او بجنبد، و كسى كه چنين گمان‌هايى به خداوند برد به هلاكت درافتد. پس، بپرهيزيد از اين كه در وصف او سخنانى بگوييد كه او را به كاستى يا فزونى گرفتن يا جنباندن يا جنبيدن يا جا به جا شدن يا فرود آمدن يا برخاستن و يا نشستن نسبت دهيد؛ زيرا، خداوند بزرگ‌تر و برتر از آن است كه در وصفِ وصف‌كنندگان و نعتِ نعت‌گويان و تصور تصوركنندگان گنجد «و بر خداى عزيز مهربان توكل كن؛ آن كس كه چون [به نماز] بر مى‌خيزى تو را مى‌بيند و حركت تو را در ميان سجده كنندگان [مى‌نگرد]»»."@fa,
+        "1.  عَنْ أَبِي إِبْرَاهِيمَ عليه‌السلام، قَالَ: ذُكِرَ عِنْدَهُ قَوْمٌ يَزْعُمُونَ أَنَّ اللّه‌َ ـ تَبَارَكَ وَتَعَالى ـ يَنْزِلُ إِلَى السَّمَاءِ الدُّنْيَا، فَقَالَ: «إِنَّ اللّه‌َ لاَ يَنْزِلُ، وَلاَ يَحْتَاجُ إِلى أَنْ يَنْزِلَ، إِنَّمَا مَنْظَرُهُ فِي الْقُرْبِ وَالْبُعْدِ سَوَاءٌ، لَمْ يَبْعُدْ مِنْهُ قَرِيبٌ، وَلَمْ يَقْرُبْ مِنْهُ بَعِيدٌ، وَلَمْ يَحْتَجْ إِلى شَيْءٍ، بَلْ يُحْتَاجُ إِلَيْهِ، وَهُوَ ذُو الطَّوْلِ، لاَ إِلهَ إِلاَّ هُوَ الْعَزِيزُ الْحَكِيمُ. أَمَّا قَوْلُ الْوَاصِفِينَ: إِنَّهُ يَنْزِلُ تَبَارَكَ وَتَعَالى، فَإِنَّمَا يَقُولُ ذلِكَ مَنْ يَنْسُبُهُ إِلى نَقْصٍ أَوْ زِيَادَةٍ، وَكُلُّ مُتَحَرِّكٍ مُحْتَاجٌ إِلى مَنْ يُحَرِّكُهُ أَوْ يَتَحَرَّكُ بِهِ، فَمَنْ ظَنَّ بِاللّه‌ِ الظُّنُونَ، هَلَكَ؛ فَاحْذَرُوا فِي صِفَاتِهِ مِنْ أَنْ تَقِفُوا لَهُ عَلى حَدٍّ تَحُدُّونَهُ بِنَقْصٍ، أَوْ زِيَادَةٍ، أَوْ تَحْرِيكٍ، أَوْ تَحَرُّكٍ، أَوْ زَوَالٍ، أَوِ اسْتِنْزَالٍ، أَوْ نُهُوضٍ، أَوْ قُعُودٍ؛ فَإِنَّ اللّه‌َ جَلَّ وَعَزَّ عَنْ صِفَةِ الْوَاصِفِينَ، وَنَعْتِ النَّاعِتِينَ، وَتَوَهُّمِ الْمُتَوَهِّمِينَ «وَتَوَكَّلْ عَلَى الْعَزِيزِالرَّحِيمِ الَّذِى يَرَاكَ حِينَ تَقُومُ وَتَقَلُّبَكَ فِى السَّاجِدِينَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-1> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Deity ;
-    rdfs:label "God Almighty" .
+ex:god_almighty a go:deity ;
+    rdfs:label "god almighty" .
 
-ex:Lowest_Heaven a go:Location ;
+ex:lowest_heaven a go:location ;
     rdfs:label "the lowest heaven" .
 
-ex:Descend_Event a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasGoal ex:Lowest_Heaven ;
-    go:hasPolarity go:Negative .
-go:Event rdfs:label "رخداد"@fa.
+ex:descend_event a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hasgoal ex:lowest_heaven ;
+    go:haspolarity go:negative .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-2> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
-  rdfs:label "God Almighty" .
+ex:godalmighty a go:deity ;
+  rdfs:label "god almighty" .
 
-ex:DescendEvent a go:Event ;
+ex:descendevent a go:event ;
   rdfs:label "descend" ;
-  go:HasAgent ex:GodAlmighty .
+  go:hasagent ex:godalmighty .
 
-ex:NeedToDescend a go:Property ;
-  go:appliesTo ex:GodAlmighty ;
-  go:describes ex:DescendEvent ;
-  go:isNecessary false .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-3> rdf:type owl:Ontology .
-
-ex:God a go:deity ;
-    go:hasTitle "Allah سبحانه وتعالى" .
-
-ex:ViewOfGod a go:concept ;
-    go:relatesTo ex:God ;
-    ex:hasProperty ex:SameFromNearAndFar .
-
-ex:Near a go:position .
-ex:Far a go:position .
-
-ex:SameFromNearAndFar a go:property ;
-    go:appliesTo ex:ViewOfGod ;
-    go:relatesPositions ex:Near , ex:Far .
+ex:needtodescend a go:property ;
+  go:appliesto ex:godalmighty ;
+  go:describes ex:descendevent ;
+  go:isnecessary false .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-3> rdf:type owl:ontology .
 
-ex:Allah a go:DivineEntity ;
-    rdfs:label "Allah"@en .
+ex:god a go:deity ;
+    go:hastitle "allah سبحانه وتعالى" .
 
-ex:Person a go:Agent ;
-    rdfs:label "Person"@en .
+ex:viewofgod a go:concept ;
+    go:relatesto ex:god ;
+    ex:hasproperty ex:samefromnearandfar .
 
-ex:Distantness a go:Event ;
+ex:near a go:position .
+ex:far a go:position .
+
+ex:samefromnearandfar a go:property ;
+    go:appliesto ex:viewofgod ;
+    go:relatespositions ex:near , ex:far .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-4> rdf:type owl:ontology .
+
+ex:allah a go:divineentity ;
+    rdfs:label "allah"@en .
+
+ex:person a go:agent ;
+    rdfs:label "person"@en .
+
+ex:distantness a go:event ;
     rdfs:label "being distant"@en .
 
-# Negation of distantness: no person is distant from Allah
-# Instead of asserting distancedness, we assert closeness
+# negation of distantness: no person is distant from allah
+# instead of asserting distancedness, we assert closeness
 
-ex:IsCloseTo a go:ObjectProperty ;
+ex:iscloseto a go:objectproperty ;
     rdfs:label "is close to"@en ;
-    rdfs:comment "Inverse of is distant from"@en .
+    rdfs:comment "inverse of is distant from"@en .
 
-# For all persons, person is close to Allah
+# for all persons, person is close to allah
 
-_:bnode a owl:AllDifferent ;
-    owl:distinctMembers ( ex:Person ) .
+_:bnode a owl:alldifferent ;
+    owl:distinctmembers ( ex:person ) .
 
-# Since we can not write universal restrictions easily here, we state for example
+# since we can not write universal restrictions easily here, we state for example
 
-ex:Person1 a ex:Person ;
-    ex:IsCloseTo ex:Allah .
+ex:person1 a ex:person ;
+    ex:iscloseto ex:allah .
 
-# This triple captures the meaning that personal entities (like Person1) are close to Allah, meaning they are not distant.
+# this triple captures the meaning that personal entities (like person1) are close to allah, meaning they are not distant.
 
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-5> rdf:type owl:Ontology .
-
-ex:ApproachEvent1 a go:Event ;
-    go:HasAgent ex:NoOne ;
-    go:HasTheme ex:Allah_Glory ;
-    go:hasNegation true .
-
-ex:NoOne a go:Agent .
-
-ex:Allah_Glory a go:Deity ;
-    rdfs:label "Allah, the Exalted and Glorious"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-5> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Deity ;
-    go:doesNotNeed ex:Anything .
+ex:approachevent1 a go:event ;
+    go:hasagent ex:noone ;
+    go:hastheme ex:allah_glory ;
+    go:hasnegation true .
 
-ex:Anything a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:noone a go:agent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-7> rdf:type owl:Ontology .
-
-ex:People a go:Substance ;
-    rdfs:label "People"@en .
-
-ex:God_Almighty a go:Substance ;
-    rdfs:label "God Almighty"@en .
-
-ex:NeedEvent_1 a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:God_Almighty ;
-    rdfs:label "People need God Almighty"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:allah_glory a go:deity ;
+    rdfs:label "allah, the exalted and glorious"@en .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-6> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Deity ;
-    ex:hasHeight ex:Height_Property .
+ex:god_almighty a go:deity ;
+    go:doesnotneed ex:anything .
 
-ex:Height_Property a go:Quality .
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-9> rdf:type owl:Ontology .
-
-ex:GodAlmighty a go:Deity ;
-    ex:hasAttribute ex:Almighty , ex:Wise .
-
-ex:Almighty a go:Attribute .
-ex:Wise a go:Attribute .
+ex:anything a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-7> rdf:type owl:ontology .
 
-# Entity: Allah
-ex:Allah rdf:type ex:Deity ;
-        ex:hasAttribute ex:AlAziz , ex:AlHakim .
+ex:people a go:substance ;
+    rdfs:label "people"@en .
 
-# Attributes as entities
-ex:AlAziz rdf:type ex:Attribute ;
-          ex:label "Al-Aziz" .
-	ex:AlHakim rdf:type ex:Attribute ;
-          ex:label "Al-Hakim" .
+ex:god_almighty a go:substance ;
+    rdfs:label "god almighty"@en .
 
-# Statement about exclusivity of Allah as sole deity
-# Represented as a universal negative over other gods
-_:exclusivity a ex:UniquenessConstraint ;
-              ex:subject ex:Allah ;
-              ex:predicate ex:isOnlyDeity .
+ex:needevent_1 a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:god_almighty ;
+    rdfs:label "people need god almighty"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-8> rdf:type owl:ontology .
 
-ex:StatementOfGodsDescent a go:CommunicationEvent ;
-    go:HasAgent ex:UnknownSpeaker ;
-    go:HasTheme ex:GodDescendsStatement ;
-    go:HasEffect ex:AttributesDeficiencyOrIncreaseToGod .
+ex:god_almighty a go:deity ;
+    ex:hasheight ex:height_property .
 
-ex:GodDescendsStatement a go:Proposition ;
-    go:HasTheme ex:God , ex:Descend ;
+ex:height_property a go:quality .
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-9> rdf:type owl:ontology .
+
+ex:godalmighty a go:deity ;
+    ex:hasattribute ex:almighty , ex:wise .
+
+ex:almighty a go:attribute .
+ex:wise a go:attribute .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-10> rdf:type owl:ontology .
+
+# entity: allah
+ex:allah rdf:type ex:deity ;
+        ex:hasattribute ex:alaziz , ex:alhakim .
+
+# attributes as entities
+ex:alaziz rdf:type ex:attribute ;
+          ex:label "al-aziz" .
+	ex:alhakim rdf:type ex:attribute ;
+          ex:label "al-hakim" .
+
+# statement about exclusivity of allah as sole deity
+# represented as a universal negative over other gods
+_:exclusivity a ex:uniquenessconstraint ;
+              ex:subject ex:allah ;
+              ex:predicate ex:isonlydeity .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-11> rdf:type owl:ontology .
+
+ex:statementofgodsdescent a go:communicationevent ;
+    go:hasagent ex:unknownspeaker ;
+    go:hastheme ex:goddescendsstatement ;
+    go:haseffect ex:attributesdeficiencyorincreasetogod .
+
+ex:goddescendsstatement a go:proposition ;
+    go:hastheme ex:god , ex:descend ;
     go:asserts true .
 
-ex:God a go:Substance ;
-    go:name "Allah, Blessed and Exalted" .
+ex:god a go:substance ;
+    go:name "allah, blessed and exalted" .
 
-ex:Descend a go:Concept .
+ex:descend a go:concept .
 
-ex:AttributesDeficiencyOrIncreaseToGod a go:AttributionEvent ;
-    go:HasTheme ex:God ;
-    go:HasProperty ex:DeficiencyOrIncrease .
+ex:attributesdeficiencyorincreasetogod a go:attributionevent ;
+    go:hastheme ex:god ;
+    go:hasproperty ex:deficiencyorincrease .
 
-ex:DeficiencyOrIncrease a go:Property ;
-    go:description "Deficiency or Increase attributed to God" .
+ex:deficiencyorincrease a go:property ;
+    go:description "deficiency or increase attributed to god" .
 
-ex:UnknownSpeaker a go:Agent ;
-    go:name "Unknown Speaker" .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-12> rdf:type owl:Ontology .
-
-ex:MovingThing a go:Substance ;
-    go:hasQuality ex:Movement .
-
-ex:Movement a go:Event .
-
-# The general movement instance
-ex:MovementInstance a go:Event ;
-    go:HasTheme ex:MovingThing ;
-    go:Requires [ a go:hasAgent ; go:agentRole ex:Mover ] , [ a go:hasMedium ; go:mediumRole ex:Medium ] .
-
-ex:Mover a go:agent .
-ex:Medium a go:medium .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:unknownspeaker a go:agent ;
+    go:name "unknown speaker" .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-12> rdf:type owl:ontology .
 
-ex:person a go:Substance .
-ex:God a go:Substance .
+ex:movingthing a go:substance ;
+    go:hasquality ex:movement .
 
-ex:suspectingEvent a go:Event ;
-    go:HasAgent ex:person ;
-    go:HasTheme ex:God .
+ex:movement a go:event .
 
-ex:perishingEvent a go:Event ;
-    go:HasTheme ex:person ;
-    go:CausedBy ex:suspectingEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# the general movement instance
+ex:movementinstance a go:event ;
+    go:hastheme ex:movingthing ;
+    go:requires [ a go:hasagent ; go:agentrole ex:mover ] , [ a go:hasmedium ; go:mediumrole ex:medium ] .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-14> rdf:type owl:Ontology .
-
-ex:CautionEvent a go:Event ;
-    go:HasAgent ex:HumanAgent ;
-    go:HasTheme ex:GodAttributes ;
-    go:HasCause ex:ImproperDefinition .
-
-ex:HumanAgent a go:Agent .
-
-ex:GodAttributes a go:Substance ;
-    go:hasQuality ex:DivineAttributeQuality .
-
-ex:ImproperDefinition a go:State ;
-    go:involvesQuality ex:DeficiencyOrExcess .
-
-ex:DeficiencyOrExcess a go:Quality .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:mover a go:agent .
+ex:medium a go:medium .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-13> rdf:type owl:ontology .
 
-ex:AdvisoryEvent a ex:Advisory ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:GodAttributesCaution .
+ex:person a go:substance .
+ex:god a go:substance .
 
-ex:GodAttributesCaution a ex:Caution ;
-    ex:aboutAttributesOf go:Deity ;
-    ex:warnsAgainst ex:BeliefThatGodIsMovement ;
-    ex:warnsAgainst ex:BeliefThatGodCausesMovement .
+ex:suspectingevent a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:god .
 
-ex:BeliefThatGodIsMovement a ex:Belief ;
-    ex:concernedWith go:Movement ;
-    ex:subject go:Deity .
-
-ex:BeliefThatGodCausesMovement a ex:Belief ;
-    ex:concernedWith go:Movement ;
-    ex:causedBy go:Deity .
+ex:perishingevent a go:event ;
+    go:hastheme ex:person ;
+    go:causedby ex:suspectingevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-14> rdf:type owl:ontology .
 
-ex:Event_Caution_1 a go:EventInstance ;
-    go:HasAgent ex:Agent_One ;
-    go:HasTheme ex:Belief_About_God_Attributes_Cessation_Or_Depletion .
+ex:cautionevent a go:event ;
+    go:hasagent ex:humanagent ;
+    go:hastheme ex:godattributes ;
+    go:hascause ex:improperdefinition .
 
-ex:Agent_One a go:agent .
+ex:humanagent a go:agent .
 
-ex:God a go:Substance .
-ex:Attributes_Of_God a go:property ;
-    go:propertyOf ex:God .
+ex:godattributes a go:substance ;
+    go:hasquality ex:divineattributequality .
 
-ex:Belief_About_God_Attributes_Cessation_Or_Depletion a go:concept ;
-    go:refersTo ex:Attributes_Of_God ;
-    ex:conceptContent "belief in cessation or depletion of God's attributes" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:improperdefinition a go:state ;
+    go:involvesquality ex:deficiencyorexcess .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-17> rdf:type owl:Ontology .
-
-ex:God a go:Substance .
-ex:AttributesOfGod a go:Quality ;
-    go:inheresIn ex:God .
-ex:Rising a go:Quality .
-ex:Sitting a go:Quality .
-
-ex:CautionEvent a go:Event ;
-    go:HasAgent ex:UnspecifiedAgent ;
-    go:HasTheme ex:BeliefAboutAttributes .
-
-ex:BeliefAboutAttributes a ex:Belief ;
-    ex:BeliefContent [ a ex:BeliefContent ;
-                      ex:Includes ex:Rising , ex:Sitting ] .
-
-ex:UnspecifiedAgent a go:agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:deficiencyorexcess a go:quality .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-15> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:hasProperty ex:Transcendence .
+ex:advisoryevent a ex:advisory ;
+    go:hasagent ex:person ;
+    go:hastheme ex:godattributescaution .
 
-ex:Transcendence a go:Quality ;
-    go:description "Far from the attributes of describers" ;
-    go:hasTheme ex:AttributesOfDescribers .
+ex:godattributescaution a ex:caution ;
+    ex:aboutattributesof go:deity ;
+    ex:warnsagainst ex:beliefthatgodismovement ;
+    ex:warnsagainst ex:beliefthatgodcausesmovement .
 
-ex:AttributesOfDescribers a go:Concept ;
-    go:hasPart ex:Attributes ;
-    go:hasAgent ex:Describers .
+ex:beliefthatgodismovement a ex:belief ;
+    ex:concernedwith go:movement ;
+    ex:subject go:deity .
 
-ex:Attributes a go:Quality .
-ex:Describers a go:Agent .
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:beliefthatgodcausesmovement a ex:belief ;
+    ex:concernedwith go:movement ;
+    ex:causedby go:deity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-16> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Substance ;
-    go:label "God Almighty" .
+ex:event_caution_1 a go:eventinstance ;
+    go:hasagent ex:agent_one ;
+    go:hastheme ex:belief_about_god_attributes_cessation_or_depletion .
 
-ex:Describers a go:Agent ;
+ex:agent_one a go:agent .
+
+ex:god a go:substance .
+ex:attributes_of_god a go:property ;
+    go:propertyof ex:god .
+
+ex:belief_about_god_attributes_cessation_or_depletion a go:concept ;
+    go:refersto ex:attributes_of_god ;
+    ex:conceptcontent "belief in cessation or depletion of god's attributes" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-17> rdf:type owl:ontology .
+
+ex:god a go:substance .
+ex:attributesofgod a go:quality ;
+    go:inheresin ex:god .
+ex:rising a go:quality .
+ex:sitting a go:quality .
+
+ex:cautionevent a go:event ;
+    go:hasagent ex:unspecifiedagent ;
+    go:hastheme ex:beliefaboutattributes .
+
+ex:beliefaboutattributes a ex:belief ;
+    ex:beliefcontent [ a ex:beliefcontent ;
+                      ex:includes ex:rising , ex:sitting ] .
+
+ex:unspecifiedagent a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-18> rdf:type owl:ontology .
+
+ex:god a go:deity ;
+    go:hasproperty ex:transcendence .
+
+ex:transcendence a go:quality ;
+    go:description "far from the attributes of describers" ;
+    go:hastheme ex:attributesofdescribers .
+
+ex:attributesofdescribers a go:concept ;
+    go:haspart ex:attributes ;
+    go:hasagent ex:describers .
+
+ex:attributes a go:quality .
+ex:describers a go:agent .
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/328-19> rdf:type owl:ontology .
+
+ex:godalmighty a go:substance ;
+    go:label "god almighty" .
+
+ex:describers a go:agent ;
     go:label "the describers" .
 
-ex:Attributes a go:Attribute ;
+ex:attributes a go:attribute ;
     go:label "attributes" .
 
-ex:GodAlmighty go:transcends ex:Attributes .
+ex:godalmighty go:transcends ex:attributes .
 
-ex:Attributes go:assignedBy ex:Describers .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/328-20> rdf:type owl:Ontology .
-
-ex:God_Almighty a go:Deity ;
-    ex:isFarFrom ex:Illusions_of_Those_Who_Imagine .
-
-ex:Illusions_of_Those_Who_Imagine a go:Concept .
+ex:attributes go:assignedby ex:describers .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/328-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/328-20> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Agent , go:Person ;
-    rdfs:label "God Almighty" .
+ex:god_almighty a go:deity ;
+    ex:isfarfrom ex:illusions_of_those_who_imagine .
 
-ex:Almighty a go:Attribute ;
-    rdfs:label "Almighty" .
+ex:illusions_of_those_who_imagine a go:concept .
 
-ex:Merciful a go:Attribute ;
-    rdfs:label "Merciful" .
 
-ex:SayingEvent1 a ex:saying , go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:QuotedText1 .
+@base <http://etratnet.ir/ontology/> .
 
-ex:QuotedText1 a go:Text ;
-    rdfs:label "And rely upon the Almighty, the Merciful, who sees you when you stand and your movements among those who prostrate." .
+<http://etratnet.ir/ontology/328-21> rdf:type owl:ontology .
 
-ex:SeeingEvent1 a ex:seeing , go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:PersonStandingAndMoving .
+ex:godalmighty a go:agent , go:person ;
+    rdfs:label "god almighty" .
 
-ex:PersonStandingAndMoving a go:Person ;
-    rdfs:label "Person standing and moving among prostrators" .
+ex:almighty a go:attribute ;
+    rdfs:label "almighty" .
 
-ex:Prostrators a go:Group , go:Person ;
-    rdfs:label "Those who prostrate" .
+ex:merciful a go:attribute ;
+    rdfs:label "merciful" .
 
-ex:GodAlmighty go:hasAttribute ex:Almighty , ex:Merciful .
-ex:PersonStandingAndMoving go:isAmong ex:Prostrators .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:sayingevent1 a ex:saying , go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:quotedtext1 .
+
+ex:quotedtext1 a go:text ;
+    rdfs:label "and rely upon the almighty, the merciful, who sees you when you stand and your movements among those who prostrate." .
+
+ex:seeingevent1 a ex:seeing , go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:personstandingandmoving .
+
+ex:personstandingandmoving a go:person ;
+    rdfs:label "person standing and moving among prostrators" .
+
+ex:prostrators a go:group , go:person ;
+    rdfs:label "those who prostrate" .
+
+ex:godalmighty go:hasattribute ex:almighty , ex:merciful .
+ex:personstandingandmoving go:isamong ex:prostrators .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.

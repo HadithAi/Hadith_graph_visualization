@@ -1,52 +1,55 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/295#> .
+@prefix ex: <http://etratnet.ir/graph/example/295#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/295> rdf:type go:ontology ;
+        go:hascontent "3. به ابو الحسن امام كاظم عليه‌السلام نوشتم: در دعايى آمده است: سپاس و ستايش خداى را به اندازه پايان دانش او. حضرت به من نوشت: «هرگز مگو: پايان دانشش؛ زيرا كه دانش او را پايانى نيست؛ بلكه بگو: نهايت خشنودى‌اش»."@fa,
+        "3.  كَتَبْتُ إِلى أَبِي الْحَسَنِ عليه‌السلام: فِي دُعَاءٍ: الْحَمْدُ لِلّهِ مُنْتَهى عِلْمِهِ؟ فَكَتَبَ إِلَيَّ: «لاَ تَقُولَنَّ مُنْتَهى عِلْمِهِ؛ فَلَيْسَ لِعِلْمِهِ مُنْتَهىً، وَلكِنْ قُلْ: مُنْتَهى رِضَاهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/295-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/295-1> rdf:type owl:ontology .
 
-ex:Munha a go:Person .
-ex:God a go:Deity .
+ex:munha a go:person .
+ex:god a go:deity .
 
-ex:MunhaKnowledgeOfGod a go:Knowledge ;
-    go:hasAgent ex:Munha ;
-    go:hasTheme ex:God ;
-    go:hasProperty ex:InfiniteKnowledge .
+ex:munhaknowledgeofgod a go:knowledge ;
+    go:hasagent ex:munha ;
+    go:hastheme ex:god ;
+    go:hasproperty ex:infiniteknowledge .
 
-ex:InfiniteKnowledge a go:PropertyValue ;
-    go:property go:hasEnd ;
+ex:infiniteknowledge a go:propertyvalue ;
+    go:property go:hasend ;
     go:value "false"^^xsd:boolean .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/295-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/295-2> rdf:type owl:ontology .
 
-ex:sayingInPrayer a go:Event ;
-  go:HasTheme ex:phraseInPrayer ;
-  go:HasContext ex:prayer .
+ex:sayinginprayer a go:event ;
+  go:hastheme ex:phraseinprayer ;
+  go:hascontext ex:prayer .
 
-ex:phraseInPrayer a go:concept ;
-  go:hasLiteral "Praise be to God, the ultimate of His satisfaction."^^xsd:string .
+ex:phraseinprayer a go:concept ;
+  go:hasliteral "praise be to god, the ultimate of his satisfaction."^^xsd:string .
 
-ex:God a go:Substance ;
-  go:hasRoleInPhrase "SubjectOfPraise" .
+ex:god a go:substance ;
+  go:hasroleinphrase "subjectofpraise" .
 
-ex:prayer a go:Event .
+ex:prayer a go:event .
 
-ex:sayingInPrayer go:HasAgent ex:speaker .
+ex:sayinginprayer go:hasagent ex:speaker .
 
 ex:speaker a go:person .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

@@ -1,736 +1,739 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/384#> .
+@prefix ex: <http://etratnet.ir/graph/example/384#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/384> rdf:type go:ontology ;
+        go:hascontent "17.  از عالم عليه‌السلام سؤال شد: علم خدا چگونه است؟ فرمود: «دانست و خواست و اراده كرد و مقدّر نمود و حكم فرمود و اجرا كرد. پس، آنچه را حكم فرمود اجرا نمود و آنچه را مقدّر كرد حكمش را صادر كرد، و آنچه را اراده كرد مقدّر نمود. بنابراين، خواست به علم او بسته است، و اراده به خواست او، و تقدير به اراده او و حكم به تقدير او، و اجرا به حكم او. علمْ مقدم بر خواست است، و خواست در مرتبه دوم است، و اراده در مرتبه سوم، و آنچه مقدّر شود پس از حكم به اجرا در مى‌آيد. پس، بداء براى خداوند ـ تبارك و تعالى ـ تنها در مرحله علم است، هرگاه كه بخواهد، و نيز در مرحله اراده براى مقدّر كردن اشيا؛ امّا هرگاه حكم به مرحله اجرا رسيد ديگر بداء رخ نمى‌دهد. بنابراين، علمِ [خداوند]به معلوم پيش از هستى يافتن معلوم است، و خواستن خواسته پيش از عينيّت يافتن آن است، و اراده كردن مراد پيش از تحقق يافتن آن است، و تقدير اين معلومات پيش از جدا ساختن و پيوند دادن آنها در عالم خارج و زمان است، و صادر كردن حكم اجرا [ى آنها] به معناى قطعى شدن انجام شدنى‌هاست؛ يعنى اجسامى كه با حواس ادراك مى‌شوند و داراى رنگ و بو و وزن و با پيمانه سنجيدنى‌اند، و نيز هر جنبنده‌اى از آدمى و پرى و پرنده و درنده، و ديگر چيزهايى كه با حواس دريافت مى‌شوند. پس، براى خداوند در همه اينها، مادام كه تحقق خارجى نيافته‌اند، بداء حاصل مى‌شود اما چون وجود خارجى كه فهم و دريافت مى‌شود، تحقق يابد، ديگر بدايى حاصل نمى‌شود، و خدا آنچه خواهد انجام مى‌دهد؛ بنابراين، خداوند به موجودات پيش از پديد آمدنشان علم داشت، و با خواست خود ويژگى‌ها و حدّ و حدود آنها را مشخّص كرد، و پيش از آشكار ساختن آنها، ايجادشان كرد، و با اراده، آنها را در رنگ‌ها و ويژگى‌هايشان متمايز ساخت، و با تقدير، روزى‌هايشان را تعيين و آغاز و پايانشان را مشخّص نمود، و با قضا [و حكم خود] جايگاه‌هاى روزى‌هاى مردم را برايشان روشن ساخت و ايشان را به آن جايگاه‌ها راهنمايى فرمود، و با اجرا، علل و اسباب آن (روزى‌ها) را بيان، و راهشان را مشخّص نمود. اين است تقدير خداوند توانا و دانا»."@fa,
+        "17.  سُئِلَ الْعَالِمُ عليه‌السلام: كَيْفَ عِلْمُ اللّه‌ِ؟ قَالَ: «عَلِمَ وَشَاءَ، وَأَرَادَ وَقَدَّرَ، وَقَضى وَأَمْضى ؛ فَأَمْضى مَا قَضى، وَقَضى مَا قَدَّرَ، وَقَدَّرَ مَا أَرَادَ؛ فَبِعِلْمِهِ كَانَتِ الْمَشِيئَةُ، وَبِمَشِيئَتِهِ كَانَتِ الاْءِرَادَةُ، وَبِإِرَادَتِهِ كَانَ التَّقْدِيرُ، وَبِتَقْدِيرِهِ كَانَ الْقَضَاءُ، وَبِقَضَائِهِ كَانَ الاْءِمْضَاءُ، وَالْعِلْمُ مُتَقَدِّمٌ عَلَى الْمَشِيئَةِ، وَالْمَشِيئَةُ ثَانِيَةٌ، وَالاْءِرَادَةُ ثَالِثَةٌ، وَالتَّقْدِيرُ وَاقِعٌ عَلَى الْقَضَاءِ بِالاْءِمْضَاءِ؛ فَلِلّهِ ـ تَبَارَكَ وَتَعَالى ـ الْبَدَاءُ فِيمَا عَلِمَ مَتى شَاءَ، وَفِيمَا أَرَادَ لِتَقْدِيرِ الْأَشْيَاءِ، فَإِذَا وَقَعَ الْقَضَاءُ بِالاْءِمْضَاءِ، فَلاَ بَدَاءَ، فَالْعِلْمُ بِالْمَعْلُومِ قَبْلَ كَوْنِهِ، وَالْمَشِيئَةُ فِي الْمُنْشَأَقَبْلَ عَيْنِهِ، وَالاْءِرَادَةُ فِي الْمُرَادِ قَبْلَ قِيَامِهِ، وَالتَّقْدِيرُ لِهذِهِ الْمَعْلُومَاتِ قَبْلَ تَفْصِيلِهَا وَتَوْصِيلِهَا عِيَاناً وَوَقْتاً، وَالْقَضَاءُ بِالاْءِمْضَاءِ هُوَ الْمُبْرَمُ مِنَ الْمَفْعُولاتِ ذَوَاتِ الْأَجْسَامِ الْمُدْرَكَاتِ بِالْحَوَاسِّ مِنْ ذَوِي لَوْنٍ وَرِيحٍ وَوَزْنٍ وَكَيْلٍ، وَمَا دَبَّ وَدَرَجَ مِنْ إِنْسٍ وَجِنٍّ وَطَيْرٍ وَسِبَاعٍ، وَغَيْرِ ذلِكَ مِمَّا يُدْرَكُ بِالْحَوَاسِّ، فَلِلّهِ ـ تَبَارَكَ وَتَعَالى ـ فِيهِ الْبَدَاءُ مِمَّا لاَ عَيْنَ لَهُ، فَإِذَا وَقَعَ الْعَيْنُ الْمَفْهُومُ الْمُدْرَكُ، فَلاَ بَدَاءَ، وَاللّه‌ُ يَفْعَلُ مَا يَشَاءُ؛ فَبِالْعِلْمِ عَلِمَ الْأَشْيَاءَ قَبْلَ كَوْنِهَا؛ وَبِالْمَشِيئَةِ عَرَّفَ صِفَاتِهَا وَحُدُودَهَا، وَأَنْشَأَهَا قَبْلَ إِظْهَارِهَا؛ وَبِالاْءِرَادَةِ مَيَّزَ أَنْفُسَهَا فِي أَلْوَانِهَا وَصِفَاتِهَا؛ وَبِالتَّقْدِيرِ قَدَّرَ أَقْوَاتَهَا وَعَرَّفَ أَوَّلَهَا وَآخِرَهَا؛ وَبِالْقَضَاءِ أَبَانَ لِلنَّاسِ أَمَاكِنَهَا، وَدَلَّهُمْ عَلَيْهَا؛ وَبِالاْءِمْضَاءِ شَرَحَ عِلَلَهَا، وَأَبَانَ أَمْرَهَا، وَذلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-1> rdf:type owl:ontology .
 
-ex:Text1 a go:Substance .
+ex:text1 a go:substance .
 
-ex:Sentence a go:Concept .
-ex:Idea a go:Concept .
+ex:sentence a go:concept .
+ex:idea a go:concept .
 
-ex:Number17 a go:Quantity ;
-    go:numericalValue 17 .
+ex:number17 a go:quantity ;
+    go:numericalvalue 17 .
 
-ex:ContainEvent1 a go:Event ;
-    go:HasAgent ex:Text1 ;
-    go:HasTheme [ a go:Concept ;
-                  go:hasQuantity ex:Number17 ;
-                  go:conceptType ex:Sentence ] .
+ex:containevent1 a go:event ;
+    go:hasagent ex:text1 ;
+    go:hastheme [ a go:concept ;
+                  go:hasquantity ex:number17 ;
+                  go:concepttype ex:sentence ] .
 
-ex:ContainEvent2 a go:Event ;
-    go:HasAgent ex:Text1 ;
-    go:HasTheme [ a go:Concept ;
-                  go:hasQuantity ex:Number1 ;
-                  go:conceptType ex:Idea ] .
+ex:containevent2 a go:event ;
+    go:hasagent ex:text1 ;
+    go:hastheme [ a go:concept ;
+                  go:hasquantity ex:number1 ;
+                  go:concepttype ex:idea ] .
 
-ex:Number1 a go:Quantity ;
-    go:numericalValue 1 .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-2> rdf:type owl:Ontology .
-
-# The content entity representing ideas numbered '17'
-ex:Content_17 a go:InformationContentEntity ;
-    go:hasLabel "sentence or ideas numbered '17'" .
-
-# The event of requirement to provide content for extraction
-ex:RequirementEvent_1 a go:Event ;
-    go:HasAgent ex:UserOrSystem_Extractor ;
-    go:HasTheme ex:Content_17 ;
-    go:hasGoal ex:ExtractionOfProposals .
-
-# The extraction event relying on content provision
-ex:ExtractionOfProposals a go:Event ;
-    go:hasPrerequisite ex:Content_17 .
-
-# The agent (implied)
-ex:UserOrSystem_Extractor a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:number1 a go:quantity ;
+    go:numericalvalue 1 .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-2> rdf:type owl:ontology .
 
-ex:God a go:Agent, go:Substance ;
-  go:hasState ex:Knowledge .
+# the content entity representing ideas numbered '17'
+ex:content_17 a go:informationcontententity ;
+    go:haslabel "sentence or ideas numbered '17'" .
 
-ex:Knowledge a go:Substance .
+# the event of requirement to provide content for extraction
+ex:requirementevent_1 a go:event ;
+    go:hasagent ex:userorsystem_extractor ;
+    go:hastheme ex:content_17 ;
+    go:hasgoal ex:extractionofproposals .
 
-ex:DivineWill a go:Substance .
+# the extraction event relying on content provision
+ex:extractionofproposals a go:event ;
+    go:hasprerequisite ex:content_17 .
 
-# Events of God's actions
-ex:Event_Knew a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Knowledge .
-
-ex:Event_Willed a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:DivineWill .
-
-ex:Event_Intended a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:DivineWill .
-
-ex:Event_Decreed a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:DivineWill .
-
-ex:Event_Judged a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:DivineWill .
-
-ex:Event_CarriedOut a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:DivineWill .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# the agent (implied)
+ex:userorsystem_extractor a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-3> rdf:type owl:ontology .
 
-ex:God rdf:type go:Substance ;
-    rdfs:label "God" .
+ex:god a go:agent, go:substance ;
+  go:hasstate ex:knowledge .
 
-ex:DecreeEvent rdf:type go:Event ;
-    rdfs:label "Decree Event" ;
-    go:HasAgent ex:God .
+ex:knowledge a go:substance .
 
-ex:FulfillmentEvent rdf:type go:Event ;
-    rdfs:label "Fulfillment Event" ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:DecreeEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:divinewill a go:substance .
 
+# events of god's actions
+ex:event_knew a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:knowledge .
 
-@base <http://etratnet.ir/ontology/> .
+ex:event_willed a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:divinewill .
 
-<http://etratnet.ir/ontology/384-5> rdf:type owl:Ontology .
+ex:event_intended a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:divinewill .
 
-ex:God a go:Deity ;
-    go:HasName "الله" .
+ex:event_decreed a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:divinewill .
 
-ex:DecreeEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:PredestinedThing .
+ex:event_judged a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:divinewill .
 
-ex:PredestinedThing a go:Concept ;
-    go:IsResultOf ex:PredestinationEvent .
-
-ex:PredestinationEvent a go:Event ;
-    go:HasAgent ex:God .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-6> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Will .
-
-ex:God a go:god .
-
-ex:Will a go:concept .
-go:Event rdfs:label "رخداد"@fa.
+ex:event_carriedout a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:divinewill .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-4> rdf:type owl:ontology .
 
-ex:Will a go:AbstractConcept ;
-    go:HasAgent ex:God ;
-    go:HasAttribute ex:Knowledge .
+ex:god rdf:type go:substance ;
+    rdfs:label "god" .
 
-ex:God a go:Deity .
-ex:Knowledge a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:decreeevent rdf:type go:event ;
+    rdfs:label "decree event" ;
+    go:hasagent ex:god .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-8> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:State ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Will .
-
-ex:God a go:Deity ;
-    rdfs:label "God"@en .
-
-ex:Will a go:Concept ;
-    rdfs:label "Will"@en .
+ex:fulfillmentevent rdf:type go:event ;
+    rdfs:label "fulfillment event" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:decreeevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-5> rdf:type owl:ontology .
 
-ex:Decree a go:Event ;
-    go:HasCause ex:GodsWill .
+ex:god a go:deity ;
+    go:hasname "الله" .
 
-ex:God a go:Deity .
+ex:decreeevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:predestinedthing .
 
-ex:GodsWill a go:concept ;
-    go:HasAgent ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:predestinedthing a go:concept ;
+    go:isresultof ex:predestinationevent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-10> rdf:type owl:Ontology .
-
-ex:God a go:Agent ;
-   rdfs:label "God" .
-
-ex:TheDecree a go:Event ;
-   rdfs:label "The Decree" ;
-   go:HasAgent ex:God ;
-   go:HasCause ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:predestinationevent a go:event ;
+    go:hasagent ex:god .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-6> rdf:type owl:ontology .
 
-ex:Judgment a go:Event .
-ex:God a go:agent .
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:will .
 
-ex:Judgment go:HasAgent ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:god a go:god .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-12> rdf:type owl:Ontology .
-
-ex:Knowledge a go:Substance ;
-    rdfs:label "Knowledge" .
-
-ex:Will a go:Substance ;
-    rdfs:label "Will" .
-
-ex:Knowledge ex:precedes ex:Will .
-go:Substance rdfs:label "شی"@fa.
+ex:will a go:concept .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-7> rdf:type owl:ontology .
 
-ex:Will a go:Substance ;
-  rdfs:label "Will"@en .
+ex:will a go:abstractconcept ;
+    go:hasagent ex:god ;
+    go:hasattribute ex:knowledge .
 
-ex:Knowledge a go:Substance ;
-  rdfs:label "Knowledge"@en .
-
-ex:Will go:follows ex:Knowledge .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-14> rdf:type owl:Ontology .
-
-ex:Will a go:Concept ;
-    rdfs:label "Will" .
-
-ex:Intention a go:Concept ;
-    rdfs:label "Intention" .
-
-ex:WillComesAfterIntention a ex:ComingAfterEvent ;
-    a go:Event ;
-    go:HasTheme ex:Will ;
-    go:HasCause ex:Intention .
-go:Event rdfs:label "رخداد"@fa.
+ex:god a go:deity .
+ex:knowledge a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-8> rdf:type owl:ontology .
 
-ex:Estimation a go:Event ;
-    go:HasTheme ex:JudgmentByDefault .
+ex:eventinstance1 a go:state ;
+    go:hasagent ex:god ;
+    go:hastheme ex:will .
 
-ex:JudgmentByDefault a go:Event ;
-    go:label "Judgment by default"@en .
-go:Event rdfs:label "رخداد"@fa.
+ex:god a go:deity ;
+    rdfs:label "god"@en .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-16> rdf:type owl:Ontology .
-
-ex:BeginningOfKnowledge a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Knowledge ;
-    go:HasTemporalCondition ex:DivineWill .
-
-ex:God_Almighty a go:Deity .
-
-ex:Knowledge a go:Knowledge .
-
-ex:DivineWill a go:Volition .
-go:Event rdfs:label "رخداد"@fa.
+ex:will a go:concept ;
+    rdfs:label "will"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-9> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Substance ;
-    rdfs:label "God Almighty" .
+ex:decree a go:event ;
+    go:hascause ex:godswill .
 
-ex:InitiationEvent a go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:OrdainingThings .
+ex:god a go:deity .
 
-ex:OrdainingThings a go:Process ;
+ex:godswill a go:concept ;
+    go:hasagent ex:god .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-10> rdf:type owl:ontology .
+
+ex:god a go:agent ;
+   rdfs:label "god" .
+
+ex:thedecree a go:event ;
+   rdfs:label "the decree" ;
+   go:hasagent ex:god ;
+   go:hascause ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-11> rdf:type owl:ontology .
+
+ex:judgment a go:event .
+ex:god a go:agent .
+
+ex:judgment go:hasagent ex:god .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-12> rdf:type owl:ontology .
+
+ex:knowledge a go:substance ;
+    rdfs:label "knowledge" .
+
+ex:will a go:substance ;
+    rdfs:label "will" .
+
+ex:knowledge ex:precedes ex:will .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-13> rdf:type owl:ontology .
+
+ex:will a go:substance ;
+  rdfs:label "will"@en .
+
+ex:knowledge a go:substance ;
+  rdfs:label "knowledge"@en .
+
+ex:will go:follows ex:knowledge .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-14> rdf:type owl:ontology .
+
+ex:will a go:concept ;
+    rdfs:label "will" .
+
+ex:intention a go:concept ;
+    rdfs:label "intention" .
+
+ex:willcomesafterintention a ex:comingafterevent ;
+    a go:event ;
+    go:hastheme ex:will ;
+    go:hascause ex:intention .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-15> rdf:type owl:ontology .
+
+ex:estimation a go:event ;
+    go:hastheme ex:judgmentbydefault .
+
+ex:judgmentbydefault a go:event ;
+    go:label "judgment by default"@en .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-16> rdf:type owl:ontology .
+
+ex:beginningofknowledge a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:knowledge ;
+    go:hastemporalcondition ex:divinewill .
+
+ex:god_almighty a go:deity .
+
+ex:knowledge a go:knowledge .
+
+ex:divinewill a go:volition .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-17> rdf:type owl:ontology .
+
+ex:godalmighty a go:substance ;
+    rdfs:label "god almighty" .
+
+ex:initiationevent a go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:ordainingthings .
+
+ex:ordainingthings a go:process ;
     rdfs:label "ordaining of things" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-18> rdf:type owl:ontology .
 
-ex:JudgmentIdhaA a go:Event ;
-    go:EventType ex:Judgment .
+ex:judgmentidhaa a go:event ;
+    go:eventtype ex:judgment .
 
-# State instances
-ex:Idhaa a ex:Condition .
-ex:Badaan a ex:Condition .
+# state instances
+ex:idhaa a ex:condition .
+ex:badaan a ex:condition .
 
-# Modeling the conditional event
-ex:JudgmentIdhaA go:HasTheme ex:Idhaa ;
-    ex:resultsIn ex:NoBadaan .
+# modeling the conditional event
+ex:judgmentidhaa go:hastheme ex:idhaa ;
+    ex:resultsin ex:nobadaan .
 
-# NoBadaan represents the negation or non-occurrence of Badaan
-ex:NoBadaan a ex:State ;
-    ex:negates ex:Badaan .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-19> rdf:type owl:Ontology .
-
-ex:KnownEntity a go:Substance ;
-    rdfs:label "Known"@en .
-
-ex:KnowledgeEvent a go:Event ;
-    go:HasTheme ex:KnownEntity ;
-    rdfs:label "Knowledge about Known"@en .
-
-ex:ExistenceEvent a go:Event ;
-    go:HasTheme ex:KnownEntity ;
-    rdfs:label "Existence of Known"@en .
-
-ex:KnowledgeEvent go:precedes ex:ExistenceEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# nobadaan represents the negation or non-occurrence of badaan
+ex:nobadaan a ex:state ;
+    ex:negates ex:badaan .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-19> rdf:type owl:ontology .
 
-ex:Will a go:Substance ;
-    go:locatedIn ex:Origin ;
-    go:existsBefore ex:Manifestation .
+ex:knownentity a go:substance ;
+    rdfs:label "known"@en .
 
-ex:Origin a go:place .
-ex:Manifestation a go:Event .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:knowledgeevent a go:event ;
+    go:hastheme ex:knownentity ;
+    rdfs:label "knowledge about known"@en .
 
+ex:existenceevent a go:event ;
+    go:hastheme ex:knownentity ;
+    rdfs:label "existence of known"@en .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-21> rdf:type owl:Ontology .
-
-ex:Will a go:Concept ;
-    rdfs:label "Will"@en .
-
-ex:IntendedAction a go:Concept ;
-    rdfs:label "Intended Action"@en .
-
-ex:OccurrenceOfIntendedAction a go:Event ;
-    rdfs:label "Occurrence of Intended Action"@en ;
-    go:HasTheme ex:IntendedAction .
-
-ex:Will ex:precedes ex:OccurrenceOfIntendedAction .
-go:Event rdfs:label "رخداد"@fa.
+ex:knowledgeevent go:precedes ex:existenceevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-20> rdf:type owl:ontology .
 
-ex:parameters a go:Substance .
+ex:will a go:substance ;
+    go:locatedin ex:origin ;
+    go:existsbefore ex:manifestation .
 
-ex:estimationEvent a go:Event ;
-    go:HasTheme ex:parameters ;
-    go:occursBefore ex:detailingEvent , ex:deliveringEvent .
+ex:origin a go:place .
+ex:manifestation a go:event .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
-ex:detailingEvent a go:Event ;
-    go:HasTheme ex:parameters .
 
-ex:deliveringEvent a go:Event ;
-    go:HasTheme ex:parameters ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-21> rdf:type owl:ontology .
+
+ex:will a go:concept ;
+    rdfs:label "will"@en .
+
+ex:intendedaction a go:concept ;
+    rdfs:label "intended action"@en .
+
+ex:occurrenceofintendedaction a go:event ;
+    rdfs:label "occurrence of intended action"@en ;
+    go:hastheme ex:intendedaction .
+
+ex:will ex:precedes ex:occurrenceofintendedaction .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-22> rdf:type owl:ontology .
+
+ex:parameters a go:substance .
+
+ex:estimationevent a go:event ;
+    go:hastheme ex:parameters ;
+    go:occursbefore ex:detailingevent , ex:deliveringevent .
+
+ex:detailingevent a go:event ;
+    go:hastheme ex:parameters .
+
+ex:deliveringevent a go:event ;
+    go:hastheme ex:parameters ;
     ex:mode "physically" ;
     ex:timeliness "on time" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-23> rdf:type owl:ontology .
 
-ex:JudgmentByRuling a go:Event ;
-    go:hasProperty ex:Conclusive .
+ex:judgmentbyruling a go:event ;
+    go:hasproperty ex:conclusive .
 
-ex:Conclusive a go:EventProperty .
+ex:conclusive a go:eventproperty .
 
-ex:AffectedEvents a go:EventCategory .
+ex:affectedevents a go:eventcategory .
 
-ex:JudgmentByRuling go:belongsTo ex:AffectedEvents .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-24> rdf:type owl:Ontology .
-
-ex:ObjectInPassiveAction a go:concreteEntity ;
-    go:HasQuality ex:Color , ex:Smell , ex:Weight , ex:Volume ;
-    go:IsPerceivableBy ex:Senses .
-
-ex:Color a go:Quality ;
-    rdfs:label "Color"@en .
-
-ex:Smell a go:Quality ;
-    rdfs:label "Smell"@en .
-
-ex:Weight a go:Quality ;
-    rdfs:label "Weight"@en .
-
-ex:Volume a go:Quality ;
-    rdfs:label "Volume"@en .
-
-ex:Senses a go:sensor ;
-    rdfs:label "Senses"@en .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:judgmentbyruling go:belongsto ex:affectedevents .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-25> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-24> rdf:type owl:ontology .
 
-ex:Al-Mubram a go:Concept ;
-    go:includes ex:WalkingAndCrawlingEntities .
+ex:objectinpassiveaction a go:concreteentity ;
+    go:hasquality ex:color , ex:smell , ex:weight , ex:volume ;
+    go:isperceivableby ex:senses .
 
-ex:WalkingAndCrawlingEntities a go:Class ;
-    go:hasMember ex:Humans, ex:Jinn, ex:Birds, ex:Beasts ;
-    ex:hasMovement ex:Walk, ex:Crawl .
+ex:color a go:quality ;
+    rdfs:label "color"@en .
 
-ex:Humans a go:Being ;
-    rdfs:label "Humans"@en .
+ex:smell a go:quality ;
+    rdfs:label "smell"@en .
 
-ex:Jinn a go:Being ;
-    rdfs:label "Jinn"@en .
+ex:weight a go:quality ;
+    rdfs:label "weight"@en .
 
-ex:Birds a go:Being ;
-    rdfs:label "Birds"@en .
+ex:volume a go:quality ;
+    rdfs:label "volume"@en .
 
-ex:Beasts a go:Being ;
-    rdfs:label "Beasts"@en .
-
-ex:Walk a go:Movement ;
-    rdfs:label "Walking"@en .
-
-ex:Crawl a go:Movement ;
-    rdfs:label "Crawling"@en .
+ex:senses a go:sensor ;
+    rdfs:label "senses"@en .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-26> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-25> rdf:type owl:ontology .
 
-ex:Contract1 a go:Agreement .
-ex:OtherThings a go:Object ;
-    ex:perceivedBySenses "true"^^xsd:boolean .
+ex:al-mubram a go:concept ;
+    go:includes ex:walkingandcrawlingentities .
 
-ex:InclusionEvent1 a go:Event ;
-    go:HasAgent ex:Contract1 ;
-    go:HasTheme ex:OtherThings .
-go:Event rdfs:label "رخداد"@fa.
+ex:walkingandcrawlingentities a go:class ;
+    go:hasmember ex:humans, ex:jinn, ex:birds, ex:beasts ;
+    ex:hasmovement ex:walk, ex:crawl .
 
+ex:humans a go:being ;
+    rdfs:label "humans"@en .
 
-@base <http://etratnet.ir/ontology/> .
+ex:jinn a go:being ;
+    rdfs:label "jinn"@en .
 
-<http://etratnet.ir/ontology/384-27> rdf:type owl:Ontology .
+ex:birds a go:being ;
+    rdfs:label "birds"@en .
 
-ex:God_Almighty a go:Deity ;
-    go:HasAttribute ex:HasBeginningInCreatedThings .
+ex:beasts a go:being ;
+    rdfs:label "beasts"@en .
 
-ex:CreatedThings_Mubram a go:CreatedSubstance ;
-    go:PerceivedBy ex:NoEye .
+ex:walk a go:movement ;
+    rdfs:label "walking"@en .
 
-ex:NoEye a go:Eye ;
-    go:HasPerception false .
-
-ex:HasBeginningInCreatedThings a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:CreatedThings_Mubram .
-go:Event rdfs:label "رخداد"@fa.
+ex:crawl a go:movement ;
+    rdfs:label "crawling"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-28> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-26> rdf:type owl:ontology .
 
-ex:Occurrence_Event a go:Event ;
-    go:HasTheme ex:Object_Understood_Perceived .
+ex:contract1 a go:agreement .
+ex:otherthings a go:object ;
+    ex:perceivedbysenses "true"^^xsd:boolean .
 
-ex:Object_Understood_Perceived a go:Object ;
-    go:HasQuality ex:Understood_Quality , ex:Perceived_Quality .
-
-ex:Understood_Quality a go:Quality .
-ex:Perceived_Quality a go:Quality .
-
-ex:No_Beginning_State a go:State ;
-    go:CausedBy ex:Occurrence_Event .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:inclusionevent1 a go:event ;
+    go:hasagent ex:contract1 ;
+    go:hastheme ex:otherthings .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-29> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-27> rdf:type owl:ontology .
 
-ex:Event_Do a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Event_Will .
+ex:god_almighty a go:deity ;
+    go:hasattribute ex:hasbeginningincreatedthings .
 
-ex:Event_Will a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Thing .
+ex:createdthings_mubram a go:createdsubstance ;
+    go:perceivedby ex:noeye .
 
-ex:God a go:Deity .
+ex:noeye a go:eye ;
+    go:hasperception false .
 
-ex:Thing a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-30> rdf:type owl:Ontology .
-
-ex:God a go:Substance ;
-    rdfs:label "God" .
-
-ex:Things a go:Substance ;
-    rdfs:label "Things" .
-
-ex:KnowingEvent a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Things ;
-    go:hasTemporalRelation [ a go:TemporalRelation ;
-                             go:temporalRelationType go:before ;
-                             go:relatedEvent ex:ExistenceEvent ] .
-
-ex:ExistenceEvent a go:Event ;
-    go:hasTheme ex:Things .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:hasbeginningincreatedthings a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:createdthings_mubram .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-31> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-28> rdf:type owl:ontology .
 
-ex:DefiningEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Attributes , ex:Boundaries , ex:Things ;
-    go:hasCause ex:GodsWill .
+ex:occurrence_event a go:event ;
+    go:hastheme ex:object_understood_perceived .
 
-ex:God a go:Agent ;
-    rdfs:label "God"@en .
+ex:object_understood_perceived a go:object ;
+    go:hasquality ex:understood_quality , ex:perceived_quality .
 
-ex:GodsWill a go:Substance ;
-    rdfs:label "God's Will"@en .
+ex:understood_quality a go:quality .
+ex:perceived_quality a go:quality .
 
-ex:Attributes a go:Property ;
-    rdfs:label "Attributes"@en .
-
-ex:Boundaries a go:Property ;
-    rdfs:label "Boundaries"@en .
-
-ex:Things a go:Object ;
-    rdfs:label "Things"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:no_beginning_state a go:state ;
+    go:causedby ex:occurrence_event .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-32> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-29> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Things a go:Substance .
+ex:event_do a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:event_will .
 
-ex:creationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Things .
+ex:event_will a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:thing .
 
-ex:showingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Things ;
-    go:After ex:creationEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-33> rdf:type owl:Ontology .
-
-ex:eventDistinguish a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Souls ;
-    go:HasManner ex:Will .
-
-ex:God a go:Deity .
-
-ex:Souls a go:Substance ;
-    ex:hasKind ex:Kinds ;
-    ex:hasQuality ex:Qualities .
-
-ex:Will a go:Attribute .
-
-ex:Kinds a go:Property .
-ex:Qualities a go:Property .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:thing a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-34> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-30> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-  go:HasName "God" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:Provisions a go:Substance ;
-  go:HasName "provisions" .
+ex:things a go:substance ;
+    rdfs:label "things" .
 
-ex:PredestinationEvent a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Provisions ;
-  go:HasProperty [ a go:Measure ] .
+ex:knowingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:things ;
+    go:hastemporalrelation [ a go:temporalrelation ;
+                             go:temporalrelationtype go:before ;
+                             go:relatedevent ex:existenceevent ] .
 
-ex:KnowledgeEvent a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:ProvisionsBoundary .
-
-ex:ProvisionsBoundary a go:Substance ;
-  go:HasStart ex:StartOfProvisions ;
-  go:HasEnd ex:EndOfProvisions .
-
-ex:StartOfProvisions a go:Substance ;
-  go:HasName "beginning of provisions" .
-
-ex:EndOfProvisions a go:Substance ;
-  go:HasName "end of provisions" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:existenceevent a go:event ;
+    go:hastheme ex:things .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-35> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-31> rdf:type owl:ontology .
 
-ex:Divine_Decree a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Locations_of_Things ;
-    go:hasRecipient ex:People ;
-    rdfs:label "Divine decree revealing locations of things to people" .
+ex:definingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:attributes , ex:boundaries , ex:things ;
+    go:hascause ex:godswill .
 
-ex:God a go:Deity ;
-    foaf:name "God" .
+ex:god a go:agent ;
+    rdfs:label "god"@en .
 
-ex:People a foaf:Group ;
-    foaf:name "People" .
+ex:godswill a go:substance ;
+    rdfs:label "god's will"@en .
 
-ex:Locations_of_Things a go:Place ;
-    rdfs:label "Locations of things" .
-go:Event rdfs:label "رخداد"@fa.
+ex:attributes a go:property ;
+    rdfs:label "attributes"@en .
 
+ex:boundaries a go:property ;
+    rdfs:label "boundaries"@en .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/384-36> rdf:type owl:Ontology .
-
-ex:event1 a go:Explanation ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:CausesOfThings ;
-    go:HasInstrument ex:Signature .
-
-ex:event2 a go:Clarification ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Matters ;
-    go:HasInstrument ex:Signature .
-
-ex:God a go:Agent .
-ex:CausesOfThings a go:Theme .
-ex:Matters a go:Theme .
-ex:Signature a go:Instrument .
-go:Agent rdfs:label "عامل"@fa.
+ex:things a go:object ;
+    rdfs:label "things"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/384-37> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/384-32> rdf:type owl:ontology .
 
-ex:Estimation_Almighty a go:Event ;
-    go:HasAgent ex:Almighty_AllKnowing ;
-    go:HasTheme ex:These_Actions .
+ex:god a go:substance .
+ex:things a go:substance .
 
-ex:Almighty_AllKnowing a go:agent ;
-    go:hasAttribute ex:Almighty ;
-    go:hasAttribute ex:AllKnowing .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:things .
 
-ex:These_Actions a go:Event .
-go:Event rdfs:label "رخداد"@fa.
+ex:showingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:things ;
+    go:after ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-33> rdf:type owl:ontology .
+
+ex:eventdistinguish a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:souls ;
+    go:hasmanner ex:will .
+
+ex:god a go:deity .
+
+ex:souls a go:substance ;
+    ex:haskind ex:kinds ;
+    ex:hasquality ex:qualities .
+
+ex:will a go:attribute .
+
+ex:kinds a go:property .
+ex:qualities a go:property .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-34> rdf:type owl:ontology .
+
+ex:god a go:deity ;
+  go:hasname "god" .
+
+ex:provisions a go:substance ;
+  go:hasname "provisions" .
+
+ex:predestinationevent a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:provisions ;
+  go:hasproperty [ a go:measure ] .
+
+ex:knowledgeevent a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:provisionsboundary .
+
+ex:provisionsboundary a go:substance ;
+  go:hasstart ex:startofprovisions ;
+  go:hasend ex:endofprovisions .
+
+ex:startofprovisions a go:substance ;
+  go:hasname "beginning of provisions" .
+
+ex:endofprovisions a go:substance ;
+  go:hasname "end of provisions" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-35> rdf:type owl:ontology .
+
+ex:divine_decree a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:locations_of_things ;
+    go:hasrecipient ex:people ;
+    rdfs:label "divine decree revealing locations of things to people" .
+
+ex:god a go:deity ;
+    foaf:name "god" .
+
+ex:people a foaf:group ;
+    foaf:name "people" .
+
+ex:locations_of_things a go:place ;
+    rdfs:label "locations of things" .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-36> rdf:type owl:ontology .
+
+ex:event1 a go:explanation ;
+    go:hasagent ex:god ;
+    go:hastheme ex:causesofthings ;
+    go:hasinstrument ex:signature .
+
+ex:event2 a go:clarification ;
+    go:hasagent ex:god ;
+    go:hastheme ex:matters ;
+    go:hasinstrument ex:signature .
+
+ex:god a go:agent .
+ex:causesofthings a go:theme .
+ex:matters a go:theme .
+ex:signature a go:instrument .
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/384-37> rdf:type owl:ontology .
+
+ex:estimation_almighty a go:event ;
+    go:hasagent ex:almighty_allknowing ;
+    go:hastheme ex:these_actions .
+
+ex:almighty_allknowing a go:agent ;
+    go:hasattribute ex:almighty ;
+    go:hasattribute ex:allknowing .
+
+ex:these_actions a go:event .
+go:event rdfs:label "رخداد"@fa.

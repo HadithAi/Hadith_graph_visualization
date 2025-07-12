@@ -1,78 +1,81 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/344#> .
+@prefix ex: <http://etratnet.ir/graph/example/344#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/344> rdf:type go:ontology ;
+        go:hascontent "6.  «حمل‌كنندگان عرش ـ عرش همان علم است ـ هشت نفرند: چهار نفرشان از ما هستند و چهارتاى ديگر از هر كه خدا خواهد»."@fa,
+        "6.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «حَمَلَةُ الْعَرْشِ ـ وَالْعَرْشُ: الْعِلْمُ ـ ثَمَانِيَةٌ: أَرْبَعَةٌ مِنَّا، وَأَرْبَعَةٌ مِمَّنْ شَاءَ اللّه‌ُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/344-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/344-1> rdf:type owl:ontology .
 
-ex:BearersOfThrone a go:AgentGroup ;
-    go:bears ex:Throne ;
-    go:hasQuantity "8"^^<http://www.w3.org/2001/XMLSchema#integer> .
+ex:bearersofthrone a go:agentgroup ;
+    go:bears ex:throne ;
+    go:hasquantity "8"^^<http://www.w3.org/2001/xmlschema#integer> .
 
-ex:Throne a go:Object ;
-    go:isDefinedAs ex:Knowledge .
+ex:throne a go:object ;
+    go:isdefinedas ex:knowledge .
 
-ex:Knowledge a go:Concept .
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/344-2> rdf:type owl:Ontology .
-
-ex:BearersOfThrone a go:Group ;
-    ex:hasNumber "43"^^xsd:integer ;
-    ex:hasGenealogicalOrigin ex:FamilyOfProphet .
-
-ex:FamilyOfProphet a go:GenealogicalGroup ;
-    go:refersTo <http://dbpedia.org/resource/Prophet> .
+ex:knowledge a go:concept .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/344-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/344-2> rdf:type owl:ontology .
 
-ex:BearersOfTheThrone a go:Agent .
-ex:FourBearersOfTheThrone a go:Substance ;
-    go:quantity "4"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-    go:isMemberOf ex:BearersOfTheThrone ;
-    go:isFrom ex:UsGroup .
+ex:bearersofthrone a go:group ;
+    ex:hasnumber "43"^^xsd:integer ;
+    ex:hasgenealogicalorigin ex:familyofprophet .
 
-ex:UsGroup a go:Group .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:familyofprophet a go:genealogicalgroup ;
+    go:refersto <http://dbpedia.org/resource/prophet> .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/344-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/344-3> rdf:type owl:ontology .
 
-# Entities
-ex:Four a go:Quantity ;
-    rdfs:label "Four" .
+ex:bearersofthethrone a go:agent .
+ex:fourbearersofthethrone a go:substance ;
+    go:quantity "4"^^<http://www.w3.org/2001/xmlschema#integer> ;
+    go:ismemberof ex:bearersofthethrone ;
+    go:isfrom ex:usgroup .
 
-ex:BearerOfTheThrone a go:Substance ;
-    rdfs:label "Bearer of the Throne" .
+ex:usgroup a go:group .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
-ex:God a go:agent ;
-    rdfs:label "God" .
 
-# Event: Selection/Inclusion of Four bearers by God's will
-ex:SelectionEvent_1 a go:Event ;
-    go:HasTheme ex:Four ;
-    go:HasAgent ex:God ;
-    go:HasTargetClass ex:BearerOfTheThrone ;
-    rdfs:comment "Four of the bearers of the Throne selected are those whom God wills." .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/344-4> rdf:type owl:ontology .
+
+# entities
+ex:four a go:quantity ;
+    rdfs:label "four" .
+
+ex:bearerofthethrone a go:substance ;
+    rdfs:label "bearer of the throne" .
+
+ex:god a go:agent ;
+    rdfs:label "god" .
+
+# event: selection/inclusion of four bearers by god's will
+ex:selectionevent_1 a go:event ;
+    go:hastheme ex:four ;
+    go:hasagent ex:god ;
+    go:hastargetclass ex:bearerofthethrone ;
+    rdfs:comment "four of the bearers of the throne selected are those whom god wills." .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

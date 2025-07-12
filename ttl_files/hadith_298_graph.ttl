@@ -1,165 +1,168 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/298#> .
+@prefix ex: <http://etratnet.ir/graph/example/298#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/298> rdf:type go:ontology ;
+        go:hascontent "6.  به امام باقر عليه‌السلام عرض كردم: فدايت گردم، اگر صلاح مى‌دانيد به من بياموزيد كه آيا خداوند ـ جلّ وجهه ـ پيش از آن كه آفرينش را بيافريند مى‌دانست كه يگانه است؟ زيرا ياران شما اختلاف نظر دارند. برخى‌شان مى‌گويند: پيش از آن كه چيزى از آفريدگانش را بيافريند، مى‌دانسته است، و برخى ديگر مى‌گويند: «مى‌داند» در حقيقت، به معناى «ايجاد مى‌كند» است؛ بنابراين، او امروز مى‌داند كه پيش از ايجاد اشيا جز او موجودى نبوده است. اينان مى‌گويند: اگر ثابت كنيم كه او از ازل مى‌دانسته يگانه است ثابت كرده‌ايم كه از ازل موجودى جز او با او بوده است. سرورم، اگر صلاح مى‌دانيد آموزه‌اى به من دهيد كه از آن فراتر نروم. حضرت نوشت: «خداوند بزرگ و بلندنام، از ازل عالم بوده است»."@fa,
+        "6.  قُلْتُ لِأَبِي جَعْفَرٍ عليه‌السلام: جُعِلْتُ فِدَاكَ، إِنْ رَأَيْتَ أَنْ تُعَلِّمَنِي هَلْ كَانَ اللّه‌ُ ـ جَلَّ وَجْهُهُ ـ يَعْلَمُ قَبْلَ أَنْ يَخْلُقَ الْخَلْقَ أَنَّهُ وَحْدَهُ؟ فَقَدِ اخْتَلَفَ مَوَالِيكَ، فَقَالَ بَعْضُهُمْ: قَدْ كَانَ يَعْلَمُ قَبْلَ أَنْ يَخْلُقَ شَيْئاً مِنْ خَلْقِهِ، وَقَالَ بَعْضُهُمْ: إِنَّمَا مَعْنى «يَعْلَمُ» «يَفْعَلُ»، فَهُوَ الْيَوْمَ يَعْلَمُ أَنَّهُ لاَ غَيْرُهُ قَبْلَ فِعْلِ الْأَشْيَاءِ، فَقَالُوا: إِنْ أَثْبَتْنَا أَنَّهُ لَمْ يَزَلْ عَالِماً بِأَنَّهُ لاَ غَيْرُهُ، فَقَدْ أَثْبَتْنَا مَعَهُ غَيْرَهُ فِي أَزَلِيَّتِهِ، فَإِنْ رَأَيْتَ يَا سَيِّدِي، أَنْ تُعَلِّمَنِي مَا لاَ أَعْدُوهُ إِلى غَيْرِهِ. فَكَتَبَ عليه‌السلام: «مَا زَالَ اللّه‌ُ عَالِماً تَبَارَكَ وَتَعَالى ذِكْرُهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/298-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/298-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:HasName "God" .
+ex:god a go:deity ;
+    go:hasname "god" .
 
-ex:KnowledgeOfOneness a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:God ;
-    go:EventTime "BeforeCreation" .
+ex:knowledgeofoneness a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:god ;
+    go:eventtime "beforecreation" .
 
-ex:CreationEvent a go:Event ;
-    go:EventType "Creation" .
+ex:creationevent a go:event ;
+    go:eventtype "creation" .
 
-ex:EventTime "BeforeCreation" ;
-    go:TemporalRelationBefore ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/298-2> rdf:type owl:Ontology .
-
-# Entities
-ex:SomeScholars rdf:type go:Group ;
-    go:hasMember ex:Scholar1, ex:Scholar2 .
-ex:God rdf:type go:Deity .
-ex:Creatures rdf:type go:Collection ;
-    go:includes go:Creature .
-
-# Events
-ex:SpeakingEvent rdf:type go:CommunicationEvent ;
-    go:hasAgent ex:SomeScholars ;
-    go:HasTheme ex:Proposition .
-
-ex:KnowledgeEvent rdf:type go:KnowledgeEvent ;
-    go:hasAgent ex:God ;
-    go:TemporalContext ex:BeforeCreation .
-
-ex:CreationEvent rdf:type go:CreationEvent ;
-    go:hasAgent ex:God ;
-    go:HasTheme ex:Creatures .
-
-# Proposition content
-ex:Proposition rdf:type go:Proposition ;
-    go:asserts ex:KnowledgeEvent .
-
-# Temporal relation
-ex:BeforeCreation rdf:type go:TemporalContext ;
-    go:before ex:CreationEvent .
+ex:eventtime "beforecreation" ;
+    go:temporalrelationbefore ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/298-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/298-2> rdf:type owl:ontology .
 
-ex:event1 a go:SpeechEvent ;
-    go:HasAgent ex:SomeScholars ;
-    go:HasTheme ex:MeaningStatement .
+# entities
+ex:somescholars rdf:type go:group ;
+    go:hasmember ex:scholar1, ex:scholar2 .
+ex:god rdf:type go:deity .
+ex:creatures rdf:type go:collection ;
+    go:includes go:creature .
 
-ex:SomeScholars a go:Group ;
-    go:hasRole go:Scholar .
+# events
+ex:speakingevent rdf:type go:communicationevent ;
+    go:hasagent ex:somescholars ;
+    go:hastheme ex:proposition .
 
-ex:MeaningStatement a go:Proposition ;
-    go:assertsEquivalence ex:KnowVerbMeaning , ex:DoVerbMeaning .
+ex:knowledgeevent rdf:type go:knowledgeevent ;
+    go:hasagent ex:god ;
+    go:temporalcontext ex:beforecreation .
 
-ex:KnowVerbMeaning a go:LinguisticMeaning ;
+ex:creationevent rdf:type go:creationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creatures .
+
+# proposition content
+ex:proposition rdf:type go:proposition ;
+    go:asserts ex:knowledgeevent .
+
+# temporal relation
+ex:beforecreation rdf:type go:temporalcontext ;
+    go:before ex:creationevent .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/298-3> rdf:type owl:ontology .
+
+ex:event1 a go:speechevent ;
+    go:hasagent ex:somescholars ;
+    go:hastheme ex:meaningstatement .
+
+ex:somescholars a go:group ;
+    go:hasrole go:scholar .
+
+ex:meaningstatement a go:proposition ;
+    go:assertsequivalence ex:knowverbmeaning , ex:doverbmeaning .
+
+ex:knowverbmeaning a go:linguisticmeaning ;
     go:label "to know" .
 
-ex:DoVerbMeaning a go:LinguisticMeaning ;
+ex:doverbmeaning a go:linguisticmeaning ;
     go:label "to do" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/298-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/298-4> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme _:b1 ;
-  time:hasDate ex:Today .
+ex:eventinstance1 a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme _:b1 ;
+  time:hasdate ex:today .
 
-ex:God a go:deity .
+ex:god a go:deity .
 
-ex:Today a time:TemporalEntity .
+ex:today a time:temporalentity .
 
 _:b1 a go:proposition ;
-  go:HasTheme ex:NoOneElseBeforeGodInActions .
+  go:hastheme ex:nooneelsebeforegodinactions .
 
-ex:NoOneElseBeforeGodInActions a go:negatedStatement ;
-  go:Subject ex:NoOneElse ;
-  go:Predicate ex:BeforeInDoingThings ;
-  go:Object ex:God .
+ex:nooneelsebeforegodinactions a go:negatedstatement ;
+  go:subject ex:nooneelse ;
+  go:predicate ex:beforeindoingthings ;
+  go:object ex:god .
 
-ex:NoOneElse a go:agent .
+ex:nooneelse a go:agent .
 
-ex:BeforeInDoingThings a go:relation .
-go:Event rdfs:label "رخداد"@fa.
+ex:beforeindoingthings a go:relation .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/298-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/298-5> rdf:type owl:ontology .
 
-# Entities
-ex:God a go:Substance ;
-    go:hasRole ex:Knower .
+# entities
+ex:god a go:substance ;
+    go:hasrole ex:knower .
 
-ex:AnotherKnower a go:Substance ;
-    go:hasRole ex:Knower .
+ex:anotherknower a go:substance ;
+    go:hasrole ex:knower .
 
-# States
-ex:GodOnlyKnowerState a go:State ;
-    go:hasPatient ex:God ;
-    go:hasAttribute ex:ExclusiveKnowledge .
+# states
+ex:godonlyknowerstate a go:state ;
+    go:haspatient ex:god ;
+    go:hasattribute ex:exclusiveknowledge .
 
-ex:CoExistKnowersState a go:State ;
-    go:hasPatient ex:God , ex:AnotherKnower ;
-    go:hasAttribute ex:SharedKnowledgeEternity .
+ex:coexistknowersstate a go:state ;
+    go:haspatient ex:god , ex:anotherknower ;
+    go:hasattribute ex:sharedknowledgeeternity .
 
-ex:ExclusiveKnowledge a go:Attribute ;
+ex:exclusiveknowledge a go:attribute ;
     rdfs:label "exclusive knowledge" .
 
-ex:SharedKnowledgeEternity a go:Attribute ;
-    rdfs:label "existence of another knower in eternity with God" .
+ex:sharedknowledgeeternity a go:attribute ;
+    rdfs:label "existence of another knower in eternity with god" .
 
-# Events
-ex:ProvingEvent a go:Event ;
-    go:HasAgent ex:We ;
-    go:HasTheme ex:GodOnlyKnowerState ;
-    go:HasConsequence ex:CoExistKnowersState .
+# events
+ex:provingevent a go:event ;
+    go:hasagent ex:we ;
+    go:hastheme ex:godonlyknowerstate ;
+    go:hasconsequence ex:coexistknowersstate .
 
-ex:We a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:we a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/298-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/298-6> rdf:type owl:ontology .
 
-ex:God a go:God ;
-       go:hasKnowledge ex:Knowledge ;
-       go:hasContinuousState ex:StillKnowingState .
+ex:god a go:god ;
+       go:hasknowledge ex:knowledge ;
+       go:hascontinuousstate ex:stillknowingstate .
 
-ex:Knowledge a go:Property .
-ex:StillKnowingState a go:State ;
-                   go:relatesTo ex:God ;
-                   go:description "Continuous state of knowing attributed to God" .
+ex:knowledge a go:property .
+ex:stillknowingstate a go:state ;
+                   go:relatesto ex:god ;
+                   go:description "continuous state of knowing attributed to god" .

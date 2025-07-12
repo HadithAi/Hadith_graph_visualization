@@ -1,222 +1,225 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/291#> .
+@prefix ex: <http://etratnet.ir/graph/example/291#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/291> rdf:type go:ontology ;
+        go:hascontent "7.  به ابو الحسن موسى بن جعفر عليه‌السلام عرض كردم: هشام بن حكم ادعا مى‌كند خدا جسمى است كه مانندى ندارد، دانا و شنوا و بينا و توانا و سخنگوست، و گفتار و توانايى و دانايى از يك سنخ‌اند و هيچ كدامشان مخلوق نمى‌باشند. حضرت فرمود: «خدا او را بكشد؛ مگر نمى‌داند كه جسم كران‌مند است، و گفتار غير از گوينده مى‌باشد؟ پناه به خدا. من از اين سخن به درگاه خدا اعلام برائت مى‌كنم. نه جسم است، نه شكل و صورت دارد، و نه كران‌مند است. جز او همه چيز آفريده است، و چيزها با اراده و خواست او پديد مى‌آيند، بى آن كه گفتارى در كار باشد يا دم و بازدمى صورت گيرد، يا زبانى گويا شود»."@fa,
+        "7.  قُلْتُ لِأَبِي الْحَسَنِ مُوسَى بْنِ جَعْفَرٍ عليهماالسلام: إِنَّ هِشَامَ بْنَ الْحَكَمِ زَعَمَ أَنَّ اللّه‌َ جِسْمٌ لَيْسَ كَمِثْلِهِ شَيْءٌ، عَالِمٌ، سَمِيعٌ، بَصِيرٌ، قَادِرٌ، مُتَكَلِّمٌ، نَاطِقٌ، وَالْكَلاَمُ وَالْقُدْرَةُ وَالْعِلْمُ يَجْرِي مَجْرى وَاحِدٍ، لَيْسَ شَيْءٌ مِنْهَا مَخْلُوقاً. فَقَالَ: «قَاتَلَهُ اللّه‌ُ، أَمَا عَلِمَ أَنَّ الْجِسْمَ مَحْدُودٌ، وَالْكَلاَمَ غَيْرُ الْمُتَكَلِّمِ؟ مَعَاذَ اللّه‌ِ، وَأَبْرَأُ إِلَى اللّه‌ِ مِنْ هذَا الْقَوْلِ، لاَ جِسْمٌ، وَلاَ صُورَةٌ، وَلاَ تَحْدِيدٌ، وَكُلُّ شَيْءٍ سِوَاهُ مَخْلُوقٌ، إِنَّمَا تُكَوَّنُ الْأَشْيَاءُ بِإِرَادَتِهِ وَمَشِيئَتِهِ، مِنْ غَيْرِ كَلاَمٍ، وَلاَ تَرَدُّدٍ فِي نَفَسٍ، وَلاَ نُطْقٍ بِلِسَانٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-1> rdf:type owl:ontology .
 
-ex:event1 a go:ClaimEvent ;
-    go:HasAgent ex:Hisham_ibn_alHakam ;
-    go:HasTheme ex:God_Properties_Statement .
+ex:event1 a go:claimevent ;
+    go:hasagent ex:hisham_ibn_alhakam ;
+    go:hastheme ex:god_properties_statement .
 
-ex:Hisham_ibn_alHakam a go:Person ;
-    rdfs:label "Hisham ibn al-Hakam" .
+ex:hisham_ibn_alhakam a go:person ;
+    rdfs:label "hisham ibn al-hakam" .
 
-ex:God a go:Deity ;
-    rdfs:label "Allah" ;
-    go:hasAttribute ex:GodBody, ex:GodUnique, ex:GodKnowledgeable, ex:GodHearing, ex:GodSeeing, ex:GodPowerful, ex:GodSpeaking, ex:GodArticulate .
+ex:god a go:deity ;
+    rdfs:label "allah" ;
+    go:hasattribute ex:godbody, ex:godunique, ex:godknowledgeable, ex:godhearing, ex:godseeing, ex:godpowerful, ex:godspeaking, ex:godarticulate .
 
-ex:GodBody a go:Body .
-ex:GodUnique a go:NotLikeAnyThing .
-ex:GodKnowledgeable a go:Knowledgeable .
-ex:GodHearing a go:Hearing .
-ex:GodSeeing a go:Seeing .
-ex:GodPowerful a go:Powerful .
-ex:GodSpeaking a go:Speaking .
-ex:GodArticulate a go:Articulate .
+ex:godbody a go:body .
+ex:godunique a go:notlikeanything .
+ex:godknowledgeable a go:knowledgeable .
+ex:godhearing a go:hearing .
+ex:godseeing a go:seeing .
+ex:godpowerful a go:powerful .
+ex:godspeaking a go:speaking .
+ex:godarticulate a go:articulate .
 
-ex:God_Properties_Statement a go:Statement ;
-    go:refersTo ex:God ;
-    go:asserts (ex:GodBody ex:GodUnique ex:GodKnowledgeable ex:GodHearing ex:GodSeeing ex:GodPowerful ex:GodSpeaking ex:GodArticulate) .
+ex:god_properties_statement a go:statement ;
+    go:refersto ex:god ;
+    go:asserts (ex:godbody ex:godunique ex:godknowledgeable ex:godhearing ex:godseeing ex:godpowerful ex:godspeaking ex:godarticulate) .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-2> rdf:type owl:ontology .
 
-# Entity: Hisham ibn al-Hakam
-ex:Hisham_ibn_al_Hakam a go:Agent ;
-    rdfs:label "Hisham ibn al-Hakam" .
+# entity: hisham ibn al-hakam
+ex:hisham_ibn_al_hakam a go:agent ;
+    rdfs:label "hisham ibn al-hakam" .
 
-# Entities: speech, power, knowledge
-ex:speech a go:Substance ;
+# entities: speech, power, knowledge
+ex:speech a go:substance ;
     rdfs:label "speech" .
-ex:power a go:Substance ;
+ex:power a go:substance ;
     rdfs:label "power" .
-ex:knowledge a go:Substance ;
+ex:knowledge a go:substance ;
     rdfs:label "knowledge" .
 
-# Event: claim
-ex:claim1 a go:Event ;
-    go:hasAgent ex:Hisham_ibn_al_Hakam ;
-    go:hasTheme ex:claimContent1 .
+# event: claim
+ex:claim1 a go:event ;
+    go:hasagent ex:hisham_ibn_al_hakam ;
+    go:hastheme ex:claimcontent1 .
 
-# Claim content: the equivalence of speech, power and knowledge in their path
-ex:claimContent1 a go:ConceptualContent ;
-    go:expressesRelation ex:speechPowerKnowledgeEquivalence .
+# claim content: the equivalence of speech, power and knowledge in their path
+ex:claimcontent1 a go:conceptualcontent ;
+    go:expressesrelation ex:speechpowerknowledgeequivalence .
 
-# Relation expressing 'following the same course'
-ex:speechPowerKnowledgeEquivalence a go:Relation ;
-    go:hasParticipant ex:speech , ex:power , ex:knowledge ;
-    go:relationType ex:sameCourse .
+# relation expressing 'following the same course'
+ex:speechpowerknowledgeequivalence a go:relation ;
+    go:hasparticipant ex:speech , ex:power , ex:knowledge ;
+    go:relationtype ex:samecourse .
 
-# Define relationType sameCourse
-ex:sameCourse a go:RelationType ;
-    go:hasMeaning "follow the same course" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# define relationtype samecourse
+ex:samecourse a go:relationtype ;
+    go:hasmeaning "follow the same course" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-3> rdf:type owl:ontology .
 
-ex:Hisham_ibn_al_Hakam a go:Person ;
-    rdfs:label "Hisham ibn al-Hakam" .
+ex:hisham_ibn_al_hakam a go:person ;
+    rdfs:label "hisham ibn al-hakam" .
 
-ex:Claim1 a go:Claim ;
-    go:HasAgent ex:Hisham_ibn_al_Hakam ;
-    go:HasTheme ex:ClaimContent1 .
+ex:claim1 a go:claim ;
+    go:hasagent ex:hisham_ibn_al_hakam ;
+    go:hastheme ex:claimcontent1 .
 
-ex:Speech a go:Substance ;
+ex:speech a go:substance ;
     rdfs:label "speech" .
 
-ex:Power a go:Substance ;
+ex:power a go:substance ;
     rdfs:label "power" .
 
-ex:Knowledge a go:Substance ;
+ex:knowledge a go:substance ;
     rdfs:label "knowledge" .
 
-ex:ClaimContent1 a go:Proposition ;
-    go:propositionText "Nothing of speech, power, and knowledge is created." ;
-    go:assertionNegation true ;
-    go:concerns ex:Speech, ex:Power, ex:Knowledge .
-go:Substance rdfs:label "شی"@fa.
+ex:claimcontent1 a go:proposition ;
+    go:propositiontext "nothing of speech, power, and knowledge is created." ;
+    go:assertionnegation true ;
+    go:concerns ex:speech, ex:power, ex:knowledge .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-4> rdf:type owl:ontology .
 
-ex:Hisham_ibn_al_Hakam a go:Person .
-ex:Allah a go:Deity .
+ex:hisham_ibn_al_hakam a go:person .
+ex:allah a go:deity .
 
-event:KillingHisham a go:Event ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Hisham_ibn_al_Hakam .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/291-5> rdf:type owl:Ontology .
-
-ex:Body a go:PhysicalObject ;
-    go:hasProperty ex:LimitedProperty .
-
-ex:LimitedProperty a go:Property ;
-    go:propertyValue "limited" .
+event:killinghisham a go:event ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:hisham_ibn_al_hakam .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-5> rdf:type owl:ontology .
 
-ex:speech rdf:type go:Substance ;
-          rdf:type ex:Speech .
+ex:body a go:physicalobject ;
+    go:hasproperty ex:limitedproperty .
+
+ex:limitedproperty a go:property ;
+    go:propertyvalue "limited" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-6> rdf:type owl:ontology .
+
+ex:speech rdf:type go:substance ;
+          rdf:type ex:speech .
 
 ex:speaker rdf:type go:agent ;
-           rdf:type ex:Speaker .
+           rdf:type ex:speaker .
 
-ex:speech owl:disjointWith ex:speaker .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/291-7> rdf:type owl:Ontology .
-
-ex:God a go:Deity .
-ex:Body a go:PhysicalBody .
-ex:Image a go:Image .
-ex:Determination a go:Determination .
-
-ex:TranscendenceState a go:State ;
-    go:hasTheme ex:God ;
-    go:negationProperty ex:Body , ex:Image , ex:Determination .
+ex:speech owl:disjointwith ex:speaker .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-7> rdf:type owl:ontology .
 
-# Define God as an entity
-ex:God rdf:type go:Agent ;
-       rdfs:label "God" .
+ex:god a go:deity .
+ex:body a go:physicalbody .
+ex:image a go:image .
+ex:determination a go:determination .
 
-# Define Everything as all things (universe)
-ex:Everything rdf:type go:Substance .
-
-# Created entities are everything except God
-ex:CreatedEntities rdf:type go:Substance ;
-                   go:excluding ex:God .
-
-# Creation event
-ex:CreationEvent rdf:type go:Event ;
-                 go:HasTheme ex:CreatedEntities .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:transcendencestate a go:state ;
+    go:hastheme ex:god ;
+    go:negationproperty ex:body , ex:image , ex:determination .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-8> rdf:type owl:ontology .
 
-ex:CreationEvent1 a go:Event ;
-    go:HasTheme ex:Things ;
-    go:HasAgent ex:God ;
-    go:HasCause ex:GodWill, ex:GodDecree .
+# define god as an entity
+ex:god rdf:type go:agent ;
+       rdfs:label "god" .
 
-ex:Things a go:Substance .
-ex:God a go:Agent .
-ex:GodWill a go:Will ;
-    go:HasMaster ex:God .
-ex:GodDecree a go:Decree ;
-    go:HasMaster ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# define everything as all things (universe)
+ex:everything rdf:type go:substance .
+
+# created entities are everything except god
+ex:createdentities rdf:type go:substance ;
+                   go:excluding ex:god .
+
+# creation event
+ex:creationevent rdf:type go:event ;
+                 go:hastheme ex:createdentities .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/291-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/291-9> rdf:type owl:ontology .
 
-ex:Things a go:Substance .
-ex:Speech a go:Event ;
+ex:creationevent1 a go:event ;
+    go:hastheme ex:things ;
+    go:hasagent ex:god ;
+    go:hascause ex:godwill, ex:goddecree .
+
+ex:things a go:substance .
+ex:god a go:agent .
+ex:godwill a go:will ;
+    go:hasmaster ex:god .
+ex:goddecree a go:decree ;
+    go:hasmaster ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/291-10> rdf:type owl:ontology .
+
+ex:things a go:substance .
+ex:speech a go:event ;
     rdfs:label "speech" .
-ex:Hesitation a go:Event ;
+ex:hesitation a go:event ;
     rdfs:label "hesitation in soul" .
-ex:Utterance a go:Event ;
+ex:utterance a go:event ;
     rdfs:label "utterance by tongue" .
 
-# Statement that things do NOT come into being via those processes
-ex:ExistenceCause a go:NegativeRelation ;
-    go:Subject ex:Things ;
-    go:Object ex:Speech , ex:Hesitation , ex:Utterance ;
-    rdfs:comment "Things do not exist through speech, hesitation in soul, or utterance by tongue." .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# statement that things do not come into being via those processes
+ex:existencecause a go:negativerelation ;
+    go:subject ex:things ;
+    go:object ex:speech , ex:hesitation , ex:utterance ;
+    rdfs:comment "things do not exist through speech, hesitation in soul, or utterance by tongue." .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

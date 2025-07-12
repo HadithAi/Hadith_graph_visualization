@@ -1,128 +1,131 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/391#> .
+@prefix ex: <http://etratnet.ir/graph/example/391#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/391> rdf:type go:ontology ;
+        go:hascontent "5.  از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «خدا خواسته است و اراده كرده است، و دوست نداشته و رضايت نداده است: خواسته است كه هيچ چيزى به وجود نيايد مگر با علم او، و چنين چيزى را هم اراده كرده است، اما دوست نداشته كه گفته شود: او سومينِ از سه (اقنوم) است، و به كفر بندگانش هم رضايت نداده است»."@fa,
+        "5. سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام يَقُولُ: «شَاءَ وَأَرَادَ، وَلَمْ يُحِبَّ وَلَمْ يَرْضَ؛ شَاءَ أَنْ لاَ يَكُونَ شَيْءٌ إِلاَّ بِعِلْمِهِ، وَأَرَادَ مِثْلَ ذلِكَ، وَلَمْ يُحِبَّ أَنْ يُقَالَ: ثَالِثُ ثَلاَثَةٍ، وَلَمْ يَرْضَ لِعِبَادِهِ الْكُفْرَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/391-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/391-1> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
-    rdfs:label "God Almighty"@en .
+ex:godalmighty a go:deity ;
+    rdfs:label "god almighty"@en .
 
-ex:WillEvent a go:Event , ex:WillAction ;
-    go:HasAgent ex:GodAlmighty .
+ex:willevent a go:event , ex:willaction ;
+    go:hasagent ex:godalmighty .
 
-ex:IntendEvent a go:Event , ex:IntendAction ;
-    go:HasAgent ex:GodAlmighty .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/391-2> rdf:type owl:Ontology .
-
-ex:LoveEvent a go:Event ;
-    go:HasAgent ex:GodAlmighty .
-
-ex:GodAlmighty a go:Agent .
-
-ex:LoveEvent go:isNegated true .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:intendevent a go:event , ex:intendaction ;
+    go:hasagent ex:godalmighty .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/391-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/391-2> rdf:type owl:ontology .
 
-ex:DispleasureEvent rdf:type go:Event ;
-    go:agent ex:God_Almighty .
+ex:loveevent a go:event ;
+    go:hasagent ex:godalmighty .
 
-ex:God_Almighty rdf:type go:Deity .
-go:Event rdfs:label "رخداد"@fa.
+ex:godalmighty a go:agent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/391-4> rdf:type owl:Ontology .
-
-ex:Event_Willing a go:Event ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Condition_Existence_By_Knowledge .
-
-ex:Allah a go:Deity .
-
-ex:Condition_Existence_By_Knowledge a go:State ;
-    go:HasComponent ex:Nothing_Exists , ex:Knowledge_Of_Allah .
-
-ex:Nothing_Exists a go:Concept .
-ex:Knowledge_Of_Allah a go:Knowledge ;
-    go:IsPropertyOf ex:Allah .
-go:Event rdfs:label "رخداد"@fa.
+ex:loveevent go:isnegated true .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/391-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/391-3> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
+ex:displeasureevent rdf:type go:event ;
+    go:agent ex:god_almighty .
+
+ex:god_almighty rdf:type go:deity .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/391-4> rdf:type owl:ontology .
+
+ex:event_willing a go:event ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:condition_existence_by_knowledge .
+
+ex:allah a go:deity .
+
+ex:condition_existence_by_knowledge a go:state ;
+    go:hascomponent ex:nothing_exists , ex:knowledge_of_allah .
+
+ex:nothing_exists a go:concept .
+ex:knowledge_of_allah a go:knowledge ;
+    go:ispropertyof ex:allah .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/391-5> rdf:type owl:ontology .
+
+ex:godalmighty a go:deity ;
     rdfs:label "الله تعالى" .
 
-ex:SomethingLikeThat a go:Substance ;
+ex:somethinglikethat a go:substance ;
     go:description "مثل ذلك" .
 
-ex:WantingEvent1 a go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:SomethingLikeThat .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:wantingevent1 a go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:somethinglikethat .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/391-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/391-6> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
-    rdfs:label "God Almighty"@en .
+ex:godalmighty a go:deity ;
+    rdfs:label "god almighty"@en .
 
-ex:PhraseThirdOfThree a ex:Phrase ;
+ex:phrasethirdofthree a ex:phrase ;
     rdfs:label "third of three"@en .
 
-ex:EventDislikeThirdOfThree a go:Event ;
-    a go:NegativeDesireEvent ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:PhraseThirdOfThree .
-go:Event rdfs:label "رخداد"@fa.
+ex:eventdislikethirdofthree a go:event ;
+    a go:negativedesireevent ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:phrasethirdofthree .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/391-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/391-7> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:Disbelief ;
-    go:HasRecipient ex:Servants ;
-    go:EventType go:Disapproval .
+ex:event1 a go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:disbelief ;
+    go:hasrecipient ex:servants ;
+    go:eventtype go:disapproval .
 
-ex:GodAlmighty a go:Agent ;
-    go:Name "God Almighty" .
+ex:godalmighty a go:agent ;
+    go:name "god almighty" .
 
-ex:Disbelief a go:Substance ;
-    go:Name "Disbelief" .
+ex:disbelief a go:substance ;
+    go:name "disbelief" .
 
-ex:Servants a go:AgentGroup ;
-    go:Name "His Servants" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:servants a go:agentgroup ;
+    go:name "his servants" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

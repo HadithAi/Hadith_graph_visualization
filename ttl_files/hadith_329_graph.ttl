@@ -1,180 +1,183 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/329#> .
+@prefix ex: <http://etratnet.ir/graph/example/329#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/329> rdf:type go:ontology ;
+        go:hascontent "2.  «نمى‌گويم: او ايستاده است، است، به اين معنا كه از جايش جدا كنم (مانند جسم ايستاده در جايى كه جا به جا مى‌شود). من او را به داشتن جا و بودن در مكان، يا جنبيدن با چيزى از اركان و اندام، و يا سخن گفتن از شكاف دهان وصف و تعريف نمى‌كنم. بلكه چنان كه خداى، تبارك و تعالى، خود فرموده است [او را وصف مى‌كنم: آن گاه كه بخواهد چيزى را بيافريند همين كه گويد]: «هست شو، هست مى‌شود»؛ يعنى با خواست او و بدون انديشيدن در ذهن پديد مى‌آيد. او قبله حاجات، و يگانه است. به شريكى نياز ندارد كه در [امور مربوط به]پادشاهى‌اش به او يادآورى كند، و درهاى دانش را به رويش بگشايد»."@fa,
+        "2.  عَنْ أَبِي إِبْرَاهِيمَ عليه‌السلام أَنَّهُ قَالَ: «لاَ أَقُولُ: إِنَّهُ قَائِمٌ؛ فَأُزِيلَهُ عَنْ مَكَانِهِ، وَلاَ أَحُدُّهُ بِمَكَانٍ يَكُونُ فِيهِ، وَلاَ أَحُدُّهُ أَنْ يَتَحَرَّكَ فِي شَيْءٍ مِنَ الأَرْكَانِ وَالْجَوَارِحِ، وَلاَ أَحُدُّهُ بِلَفْظِ شَقِّ فَمٍ، وَلكِنْ كَمَا قَالَ اللّه‌ُ تَبَارَكَ وَتَعَالى: «كُن فَيَكُونُ» بِمَشِيئَتِهِ مِنْ غَيْرِ تَرَدُّدٍ فِي نَفْسٍ، صَمَداً فَرْداً، لَمْ يَحْتَجْ إِلى شَرِيكٍ يَذْكُرُ لَهُ مُلْكَهُ، وَلاَ يَفْتَحُ لَهُ أَبْوَابَ عِلْمِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/329-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/329-1> rdf:type owl:ontology .
 
-ex:he a go:Agent ;
-    rdfs:label "He" .
+ex:he a go:agent ;
+    rdfs:label "he" .
 
-ex:place a go:Location ;
-    rdfs:label "Place" .
+ex:place a go:location ;
+    rdfs:label "place" .
 
-ex:removalFromPlace a go:Event ;
-    go:HasAgent ex:he ;
-    go:HasTheme ex:place ;
-    rdfs:label "Removal of he from place" .
+ex:removalfromplace a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:place ;
+    rdfs:label "removal of he from place" .
 
-ex:existenceClaim a go:Event ;
-    go:HasAgent ex:speaker ;
-    go:HasTheme ex:he ;
-    rdfs:label "Claim that he exists" .
+ex:existenceclaim a go:event ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:he ;
+    rdfs:label "claim that he exists" .
 
-ex:prohibition a go:State ;
-    go:negates ex:existenceClaim ;
-    rdfs:label "Prohibition to claim existence of he if removal possible" .
+ex:prohibition a go:state ;
+    go:negates ex:existenceclaim ;
+    rdfs:label "prohibition to claim existence of he if removal possible" .
 
-ex:conditionForNegation a go:Condition ;
-    go:hasCause ex:removalFromPlace ;
-    go:resultsIn ex:prohibition .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/329-2> rdf:type owl:Ontology .
-
-ex:specifyingPlaceEvent1 a ex:SpecifyPlaceEvent ;
-    a go:Event ;
-    go:HasTheme ex:Place1 ;
-    ex:HasSubject ex:He ;
-    ex:hasPermission "false"^^xsd:boolean .
-
-ex:Place1 a go:Place .
-
-ex:He a go:Person .
-go:Event rdfs:label "رخداد"@fa.
+ex:conditionfornegation a go:condition ;
+    go:hascause ex:removalfromplace ;
+    go:resultsin ex:prohibition .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/329-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/329-2> rdf:type owl:ontology .
 
-ex:He a go:Person .
-ex:Limbs a go:BodyPart .
-ex:Joints a go:BodyPart .
+ex:specifyingplaceevent1 a ex:specifyplaceevent ;
+    a go:event ;
+    go:hastheme ex:place1 ;
+    ex:hassubject ex:he ;
+    ex:haspermission "false"^^xsd:boolean .
 
-ex:BodyParts a go:Substance ;
-    go:hasPart ex:Limbs ;
-    go:hasPart ex:Joints .
+ex:place1 a go:place .
 
-ex:MoveEvent a go:Event ;
-    go:hasAgent ex:He ;
-    go:hasTheme ex:BodyParts .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:he a go:person .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/329-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/329-3> rdf:type owl:ontology .
 
-ex:IdentificationEvent1 a go:Event ;
-    go:HasTheme ex:PersonHe ;
-    go:HasMeans ex:PhraseSplittingTheMouth ;
-    go:isPermitted "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+ex:he a go:person .
+ex:limbs a go:bodypart .
+ex:joints a go:bodypart .
 
-ex:PersonHe a go:agent .
-ex:PhraseSplittingTheMouth a go:expression .
-go:Event rdfs:label "رخداد"@fa.
+ex:bodyparts a go:substance ;
+    go:haspart ex:limbs ;
+    go:haspart ex:joints .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/329-5> rdf:type owl:Ontology .
-
-ex:He a go:Substance .
-ex:God a go:Substance .
-ex:ExistenceEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:He ;
-    go:hasCause ex:GodsWill .
-
-ex:GodsWill a go:State .
-
-ex:DivineStatement a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme [ a go:SpeechAct ; go:content "Be, and it is." ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:moveevent a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:bodyparts .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/329-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/329-4> rdf:type owl:ontology .
 
-ex:Existence_Event rdf:type go:Event ;
-    go:HasAgent ex:He ;
-    go:HasLocation ex:Self ;
-    ex:withoutHesitation "true"^^xsd:boolean .
+ex:identificationevent1 a go:event ;
+    go:hastheme ex:personhe ;
+    go:hasmeans ex:phrasesplittingthemouth ;
+    go:ispermitted "false"^^<http://www.w3.org/2001/xmlschema#boolean> .
 
-ex:He rdf:type go:agent .
-ex:Self rdf:type go:Concept .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/329-7> rdf:type owl:Ontology .
-
-ex:He a go:agent .
-
-ex:enduranceEvent a go:Event ;
-    go:HasAgent ex:He .
-
-ex:standingFirmEvent a go:Event ;
-    go:HasAgent ex:He .
-go:Event rdfs:label "رخداد"@fa.
+ex:personhe a go:agent .
+ex:phrasesplittingthemouth a go:expression .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/329-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/329-5> rdf:type owl:ontology .
 
-ex:He a go:Person .
-ex:Partner a go:Person .
-ex:Kingdom a go:Substance .
+ex:he a go:substance .
+ex:god a go:substance .
+ex:existenceevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:he ;
+    go:hascause ex:godswill .
 
-ex:NeedEvent a go:Event ;
-    go:HasAgent ex:He ;
-    go:HasTheme ex:Partner ;
-    go:HasPurpose ex:MentionEvent ;
-    go:hasPolarity "Negative"^^xsd:boolean .
+ex:godswill a go:state .
 
-ex:MentionEvent a go:Event ;
-    go:HasAgent ex:Partner ;
-    go:HasTheme ex:Kingdom .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:divinestatement a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme [ a go:speechact ; go:content "be, and it is." ] .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/329-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/329-6> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:He ;
-    go:HasTheme ex:DoorsOfHisKnowledge ;
-    go:HasRecipient ex:Him ;
-    go:Polarity "negative" .
+ex:existence_event rdf:type go:event ;
+    go:hasagent ex:he ;
+    go:haslocation ex:self ;
+    ex:withouthesitation "true"^^xsd:boolean .
 
-ex:He a go:person .
-ex:Him a go:person .
-ex:DoorsOfHisKnowledge a go:physicalObject ;
-    go:partOf ex:HisKnowledge .
-ex:HisKnowledge a go:Information .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
+ex:he rdf:type go:agent .
+ex:self rdf:type go:concept .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/329-7> rdf:type owl:ontology .
+
+ex:he a go:agent .
+
+ex:enduranceevent a go:event ;
+    go:hasagent ex:he .
+
+ex:standingfirmevent a go:event ;
+    go:hasagent ex:he .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/329-8> rdf:type owl:ontology .
+
+ex:he a go:person .
+ex:partner a go:person .
+ex:kingdom a go:substance .
+
+ex:needevent a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:partner ;
+    go:haspurpose ex:mentionevent ;
+    go:haspolarity "negative"^^xsd:boolean .
+
+ex:mentionevent a go:event ;
+    go:hasagent ex:partner ;
+    go:hastheme ex:kingdom .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/329-9> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:doorsofhisknowledge ;
+    go:hasrecipient ex:him ;
+    go:polarity "negative" .
+
+ex:he a go:person .
+ex:him a go:person .
+ex:doorsofhisknowledge a go:physicalobject ;
+    go:partof ex:hisknowledge .
+ex:hisknowledge a go:information .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.

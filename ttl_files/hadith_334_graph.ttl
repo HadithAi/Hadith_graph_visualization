@@ -1,83 +1,86 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/334#> .
+@prefix ex: <http://etratnet.ir/graph/example/334#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/334> rdf:type go:ontology ;
+        go:hascontent "7.  از امام صادق عليه‌السلام درباره سخن خداى عز و جل كه: «خداى مهرگستر بر عرش استوا دارد». پرسيده شد، فرمود: «يعنى نسبت به همه اشيا يكسان است؛ پس، هيچ چيز به او نزديك‌تر از چيز ديگر نيست»."@fa,
+        "7.  أَنَّ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام سُئِلَ عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «الرَّحْمَنُ عَلَى الْعَرْشِ اسْتَوى» فَقَالَ: «اسْتَوى مِنْ كُلِّ شَيْءٍ؛ فَلَيْسَ شَيْءٌ أَقْرَبَ إِلَيْهِ مِنْ شَيْءٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/334-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/334-1> rdf:type owl:ontology .
 
-ex:event_saying a go:SpeechEvent ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:utterance_1 .
+ex:event_saying a go:speechevent ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:utterance_1 .
 
-ex:utterance_1 a go:Utterance ;
-    go:HasTheme ex:event_establishing .
+ex:utterance_1 a go:utterance ;
+    go:hastheme ex:event_establishing .
 
-ex:event_establishing a go:Event ;
-    go:HasAgent ex:The_Most_Merciful ;
-    go:HasLocation ex:Throne .
+ex:event_establishing a go:event ;
+    go:hasagent ex:the_most_merciful ;
+    go:haslocation ex:throne .
 
-ex:God_Almighty a go:Deity ;
-    rdfs:label "God Almighty" .
+ex:god_almighty a go:deity ;
+    rdfs:label "god almighty" .
 
-ex:The_Most_Merciful a go:Deity ;
-    rdfs:label "The Most Merciful" .
+ex:the_most_merciful a go:deity ;
+    rdfs:label "the most merciful" .
 
-ex:Throne a go:Artefact ;
-    rdfs:label "Throne" .
-go:Event rdfs:label "رخداد"@fa.
+ex:throne a go:artefact ;
+    rdfs:label "throne" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/334-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/334-2> rdf:type owl:ontology .
 
-ex:Abu_Abdullah a go:Person ;
+ex:abu_abdullah a go:person ;
     rdfs:label "أبا عبد الله" .
 
-ex:SpeechEvent1 a go:Communication ;
-    go:HasAgent ex:Abu_Abdullah ;
-    go:HasTheme ex:Quote1 .
+ex:speechevent1 a go:communication ;
+    go:hasagent ex:abu_abdullah ;
+    go:hastheme ex:quote1 .
 
-ex:Quote1 a go:Quote ;
-    go:hasText "استوى من كل شيء" ;
-    go:hasEvent ex:PerfectionEvent1 .
+ex:quote1 a go:quote ;
+    go:hastext "استوى من كل شيء" ;
+    go:hasevent ex:perfectionevent1 .
 
-ex:PerfectionEvent1 a ex:PerfectionEvent ;
-    go:HasAgent ex:ImplicitAgent ;
-    go:HasTheme ex:Everything .
+ex:perfectionevent1 a ex:perfectionevent ;
+    go:hasagent ex:implicitagent ;
+    go:hastheme ex:everything .
 
-ex:ImplicitAgent a go:Person .
-ex:Everything a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:implicitagent a go:person .
+ex:everything a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/334-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/334-3> rdf:type owl:ontology .
 
-ex:Abu_Abdullah a go:Person .
+ex:abu_abdullah a go:person .
 
-ex:Speech_Act_1 a go:SpeechAct ;
-    go:HasAgent ex:Abu_Abdullah ;
-    go:HasTheme ex:Quote_1 .
+ex:speech_act_1 a go:speechact ;
+    go:hasagent ex:abu_abdullah ;
+    go:hastheme ex:quote_1 .
 
-ex:Quote_1 a go:Statement ;
-    go:refersTo ex:Him, ex:Thing .
+ex:quote_1 a go:statement ;
+    go:refersto ex:him, ex:thing .
 
-ex:Him a go:Substance .
-ex:Thing a go:Substance .
+ex:him a go:substance .
+ex:thing a go:substance .
 
-# Literal content of the quote
-ex:Quote_1 rdfs:label "Nothing is closer to Him than a thing." .
-go:Substance rdfs:label "شی"@fa.
+# literal content of the quote
+ex:quote_1 rdfs:label "nothing is closer to him than a thing." .
+go:substance rdfs:label "شی"@fa.

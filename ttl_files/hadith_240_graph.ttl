@@ -1,939 +1,942 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/240#> .
+@prefix ex: <http://etratnet.ir/graph/example/240#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/240> rdf:type go:ontology ;
+        go:hascontent "3. مردى نزد امام باقر عليه‌السلام آمد و عرض كرد: به من خبر دهيد كه پروردگارت از چه زمانى بوده است؟ حضرت فرمود: «واى بر تو! درباره چيزى كه نبوده است، گفته مى‌شود: "از چه زمانى بوده است". خداوندگارِ بزرگ و بلندمرتبه من از ديرباز بى چگونگى زنده بوده است، و "بود و شد" در باره او معنا ندارد، و بودنش را چگونه بودن نباشد، و در چيزى نيست، و روى چيزى قرار ندارد، و براى بودنِ خود جايى پديد نياورد. پس از به وجود آوردن چيزها نيرومند نشد، و پيش از آن كه چيزى را ايجاد كند ناتوان نبود. پيش از آن كه چيزى پديد آورد احساس تنهايى نمى‌كرد، و به هيچ آفريده‌اى مانند نيست. پيش از آفرينش چيزها همچنان بر اورنگ پادشاهى بوده و پس از نابود شدن آنها نيز بر اورنگ پادشاهى خواهد بود. هميشه زنده بوده است اما نه با حياتى [چون حيات مخلوقات]. پيش از آن كه چيزى را ايجاد كند پادشاهى توانا بوده، و پس از ايجاد جهان هستى نيز پادشاهى بزرگ است. پس، نه چگونه بودن دارد، نه جا، و نه كرانه. از طريق همانندى به چيزى شناخته نشود [يا: همانندى براى او شناخته نمى‌شود]، بر اثر دير زيستن پير نمى‌شود، از چيزى مدهوش نمى‌شود بلكه تمام چيزها از بيم او مدهوش مى‌شوند. زنده است اما نه با حياتى پديد آمده [بلكه حياتْ ذاتى اوست]. بودنش به وصف نمى‌آيد، و چگونگى نمى‌پذيرد، و در جايى ايستاده نيست، و در كنار چيزى قرار ندارد. بلكه همين اندازه مى‌دانيم كه زنده است. پادشاهى است كه پيوسته قدرت و فرمان‌روايى داشته و دارد. آنچه را خواهد همان گاه كه بخواهد با خواست خود هستى مى‌بخشد. نه كرانه دارد، نه اجزا، و نه نيست مى‌شود. سرآغاز بوده بى آن كه چگونگى داشته باشد، و سرانجام [هستى] است بى آن كه در جايى باشد. «همه چيز نابود مى‌شود جز ذات او»، «آفريدن و فرمان‌روايى در دست اوست، بزرگ است خدا كه خداوندگار جهانيان است».واى بر تو اى پرسنده! خداوندگار من در اوهام [و انديشه‌ها] نمى‌گنجد، و شبهات بر او فرود نمى‌آيد و از چيزى حيرت نمى‌كند. و چيزى از او در نمى‌گذرد، و دستخوش حوادث نمى‌شود، و از چيزى بازخواست نمى‌گردد، و بر كارى پشيمان نمى‌شود، و «او را چرت و خواب فرا نمى‌گيرد»، «آنچه در آسمان‌ها و آنچه در زمين و آنچه ميان آسمان‌ها و زمين و آنچه زيرزمين است، همه از آنِ اوست»»."@fa,
+        "3.  جَاءَ رَجُلٌ إِلى أَبِي جَعْفَرٍ عليه‌السلام، فَقَالَ لَهُ: أَخْبِرْنِي عَنْ رَبِّكَ مَتى كَانَ؟ فَقَالَ: «وَيْلَكَ، إِنَّمَا يُقَالُ لِشَيْءٍ لَمْ يَكُنْ: مَتى كَانَ؛ إِنَّ رَبِّي ـ تَبَارَكَ وَتَعَالى ـ كَانَ وَلَمْ يَزَلْ حَيّاً بِلاَ كَيْفٍ، وَلَمْ يَكُنْ لَهُ «كَانَ»، وَلاَ كَانَ لِكَوْنِهِ كَوْنُ كَيْفٍ، وَلاَ كَانَ لَهُ أَيْنٌ، وَلاَ كَانَ فِي شَيْءٍ، وَلاَ كَانَ عَلى شَيْءٍ، وَلاَ ابْتَدَعَ لِمَكَانِهِ مَكَاناً، وَلاَ قَوِيَ بَعْدَ مَا كَوَّنَ الْأَشْيَاءَ، وَلاَ كَانَ ضَعِيفاً قَبْلَ أَنْ يُكَوِّنَ شَيْئاً، وَلاَ كَانَ مُسْتَوْحِشاً قَبْلَ أَنْ يَبْتَدِعَ شَيْئاً، وَلاَ يُشْبِهُ شَيْئاً مَذْكُوراً، وَلاَ كَانَ خِلْواً مِنْ الْمُلْكِ قَبْلَ إِنْشَائِهِ، وَلاَ يَكُونُ مِنْهُ خِلْواً بَعْدَ ذَهَابِهِ، لَمْ يَزَلْ حَيّاً بِلاَ حَيَاةٍ، وَمَلِكاً قَادِراً قَبْلَ أَنْ يُنْشِئَ شَيْئاً، وَمَلِكاً جَبَّاراً بَعْدَ إِنْشَائِهِ لِلْكَوْنِ؛ فَلَيْسَ لِكَوْنِهِ كَيْفٌ، وَلاَ لَهُ أَيْنٌ، وَلاَ لَهُ حَدٌّ، وَلاَ يُعْرَفُ بِشَيْءٍ يُشْبِهُهُ، وَلاَ يَهْرَمُ لِطُولِ الْبَقَاءِ، وَلاَ يَصْعَقُ لِشَيْءٍ، بَلْ لِخَوْفِهِ تَصْعَقُ الْأَشْيَاءُ كُلُّهَا، كَانَ حَيّاً بِلاَ حَيَاةٍ حَادِثَةٍ، وَلاَ كَوْنٍ مَوْصُوفٍ، وَلاَ كَيْفٍ مَحْدُودٍ، وَلاَ أَيْنٍ مَوْقُوفٍ عَلَيْهِ، وَلاَ مَكَانٍ جَاوَرَ شَيْئاً، بَلْ حَيٌّ يُعْرَفُ، وَمَلِكٌ لَمْ يَزَلْ لَهُ الْقُدْرَةُ وَالْمُلْكُ، أَنْشَأَ مَا شَاءَ حِينَ شَاءَ بِمَشِيئَتِهِ، لاَ يُحَدُّ، وَلاَ يُبَعَّضُ، وَلاَ يَفْنى، كَانَ أَوَّلاً بِلاَ كَيْفٍ، وَيَكُونُ آخِراً بِلاَ أَيْنٍ، وَ«كُلُّ شَىْ‌ءٍ هَالِكٌ إِلاَّ وَجْهَهُ»، «لَهُ الْخَلْقُ وَالْأَمْرُ تَبَارَكَ اللّه‌ُ رَبُّ الْعَالَمِينَ».وَيْلَكَ أَيُّهَا السَّائِلُ، إِنَّ رَبِّي لاَ تَغْشَاهُ الْأَوْهَامُ، وَلاَ تَنْزِلُ بِهِ الشُّبُهَاتُ، وَلاَ يَحَارُ مِنْ شَيْءٍ، وَلاَ يُجَاوِزُهُ شَيْءٌ، وَلاَ يَنْزِلُ بِهِ الْأَحْدَاثُ، وَلاَ يُسْأَلُ عَنْ شَيْءٍ، وَلاَ يَنْدَمُ عَلى شَيْءٍ، وَ«لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ»، «لَهُ مَا فِى السَّمَاوَاتِ وَمَا فِى الْأَرْضِ وَمَا بَيْنَهُمَا وَمَاتَحْتَ الثَّرى»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-1> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-  go:hasAgent ex:Man1 ;
-  go:hasGoal ex:AbuJaafar .
+ex:event1 a go:event ;
+  go:hasagent ex:man1 ;
+  go:hasgoal ex:abujaafar .
 
-ex:Man1 a go:Agent .
+ex:man1 a go:agent .
 
-ex:AbuJaafar a go:Person ;
+ex:abujaafar a go:person ;
   rdfs:label "أبي جعفر" ;
-  go:hasHonorific "عليه السلام" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+  go:hashonorific "عليه السلام" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-2> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:SpeechEvent ;
-    go:HasAgent ex:Man1 ;
-    go:HasRecipient ex:Abu_Jaafar ;
-    go:HasTheme ex:Question1 .
+ex:eventinstance1 a go:speechevent ;
+    go:hasagent ex:man1 ;
+    go:hasrecipient ex:abu_jaafar ;
+    go:hastheme ex:question1 .
 
-ex:Man1 a go:Person ;
+ex:man1 a go:person ;
     rdfs:label "the man" .
 
-ex:Abu_Jaafar a go:Person ;
-    rdfs:label "Abu Ja'far (peace be upon him)" .
+ex:abu_jaafar a go:person ;
+    rdfs:label "abu ja'far (peace be upon him)" .
 
-ex:Question1 a go:Question ;
-    go:about ex:Lord .
+ex:question1 a go:question ;
+    go:about ex:lord .
 
-ex:Lord a go:DivineEntity ;
-    rdfs:label "Lord" .
+ex:lord a go:divineentity ;
+    rdfs:label "lord" .
 
-ex:Question1 go:questionContent "When was the Lord?" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-3> rdf:type owl:Ontology .
-
-ex:SayingEvent a go:CommunicationEvent ;
-  go:HasAgent ex:Speaker ;
-  go:HasTheme ex:NonExistentThing ;
-  ex:hasContent ex:ExistenceTimeQuestion .
-
-ex:NonExistentThing a go:Object ;
-  ex:hasExistenceStatus "non-existent" .
-
-ex:ExistenceTimeQuestion a go:InformationContent ;
-  rdfs:label "When was it?" .
-
-ex:Speaker a go:Agent ;
-  rdfs:label "Unspecified Speaker" .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:question1 go:questioncontent "when was the lord?" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-3> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    rdfs:label "Allah" .
+ex:sayingevent a go:communicationevent ;
+  go:hasagent ex:speaker ;
+  go:hastheme ex:nonexistentthing ;
+  ex:hascontent ex:existencetimequestion .
 
-ex:ExistenceEvent a go:Event ;
-    rdfs:label "Eternal Existence" ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Allah ;
-    go:isContinuous true ;
-    ex:hasNoModality true .
+ex:nonexistentthing a go:object ;
+  ex:hasexistencestatus "non-existent" .
 
-ex:StateAlive a go:State ;
-    rdfs:label "Alive without modality" ;
-    go:inheresIn ex:Allah ;
+ex:existencetimequestion a go:informationcontent ;
+  rdfs:label "when was it?" .
+
+ex:speaker a go:agent ;
+  rdfs:label "unspecified speaker" .
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-4> rdf:type owl:ontology .
+
+ex:allah a go:deity ;
+    rdfs:label "allah" .
+
+ex:existenceevent a go:event ;
+    rdfs:label "eternal existence" ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:allah ;
+    go:iscontinuous true ;
+    ex:hasnomodality true .
+
+ex:statealive a go:state ;
+    rdfs:label "alive without modality" ;
+    go:inheresin ex:allah ;
     ex:qualifier "without modality" .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-5> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Being a go:Substance .
+ex:god a go:substance .
+ex:being a go:substance .
 
-ex:possessionEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Being .
+ex:possessionevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:being .
 
-# Express negation that God does NOT have Being
-[] a owl:NegativePropertyAssertion ;
-   owl:sourceIndividual ex:possessionEvent ;
-   owl:assertionProperty go:HasAgent ;
-   owl:targetIndividual ex:God .
+# express negation that god does not have being
+[] a owl:negativepropertyassertion ;
+   owl:sourceindividual ex:possessionevent ;
+   owl:assertionproperty go:hasagent ;
+   owl:targetindividual ex:god .
 
-[] a owl:NegativePropertyAssertion ;
-   owl:sourceIndividual ex:possessionEvent ;
-   owl:assertionProperty go:HasTheme ;
-   owl:targetIndividual ex:Being .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-6> rdf:type owl:Ontology .
-
-ex:God rdf:type go:Agent .
-ex:ExistenceOfGod rdf:type go:Event .
-ex:ExistenceOfGod go:HasAgent ex:God .
-ex:ExistenceOfGod ex:hasModeOfExistence ex:NonHowExistence .
-ex:NonHowExistence rdfs:label "Existence not of type 'how'" .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+[] a owl:negativepropertyassertion ;
+   owl:sourceindividual ex:possessionevent ;
+   owl:assertionproperty go:hastheme ;
+   owl:targetindividual ex:being .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-6> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    ex:hasNoLocation true .
-go:Substance rdfs:label "شی"@fa.
+ex:god rdf:type go:agent .
+ex:existenceofgod rdf:type go:event .
+ex:existenceofgod go:hasagent ex:god .
+ex:existenceofgod ex:hasmodeofexistence ex:nonhowexistence .
+ex:nonhowexistence rdfs:label "existence not of type 'how'" .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-7> rdf:type owl:ontology .
 
-ex:God a go:Deity .
+ex:god a go:substance ;
+    ex:hasnolocation true .
+go:substance rdfs:label "شی"@fa.
 
-# There is no instance of go:Substance in which God is located, expressed as negation
 
-# Using OWL Negation (if allowed) -- optional
+@base <http://etratnet.ir/ontology/> .
 
-# Negation can be expressed by:
-# ex:God go:isIn _:x . false.
+<http://etratnet.ir/ontology/240-8> rdf:type owl:ontology .
 
-# Alternatively, define that God is not in any thing:
+ex:god a go:deity .
 
-# We can define this in natural language, but since RDF itself lacks direct negation,
+# there is no instance of go:substance in which god is located, expressed as negation
+
+# using owl negation (if allowed) -- optional
+
+# negation can be expressed by:
+# ex:god go:isin _:x . false.
+
+# alternatively, define that god is not in any thing:
+
+# we can define this in natural language, but since rdf itself lacks direct negation,
 # further logical constructs are required to perfectly model negation.
 
-# For representation:
+# for representation:
 
-# No triple stating ex:God go:isIn ?thing.
+# no triple stating ex:god go:isin ?thing.
 
-# This is a statement about absence, which is not directly representable in RDF triples.
+# this is a statement about absence, which is not directly representable in rdf triples.
 
-# Hence, the main triple is:
+# hence, the main triple is:
 
-ex:God a go:Deity .
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-9> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:Thing a go:Substance ;
-    rdfs:label "Thing"@en .
+ex:thing a go:substance ;
+    rdfs:label "thing"@en .
 
-# Statement that God is not on any thing (negated relation): 
-# In simple RDF, negation is not directly representable, so we declare the potential relation 
+# statement that god is not on any thing (negated relation): 
+# in simple rdf, negation is not directly representable, so we declare the potential relation 
 # with commentary or ontology support. 
 
-# Intended relation (negated): 
-# ex:God go:HasLocation ex:Thing .
+# intended relation (negated): 
+# ex:god go:haslocation ex:thing .
 
-# Therefore, no triples asserting that ex:God go:HasLocation ex:Thing exist.
+# therefore, no triples asserting that ex:god go:haslocation ex:thing exist.
 
-# For representing the statement formally, we can state: 
+# for representing the statement formally, we can state: 
 
-ex:God ex:isNotOn ex:Thing .
+ex:god ex:isnoton ex:thing .
 
-# ex:isNotOn is a custom property to represent negation.
+# ex:isnoton is a custom property to represent negation.
 
-ex:isNotOn a rdf:Property ;
+ex:isnoton a rdf:property ;
     rdfs:label "is not on"@en ;
-    rdfs:domain go:Substance ;
-    rdfs:range go:Substance .
-go:Substance rdfs:label "شی"@fa.
+    rdfs:domain go:substance ;
+    rdfs:range go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-10> rdf:type owl:ontology .
 
-ex:event1 a go:Event:Innovation ;
-    go:HasAgent go:Substance:God ;
-    go:HasTheme ex:PlaceForHisPosition ;
-    go:HasNegationFlag true .
+ex:event1 a go:event:innovation ;
+    go:hasagent go:substance:god ;
+    go:hastheme ex:placeforhisposition ;
+    go:hasnegationflag true .
 
-# Entities
+# entities
 
-go:Substance:God a go:Substance:DivineEntity .
+go:substance:god a go:substance:divineentity .
 
-ex:PlaceForHisPosition a go:location:Place .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-11> rdf:type owl:Ontology .
-
-ex:God rdf:type go:Person .
-ex:Things rdf:type go:Object .
-
-ex:CreationEvent rdf:type go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Things .
-
-ex:PostCreationAbilityState rdf:type go:State ;
-    go:HasAgent ex:God ;
-    go:HasCapability ex:CreationCapability ;
-    go:HasTemporalRelation ex:AfterCreationEvent ;
-    go:hasStatus go:Negative .
-
-ex:CreationCapability rdf:type go:Capability .
-ex:AfterCreationEvent rdf:type go:TemporalRelation ;
-    go:relatesTo ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
+ex:placeforhisposition a go:location:place .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-11> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    go:hasQuality ex:NotWeakness .
+ex:god rdf:type go:person .
+ex:things rdf:type go:object .
 
-ex:NotWeakness a go:Quality ;
-    go:isNegativeQuality true ;
-    go:QualityOf ex:God .
+ex:creationevent rdf:type go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:things .
 
-ex:CreationEvent a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Something .
+ex:postcreationabilitystate rdf:type go:state ;
+    go:hasagent ex:god ;
+    go:hascapability ex:creationcapability ;
+    go:hastemporalrelation ex:aftercreationevent ;
+    go:hasstatus go:negative .
 
-ex:Statement a go:State ;
-    go:about ex:God ;
-    go:hasProperty ex:NotWeakness ;
-    go:validBefore ex:CreationEvent .
-
-ex:Something a go:Object .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:creationcapability rdf:type go:capability .
+ex:aftercreationevent rdf:type go:temporalrelation ;
+    go:relatesto ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-12> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:HasName "God" .
+ex:god a go:agent ;
+    go:hasquality ex:notweakness .
 
-ex:InventingEvent a go:CreationEvent, go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Something .
+ex:notweakness a go:quality ;
+    go:isnegativequality true ;
+    go:qualityof ex:god .
 
-ex:Something a go:Substance ;
-    go:HasDescription "something" .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:something .
 
-ex:NotDesolateState a go:State ;
-    go:HasAgent ex:God ;
-    go:HasProperty go:NotDesolate ;
-    go:TemporalRelation "before" ;
-    go:ReferenceEvent ex:InventingEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:statement a go:state ;
+    go:about ex:god ;
+    go:hasproperty ex:notweakness ;
+    go:validbefore ex:creationevent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-14> rdf:type owl:Ontology .
-
-ex:God a go:Deity .
-ex:AnythingMentioned a go:Substance .
-
-# The statement that God does not resemble anything mentioned is represented as a negative statement. One way is to define an event of type ex:Resemblance and negate it.
-ex:NonResemblanceEvent a ex:ResemblanceEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:AnythingMentioned ;
-    ex:hasNegation true .
-go:Substance rdfs:label "شی"@fa.
+ex:something a go:object .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-13> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:hasAttribute ex:Sovereignty .
+ex:god a go:deity ;
+    go:hasname "god" .
 
-ex:Creation a go:Event ;
-    a go:CreationEvent .
+ex:inventingevent a go:creationevent, go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:something .
 
-# Time interval before creation
-ex:BeforeCreation a time:TemporalInterval ;
-    time:before ex:Creation .
+ex:something a go:substance ;
+    go:hasdescription "something" .
 
-# God has sovereignty before creation
-ex:God ex:hasAttributeDuring ex:SovereigntyDuringBeforeCreation .
-
-ex:SovereigntyDuringBeforeCreation a go:AttributePossession ;
-    go:attribute ex:Sovereignty ;
-    go:hasAgent ex:God ;
-    go:hasTemporalContext ex:BeforeCreation .
-go:Event rdfs:label "رخداد"@fa.
+ex:notdesolatestate a go:state ;
+    go:hasagent ex:god ;
+    go:hasproperty go:notdesolate ;
+    go:temporalrelation "before" ;
+    go:referenceevent ex:inventingevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-14> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Person a go:Substance .
-ex:DepartureEvent a go:Event ;
-    go:HasTheme ex:Person .
+ex:god a go:deity .
+ex:anythingmentioned a go:substance .
 
-ex:GodAbsentFromPersonAfterDeparture a go:Event ;
+# the statement that god does not resemble anything mentioned is represented as a negative statement. one way is to define an event of type ex:resemblance and negate it.
+ex:nonresemblanceevent a ex:resemblanceevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:anythingmentioned ;
+    ex:hasnegation true .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-15> rdf:type owl:ontology .
+
+ex:god a go:deity ;
+    go:hasattribute ex:sovereignty .
+
+ex:creation a go:event ;
+    a go:creationevent .
+
+# time interval before creation
+ex:beforecreation a time:temporalinterval ;
+    time:before ex:creation .
+
+# god has sovereignty before creation
+ex:god ex:hasattributeduring ex:sovereigntyduringbeforecreation .
+
+ex:sovereigntyduringbeforecreation a go:attributepossession ;
+    go:attribute ex:sovereignty ;
+    go:hasagent ex:god ;
+    go:hastemporalcontext ex:beforecreation .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-16> rdf:type owl:ontology .
+
+ex:god a go:substance .
+ex:person a go:substance .
+ex:departureevent a go:event ;
+    go:hastheme ex:person .
+
+ex:godabsentfrompersonafterdeparture a go:event ;
     a go:absence ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Person ;
+    go:hasagent ex:god ;
+    go:hastheme ex:person ;
     ex:time "after departure" .
 
-# Negation of the above absence event to indicate God is NOT absent
-ex:GodNotAbsentFromPersonAfterDeparture a go:negation ;
-    go:negatedEvent ex:GodAbsentFromPersonAfterDeparture .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# negation of the above absence event to indicate god is not absent
+ex:godnotabsentfrompersonafterdeparture a go:negation ;
+    go:negatedevent ex:godabsentfrompersonafterdeparture .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-17> rdf:type owl:ontology .
 
-ex:God a go:Deity .
+ex:god a go:deity .
 
-ex:BeingAlive a go:State ;
-    go:HasAgent ex:God ;
-    go:HasAttribute ex:LifeUnending .
+ex:beingalive a go:state ;
+    go:hasagent ex:god ;
+    go:hasattribute ex:lifeunending .
 
-ex:LifeUnending a go:Attribute .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-18> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    ex:isSovereign true ;
-    ex:isPowerful true .
-
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme go:Substance .
-
-ex:God ex:hasAttributeBeforeEvent ex:CreationEvent .
-
-# The above triple indicates God's attributes existed before the creation event.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:lifeunending a go:attribute .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-18> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:hasRole ex:SovereignRole , ex:MightyRole .
+ex:god a go:deity ;
+    ex:issovereign true ;
+    ex:ispowerful true .
 
-ex:SovereignRole a go:Role ;
-    go:roleName "sovereign" .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme go:substance .
 
-ex:MightyRole a go:Role ;
-    go:roleName "mighty" .
+ex:god ex:hasattributebeforeevent ex:creationevent .
 
-ex:Universe a go:Substance .
-
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Universe ;
-    go:description "Creation of the universe by God" .
-
-ex:God go:holdsRoleAfter ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# the above triple indicates god's attributes existed before the creation event.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-19> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:How a go:Substance .
+ex:god a go:deity ;
+    go:hasrole ex:sovereignrole , ex:mightyrole .
 
-ex:NegationState a go:state ;
-    go:negates ex:IsHow .
+ex:sovereignrole a go:role ;
+    go:rolename "sovereign" .
 
-ex:IsHow a go:property ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:How .
+ex:mightyrole a go:role ;
+    go:rolename "mighty" .
 
-ex:God go:hasProperty ex:NegationState .
-go:Substance rdfs:label "شی"@fa.
+ex:universe a go:substance .
 
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:universe ;
+    go:description "creation of the universe by god" .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-21> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-        go:hasProperty go:Omnipresence .
-
-go:Omnipresence a go:Property ;
-        rdfs:label "Omnipresence" .
+ex:god go:holdsroleafter ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-20> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Limit a go:concept .
+ex:god a go:substance .
+ex:how a go:substance .
 
-ex:NoLimitState a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasQuality ex:Limit ;
-    go:QualityNegation true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:negationstate a go:state ;
+    go:negates ex:ishow .
 
+ex:ishow a go:property ;
+    go:hasagent ex:god ;
+    go:hastheme ex:how .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-23> rdf:type owl:Ontology .
-
-ex:God a go:Deity .
-
-ex:BeingKnown a go:Event ;
-    go:HasTheme ex:God .
-
-ex:ThingResemblingGod a go:Substance ;
-    go:Resembles ex:God .
-
-# Negation represented as a negative property or statement
-# State that there is no substance that resembles God that can be agent of 'BeingKnown'
-
-# Alternatively, indicate that 'God' is known by nobody or nothing that resembles Him
-
-# Representing negation in RDF is not straightforward; we use a blank node and property go:negates for conceptual clarity
-
-_:negation a go:Negation ;
-    go:Negates [ a go:Event ;
-                go:HasAgent ex:ThingResemblingGod ;
-                go:HasTheme ex:God ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god go:hasproperty ex:negationstate .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-24> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-21> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+        go:hasproperty go:omnipresence .
 
-ex:Aging a go:Event ;
-    rdfs:label "Aging" .
-
-ex:LongLastingExistence a go:Property ;
-    rdfs:label "Long-lasting existence" .
-
-ex:GodNotAging a go:State ;
-    rdfs:label "God does not age" ;
-    go:HasAgent ex:God ;
-    go:HasCause ex:LongLastingExistence .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:omnipresence a go:property ;
+        rdfs:label "omnipresence" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-25> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-22> rdf:type owl:ontology .
 
-ex:eventStrikeDown1 a go:Event ;
-    go:HasAgent go:God ;
-    go:HasTheme go:AnyThing ;
-    go:Negation true .
+ex:god a go:substance .
+ex:limit a go:concept .
 
-go:God a go:Deity .
-
-go:AnyThing a go:Object .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-26> rdf:type owl:Ontology .
-
-ex:BeingTerrifiedEvent a go:Event ;
-    go:HasTheme ex:AllThings ;
-    go:HasCause ex:FearOfGod .
-
-ex:AllThings a go:Substance ;
-    rdfs:label "All Things"@en .
-
-ex:FearOfGod a go:Event ;
-    go:HasAgent ex:God ;
-    rdfs:label "Fear of God"@en .
-
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:nolimitstate a go:event ;
+    go:hasagent ex:god ;
+    go:hasquality ex:limit ;
+    go:qualitynegation true .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-27> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-23> rdf:type owl:ontology .
 
-ex:God a go:Substance .
+ex:god a go:deity .
 
-ex:EventLivingWithoutLife a go:StateEvent, go:Event ;
-    go:HasTheme ex:God ;
-    go:description "Alive without life" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:beingknown a go:event ;
+    go:hastheme ex:god .
 
+ex:thingresemblinggod a go:substance ;
+    go:resembles ex:god .
 
-@base <http://etratnet.ir/ontology/> .
+# negation represented as a negative property or statement
+# state that there is no substance that resembles god that can be agent of 'beingknown'
 
-<http://etratnet.ir/ontology/240-28> rdf:type owl:Ontology .
+# alternatively, indicate that 'god' is known by nobody or nothing that resembles him
 
-ex:EverythingInExistence a go:Substance ;
-    go:hasState ex:LivingState .
+# representing negation in rdf is not straightforward; we use a blank node and property go:negates for conceptual clarity
 
-ex:LivingState a go:State ;
-    go:isAccidentalLife false .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-29> rdf:type owl:Ontology .
-
-ex:AllExistence a go:Substance .
-ex:DescribedUniverse a go:universe .
-
-ex:AllExistence ex:isDescribedUniverse ex:DescribedUniverse .
-go:Substance rdfs:label "شی"@fa.
+_:negation a go:negation ;
+    go:negates [ a go:event ;
+                go:hasagent ex:thingresemblinggod ;
+                go:hastheme ex:god ] .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-30> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-24> rdf:type owl:ontology .
 
-# Entity representing everything that exists
-ex:EverythingInExistence a go:Substance ;
-    rdfs:label "Everything in Existence"@en .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-# Property representing that determination is not set
-ex:NotDetermined a go:Attribute ;
-    rdfs:label "Not Predetermined"@en .
+ex:aging a go:event ;
+    rdfs:label "aging" .
 
-# State indicating that EverythingInExistence is not predetermined
-ex:EverythingInExistence ex:hasDetermination ex:NotDetermined .
-go:Substance rdfs:label "شی"@fa.
+ex:longlastingexistence a go:property ;
+    rdfs:label "long-lasting existence" .
+
+ex:godnotaging a go:state ;
+    rdfs:label "god does not age" ;
+    go:hasagent ex:god ;
+    go:hascause ex:longlastingexistence .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-31> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-25> rdf:type owl:ontology .
 
-ex:Existence a go:Concept ;
-    go:includesEverything true .
+ex:eventstrikedown1 a go:event ;
+    go:hasagent go:god ;
+    go:hastheme go:anything ;
+    go:negation true .
 
-ex:Place a go:Concept .
+go:god a go:deity .
 
-# Statement: For everything in existence, there is no fixed place assigned
-[ a go:Statement ;
-  go:subject ex:Existence ;
-  go:predicate ex:hasFixedPlace ;
-  go:object ex:NoFixedPlace ;
-  go:polarity "negative"^^rdf:Literal
+go:anything a go:object .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-26> rdf:type owl:ontology .
+
+ex:beingterrifiedevent a go:event ;
+    go:hastheme ex:allthings ;
+    go:hascause ex:fearofgod .
+
+ex:allthings a go:substance ;
+    rdfs:label "all things"@en .
+
+ex:fearofgod a go:event ;
+    go:hasagent ex:god ;
+    rdfs:label "fear of god"@en .
+
+ex:god a go:substance ;
+    rdfs:label "god"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-27> rdf:type owl:ontology .
+
+ex:god a go:substance .
+
+ex:eventlivingwithoutlife a go:stateevent, go:event ;
+    go:hastheme ex:god ;
+    go:description "alive without life" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-28> rdf:type owl:ontology .
+
+ex:everythinginexistence a go:substance ;
+    go:hasstate ex:livingstate .
+
+ex:livingstate a go:state ;
+    go:isaccidentallife false .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-29> rdf:type owl:ontology .
+
+ex:allexistence a go:substance .
+ex:describeduniverse a go:universe .
+
+ex:allexistence ex:isdescribeduniverse ex:describeduniverse .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-30> rdf:type owl:ontology .
+
+# entity representing everything that exists
+ex:everythinginexistence a go:substance ;
+    rdfs:label "everything in existence"@en .
+
+# property representing that determination is not set
+ex:notdetermined a go:attribute ;
+    rdfs:label "not predetermined"@en .
+
+# state indicating that everythinginexistence is not predetermined
+ex:everythinginexistence ex:hasdetermination ex:notdetermined .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-31> rdf:type owl:ontology .
+
+ex:existence a go:concept ;
+    go:includeseverything true .
+
+ex:place a go:concept .
+
+# statement: for everything in existence, there is no fixed place assigned
+[ a go:statement ;
+  go:subject ex:existence ;
+  go:predicate ex:hasfixedplace ;
+  go:object ex:nofixedplace ;
+  go:polarity "negative"^^rdf:literal
 ] .
 
-ex:NoFixedPlace a ex:Concept .
+ex:nofixedplace a ex:concept .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-32> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-32> rdf:type owl:ontology .
 
-ex:EverythingInExistence a go:Substance .
-ex:Place a go:Substance .
-ex:Thing a go:Substance .
+ex:everythinginexistence a go:substance .
+ex:place a go:substance .
+ex:thing a go:substance .
 
-ex:NoAdjacencyEvent a go:Event ;
-    ex:isNegated true ;
-    go:HasAgent ex:Place ;
-    go:HasTheme ex:Thing .
+ex:noadjacencyevent a go:event ;
+    ex:isnegated true ;
+    go:hasagent ex:place ;
+    go:hastheme ex:thing .
 
-# Note: This models the statement "No place is adjacent to any thing" as a negated adjacency event involving Place as agent and Thing as theme.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-33> rdf:type owl:Ontology .
-
-ex:God a go:Substance ;
-    go:hasQuality go:Alive ;
-    go:hasQuality ex:Known .
-
-ex:Known a go:Quality ;
-    rdfs:label "Known" .
-
-go:Alive a go:Quality ;
-    rdfs:label "Alive" .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+# note: this models the statement "no place is adjacent to any thing" as a negated adjacency event involving place as agent and thing as theme.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-34> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-33> rdf:type owl:ontology .
 
-ex:God a go:Person ;
-    go:hasRole ex:King ;
-    go:hasAttribute ex:Power .
+ex:god a go:substance ;
+    go:hasquality go:alive ;
+    go:hasquality ex:known .
 
-ex:King a go:Role .
-ex:Power a go:Attribute ;
-    go:attributeOf ex:God .
+ex:known a go:quality ;
+    rdfs:label "known" .
 
-ex:Kingdom a go:State ;
+go:alive a go:quality ;
+    rdfs:label "alive" .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-34> rdf:type owl:ontology .
+
+ex:god a go:person ;
+    go:hasrole ex:king ;
+    go:hasattribute ex:power .
+
+ex:king a go:role .
+ex:power a go:attribute ;
+    go:attributeof ex:god .
+
+ex:kingdom a go:state ;
     go:persistent true .
 
-ex:God ex:hasKingdom ex:Kingdom .
+ex:god ex:haskingdom ex:kingdom .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-35> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-35> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:CreatedEntities ;
-    go:HasTime ex:IndefiniteTime ;
-    go:HasCause ex:GodsWill .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:createdentities ;
+    go:hastime ex:indefinitetime ;
+    go:hascause ex:godswill .
 
-ex:CreatedEntities a go:entity ;
-    rdfs:label "whatever God willed" .
+ex:createdentities a go:entity ;
+    rdfs:label "whatever god willed" .
 
-ex:IndefiniteTime a go:temporalEntity ;
-    rdfs:label "whenever He willed" .
+ex:indefinitetime a go:temporalentity ;
+    rdfs:label "whenever he willed" .
 
-ex:GodsWill a go:Substance ;
-    rdfs:label "God's will" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-36> rdf:type owl:Ontology .
-
-ex:God a go:Substance ;
-  ex:hasProperty [ a ex:NotFinite ] ;
-  ex:hasProperty [ a ex:NotDistant ] ;
-  ex:hasProperty [ a ex:NotPerishable ] .
-go:Substance rdfs:label "شی"@fa.
+ex:godswill a go:substance ;
+    rdfs:label "god's will" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-37> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-36> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+  ex:hasproperty [ a ex:notfinite ] ;
+  ex:hasproperty [ a ex:notdistant ] ;
+  ex:hasproperty [ a ex:notperishable ] .
+go:substance rdfs:label "شی"@fa.
 
-ex:InitialStateEvent a ex:StateEvent ;
-    go:HasTheme ex:God ;
-    ex:isWithout ex:How ;
-    time:hasTime ex:InitialTime .
 
-ex:How a go:Quality ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-37> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    rdfs:label "god"@en .
+
+ex:initialstateevent a ex:stateevent ;
+    go:hastheme ex:god ;
+    ex:iswithout ex:how ;
+    time:hastime ex:initialtime .
+
+ex:how a go:quality ;
     rdfs:label "how"@en .
 
-ex:InitialTime a time:Instant ;
+ex:initialtime a time:instant ;
     rdfs:label "initially"@en .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-38> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-38> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Last .
+ex:eventinstance1 a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:last .
 
-ex:God a go:Deity ;
-  schema:name "God" .
+ex:god a go:deity ;
+  schema:name "god" .
 
-ex:Last a go:Quality ;
-  schema:name "Last" .
+ex:last a go:quality ;
+  schema:name "last" .
 
-ex:God ex:hasPlace _:noPlace .
+ex:god ex:hasplace _:noplace .
 
-_:noPlace a go:Place ;
-  schema:description "Absent (without a place)" .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-39> rdf:type owl:Ontology .
-
-ex:Everything a go:entity .
-ex:GodFace a go:entity ;
-    go:hasQuality ex:DivineFaceQuality .
-
-ex:PerishEvent a go:Event ;
-    go:HasTheme ex:Everything ;
-    go:Excepts ex:GodFace .
-
-# To explicitly state that the God's Face does not perish, we can add:
-ex:GodFace go:DoesNotUndergo ex:PerishEvent .
-go:Event rdfs:label "رخداد"@fa.
+_:noplace a go:place ;
+  schema:description "absent (without a place)" .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-40> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-39> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:everything a go:entity .
+ex:godface a go:entity ;
+    go:hasquality ex:divinefacequality .
 
-ex:Creation a go:Substance ;
-    rdfs:label "Creation" ;
-    go:HasOwner ex:God .
+ex:perishevent a go:event ;
+    go:hastheme ex:everything ;
+    go:excepts ex:godface .
 
-ex:Command a go:Substance ;
-    rdfs:label "Command" ;
-    go:HasOwner ex:God .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-41> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    ex:isBlessed true ;
-    ex:isExalted true ;
-    go:LordOf ex:Worlds .
-
-ex:Worlds a go:World .
+# to explicitly state that the god's face does not perish, we can add:
+ex:godface go:doesnotundergo ex:perishevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-42> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-40> rdf:type owl:ontology .
 
-ex:Illusions a go:Substance ;
-    rdfs:label "Illusions" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:MyLord a go:agent ;
-    rdfs:label "My Lord" .
+ex:creation a go:substance ;
+    rdfs:label "creation" ;
+    go:hasowner ex:god .
 
-ex:Person a go:person ;
-    rdfs:label "Him (Implied Person)" .
-
-ex:Event_NoOverwhelm a go:Event ;
-    rdfs:label "Not overwhelm event" ;
-    go:HasAgent ex:Illusions ;
-    go:HasTheme ex:Person ;
-    go:Negation true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:command a go:substance ;
+    rdfs:label "command" ;
+    go:hasowner ex:god .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-43> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-41> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-  go:HasAgent ex:MyLord ;
-  go:HasTheme ex:PersonHim ;
-  go:causedState ex:Doubts .
+ex:god a go:deity ;
+    ex:isblessed true ;
+    ex:isexalted true ;
+    go:lordof ex:worlds .
 
-ex:MyLord a go:Agent .
-ex:PersonHim a go:Person .
-ex:Doubts a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:worlds a go:world .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-44> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-42> rdf:type owl:ontology .
 
-ex:MyLord a go:Agent ;
-    rdfs:label "My Lord" .
+ex:illusions a go:substance ;
+    rdfs:label "illusions" .
 
-ex:ConfusedState a go:State ;
-    rdfs:label "Confused" .
+ex:mylord a go:agent ;
+    rdfs:label "my lord" .
 
-# Negative state - My Lord does not experience confusion about any thing
+ex:person a go:person ;
+    rdfs:label "him (implied person)" .
 
-ex:MyLord ex:hasMentalState ex:ConfusedState .
-
-# Negation indicated by a property
-ex:MyLord ex:negationOfState ex:ConfusedState .
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-45> rdf:type owl:Ontology .
-
-ex:MyLord a go:Person ;
-    go:name "My Lord" .
-
-ex:SurpassingEvent a go:Event , go:NegativeEvent ;
-    go:HasAgent ex:MyLord ;
-    go:HasTheme go:Anything .
-go:Event rdfs:label "رخداد"@fa.
+ex:event_nooverwhelm a go:event ;
+    rdfs:label "not overwhelm event" ;
+    go:hasagent ex:illusions ;
+    go:hastheme ex:person ;
+    go:negation true .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-46> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-43> rdf:type owl:ontology .
 
-ex:EventInstance1 a go:Event ;
-    go:HasTheme ex:Him .
+ex:event1 a go:event ;
+  go:hasagent ex:mylord ;
+  go:hastheme ex:personhim ;
+  go:causedstate ex:doubts .
 
-ex:MyLord a go:Substance .
-
-ex:Prayer1 a ex:eventInstance ;
-    go:HasAgent ex:MyLord ;
-    go:ForbidsEvent ex:EventInstance1 .
-
-ex:Him a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-47> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    rdfs:label "God"@en .
-
-ex:BeingAskedEvent a go:Event ;
-    a go:BeingAsked ;
-    go:HasTheme ex:God ;
-    go:hasPolarity "Negative" .
-go:Event rdfs:label "رخداد"@fa.
+ex:mylord a go:agent .
+ex:personhim a go:person .
+ex:doubts a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-48> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-44> rdf:type owl:ontology .
 
-ex:myLord a go:Deity .
+ex:mylord a go:agent ;
+    rdfs:label "my lord" .
 
-ex:regretEvent a go:Event ;
-    go:hasTheme ex:anything .
+ex:confusedstate a go:state ;
+    rdfs:label "confused" .
 
-# The sentence states 'My Lord' does not regret anything, so no agent-relation to regretEvent
-# We can represent the negation as a negative property statement or absence of agent claim
+# negative state - my lord does not experience confusion about any thing
 
-# Representing the negation explicitly:
-ex:myLord go:doesNotPerform ex:regretEvent .
-go:Event rdfs:label "رخداد"@fa.
+ex:mylord ex:hasmentalstate ex:confusedstate .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/240-49> rdf:type owl:Ontology .
-
-ex:God a go:Agent ;
-    ex:CannotBeOvertakenBy ex:Drowsiness , ex:Sleep .
-
-ex:Drowsiness a go:State .
-ex:Sleep a go:State .
-go:Agent rdfs:label "عامل"@fa.
+# negation indicated by a property
+ex:mylord ex:negationofstate ex:confusedstate .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/240-50> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/240-45> rdf:type owl:ontology .
 
-ex:Allah rdf:type go:Deity .
-ex:Heavens rdf:type go:Location .
-ex:Earth rdf:type go:Location .
-ex:SpaceBetweenHeavensAndEarth rdf:type go:Location .
-ex:BeneathSoil rdf:type go:Location .
+ex:mylord a go:person ;
+    go:name "my lord" .
 
-ex:PossessionEvent_1 rdf:type go:PossessionEvent ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Heavens , ex:Earth , ex:SpaceBetweenHeavensAndEarth , ex:BeneathSoil .
+ex:surpassingevent a go:event , go:negativeevent ;
+    go:hasagent ex:mylord ;
+    go:hastheme go:anything .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-46> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hastheme ex:him .
+
+ex:mylord a go:substance .
+
+ex:prayer1 a ex:eventinstance ;
+    go:hasagent ex:mylord ;
+    go:forbidsevent ex:eventinstance1 .
+
+ex:him a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-47> rdf:type owl:ontology .
+
+ex:god a go:deity ;
+    rdfs:label "god"@en .
+
+ex:beingaskedevent a go:event ;
+    a go:beingasked ;
+    go:hastheme ex:god ;
+    go:haspolarity "negative" .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-48> rdf:type owl:ontology .
+
+ex:mylord a go:deity .
+
+ex:regretevent a go:event ;
+    go:hastheme ex:anything .
+
+# the sentence states 'my lord' does not regret anything, so no agent-relation to regretevent
+# we can represent the negation as a negative property statement or absence of agent claim
+
+# representing the negation explicitly:
+ex:mylord go:doesnotperform ex:regretevent .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-49> rdf:type owl:ontology .
+
+ex:god a go:agent ;
+    ex:cannotbeovertakenby ex:drowsiness , ex:sleep .
+
+ex:drowsiness a go:state .
+ex:sleep a go:state .
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/240-50> rdf:type owl:ontology .
+
+ex:allah rdf:type go:deity .
+ex:heavens rdf:type go:location .
+ex:earth rdf:type go:location .
+ex:spacebetweenheavensandearth rdf:type go:location .
+ex:beneathsoil rdf:type go:location .
+
+ex:possessionevent_1 rdf:type go:possessionevent ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:heavens , ex:earth , ex:spacebetweenheavensandearth , ex:beneathsoil .

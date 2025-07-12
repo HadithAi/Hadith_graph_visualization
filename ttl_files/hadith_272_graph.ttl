@@ -1,473 +1,476 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/272#> .
+@prefix ex: <http://etratnet.ir/graph/example/272#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/272> rdf:type go:ontology ;
+        go:hascontent "12.  چيزها تنها از دو راه درك مى‌شوند: از راه حواس، و از راه دل. دريافت حواس بر سه گونه است: دريافت با وارد شدن [چيزها]، دريافت با لمس كردن، و دريافت بدون وارد شدن و لمس كردن. دريافت با وارد شدن شامل آواها و بوها و مزه‌هاست. دريافت با لمس كردن شامل شناخت اشكال مانند چهارپهلو و سه‌پهلو، و شناخت نرمى و زبرى و گرمى و سردى است، و دريافت بدون لمس كردن و وارد شدن، شامل بينايى است؛ چرا كه قوّه بينايى چيزها را، بدون تماس و بدون وارد شدن آنها در جايى غير از چشم يا در خود چشم، دريافت مى‌كند. دريافت با بينايى راهى دارد و سببى. راه آن هواست و سببش نور. پس هرگاه اين راه، ميان چشم و شى‌ء مرئى متصل باشد و سبب موجود باشد قوّه بينايى آنچه را [در مسير خود] به آن برخورَد، از رنگ‌ها و اشخاص، دريافت مى‌كند. اما اگر بينايى به سوى چيزى فرستاده شود كه بدان راهى ندارد برگشت مى‌كند، و فراروى آن را باز مى‌نماياند؛ مانند كسى كه در آينه بنگرد؛ بينايى او در آينه نفوذ نمى‌كند و چون راهى برايش نيست، بازگشت مى‌كند و فراروى خود را مى‌نماياند. همچنين است كسى كه در آب زلال بنگرد؛ بينايى‌اش بازگشت مى‌كند و فرارويش را نشان مى‌دهد؛ چون راهى براى نفوذ دادن بينايى‌اش وجود ندارد. و اما دل، چيرگى‌اش بر هواست. بنابراين، تمام آنچه را در هواست دريافت مى‌كند و آن را در وهم خويش در مى‌آورد. پس، هرگاه دل به سوى چيزى كه در هوا موجود نيست فرستاده شود بازگشت مى‌كند و آنچه را در هواست باز مى‌نماياند. بنابراين، خردمند نبايد دل خويش را به سوى آنچه در هوا موجود نيست، يعنى خداوند عز و جل، روانه سازد، كه اگر چنين كند توهم [و تصور] نكند مگر آنچه را در هوا وجود دارد، چنان كه درباره بينايى گفتيم. خدا برتر از آن است كه آفريدگانش مانند او باشند."@fa,
+        "12.  الْأَشْيَاءُ لاَ تُدْرَكُ إِلاَّ بِأَمْرَيْنِ: بِالْحَوَاسِّ، وَالْقَلْبِ؛ وَالْحَوَاسُّ إِدْرَاكُهَا عَلى ثَلاَثَةِ مَعَانٍ: إِدْرَاكاً بِالْمُدَاخَلَةِ، وَإِدْرَاكاً بِالْمُمَاسَّةِ، وَإِدْرَاكاً بِلاَ مُدَاخَلَةٍ وَلاَ مُمَاسَّةٍ. فَأَمَّا الاْءِدْرَاكُ الَّذِي بِالْمُدَاخَلَةِ، فَالْأَصْوَاتُ وَالْمَشَامُّ وَالطُّعُومُ. وَأَمَّا الاْءِدْرَاكُ بِالْمُمَاسَّةِ، فَمَعْرِفَةُ الْأَشْكَالِ مِنَ التَّرْبِيعِ وَالتَّثْلِيثِ، وَمَعْرِفَةُ اللَّيِّنِ وَالْخَشِنِ، وَالْحَرِّ وَالْبَرْدِ. وَأَمَّا الاْءِدْرَاكُ بِلاَ مُمَاسَّةٍ وَلاَ مُدَاخَلَةٍ، فَالْبَصَرُ؛ فَإِنَّهُ يُدْرِكُ الْأَشْيَاءَ بِلاَ مُمَاسَّةٍ وَلاَ مُدَاخَلَةٍ فِي حَيِّزِ غَيْرِهِ وَلاَ فِي حَيِّزِهِ، وَإِدْرَاكُ الْبَصَرِ لَهُ سَبِيلٌ وَسَبَبٌ، فَسَبِيلُهُ الْهَوَاءُ، وَسَبَبُهُ الضِّيَاءُ، فَإِذَا كَانَ السَّبِيلُ مُتَّصِلاً بَيْنَهُ وَبَيْنَ الْمَرْئِيِّ وَالسَّبَبُ قَائِمٌ، أَدْرَكَ مَا يُلاَقِي مِنَ الْأَلْوَانِ وَالْأَشْخَاصِ، فَإِذَا حُمِلَ الْبَصَرُ عَلى مَا لاَ سَبِيلَ لَهُ فِيهِ، رَجَعَ رَاجِعاً، فَحَكى مَا وَرَاءَهُ، كَالنَّاظِرِ فِي الْمِرْآةِ لاَ يَنْفُذُ بَصَرُهُ فِي الْمِرْآةِ، فَإِذَا لَمْ يَكُنْ لَهُ سَبِيلٌ، رَجَعَ رَاجِعاً يَحْكِي مَا وَرَاءَهُ، وَكَذلِكَ النَّاظِرُ فِي الْمَاءِ الصَّافِي، يَرْجِعُ رَاجِعاً فَيَحْكِي مَا وَرَاءَهُ؛ إِذْ لاَ سَبِيلَ لَهُ فِي إِنْفَاذِ بَصَرِهِ. فَأَمَّا الْقَلْبُ فَإِنَّمَا سُلْطَانُهُ عَلَى الْهَوَاءِ، فَهُوَ يُدْرِكُ جَمِيعَ مَا فِي الْهَوَاءِ وَيَتَوَهَّمُهُ، فَإِذَا حُمِلَ الْقَلْبُ عَلى مَا لَيْسَ فِي الْهَوَاءِ مَوْجُوداً، رَجَعَ رَاجِعاً فَحَكى مَا فِي الْهَوَاءِ. فَلاَ يَنْبَغِي لِلْعَاقِلِ أَنْ يَحْمِلَ قَلْبَهُ عَلى مَا لَيْسَ مَوْجُوداً فِي الْهَوَاءِ مِنْ أَمْرِ التَّوْحِيدِ جَلَّ اللّه‌ُ وَعَزَّ؛ فَإِنَّهُ إِنْ فَعَلَ ذلِكَ، لَمْ يَتَوَهَّمْ إِلاَّ مَا فِي الْهَوَاءِ مَوْجُودٌ، كَمَا قُلْنَا فِي أَمْرِ الْبَصَرِ، تَعَالَى اللّه‌ُ أَنْ يُشْبِهَهُ خَلْقُهُ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-1> rdf:type owl:ontology .
 
-ex:Thing a go:Object .
-ex:Sense a go:Organ .
-ex:Heart a go:Organ .
+ex:thing a go:object .
+ex:sense a go:organ .
+ex:heart a go:organ .
 
-ex:PerceptionEvent a go:Event ;
-    ex:HasTheme ex:Thing ;
-    ex:HasInstrument ex:Sense , ex:Heart .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/272-2> rdf:type owl:Ontology .
-
-ex:PerceptionEvent a go:Event ;
-    go:HasAgent ex:Senses ;
-    go:HasTheme ex:Things .
-
-ex:Senses a go:agent .
-ex:Things a go:Substance .
-
-ex:PerceptionByMediation a go:EventType ;
-    rdfs:subClassOf ex:PerceptionEvent .
-
-ex:PerceptionByContact a go:EventType ;
-    rdfs:subClassOf ex:PerceptionEvent .
-
-ex:PerceptionWithoutMediationOrContact a go:EventType ;
-    rdfs:subClassOf ex:PerceptionEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:perceptionevent a go:event ;
+    ex:hastheme ex:thing ;
+    ex:hasinstrument ex:sense , ex:heart .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-2> rdf:type owl:ontology .
 
-ex:Intervention a go:Event ;
+ex:perceptionevent a go:event ;
+    go:hasagent ex:senses ;
+    go:hastheme ex:things .
+
+ex:senses a go:agent .
+ex:things a go:substance .
+
+ex:perceptionbymediation a go:eventtype ;
+    rdfs:subclassof ex:perceptionevent .
+
+ex:perceptionbycontact a go:eventtype ;
+    rdfs:subclassof ex:perceptionevent .
+
+ex:perceptionwithoutmediationorcontact a go:eventtype ;
+    rdfs:subclassof ex:perceptionevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-3> rdf:type owl:ontology .
+
+ex:intervention a go:event ;
     rdfs:label "intervention" .
 
-ex:Perception a go:Concept ;
+ex:perception a go:concept ;
     rdfs:label "perception" ;
-    go:HasCause ex:Intervention ;
-    go:Includes ex:Sound , ex:Smell , ex:Taste .
+    go:hascause ex:intervention ;
+    go:includes ex:sound , ex:smell , ex:taste .
 
-ex:Sound a go:Quality ;
+ex:sound a go:quality ;
     rdfs:label "sound" .
 
-ex:Smell a go:Quality ;
+ex:smell a go:quality ;
     rdfs:label "smell" .
 
-ex:Taste a go:Quality ;
+ex:taste a go:quality ;
     rdfs:label "taste" .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-4> rdf:type owl:ontology .
 
-ex:PerceptionByTouch a go:PerceptionEvent ;
-    go:HasTheme ex:KnowledgeOfShapes .
+ex:perceptionbytouch a go:perceptionevent ;
+    go:hastheme ex:knowledgeofshapes .
 
-ex:KnowledgeOfShapes a go:Concept ;
-    go:IncludesShape ex:Square, ex:Triangle .
+ex:knowledgeofshapes a go:concept ;
+    go:includesshape ex:square, ex:triangle .
 
-ex:Square a go:Shape ;
+ex:square a go:shape ;
     rdfs:label "square"@en .
 
-ex:Triangle a go:Shape ;
+ex:triangle a go:shape ;
     rdfs:label "triangle"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-5> rdf:type owl:ontology .
 
-ex:PerceptionByTouch a go:SensoryEvent ;
-    go:HasTheme ex:Softness , ex:Roughness ;
-    go:includes ex:KnowingSoftness , ex:KnowingRoughness .
+ex:perceptionbytouch a go:sensoryevent ;
+    go:hastheme ex:softness , ex:roughness ;
+    go:includes ex:knowingsoftness , ex:knowingroughness .
 
-ex:Softness a go:Quality .
-ex:Roughness a go:Quality .
+ex:softness a go:quality .
+ex:roughness a go:quality .
 
-ex:KnowingSoftness a go:CognitiveState ;
-    go:HasTheme ex:Softness .
+ex:knowingsoftness a go:cognitivestate ;
+    go:hastheme ex:softness .
 
-ex:KnowingRoughness a go:CognitiveState ;
-    go:HasTheme ex:Roughness .
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/272-6> rdf:type owl:Ontology .
-
-ex:PerceptionByTouch a go:Event ;
-    go:hasTheme ex:Heat ;
-    go:hasTheme ex:Cold .
-
-ex:Heat a go:Substance .
-ex:Cold a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:knowingroughness a go:cognitivestate ;
+    go:hastheme ex:roughness .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-6> rdf:type owl:ontology .
 
-ex:Sight a go:Substance ;
-    rdfs:label "Sight"@en ;
-    dcterms:description "Sight is perception without contact or input."@en ;
-    go:is_a ex:Perception .
+ex:perceptionbytouch a go:event ;
+    go:hastheme ex:heat ;
+    go:hastheme ex:cold .
 
-ex:Perception a go:Substance ;
-    rdfs:label "Perception"@en .
-
-ex:Contact a go:concept ;
-    rdfs:label "Contact"@en .
-
-ex:Input a go:concept ;
-    rdfs:label "Input"@en .
-go:Substance rdfs:label "شی"@fa.
+ex:heat a go:substance .
+ex:cold a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-7> rdf:type owl:ontology .
 
-ex:Sight a go:Substance ;
-    rdfs:label "Sight"@en .
+ex:sight a go:substance ;
+    rdfs:label "sight"@en ;
+    dcterms:description "sight is perception without contact or input."@en ;
+    go:is_a ex:perception .
 
-ex:Thing a go:Substance ;
-    rdfs:label "Things"@en .
+ex:perception a go:substance ;
+    rdfs:label "perception"@en .
 
-ex:PerceptionEvent1 a go:PerceptionEvent ;
-    ex:HasAgent ex:Sight ;
-    ex:HasTheme ex:Thing ;
-    ex:hasManner ex:NoContact , ex:NoSpatialIntrusion .
+ex:contact a go:concept ;
+    rdfs:label "contact"@en .
 
-ex:NoContact a ex:Manner ;
+ex:input a go:concept ;
+    rdfs:label "input"@en .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-8> rdf:type owl:ontology .
+
+ex:sight a go:substance ;
+    rdfs:label "sight"@en .
+
+ex:thing a go:substance ;
+    rdfs:label "things"@en .
+
+ex:perceptionevent1 a go:perceptionevent ;
+    ex:hasagent ex:sight ;
+    ex:hastheme ex:thing ;
+    ex:hasmanner ex:nocontact , ex:nospatialintrusion .
+
+ex:nocontact a ex:manner ;
     rdfs:label "without contact"@en .
 
-ex:NoSpatialIntrusion a ex:Manner ;
+ex:nospatialintrusion a ex:manner ;
     rdfs:label "without entering another's or its own space"@en .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-9> rdf:type owl:ontology .
 
-ex:PerceptionOfSightEvent a go:Event ;
-    go:HasPath ex:Path ;
-    go:HasCause ex:Cause .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/272-10> rdf:type owl:Ontology .
-
-ex:PerceptionOfSight a go:PerceptionEvent ;
-    go:sense ex:Sight .
-
-ex:MeansOfPerceptionOfSight a go:Means ;
-    go:relatedTo ex:PerceptionOfSight ;
-    go:hasAgent ex:Air .
-
-ex:Air a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:perceptionofsightevent a go:event ;
+    go:haspath ex:path ;
+    go:hascause ex:cause .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-10> rdf:type owl:ontology .
 
-ex:VisualPerception a go:Event ;
-  go:HasCause ex:Light .
+ex:perceptionofsight a go:perceptionevent ;
+    go:sense ex:sight .
 
-ex:Light a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:meansofperceptionofsight a go:means ;
+    go:relatedto ex:perceptionofsight ;
+    go:hasagent ex:air .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/272-12> rdf:type owl:Ontology .
-
-ex:vision a go:VisualSense .
-ex:pathway a go:Pathway .
-ex:visibleEntity a go:VisibleEntity .
-ex:cause a go:Cause .
-ex:colors a go:ColorCollection .
-ex:persons a go:PersonCollection .
-
-ex:perceptionEvent a go:PerceptionEvent ;
-    go:HasAgent ex:vision ;
-    go:HasTheme ex:colors , ex:persons .
+ex:air a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-11> rdf:type owl:ontology .
 
-ex:gaze go:Substance true .
+ex:visualperception a go:event ;
+  go:hascause ex:light .
 
-ex:impossibleObject a go:Substance ;
-    go:hasProperty ex:noPath .
-
-ex:directGazeAtImpossibleObject a go:Event ;
-    go:HasAgent ex:gaze ;
-    go:HasTheme ex:impossibleObject ;
-    go:causes ex:returnEvent .
-
-ex:returnEvent a go:Event ;
-    go:HasAgent ex:gaze ;
-    go:HasProperty ex:returningBack .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:light a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-12> rdf:type owl:ontology .
 
-ex:Vision a go:Substance ;
-    rdfs:label "Vision"@en .
+ex:vision a go:visualsense .
+ex:pathway a go:pathway .
+ex:visibleentity a go:visibleentity .
+ex:cause a go:cause .
+ex:colors a go:colorcollection .
+ex:persons a go:personcollection .
 
-ex:Behind_It a go:Substance ;
-    rdfs:label "What is behind it"@en .
-
-ex:NarrateEvent a go:Event ;
-    go:HasAgent ex:Vision ;
-    go:HasTheme ex:Behind_It ;
-    rdfs:comment "If vision has no way, it narrates what is behind it."@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:perceptionevent a go:perceptionevent ;
+    go:hasagent ex:vision ;
+    go:hastheme ex:colors , ex:persons .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-13> rdf:type owl:ontology .
 
-exinst:observationEvent1 a ex:PerceptionEvent ;
-    go:HasAgent exinst:observer1 ;
-    go:HasTheme exinst:mirror1 .
+ex:gaze go:substance true .
 
-exinst:observer1 a go:BiologicalEntity ;
-    go:locatedIn exinst:mirror1 .
+ex:impossibleobject a go:substance ;
+    go:hasproperty ex:nopath .
 
-exinst:mirror1 a go:Artifact .
+ex:directgazeatimpossibleobject a go:event ;
+    go:hasagent ex:gaze ;
+    go:hastheme ex:impossibleobject ;
+    go:causes ex:returnevent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/272-16> rdf:type owl:Ontology .
-
-ex:Sight a go:Substance ;
-    go:HasCharacteristic ex:NoPath .
-
-ex:NoPath a go:Condition ;
-    go:appliesTo ex:Sight .
-
-ex:RetreatEvent a go:Event ;
-    go:HasAgent ex:Sight ;
-    go:HasTheme ex:BehindNarration .
-
-ex:BehindNarration a go:Theme ;
-    go:describes ex:Behind .
-
-ex:Behind a go:Place ;
-    go:position "Behind Sight" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:returnevent a go:event ;
+    go:hasagent ex:gaze ;
+    go:hasproperty ex:returningback .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-14> rdf:type owl:ontology .
 
-ex:Observer1 a go:person ;
-    go:participatesIn ex:TurningBackEvent1 , ex:NarrationEvent1 .
+ex:vision a go:substance ;
+    rdfs:label "vision"@en .
 
-ex:ClearWater a go:Substance .
+ex:behind_it a go:substance ;
+    rdfs:label "what is behind it"@en .
 
-ex:TurningBackEvent1 a go:Event ;
-    go:HasAgent ex:Observer1 ;
-    go:occursIn ex:ClearWater .
-
-ex:NarrationEvent1 a go:Event ;
-    go:HasAgent ex:Observer1 ;
-    go:HasTheme ex:WhatIsBehindHim .
-
-ex:WhatIsBehindHim a go:entity .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:narrateevent a go:event ;
+    go:hasagent ex:vision ;
+    go:hastheme ex:behind_it ;
+    rdfs:comment "if vision has no way, it narrates what is behind it."@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-15> rdf:type owl:ontology .
 
-ex:PenetrationEvent a go:Event ;
-  go:HasAgent ex:Sight ;
-  go:HasTheme ex:HisSight ;
-  go:HasLocation ex:ClearWater .
+exinst:observationevent1 a ex:perceptionevent ;
+    go:hasagent exinst:observer1 ;
+    go:hastheme exinst:mirror1 .
 
-# Negation expressed as absence of such event
-[] a go:Negation ;
-  go:Negates ex:PenetrationEvent .
+exinst:observer1 a go:biologicalentity ;
+    go:locatedin exinst:mirror1 .
 
-ex:Sight a go:PerceptionAbility .
-ex:HisSight a go:PerceptualContent .
-ex:ClearWater a go:Substance ;
-              go:HasQuality ex:Clear .
-ex:Clear a go:Quality .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+exinst:mirror1 a go:artifact .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-16> rdf:type owl:ontology .
 
-ex:Heart a go:Substance ;
-    ex:hasControlOver ex:Air .
+ex:sight a go:substance ;
+    go:hascharacteristic ex:nopath .
 
-ex:Air a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:nopath a go:condition ;
+    go:appliesto ex:sight .
 
+ex:retreatevent a go:event ;
+    go:hasagent ex:sight ;
+    go:hastheme ex:behindnarration .
 
-@base <http://etratnet.ir/ontology/> .
+ex:behindnarration a go:theme ;
+    go:describes ex:behind .
 
-<http://etratnet.ir/ontology/272-20> rdf:type owl:Ontology .
-
-ex:Heart a go:PhysicalObject .
-ex:Air a go:Substance .
-ex:EverythingInTheAir a go:Substance ;
-    go:isPartOf ex:Air .
-
-ex:PerceivingEvent a go:PerceiveEvent ;
-    go:HasAgent ex:Heart ;
-    go:HasTheme ex:EverythingInTheAir .
-
-ex:ImaginingEvent a go:ImagineEvent ;
-    go:HasAgent ex:Heart .
-
-# The heart (agent) perceives (event) everything in the air (theme) and also imagines (event) it.
-go:Substance rdfs:label "شی"@fa.
+ex:behind a go:place ;
+    go:position "behind sight" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-17> rdf:type owl:ontology .
 
-ex:Heart a go:PhysicalObject ;
+ex:observer1 a go:person ;
+    go:participatesin ex:turningbackevent1 , ex:narrationevent1 .
+
+ex:clearwater a go:substance .
+
+ex:turningbackevent1 a go:event ;
+    go:hasagent ex:observer1 ;
+    go:occursin ex:clearwater .
+
+ex:narrationevent1 a go:event ;
+    go:hasagent ex:observer1 ;
+    go:hastheme ex:whatisbehindhim .
+
+ex:whatisbehindhim a go:entity .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-18> rdf:type owl:ontology .
+
+ex:penetrationevent a go:event ;
+  go:hasagent ex:sight ;
+  go:hastheme ex:hissight ;
+  go:haslocation ex:clearwater .
+
+# negation expressed as absence of such event
+[] a go:negation ;
+  go:negates ex:penetrationevent .
+
+ex:sight a go:perceptionability .
+ex:hissight a go:perceptualcontent .
+ex:clearwater a go:substance ;
+              go:hasquality ex:clear .
+ex:clear a go:quality .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-19> rdf:type owl:ontology .
+
+ex:heart a go:substance ;
+    ex:hascontrolover ex:air .
+
+ex:air a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-20> rdf:type owl:ontology .
+
+ex:heart a go:physicalobject .
+ex:air a go:substance .
+ex:everythingintheair a go:substance ;
+    go:ispartof ex:air .
+
+ex:perceivingevent a go:perceiveevent ;
+    go:hasagent ex:heart ;
+    go:hastheme ex:everythingintheair .
+
+ex:imaginingevent a go:imagineevent ;
+    go:hasagent ex:heart .
+
+# the heart (agent) perceives (event) everything in the air (theme) and also imagines (event) it.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-21> rdf:type owl:ontology .
+
+ex:heart a go:physicalobject ;
     rdfs:label "heart" .
 
-ex:NotInAirEntity a go:Substance ;
+ex:notinairentity a go:substance ;
     rdfs:label "something not present in the air" .
 
-ex:InAirContent a go:Substance ;
+ex:inaircontent a go:substance ;
     rdfs:label "what is in the air" .
 
-ex:CarryingEvent a go:Carrying ;
-    go:HasTheme ex:Heart ;
-    go:HasLocation ex:NotInAirEntity .
+ex:carryingevent a go:carrying ;
+    go:hastheme ex:heart ;
+    go:haslocation ex:notinairentity .
 
-ex:ReturningEvent a go:Returning ;
-    go:HasTheme ex:Heart .
+ex:returningevent a go:returning ;
+    go:hastheme ex:heart .
 
-ex:NarratingEvent a go:Narrating ;
-    go:HasAgent ex:Heart ;
-    go:HasTheme ex:InAirContent .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/272-22> rdf:type owl:Ontology .
-
-ex:RationalPerson a go:Agent ;
-    go:hasQuality ex:Rationality .
-
-ex:Heart a go:Substance .
-
-ex:MonotheismConcept a go:Concept ;
-    rdfs:label "Monotheism" .
-
-ex:NonExistentMatterInMonotheism a go:Concept ;
-    go:relatedTo ex:MonotheismConcept ;
-    go:existence "False"^^xsd:boolean .
-
-ex:BurdenEvent a go:Event ;
-    go:HasAgent ex:RationalPerson ;
-    go:HasTheme ex:Heart ;
-    go:HasCause ex:NonExistentMatterInMonotheism ;
-    go:HasAction "burden" .
-
-ex:God a go:Agent ;
-    go:hasAttribute ex:Glorified , ex:Exalted .
-
-ex:Glorified a go:Attribute ;
-    rdfs:label "Glorified" .
-
-ex:Exalted a go:Attribute ;
-    rdfs:label "Exalted" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:narratingevent a go:narrating ;
+    go:hasagent ex:heart ;
+    go:hastheme ex:inaircontent .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-22> rdf:type owl:ontology .
 
-ex:rationalPerson a go:Human ;
+ex:rationalperson a go:agent ;
+    go:hasquality ex:rationality .
+
+ex:heart a go:substance .
+
+ex:monotheismconcept a go:concept ;
+    rdfs:label "monotheism" .
+
+ex:nonexistentmatterinmonotheism a go:concept ;
+    go:relatedto ex:monotheismconcept ;
+    go:existence "false"^^xsd:boolean .
+
+ex:burdenevent a go:event ;
+    go:hasagent ex:rationalperson ;
+    go:hastheme ex:heart ;
+    go:hascause ex:nonexistentmatterinmonotheism ;
+    go:hasaction "burden" .
+
+ex:god a go:agent ;
+    go:hasattribute ex:glorified , ex:exalted .
+
+ex:glorified a go:attribute ;
+    rdfs:label "glorified" .
+
+ex:exalted a go:attribute ;
+    rdfs:label "exalted" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/272-23> rdf:type owl:ontology .
+
+ex:rationalperson a go:human ;
     rdfs:label "rational person"@en .
 
-ex:air a go:Substance ;
+ex:air a go:substance ;
     rdfs:label "air"@en .
 
-ex:DoThatEvent a go:Event ;
+ex:dothatevent a go:event ;
     rdfs:label "action done by rational person"@en ;
-    go:HasAgent ex:rationalPerson .
+    go:hasagent ex:rationalperson .
 
-ex:ImagineEvent a go:Event ;
+ex:imagineevent a go:event ;
     rdfs:label "imagine only what exists in the air"@en ;
-    go:HasAgent ex:rationalPerson ;
-    go:HasTheme ex:air .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+    go:hasagent ex:rationalperson ;
+    go:hastheme ex:air .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/272-24> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/272-24> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:hasAttribute ex:ExaltedAboveLikening .
+ex:god a go:substance ;
+    go:hasattribute ex:exaltedabovelikening .
 
-ex:LikeningEvent a go:conceptualEvent ;
-    go:HasTheme ex:Creation .
+ex:likeningevent a go:conceptualevent ;
+    go:hastheme ex:creation .
 
-ex:Creation a go:Substance ;
-    ex:createdBy ex:God .
+ex:creation a go:substance ;
+    ex:createdby ex:god .
 
-ex:ExaltedAboveLikening a go:attribute ;
-    ex:about ex:God ;
-    ex:exaltedAbove ex:LikeningEvent .
-go:Substance rdfs:label "شی"@fa.
+ex:exaltedabovelikening a go:attribute ;
+    ex:about ex:god ;
+    ex:exaltedabove ex:likeningevent .
+go:substance rdfs:label "شی"@fa.

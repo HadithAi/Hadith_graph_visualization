@@ -1,121 +1,124 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/397#> .
+@prefix ex: <http://etratnet.ir/graph/example/397#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/397> rdf:type go:ontology ;
+        go:hascontent "3. فرمود: «گاه انسان خوشبخت را در راه شوربختان مى‌برند چندان كه مردم مى‌گويند: او چقدر مانند آنهاست و بلكه او، خود، از ايشان است. سپس خوشبختى به سراغش مى‌آيد؛ و گاه انسان بدبخت [در آغاز] به راه نيكبختان برده مى‌شود تا آن جا كه مردم مى‌گويند: او چقدر مانند آنهاست و بلكه او، خود، از ايشان است. اما سرانجام بدبختى او را فرا مى‌گيرد. كسى كه خداوند خوشبختى‌اش را رقم زده است، حتى اگر از عمر دنيا فقط به اندازه فاصله ميان دو شير دوشيدن شتر باقى مانده باشد، سرانجام خوشبخت مى‌شود»."@fa,
+        "3.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، أَنَّهُ قَالَ: «يُسْلَكُ بِالسَّعِيدِ فِي طَرِيقِ الْأَشْقِيَاءِ حَتّى يَقُولَ النَّاسُ: مَا أَشْبَهَهُ بِهِمْ، بَلْ هُوَ مِنْهُمْ! ثُمَّ يَتَدَارَكُهُ السَّعَادَةُ. وَقَدْ يُسْلَكُ بِالشَّقِيِّ طَرِيقَ السُّعَدَاءِ حَتّى يَقُولَ النَّاسُ: مَا أَشْبَهَهُ بِهِمْ، بَلْ هُوَ مِنْهُمْ! ثُمَّ يَتَدَارَكُهُ الشَّقَاءُ؛ إِنَّ مَنْ كَتَبَهُ اللّه‌ُ سَعِيداً ـ وَإِنْ لَمْ يَبْقَ مِنَ الدُّنْيَا إِلاَّ فُوَاقُ نَاقَةٍ ـ خَتَمَ لَهُ بِالسَّعَادَةِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/397-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/397-1> rdf:type owl:ontology .
 
-ex:Al_Saeed a go:Person .
-ex:People a go:People .
-ex:Path_of_Miserable a go:Path .
+ex:al_saeed a go:person .
+ex:people a go:people .
+ex:path_of_miserable a go:path .
 
-ex:Likening_Event a go:Event ;
-    go:HasTheme ex:Al_Saeed ;
-    go:HasTarget ex:Path_of_Miserable .
+ex:likening_event a go:event ;
+    go:hastheme ex:al_saeed ;
+    go:hastarget ex:path_of_miserable .
 
-ex:Speaking_Event a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:Al_Saeed ;
-    go:HasContent "He resembles them; indeed, he is one of them." .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/397-2> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasAgent ex:Happiness ;
-    go:HasTheme ex:Person ;
-    go:hasTime ex:Later .
-
-ex:Happiness a go:Substance .
-
-ex:Person a go:agent .
-
-ex:Later a go:Time .
-go:Event rdfs:label "رخداد"@fa.
-go:Time rdfs:label "زمان"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:speaking_event a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:al_saeed ;
+    go:hascontent "he resembles them; indeed, he is one of them." .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/397-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/397-2> rdf:type owl:ontology .
 
-ex:LeadingEvent a go:Event ;
-    go:HasAgent ex:PathOfTheHappy ;
-    go:HasTheme ex:TheWicked .
+ex:event1 a go:event ;
+    go:hasagent ex:happiness ;
+    go:hastheme ex:person ;
+    go:hastime ex:later .
 
-ex:TheWicked a go:Person .
-ex:PathOfTheHappy a go:Path .
-ex:People a go:Group .
+ex:happiness a go:substance .
 
-# Representation of people's perception can be modeled as well, but based on sentence focus, main event mapping is above.
-go:Event rdfs:label "رخداد"@fa.
+ex:person a go:agent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/397-4> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-  go:HasAgent ex:Misery ;
-  go:HasTheme ex:Person ;
-  go:hasTemporalContext "afterward" .
-
-ex:Misery a go:Substance ;
-  rdfs:label "Misery" .
-
-ex:Person a go:person .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:later a go:time .
+go:event rdfs:label "رخداد"@fa.
+go:time rdfs:label "زمان"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/397-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/397-3> rdf:type owl:ontology .
 
-ex:PredestinationEvent1 a go:PredestinationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:He ;
-    go:HasResult ex:HappinessState1 .
+ex:leadingevent a go:event ;
+    go:hasagent ex:pathofthehappy ;
+    go:hastheme ex:thewicked .
 
-ex:God a go:Deity .
-ex:He a go:Person .
-ex:HappinessState1 a go:State ;
-    go:Description "Happiness" .
+ex:thewicked a go:person .
+ex:pathofthehappy a go:path .
+ex:people a go:group .
+
+# representation of people's perception can be modeled as well, but based on sentence focus, main event mapping is above.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/397-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/397-4> rdf:type owl:ontology .
 
-ex:Event_WritingHappiness a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Person ;
-    go:Type "writing_happiness" .
+ex:event1 a go:event ;
+  go:hasagent ex:misery ;
+  go:hastheme ex:person ;
+  go:hastemporalcontext "afterward" .
 
-ex:Event_SealingHappiness a go:Event ;
-    go:HasTheme ex:Person ;
-    go:Type "sealing_with_happiness" ;
-    go:Condition ex:Condition_DepartureSheCamel .
+ex:misery a go:substance ;
+  rdfs:label "misery" .
 
-ex:God a go:Agent .
-ex:Person a go:Agent .
+ex:person a go:person .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
-ex:Condition_DepartureSheCamel a go:Condition ;
-    go:Description "Nothing remains in the world except the departure of a she-camel"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-5> rdf:type owl:ontology .
+
+ex:predestinationevent1 a go:predestinationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:he ;
+    go:hasresult ex:happinessstate1 .
+
+ex:god a go:deity .
+ex:he a go:person .
+ex:happinessstate1 a go:state ;
+    go:description "happiness" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/397-6> rdf:type owl:ontology .
+
+ex:event_writinghappiness a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:person ;
+    go:type "writing_happiness" .
+
+ex:event_sealinghappiness a go:event ;
+    go:hastheme ex:person ;
+    go:type "sealing_with_happiness" ;
+    go:condition ex:condition_departureshecamel .
+
+ex:god a go:agent .
+ex:person a go:agent .
+
+ex:condition_departureshecamel a go:condition ;
+    go:description "nothing remains in the world except the departure of a she-camel"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.

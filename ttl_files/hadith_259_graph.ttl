@@ -1,308 +1,311 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/259#> .
+@prefix ex: <http://etratnet.ir/graph/example/259#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/259> rdf:type go:ontology ;
+        go:hascontent "10.  «مردى يهودى به نام "سُبِحَت" نزد رسول خدا صلى‌الله‌عليه‌و‌آله آمد و گفت: اى فرستاده خدا، آمده‌ام تا درباره پروردگارت از تو پرسش كنم، اگر پرسش مرا پاسخ دادى [پيرو تو خواهم شد]، وگرنه بر مى‌گردم. حضرت فرمود: هر چه مى‌خواهى بپرس. گفت: خداوند تو در كجاست؟ پيامبر صلى‌الله‌عليه‌و‌آله فرمود: او در همه جا هست، و در جاى محدودى نيست. گفت: او چگونه است؟ فرمود: چه سان خداوندم را به چگونگى وصف كنم با آن كه چگونگى مخلوق است، و خدا با آفريده خود وصف نمى‌شود. گفت: از كجا دانسته شود كه تو پيامبر خدا هستى؟» امام صادق عليه‌السلام فرمود: «در اين هنگام آنچه پيرامون رسول خدا صلى‌الله‌عليه‌و‌آله بود، از سنگ و غير سنگ با زبان عربى روشنى گفتند: اى سُبِحَت، او فرستاده خداست. سُبِحَت گفت: تاكنون امرى روشن‌تر از اين نديده‌ام. سپس گفت: گواهى مى‌دهم كه معبودى جز خدا نيست، و تو فرستاده خدايى»."@fa,
+        "10. عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «إِنَّ يَهُودِيّاً يُقَالُ لَهُ: «سُبِحَتْ» جَاءَ إِلى رَسُولِ اللّه‌ِ صلى‌الله‌عليه‌و‌آله، فَقَالَ: يَا رَسُولَ اللّه‌ِ، جِئْتُ أَسْأَلُكَ عَنْ رَبِّكَ، فَإِنْ أَنْتَ أَجَبْتَنِي عَمَّا أَسْأَلُكَ عَنْهُ، وَإِلاَّ رَجَعْتُ. قَالَ: سَلْ عَمَّا شِئْتَ، قَالَ: أَيْنَ رَبُّكَ؟ قَالَ: هُوَ فِي كُلِّ مَكَانٍ، وَلَيْسَ فِي شَيْءٍ مِنَ الْمَكَانِ الْمَحْدُودِ، قَالَ: وَكَيْفَ هُوَ؟ قَالَ: وَكَيْفَ أَصِفُ رَبِّي بِالْكَيْفِ وَالْكَيْفُ مَخْلُوقٌ، وَاللّه‌ُ لاَ يُوصَفُ بِخَلْقِهِ؟ قَالَ: فَمِنْ أَيْنَ يُعْلَمُ أَنَّكَ نَبِيُّ اللّه‌ِ؟»، قَالَ: «فَمَا بَقِيَ حَوْلَهُ حَجَرٌ وَلاَ غَيْرُ ذلِكَ إِلاَّ تَكَلَّمَ بِلِسَانٍ عَرَبِيٍّ مُبِينٍ: يَا سُبِحَتُ، إِنَّهُ رَسُولُ اللّه‌ِ. فَقَالَ سُبِحَتْ: مَا رَأَيْتُ كَالْيَوْمِ أَمْراً أَبْيَنَ مِنْ هذَا، ثُمَّ قَالَ: أَشْهَدُ أَنْ لاَ إِلهَ إِلاَّ اللّه‌ُ، وَأَنَّكَ رَسُولُ اللّه‌ِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-1> rdf:type owl:ontology .
 
-ex:event1 a go:SpeechEvent ;
-  go:HasTheme ex:personSubhat .
+ex:event1 a go:speechevent ;
+  go:hastheme ex:personsubhat .
 
-ex:personSubhat a foaf:Person ;
-  foaf:name "Subhat"@ar ;
-  ex:hasEthnicity ex:Jew ;
+ex:personsubhat a foaf:person ;
+  foaf:name "subhat"@ar ;
+  ex:hasethnicity ex:jew ;
   rdfs:label "يهودي"@ar .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-2> rdf:type owl:ontology .
 
-ex:Subhat a go:Person ;
-  rdfs:label "Subhat" .
+ex:subhat a go:person ;
+  rdfs:label "subhat" .
 
-ex:MessengerOfAllah a go:Person ;
-  rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+ex:messengerofallah a go:person ;
+  rdfs:label "messenger of allah (peace be upon him and his family)" .
 
-ex:Event1 a go:Event ;
-  go:HasAgent ex:Subhat ;
-  go:HasRecipient ex:MessengerOfAllah ;
-  rdfs:label "Arrival of Subhat to the Messenger of Allah" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/259-3> rdf:type owl:Ontology .
-
-ex:event1 rdf:type go:Event , ex:AskingEvent ;
-    go:HasAgent ex:Subiht ;
-    go:HasRecipient ex:MessengerOfAllah ;
-    go:HasTheme ex:HisLord .
-
-ex:Subiht rdf:type go:Person .
-ex:MessengerOfAllah rdf:type go:Person .
-ex:HisLord rdf:type go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:event1 a go:event ;
+  go:hasagent ex:subhat ;
+  go:hasrecipient ex:messengerofallah ;
+  rdfs:label "arrival of subhat to the messenger of allah" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-3> rdf:type owl:ontology .
 
-ex:MessengerOfAllah a go:Agent, go:Person ;
-    rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+ex:event1 rdf:type go:event , ex:askingevent ;
+    go:hasagent ex:subiht ;
+    go:hasrecipient ex:messengerofallah ;
+    go:hastheme ex:hislord .
 
-ex:Subhat a go:Agent, go:Person ;
-    rdfs:label "Subhat" .
-
-ex:SayingEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:MessengerOfAllah ;
-    go:HasRecipient ex:Subhat ;
-    go:HasContent ex:DirectiveToAsk .
-
-ex:DirectiveToAsk a go:DirectiveContent ;
-    go:hasText "Ask whatever you wish." .
-go:Agent rdfs:label "عامل"@fa.
+ex:subiht rdf:type go:person .
+ex:messengerofallah rdf:type go:person .
+ex:hislord rdf:type go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-4> rdf:type owl:ontology .
 
-ex:InterrogationEvent1 a go:InterrogationEvent ;
-    go:hasAgent ex:Subiha ;
-    go:hasRecipient ex:MessengerOfAllah ;
-    go:hasTheme "Where is your Lord?" .
+ex:messengerofallah a go:agent, go:person ;
+    rdfs:label "messenger of allah (peace be upon him and his family)" .
 
-ex:Subiha a go:Person .
-ex:MessengerOfAllah a go:Person .
+ex:subhat a go:agent, go:person ;
+    rdfs:label "subhat" .
+
+ex:sayingevent1 a go:communicationevent ;
+    go:hasagent ex:messengerofallah ;
+    go:hasrecipient ex:subhat ;
+    go:hascontent ex:directivetoask .
+
+ex:directivetoask a go:directivecontent ;
+    go:hastext "ask whatever you wish." .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-5> rdf:type owl:ontology .
 
-# Entity: Messenger of God
-ex:MessengerOfGod a foaf:Person ;
-    foaf:name "Messenger of God (Peace be upon him and his family)" .
+ex:interrogationevent1 a go:interrogationevent ;
+    go:hasagent ex:subiha ;
+    go:hasrecipient ex:messengerofallah ;
+    go:hastheme "where is your lord?" .
 
-# Entity: God
-ex:God a go:Deity ;
-    foaf:name "My Lord" ;
-    go:isEverywhere true .
+ex:subiha a go:person .
+ex:messengerofallah a go:person .
 
-# Event: Answering event
-ex:AnswerEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:MessengerOfGod ;
-    go:HasTheme ex:GodPresenceStatement .
 
-# Statement about God's presence
-ex:GodPresenceStatement a go:Statement ;
-    go:refersTo ex:God ;
-    go:property "isEverywhere" ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-6> rdf:type owl:ontology .
+
+# entity: messenger of god
+ex:messengerofgod a foaf:person ;
+    foaf:name "messenger of god (peace be upon him and his family)" .
+
+# entity: god
+ex:god a go:deity ;
+    foaf:name "my lord" ;
+    go:iseverywhere true .
+
+# event: answering event
+ex:answerevent1 a go:communicationevent ;
+    go:hasagent ex:messengerofgod ;
+    go:hastheme ex:godpresencestatement .
+
+# statement about god's presence
+ex:godpresencestatement a go:statement ;
+    go:refersto ex:god ;
+    go:property "iseverywhere" ;
     go:value true .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-7> rdf:type owl:ontology .
 
-ex:AnswerEvent1 a go:Event ;
-  go:HasAgent ex:MessengerOfAllah ;
-  go:HasTheme ex:Proposition1 .
+ex:answerevent1 a go:event ;
+  go:hasagent ex:messengerofallah ;
+  go:hastheme ex:proposition1 .
 
-ex:MessengerOfAllah a go:Agent ;
-  rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+ex:messengerofallah a go:agent ;
+  rdfs:label "messenger of allah (peace be upon him and his family)" .
 
-ex:MyLord a go:Agent ;
-  rdfs:label "My Lord" .
+ex:mylord a go:agent ;
+  rdfs:label "my lord" .
 
-ex:Proposition1 a go:Proposition ;
-  go:containsStatement ex:Statement1 .
+ex:proposition1 a go:proposition ;
+  go:containsstatement ex:statement1 .
 
-ex:Statement1 a go:Statement ;
-  go:subject ex:MyLord ;
-  go:predicate ex:IsNotInLocation ;
-  go:object ex:LimitedPlace .
+ex:statement1 a go:statement ;
+  go:subject ex:mylord ;
+  go:predicate ex:isnotinlocation ;
+  go:object ex:limitedplace .
 
-ex:LimitedPlace a go:Substance ;
+ex:limitedplace a go:substance ;
   rdfs:label "any limited place" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-8> rdf:type owl:ontology .
 
-ex:Subiha a go:Person .
+ex:subiha a go:person .
 
-ex:AskEvent1 a go:asking ;
-    go:HasAgent ex:Subiha ;
-    go:HasTheme ex:Question_HowIsYourLord .
+ex:askevent1 a go:asking ;
+    go:hasagent ex:subiha ;
+    go:hastheme ex:question_howisyourlord .
 
-ex:Question_HowIsYourLord a go:Question ;
-    rdfs:label "How is your Lord?" .
+ex:question_howisyourlord a go:question ;
+    rdfs:label "how is your lord?" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-9> rdf:type owl:ontology .
 
-ex:answeringEvent rdf:type ex:AnsweringEvent , go:Communication ;
-    go:HasAgent ex:MessengerOfAllah ;
-    go:HasTheme ex:rhetoricalQuestion .
+ex:answeringevent rdf:type ex:answeringevent , go:communication ;
+    go:hasagent ex:messengerofallah ;
+    go:hastheme ex:rhetoricalquestion .
 
-ex:MessengerOfAllah rdf:type go:Agent ;
-    rdfs:label "Messenger of Allah (peace be upon him and his family)" .
+ex:messengerofallah rdf:type go:agent ;
+    rdfs:label "messenger of allah (peace be upon him and his family)" .
 
-ex:rhetoricalQuestion rdf:type go:Event ;
-    rdfs:label "Rhetorical question about describing my Lord by 'how'" ;
-    go:HasTheme ex:myLordAndHowConcept .
+ex:rhetoricalquestion rdf:type go:event ;
+    rdfs:label "rhetorical question about describing my lord by 'how'" ;
+    go:hastheme ex:mylordandhowconcept .
 
-ex:myLordAndHowConcept rdf:type go:Substance ;
-    go:relatedTo ex:MyLord , ex:HowConcept .
+ex:mylordandhowconcept rdf:type go:substance ;
+    go:relatedto ex:mylord , ex:howconcept .
 
-ex:MyLord rdf:type go:Substance ;
-    rdfs:label "My Lord" .
+ex:mylord rdf:type go:substance ;
+    rdfs:label "my lord" .
 
-ex:HowConcept rdf:type go:Substance ;
-    rdfs:label "How (الكيف)" ;
-    go:hasProperty ex:IsCreated .
+ex:howconcept rdf:type go:substance ;
+    rdfs:label "how (الكيف)" ;
+    go:hasproperty ex:iscreated .
 
-ex:IsCreated rdf:type go:Property ;
+ex:iscreated rdf:type go:property ;
     rdfs:label "is created" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-10> rdf:type owl:ontology .
 
-ex:answerEvent a ex:AnswerEvent ;
-    a go:Event ;
-    go:HasAgent ex:MessengerOfAllah ;
-    go:HasTheme ex:Statement .
+ex:answerevent a ex:answerevent ;
+    a go:event ;
+    go:hasagent ex:messengerofallah ;
+    go:hastheme ex:statement .
 
-ex:MessengerOfAllah a go:Substance ;
-    go:hasTitle "Messenger of Allah (peace be upon him and his family)" .
+ex:messengerofallah a go:substance ;
+    go:hastitle "messenger of allah (peace be upon him and his family)" .
 
-ex:Allah a go:Substance ;
-    rdfs:label "Allah" .
+ex:allah a go:substance ;
+    rdfs:label "allah" .
 
-ex:Statement a go:InformationContent ;
-    go:content "Allah is not described by His creation" .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/259-11> rdf:type owl:Ontology .
-
-ex:Subihat a go:Person ;
-    rdfs:label "Subihat"@en .
-
-ex:AskEvent1 a go:Interrogation ;
-    go:HasAgent ex:Subihat ;
-    go:HasTheme "How is it known that you are a prophet of God?"^^xsd:string .
+ex:statement a go:informationcontent ;
+    go:content "allah is not described by his creation" .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-11> rdf:type owl:ontology .
 
-ex:speechEvent1 a go:Event ;
-    go:HasAgent ex:stone , ex:surroundings ;
-    go:HasTheme ex:speechContent1 ;
-    go:HasRecipient ex:Subhat .
+ex:subihat a go:person ;
+    rdfs:label "subihat"@en .
 
-ex:stone a go:Substance .
-ex:surroundings a go:Substance .
-ex:Subhat a go:agent .
-ex:MessengerOfGod a go:agent .
-
-ex:speechContent1 a go:InformationObject ;
-    go:hasLanguage "Arabic" ;
-    go:hasText "O Subhat, he is the Messenger of God." .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:askevent1 a go:interrogation ;
+    go:hasagent ex:subihat ;
+    go:hastheme "how is it known that you are a prophet of god?"^^xsd:string .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-12> rdf:type owl:ontology .
 
-ex:Subhat a go:Agent ;
+ex:speechevent1 a go:event ;
+    go:hasagent ex:stone , ex:surroundings ;
+    go:hastheme ex:speechcontent1 ;
+    go:hasrecipient ex:subhat .
+
+ex:stone a go:substance .
+ex:surroundings a go:substance .
+ex:subhat a go:agent .
+ex:messengerofgod a go:agent .
+
+ex:speechcontent1 a go:informationobject ;
+    go:haslanguage "arabic" ;
+    go:hastext "o subhat, he is the messenger of god." .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-13> rdf:type owl:ontology .
+
+ex:subhat a go:agent ;
     rdfs:label "سُبِحَتْ" .
 
-ex:ThisDay a go:TimeEntity ;
+ex:thisday a go:timeentity ;
     go:label "هذا اليوم" .
 
-ex:Matter1 a go:Substance ;
+ex:matter1 a go:substance ;
     go:label "أمر أبلغ" ;
-    go:about ex:ThisDay .
+    go:about ex:thisday .
 
-ex:SpeechEvent1 a go:Speech ;
-    go:HasAgent ex:Subhat ;
-    go:HasTheme ex:SpeechContent1 .
+ex:speechevent1 a go:speech ;
+    go:hasagent ex:subhat ;
+    go:hastheme ex:speechcontent1 .
 
-ex:SpeechContent1 a go:Statement ;
-    go:hasText "ما رأيت كاليوم أمراً أبلغ من هذا" ;
-    go:refersTo ex:Matter1 .
-go:Time rdfs:label "زمان"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/259-14> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:Subhat ;
-    go:HasTheme ex:Proposition_NoGodButAllah .
-
-ex:Subhat a go:Person .
-
-ex:Proposition_NoGodButAllah a go:Statement ;
-    go:refersTo ex:Allah ;
-    go:content "There is no god but Allah" .
-
-ex:Allah a go:Deity .
-go:Event rdfs:label "رخداد"@fa.
+ex:speechcontent1 a go:statement ;
+    go:hastext "ما رأيت كاليوم أمراً أبلغ من هذا" ;
+    go:refersto ex:matter1 .
+go:time rdfs:label "زمان"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/259-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/259-14> rdf:type owl:ontology .
 
-ex:eventWitnessPraise15 a go:WitnessingAndPraisingEvent ;
-    go:HasAgent ex:communityWitnessing ;
-    go:HasTheme ex:statementMessengerIdentity .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:subhat ;
+    go:hastheme ex:proposition_nogodbutallah .
 
-ex:statementMessengerIdentity a go:Statement ;
-    go:refersTo ex:MessengerOfGod ;
-    go:asserts "MessengerOfGod is MessengerOfGod" .
+ex:subhat a go:person .
 
-ex:MessengerOfGod a go:Person .
+ex:proposition_nogodbutallah a go:statement ;
+    go:refersto ex:allah ;
+    go:content "there is no god but allah" .
 
-ex:communityWitnessing a go:Community .
+ex:allah a go:deity .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/259-15> rdf:type owl:ontology .
+
+ex:eventwitnesspraise15 a go:witnessingandpraisingevent ;
+    go:hasagent ex:communitywitnessing ;
+    go:hastheme ex:statementmessengeridentity .
+
+ex:statementmessengeridentity a go:statement ;
+    go:refersto ex:messengerofgod ;
+    go:asserts "messengerofgod is messengerofgod" .
+
+ex:messengerofgod a go:person .
+
+ex:communitywitnessing a go:community .

@@ -1,258 +1,261 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/242#> .
+@prefix ex: <http://etratnet.ir/graph/example/242#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/242> rdf:type go:ontology ;
+        go:hascontent "5.  يكى از ملاّيان يهود نزد امير المؤمنين عليه‌السلام آمد و عرض كرد: اى امير المؤمنين، خداوند تو از كى بوده است؟ حضرت به او فرمود: «مادرت به عزايت بنشيند! كى نبوده است تا گفته شود: از كى بوده است؟ خداوند من پيشاپيش بوده است و پيش ندارد، و پس از پس هست و پس ندارد؛ او را فرجامى و پايانى نيست. فرجام‌ها به او پايان مى‌يابد، پس او پايان هر فرجامى است». ملاى يهود گفت: اى امير المؤمنين، آيا تو پيامبرى؟ فرمود: «واى بر تو! من بنده‌اى از بندگان محمد صلى‌الله‌عليه‌و‌آله هستم». و روايت شده است كه از آن حضرت پرسيده شد: خداوند ما پيش از آن كه آسمان و زمينى را بيافريند كجا بوده است؟ حضرت فرمود: «كلمه "كجا" پرسش از جاست، در حالى كه خدا بود و جا نبود»."@fa,
+        "5. عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «جَاءَ حِبْرٌ مِنَ الْأَحْبَارِ إِلى أَمِيرِ الْمُؤمِنِينَ عليه‌السلام، فَقَالَ: يَا أَمِيرَ الْمُؤمِنِينَ، مَتى كَانَ رَبُّكَ؟ فَقَالَ لَهُ: ثَكِلَتْكَ أُمُّكَ، وَمَتى لَمْ يَكُنْ حَتّى يُقَالَ: مَتى كَانَ؟ كَانَ رَبِّي قَبْلَ الْقَبْلِ بِلاَ قَبْلٍ، وَبَعْدَ الْبَعْدِ بِلاَ بَعْدٍ، وَلاَ غَايَةَ وَلاَ مُنْتَهى لِغَايَتِهِ، انْقَطَعَتِ الْغَايَاتُ عِنْدَهُ، فَهُوَ مُنْتَهى كُلِّ غَايَةٍ. فَقَالَ: يَا أَمِيرَ الْمُؤمِنِينَ، أَفَنَبِيٌّ أَنْتَ؟ فَقَالَ: وَيْلَكَ، إِنَّمَا أَنَا عَبْدٌ مِنْ عَبِيدِ مُحَمَّدٍ صلى‌الله‌عليه‌و‌آله». وَرُوِيَ أَنَّهُ سُئِلَ عليه‌السلام: أَيْنَ كَانَ رَبُّنَا قَبْلَ أَنْ يَخْلُقَ سَمَاءً وَأَرْضاً؟ فَقَالَ عليه‌السلام: «أَيْنَ سُؤالٌ عَنْ مَكَانٍ، وَكَانَ اللّه‌ُ وَلاَ مَكَانَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-1> rdf:type owl:ontology .
 
-ex:scholar a go:Person ;
-  rdfs:label "Religious Scholar from the Scholars" .
+ex:scholar a go:person ;
+  rdfs:label "religious scholar from the scholars" .
 
-ex:commander a go:Person ;
-  rdfs:label "Commander of the Faithful (peace be upon him)" .
+ex:commander a go:person ;
+  rdfs:label "commander of the faithful (peace be upon him)" .
 
-ex:lord a go:Divinity ;
-  rdfs:label "Lord" .
+ex:lord a go:divinity ;
+  rdfs:label "lord" .
 
-ex:eventComing a go:Event ;
-  a go:MovementEvent ;
-  go:HasAgent ex:scholar ;
-  go:HasTheme ex:commander ;
-  rdfs:label "The scholar came to the commander" .
+ex:eventcoming a go:event ;
+  a go:movementevent ;
+  go:hasagent ex:scholar ;
+  go:hastheme ex:commander ;
+  rdfs:label "the scholar came to the commander" .
 
-ex:eventAsking a go:Event ;
-  a go:CommunicationEvent ;
-  go:HasAgent ex:scholar ;
-  go:HasRecipient ex:commander ;
-  go:HasTheme [
-    a go:InformationContent ;
-    rdfs:label "When was your Lord?" ;
+ex:eventasking a go:event ;
+  a go:communicationevent ;
+  go:hasagent ex:scholar ;
+  go:hasrecipient ex:commander ;
+  go:hastheme [
+    a go:informationcontent ;
+    rdfs:label "when was your lord?" ;
   ] ;
-  rdfs:label "The scholar asked the commander a question" .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
+  rdfs:label "the scholar asked the commander a question" .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-2> rdf:type owl:ontology .
 
-ex:event1 a go:SpeechEvent ;
-    go:HasAgent ex:CommanderOfTheFaithful ;
-    go:HasRecipient ex:Jurist ;
-    go:HasTheme "When was it not so that one can ask when it was?" .
+ex:event1 a go:speechevent ;
+    go:hasagent ex:commanderofthefaithful ;
+    go:hasrecipient ex:jurist ;
+    go:hastheme "when was it not so that one can ask when it was?" .
 
-ex:CommanderOfTheFaithful a go:Person ;
-    rdfs:label "Commander of the Faithful (peace be upon him)" .
+ex:commanderofthefaithful a go:person ;
+    rdfs:label "commander of the faithful (peace be upon him)" .
 
-ex:Jurist a go:Person ;
-    rdfs:label "Jurist" .
+ex:jurist a go:person ;
+    rdfs:label "jurist" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-3> rdf:type owl:ontology .
 
-ex:LordCommanderFaithful a go:Person ;
+ex:lordcommanderfaithful a go:person ;
     rdfs:label "رب أمير المؤمنين عليه‌السلام"@ar .
 
-ex:Qibla a go:Concept ;
+ex:qibla a go:concept ;
     rdfs:label "قبل"@ar .
 
-ex:HavingQiblaState a go:StateEvent ;
-    go:HasTheme ex:Qibla ;
-    go:HasAgent ex:LordCommanderFaithful ;
-    go:temporalRelation ex:BeforeQibla .
+ex:havingqiblastate a go:stateevent ;
+    go:hastheme ex:qibla ;
+    go:hasagent ex:lordcommanderfaithful ;
+    go:temporalrelation ex:beforeqibla .
 
-ex:BeforeQibla a go:TimeInterval ;
-    rdfs:comment "Time before the establishment of the Qibla." .
+ex:beforeqibla a go:timeinterval ;
+    rdfs:comment "time before the establishment of the qibla." .
 
-ex:noQiblaState a go:StateEvent ;
-    go:HasAgent ex:LordCommanderFaithful ;
+ex:noqiblastate a go:stateevent ;
+    go:hasagent ex:lordcommanderfaithful ;
     go:negation true ;
-    go:HasTheme ex:Qibla ;
-    go:holdsDuring ex:BeforeQibla .
-go:Time rdfs:label "زمان"@fa.
+    go:hastheme ex:qibla ;
+    go:holdsduring ex:beforeqibla .
+go:time rdfs:label "زمان"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-4> rdf:type owl:ontology .
 
-ex:entity_AmirAl-Mu'minin a go:Deity ;
-    go:hasHonorific "عليه السلام" .
+ex:entity_amiral-mu'minin a go:deity ;
+    go:hashonorific "عليه السلام" .
 
-ex:event_StateOfTranscendence a go:State ;
-    go:HasTheme ex:entity_AmirAl-Mu'minin ;
-    go:hasQuality ex:quality_BeyondDistance .
+ex:event_stateoftranscendence a go:state ;
+    go:hastheme ex:entity_amiral-mu'minin ;
+    go:hasquality ex:quality_beyonddistance .
 
-ex:quality_BeyondDistance a go:Quality ;
-    go:description "Beyond distance after distance" .
+ex:quality_beyonddistance a go:quality ;
+    go:description "beyond distance after distance" .
 
-ex:entity_AmirAl-Mu'minin go:HasState ex:event_StateOfTranscendence .
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/242-5> rdf:type owl:Ontology .
-
-ex:LordCommanderFaithful a go:Substance ;
-    go:hasTitle "Lord of the Commander of the Faithful" ;
-    go:hasQuality ex:NoUltimateGoal, ex:NoEnd .
-
-ex:NoUltimateGoal a go:Quality ;
-    go:denies go:UltimateGoal .
-
-ex:NoEnd a go:Quality ;
-    go:denies go:End .
-
-# Define concepts
- go:UltimateGoal a go:Quality .
- go:End a go:Quality .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:entity_amiral-mu'minin go:hasstate ex:event_stateoftranscendence .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-5> rdf:type owl:ontology .
 
-ex:stopEvent a go:EventInstance ;
-    go:HasTheme ex:Aims ;
-    go:HasLocation ex:LordOfCommanderOfFaithful .
+ex:lordcommanderfaithful a go:substance ;
+    go:hastitle "lord of the commander of the faithful" ;
+    go:hasquality ex:noultimategoal, ex:noend .
 
-ex:Aims a go:Substance ;
-    rdfs:label "Aims"@en .
+ex:noultimategoal a go:quality ;
+    go:denies go:ultimategoal .
 
-ex:LordOfCommanderOfFaithful a go:person ;
-    rdfs:label "Lord of the Commander of the Faithful (peace be upon him)"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:noend a go:quality ;
+    go:denies go:end .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/242-7> rdf:type owl:Ontology .
-
-ex:LordOfTheCommanderOfTheFaithful a go:Person ;
-    ex:isUltimateGoalOf ex:EveryObjective .
-
-ex:EveryObjective a go:Goal .
+# define concepts
+ go:ultimategoal a go:quality .
+ go:end a go:quality .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-6> rdf:type owl:ontology .
 
-ex:Jurist a go:Person ;
+ex:stopevent a go:eventinstance ;
+    go:hastheme ex:aims ;
+    go:haslocation ex:lordofcommanderoffaithful .
+
+ex:aims a go:substance ;
+    rdfs:label "aims"@en .
+
+ex:lordofcommanderoffaithful a go:person ;
+    rdfs:label "lord of the commander of the faithful (peace be upon him)"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-7> rdf:type owl:ontology .
+
+ex:lordofthecommanderofthefaithful a go:person ;
+    ex:isultimategoalof ex:everyobjective .
+
+ex:everyobjective a go:goal .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-8> rdf:type owl:ontology .
+
+ex:jurist a go:person ;
     rdfs:label "the jurist" .
 
-ex:CommanderOfFaithful a go:Person ;
-    rdfs:label "Commander of the Faithful" ;
-    ex:hasHonorific "peace be upon him" .
+ex:commanderoffaithful a go:person ;
+    rdfs:label "commander of the faithful" ;
+    ex:hashonorific "peace be upon him" .
 
-ex:SpeechEvent1 a go:SpeechAct ;
-    go:HasAgent ex:Jurist ;
-    go:HasRecipient ex:CommanderOfFaithful ;
-    go:HasTheme ex:Question1 .
+ex:speechevent1 a go:speechact ;
+    go:hasagent ex:jurist ;
+    go:hasrecipient ex:commanderoffaithful ;
+    go:hastheme ex:question1 .
 
-ex:Question1 a ex:YesNoQuestion ;
-    ex:questionText "Am I the prophet?" ;
-    ex:aboutProperty ex:IsProphet ;
-    ex:aboutEntity ex:Jurist .
+ex:question1 a ex:yesnoquestion ;
+    ex:questiontext "am i the prophet?" ;
+    ex:aboutproperty ex:isprophet ;
+    ex:aboutentity ex:jurist .
 
-ex:IsProphet a ex:Property .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/242-9> rdf:type owl:Ontology .
-
-ex:AmirAlMu_minin a go:Person ;
-    rdfs:label "Amir al-Mu'minin" .
-
-ex:AlHabir a go:Person ;
-    rdfs:label "The Scholar" .
-
-ex:Muhammad a go:Person ;
-    rdfs:label "Muhammad, peace be upon him and his family" .
-
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:AmirAlMu_minin ;
-    go:HasRecipient ex:AlHabir ;
-    go:HasTheme "Woe to you, indeed I am a servant among the servants of Muhammad (peace be upon him and his family)." .
+ex:isprophet a ex:property .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-9> rdf:type owl:ontology .
 
-ex:CommanderOfFaithful a go:Person ;
-    go:hasTitle "Commander of the Faithful" .
+ex:amiralmu_minin a go:person ;
+    rdfs:label "amir al-mu'minin" .
 
-ex:OurLord a go:Deity ;
-    go:refersTo "our Lord" .
+ex:alhabir a go:person ;
+    rdfs:label "the scholar" .
 
-ex:Heavens a go:Substance ;
+ex:muhammad a go:person ;
+    rdfs:label "muhammad, peace be upon him and his family" .
+
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:amiralmu_minin ;
+    go:hasrecipient ex:alhabir ;
+    go:hastheme "woe to you, indeed i am a servant among the servants of muhammad (peace be upon him and his family)." .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-10> rdf:type owl:ontology .
+
+ex:commanderoffaithful a go:person ;
+    go:hastitle "commander of the faithful" .
+
+ex:ourlord a go:deity ;
+    go:refersto "our lord" .
+
+ex:heavens a go:substance ;
     rdfs:label "heavens" .
 
-ex:Earth a go:Substance ;
+ex:earth a go:substance ;
     rdfs:label "earth" .
 
-ex:AskingEvent_001 a ex:QuestionEvent ;
-    go:HasAgent ex:UnnamedQuestioner ;
-    go:HasTheme ex:CommanderOfFaithful ;
-    go:HasRecipient ex:CommanderOfFaithful ;
-    go:hasContent "Where was our Lord before He created the heavens and the earth?" .
+ex:askingevent_001 a ex:questionevent ;
+    go:hasagent ex:unnamedquestioner ;
+    go:hastheme ex:commanderoffaithful ;
+    go:hasrecipient ex:commanderoffaithful ;
+    go:hascontent "where was our lord before he created the heavens and the earth?" .
 
-ex:CreationEvent_001 a ex:CreationEvent ;
-    go:HasAgent ex:OurLord ;
-    go:HasTheme ex:Heavens, ex:Earth .
+ex:creationevent_001 a ex:creationevent ;
+    go:hasagent ex:ourlord ;
+    go:hastheme ex:heavens, ex:earth .
 
-ex:UnnamedQuestioner a go:Person .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/242-11> rdf:type owl:Ontology .
-
-ex:SayingEvent_1 rdf:type go:CommunicationEvent ;
-    go:HasAgent ex:AmirAlMu_minin_ImamAli ;
-    go:HasTheme ex:SpeechContent_1 .
-
-ex:AmirAlMu_minin_ImamAli rdf:type go:Person ;
-    dcterms:title "Amir al-Mu'minin, peace be upon him" .
-
-ex:SpeechContent_1 rdf:type go:AbstractContent ;
-    dcterms:description "The place to ask is about a place that does not exist." ;
-    ex:HasSubject ex:PlaceToAsk ;
-    ex:About ex:PlaceThatDoesNotExist .
-
-ex:PlaceToAsk rdf:type go:Place .
-ex:PlaceThatDoesNotExist rdf:type go:Place ;
-    ex:doesNotExist "true"^^xsd:boolean .
+ex:unnamedquestioner a go:person .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/242-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/242-11> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Deity .
-ex:Place a go:Location .
-ex:Existence_1 a go:State ;
-    go:HasAgent ex:God_Almighty .
+ex:sayingevent_1 rdf:type go:communicationevent ;
+    go:hasagent ex:amiralmu_minin_imamali ;
+    go:hastheme ex:speechcontent_1 .
 
-# Indicating God Almighty existed without place: no go:HasLocation property linking ex:Existence_1 to any place, or alternatively stating that the location is explicitly 'none' or 'absent' if supported by ontology.
+ex:amiralmu_minin_imamali rdf:type go:person ;
+    dcterms:title "amir al-mu'minin, peace be upon him" .
+
+ex:speechcontent_1 rdf:type go:abstractcontent ;
+    dcterms:description "the place to ask is about a place that does not exist." ;
+    ex:hassubject ex:placetoask ;
+    ex:about ex:placethatdoesnotexist .
+
+ex:placetoask rdf:type go:place .
+ex:placethatdoesnotexist rdf:type go:place ;
+    ex:doesnotexist "true"^^xsd:boolean .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/242-12> rdf:type owl:ontology .
+
+ex:god_almighty a go:deity .
+ex:place a go:location .
+ex:existence_1 a go:state ;
+    go:hasagent ex:god_almighty .
+
+# indicating god almighty existed without place: no go:haslocation property linking ex:existence_1 to any place, or alternatively stating that the location is explicitly 'none' or 'absent' if supported by ontology.

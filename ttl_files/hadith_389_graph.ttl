@@ -1,138 +1,141 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/389#> .
+@prefix ex: <http://etratnet.ir/graph/example/389#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/389> rdf:type go:ontology ;
+        go:hascontent "3. از امام صادق عليه‌السلام شنيدم كه مى‌فرمايد: «خداوند فرمان داده است و نخواسته است، و خواسته است و فرمان نداده است. به ابليس فرمان داد كه براى آدم سجده كند ولى خواست او اين بود كه سجده نكند. اگر مى‌خواست قطعا او سجده مى‌كرد؛ و آدم را از خوردن از درخت نهى كرد اما خواست او اين بود كه از آن بخورد، و اگر نخواسته بود او نمى‌خورد»."@fa,
+        "3.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: سَمِعْتُهُ يَقُولُ: «أَمَرَ اللّه‌ُ وَلَمْ يَشَأْ، وَشَاءَ وَلَمْ يَأْمُرْ؛ أَمَرَ إِبْلِيسَ أَنْ يَسْجُدَ لاِدَمَ، وَشَاءَ أَنْ لاَ يَسْجُدَ، وَلَوْ شَاءَ لَسَجَدَ، وَنَهى آدَمَ عَنْ أَكْلِ الشَّجَرَةِ، وَشَاءَ أَنْ يَأْكُلَ مِنْهَا، وَلَوْ لَمْ يَشَأْ لَمْ يَأْكُلْ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/389-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/389-1> rdf:type owl:ontology .
 
-# Entities
-go:God a go:Agent ;
-    rdfs:label "God"@en .
-go:Iblis a go:Agent ;
-    rdfs:label "Iblis"@en .
-go:Adam a go:Agent ;
-    rdfs:label "Adam"@en .
+# entities
+go:god a go:agent ;
+    rdfs:label "god"@en .
+go:iblis a go:agent ;
+    rdfs:label "iblis"@en .
+go:adam a go:agent ;
+    rdfs:label "adam"@en .
 
-# Events
-ex:OrderEvent1 a go:OrderEvent ;
-    go:HasAgent go:God ;
-    go:HasRecipient go:Iblis ;
-    go:HasSubEvent ex:ProstrateEvent1 .
+# events
+ex:orderevent1 a go:orderevent ;
+    go:hasagent go:god ;
+    go:hasrecipient go:iblis ;
+    go:hassubevent ex:prostrateevent1 .
 
-ex:ProstrateEvent1 a go:ProstrateEvent ;
-    go:HasAgent go:Iblis ;
-    go:HasTheme go:Adam .
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/389-2> rdf:type owl:Ontology .
-
-ex:Event_WillingGod a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Event_Prostration_Iblis .
-
-ex:Event_Prostration_Iblis a go:Event ;
-    go:HasAgent ex:Iblis ;
-    go:HasRecipient ex:Adam ;
-    go:hasNegation true .
-
-ex:God a go:Deity .
-ex:Iblis a go:Person .
-ex:Adam a go:Person .
-go:Event rdfs:label "رخداد"@fa.
+ex:prostrateevent1 a go:prostrateevent ;
+    go:hasagent go:iblis ;
+    go:hastheme go:adam .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/389-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/389-2> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-   go:HasAgentRole ex:God .
+ex:event_willinggod a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:event_prostration_iblis .
 
-ex:Iblis a go:Person ;
-   go:HasAgentRole ex:Iblis .
+ex:event_prostration_iblis a go:event ;
+    go:hasagent ex:iblis ;
+    go:hasrecipient ex:adam ;
+    go:hasnegation true .
 
-ex:Adam a go:Person .
-
-ex:ProstrationEvent a go:Event ;
-   go:HasAgent ex:Iblis ;
-   go:HasTheme ex:Prostration ;
-   go:HasRecipient ex:Adam .
-
-ex:GodWillsProstration a go:Event ;
-   go:HasAgent ex:God ;
-   go:HasEffect ex:ProstrationEvent .
-go:Event rdfs:label "رخداد"@fa.
+ex:god a go:deity .
+ex:iblis a go:person .
+ex:adam a go:person .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/389-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/389-3> rdf:type owl:ontology .
 
-ex:Event1 a go:ForbiddingEvent ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Adam ;
-    go:HasTheme ex:Event2 .
+ex:god a go:deity ;
+   go:hasagentrole ex:god .
 
-ex:Event2 a go:EatingEvent ;
-    go:HasAgent ex:Adam ;
-    go:HasTheme ex:Tree .
+ex:iblis a go:person ;
+   go:hasagentrole ex:iblis .
 
-ex:God a go:Deity .
-ex:Adam a go:Human .
-ex:Tree a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:adam a go:person .
 
+ex:prostrationevent a go:event ;
+   go:hasagent ex:iblis ;
+   go:hastheme ex:prostration ;
+   go:hasrecipient ex:adam .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/389-5> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasAgent ex:Adam ;
-    go:HasTheme ex:Tree ;
-    go:HasCause ex:God .
-
-ex:God a go:Substance .
-ex:Adam a go:Substance .
-ex:Tree a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:godwillsprostration a go:event ;
+   go:hasagent ex:god ;
+   go:haseffect ex:prostrationevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/389-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/389-4> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:Adam ;
-    go:HasTheme ex:Tree .
+ex:event1 a go:forbiddingevent ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:adam ;
+    go:hastheme ex:event2 .
 
-ex:Adam a go:Agent ;
-    go:SubstanceName "Adam" .
+ex:event2 a go:eatingevent ;
+    go:hasagent ex:adam ;
+    go:hastheme ex:tree .
 
-ex:God a go:Agent ;
-    go:SubstanceName "God" .
+ex:god a go:deity .
+ex:adam a go:human .
+ex:tree a go:substance .
+go:substance rdfs:label "شی"@fa.
 
-ex:Tree a go:Substance ;
-    go:SubstanceName "Tree" .
 
-ex:GodWill a go:Event ;
-    go:HasAgent ex:God ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/389-5> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:adam ;
+    go:hastheme ex:tree ;
+    go:hascause ex:god .
+
+ex:god a go:substance .
+ex:adam a go:substance .
+ex:tree a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/389-6> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    go:hasagent ex:adam ;
+    go:hastheme ex:tree .
+
+ex:adam a go:agent ;
+    go:substancename "adam" .
+
+ex:god a go:agent ;
+    go:substancename "god" .
+
+ex:tree a go:substance ;
+    go:substancename "tree" .
+
+ex:godwill a go:event ;
+    go:hasagent ex:god ;
     go:causes ex:event1 .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

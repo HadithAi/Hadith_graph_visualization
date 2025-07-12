@@ -1,81 +1,84 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/385#> .
+@prefix ex: <http://etratnet.ir/graph/example/385#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/385> rdf:type go:ontology ;
+        go:hascontent "1.  «هيچ چيزى در زمين و در آسمان نباشد مگر با اين هفت چيز: با خواست و اراده و اندازه‌گيرى و حُكم و پروانه و نبشته و مدت [يا سررسيد]. پس، هر كه پندارد كه مى‌تواند يكى از اينها را از قلم بيندازد هر آينه كافر شده است»."@fa,
+        "1.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، أَنَّهُ قَالَ: «لاَ يَكُونُ شَيْءٌ فِي الْأَرْضِ وَلاَ فِي السَّمَاءِ إِلاَّ بِهذِهِ الْخِصَالِ السَّبْعِ: بِمَشِيئَةٍ، وَإِرَادَةٍ، وَقَدَرٍ، وَقَضَاءٍ، وَإِذْنٍ، وَكِتَابٍ، وَأَجَلٍ، فَمَنْ زَعَمَ أَنَّهُ يَقْدِرُ عَلى نَقْضِ وَاحِدَةٍ، فَقَدْ كَفَرَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/385-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/385-1> rdf:type owl:ontology .
 
-ex:Thing rdf:type go:Object .
-ex:Earth rdf:type go:Location .
-ex:Sky rdf:type go:Location .
+ex:thing rdf:type go:object .
+ex:earth rdf:type go:location .
+ex:sky rdf:type go:location .
 
-ex:Will rdf:type go:Attribute ;
-    rdfs:label "Will" .
-ex:Desire rdf:type go:Attribute ;
-    rdfs:label "Desire" .
-ex:Fate rdf:type go:Attribute ;
-    rdfs:label "Fate" .
-ex:Decree rdf:type go:Attribute ;
-    rdfs:label "Decree" .
-ex:Permission rdf:type go:Attribute ;
-    rdfs:label "Permission" .
-ex:Book rdf:type go:Attribute ;
-    rdfs:label "Book" .
-ex:Term rdf:type go:Attribute ;
-    rdfs:label "Term" .
+ex:will rdf:type go:attribute ;
+    rdfs:label "will" .
+ex:desire rdf:type go:attribute ;
+    rdfs:label "desire" .
+ex:fate rdf:type go:attribute ;
+    rdfs:label "fate" .
+ex:decree rdf:type go:attribute ;
+    rdfs:label "decree" .
+ex:permission rdf:type go:attribute ;
+    rdfs:label "permission" .
+ex:book rdf:type go:attribute ;
+    rdfs:label "book" .
+ex:term rdf:type go:attribute ;
+    rdfs:label "term" .
 
-ex:Thing go:existsIn ex:Earth .
-ex:Thing go:existsIn ex:Sky .
+ex:thing go:existsin ex:earth .
+ex:thing go:existsin ex:sky .
 
-ex:Thing go:hasAttribute ex:Will, ex:Desire, ex:Fate, ex:Decree, ex:Permission, ex:Book, ex:Term .
+ex:thing go:hasattribute ex:will, ex:desire, ex:fate, ex:decree, ex:permission, ex:book, ex:term .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/385-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/385-2> rdf:type owl:ontology .
 
-# Entities
-ex:Whoever a go:Agent ;
-    go:label "Whoever" .
+# entities
+ex:whoever a go:agent ;
+    go:label "whoever" .
 
-ex:SevenTraits a go:Collection ;
-    go:label "These seven traits" ;
-    go:hasMember ex:Trait1, ex:Trait2, ex:Trait3, ex:Trait4, ex:Trait5, ex:Trait6, ex:Trait7 .
+ex:seventraits a go:collection ;
+    go:label "these seven traits" ;
+    go:hasmember ex:trait1, ex:trait2, ex:trait3, ex:trait4, ex:trait5, ex:trait6, ex:trait7 .
 
-ex:Trait1 a go:Quality .
-ex:Trait2 a go:Quality .
-ex:Trait3 a go:Quality .
-ex:Trait4 a go:Quality .
-ex:Trait5 a go:Quality .
-ex:Trait6 a go:Quality .
-ex:Trait7 a go:Quality .
+ex:trait1 a go:quality .
+ex:trait2 a go:quality .
+ex:trait3 a go:quality .
+ex:trait4 a go:quality .
+ex:trait5 a go:quality .
+ex:trait6 a go:quality .
+ex:trait7 a go:quality .
 
-# Events
-ex:ClaimEvent a go:Event ;
-    go:HasAgent ex:Whoever ;
-    go:HasTheme ex:AbilityToRefuteOneTrait .
+# events
+ex:claimevent a go:event ;
+    go:hasagent ex:whoever ;
+    go:hastheme ex:abilitytorefuteonetrait .
 
-ex:AbilityToRefuteOneTrait a go:Capability ;
-    go:HasTheme ex:OneTrait .
+ex:abilitytorefuteonetrait a go:capability ;
+    go:hastheme ex:onetrait .
 
-ex:OneTrait a go:Quality ;
-    go:partOf ex:SevenTraits .
+ex:onetrait a go:quality ;
+    go:partof ex:seventraits .
 
-ex:BecomingUnbeliever a go:StateChangeEvent ;
-    go:HasPatient ex:Whoever ;
-    go:HasCause ex:ClaimEvent ;
-    go:label "Becoming Unbeliever" .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:becomingunbeliever a go:statechangeevent ;
+    go:haspatient ex:whoever ;
+    go:hascause ex:claimevent ;
+    go:label "becoming unbeliever" .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.

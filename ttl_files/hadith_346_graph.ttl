@@ -1,34 +1,37 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/346#> .
+@prefix ex: <http://etratnet.ir/graph/example/346#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/346> rdf:type go:ontology ;
+        go:hascontent "1.  از امام صادق عليه‌السلام درباره روح آدم كه خداوند فرموده است: «و چون او را بپرداختم و از روح خود در او دميدم»، پرسيدم. فرمود: «آن روح، مخلوق است. روحى هم كه در عيسى دميده شد مخلوق است»."@fa,
+        "1.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنِ الرُّوحِ الَّتِي فِي آدَمَ، قَوْلِهِ: «فَإِذَا سَوَّيْتُهُ وَ نَفَخْتُ فِيهِ مِن‌رُّوحِى» قَالَ: «هذِهِ رُوحٌ مَخْلُوقَةٌ، وَالرُّوحُ الَّتِي فِي عِيسى مَخْلُوقَةٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/346-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/346-1> rdf:type owl:ontology .
 
-ex:Adam a go:Substance, ex:Person .
-ex:SoulOfAdam a go:Substance, ex:Soul ;
-    go:inheresIn ex:Adam ;
-    ex:isCreated true .
-go:Substance rdfs:label "شی"@fa.
+ex:adam a go:substance, ex:person .
+ex:soulofadam a go:substance, ex:soul ;
+    go:inheresin ex:adam ;
+    ex:iscreated true .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/346-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/346-2> rdf:type owl:ontology .
 
-ex:Jesus a go:Substance .
-ex:SpiritInJesus a go:Substance ;
-    ex:isSpiritOf ex:Jesus ;
-    rdf:type ex:CreatedSpirit .
-go:Substance rdfs:label "شی"@fa.
+ex:jesus a go:substance .
+ex:spiritinjesus a go:substance ;
+    ex:isspiritof ex:jesus ;
+    rdf:type ex:createdspirit .
+go:substance rdfs:label "شی"@fa.

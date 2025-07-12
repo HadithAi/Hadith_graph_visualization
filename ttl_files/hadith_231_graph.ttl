@@ -1,121 +1,124 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/231#> .
+@prefix ex: <http://etratnet.ir/graph/example/231#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/231> rdf:type go:ontology ;
+        go:hascontent "3.  به امام صادق عليه‌السلام عرض كردم: من با گروهى مناظره كردم و به آنها گفتم: خداوند، جلّ جلاله، بزرگ‌تر و ارجمندتر و والاتر از آن است كه به واسطه آفريدگانش شناخته شود؛ بلكه اين بندگان‌اند كه به سبب خدا شناخته مى‌شوند. حضرت فرمود: «رحمت خدا بر تو باد»."@fa,
+        "3.  قُلْتُ لِأَبِي عَبْدِ اللّه‌ِ عليه‌السلام: إِنِّي نَاظَرْتُ قَوْماً، فَقُلْتُ لَهُمْ: إِنَّ اللّه‌َ ـ جَلَّ جَلاَلُهُ ـ أَجَلُّ وَأَعَزُّ وَأَكْرَمُ مِنْ أَنْ يُعْرَفَ بِخَلْقِهِ، بَلِ الْعِبَادُ يُعْرَفُونَ بِاللّه‌ِ، فَقَالَ: «رَحِمَكَ اللّه‌ُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/231-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/231-1> rdf:type owl:ontology .
 
-ex:speaker a go:Person ;
-    rdfs:label "Speaker (I)" .
+ex:speaker a go:person ;
+    rdfs:label "speaker (i)" .
 
-ex:AbdulAllah a go:Person ;
-    rdfs:label "Abdul Allah" ;
-    ex:hasHonorific "Peace be upon him" .
+ex:abdulallah a go:person ;
+    rdfs:label "abdul allah" ;
+    ex:hashonorific "peace be upon him" .
 
-ex:GroupOfPeople a go:Group ;
-    rdfs:label "Group of people" .
+ex:groupofpeople a go:group ;
+    rdfs:label "group of people" .
 
-ex:sayEvent a go:Event ;
-    a go:Communication ;
-    go:HasAgent ex:speaker ;
-    go:HasRecipient ex:AbdulAllah ;
-    go:HasTheme ex:utterance1 .
+ex:sayevent a go:event ;
+    a go:communication ;
+    go:hasagent ex:speaker ;
+    go:hasrecipient ex:abdulallah ;
+    go:hastheme ex:utterance1 .
 
-ex:utterance1 a go:Message ;
-    rdfs:label "Statement about arguing with a group" .
+ex:utterance1 a go:message ;
+    rdfs:label "statement about arguing with a group" .
 
-ex:argueEvent a go:Event ;
-    a go:Dispute ;
-    go:HasAgent ex:speaker ;
-    go:HasTheme ex:GroupOfPeople .
-go:Event rdfs:label "رخداد"@fa.
+ex:argueevent a go:event ;
+    a go:dispute ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:groupofpeople .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/231-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/231-2> rdf:type owl:ontology .
 
-ex:sayEvent1 a go:Event , ex:sayEvent ;
-    go:HasAgent ex:Speaker_I ;
-    go:HasRecipient ex:Hearers_ThesePeople ;
-    go:HasTheme ex:Statement1 .
+ex:sayevent1 a go:event , ex:sayevent ;
+    go:hasagent ex:speaker_i ;
+    go:hasrecipient ex:hearers_thesepeople ;
+    go:hastheme ex:statement1 .
 
-ex:Speaker_I a go:agent ;
-    rdfs:label "I" .
+ex:speaker_i a go:agent ;
+    rdfs:label "i" .
 
-ex:Hearers_ThesePeople a go:agent ;
+ex:hearers_thesepeople a go:agent ;
     rdfs:label "these people" .
 
-ex:Allah a go:Substance ;
-    go:hasAttribute ex:Majestic , ex:Honorable , ex:Generous ;
-    go:isTranscendentOver ex:BeingKnownByCreation .
+ex:allah a go:substance ;
+    go:hasattribute ex:majestic , ex:honorable , ex:generous ;
+    go:istranscendentover ex:beingknownbycreation .
 
-ex:Majestic a go:attribute ;
-    go:hasLabel "more majestic" .
+ex:majestic a go:attribute ;
+    go:haslabel "more majestic" .
 
-ex:Honorable a go:attribute ;
-    go:hasLabel "more honorable" .
+ex:honorable a go:attribute ;
+    go:haslabel "more honorable" .
 
-ex:Generous a go:attribute ;
-    go:hasLabel "more generous" .
+ex:generous a go:attribute ;
+    go:haslabel "more generous" .
 
-ex:BeingKnownByCreation a go:abstractConcept ;
-    go:hasLabel "being known by His creation" .
+ex:beingknownbycreation a go:abstractconcept ;
+    go:haslabel "being known by his creation" .
 
-ex:Statement1 a go:proposition ;
-    go:about ex:Allah ;
+ex:statement1 a go:proposition ;
+    go:about ex:allah ;
     go:expresses [
-        a go:attributeComparison ;
-        go:compares ex:Allah ;
-        go:isGreaterThan ex:BeingKnownByCreation ;
-        go:hasAttributes (ex:Majestic ex:Honorable ex:Generous)
+        a go:attributecomparison ;
+        go:compares ex:allah ;
+        go:isgreaterthan ex:beingknownbycreation ;
+        go:hasattributes (ex:majestic ex:honorable ex:generous)
     ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/231-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/231-3> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:People a go:Substance ;
-    rdfs:label "The people"@en .
+ex:people a go:substance ;
+    rdfs:label "the people"@en .
 
-ex:Servants a go:Substance ;
-    rdfs:label "The servants"@en .
+ex:servants a go:substance ;
+    rdfs:label "the servants"@en .
 
-ex:KnowingEvent1 a ex:KnowingEvent, go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:People .
+ex:knowingevent1 a ex:knowingevent, go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:people .
 
-ex:KnowingEvent2 a ex:KnowingEvent, go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Servants .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:knowingevent2 a ex:knowingevent, go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servants .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/231-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/231-4> rdf:type owl:ontology .
 
-ex:Abu_Abdillah_a_salam a go:Person ;
-    rdfs:label "Abu Abdillah (peace be upon him)" .
+ex:abu_abdillah_a_salam a go:person ;
+    rdfs:label "abu abdillah (peace be upon him)" .
 
-ex:SpeechEvent_1 a go:SpeechEvent ;
-    go:HasAgent ex:Abu_Abdillah_a_salam ;
-    go:HasTheme "May God have mercy on you." .
+ex:speechevent_1 a go:speechevent ;
+    go:hasagent ex:abu_abdillah_a_salam ;
+    go:hastheme "may god have mercy on you." .

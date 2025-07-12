@@ -1,130 +1,133 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/312#> .
+@prefix ex: <http://etratnet.ir/graph/example/312#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/312> rdf:type go:ontology ;
+        go:hascontent "1.  از امام صادق عليه‌السلام تفسير «بسم اللّه‌ الرحمن الرحيم» را پرسيدم. فرمود: «باء [اشاره به]بهاى خدا، سين سناى خدا، و ميم مجد خداست ـ و در روايتى آمده است: ميم: مُلك خداست ـ و "اللّه‌" يعنى اِله (معبود) هر چيزى است؛ "رحمن" يعنى با همه آفريدگان مهربان است، و "رحيم" يعنى نسبت به مؤمنان مهرى ويژه دارد»."@fa,
+        "1.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ تَفْسِيرِ «بِسْمِ اللّهِ الرَّحْمَنِ الرَّحِيم» فَقَالَ: «الْبَاءُ بَهَاءُ اللّه‌ِ، وَالسِّينُ سَنَاءُ اللّه‌ِ، وَالْمِيمُ مَجْدُ اللّه‌ِ ـ وَرَوى بَعْضُهُمْ: الْمِيمُ مُلْكُ اللّه‌ِ ـ وَاللّه‌ُ إِلهُ كُلِّ شَيْءٍ، الرَّحْمنُ بِجَمِيعِ خَلْقِهِ، وَالرَّحِيمُ بِالْمُؤمِنِينَ خَاصَّةً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/312-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/312-1> rdf:type owl:ontology .
 
-ex:AlBaa a go:Letter ;
-    go:hasAttribute [ a go:Magnificence ;
-                     go:associatedWith ex:Allah ] .
+ex:albaa a go:letter ;
+    go:hasattribute [ a go:magnificence ;
+                     go:associatedwith ex:allah ] .
 
-ex:Allah a go:Deity .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/312-2> rdf:type owl:Ontology .
-
-ex:TwoTeeth a go:Substance .
-ex:God a go:Agent .
-
-ex:eventInstance a go:state ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:TwoTeeth .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:allah a go:deity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/312-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/312-2> rdf:type owl:ontology .
 
-ex:AlMeem rdf:type go:Letter ;
-          go:hasAttribute ex:GloryOfGod .
+ex:twoteeth a go:substance .
+ex:god a go:agent .
 
-ex:GloryOfGod rdf:type go:Attribute ;
-               go:hasAttributeName "Glory" ;
-               go:hasPossessor ex:God .
-
-ex:God rdf:type go:Deity .
+ex:eventinstance a go:state ;
+    go:hasagent ex:god ;
+    go:hastheme ex:twoteeth .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/312-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/312-3> rdf:type owl:ontology .
 
-ex:event_narration1 a go:CommunicationEvent ;
-    go:HasAgent ex:group_someOfThem ;
-    go:HasTheme ex:statement_meem_is_kingdomOfGod .
+ex:almeem rdf:type go:letter ;
+          go:hasattribute ex:gloryofgod .
 
-ex:group_someOfThem a go:Group .
+ex:gloryofgod rdf:type go:attribute ;
+               go:hasattributename "glory" ;
+               go:haspossessor ex:god .
 
-ex:statement_meem_is_kingdomOfGod a go:Proposition ;
-    go:HasSubject ex:meem ;
-    go:HasPredicate ex:isKingdomOfGod .
+ex:god rdf:type go:deity .
 
-ex:meem a go:Substance ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/312-4> rdf:type owl:ontology .
+
+ex:event_narration1 a go:communicationevent ;
+    go:hasagent ex:group_someofthem ;
+    go:hastheme ex:statement_meem_is_kingdomofgod .
+
+ex:group_someofthem a go:group .
+
+ex:statement_meem_is_kingdomofgod a go:proposition ;
+    go:hassubject ex:meem ;
+    go:haspredicate ex:iskingdomofgod .
+
+ex:meem a go:substance ;
     go:label "الميم" .
 
-ex:isKingdomOfGod a go:RelationAssertion ;
-    go:label "is kingdom of God" ;
-    go:HasObject ex:kingdomOfGod .
+ex:iskingdomofgod a go:relationassertion ;
+    go:label "is kingdom of god" ;
+    go:hasobject ex:kingdomofgod .
 
-ex:kingdomOfGod a go:Substance ;
-    go:possessedBy ex:God ;
+ex:kingdomofgod a go:substance ;
+    go:possessedby ex:god ;
     go:label "ملك الله" .
 
-ex:God a go:Agent ;
+ex:god a go:agent ;
     go:label "الله" .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/312-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/312-5> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:Everything a go:entity ;
-    rdfs:label "Everything"@en .
+ex:everything a go:entity ;
+    rdfs:label "everything"@en .
 
-ex:God ex:isGodOf ex:Everything .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/312-6> rdf:type owl:Ontology .
-
-ex:TheMostMerciful a go:Deity ;
-    rdfs:label "The Most Merciful" .
-
-ex:Creation a go:Collection ;
-    rdfs:label "All His Creation" .
-
-ex:MercyState a go:State ;
-    go:HasAgent ex:TheMostMerciful ;
-    go:HasTheme ex:Creation ;
-    ex:hasAttribute ex:Merciful .
-
-ex:Merciful a ex:Attribute .
+ex:god ex:isgodof ex:everything .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/312-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/312-6> rdf:type owl:ontology .
 
-ex:Merciful a go:Substance ;
-    go:hasProperty ex:Mercifulness .
+ex:themostmerciful a go:deity ;
+    rdfs:label "the most merciful" .
 
-ex:Mercifulness a go:property ;
-    go:hasAgent ex:Merciful ;
-    go:hasTheme ex:Believers ;
-    ex:hasFocus ex:Believers .
+ex:creation a go:collection ;
+    rdfs:label "all his creation" .
 
-ex:Believers a go:group .
-go:Substance rdfs:label "شی"@fa.
+ex:mercystate a go:state ;
+    go:hasagent ex:themostmerciful ;
+    go:hastheme ex:creation ;
+    ex:hasattribute ex:merciful .
+
+ex:merciful a ex:attribute .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/312-7> rdf:type owl:ontology .
+
+ex:merciful a go:substance ;
+    go:hasproperty ex:mercifulness .
+
+ex:mercifulness a go:property ;
+    go:hasagent ex:merciful ;
+    go:hastheme ex:believers ;
+    ex:hasfocus ex:believers .
+
+ex:believers a go:group .
+go:substance rdfs:label "شی"@fa.

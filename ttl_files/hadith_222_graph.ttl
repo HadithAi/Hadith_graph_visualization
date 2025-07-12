@@ -1,154 +1,157 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/222#> .
+@prefix ex: <http://etratnet.ir/graph/example/222#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/222> rdf:type go:ontology ;
+        go:hascontent "1.  از ابو جعفر [امام جواد] عليه‌السلام درباره يگانگى خدا پرسيدم و عرض كردم: آيا مى‌توان خدا را چيزى تصور كرد؟ فرمود: «آرى، اما چيزى كه [حقيقت آن] در عقل نيايد، و محدود نباشد؛ زيرا، هر چيزى كه در وهم تو آيد او غير آن است. چيزى مانند او نيست، و وهم‌ها او را در نيابند. چگونه وهم‌ها او را دريابند در حالى كه او خلاف هر چيزى است كه به عقل درآيد، و خلاف هر چيزى است كه وهم‌ها تصورش كنند؟ او چيزى است كه به خرد درنيايد و محدود نباشد. همين تصور و بس»."@fa,
+        "1. سَأَلْتُ أَبَا جَعْفَرٍ عليه‌السلام عَنِ التَّوْحِيدِ، فَقُلْتُ: أَتَوَهَّمُ شَيْئاً؟ فَقَالَ: «نَعَمْ، غَيْرَ مَعْقُولٍ، وَلاَ مَحْدُودٍ، فَمَا وَقَعَ وَهْمُكَ عَلَيْهِ مِنْ شَيْءٍ، فَهُوَ خِلاَفُهُ، لاَ يُشْبِهُهُ شَيْءٌ، وَلاَ تُدْرِكُهُ الْأَوْهَامُ، كَيْفَ تُدْرِكُهُ الْأَوْهَامُ وَهُوَ خِلاَفُ مَا يُعْقَلُ، وَخِلاَفُ مَا يُتَصَوَّرُ فِي الْأَوْهَامِ؟! إِنَّمَا يُتَوَهَّمُ شَيْءٌ غَيْرُ مَعْقُولٍ وَلاَ مَحْدُودٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/222-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/222-1> rdf:type owl:ontology .
 
-ex:Abu_Jaafar a go:Person ;
-    go:hasHonorific "peace be upon him"^^xsd:string ;
-    go:label "Mr. Abu Ja'far"^^xsd:string .
+ex:abu_jaafar a go:person ;
+    go:hashonorific "peace be upon him"^^xsd:string ;
+    go:label "mr. abu ja'far"^^xsd:string .
 
-ex:Monotheism a go:Concept ;
-    go:label "Monotheism"^^xsd:string ;
-    ex:isNotRational true ;
-    ex:isNotLimited true .
+ex:monotheism a go:concept ;
+    go:label "monotheism"^^xsd:string ;
+    ex:isnotrational true ;
+    ex:isnotlimited true .
 
-ex:Utterance1 a go:SpeechAct ;
-    go:HasAgent ex:Abu_Jaafar ;
-    go:HasTheme ex:Monotheism ;
-    go:expresses ex:Proposition1 .
+ex:utterance1 a go:speechact ;
+    go:hasagent ex:abu_jaafar ;
+    go:hastheme ex:monotheism ;
+    go:expresses ex:proposition1 .
 
-ex:Proposition1 a go:Proposition ;
-    go:hasSubject ex:Monotheism ;
-    ex:hasProperty ex:NonRational ;
-    ex:hasProperty ex:NonLimited .
+ex:proposition1 a go:proposition ;
+    go:hassubject ex:monotheism ;
+    ex:hasproperty ex:nonrational ;
+    ex:hasproperty ex:nonlimited .
 
-ex:NonRational a go:Property ;
+ex:nonrational a go:property ;
     go:label "not rational"^^xsd:string .
 
-ex:NonLimited a go:Property ;
+ex:nonlimited a go:property ;
     go:label "not limited"^^xsd:string .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/222-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/222-2> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:Speaker ;
-    go:HasTheme ex:ContraryToMonotheismCondition .
+ex:event1 a go:event ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:contrarytomonotheismcondition .
 
-ex:Speaker a go:agent ;
-    go:denotedBy "المتحدث"@ar .
+ex:speaker a go:agent ;
+    go:denotedby "المتحدث"@ar .
 
-ex:ContraryToMonotheismCondition a go:state ;
-    go:HasQuality ex:ContraryToMonotheismQuality .
+ex:contrarytomonotheismcondition a go:state ;
+    go:hasquality ex:contrarytomonotheismquality .
 
-ex:ContraryToMonotheismQuality a go:Quality ;
-    go:denotedBy "خلاف التوحيد"@ar .
+ex:contrarytomonotheismquality a go:quality ;
+    go:denotedby "خلاف التوحيد"@ar .
 
-ex:Monotheism a go:concept ;
-    go:denotedBy "التوحيد"@ar .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/222-3> rdf:type owl:Ontology .
-
-ex:Monotheism a go:Substance ;
-    go:notSimilarTo [ a go:Substance ] .
-go:Substance rdfs:label "شی"@fa.
+ex:monotheism a go:concept ;
+    go:denotedby "التوحيد"@ar .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/222-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/222-3> rdf:type owl:ontology .
 
-ex:Illusions a go:Substance ;
-    rdfs:label "Illusions"@en .
-
-ex:Monotheism a go:Concept ;
-    rdfs:label "Monotheism"@en .
-
-ex:ComprehensionEvent a go:Event ;
-    go:HasAgent ex:Illusions ;
-    go:HasTheme ex:Monotheism ;
-    go:Negated true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:monotheism a go:substance ;
+    go:notsimilarto [ a go:substance ] .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/222-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/222-4> rdf:type owl:ontology .
 
-ex:Delusions a go:Substance ;
-    rdfs:label "Delusions"@en .
+ex:illusions a go:substance ;
+    rdfs:label "illusions"@en .
 
-ex:Monotheism a go:Substance ;
-    rdfs:label "Monotheism"@en .
+ex:monotheism a go:concept ;
+    rdfs:label "monotheism"@en .
 
-ex:NotComprehendEvent a go:Event ;
-    go:HasAgent ex:Delusions ;
-    go:HasTheme ex:Monotheism ;
-    go:hasResult ex:Negation .
-
-ex:Negation a go:state ;
-    rdfs:label "Negation of comprehension"@en .
-
-ex:ContraryToComprehension a go:state ;
-    rdfs:label "Contrary to what is comprehensible"@en .
-
-ex:NotComprehendEvent go:hasCause ex:ContraryToComprehension .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:comprehensionevent a go:event ;
+    go:hasagent ex:illusions ;
+    go:hastheme ex:monotheism ;
+    go:negated true .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/222-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/222-5> rdf:type owl:ontology .
 
-ex:Delusions a go:Substance ;
-    rdfs:label "Delusions"@en .
+ex:delusions a go:substance ;
+    rdfs:label "delusions"@en .
 
-ex:Monotheism a go:Substance ;
-    rdfs:label "Monotheism"@en .
+ex:monotheism a go:substance ;
+    rdfs:label "monotheism"@en .
 
-ex:ContradictionWithImaginedConceptsInDelusions a go:state ;
-    rdfs:label "Contradiction with imagined concepts in delusions"@en .
+ex:notcomprehendevent a go:event ;
+    go:hasagent ex:delusions ;
+    go:hastheme ex:monotheism ;
+    go:hasresult ex:negation .
 
-ex:ComprehensionFailureEvent a go:Event ;
-    rdfs:label "Failure to comprehend monotheism by delusions"@en ;
-    go:HasAgent ex:Delusions ;
-    go:HasTheme ex:Monotheism ;
-    go:HasCause ex:ContradictionWithImaginedConceptsInDelusions .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:negation a go:state ;
+    rdfs:label "negation of comprehension"@en .
+
+ex:contrarytocomprehension a go:state ;
+    rdfs:label "contrary to what is comprehensible"@en .
+
+ex:notcomprehendevent go:hascause ex:contrarytocomprehension .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/222-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/222-6> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasTheme ex:thing1 .
+ex:delusions a go:substance ;
+    rdfs:label "delusions"@en .
 
-ex:thing1 a go:Substance ;
-    go:hasQuality "unreasonable" ;
-    go:hasQuality "unlimited" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:monotheism a go:substance ;
+    rdfs:label "monotheism"@en .
+
+ex:contradictionwithimaginedconceptsindelusions a go:state ;
+    rdfs:label "contradiction with imagined concepts in delusions"@en .
+
+ex:comprehensionfailureevent a go:event ;
+    rdfs:label "failure to comprehend monotheism by delusions"@en ;
+    go:hasagent ex:delusions ;
+    go:hastheme ex:monotheism ;
+    go:hascause ex:contradictionwithimaginedconceptsindelusions .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/222-7> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hastheme ex:thing1 .
+
+ex:thing1 a go:substance ;
+    go:hasquality "unreasonable" ;
+    go:hasquality "unlimited" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

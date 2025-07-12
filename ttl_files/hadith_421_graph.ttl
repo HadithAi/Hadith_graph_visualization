@@ -1,225 +1,228 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/421#> .
+@prefix ex: <http://etratnet.ir/graph/example/421#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/421> rdf:type go:ontology ;
+        go:hascontent "3. ـ درباره اين سخن خداى عز و جل كه: «خدا قومى را كه هدايت كرده است گمراه نكند تا برايشان روشن كند كه از چه چيز بايد بپرهيزند» فرمود: «[يعنى] تا آنچه را مايه خشنودى و ناخشنودى اوست به آنان بشناساند».و درباره آيه شريفه: «پس پليدكارى و پرهيزگارى‌اش را به آن (نفس) الهام كرد» فرمود: «[يعنى]برايش روشن ساخت كه چه بكند و چه نكند». و درباره آيه شريفه: «ما راه را به او نمايانديم، يا سپاس‌گزار است و يا ناسپاس» فرمود: «[يعنى]آن را به او شناسانديم و او، يا آن را در پيش مى‌گيرد و يا وا مى‌نهد».و درباره آيه شريفه: «و اما ثموديان: پس آنان را هدايت نموديم ولى كوردلى را بر هدايت ترجيح دادند» فرمود: «[يعنى] به آنان شناسانديم اما آنها، با آن كه [راه درست را] مى‌شناختند كوردلى را بر هدايت برگزيدند». در روايتى ديگر [به جاىِ «به آنها شناسانديم»] آمده است: «براى آنها روشن ساختيم»."@fa,
+        "3.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام فِي قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «وَ مَا كَانَ اللَّهُ لِيُضِلَّ قَوْما بَعْدَ إِذْ هَدَلهُمْ‌حَتَّى يُبَيِّنَ لَهُم مَّا يَتَّقُونَ»، قَالَ: «حَتّى يُعَرِّفَهُمْ مَا يُرْضِيهِ وَمَا يُسْخِطُهُ».وَقَالَ: «فَأَلْهَمَهَا فُجُورَهَا وَ تَقْوَلهَا»، قَالَ: «بَيَّنَ لَهَا مَا تَأْتِي وَمَا تَتْرُكُ». وَقَالَ: «إِنَّا هَدَيْنَهُ السَّبِيلَ إِمَّا شَاكِرًا وَ إِمَّا كَفُورًا»، قَالَ: «عَرَّفْنَاهُ، إِمَّا آخِذٌ وَإِمَّا تَارِكٌ».وَعَنْ قَوْلِهِ: «وَ أَمَّا ثَمُودُ فَهَدَيْنَهُمْ فَاسْتَحَبُّواْ الْعَمَى عَلَى الْهُدَى»، قَالَ: «عَرَّفْنَاهُمْ فَاسْتَحَبُّوا الْعَمى عَلَى الْهُدى وَهُمْ يَعْرِفُونَ». وَفِي رِوَايَةٍ: «بَيَّنَّا لَهُمْ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/421-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/421-1> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Substance ;
-    go:label "God Almighty" .
+ex:god_almighty a go:substance ;
+    go:label "god almighty" .
 
-ex:People a go:Substance ;
-    go:label "People" .
+ex:people a go:substance ;
+    go:label "people" .
 
-ex:GuidanceEvent a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:People ;
-    go:label "Guidance given to people" .
+ex:guidanceevent a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:people ;
+    go:label "guidance given to people" .
 
-ex:MisguidanceEvent a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:People ;
-    go:label "Misguidance to people" ;
-    ex:neverTrue true .
+ex:misguidanceevent a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:people ;
+    go:label "misguidance to people" ;
+    ex:nevertrue true .
 
-ex:ExplanationEvent a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:People ;
-    ex:Object "What they should fear" ;
-    go:label "Explanation of duties to people" .
+ex:explanationevent a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:people ;
+    ex:object "what they should fear" ;
+    go:label "explanation of duties to people" .
 
-# Temporal relation: MisguidanceEvent does not occur after GuidanceEvent
-ex:MisguidanceEvent ex:notOccursAfter ex:GuidanceEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/421-2> rdf:type owl:Ontology .
-
-ex:eventInstance a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasRecipient ex:Them ;
-    go:HasTheme ex:What_Pleases_God, ex:What_Displeases_God .
-
-ex:God_Almighty a go:agent ;
-    go:label "God Almighty" .
-
-ex:Them a go:collection ;
-    go:label "Them" .
-
-ex:What_Pleases_God a go:theme ;
-    go:label "What pleases God" .
-
-ex:What_Displeases_God a go:theme ;
-    go:label "What displeases God" .
-go:Event rdfs:label "رخداد"@fa.
+# temporal relation: misguidanceevent does not occur after guidanceevent
+ex:misguidanceevent ex:notoccursafter ex:guidanceevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/421-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/421-2> rdf:type owl:ontology .
 
-ex:InspirationEvent1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Wickedness ;
-    go:HasTheme ex:Piety ;
-    go:HasRecipient ex:Woman .
+ex:eventinstance a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hasrecipient ex:them ;
+    go:hastheme ex:what_pleases_god, ex:what_displeases_god .
 
-ex:God_Almighty a go:Agent ;
-    go:label "God Almighty" .
+ex:god_almighty a go:agent ;
+    go:label "god almighty" .
 
-ex:Woman a go:Person ;
-    go:label "Her" .
+ex:them a go:collection ;
+    go:label "them" .
 
-ex:Wickedness a go:Quality ;
-    go:label "Wickedness" .
+ex:what_pleases_god a go:theme ;
+    go:label "what pleases god" .
 
-ex:Piety a go:Quality ;
-    go:label "Piety" .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:what_displeases_god a go:theme ;
+    go:label "what displeases god" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/421-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/421-3> rdf:type owl:ontology .
 
-ex:event_Clarification a go:divineEvent, go:Event ;
-  go:HasAgent go:God_Almighty ;
-  go:HasRecipient ex:Her ;
-  go:HasTheme ex:Instruction_Do ;
-  go:HasTheme ex:Instruction_Leave .
+ex:inspirationevent1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:wickedness ;
+    go:hastheme ex:piety ;
+    go:hasrecipient ex:woman .
 
-go:God_Almighty a go:Deity .
+ex:god_almighty a go:agent ;
+    go:label "god almighty" .
 
-ex:Her a go:Person .
+ex:woman a go:person ;
+    go:label "her" .
 
-ex:Instruction_Do a go:Instruction .
+ex:wickedness a go:quality ;
+    go:label "wickedness" .
 
-ex:Instruction_Leave a go:Instruction .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/421-5> rdf:type owl:Ontology .
-
-ex:guidanceEvent1 a go:Event ;
-    go:HasAgent ex:We ;
-    go:HasTheme ex:Him ;
-    go:HasGoal ex:ThePath ;
-    go:HasResultState ex:Grateful, ex:Ungrateful .
-
-ex:We a go:Agent .
-ex:Him a go:Patient ;
-    go:hasPossibleState ex:Grateful, ex:Ungrateful .
-ex:ThePath a go:Path .
-ex:Grateful a go:State .
-ex:Ungrateful a go:State .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:piety a go:quality ;
+    go:label "piety" .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/421-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/421-4> rdf:type owl:ontology .
 
-ex:knowingEvent a go:Event ;
-    go:HasAgent ex:We ;
-    go:HasTheme ex:PersonKnown .
+ex:event_clarification a go:divineevent, go:event ;
+  go:hasagent go:god_almighty ;
+  go:hasrecipient ex:her ;
+  go:hastheme ex:instruction_do ;
+  go:hastheme ex:instruction_leave .
 
-ex:PersonKnown a go:entity .
+go:god_almighty a go:deity .
 
-ex:takingEvent a go:Event ;
-    go:HasAgent ex:PersonKnown .
+ex:her a go:person .
 
-ex:leavingEvent a go:Event ;
-    go:HasAgent ex:PersonKnown .
-go:Event rdfs:label "رخداد"@fa.
+ex:instruction_do a go:instruction .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/421-7> rdf:type owl:Ontology .
-
-ex:Thamud a go:Group .
-ex:Guidee a go:Agent ;
-    a go:DiscourseEntity .
-ex:He a go:Agent ;
-    a go:DiscourseEntity .
-
-ex:GuidingEvent a go:Event ;
-    go:HasAgent ex:He ;
-    go:HasTheme ex:Thamud .
-
-ex:Blindness a go:State .
-ex:Guidance a go:State .
-
-ex:PreferenceEvent a go:Event ;
-    go:HasAgent ex:Thamud ;
-    go:HasTheme ex:Blindness , ex:Guidance ;
-    ex:prefersOver ex:Blindness , ex:Guidance .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:instruction_leave a go:instruction .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/421-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/421-5> rdf:type owl:ontology .
 
-ex:Event_Knowing_1 a go:Activity ;
-    go:HasAgent ex:Group_We ;
-    go:HasTheme ex:Group_Them .
+ex:guidanceevent1 a go:event ;
+    go:hasagent ex:we ;
+    go:hastheme ex:him ;
+    go:hasgoal ex:thepath ;
+    go:hasresultstate ex:grateful, ex:ungrateful .
 
-ex:Entity_Blindness a go:Quality ;
-    rdfs:label "Blindness"@en .
-
-ex:Entity_Guidance a go:Quality ;
-    rdfs:label "Guidance"@en .
-
-ex:Event_PreferringBlindness a go:Activity ;
-    go:HasAgent ex:Group_Them ;
-    ex:Prefers ex:Entity_Blindness ;
-    ex:PrefersOver ex:Entity_Guidance .
-
-ex:Group_We a go:Agent ;
-    rdfs:label "We"@en .
-
-ex:Group_Them a go:Agent ;
-    rdfs:label "Them"@en .
-
-ex:Event_Knowing_1 ex:HasResult ex:Knowledge_Them .
-
-ex:Knowledge_Them a go:Information ;
-    go:HasAgent ex:Group_Them .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:we a go:agent .
+ex:him a go:patient ;
+    go:haspossiblestate ex:grateful, ex:ungrateful .
+ex:thepath a go:path .
+ex:grateful a go:state .
+ex:ungrateful a go:state .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/421-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/421-6> rdf:type owl:ontology .
 
-ex:ExplanationEvent1 a go:Event ;
-  go:HasAgent ex:SpeakerGroupWe ;
-  go:HasRecipient ex:Them .
+ex:knowingevent a go:event ;
+    go:hasagent ex:we ;
+    go:hastheme ex:personknown .
 
-ex:SpeakerGroupWe a go:Agent .
-ex:Them a go:GenericGroup .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:personknown a go:entity .
+
+ex:takingevent a go:event ;
+    go:hasagent ex:personknown .
+
+ex:leavingevent a go:event ;
+    go:hasagent ex:personknown .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/421-7> rdf:type owl:ontology .
+
+ex:thamud a go:group .
+ex:guidee a go:agent ;
+    a go:discourseentity .
+ex:he a go:agent ;
+    a go:discourseentity .
+
+ex:guidingevent a go:event ;
+    go:hasagent ex:he ;
+    go:hastheme ex:thamud .
+
+ex:blindness a go:state .
+ex:guidance a go:state .
+
+ex:preferenceevent a go:event ;
+    go:hasagent ex:thamud ;
+    go:hastheme ex:blindness , ex:guidance ;
+    ex:prefersover ex:blindness , ex:guidance .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/421-8> rdf:type owl:ontology .
+
+ex:event_knowing_1 a go:activity ;
+    go:hasagent ex:group_we ;
+    go:hastheme ex:group_them .
+
+ex:entity_blindness a go:quality ;
+    rdfs:label "blindness"@en .
+
+ex:entity_guidance a go:quality ;
+    rdfs:label "guidance"@en .
+
+ex:event_preferringblindness a go:activity ;
+    go:hasagent ex:group_them ;
+    ex:prefers ex:entity_blindness ;
+    ex:prefersover ex:entity_guidance .
+
+ex:group_we a go:agent ;
+    rdfs:label "we"@en .
+
+ex:group_them a go:agent ;
+    rdfs:label "them"@en .
+
+ex:event_knowing_1 ex:hasresult ex:knowledge_them .
+
+ex:knowledge_them a go:information ;
+    go:hasagent ex:group_them .
+go:information rdfs:label "اطلاعات"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/421-9> rdf:type owl:ontology .
+
+ex:explanationevent1 a go:event ;
+  go:hasagent ex:speakergroupwe ;
+  go:hasrecipient ex:them .
+
+ex:speakergroupwe a go:agent .
+ex:them a go:genericgroup .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.

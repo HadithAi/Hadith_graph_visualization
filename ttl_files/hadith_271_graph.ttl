@@ -1,101 +1,104 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/271#> .
+@prefix ex: <http://etratnet.ir/graph/example/271#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/271> rdf:type go:ontology ;
+        go:hascontent "11.  به ابو جعفر [امام جواد] عليه‌السلام عرض كردم: «ديده‌ها او را در نمى‌يابند و او ديده‌ها را در مى‌يابد» [يعنى چه]؟ فرمود: «اى ابا هاشم، وهم‌هاى دل‌ها باريك‌تر از بينايى‌هاى چشم‌هاست [؛ زيرا] تو گاه با قوه وهم خود سِند و هند و شهرهايى را كه به آنها نرفته‌اى ادراك [و تصور] مى‌كنى، در حالى كه با چشم خود دريافتشان نمى‌كنى. وهم‌هاى دل‌ها خدا را دريافت نمى‌كند، پس چگونه بينايى‌هاى چشم‌ها دريافتش كنند؟»"@fa,
+        "11.  قُلْتُ لِأَبِي جَعْفَرٍ عليه‌السلام: «لاَ تُدْرِكُهُ الْأَبْصارُ وَهُوَ يُدْرِكُ الْأَبْصارَ»؟ فَقَالَ: «يَا أَبَا هَاشِمٍ، أَوْهَامُ الْقُلُوبِ أَدَقُّ مِنْ أَبْصَارِ الْعُيُونِ؛ أَنْتَ قَدْ تُدْرِكُ بِوَهْمِكَ السِّنْدَ وَالْهِنْدَ وَالْبُلْدَانَ الَّتِي لَمْ تَدْخُلْهَا وَلاَ تُدْرِكُهَا بِبَصَرِكَ، وَأَوْهَامُ الْقُلُوبِ لاَ تُدْرِكُهُ، فَكَيْفَ أَبْصَارُ الْعُيُونِ؟!»"@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/271-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/271-1> rdf:type owl:ontology .
 
-ex:EmotionalIllusionsOfHeart a go:Phenomenon ;
-    go:associatedWith ex:Heart ;
-    go:hasQuality ex:FinenessLevel1 .
+ex:emotionalillusionsofheart a go:phenomenon ;
+    go:associatedwith ex:heart ;
+    go:hasquality ex:finenesslevel1 .
 
-ex:SightOfEyes a go:Phenomenon ;
-    go:associatedWith ex:Eyes ;
-    go:hasQuality ex:FinenessLevel2 .
+ex:sightofeyes a go:phenomenon ;
+    go:associatedwith ex:eyes ;
+    go:hasquality ex:finenesslevel2 .
 
-ex:FinenessLevel1 go:isFinerThan ex:FinenessLevel2 .
+ex:finenesslevel1 go:isfinerthan ex:finenesslevel2 .
 
-ex:Heart a go:Organ .
-ex:Eyes a go:Organ .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/271-2> rdf:type owl:Ontology .
-
-# Entities
-ex:Human a go:agent ;
-    rdfs:label "Human" .
-
-ex:Sind a go:place ;
-    rdfs:label "Sind" .
-
-ex:India a go:place ;
-    rdfs:label "India" .
-
-ex:Countries a go:place ;
-    rdfs:label "Countries not entered or perceived" .
-
-ex:Illusions a go:Substance ;
-    rdfs:label "Illusions" .
-
-# Event
-ex:PerceivingEvent a go:Event, ex:Perception ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:Sind, ex:India, ex:Countries ;
-    go:HasMedium ex:Illusions ;
-    ex:CanPerceiveWithoutEntry "true"^^xsd:boolean ;
-    ex:CanPerceiveWithoutSight "true"^^xsd:boolean .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:heart a go:organ .
+ex:eyes a go:organ .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/271-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/271-2> rdf:type owl:ontology .
 
-ex:IllusionsOfHearts a ex:AbstractConcept ;
-    rdfs:label "Illusions of the hearts"@en .
+# entities
+ex:human a go:agent ;
+    rdfs:label "human" .
 
-ex:He a go:Agent ;
-    rdfs:label "He"@en .
+ex:sind a go:place ;
+    rdfs:label "sind" .
 
-ex:PerceptionEvent a go:Event ;
+ex:india a go:place ;
+    rdfs:label "india" .
+
+ex:countries a go:place ;
+    rdfs:label "countries not entered or perceived" .
+
+ex:illusions a go:substance ;
+    rdfs:label "illusions" .
+
+# event
+ex:perceivingevent a go:event, ex:perception ;
+    go:hasagent ex:human ;
+    go:hastheme ex:sind, ex:india, ex:countries ;
+    go:hasmedium ex:illusions ;
+    ex:canperceivewithoutentry "true"^^xsd:boolean ;
+    ex:canperceivewithoutsight "true"^^xsd:boolean .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/271-3> rdf:type owl:ontology .
+
+ex:illusionsofhearts a ex:abstractconcept ;
+    rdfs:label "illusions of the hearts"@en .
+
+ex:he a go:agent ;
+    rdfs:label "he"@en .
+
+ex:perceptionevent a go:event ;
     ex:negation true ;
-    go:HasAgent ex:IllusionsOfHearts ;
-    go:HasTheme ex:He ;
-    rdfs:label "Perception event - negated"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+    go:hasagent ex:illusionsofhearts ;
+    go:hastheme ex:he ;
+    rdfs:label "perception event - negated"@en .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/271-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/271-4> rdf:type owl:ontology .
 
-ex:Event_EyesPerceive a go:PerceptionEvent ;
-  go:HasAgent ex:Eyes ;
-  go:HasTheme ex:He .
+ex:event_eyesperceive a go:perceptionevent ;
+  go:hasagent ex:eyes ;
+  go:hastheme ex:he .
 
-ex:Event_IllusionsHeartsNotPerceive a go:PerceptionEvent ;
-  go:HasAgent ex:Illusions_Hearts ;
-  go:HasTheme ex:He ;
-  go:Result "False"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+ex:event_illusionsheartsnotperceive a go:perceptionevent ;
+  go:hasagent ex:illusions_hearts ;
+  go:hastheme ex:he ;
+  go:result "false"^^<http://www.w3.org/2001/xmlschema#boolean> .
 
-ex:Eyes a go:OrganismPart ;
-  go:PartOf ex:Human .
+ex:eyes a go:organismpart ;
+  go:partof ex:human .
 
-ex:Illusions_Hearts a go:ConceptualEntity .
+ex:illusions_hearts a go:conceptualentity .
 
-ex:He a go:Person .
+ex:he a go:person .

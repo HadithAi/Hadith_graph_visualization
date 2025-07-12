@@ -1,192 +1,195 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/317#> .
+@prefix ex: <http://etratnet.ir/graph/example/317#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/317> rdf:type go:ontology ;
+        go:hascontent "6.  از امام صادق عليه‌السلام شنيدم كه در پاسخ به سؤال از [معناى] اول و آخر [بودن خدا]فرمود: «اوّل است، نه از اوّلى كه پيش از او بوده و نه از آغازى كه بر او پيشى داشته باشد. و آخر است نه از جهت پايان داشتن، آن گونه كه از ويژگى آفريدگان فهميده مى‌شود. بلكه او ديرين [و ازلى] است؛ نخستين است؛ انجامين است؛ پيوسته بوده و پيوسته خواهد بود، بى آغاز و بى انجام. دستخوش حوادث نمى‌شود، و از حالتى به حالتى ديگر در نمى‌آيد. آفريننده همه چيز است»."@fa,
+        "6.  سَمِعْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام وَقَدْ سُئِلَ عَنِ الْأَوَّلِ وَالاْخِرِ، فَقَالَ: «الْأَوَّلُ لاَ عَنْ أَوَّلٍ قَبْلَهُ، وَلاَ عَنْ بَدْءٍ سَبَقَهُ؛ وَالاْخِرُ لاَ عَنْ نِهَايَةٍ كَمَا يُعْقَلُ مِنْ صِفَةِ الْمَخْلُوقِينَ، وَلكِنْ قَدِيمٌ، أَوَّلٌ، آخِرٌ، لَمْ يَزَلْ، وَلاَ يَزُولُ، بِلاَ بَدْءٍ وَلاَ نِهَايَةٍ، لاَ يَقَعُ عَلَيْهِ الْحُدُوثُ، وَلاَ يَحُولُ مِنْ حَالٍ إِلى حَالٍ، خَالِقُ كُلِّ شَيْءٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-1> rdf:type owl:ontology .
 
-ex:First a go:Substance ;
-    ex:hasPredecessor ex:None .
+ex:first a go:substance ;
+    ex:haspredecessor ex:none .
 
-ex:None a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:none a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-2> rdf:type owl:ontology .
 
-ex:firstOne a go:Substance ;
+ex:firstone a go:substance ;
     rdfs:label "the first one" .
 
-ex:beginning a go:Substance ;
+ex:beginning a go:substance ;
     rdfs:label "beginning" .
 
-ex:precededEvent a go:Event ;
+ex:precededevent a go:event ;
     rdfs:label "being preceded event" ;
-    go:HasTheme ex:firstOne .
+    go:hastheme ex:firstone .
 
-# Indicate that there is no agent (no beginning precedes the first one)
-# This can be encoded by absence of go:HasAgent or explicitly stating no agent.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# indicate that there is no agent (no beginning precedes the first one)
+# this can be encoded by absence of go:hasagent or explicitly stating no agent.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-3> rdf:type owl:ontology .
 
-ex:Other a go:Substance .
-ex:Creatures a go:Substance .
+ex:other a go:substance .
+ex:creatures a go:substance .
 
-ex:end a go:Attribute .
+ex:end a go:attribute .
 
-# The end is an attribute that does not apply to 'Other', but applies to Creatures
-ex:hasEnd a go:hasAttributeRelation ;
-    rdfs:domain go:Substance ;
+# the end is an attribute that does not apply to 'other', but applies to creatures
+ex:hasend a go:hasattributerelation ;
+    rdfs:domain go:substance ;
     rdfs:range ex:end .
 
-# Assertion that Creatures have end attribute
-ex:Creatures ex:hasEnd ex:end .
+# assertion that creatures have end attribute
+ex:creatures ex:hasend ex:end .
 
-# Assertion that 'Other' does not have end attribute (modeled with negation)
-ex:Other ex:notHasEnd ex:end .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/317-4> rdf:type owl:Ontology .
-
-ex:OtherEntity a go:Substance ;
-    go:hasAgeState "old" .
-go:Substance rdfs:label "شی"@fa.
+# assertion that 'other' does not have end attribute (modeled with negation)
+ex:other ex:nothasend ex:end .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-4> rdf:type owl:ontology .
 
-ex:Other a go:Substance ;
-    ex:hasOrderPosition ex:FirstPosition .
-
-ex:FirstPosition a ex:OrderPosition .
-go:Substance rdfs:label "شی"@fa.
+ex:otherentity a go:substance ;
+    go:hasagestate "old" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-5> rdf:type owl:ontology .
 
-ex:Other a go:Substance ;
-  ex:isAnother ex:Another .
+ex:other a go:substance ;
+    ex:hasorderposition ex:firstposition .
 
-ex:Another a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:firstposition a ex:orderposition .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-6> rdf:type owl:ontology .
 
-ex:Other a go:Substance ;
+ex:other a go:substance ;
+  ex:isanother ex:another .
+
+ex:another a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/317-7> rdf:type owl:ontology .
+
+ex:other a go:substance ;
     rdfs:label "the other"@en .
 
-ex:ContinuingStateEvent a go:Event ;
-    go:HasAgent ex:Other ;
-    rdfs:comment "The other has not yet ceased."@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:continuingstateevent a go:event ;
+    go:hasagent ex:other ;
+    rdfs:comment "the other has not yet ceased."@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-8> rdf:type owl:ontology .
 
-ex:Other a go:Substance .
-ex:DisappearanceEvent a go:DisappearanceEvent ;
-    go:HasTheme ex:Other .
+ex:other a go:substance .
+ex:disappearanceevent a go:disappearanceevent ;
+    go:hastheme ex:other .
 
-# The statement indicates that ex:DisappearanceEvent does not occur for ex:Other.
-# Negation is represented here by a named node ex:NegationOfDisappearanceEvent.
+# the statement indicates that ex:disappearanceevent does not occur for ex:other.
+# negation is represented here by a named node ex:negationofdisappearanceevent.
 
-ex:NegationOfDisappearanceEvent a go:NegatedEvent ;
-    go:NegatedEvent ex:DisappearanceEvent .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/317-9> rdf:type owl:Ontology .
-
-ex:Other a go:Concept ;
-    ex:hasBeginning ex:NoBeginning .
-
-ex:NoBeginning a ex:StartEvent ;
-    ex:eventStatus ex:Absent .
-
-ex:eventStatus a go:Property .
+ex:negationofdisappearanceevent a go:negatedevent ;
+    go:negatedevent ex:disappearanceevent .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-9> rdf:type owl:ontology .
 
-ex:Other a go:Substance ;
-    ex:hasProperty ex:Endlessness .
+ex:other a go:concept ;
+    ex:hasbeginning ex:nobeginning .
 
-ex:Endlessness a go:State .
-go:Substance rdfs:label "شی"@fa.
+ex:nobeginning a ex:startevent ;
+    ex:eventstatus ex:absent .
+
+ex:eventstatus a go:property .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-10> rdf:type owl:ontology .
 
-ex:eventInstance a go:Event ;
-    go:HasTheme ex:theOther ;
+ex:other a go:substance ;
+    ex:hasproperty ex:endlessness .
+
+ex:endlessness a go:state .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/317-11> rdf:type owl:ontology .
+
+ex:eventinstance a go:event ;
+    go:hastheme ex:theother ;
     ex:negation true .
 
-ex:theOther a go:object .
-go:Event rdfs:label "رخداد"@fa.
+ex:theother a go:object .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-12> rdf:type owl:ontology .
 
-ex:Other a go:Substance .
-ex:State1 a go:state .
-ex:State2 a go:state .
+ex:other a go:substance .
+ex:state1 a go:state .
+ex:state2 a go:state .
 
-ex:NoTransformation a go:Event ;
+ex:notransformation a go:event ;
     ex:negation true ;
-    go:HasAgent ex:Other ;
-    go:HasTheme ex:State1 , ex:State2 .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+    go:hasagent ex:other ;
+    go:hastheme ex:state1 , ex:state2 .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/317-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/317-13> rdf:type owl:ontology .
 
-ex:theOther a go:entity .
-ex:everything a go:Substance .
+ex:theother a go:entity .
+ex:everything a go:substance .
 
-ex:creationEvent a go:Event ;
-    go:HasAgent ex:theOther ;
-    go:HasTheme ex:everything .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:creationevent a go:event ;
+    go:hasagent ex:theother ;
+    go:hastheme ex:everything .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

@@ -1,95 +1,98 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/371#> .
+@prefix ex: <http://etratnet.ir/graph/example/371#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/371> rdf:type go:ontology ;
+        go:hascontent "4.  «خداوند هيچ پيامبرى را برنينگيخت تا آن كه در [اعتقاد به] سه كار از او پيمان گرفت: اقرار كردن به بندگى خود نسبت به خدا، شريك نياوردن براى او، و اين كه خدا آنچه را خواهد پس و پيش كند»."@fa,
+        "4.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «مَا بَعَثَ اللّه‌ُ نَبِيّاً حَتّى يَأْخُذَ عَلَيْهِ ثَلاَثَ خِصَالٍ: الاْءِقْرَارَ لَهُ بِالْعُبُودِيَّةِ، وَخَلْعَ الْأَنْدَادِ، وَأَنَّ اللّه‌َ يُقَدِّمُ مَا يَشَاءُ، وَيُؤخِّرُ مَا يَشَاءُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/371-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/371-1> rdf:type owl:ontology .
 
-ex:event1 a go:Sending ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Prophet .
+ex:event1 a go:sending ;
+    go:hasagent ex:god ;
+    go:hastheme ex:prophet .
 
-ex:event2 a go:Taking ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ThreeCharacteristics ;
-    go:RelationTo ex:Prophet .
+ex:event2 a go:taking ;
+    go:hasagent ex:god ;
+    go:hastheme ex:threecharacteristics ;
+    go:relationto ex:prophet .
 
-ex:God a go:Substance .
-ex:Prophet a go:Substance .
-ex:ThreeCharacteristics a go:Quality ;
-    go:hasQuantity "3"^^<http://www.w3.org/2001/XMLSchema#integer> ;
-    go:relatedTo ex:Prophet .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/371-2> rdf:type owl:Ontology .
-
-ex:TheseTraits a go:Substance ;
-    go:hasCharacteristic ex:AckOfHisSlavery .
-
-ex:AckOfHisSlavery a go:Characteristic ;
-    rdfs:label "Acknowledgment of his slavery"@en .
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:substance .
+ex:prophet a go:substance .
+ex:threecharacteristics a go:quality ;
+    go:hasquantity "3"^^<http://www.w3.org/2001/xmlschema#integer> ;
+    go:relatedto ex:prophet .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/371-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/371-2> rdf:type owl:ontology .
 
-ex:RemovalOfRivals a go:Event ;
-    go:hasTheme ex:Rivals ;
-    go:isQualityOf ex:Qualities .
+ex:thesetraits a go:substance ;
+    go:hascharacteristic ex:ackofhisslavery .
 
-ex:Rivals a go:Substance ;
-    rdfs:label "Rivals"@en .
-
-ex:Qualities a go:Substance ;
-    rdfs:label "Qualities"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:ackofhisslavery a go:characteristic ;
+    rdfs:label "acknowledgment of his slavery"@en .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/371-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/371-3> rdf:type owl:ontology .
 
-ex:GivingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:WilledThing .
+ex:removalofrivals a go:event ;
+    go:hastheme ex:rivals ;
+    go:isqualityof ex:qualities .
 
-ex:God a go:deity .
+ex:rivals a go:substance ;
+    rdfs:label "rivals"@en .
 
-ex:WilledThing a go:entity ;
-    go:isCausedBy ex:GodWill .
-
-ex:GodWill a go:concept .
-go:Event rdfs:label "رخداد"@fa.
+ex:qualities a go:substance ;
+    rdfs:label "qualities"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/371-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/371-4> rdf:type owl:ontology .
 
-ex:event_delay_001 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Desired_Thing .
+ex:givingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:willedthing .
 
-ex:God a go:Substance .
-ex:Desired_Thing a go:Substance ;
-    ex:WilledBy ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:deity .
+
+ex:willedthing a go:entity ;
+    go:iscausedby ex:godwill .
+
+ex:godwill a go:concept .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/371-5> rdf:type owl:ontology .
+
+ex:event_delay_001 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:desired_thing .
+
+ex:god a go:substance .
+ex:desired_thing a go:substance ;
+    ex:willedby ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

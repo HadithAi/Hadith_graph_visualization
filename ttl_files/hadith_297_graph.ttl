@@ -1,163 +1,166 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/297#> .
+@prefix ex: <http://etratnet.ir/graph/example/297#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/297> rdf:type go:ontology ;
+        go:hascontent "5.  به امام عليه‌السلام نوشتم و عرض كردم كه ياران شما در باره علم [خداوند]اختلاف نظر دارند. برخى از آنها مى‌گويند: خداوند از ازل و پيش از به وجود آوردن چيزها عالم بوده است، و برخى‌شان مى‌گويند: ما قبول نداريم كه خدا از ازل عالم بوده است؛ زيرا، «مى‌داند» به معناى «ايجاد مى‌كند» است؛ پس، اگر [ازلى بودن] علم را ثابت كنيم، ثابت كرده‌ايم كه از ازل چيزى با او بوده است. فدايتان شوم، اگر صلاح مى‌دانيد، در اين باره آموزه‌اى به من ياد دهيد كه بر آن بمانم و از آن فراتر نروم. حضرت با خط خود نوشت: «خداوند بزرگ و بلندنام، از ازل عالم بوده است»."@fa,
+        "5. كَتَبْتُ إِلَى الرَّجُلِ عليه‌السلام أَسْأَلُهُ أَنَّ مَوَالِيَكَ اخْتَلَفُوا فِي الْعِلْمِ، فَقَالَ بَعْضُهُمْ: لَمْ يَزَلِ اللّه‌ُ عَالِماً قَبْلَ فِعْلِ الْأَشْيَاءِ، وَقَالَ بَعْضُهُمْ: لاَ نَقُولُ: لَمْ يَزَلِ اللّه‌ُ عَالِماً؛ لِأَنَّ مَعْنى «يَعْلَمُ» «يَفْعَلُ»، فَإِنْ أَثْبَتْنَا الْعِلْمَ، فَقَدْ أَثْبَتْنَا فِي الْأَزَلِ مَعَهُ شَيْئاً، فَإِنْ رَأَيْتَ ـ جَعَلَنِيَ اللّه‌ُ فِدَاكَ ـ أَنْ تُعَلِّمَنِي مِنْ ذلِكَ مَا أَقِفُ عَلَيْهِ وَلاَ أَجُوزُهُ. فَكَتَبَ بِخَطِّهِ عليه‌السلام: «لَمْ يَزَلِ اللّه‌ُ عَالِماً تَبَارَكَ وَتَعَالى ذِكْرُهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/297-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/297-1> rdf:type owl:ontology .
 
-ex:event1 a go:Write ;
-    go:HasAgent ex:he ;
-    go:HasRecipient ex:man_peace ;
-    go:HasTheme ex:event2 .
+ex:event1 a go:write ;
+    go:hasagent ex:he ;
+    go:hasrecipient ex:man_peace ;
+    go:hastheme ex:event2 .
 
-ex:event2 a go:Ask ;
-    go:HasAgent ex:he ;
-    go:HasRecipient ex:man_peace ;
-    go:About ex:disagreement .
+ex:event2 a go:ask ;
+    go:hasagent ex:he ;
+    go:hasrecipient ex:man_peace ;
+    go:about ex:disagreement .
 
-ex:disagreement a go:Difference ;
-    go:Involves ex:followers ;
-    go:Regarding ex:knowledge .
+ex:disagreement a go:difference ;
+    go:involves ex:followers ;
+    go:regarding ex:knowledge .
 
-ex:he a go:Person .
-ex:man_peace a go:Person ;
-    go:HasTitle "peace be upon him" .
-ex:followers a go:Group ;
-    go:BelongsTo ex:man_peace .
-ex:knowledge a go:Concept .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/297-2> rdf:type owl:Ontology .
-
-ex:SpeechEvent1 rdf:type go:Communication ;
-    go:HasAgent ex:FollowersOfMan ;
-    go:HasTheme ex:Proposition1 .
-
-ex:FollowersOfMan rdf:type go:PersonGroup ;
-    go:aboutPerson ex:ManPeaceUponHim .
-
-ex:ManPeaceUponHim rdf:type go:Person ;
-    go:hasRespectfulTitle "peace be upon him" .
-
-ex:Proposition1 rdf:type go:Proposition ;
-    go:asserts ex:GodKnowledgeBeforeCreation .
-
-ex:GodKnowledgeBeforeCreation rdf:type go:State ;
-    go:hasSubject ex:God ;
-    go:hasProperty ex:AlwaysKnowledgeableBeforeCreation .
-
-ex:God rdf:type go:Deity .
-
-ex:AlwaysKnowledgeableBeforeCreation rdf:type go:TemporalProperty ;
-    go:before ex:CreationOfThings .
-
-ex:CreationOfThings rdf:type go:Event ;
-    go:hasTheme ex:Things .
-
-ex:Things rdf:type go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:he a go:person .
+ex:man_peace a go:person ;
+    go:hastitle "peace be upon him" .
+ex:followers a go:group ;
+    go:belongsto ex:man_peace .
+ex:knowledge a go:concept .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/297-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/297-2> rdf:type owl:ontology .
 
-ex:speechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:someFollowersManPBUH ;
-    go:HasTheme ex:proposition1 .
+ex:speechevent1 rdf:type go:communication ;
+    go:hasagent ex:followersofman ;
+    go:hastheme ex:proposition1 .
 
-ex:someFollowersManPBUH a go:Group ;
-    go:represents ex:followersOfManPBUH .
+ex:followersofman rdf:type go:persongroup ;
+    go:aboutperson ex:manpeaceuponhim .
 
-ex:followersOfManPBUH a go:Agent .
+ex:manpeaceuponhim rdf:type go:person ;
+    go:hasrespectfultitle "peace be upon him" .
 
-ex:proposition1 a go:Proposition ;
-    go:concerns ex:God ;
-    go:states "We do not say that God ceased to know because the meaning of 'knowing' is 'acting'"^^xsd:string .
+ex:proposition1 rdf:type go:proposition ;
+    go:asserts ex:godknowledgebeforecreation .
 
-ex:God a go:Agent .
-go:Agent rdfs:label "عامل"@fa.
+ex:godknowledgebeforecreation rdf:type go:state ;
+    go:hassubject ex:god ;
+    go:hasproperty ex:alwaysknowledgeablebeforecreation .
 
+ex:god rdf:type go:deity .
 
-@base <http://etratnet.ir/ontology/> .
+ex:alwaysknowledgeablebeforecreation rdf:type go:temporalproperty ;
+    go:before ex:creationofthings .
 
-<http://etratnet.ir/ontology/297-4> rdf:type owl:Ontology .
+ex:creationofthings rdf:type go:event ;
+    go:hastheme ex:things .
 
-ex:ProvingEvent1 a go:Event ;
-    go:HasAgent ex:We ;
-    go:HasTheme ex:Knowledge .
-
-ex:ProvingEvent2 a go:Event ;
-    go:HasAgent ex:We ;
-    go:HasTheme ex:Something ;
-    time:hasBeginning ex:Eternity .
-
-ex:We a go:agent .
-ex:Knowledge a go:Substance .
-ex:Something a go:entity .
-ex:Eternity a time:Instant .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:things rdf:type go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/297-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/297-3> rdf:type owl:ontology .
 
-ex:RequestEvent1 a go:RequestEvent ;
-    go:HasAgent ex:He ;
-    go:HasTheme ex:TeachingEvent1 ;
-    go:HasRecipient ex:Man_AlayhisSalam .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:somefollowersmanpbuh ;
+    go:hastheme ex:proposition1 .
 
-ex:TeachingEvent1 a go:TeachingEvent ;
-    go:HasAgent ex:Man_AlayhisSalam ;
-    go:HasTheme ex:KnowledgeContent ;
-    go:HasRecipient ex:He .
+ex:somefollowersmanpbuh a go:group ;
+    go:represents ex:followersofmanpbuh .
 
-ex:He a go:Person .
-ex:Man_AlayhisSalam a go:Person ;
-    go:Honorific "peace be upon him" .
-ex:KnowledgeContent a go:Information ;
-    go:Description "from that what I can comprehend and not exceed" .
-go:Information rdfs:label "اطلاعات"@fa.
+ex:followersofmanpbuh a go:agent .
+
+ex:proposition1 a go:proposition ;
+    go:concerns ex:god ;
+    go:states "we do not say that god ceased to know because the meaning of 'knowing' is 'acting'"^^xsd:string .
+
+ex:god a go:agent .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/297-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/297-4> rdf:type owl:ontology .
 
-ex:WritingEvent1 a go:Event ;
-    go:HasAgent ex:TheMan_PeaceBeUponHim ;
-    go:HasTheme ex:WrittenText1 .
+ex:provingevent1 a go:event ;
+    go:hasagent ex:we ;
+    go:hastheme ex:knowledge .
 
-ex:TheMan_PeaceBeUponHim a go:Person ;
+ex:provingevent2 a go:event ;
+    go:hasagent ex:we ;
+    go:hastheme ex:something ;
+    time:hasbeginning ex:eternity .
+
+ex:we a go:agent .
+ex:knowledge a go:substance .
+ex:something a go:entity .
+ex:eternity a time:instant .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-5> rdf:type owl:ontology .
+
+ex:requestevent1 a go:requestevent ;
+    go:hasagent ex:he ;
+    go:hastheme ex:teachingevent1 ;
+    go:hasrecipient ex:man_alayhissalam .
+
+ex:teachingevent1 a go:teachingevent ;
+    go:hasagent ex:man_alayhissalam ;
+    go:hastheme ex:knowledgecontent ;
+    go:hasrecipient ex:he .
+
+ex:he a go:person .
+ex:man_alayhissalam a go:person ;
+    go:honorific "peace be upon him" .
+ex:knowledgecontent a go:information ;
+    go:description "from that what i can comprehend and not exceed" .
+go:information rdfs:label "اطلاعات"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/297-6> rdf:type owl:ontology .
+
+ex:writingevent1 a go:event ;
+    go:hasagent ex:theman_peacebeuponhim ;
+    go:hastheme ex:writtentext1 .
+
+ex:theman_peacebeuponhim a go:person ;
     rdfs:label "the man (peace be upon him)" .
 
-ex:God a go:Substance ;
-    rdfs:label "God" ;
-    ex:hasAttribute ex:Knowledgeable ;
-    ex:isBlessedAndExalted true .
+ex:god a go:substance ;
+    rdfs:label "god" ;
+    ex:hasattribute ex:knowledgeable ;
+    ex:isblessedandexalted true .
 
-ex:WrittenText1 a go:Statement ;
-    rdfs:label "God has always been knowledgeable; blessed and exalted be His mention" ;
-    ex:about ex:God ;
-    ex:expressesAttribute ex:Knowledgeable .
+ex:writtentext1 a go:statement ;
+    rdfs:label "god has always been knowledgeable; blessed and exalted be his mention" ;
+    ex:about ex:god ;
+    ex:expressesattribute ex:knowledgeable .
 
-ex:Knowledgeable a ex:Attribute ;
+ex:knowledgeable a ex:attribute ;
     rdfs:label "knowledgeable" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

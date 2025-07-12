@@ -1,51 +1,54 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/252#> .
+@prefix ex: <http://etratnet.ir/graph/example/252#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/252> rdf:type go:ontology ;
+        go:hascontent "3.  «خداى عز و جل مى‌فرمايد: «و پايان به سوى پروردگار توست». پس هرگاه سخن به خدا رسيد، دست نگه داريد»."@fa,
+        "3.  قَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «إِنَّ اللّه‌َ ـ عَزَّ وَجَلَّ ـ يَقُولُ: «وَأَنَّ إِلى رَبِّكَ المُنْتَهى» فَإِذَا انْتَهَى الْكَلاَمُ إِلَى اللّه‌ِ، فَأَمْسِكُوا»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/252-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/252-1> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Agent, go:Person ;
-    rdfs:label "Allah"@ar .
+ex:godalmighty a go:agent, go:person ;
+    rdfs:label "allah"@ar .
 
-ex:SayingEvent1 a go:Communication ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:Utterance1 .
+ex:sayingevent1 a go:communication ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:utterance1 .
 
-ex:Utterance1 a go:InformationContent ;
-    go:hasText "And that to your Lord is the final return."@en .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:utterance1 a go:informationcontent ;
+    go:hastext "and that to your lord is the final return."@en .
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/252-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/252-2> rdf:type owl:ontology .
 
-ex:ConversationEndingEvent a go:Event ;
-    go:HasTheme ex:Conversation ;
-    go:HasAgent ex:God .
+ex:conversationendingevent a go:event ;
+    go:hastheme ex:conversation ;
+    go:hasagent ex:god .
 
-ex:RefrainFromSpeakingEvent a go:Event ;
-    go:HasTheme ex:Speech ;
-    go:HasAgent ex:Person ;
-    go:isConsequenceOf ex:ConversationEndingEvent .
+ex:refrainfromspeakingevent a go:event ;
+    go:hastheme ex:speech ;
+    go:hasagent ex:person ;
+    go:isconsequenceof ex:conversationendingevent .
 
-ex:Conversation a go:Action .
-ex:God a go:Substance .
-ex:Speech a go:Action .
-ex:Person a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:conversation a go:action .
+ex:god a go:substance .
+ex:speech a go:action .
+ex:person a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

@@ -1,720 +1,723 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/262#> .
+@prefix ex: <http://etratnet.ir/graph/example/262#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/262> rdf:type go:ontology ;
+        go:hascontent "2.  ابو قُرّه محدّث از من خواست كه او را خدمت ابو الحسن الرضا عليه‌السلام ببرم. من از حضرت برايش اجازه ورود خواستم. حضرت اجازه داد و ابو قره به خدمت امام عليه‌السلام رسيد و از آن بزرگوار در باره حلال و حرام و احكام پرسيد تا آن كه سؤالش به موضوع خدا رسيد، و گفت: براى ما روايت شده است كه خداوند ديدن [خود] و سخن گفتن [خود] را ميان دو پيامبر قسمت كرد. سخن گفتن را به موسى داد، و ديدن را به محمد. ابو الحسن عليه‌السلام فرمود: «پس چه كسى بود كه از جانب خداوند به پريان و آدميان ابلاغ كرد: «ديدگان او را در نمى‌يابند» و «آنان به او دانشى ندارند» و «هيچ چيزى همانند او نيست»؟ آيا محمد نبود؟» ابو قره عرض كرد: چرا. حضرت فرمود: «چگونه ممكن است مردى به سوى همه آفريدگان بيايد و به آنها خبر دهد كه از جانب خدا آمده و به فرمان خدا آنان را به خدا فرا خواند و گويد: «ديدگان او را در نمى‌يابند» و «آنان به او دانشى ندارند» و «هيچ چيزى همانند او نيست» و با اين حال بگويد: من با چشمم خدا را ديده‌ام، و به او احاطه علمى دارم و خدا به شكل بشر است؟ آيا شرم نمى‌كنيد؟! [حتّى] زنادقه نتوانستند چنين نسبتى به او (پيامبر) دهند كه چيزى از جانب خدا بياورد و سپس از سوى ديگر خلاف آن را بگويد».ابو قُرّه عرض كرد: او خود مى‌فرمايد: «و قطعا بار ديگرى هم او را ديده است». ابو الحسن عليه‌السلام فرمود: «بعد از اين آيه، آيه‌اى است كه نشان مى‌دهد او چه ديد. خداوند مى‌فرمايد: «دل آنچه را ديد دروغ نشمرد»؛ يعنى دل محمد آنچه را چشمان او ديد دروغ نشمرد. سپس خبر داده است كه چه ديد: مى‌فرمايد: «براستى كه از آيات بزرگ پروردگار خود چيزها ديد»، و آيات خدا غير از خداست. و خدا فرموده است: «آنان به او دانشى ندارند»، در صورتى كه اگر ديدگان او را ببينند به او احاطه علمى پيدا مى‌كنند و شناخت صورت مى‌پذيرد». ابو قره عرض كرد: پس، روايات را تكذيب مى‌كنيد؟ ابو الحسن عليه‌السلام فرمود: «هرگاه روايات بر خلاف قرآن باشند آنها را تكذيب مى‌كنم. آنچه مسلمانان بر آن همداستان‌اند اين است كه به خداوند احاطه علمى پيدا نشود، و «ديدگان او را در نمى‌يابند» و «هيچ چيزى همانند او نيست»."@fa,
+        "2.  سَأَلَنِي أَبُو قُرَّةَ الْمُحَدِّثُ أَنْ أُدْخِلَهُ عَلى أَبِي الْحَسَنِ الرِّضَا عليه‌السلام، فَاسْتَأْذَنْتُهُ فِي ذلِكَ، فَأَذِنَ لِي فَدَخَلَ عَلَيْهِ، فَسَأَلَهُ عَنِ الْحَلاَلِ وَالْحَرَامِ وَالْأَحْكَامِ حَتّى بَلَغَ سُؤالُهُ إِلَى التَّوْحِيدِ، فَقَالَ أَبُو قُرَّةَ: إِنَّا رُوِّينَا أَنَّ اللّه‌َ قَسَمَ الرُّؤيَةَ وَالْكَلاَمَ بَيْنَ نَبِيَّيْنِ، فَقَسَمَ الْكَلاَمَ لِمُوسى، وَلِمُحَمَّدٍ الرُّؤيَةَ. فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «فَمَنِ الْمُبَلِّغُ عَنِ اللّه‌ِ إِلَى الثَّقَلَيْنِ مِنَ الْجِنِّ وَالاْءنْسِ «لاَتُدْرِكُهُ الْأَبْصَارُ» وَ«لاَ يُحِيطُونَ بِهِ عِلْماً» وَ«لَيْسَ كَمِثْلِهِ شَىْ‌ءٌ»؟ أَ لَيْسَ مُحَمَّدٌ؟» قَالَ: بَلى، قَالَ: «كَيْفَ يَجِيءُ رَجُلٌ إِلَى الْخَلْقِ جَمِيعاً، فَيُخْبِرُهُمْ أَنَّهُ جَاءَ مِنْ عِنْدِ اللّه‌ِ، وَأَنَّهُ يَدْعُوهُمْ إِلَى اللّه‌ِ بِأَمْرِ اللّه‌ِ، فَيَقُولُ: «لاَ تُدْرِكُهُ الْأَبْصَارُ»، وَ «لاَ يُحِيطُونَ بِهِ‌عِلْماً» وَ «لَيْسَ كَمِثْلِهِ شَىْ‌ءٌ» ثُمَّ يَقُولُ: أَنَا رَأَيْتُهُ بِعَيْنِي، وَأَحَطْتُ بِهِ عِلْماً، وَهُوَ عَلى صُورَةِ الْبَشَرِ؟! أَمَا تَسْتَحُونَ؟ مَا قَدَرَتِ الزَّنَادِقَةُ أَنْ تَرْمِيَهُ بِهذَا أَنْ يَكُونَ يَأْتِي مِنْ عِنْدِ اللّه‌ِ بِشَيْءٍ، ثُمَّ يَأْتِي بِخِلاَفِهِ مِنْ وَجْهٍ آخَرَ».قَالَ أَبُو قُرَّةَ: فَإِنَّهُ يَقُولُ: «وَلَقَدْ رَآهُ نَزْلَةً أُخْرى»؟ فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «إِنَّ بَعْدَ هذِهِ الاْيَةِ مَا يَدُلُّ عَلى مَا رَأى؛ حَيْثُ قَالَ: «ماكَذَبَ الفُؤ'c7دُ ما رَأى» يَقُولُ: مَا كَذَبَ فُؤادُ مُحَمَّدٍ مَا رَأَتْ عَيْنَاهُ، ثُمَّ أَخْبَرَ بِمَا رَأى، فَقَالَ: «لَقَدْ رَأى مِنْ آياتِ رَبِّهِ الْكُبْرى» فَآيَاتُ اللّه‌ِ غَيْرُ اللّه‌ِ، وَقَدْ قَالَ اللّه‌ُ: «وَلاَ يُحِيطُونَ‌بِهِ عِلْماً» فَإِذَا رَأَتْهُ الْأَبْصَارُ، فَقَدْ أَحَاطَتْ بِهِ الْعِلْمَ، وَوَقَعَتِ الْمَعْرِفَةُ». فَقَالَ أَبُو قُرَّةَ: فَتُكَذِّبُ بِالرِّوَايَاتِ؟ فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «إِذَا كَانَتِ الرِّوَايَاتُ مُخَالِفَةً لِلْقُرْآنِ، كَذَّبْتُهَا، وَمَا أَجْمَعَ الْمُسْلِمُونَ عَلَيْهِ أَنَّهُ لاَ يُحَاطُ بِهِ عِلْماً، وَ«لاَ تُدْرِكُهُ الْأَبْصَارُ» وَ «لَيْسَ كَمِثْلِهِ شَىْ‌ءٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-1> rdf:type owl:ontology .
 
-ex:AbuQarra a go:Person, go:Substance ;
-    go:hasRole "Hadith Narrator" .
+ex:abuqarra a go:person, go:substance ;
+    go:hasrole "hadith narrator" .
 
-ex:Me a go:Person, go:Substance .
+ex:me a go:person, go:substance .
 
-ex:AbuAlHasanAlRidha a go:Person, go:Substance ;
+ex:abualhasanalridha a go:person, go:substance ;
     go:honorific "peace be upon him" .
 
-event:Asking_1 a go:Request, go:Event ;
-    go:HasAgent ex:AbuQarra ;
-    go:HasRecipient ex:Me ;
-    go:HasTheme event:Introduction_1 .
+event:asking_1 a go:request, go:event ;
+    go:hasagent ex:abuqarra ;
+    go:hasrecipient ex:me ;
+    go:hastheme event:introduction_1 .
 
-event:Introduction_1 a go:Action, go:Event ;
-    go:HasAgent ex:Me ;
-    go:HasTheme ex:AbuQarra ;
-    go:HasRecipient ex:AbuAlHasanAlRidha .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+event:introduction_1 a go:action, go:event ;
+    go:hasagent ex:me ;
+    go:hastheme ex:abuqarra ;
+    go:hasrecipient ex:abualhasanalridha .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-2> rdf:type owl:ontology .
 
-ex:RequestPermissionEvent1 a go:RequestPermission ;
-    go:HasAgent ex:I ;
-    go:HasRecipient ex:myFather_AlHasanAlRidha ;
-    go:HasTheme ex:thatMatter .
+ex:requestpermissionevent1 a go:requestpermission ;
+    go:hasagent ex:i ;
+    go:hasrecipient ex:myfather_alhasanalridha ;
+    go:hastheme ex:thatmatter .
 
-ex:I a go:Person .
-ex:myFather_AlHasanAlRidha a go:Person ;
-    rdfs:label "Al-Hasan Al-Ridha" ;
-    go:hasRelationTo ex:I "father" ;
+ex:i a go:person .
+ex:myfather_alhasanalridha a go:person ;
+    rdfs:label "al-hasan al-ridha" ;
+    go:hasrelationto ex:i "father" ;
     go:honorific "peace be upon him" .
 
-ex:thatMatter a go:Matter .
+ex:thatmatter a go:matter .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-3> rdf:type owl:ontology .
 
-ex:AlHassanAlRidha a go:Person ;
-    rdfs:label "Al-Hassan Al-Ridha (peace be upon him)" .
+ex:alhassanalridha a go:person ;
+    rdfs:label "al-hassan al-ridha (peace be upon him)" .
 
-ex:Speaker a go:Person ;
+ex:speaker a go:person ;
     rdfs:label "the speaker" .
 
-ex:PermissionEvent a go:Event ;
-    go:HasAgent ex:AlHassanAlRidha ;
-    go:HasTheme ex:Speaker ;
-    go:hasAction "permit" .
+ex:permissionevent a go:event ;
+    go:hasagent ex:alhassanalridha ;
+    go:hastheme ex:speaker ;
+    go:hasaction "permit" .
 
-ex:EnterEvent a go:Event ;
-    go:HasAgent ex:Speaker ;
-    go:HasTheme ex:AlHassanAlRidha ;
-    go:hasAction "enter upon" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-4> rdf:type owl:Ontology .
-
-ex:event_enter_abq a go:Event ;
-    go:hasAgent ex:AbuQura ;
-    go:hasTheme ex:AbuAlHasanAlRidha ;
-    go:EventType "entering" .
-
-ex:event_ask_abq a go:Event ;
-    go:hasAgent ex:AbuQura ;
-    go:hasTheme ex:AbuAlHasanAlRidha ;
-    go:hasTopic ex:QuestionAboutHalalHaramAhkam ;
-    go:EventType "asking" .
-
-ex:AbuQura a go:person .
-ex:AbuAlHasanAlRidha a go:person .
-
-ex:QuestionAboutHalalHaramAhkam a go:Substance ;
-    go:hasPart ex:Halal, ex:Haram, ex:Ahkam .
-
-ex:Halal a go:Substance ; go:label "lawful" .
-ex:Haram a go:Substance ; go:label "unlawful" .
-ex:Ahkam a go:Substance ; go:label "rulings" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:enterevent a go:event ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:alhassanalridha ;
+    go:hasaction "enter upon" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-4> rdf:type owl:ontology .
 
-ex:AbuQura a go:Substance ;
-    rdfs:label "Abu Qura" .
+ex:event_enter_abq a go:event ;
+    go:hasagent ex:abuqura ;
+    go:hastheme ex:abualhasanalridha ;
+    go:eventtype "entering" .
 
-ex:QuestioningEvent1 a go:Event ;
-    go:HasAgent ex:AbuQura ;
-    go:HasTheme ex:Monotheism ;
-    go:hasStatus "continuedUntil" .
+ex:event_ask_abq a go:event ;
+    go:hasagent ex:abuqura ;
+    go:hastheme ex:abualhasanalridha ;
+    go:hastopic ex:questionabouthalalharamahkam ;
+    go:eventtype "asking" .
 
-ex:Monotheism a go:Substance ;
-    rdfs:label "Monotheism" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:abuqura a go:person .
+ex:abualhasanalridha a go:person .
 
+ex:questionabouthalalharamahkam a go:substance ;
+    go:haspart ex:halal, ex:haram, ex:ahkam .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-6> rdf:type owl:Ontology .
-
-ex:Utterance_AbuQura_1 a go:Event ;
-    go:HasAgent ex:AbuQura ;
-    go:HasTheme ex:Event_Divide_1 .
-
-ex:AbuQura a go:Substance ;
-    rdfs:label "Abu Qura" .
-
-ex:Event_Divide_1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Vision, ex:Speech ;
-    go:HasRecipient ex:Two_Prophets .
-
-ex:God a go:Substance ;
-    rdfs:label "God" .
-
-ex:Vision a go:Substance ;
-    rdfs:label "Vision" .
-
-ex:Speech a go:Substance ;
-    rdfs:label "Speech" .
-
-ex:Two_Prophets a go:Substance ;
-    rdfs:label "Two Prophets" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:halal a go:substance ; go:label "lawful" .
+ex:haram a go:substance ; go:label "unlawful" .
+ex:ahkam a go:substance ; go:label "rulings" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-5> rdf:type owl:ontology .
 
-ex:eventDividingSpeech a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Speech ;
-    go:HasRecipient ex:ProphetMoses .
+ex:abuqura a go:substance ;
+    rdfs:label "abu qura" .
 
-ex:God a go:entity .
-ex:Speech a go:entity .
-ex:ProphetMoses a go:entity .
-go:Event rdfs:label "رخداد"@fa.
+ex:questioningevent1 a go:event ;
+    go:hasagent ex:abuqura ;
+    go:hastheme ex:monotheism ;
+    go:hasstatus "continueduntil" .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-8> rdf:type owl:Ontology .
-
-ex:event123 a go:Event ;
-    go:HasAgent dbr:God ;
-    go:HasTheme ex:Vision ;
-    go:HasRecipient dbr:Prophet_Muhammad .
-
-ex:Vision a go:phenomenon .
-go:Event rdfs:label "رخداد"@fa.
+ex:monotheism a go:substance ;
+    rdfs:label "monotheism" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-6> rdf:type owl:ontology .
 
-ex:AbuAlHasan a go:Person ;
-    rdfs:label "Abu al-Hasan" .
+ex:utterance_abuqura_1 a go:event ;
+    go:hasagent ex:abuqura ;
+    go:hastheme ex:event_divide_1 .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:abuqura a go:substance ;
+    rdfs:label "abu qura" .
 
-ex:Jinn a go:SupernaturalEntity ;
-    rdfs:label "Jinn" .
+ex:event_divide_1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:vision, ex:speech ;
+    go:hasrecipient ex:two_prophets .
 
-ex:Humans a go:Group ;
-    rdfs:label "Humans" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:TwoWeightyOnes a go:Group ;
-    rdfs:label "Two Weighty Ones" ;
-    go:hasMember ex:Jinn , ex:Humans .
+ex:vision a go:substance ;
+    rdfs:label "vision" .
 
-ex:SayingEvent1 a go:CommunicativeEvent , go:EventInstance ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:Question1 .
+ex:speech a go:substance ;
+    rdfs:label "speech" .
 
-ex:Question1 a ex:Question ;
-    ex:aboutMessageFrom ex:God ;
-    ex:messageTo ex:TwoWeightyOnes .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-10> rdf:type owl:Ontology .
-
-ex:event1 a go:PerceptionEvent ;
-    go:HasAgent ex:Eyes ;
-    go:HasTheme ex:UnknownEntity ;
-    go:HasOutcome ex:NotPerceived .
-
-ex:Eyes a go:Organ .
-
-ex:UnknownEntity a go:Substance .
-
-ex:NotPerceived a go:State .
-go:Substance rdfs:label "شی"@fa.
+ex:two_prophets a go:substance ;
+    rdfs:label "two prophets" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-7> rdf:type owl:ontology .
 
-ex:They a go:Agent .
-ex:It a go:Substance .
+ex:eventdividingspeech a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:speech ;
+    go:hasrecipient ex:prophetmoses .
 
-ex:Event_HaveKnowledge a go:Event ;
-    go:HasAgent ex:They ;
-    go:HasTheme ex:It ;
-    go:hasNegation "true" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-12> rdf:type owl:Ontology .
-
-ex:Him a go:Substance ;
-    go:hasNoEqual ex:Him .
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:entity .
+ex:speech a go:entity .
+ex:prophetmoses a go:entity .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-8> rdf:type owl:ontology .
 
-ex:event1 a go:QuestionEvent ;
+ex:event123 a go:event ;
+    go:hasagent dbr:god ;
+    go:hastheme ex:vision ;
+    go:hasrecipient dbr:prophet_muhammad .
+
+ex:vision a go:phenomenon .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-9> rdf:type owl:ontology .
+
+ex:abualhasan a go:person ;
+    rdfs:label "abu al-hasan" .
+
+ex:god a go:deity ;
+    rdfs:label "god" .
+
+ex:jinn a go:supernaturalentity ;
+    rdfs:label "jinn" .
+
+ex:humans a go:group ;
+    rdfs:label "humans" .
+
+ex:twoweightyones a go:group ;
+    rdfs:label "two weighty ones" ;
+    go:hasmember ex:jinn , ex:humans .
+
+ex:sayingevent1 a go:communicativeevent , go:eventinstance ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:question1 .
+
+ex:question1 a ex:question ;
+    ex:aboutmessagefrom ex:god ;
+    ex:messageto ex:twoweightyones .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-10> rdf:type owl:ontology .
+
+ex:event1 a go:perceptionevent ;
+    go:hasagent ex:eyes ;
+    go:hastheme ex:unknownentity ;
+    go:hasoutcome ex:notperceived .
+
+ex:eyes a go:organ .
+
+ex:unknownentity a go:substance .
+
+ex:notperceived a go:state .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-11> rdf:type owl:ontology .
+
+ex:they a go:agent .
+ex:it a go:substance .
+
+ex:event_haveknowledge a go:event ;
+    go:hasagent ex:they ;
+    go:hastheme ex:it ;
+    go:hasnegation "true" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-12> rdf:type owl:ontology .
+
+ex:him a go:substance ;
+    go:hasnoequal ex:him .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-13> rdf:type owl:ontology .
+
+ex:event1 a go:questionevent ;
     ex:negation true ;
-    go:HasTheme ex:Muhammad .
+    go:hastheme ex:muhammad .
 
-ex:Muhammad a go:Person .
+ex:muhammad a go:person .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-14> rdf:type owl:ontology .
 
-ex:Man a go:PhysicalEntity ;
+ex:man a go:physicalentity ;
     rdfs:label "man" .
 
-ex:People a go:Group ;
+ex:people a go:group ;
     rdfs:label "people" .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Event1 a go:Event ;
+ex:event1 a go:event ;
     rdfs:label "man_comes_to_people" ;
-    go:HasAgent ex:Man ;
-    go:HasTheme ex:People .
+    go:hasagent ex:man ;
+    go:hastheme ex:people .
 
-ex:Event2 a go:Event ;
+ex:event2 a go:event ;
     rdfs:label "man_tells_people" ;
-    go:HasAgent ex:Man ;
-    go:HasRecipient ex:People ;
-    go:HasTheme ex:Message .
+    go:hasagent ex:man ;
+    go:hasrecipient ex:people ;
+    go:hastheme ex:message .
 
-ex:Message a go:InformationObject ;
-    rdfs:label "message_that_man_comes_from_God" ;
-    go:HasCause ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-15> rdf:type owl:Ontology .
-
-ex:Man1 rdf:type go:Agent .
-ex:Group1 rdf:type go:ThemeGroup .
-ex:Allah rdf:type go:Deity .
-ex:CallEvent1 rdf:type go:Event , go:Call ;
-    go:HasAgent ex:Man1 ;
-    go:HasTheme ex:Group1 ;
-    go:HasGoal ex:Allah ;
-    go:HasCause ex:CommandOfAllah .
-
-ex:CommandOfAllah rdf:type go:Command ;
-    go:HasAgent ex:Allah .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:message a go:informationobject ;
+    rdfs:label "message_that_man_comes_from_god" ;
+    go:hascause ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-15> rdf:type owl:ontology .
 
-ex:man1 a go:Human ;
-    rdfs:label "This man" .
+ex:man1 rdf:type go:agent .
+ex:group1 rdf:type go:themegroup .
+ex:allah rdf:type go:deity .
+ex:callevent1 rdf:type go:event , go:call ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:group1 ;
+    go:hasgoal ex:allah ;
+    go:hascause ex:commandofallah .
 
-ex:eyes1 a go:OrgansOfSight ;
-    rdfs:label "The eyes" .
-
-ex:perceptionEvent1 a go:PerceptionEvent ;
-    go:HasAgent ex:eyes1 ;
-    go:HasTheme ex:man1 ;
-    go:isNegated true .
-
-ex:speechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:man1 ;
-    go:HasTheme ex:perceptionEvent1 ;
-    rdfs:label "This man says 'the eyes do not perceive him'" .
+ex:commandofallah rdf:type go:command ;
+    go:hasagent ex:allah .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-16> rdf:type owl:ontology .
 
-ex:ThisMan rdf:type go:Person .
-ex:SayEvent rdf:type go:Communication ;
-    go:HasAgent ex:ThisMan ;
-    go:HasTheme ex:SpeechContent .
-
-ex:SpeechContent rdf:type go:Proposition ;
-    go:hasContent "They do not encompass any knowledge about him." .
-
-ex:EncompassKnowledgeEvent rdf:type go:Event ;
-    go:HasAgent ex:They ;
-    go:HasTheme ex:Knowledge ;
-    go:HasGoal ex:ThisMan ;
-    go:hasNegation true .
-
-ex:They rdf:type go:Group .
-ex:Knowledge rdf:type go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-18> rdf:type owl:Ontology .
-
-ex:ThisMan a go:Substance .
-ex:SayingEvent1 a go:Event ;
-    go:HasAgent ex:ThisMan ;
-    go:HasTheme ex:Statement1 .
-
-ex:Statement1 a go:statement ;
-    go:expresses "There is nothing like him" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-19> rdf:type owl:Ontology .
-
-ex:thisMan a go:Human ;
+ex:man1 a go:human ;
     rdfs:label "this man" .
 
-ex:unknownPerson a go:Human ;
+ex:eyes1 a go:organsofsight ;
+    rdfs:label "the eyes" .
+
+ex:perceptionevent1 a go:perceptionevent ;
+    go:hasagent ex:eyes1 ;
+    go:hastheme ex:man1 ;
+    go:isnegated true .
+
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:perceptionevent1 ;
+    rdfs:label "this man says 'the eyes do not perceive him'" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-17> rdf:type owl:ontology .
+
+ex:thisman rdf:type go:person .
+ex:sayevent rdf:type go:communication ;
+    go:hasagent ex:thisman ;
+    go:hastheme ex:speechcontent .
+
+ex:speechcontent rdf:type go:proposition ;
+    go:hascontent "they do not encompass any knowledge about him." .
+
+ex:encompassknowledgeevent rdf:type go:event ;
+    go:hasagent ex:they ;
+    go:hastheme ex:knowledge ;
+    go:hasgoal ex:thisman ;
+    go:hasnegation true .
+
+ex:they rdf:type go:group .
+ex:knowledge rdf:type go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-18> rdf:type owl:ontology .
+
+ex:thisman a go:substance .
+ex:sayingevent1 a go:event ;
+    go:hasagent ex:thisman ;
+    go:hastheme ex:statement1 .
+
+ex:statement1 a go:statement ;
+    go:expresses "there is nothing like him" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-19> rdf:type owl:ontology .
+
+ex:thisman a go:human ;
+    rdfs:label "this man" .
+
+ex:unknownperson a go:human ;
     rdfs:label "the person he saw" .
 
-ex:sayingEvent a go:Event ;
+ex:sayingevent a go:event ;
     rdfs:label "saying event" ;
-    go:HasAgent ex:thisMan ;
-    go:hasContent ex:seeingEvent .
+    go:hasagent ex:thisman ;
+    go:hascontent ex:seeingevent .
 
-ex:seeingEvent a go:Event ;
+ex:seeingevent a go:event ;
     rdfs:label "seeing event" ;
-    go:HasAgent ex:thisMan ;
-    go:HasTheme ex:unknownPerson .
-go:Event rdfs:label "رخداد"@fa.
+    go:hasagent ex:thisman ;
+    go:hastheme ex:unknownperson .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-20> rdf:type owl:ontology .
 
-exEvent:sayActivity a go:SpeechEvent ;
-    go:HasAgent ex:thisMan ;
-    go:HasTheme exEvent:knowledgeSurrounding .
+exevent:sayactivity a go:speechevent ;
+    go:hasagent ex:thisman ;
+    go:hastheme exevent:knowledgesurrounding .
 
-ex:thisMan a go:Person ;
-    go:denotes "This man" .
+ex:thisman a go:person ;
+    go:denotes "this man" .
 
-exEvent:knowledgeSurrounding a go:Event ;
-    go:HasAgent ex:thisMan ;
-    go:HasTheme ex:knowledge ;
-    go:HasRecipient ex:him .
+exevent:knowledgesurrounding a go:event ;
+    go:hasagent ex:thisman ;
+    go:hastheme ex:knowledge ;
+    go:hasrecipient ex:him .
 
-ex:him a go:Person ;
+ex:him a go:person ;
     go:denotes "him" .
 
-ex:knowledge a go:Substance ;
+ex:knowledge a go:substance ;
     go:denotes "knowledge" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-21> rdf:type owl:ontology .
 
-ex:ThisMan a go:Person ;
-    go:hasState [ a go:State ;
-                 go:hasTheme go:HumanGroup ] .
+ex:thisman a go:person ;
+    go:hasstate [ a go:state ;
+                 go:hastheme go:humangroup ] .
 
-# where go:HumanGroup represents the class of humans.
+# where go:humangroup represents the class of humans.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-22> rdf:type owl:ontology .
 
-ex:Abu_al_Hasan a foaf:Person ;
-    foaf:name "Abu al-Hasan" ;
+ex:abu_al_hasan a foaf:person ;
+    foaf:name "abu al-hasan" ;
     ex:honorific "peace be upon him" .
 
-ex:Utterance_1 a go:Event, ex:SpeakingEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme "Will you not show shame?" .
-go:Event rdfs:label "رخداد"@fa.
+ex:utterance_1 a go:event, ex:speakingevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme "will you not show shame?" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-23> rdf:type owl:ontology .
 
-ex:Heretics a go:Group ;
-    rdfs:label "Heretics"@en .
+ex:heretics a go:group ;
+    rdfs:label "heretics"@en .
 
-ex:ProphetMuhammad a go:Person ;
-    rdfs:label "Prophet Muhammad"@en .
+ex:prophetmuhammad a go:person ;
+    rdfs:label "prophet muhammad"@en .
 
-ex:God a go:Deity ;
-    rdfs:label "God"@en .
+ex:god a go:deity ;
+    rdfs:label "god"@en .
 
-ex:AccusationEvent a go:Event ;
-    rdfs:label "Attempt to accuse"@en ;
-    go:HasAgent ex:Heretics ;
-    go:HasTheme ex:ProphetMuhammad ;
-    ex:hasContent ex:ChargeContent ;
-    ex:isSuccessful "false"^^xsd:boolean .
+ex:accusationevent a go:event ;
+    rdfs:label "attempt to accuse"@en ;
+    go:hasagent ex:heretics ;
+    go:hastheme ex:prophetmuhammad ;
+    ex:hascontent ex:chargecontent ;
+    ex:issuccessful "false"^^xsd:boolean .
 
-ex:ChargeContent a go:Information ;
-    rdfs:label "Charge that a message comes from God then another comes from a different source"@en ;
-    ex:contradictionBetween [ ex:source1 ex:God ; ex:source2 ex:AnotherSource ] .
+ex:chargecontent a go:information ;
+    rdfs:label "charge that a message comes from god then another comes from a different source"@en ;
+    ex:contradictionbetween [ ex:source1 ex:god ; ex:source2 ex:anothersource ] .
 
-ex:AnotherSource a go:Substance ;
-    rdfs:label "Another source"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-24> rdf:type owl:Ontology .
-
-ex:AbuQura a go:Person .
-ex:ProphetMuhammad a go:Person .
-
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:AbuQura ;
-    go:HasContent ex:ExperienceEvent1 .
-
-ex:ExperienceEvent1 a go:ExperienceEvent ;
-    go:HasAgent ex:ProphetMuhammad ;
-    go:HasTheme ex:AnotherBout .
-
-ex:AnotherBout a go:Event .
-go:Event rdfs:label "رخداد"@fa.
+ex:anothersource a go:substance ;
+    rdfs:label "another source"@en .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-25> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-24> rdf:type owl:ontology .
 
-# Entities
-ex:Statement1 a go:utterance ;
-  go:HasTheme ex:Quote1 .
+ex:abuqura a go:person .
+ex:prophetmuhammad a go:person .
 
-ex:Quote1 a go:proposition ;
-  go:hasContent "The heart did not lie about what it saw" .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:abuqura ;
+    go:hascontent ex:experienceevent1 .
 
-ex:Fuad_Muhammad a go:Person ;
-  rdfs:label "Fuad Muhammad" .
+ex:experienceevent1 a go:experienceevent ;
+    go:hasagent ex:prophetmuhammad ;
+    go:hastheme ex:anotherbout .
 
-ex:Muhammad a go:Person ;
-  rdfs:label "Muhammad" .
+ex:anotherbout a go:event .
+go:event rdfs:label "رخداد"@fa.
 
-ex:Muhammad_Eyes a go:BodyPart ;
-  go:partOf ex:Muhammad ;
-  rdfs:label "Muhammad's eyes" .
 
-# Event of statement
-ex:Utterance1 a go:Event ;
-  go:HasAgent ex:Narrator ;
-  go:HasTheme ex:Quote1 .
+@base <http://etratnet.ir/ontology/> .
 
-ex:Narrator a go:Person ;
-  go:hasRole "speaker" .
+<http://etratnet.ir/ontology/262-25> rdf:type owl:ontology .
 
-# Event of truth assertion (negated lie) related to Fuad Muhammad
-ex:TruthAssertion1 a go:Event ;
-  go:HasAgent ex:Fuad_Muhammad ;
-  go:HasTheme ex:Perception1 ;
+# entities
+ex:statement1 a go:utterance ;
+  go:hastheme ex:quote1 .
+
+ex:quote1 a go:proposition ;
+  go:hascontent "the heart did not lie about what it saw" .
+
+ex:fuad_muhammad a go:person ;
+  rdfs:label "fuad muhammad" .
+
+ex:muhammad a go:person ;
+  rdfs:label "muhammad" .
+
+ex:muhammad_eyes a go:bodypart ;
+  go:partof ex:muhammad ;
+  rdfs:label "muhammad's eyes" .
+
+# event of statement
+ex:utterance1 a go:event ;
+  go:hasagent ex:narrator ;
+  go:hastheme ex:quote1 .
+
+ex:narrator a go:person ;
+  go:hasrole "speaker" .
+
+# event of truth assertion (negated lie) related to fuad muhammad
+ex:truthassertion1 a go:event ;
+  go:hasagent ex:fuad_muhammad ;
+  go:hastheme ex:perception1 ;
   go:negation true .
 
-ex:Perception1 a go:perception ;
-  go:HasAgent ex:Muhammad_Eyes ;
-  go:hasContent "what Muhammad's eyes saw" .
-go:Event rdfs:label "رخداد"@fa.
+ex:perception1 a go:perception ;
+  go:hasagent ex:muhammad_eyes ;
+  go:hascontent "what muhammad's eyes saw" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-26> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-26> rdf:type owl:ontology .
 
-ex:Fuad_Muhammad a go:Person ;
-    rdfs:label "Fuad Muhammad" .
+ex:fuad_muhammad a go:person ;
+    rdfs:label "fuad muhammad" .
 
-ex:ReportingEvent1 a go:Event ;
-    go:HasAgent ex:Fuad_Muhammad ;
-    go:HasTheme ex:SeeingEvent1 .
+ex:reportingevent1 a go:event ;
+    go:hasagent ex:fuad_muhammad ;
+    go:hastheme ex:seeingevent1 .
 
-ex:SeeingEvent1 a go:Event ;
-    go:HasAgent ex:Fuad_Muhammad ;
-    ex:perceivedBy "eyesight"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
+ex:seeingevent1 a go:event ;
+    go:hasagent ex:fuad_muhammad ;
+    ex:perceivedby "eyesight"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-27> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-27> rdf:type owl:ontology .
 
-ex:Fuad_Muhammad a foaf:Person ;
-    foaf:name "Fuad Muhammad" .
+ex:fuad_muhammad a foaf:person ;
+    foaf:name "fuad muhammad" .
 
-ex:Lord a go:Deity ;
-    foaf:name "Lord" .
+ex:lord a go:deity ;
+    foaf:name "lord" .
 
-ex:Great_Signs a go:Phenomenon ;
-    go:hasQuality ex:Great ;
-    go:belongsTo ex:Lord .
+ex:great_signs a go:phenomenon ;
+    go:hasquality ex:great ;
+    go:belongsto ex:lord .
 
-ex:Some_Great_Signs a go:Phenomenon ;
-    go:partOf ex:Great_Signs ;
+ex:some_great_signs a go:phenomenon ;
+    go:partof ex:great_signs ;
     go:quantity ex:some .
 
-ex:See_Event_1 a go:SeeEvent ;
-    go:hasAgent ex:Fuad_Muhammad ;
-    go:hasTheme ex:Some_Great_Signs .
+ex:see_event_1 a go:seeevent ;
+    go:hasagent ex:fuad_muhammad ;
+    go:hastheme ex:some_great_signs .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-28> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-28> rdf:type owl:ontology .
 
-ex:Verses_of_God a go:Substance ;
-    rdfs:label "Verses of God"@en .
+ex:verses_of_god a go:substance ;
+    rdfs:label "verses of god"@en .
 
-ex:God_Himself a go:Substance ;
-    rdfs:label "God Himself"@en .
+ex:god_himself a go:substance ;
+    rdfs:label "god himself"@en .
 
-ex:Verses_of_God ex:isDistinctFrom ex:God_Himself .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-29> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:speechContent1 .
-
-ex:God a go:Deity .
-
-ex:speechContent1 a go:Content ;
-    go:hasText "And they do not encompass Him in knowledge." .
+ex:verses_of_god ex:isdistinctfrom ex:god_himself .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-30> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-29> rdf:type owl:ontology .
 
-ex:seeingEvent a go:ObservationEvent ;
-  go:HasAgent ex:eyes ;
-  go:HasTheme ex:signsOfGod .
+ex:eventinstance1 a go:speechevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:speechcontent1 .
 
-ex:eyes a go:Substance .
-ex:signsOfGod a go:Object .
-ex:knowledge a go:Substance .
+ex:god a go:deity .
+
+ex:speechcontent1 a go:content ;
+    go:hastext "and they do not encompass him in knowledge." .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-30> rdf:type owl:ontology .
+
+ex:seeingevent a go:observationevent ;
+  go:hasagent ex:eyes ;
+  go:hastheme ex:signsofgod .
+
+ex:eyes a go:substance .
+ex:signsofgod a go:object .
+ex:knowledge a go:substance .
 
 ex:knowledge go:surrounds ex:eyes .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-31> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-31> rdf:type owl:ontology .
 
-ex:KnowledgeOccurrence a go:Event ;
-    go:HasTheme ex:Knowledge ;
-    go:IsLinkedTo ex:SignsSight .
+ex:knowledgeoccurrence a go:event ;
+    go:hastheme ex:knowledge ;
+    go:islinkedto ex:signssight .
 
-ex:Knowledge a go:entity .
+ex:knowledge a go:entity .
 
-ex:SignsSight a go:Event ;
-    go:HasAgent ex:Eyes ;
-    go:HasTheme ex:Signs .
+ex:signssight a go:event ;
+    go:hasagent ex:eyes ;
+    go:hastheme ex:signs .
 
-ex:Eyes a go:entity .
+ex:eyes a go:entity .
 
-ex:Signs a go:entity .
-go:Event rdfs:label "رخداد"@fa.
+ex:signs a go:entity .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-32> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-32> rdf:type owl:ontology .
 
 ex:narrations a go:expression .
-ex:quran a go:Substance .
+ex:quran a go:substance .
 
-ex:contradiction a go:Event ;
-    go:HasTheme ex:narrations, ex:quran .
+ex:contradiction a go:event ;
+    go:hastheme ex:narrations, ex:quran .
 
-ex:denial a go:Event ;
-    go:HasTheme ex:narrations .
+ex:denial a go:event ;
+    go:hastheme ex:narrations .
 
-ex:conditionalRelation a go:causalRelation ;
-    go:HasCause ex:contradiction ;
-    go:HasEffect ex:denial .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/262-33> rdf:type owl:Ontology .
-
-ex:Muslims a go:Agent ;
-    rdfs:label "Muslims" .
-
-ex:God a go:Substance ;
-    rdfs:label "God" .
-
-ex:GodKnowledge a go:Property ;
-    go:isPropertyOf ex:God ;
-    go:hasCharacteristic ex:UnboundedKnowledge .
-
-ex:UnboundedKnowledge a go:Characteristic ;
-    go:description "Knowledge that cannot be fully encompassed" .
-
-ex:AgreementEvent a go:Event ;
-    go:hasAgent ex:Muslims ;
-    go:hasTheme ex:Proposition .
-
-ex:Proposition a go:Statement ;
-    go:content "God's knowledge is unbounded" ;
-    go:refersTo ex:GodKnowledge .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:conditionalrelation a go:causalrelation ;
+    go:hascause ex:contradiction ;
+    go:haseffect ex:denial .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-34> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-33> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:label "God" .
+ex:muslims a go:agent ;
+    rdfs:label "muslims" .
 
-ex:Eyes a go:organism ;
-    go:label "Eyes" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:PerceptionByEyes a go:Event ;
-    go:HasAgent ex:Eyes ;
-    go:HasTheme ex:God .
+ex:godknowledge a go:property ;
+    go:ispropertyof ex:god ;
+    go:hascharacteristic ex:unboundedknowledge .
 
-ex:God ex:isNonPerceivableBy ex:Eyes .
-go:Event rdfs:label "رخداد"@fa.
+ex:unboundedknowledge a go:characteristic ;
+    go:description "knowledge that cannot be fully encompassed" .
+
+ex:agreementevent a go:event ;
+    go:hasagent ex:muslims ;
+    go:hastheme ex:proposition .
+
+ex:proposition a go:statement ;
+    go:content "god's knowledge is unbounded" ;
+    go:refersto ex:godknowledge .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/262-35> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/262-34> rdf:type owl:ontology .
 
-ex:God a go:Substance .
+ex:god a go:deity ;
+    go:label "god" .
 
-# Statement that God is not like any thing (no similarity)
-ex:God go:isNotLike go:Anything .
-go:Substance rdfs:label "شی"@fa.
+ex:eyes a go:organism ;
+    go:label "eyes" .
+
+ex:perceptionbyeyes a go:event ;
+    go:hasagent ex:eyes ;
+    go:hastheme ex:god .
+
+ex:god ex:isnonperceivableby ex:eyes .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/262-35> rdf:type owl:ontology .
+
+ex:god a go:substance .
+
+# statement that god is not like any thing (no similarity)
+ex:god go:isnotlike go:anything .
+go:substance rdfs:label "شی"@fa.

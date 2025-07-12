@@ -1,262 +1,265 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/282#> .
+@prefix ex: <http://etratnet.ir/graph/example/282#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/282> rdf:type go:ontology ;
+        go:hascontent "10.  در سال 255 به ابو محمد [امام عسكرى] عليه‌السلام نوشتم: سَروَرم، ياران ما (شيعيان) در شناخت [حقيقت] خدا اختلاف نظر دارند: برخى از آنها مى‌گويند: او جسم است، و برخى‌شان مى‌گويند: او داراى شكل و صورت است. بنابراين، سرورم، اگر صلاح بدانيد و در اين خصوص چيزى به من بياموزيد كه بر آن بمانم و فراتر از آن نروم، بر چاكر خود منت نهاده‌ايد. حضرت با خطّ خود مرقوم فرمود: «از شناخت [حقيقت]توحيد خدا پرسيده‌اى. اين از شما برداشته شده است. خدا يگانه و يكتاست. «نزاده و زاييده نشده است، و هيچ كس همتاى او نيست». آفريننده است و آفريده نيست. او ـ تبارك و تعالى ـ آنچه بخواهد از اجسام و غير اجسام مى‌آفريند و خود، جسم نيست. به آنچه بخواهد شكل مى‌بخشد و خود داراى شكل نيست. خداوند كه ثنايش بِشكوه و نام‌هايش مقدّس است، بالاتر از آن است كه كه مانندى داشته باشد. اوست و غير او نيست. «هيچ چيزى همانند او نمى‌باشد و او شنوا و بيناست»»."@fa,
+        "10.  كَتَبْتُ إِلى أَبِي مُحَمَّدٍ عليه‌السلام سَنَةَ خَمْسٍ وَخَمْسِينَ وَمِائَتَيْنِ: قَدِ اخْتَلَفَ يَا سَيِّدِي، أَصْحَابُنَا فِي التَّوْحِيدِ: مِنْهُمْ مَنْ يَقُولُ: هُوَ جِسْمٌ، وَمِنْهُمْ مَنْ يَقُولُ: هُوَ صُورَةٌ، فَإِنْ رَأَيْتَ يَا سَيِّدِي، أَنْ تُعَلِّمَنِي مِنْ ذلِكَ مَا أَقِفُ عَلَيْهِ وَلاَ أَجُوزُهُ، فَعَلْتَ مُتَطَوِّلاً عَلى عَبْدِكَ. فَوَقَّعَ بِخَطِّهِ عليه‌السلام: «سَأَلْتَ عَنِ التَّوْحِيدِ، وَهذَا عَنْكُمْ مَعْزُولٌ، اللّه‌ُ وَاحِدٌ أَحَدٌ«لَمْ‌يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ»، خَالِقٌ وَ لَيْسَ بِمَخْلُوقٍ، يَخْلُقُ ـ تَبَارَكَ وَتَعَالى ـ مَا يَشَاءُ مِنَ الْأَجْسَامِ وَغَيْرِ ذلِكَ وَلَيْسَ بِجِسْمٍ، وَيُصَوِّرُ مَا يَشَاءُ وَلَيْسَ بِصُورَةٍ، جَلَّ ثَنَاؤهُ وَتَقَدَّسَتْ أَسْمَاؤهُ أَنْ يَكُونَ لَهُ شِبْهٌ، هُوَ لاَ غَيْرُهُ «لَيْسَ كَمِثْلِهِ شَىْ‌ءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-1> rdf:type owl:ontology .
 
-ex:Event255 a ex:WritingEvent , go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasRecipient ex:Abu_Muhammad_Alayhissalam ;
-    ex:hasTheme ex:DisagreementInMonotheism ;
-    go:hasTime geos:Year255 .
+ex:event255 a ex:writingevent , go:event ;
+    go:hasagent ex:person ;
+    go:hasrecipient ex:abu_muhammad_alayhissalam ;
+    ex:hastheme ex:disagreementinmonotheism ;
+    go:hastime geos:year255 .
 
-ex:Person a go:Agent .
+ex:person a go:agent .
 
-ex:Abu_Muhammad_Alayhissalam a go:Agent ;
-    ex:isRecipientOf ex:Event255 .
+ex:abu_muhammad_alayhissalam a go:agent ;
+    ex:isrecipientof ex:event255 .
 
-ex:DisagreementInMonotheism a ex:Disagreement ;
-    ex:inTopic ex:Monotheism ;
-    ex:involving ex:Companions .
+ex:disagreementinmonotheism a ex:disagreement ;
+    ex:intopic ex:monotheism ;
+    ex:involving ex:companions .
 
-ex:Companions a go:Group .
+ex:companions a go:group .
 
-ex:Monotheism a go:Concept .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:monotheism a go:concept .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-2> rdf:type owl:ontology .
 
-ex:statement1 a go:Event ;
-    go:HasAgent ex:owners ;
-    go:HasTheme ex:proposition1 .
+ex:statement1 a go:event ;
+    go:hasagent ex:owners ;
+    go:hastheme ex:proposition1 .
 
-ex:owners a go:Group ;
-    go:memberOf ex:owners_of_something .
+ex:owners a go:group ;
+    go:memberof ex:owners_of_something .
 
-ex:proposition1 a go:Proposition ;
+ex:proposition1 a go:proposition ;
     go:expresses ex:equivalence1 .
 
-ex:equivalence1 a go:Equivalence ;
-    go:entity1 ex:God ;
-    go:entity2 ex:Body .
+ex:equivalence1 a go:equivalence ;
+    go:entity1 ex:god ;
+    go:entity2 ex:body .
 
-ex:God a go:Deity .
-ex:Body a go:PhysicalObject .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/282-3> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:SpeechEvent ;
-  go:HasAgent ex:OwnersGroup ;
-  go:HasTheme ex:Proposition1 .
-
-ex:OwnersGroup a go:Group .
-
-ex:Proposition1 a go:Proposition ;
-  go:HasSubject ex:God ;
-  go:HasPredicate go:Equality ;
-  go:HasObject ex:Image .
-
-ex:God a go:DivineEntity .
-ex:Image a go:Concept .
+ex:god a go:deity .
+ex:body a go:physicalobject .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-3> rdf:type owl:ontology .
 
-ex:askingEvent a go:Event ;
-    go:HasAgent ex:person ;
-    go:HasRecipient ex:abuMuhammad ;
-    go:HasTheme ex:teachingTrueMonotheism .
+ex:eventinstance1 a go:speechevent ;
+  go:hasagent ex:ownersgroup ;
+  go:hastheme ex:proposition1 .
+
+ex:ownersgroup a go:group .
+
+ex:proposition1 a go:proposition ;
+  go:hassubject ex:god ;
+  go:haspredicate go:equality ;
+  go:hasobject ex:image .
+
+ex:god a go:divineentity .
+ex:image a go:concept .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/282-4> rdf:type owl:ontology .
+
+ex:askingevent a go:event ;
+    go:hasagent ex:person ;
+    go:hasrecipient ex:abumuhammad ;
+    go:hastheme ex:teachingtruemonotheism .
 
 ex:person a go:person ;
     rdfs:label "الشخص" .
 
-ex:abuMuhammad a go:person ;
+ex:abumuhammad a go:person ;
     rdfs:label "أبا محمد عليه‌السلام" .
 
-ex:teachingTrueMonotheism a go:Event ;
-    go:HasAgent ex:abuMuhammad ;
-    go:HasTheme ex:trueMonotheismUnderstanding .
+ex:teachingtruemonotheism a go:event ;
+    go:hasagent ex:abumuhammad ;
+    go:hastheme ex:truemonotheismunderstanding .
 
-ex:trueMonotheismUnderstanding a go:concept ;
-    go:isEstablishedBy ex:teachingTrueMonotheism ;
-    go:mustBeFollowed true ;
-    go:mustNotBeExceeded true .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/282-5> rdf:type owl:Ontology .
-
-ex:AbuMuhammad a go:Substance ;
-    rdfs:label "Abu Muhammad (peace be upon him)" .
-
-ex:WriteEvent_1 a go:Event ;
-    go:HasAgent ex:AbuMuhammad ;
-    rdfs:label "Writing with his own hand" .
-
-ex:SayEvent_1 a go:Event ;
-    go:HasAgent ex:AbuMuhammad ;
-    go:HasTheme ex:Statement_1 ;
-    rdfs:label "Saying about monotheism and knowing God" .
-
-ex:Statement_1 a go:Substance ;
-    rdfs:label "The question about monotheism is about knowing God, the One and Only" .
-
-ex:Monotheism a go:concept ;
-    rdfs:label "monotheism (Tawhid)" .
-
-ex:Question a go:Substance ;
-    rdfs:label "Question about monotheism" ;
-    go:relatedTo ex:Monotheism .
-
-ex:God a go:Substance ;
-    rdfs:label "God, the One and Only" .
-
-ex:KnowledgeOfGod a go:Event ;
-    go:HasTheme ex:God ;
-    rdfs:label "Knowing God" .
-
-ex:Statement_1 go:concerns ex:Question, ex:KnowledgeOfGod .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:truemonotheismunderstanding a go:concept ;
+    go:isestablishedby ex:teachingtruemonotheism ;
+    go:mustbefollowed true ;
+    go:mustnotbeexceeded true .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-5> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
+ex:abumuhammad a go:substance ;
+    rdfs:label "abu muhammad (peace be upon him)" .
+
+ex:writeevent_1 a go:event ;
+    go:hasagent ex:abumuhammad ;
+    rdfs:label "writing with his own hand" .
+
+ex:sayevent_1 a go:event ;
+    go:hasagent ex:abumuhammad ;
+    go:hastheme ex:statement_1 ;
+    rdfs:label "saying about monotheism and knowing god" .
+
+ex:statement_1 a go:substance ;
+    rdfs:label "the question about monotheism is about knowing god, the one and only" .
+
+ex:monotheism a go:concept ;
+    rdfs:label "monotheism (tawhid)" .
+
+ex:question a go:substance ;
+    rdfs:label "question about monotheism" ;
+    go:relatedto ex:monotheism .
+
+ex:god a go:substance ;
+    rdfs:label "god, the one and only" .
+
+ex:knowledgeofgod a go:event ;
+    go:hastheme ex:god ;
+    rdfs:label "knowing god" .
+
+ex:statement_1 go:concerns ex:question, ex:knowledgeofgod .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/282-6> rdf:type owl:ontology .
+
+ex:god a go:substance ;
     dbo:unique true ;
-    ex:hasAttribute ex:OneAndUnique ;
+    ex:hasattribute ex:oneandunique ;
     ex:begets false ;
-    ex:isBeget false ;
-    ex:hasEquivalent ex:None .
+    ex:isbeget false ;
+    ex:hasequivalent ex:none .
 
-ex:OneAndUnique a ex:Attribute ;
+ex:oneandunique a ex:attribute ;
     rdfs:label "one and unique" .
 
-ex:None a ex:Entity ;
+ex:none a ex:entity ;
     rdfs:label "none comparable" .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-7> rdf:type owl:ontology .
 
-ex:God a go:god ;
-    go:HasRole ex:CreatorRole .
+ex:god a go:god ;
+    go:hasrole ex:creatorrole .
 
-ex:CreatorRole a go:Role ;
-    go:relatesToClass go:Creator .
+ex:creatorrole a go:role ;
+    go:relatestoclass go:creator .
 
-ex:Creation a go:Event ;
-    go:HasAgent ex:God .
+ex:creation a go:event ;
+    go:hasagent ex:god .
 
-ex:God ex:isNot a ex:CreatedEntity .
+ex:god ex:isnot a ex:createdentity .
 
-ex:CreatedEntity a go:Role ;
-    go:relatesToClass go:Creature .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/282-8> rdf:type owl:Ontology .
-
-ex:God a go:Agent ;
-    go:creates ex:CreationEvent ;
-    go:isNot a ex:Body .
-
-ex:CreationEvent a go:EventInstance ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Bodies , ex:Others .
-
-ex:Bodies a go:Substance .
-ex:Others a go:Substance .
-ex:Body a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:createdentity a go:role ;
+    go:relatestoclass go:creature .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-8> rdf:type owl:ontology .
 
-ex:event1 a go:depictEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:WhateverGodWills ;
-    go:NotInForm ex:Image .
+ex:god a go:agent ;
+    go:creates ex:creationevent ;
+    go:isnot a ex:body .
 
-ex:God a go:Deity .
-ex:WhateverGodWills a go:Concept .
-ex:Image a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:creationevent a go:eventinstance ;
+    go:hasagent ex:god ;
+    go:hastheme ex:bodies , ex:others .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/282-10> rdf:type owl:Ontology .
-
-allah:God a go:DivineBeing ;
-   go:hasPraise "exalted" ;
-   go:hasSanctifiedNames "true" ;
-   go:hasNoLikeness true .
+ex:bodies a go:substance .
+ex:others a go:substance .
+ex:body a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-9> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    ex:hasUniqueness ex:UniquenessState .
+ex:event1 a go:depictevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:whatevergodwills ;
+    go:notinform ex:image .
 
-ex:UniquenessState a ex:PropertyValue ;
+ex:god a go:deity .
+ex:whatevergodwills a go:concept .
+ex:image a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/282-10> rdf:type owl:ontology .
+
+allah:god a go:divinebeing ;
+   go:haspraise "exalted" ;
+   go:hassanctifiednames "true" ;
+   go:hasnolikeness true .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/282-11> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    ex:hasuniqueness ex:uniquenessstate .
+
+ex:uniquenessstate a ex:propertyvalue ;
     ex:value "true" .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/282-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/282-12> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    ex:isUnique true ;
-    ex:hasAttribute ex:AllHearing, ex:AllSeeing .
+ex:god a go:substance ;
+    ex:isunique true ;
+    ex:hasattribute ex:allhearing, ex:allseeing .
 
-ex:AllHearing a go:Attribute ;
-    rdfs:label "All-Hearing" .
+ex:allhearing a go:attribute ;
+    rdfs:label "all-hearing" .
 
-ex:AllSeeing a go:Attribute ;
-    rdfs:label "All-Seeing" .
+ex:allseeing a go:attribute ;
+    rdfs:label "all-seeing" .
 
-# No entity exists that is like God
-# This can be represented as a negation or uniqueness assertion
-# For example:
+# no entity exists that is like god
+# this can be represented as a negation or uniqueness assertion
+# for example:
 
-ex:God ex:hasNoEqual ex:Entity .
-go:Substance rdfs:label "شی"@fa.
+ex:god ex:hasnoequal ex:entity .
+go:substance rdfs:label "شی"@fa.

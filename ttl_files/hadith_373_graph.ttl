@@ -1,112 +1,115 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/373#> .
+@prefix ex: <http://etratnet.ir/graph/example/373#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/373> rdf:type go:ontology ;
+        go:hascontent "6.  از امام صادق عليه‌السلام درباره اين سخن خداى عز و جل پرسيدم كه: «آيا انسان نديد كه ما او را قبلاً آفريديم و حال آن كه چيزى نبوده است». فرمود: «يعنى نه مقدَّر شده بود نه ساخته».نيز از آن حضرت درباره اين گفتِ خداوند پرسيدم كه: «آيا بر انسان هنگامى از روزگار آمده كه چيزى در خور ياد نبود». فرمود: «مقدَّر شده بود اما در خور ياد نبود»."@fa,
+        "6.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «أَوَ لَمْ يَرَ الاْءِنسَنُ أَنَّا خَلَقْنَهُ مِن قَبْلُ‌وَ لَمْ يَكُ شَئْا» قَالَ: فَقَالَ: «لاَ مُقَدَّراً وَلاَ مُكَوَّناً».قَالَ: وَسَأَلْتُهُ عَنْ قَوْلِهِ: «هَلْ أَتَى عَلَى الاْءِنسَنِ حِينٌ مِّنَ الدَّهْرِ لَمْ يَكُن شَئْا مَّذْكُورًا» فَقَالَ: «كَانَ مُقَدَّراً غَيْرَ مَذْكُورٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/373-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/373-1> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:SpeechContent1 .
+ex:speechevent1 a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:speechcontent1 .
 
-ex:SpeechContent1 a ex:SpeechContent ;
-  ex:containsEvent ex:CreationEvent1 .
+ex:speechcontent1 a ex:speechcontent ;
+  ex:containsevent ex:creationevent1 .
 
-ex:CreationEvent1 a go:Event ;
-  a ex:Creation ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:Human .
+ex:creationevent1 a go:event ;
+  a ex:creation ;
+  go:hasagent ex:god ;
+  go:hastheme ex:human .
 
-ex:God a go:Agent ;
-  a ex:DivineBeing .
+ex:god a go:agent ;
+  a ex:divinebeing .
 
-ex:Human a go:Agent ;
-  a ex:HumanBeing .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/373-2> rdf:type owl:Ontology .
-
-ex:GodAlmighty a go:Deity ;
-    rdfs:label "God Almighty"@en .
-
-ex:SpeechEvent1 a go:SpeechEvent , go:Event ;
-    go:HasAgent ex:GodAlmighty ;
-    go:HasTheme ex:Statement1 .
-
-ex:Statement1 a go:Statement ;
-    rdfs:label "No one is able to predetermine or create."@en .
-go:Event rdfs:label "رخداد"@fa.
+ex:human a go:agent ;
+  a ex:humanbeing .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/373-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/373-2> rdf:type owl:ontology .
 
-ex:Abu_Abdullah a go:Person ;
-    rdfs:label "Abu Abdullah عليه السلام" .
+ex:godalmighty a go:deity ;
+    rdfs:label "god almighty"@en .
 
-ex:saying_1 a go:SpeechEvent ;
-    go:HasAgent ex:Abu_Abdullah ;
-    go:HasTheme "لا مقدّراً ولا مكوّناً" .
+ex:speechevent1 a go:speechevent , go:event ;
+    go:hasagent ex:godalmighty ;
+    go:hastheme ex:statement1 .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/373-4> rdf:type owl:Ontology .
-
-ex:God a go:Substance ;
-    rdfs:label "God Almighty" .
-
-ex:Human a go:Substance ;
-    rdfs:label "Human" .
-
-ex:SpeechEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Utterance1 .
-
-ex:Utterance1 a go:Utterance ;
-    go:hasContent "Has there come upon man a period of time when he was not a thing mentioned?" ;
-    go:refersTo ex:Human ;
-    go:refersTo ex:TimePeriodNotMentioned .
-
-ex:TimePeriodNotMentioned a go:Event ;
-    rdfs:label "A period of time when man was not a thing mentioned" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:statement1 a go:statement ;
+    rdfs:label "no one is able to predetermine or create."@en .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/373-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/373-3> rdf:type owl:ontology .
 
-ex:AbuAbdullah a go:Person ;
-    go:label "Abu Abdullah (peace be upon him)" .
+ex:abu_abdullah a go:person ;
+    rdfs:label "abu abdullah عليه السلام" .
 
-exevent:Speech1 a go:SpeechEvent ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme exevent:PredeterminationState .
+ex:saying_1 a go:speechevent ;
+    go:hasagent ex:abu_abdullah ;
+    go:hastheme "لا مقدّراً ولا مكوّناً" .
 
-exevent:PredeterminationState a go:State ;
-    go:description "It was predetermined but not mentioned" ;
-    go:hasProperty exevent:Predetermined, exevent:Unmentioned .
 
-exevent:Predetermined a go:Property ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/373-4> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    rdfs:label "god almighty" .
+
+ex:human a go:substance ;
+    rdfs:label "human" .
+
+ex:speechevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:utterance1 .
+
+ex:utterance1 a go:utterance ;
+    go:hascontent "has there come upon man a period of time when he was not a thing mentioned?" ;
+    go:refersto ex:human ;
+    go:refersto ex:timeperiodnotmentioned .
+
+ex:timeperiodnotmentioned a go:event ;
+    rdfs:label "a period of time when man was not a thing mentioned" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/373-5> rdf:type owl:ontology .
+
+ex:abuabdullah a go:person ;
+    go:label "abu abdullah (peace be upon him)" .
+
+exevent:speech1 a go:speechevent ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme exevent:predeterminationstate .
+
+exevent:predeterminationstate a go:state ;
+    go:description "it was predetermined but not mentioned" ;
+    go:hasproperty exevent:predetermined, exevent:unmentioned .
+
+exevent:predetermined a go:property ;
     go:label "predetermined" .
 
-exevent:Unmentioned a go:Property ;
+exevent:unmentioned a go:property ;
     go:label "unmentioned" .

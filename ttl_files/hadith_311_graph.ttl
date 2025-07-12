@@ -1,551 +1,554 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/311#> .
+@prefix ex: <http://etratnet.ir/graph/example/311#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/311> rdf:type go:ontology ;
+        go:hascontent "4.  «نام خدا، غير از خود اوست. هر چيزى كه نام "چيز" بر آن اطلاق شود آن چيز "آفريده" است مگر [ذات] خدا. اما آنچه به زبان گفته آيد (لفظ اللّه‌ يا خدا) يا اثر دست باشد (كتابت كلمه اللّه‌ يا خدا)، آن "آفريده" است، و خدا مقصد كسى است كه او را قصد كرده، و قصد شده غير از قصد است. قصد وصف مى‌شود، و هر آنچه وصف شود، مصنوع است، در حالى كه سازنده چيزها به هيچ حدّى موصوف و ناميده نمى‌شود. او ساخته نشده تا چگونگى ساخته شدنش با مصنوعى ديگر شناخته شود، و به هيچ نهايتى نينجامد مگر اين كه آن نهايت غير او باشد. كسى كه اين مطلب را بفهمد هرگز نلغزد. اين است توحيد ناب، پس آن را در گوش گيريد [و به ياد سپاريد] و تصديقش كنيد و به يارى خدا، نيك بفهميد. هر كس معتقد باشد كه خدا را به واسطه حجابى يا صورتى يا مانندى مى‌شناسد او مشرك است؛ زيرا، حجاب و مانند و صورتش غير اوست. او يگانه و منحصر به فرد است. پس، چگونه او را يگانه مى‌داند كسى كه معتقد است او را به غير او شناخته است؟ خدا را، در حقيقت كسى شناخته كه او را به خود او بشناسد. بنابراين كسى كه او را به خود او نشناسد او را نشناخته، بلكه غير او را شناخته است. ميان آفريننده و آفريده شده چيزى [واسطه] نيست. خداوند آفريننده اشياست، اما نه از چيزى كه قبلاً وجود داشته است. خدا به نام‌هايش ناميده شود، ليك او غير از نام‌هايش مى‌باشد و نام‌هايش غير اويند»."@fa,
+        "4.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «اسْمُ اللّه‌ِ غَيْرُهُ، وَكُلُّ شَيْءٍ وَقَعَ عَلَيْهِ اسْمُ «شَيْءٍ» فَهُوَ مَخْلُوقٌ مَا خَلاَ اللّه‌َ، فَأَمَّا مَا عَبَّرَتْهُ الْأَلْسُنُ أَوْ عَمِلَتِ الْأَيْدِي، فَهُوَ مَخْلُوقٌ، وَاللّه‌ُ غَايَةُ مَنْ غَايَاهُ، وَالْمُغَيَّا غَيْرُ الْغَايَةِ، وَالْغَايَةُ مَوْصُوفَةٌ، وَكُلُّ مَوْصُوفٍ مَصْنُوعٌ، وَصَانِعُ الْأَشْيَاءِ غَيْرُ مَوْصُوفٍ بِحَدٍّ مُسَمّىً، لَمْ يَتَكَوَّنْ؛ فَيُعْرَفَ كَيْنُونِيَّتُهُ بِصُنْعِ غَيْرِهِ، وَلَمْ يَتَنَاهَ إِلى غَايَةٍ إِلاَّ كَانَتْ غَيْرَهُ، لاَ يَزِلُّ مَنْ فَهِمَ هذَا الْحُكْمَ أَبَداً، وَهُوَ التَّوْحِيدُ الْخَالِصُ، فَارْعَوْهُ، وَصَدِّقُوهُ، وَتَفَهَّمُوهُ بِإِذْنِ اللّه‌ِ. مَنْ زَعَمَ أَنَّهُ يَعْرِفُ اللّه‌َ بِحِجَابٍ أَوْ بِصُورَةٍ أَوْ بِمِثَالٍ، فَهُوَ مُشْرِكٌ؛ لِأَنَّ حِجَابَهُ وَمِثَالَهُ وَصُورَتَهُ غَيْرُهُ، وَإِنَّمَا هُوَ وَاحِدٌ، مُتَوَحِّدٌ، فَكَيْفَ يُوَحِّدُهُ مَنْ زَعَمَ أَنَّهُ عَرَفَهُ بِغَيْرِهِ؟! وَإِنَّمَا عَرَفَ اللّه‌َ مَنْ عَرَفَهُ بِاللّه‌ِ، فَمَنْ لَمْ يَعْرِفْهُ بِهِ، فَلَيْسَ يَعْرِفُهُ، إِنَّمَا يَعْرِفُ غَيْرَهُ، لَيْسَ بَيْنَ الْخَالِقِ وَالْمَخْلُوقِ شَيْءٌ، وَاللّه‌ُ خَالِقُ الْأَشْيَاءِ لاَ مِنْ شَيْءٍ كَانَ، وَاللّه‌ُ يُسَمّى بِأَسْمَائِهِ وَهُوَ غَيْرُ أَسْمَائِهِ، وَالْأَسْمَاءُ غَيْرُهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:HasName ex:GodName .
+ex:god a go:deity ;
+    go:hasname ex:godname .
 
-ex:GodName a go:Substance ;
-    ex:hasQuality ex:Uniqueness .
+ex:godname a go:substance ;
+    ex:hasquality ex:uniqueness .
 
-ex:UniqueNameState a go:state , ex:UniqueNameEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:GodName ;
-    ex:expressesQuality ex:Uniqueness .
+ex:uniquenamestate a go:state , ex:uniquenameevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:godname ;
+    ex:expressesquality ex:uniqueness .
 
-ex:Uniqueness a go:Quality ;
+ex:uniqueness a go:quality ;
     rdfs:label "uniqueness" .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-2> rdf:type owl:ontology .
 
-ex:Thing a go:Substance ;
+ex:thing a go:substance ;
     rdfs:label "thing" .
 
-# Define the class of all created beings named "thing"
-ex:CreatedBeing a go:Substance .
+# define the class of all created beings named "thing"
+ex:createdbeing a go:substance .
 
-ex:God a go:Substance ;
-    a ex:DivineBeing .
+ex:god a go:substance ;
+    a ex:divinebeing .
 
-# Universal statement: every entity named 'thing' is a CreatedBeing except God
-_:x a go:Substance ;
+# universal statement: every entity named 'thing' is a createdbeing except god
+_:x a go:substance ;
     rdfs:label "thing" .
 
-# Implicit rule (represented here as a triple):
-# If an entity has the name "thing" and is not God, then it is a CreatedBeing
+# implicit rule (represented here as a triple):
+# if an entity has the name "thing" and is not god, then it is a createdbeing
 _:rule a go:rule ;
     go:condition [
         rdfs:label "thing" ;
-        go:notEqualTo ex:God
+        go:notequalto ex:god
     ] ;
-    go:assertion [ a ex:CreatedBeing ] .
+    go:assertion [ a ex:createdbeing ] .
 
-# God is explicitly not included as CreatedBeing
-ex:God a ex:DivineBeing .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-3> rdf:type owl:Ontology .
-
-ex:Things rdf:type go:Substance ;
-          go:classifiedAs go:Creature .
-
-ex:ExpressionEvent rdf:type go:Event ;
-                   go:HasAgent ex:Tongues ;
-                   go:HasTheme ex:Things .
-
-ex:MakingEvent rdf:type go:Event ;
-                go:HasAgent ex:Hands ;
-                go:HasTheme ex:Things .
-
-ex:Tongues rdf:type go:Organ .
-ex:Hands rdf:type go:Organ .
-
-go:Creature rdf:type go:LivingBeing .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# god is explicitly not included as createdbeing
+ex:god a ex:divinebeing .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-3> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:things rdf:type go:substance ;
+          go:classifiedas go:creature .
 
-ex:Purpose a go:Event ;
-    rdfs:label "Purpose"@en .
+ex:expressionevent rdf:type go:event ;
+                   go:hasagent ex:tongues ;
+                   go:hastheme ex:things .
 
-ex:UltimatePurpose a go:Event ;
-    rdfs:label "Ultimate Purpose"@en ;
-    go:HasTheme ex:God .
+ex:makingevent rdf:type go:event ;
+                go:hasagent ex:hands ;
+                go:hastheme ex:things .
 
-ex:GodPurposes a go:Event ;
-    rdfs:label "God's Purposes"@en ;
-    go:HasTheme ex:Purpose ;
-    go:HasGoal ex:UltimatePurpose .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:tongues rdf:type go:organ .
+ex:hands rdf:type go:organ .
+
+go:creature rdf:type go:livingbeing .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-4> rdf:type owl:ontology .
 
-ex:differences a go:Substance ;
+ex:god a go:substance ;
+    rdfs:label "god"@en .
+
+ex:purpose a go:event ;
+    rdfs:label "purpose"@en .
+
+ex:ultimatepurpose a go:event ;
+    rdfs:label "ultimate purpose"@en ;
+    go:hastheme ex:god .
+
+ex:godpurposes a go:event ;
+    rdfs:label "god's purposes"@en ;
+    go:hastheme ex:purpose ;
+    go:hasgoal ex:ultimatepurpose .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-5> rdf:type owl:ontology .
+
+ex:differences a go:substance ;
   rdfs:label "differences" .
 
-ex:goal a go:Substance ;
+ex:goal a go:substance ;
   rdfs:label "goal" .
 
-ex:event1 a go:NegationEvent ;
-  go:HasTheme ex:differences ;
-  go:HasObject ex:goal ;
-  rdfs:label "The differences are not the goal" .
-go:Substance rdfs:label "شی"@fa.
+ex:event1 a go:negationevent ;
+  go:hastheme ex:differences ;
+  go:hasobject ex:goal ;
+  rdfs:label "the differences are not the goal" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-6> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-  go:HasTheme ex:purpose1 .
+ex:event1 a go:event ;
+  go:hastheme ex:purpose1 .
 
-ex:purpose1 a go:Substance ;
-  rdfs:label "The purpose" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-7> rdf:type owl:Ontology .
-
-ex:DescribedThing a rdfs:Class ;
-    rdfs:subClassOf go:Substance .
-
-ex:MadeThing a rdfs:Class ;
-    rdfs:subClassOf go:Substance .
-
-# Every DescribedThing is a MadeThing
-ex:DescribedThing rdfs:subClassOf ex:MadeThing .
-go:Substance rdfs:label "شی"@fa.
+ex:purpose1 a go:substance ;
+  rdfs:label "the purpose" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-7> rdf:type owl:ontology .
 
-ex:MakerOfThings a go:agent ;
-    go:hasCharacteristic ex:NoSpecifiedBoundary .
+ex:describedthing a rdfs:class ;
+    rdfs:subclassof go:substance .
 
-ex:FormationEvent a go:Event ;
-    go:HasAgent ex:MakerOfThings ;
-    go:hasState ex:NotFormed .
+ex:madething a rdfs:class ;
+    rdfs:subclassof go:substance .
 
-ex:NotFormed a go:State ;
-    go:StateValue "false" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-9> rdf:type owl:Ontology .
-
-ex:NatureOfMaker a go:Substance ;
-    go:HasAgent ex:Maker ;
-    go:HasTheme ex:MakingEventByOthers .
-
-ex:Maker a go:Agent .
-
-ex:MakingEventByOthers a go:Event ;
-    go:HasAgent ex:Others .
-
-ex:Others a go:Agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# every describedthing is a madething
+ex:describedthing rdfs:subclassof ex:madething .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-8> rdf:type owl:ontology .
 
-ex:Craftsman a go:Agent ;
-    rdfs:label "Craftsman"@en .
+ex:makerofthings a go:agent ;
+    go:hascharacteristic ex:nospecifiedboundary .
 
-ex:SomeoneElse a go:Agent ;
-    rdfs:label "Someone else"@en .
+ex:formationevent a go:event ;
+    go:hasagent ex:makerofthings ;
+    go:hasstate ex:notformed .
 
-ex:Temptation a go:Substance ;
-    rdfs:label "Temptation"@en .
-
-ex:Surrender_Craftsman a go:Event ;
-    rdfs:label "Surrender event by craftsman"@en ;
-    go:HasAgent ex:Craftsman ;
-    go:HasTheme ex:Temptation ;
-    go:HasPolarity go:Negative .
-
-ex:Surrender_SomeoneElse a go:Event ;
-    rdfs:label "Surrender event by someone else"@en ;
-    go:HasAgent ex:SomeoneElse ;
-    go:HasTheme ex:Temptation ;
-    go:HasPolarity go:Positive .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:notformed a go:state ;
+    go:statevalue "false" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-9> rdf:type owl:ontology .
 
-ex:Judgment_mentioned a go:Substance ;
+ex:natureofmaker a go:substance ;
+    go:hasagent ex:maker ;
+    go:hastheme ex:makingeventbyothers .
+
+ex:maker a go:agent .
+
+ex:makingeventbyothers a go:event ;
+    go:hasagent ex:others .
+
+ex:others a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-10> rdf:type owl:ontology .
+
+ex:craftsman a go:agent ;
+    rdfs:label "craftsman"@en .
+
+ex:someoneelse a go:agent ;
+    rdfs:label "someone else"@en .
+
+ex:temptation a go:substance ;
+    rdfs:label "temptation"@en .
+
+ex:surrender_craftsman a go:event ;
+    rdfs:label "surrender event by craftsman"@en ;
+    go:hasagent ex:craftsman ;
+    go:hastheme ex:temptation ;
+    go:haspolarity go:negative .
+
+ex:surrender_someoneelse a go:event ;
+    rdfs:label "surrender event by someone else"@en ;
+    go:hasagent ex:someoneelse ;
+    go:hastheme ex:temptation ;
+    go:haspolarity go:positive .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-11> rdf:type owl:ontology .
+
+ex:judgment_mentioned a go:substance ;
     rdfs:label "mentioned judgment"@en .
 
-ex:Person_implicitHe a go:Agent ;
+ex:person_implicithe a go:agent ;
     rdfs:label "he (implicit)"@en .
 
-ex:UnderstandingState a go:State ;
-    go:hasAgent ex:Person_implicitHe ;
-    go:hasTheme ex:Judgment_mentioned ;
+ex:understandingstate a go:state ;
+    go:hasagent ex:person_implicithe ;
+    go:hastheme ex:judgment_mentioned ;
     rdfs:label "continuous understanding of the judgment"@en .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-12> rdf:type owl:ontology .
 
-ex:Judgment_This a go:Judgment ;
-    go:isEquivalentTo ex:PureMonotheism .
+ex:judgment_this a go:judgment ;
+    go:isequivalentto ex:puremonotheism .
 
-ex:PureMonotheism a go:ReligiousConcept ;
-    rdfs:label "Pure Monotheism" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-13> rdf:type owl:Ontology .
-
-ex:thisRuling a go:Decision .
-
-ex:complianceEvent a go:Event ;
-    go:HasTheme ex:thisRuling .
-go:Event rdfs:label "رخداد"@fa.
+ex:puremonotheism a go:religiousconcept ;
+    rdfs:label "pure monotheism" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-13> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    ex:eventType "believe" ;
-    go:HasTheme ex:he ;
-    ex:hasModality "should" .
+ex:thisruling a go:decision .
+
+ex:complianceevent a go:event ;
+    go:hastheme ex:thisruling .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-14> rdf:type owl:ontology .
+
+ex:event1 a go:event ;
+    ex:eventtype "believe" ;
+    go:hastheme ex:he ;
+    ex:hasmodality "should" .
 
 ex:he a go:agent .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-15> rdf:type owl:ontology .
 
-ex:event1 a go:ArbitraryUnderstandingEvent ;
-    go:HasTheme ex:thisJudgment ;
-    ex:hasCondition ex:God .
+ex:event1 a go:arbitraryunderstandingevent ;
+    go:hastheme ex:thisjudgment ;
+    ex:hascondition ex:god .
 
-ex:thisJudgment a go:Judgment .
+ex:thisjudgment a go:judgment .
 
-ex:God a go:Deity ;
-    rdfs:label "God"^^xsd:string .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-16> rdf:type owl:Ontology .
-
-ex:ClaimEvent1 rdf:type go:ClaimEvent ;
-    go:HasAgent ex:PersonAnonymous ;
-    go:HasTheme ex:KnowGodThroughVeil .
-
-ex:God rdf:type go:Deity .
-
-ex:KnowGodThroughVeil rdf:type go:KnowledgeClaim ;
-    go:About ex:God ;
-    go:Means ex:Veil .
-
-ex:PersonAnonymous rdf:type go:Person ;
-    go:HasAttribute ex:Polytheist .
-
-ex:Polytheist rdf:type go:PolytheismAttribute .
+ex:god a go:deity ;
+    rdfs:label "god"^^xsd:string .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-16> rdf:type owl:ontology .
 
-# Entities
-ex:Person a go:Substance .
-ex:God a go:Substance .
-ex:Form a go:Substance .
+ex:claimevent1 rdf:type go:claimevent ;
+    go:hasagent ex:personanonymous ;
+    go:hastheme ex:knowgodthroughveil .
 
-# Event: Claim
-ex:ClaimEvent a go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:KnowEvent .
+ex:god rdf:type go:deity .
 
-# Event: Know
-ex:KnowEvent a go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:God ;
-    go:HasManner ex:Form .
+ex:knowgodthroughveil rdf:type go:knowledgeclaim ;
+    go:about ex:god ;
+    go:means ex:veil .
 
-# State: Polytheist
-ex:Polytheist a go:State ;
-    go:HasAgent ex:Person .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:personanonymous rdf:type go:person ;
+    go:hasattribute ex:polytheist .
+
+ex:polytheist rdf:type go:polytheismattribute .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-17> rdf:type owl:ontology .
 
-# Entities
-ex:Person a go:Agent .
-ex:God a go:Deity .
-ex:Example a go:Example .
-ex:Polytheist a go:Concept .
+# entities
+ex:person a go:substance .
+ex:god a go:substance .
+ex:form a go:substance .
 
-# Event: Claim
-ex:ClaimEvent a go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:KnowledgeEvent .
+# event: claim
+ex:claimevent a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:knowevent .
 
-# Event: Knowledge (knowing God by example)
-ex:KnowledgeEvent a go:Event ;
-    go:HasAgent ex:Person ;
-    go:HasTheme ex:God ;
-    go:HasInstrument ex:Example .
+# event: know
+ex:knowevent a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:god ;
+    go:hasmanner ex:form .
 
-# Attribute: The person is a polytheist as a result
-ex:Person go:HasProperty ex:Polytheist .
-ex:Polytheist rdf:type go:NegativeMoralJudgment .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-19> rdf:type owl:Ontology .
-
-ex:God a go:DivineBeing .
-ex:VeilOfGod a go:Concept ;
-    go:isOtherThan ex:God .
-
-ex:ExampleOfVeil a go:Concept ;
-    go:isOtherThan ex:God .
-
-ex:ImageOfVeil a go:Concept ;
-    go:isOtherThan ex:God .
+# state: polytheist
+ex:polytheist a go:state ;
+    go:hasagent ex:person .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-18> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    ex:isOne true ;
-    ex:isUnified true .
+# entities
+ex:person a go:agent .
+ex:god a go:deity .
+ex:example a go:example .
+ex:polytheist a go:concept .
 
+# event: claim
+ex:claimevent a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:knowledgeevent .
 
-@base <http://etratnet.ir/ontology/> .
+# event: knowledge (knowing god by example)
+ex:knowledgeevent a go:event ;
+    go:hasagent ex:person ;
+    go:hastheme ex:god ;
+    go:hasinstrument ex:example .
 
-<http://etratnet.ir/ontology/311-21> rdf:type owl:Ontology .
-
-:Person_x a go:Substance .
-:God a go:Substance .
-:Other_Entity a go:Substance .
-
-:ClaimKnowEvent a ex:ClaimEvent ;
-    go:HasAgent :Person_x ;
-    go:HasTheme :God ;
-    go:HasInstrument :Other_Entity .
-
-:UnifyEvent a ex:UnifyEvent ;
-    go:HasAgent :Person_x ;
-    go:HasTheme :God .
-
-:NegationOfUnify a go:NegativeEvent ;
-    go:NegatedEvent :UnifyEvent .
-go:Substance rdfs:label "شی"@fa.
+# attribute: the person is a polytheist as a result
+ex:person go:hasproperty ex:polytheist .
+ex:polytheist rdf:type go:negativemoraljudgment .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-19> rdf:type owl:ontology .
 
-ex:Person1 a go:Substance .
-ex:God a go:Substance .
+ex:god a go:divinebeing .
+ex:veilofgod a go:concept ;
+    go:isotherthan ex:god .
 
-ex:KnowledgeEvent1 a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:God .
+ex:exampleofveil a go:concept ;
+    go:isotherthan ex:god .
 
-ex:KnowledgeEvent2 a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:God ;
-    ex:HasCause ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:imageofveil a go:concept ;
+    go:isotherthan ex:god .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-20> rdf:type owl:ontology .
 
-ex:God a go:Deity .
-ex:UnspecifiedPerson a go:Agent .
+ex:god a go:deity ;
+    ex:isone true ;
+    ex:isunified true .
 
-ex:KnowGodThroughGod a go:Event ;
-    go:HasAgent ex:UnspecifiedPerson ;
-    go:HasTheme ex:God ;
-    go:hasManner ex:ThroughGod .
 
-ex:NotKnowGodThroughGod a go:Event ;
-    go:HasAgent ex:UnspecifiedPerson ;
-    go:HasTheme ex:God ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-21> rdf:type owl:ontology .
+
+:person_x a go:substance .
+:god a go:substance .
+:other_entity a go:substance .
+
+:claimknowevent a ex:claimevent ;
+    go:hasagent :person_x ;
+    go:hastheme :god ;
+    go:hasinstrument :other_entity .
+
+:unifyevent a ex:unifyevent ;
+    go:hasagent :person_x ;
+    go:hastheme :god .
+
+:negationofunify a go:negativeevent ;
+    go:negatedevent :unifyevent .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-22> rdf:type owl:ontology .
+
+ex:person1 a go:substance .
+ex:god a go:substance .
+
+ex:knowledgeevent1 a go:event ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:god .
+
+ex:knowledgeevent2 a go:event ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:god ;
+    ex:hascause ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-23> rdf:type owl:ontology .
+
+ex:god a go:deity .
+ex:unspecifiedperson a go:agent .
+
+ex:knowgodthroughgod a go:event ;
+    go:hasagent ex:unspecifiedperson ;
+    go:hastheme ex:god ;
+    go:hasmanner ex:throughgod .
+
+ex:notknowgodthroughgod a go:event ;
+    go:hasagent ex:unspecifiedperson ;
+    go:hastheme ex:god ;
     go:negation true ;
-    go:hasManner ex:ThroughGod .
+    go:hasmanner ex:throughgod .
 
-ex:NotTrulyKnowGod a go:Event ;
-    go:HasAgent ex:UnspecifiedPerson ;
-    go:HasTheme ex:God ;
+ex:nottrulyknowgod a go:event ;
+    go:hasagent ex:unspecifiedperson ;
+    go:hastheme ex:god ;
     go:negation true ;
-    go:hasCondition ex:NotKnowGodThroughGod .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+    go:hascondition ex:notknowgodthroughgod .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-24> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-24> rdf:type owl:ontology .
 
-:Person1 a :Person .
+:person1 a :person .
 
-:God a go:Deity .
-:Others a go:Substance .
+:god a go:deity .
+:others a go:substance .
 
-:NotKnowingGodEvent a ex:NotKnowingEvent ;
-    go:HasAgent :Person1 ;
-    go:HasTheme :God .
+:notknowinggodevent a ex:notknowingevent ;
+    go:hasagent :person1 ;
+    go:hastheme :god .
 
-:KnowingOthersEvent a ex:KnowingEvent ;
-    go:HasAgent :Person1 ;
-    go:HasTheme :Others .
+:knowingothersevent a ex:knowingevent ;
+    go:hasagent :person1 ;
+    go:hastheme :others .
 
-# The statement is: if a person does not know God, then that person knows others.
-:ConditionalStatement a ex:Conditional ;
-    ex:ifCondition :NotKnowingGodEvent ;
-    ex:thenResult :KnowingOthersEvent .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-25> rdf:type owl:Ontology .
-
-ex:Creator a go:Substance .
-ex:CreatedBeing a go:Substance .
-
-# We represent the fact that there is nothing between them as a negated triple:
-# There is no instance of go:Substance that is intermediary between ex:Creator and ex:CreatedBeing
-
-# For demonstration, express the property with a reified statement
-
-ex:NoIntermediaryBetween a go:state ;
-    go:hasSubject ex:Creator ;
-    go:hasObject ex:CreatedBeing ;
-    ex:relation "hasNoIntermediary" .
-
-# Alternatively, we can note explicitly no entity as go:intermediary
-
-# There does not exist any intermediary substance between Creator and CreatedBeing
-# This cannot be expressed directly in Turtle without a suitable negation vocabulary, so annotated here.
-go:Substance rdfs:label "شی"@fa.
+# the statement is: if a person does not know god, then that person knows others.
+:conditionalstatement a ex:conditional ;
+    ex:ifcondition :notknowinggodevent ;
+    ex:thenresult :knowingothersevent .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-26> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-25> rdf:type owl:ontology .
 
-ex:event1 a go:CreateEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Things ;
-    go:HasCause ex:Nothing .
+ex:creator a go:substance .
+ex:createdbeing a go:substance .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+# we represent the fact that there is nothing between them as a negated triple:
+# there is no instance of go:substance that is intermediary between ex:creator and ex:createdbeing
 
-ex:Things a go:Substance ;
-    rdfs:label "Things" .
+# for demonstration, express the property with a reified statement
 
-ex:Nothing a go:Substance ;
-    rdfs:label "Nothing" .
-go:Substance rdfs:label "شی"@fa.
+ex:nointermediarybetween a go:state ;
+    go:hassubject ex:creator ;
+    go:hasobject ex:createdbeing ;
+    ex:relation "hasnointermediary" .
 
+# alternatively, we can note explicitly no entity as go:intermediary
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/311-27> rdf:type owl:Ontology .
-
-ex:God a go:DivineEntity, go:Substance ;
-    ex:isDifferentFrom ex:HisNames .
-
-ex:HisNames a go:AbstractEntity, go:Substance .
-
-ex:BeingCalledByNames a go:Event ;
-    go:HasTheme ex:God ;
-    go:HasAgent ex:HisNames .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# there does not exist any intermediary substance between creator and createdbeing
+# this cannot be expressed directly in turtle without a suitable negation vocabulary, so annotated here.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/311-28> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/311-26> rdf:type owl:ontology .
 
-ex:Names a go:entity ;
+ex:event1 a go:createevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:things ;
+    go:hascause ex:nothing .
+
+ex:god a go:substance ;
+    rdfs:label "god" .
+
+ex:things a go:substance ;
+    rdfs:label "things" .
+
+ex:nothing a go:substance ;
+    rdfs:label "nothing" .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-27> rdf:type owl:ontology .
+
+ex:god a go:divineentity, go:substance ;
+    ex:isdifferentfrom ex:hisnames .
+
+ex:hisnames a go:abstractentity, go:substance .
+
+ex:beingcalledbynames a go:event ;
+    go:hastheme ex:god ;
+    go:hasagent ex:hisnames .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/311-28> rdf:type owl:ontology .
+
+ex:names a go:entity ;
     rdfs:label "the names" .
 
-ex:God a go:deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:NamesDifferentFromGod a go:distinctnessRelation ;
-    go:HasAgent ex:Names ;
-    go:HasTheme ex:God .
+ex:namesdifferentfromgod a go:distinctnessrelation ;
+    go:hasagent ex:names ;
+    go:hastheme ex:god .

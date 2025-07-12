@@ -1,139 +1,142 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/367#> .
+@prefix ex: <http://etratnet.ir/graph/example/367#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/367> rdf:type go:ontology ;
+        go:hascontent "11.  از امام باقر عليه‌السلام درباره سخن خداى عز و جل كه مى‌فرمايد: «به ما ستم نكردند بلكه به خودشان ستم مى‌كردند» پرسيدم. فرمود: «خداوند متعال بزرگ‌تر و عزيزتر و بِشكوه‌تر و بالاتر از آن است كه به او ستم شود. بلكه او ما را با خودش درآميخت و ستم به ما را ستم به خود و دوستى با ما را دوستى با خود قلمداد كرد، آن جا كه مى‌فرمايد: «همانا دوست شما خدا و پيامبر او و مؤمنان هستند» ؛ يعنى امامان از ما خاندان».سپس در جايى ديگر فرمود: «آنها به ما ستم نكردند، بلكه به خودشان ستم مى‌كردند». آن گاه مانند آن (تفسير بالا) را ذكر فرمود."@fa,
+        "11.  عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: سَأَلْتُهُ عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «وَ مَا ظَلَمُونَا وَ لَكِن كَانُوا أَنفُسَهُمْ يَظْلِمُونَ» قَالَ: «إِنَّ اللّه‌َ تَعَالى أَعْظَمُ وَأَعَزُّ وَأَجَلُّ وَأَمْنَعُ مِنْ أَنْ يُظْلَمَ، وَلكِنَّهُ خَلَطَنَا بِنَفْسِهِ فَجَعَلَ ظُلْمَنَا ظُلْمَهُ، وَوَلاَيَتَنَا وَلاَيَتَهُ؛ حَيْثُ يَقُولُ: «إِنَّمَا وَلِيُّكُمُ اللَّهُ وَرَسُولُهُ وَالَّذِينَ ءَامَنُواْ» يَعْنِي الْأَئِمَّةَ مِنَّا».ثُمَّ قَالَ فِي مَوْضِعٍ آخَرَ: «وَمَا ظَلَمُونَا وَلكِنْ كَانُوا أَنْفُسَهُمْ‌يَظْلِمُونَ»ثُمَّ ذَكَرَ مِثْلَهُ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/367-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/367-1> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    go:hasAttribute ex:Greatness, ex:Honor, ex:Venerability, ex:Inviolability ;
-    go:hasProperty [ a go:Immunity ;
-                    go:negationOf ex:BeingWronged ] .
+ex:allah a go:deity ;
+    go:hasattribute ex:greatness, ex:honor, ex:venerability, ex:inviolability ;
+    go:hasproperty [ a go:immunity ;
+                    go:negationof ex:beingwronged ] .
 
-ex:Greatness a go:Attribute ;
-    rdfs:label "Great"@en .
+ex:greatness a go:attribute ;
+    rdfs:label "great"@en .
 
-ex:Honor a go:Attribute ;
-    rdfs:label "Honorable"@en .
+ex:honor a go:attribute ;
+    rdfs:label "honorable"@en .
 
-ex:Venerability a go:Attribute ;
-    rdfs:label "Venerable"@en .
+ex:venerability a go:attribute ;
+    rdfs:label "venerable"@en .
 
-ex:Inviolability a go:Attribute ;
-    rdfs:label "Inviolable"@en .
+ex:inviolability a go:attribute ;
+    rdfs:label "inviolable"@en .
 
-ex:BeingWronged a go:Event .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/367-2> rdf:type owl:Ontology .
-
-ex:MixingEvent a go:Event ;
-    go:HasAgent go:God ;
-    go:HasTheme ex:PeopleOfTheHouse .
-
-ex:InjusticeAgainstPeopleOfTheHouse a ex:Injustice ;
-    ex:target ex:PeopleOfTheHouse .
-
-ex:GodsInjustice a ex:Injustice ;
-    ex:equivalentTo ex:InjusticeAgainstPeopleOfTheHouse ;
-    ex:agent go:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:beingwronged a go:event .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/367-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/367-2> rdf:type owl:ontology .
 
-ex:Authority_AhlAlBayt a go:Authority ;
+ex:mixingevent a go:event ;
+    go:hasagent go:god ;
+    go:hastheme ex:peopleofthehouse .
+
+ex:injusticeagainstpeopleofthehouse a ex:injustice ;
+    ex:target ex:peopleofthehouse .
+
+ex:godsinjustice a ex:injustice ;
+    ex:equivalentto ex:injusticeagainstpeopleofthehouse ;
+    ex:agent go:god .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/367-3> rdf:type owl:ontology .
+
+ex:authority_ahlalbayt a go:authority ;
     rdfs:label "ولاية أهل البيت"@ar ;
-    go:isEquivalentTo ex:Authority_Allah .
+    go:isequivalentto ex:authority_allah .
 
-ex:Authority_Allah a go:Authority ;
+ex:authority_allah a go:authority ;
     rdfs:label "ولاية الله"@ar ;
-    go:HasAgent ex:Allah .
+    go:hasagent ex:allah .
 
-ex:Allah a go:Deity ;
+ex:allah a go:deity ;
     rdfs:label "الله سبحانه"@ar .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/367-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/367-4> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:utterance1 .
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:utterance1 .
 
-ex:God a go:Substance ;
-    rdfs:label "God" .
+ex:god a go:substance ;
+    rdfs:label "god" .
 
-ex:Messenger a go:Substance ;
-    rdfs:label "His Messenger" .
+ex:messenger a go:substance ;
+    rdfs:label "his messenger" .
 
-ex:Believers a go:Substance ;
-    rdfs:label "Those Who Have Believed" .
+ex:believers a go:substance ;
+    rdfs:label "those who have believed" .
 
-ex:utterance1 a go:Utterance ;
-    go:utteredText "Indeed, your guardian is God, His Messenger, and those who have believed." ;
+ex:utterance1 a go:utterance ;
+    go:utteredtext "indeed, your guardian is god, his messenger, and those who have believed." ;
     go:states (
-        [ a go:GuardianRole ; go:hasGuardian ex:God ]
-        [ a go:GuardianRole ; go:hasGuardian ex:Messenger ]
-        [ a go:GuardianRole ; go:hasGuardian ex:Believers ]
+        [ a go:guardianrole ; go:hasguardian ex:god ]
+        [ a go:guardianrole ; go:hasguardian ex:messenger ]
+        [ a go:guardianrole ; go:hasguardian ex:believers ]
     ) .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/367-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/367-5> rdf:type owl:ontology .
 
-ex:thisVerse a go:Text ;
-    go:hasContent "This verse" .
+ex:thisverse a go:text ;
+    go:hascontent "this verse" .
 
-ex:beliefEvent a go:Event ;
-    go:HasTheme ex:thisVerse ;
-    go:HasAgent ex:believersGroup .
+ex:beliefevent a go:event ;
+    go:hastheme ex:thisverse ;
+    go:hasagent ex:believersgroup .
 
-ex:believersGroup a go:Group ;
+ex:believersgroup a go:group ;
     go:identity ex:imams .
 
-ex:imams a go:Group ;
-    go:isMemberOf ex:AhlAlBayt .
+ex:imams a go:group ;
+    go:ismemberof ex:ahlalbayt .
 
-ex:AhlAlBayt a go:Community ;
-    rdfs:label "Ahl al-Bayt" .
-go:Event rdfs:label "رخداد"@fa.
+ex:ahlalbayt a go:community ;
+    rdfs:label "ahl al-bayt" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/367-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/367-6> rdf:type owl:ontology .
 
-ex:InjusticeEvent1 a go:Injustice ;
-    go:HasTheme ex:AhlAlBayt ;
-    go:HasTheme ex:Themselves .
+ex:injusticeevent1 a go:injustice ;
+    go:hastheme ex:ahlalbayt ;
+    go:hastheme ex:themselves .
 
-ex:AhlAlBayt a go:Group ;
-    go:hasMember ex:PeopleOfTheHouse .
+ex:ahlalbayt a go:group ;
+    go:hasmember ex:peopleofthehouse .
 
-ex:Themselves a go:Self .
+ex:themselves a go:self .
 
-ex:GodAlmighty a go:Deity .
+ex:godalmighty a go:deity .
 
-# Explicitly stating no injustice towards God
-ex:InjusticeEvent1 go:HasNoEffectOn ex:GodAlmighty .
+# explicitly stating no injustice towards god
+ex:injusticeevent1 go:hasnoeffecton ex:godalmighty .

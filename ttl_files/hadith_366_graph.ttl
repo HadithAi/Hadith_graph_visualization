@@ -1,73 +1,76 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/366#> .
+@prefix ex: <http://etratnet.ir/graph/example/366#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/366> rdf:type go:ontology ;
+        go:hascontent "10.  از امام باقر عليه‌السلام شنيدم كه مى‌فرمايد: «به واسطه ما خدا پرستش شد، به واسطه ما خدا شناخته شد، به واسطه ما يگانگى خداوند ـ تبارك و تعالى ـ دانسته شد، و محمد پرده‌دار خداى ـ تبارك و تعالى ـ است»."@fa,
+        "10.  سَمِعْتُ أَبَا جَعْفَرٍ عليه‌السلام يَقُولُ: «بِنَا عُبِدَ اللّه‌ُ، وَبِنَا عُرِفَ اللّه‌ُ، وَبِنَا وُحِّدَ اللّه‌ُ تَبَارَكَ وَتَعَالى، وَمُحَمَّدٌ حِجَابُ اللّه‌ِ تَبَارَكَ وَتَعَالى»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/366-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/366-1> rdf:type owl:ontology .
 
-ex:Abdullah a go:Person .
-ex:buildingEvent1 a go:ConstructionEvent ;
-    go:HasAgent ex:Abdullah .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/366-2> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:KnowingEvent ;
-    go:HasTheme ex:God ;
-    go:HasAgent ex:Us .
-
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
-
-ex:Us a go:Agent ;
-    rdfs:label "Us"@en .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:abdullah a go:person .
+ex:buildingevent1 a go:constructionevent ;
+    go:hasagent ex:abdullah .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/366-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/366-2> rdf:type owl:ontology .
 
-ex:Event_Unification a go:Event ;
-    go:HasTheme ex:Entity_Allah ;
-    go:hasTime ex:Time_Beginning .
+ex:eventinstance1 a go:knowingevent ;
+    go:hastheme ex:god ;
+    go:hasagent ex:us .
 
-ex:Entity_Allah a go:Substance ;
-    rdfs:label "Allah, the Blessed and Exalted"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:Time_Beginning a go:Time ;
-    rdfs:label "In the Beginning"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Time rdfs:label "زمان"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:us a go:agent ;
+    rdfs:label "us"@en .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/366-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/366-3> rdf:type owl:ontology .
 
-ex:Muhammad rdf:type foaf:Person ;
-    rdfs:label "Muhammad" ;
-    go:hasTitle ex:VeilOfAllah .
+ex:event_unification a go:event ;
+    go:hastheme ex:entity_allah ;
+    go:hastime ex:time_beginning .
 
-ex:Allah rdf:type go:Deity ;
-    rdfs:label "Allah" ;
-    go:hasAttribute "Blessed" , "Exalted" .
+ex:entity_allah a go:substance ;
+    rdfs:label "allah, the blessed and exalted"@en .
 
-ex:VeilOfAllah a go:Role ;
-    rdfs:label "Veil of Allah" ;
-    go:relatedTo ex:Allah .
+ex:time_beginning a go:time ;
+    rdfs:label "in the beginning"@en .
+go:event rdfs:label "رخداد"@fa.
+go:time rdfs:label "زمان"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/366-4> rdf:type owl:ontology .
+
+ex:muhammad rdf:type foaf:person ;
+    rdfs:label "muhammad" ;
+    go:hastitle ex:veilofallah .
+
+ex:allah rdf:type go:deity ;
+    rdfs:label "allah" ;
+    go:hasattribute "blessed" , "exalted" .
+
+ex:veilofallah a go:role ;
+    rdfs:label "veil of allah" ;
+    go:relatedto ex:allah .

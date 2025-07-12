@@ -1,97 +1,100 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/363#> .
+@prefix ex: <http://etratnet.ir/graph/example/363#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/363> rdf:type go:ontology ;
+        go:hascontent "7.  در محضر امام باقر عليه‌السلام بودم كه آن حضرت، از پيش خود بدون آن كه من از ايشان پرسش كنم، فرمود: «ما حجّت خدا هستيم؛ ما دَرِ [ورود به معرفت] خدا هستيم؛ ما زبان خدا هستيم؛ ما روى خدا هستيم؛ ما چشم [و ديده‌بان]خدا در ميان آفريدگانش هستيم؛ و ما زمامداران خدا در ميان بندگانش هستيم»."@fa,
+        "7.  كُنْتُ عِنْدَ أَبِي جَعْفَرٍ عليه‌السلام، فَأَنْشَأَ يَقُولُ ـ ابْتِدَاءً مِنْهُ مِنْ غَيْرِ أَنْ أَسْأَلَهُ ـ: «نَحْنُ حُجَّةُ اللّه‌ِ، وَنَحْنُ بَابُ اللّه‌ِ، وَنَحْنُ لِسَانُ اللّه‌ِ، وَ نَحْنُ وَجْهُ اللّه‌ِ، وَنَحْنُ عَيْنُ اللّه‌ِ فِي خَلْقِهِ، وَ نَحْنُ وُلاَةُ أَمْرِ اللّه‌ِ فِي عِبَادِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/363-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/363-1> rdf:type owl:ontology .
 
-ex:We a go:Group ;
-    ex:isProofOf ex:God .
+ex:we a go:group ;
+    ex:isproofof ex:god .
 
-ex:God a go:Deity .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/363-2> rdf:type owl:Ontology .
-
-ex:We a go:Agent ;
-    rdfs:label "We"@en ;
-    go:hasIdentity ex:BabAllah .
-
-ex:BabAllah a go:Agent ;
-    rdfs:label "Bab Allah"@en .
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:deity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/363-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/363-2> rdf:type owl:ontology .
 
-ex:We a go:Group ;
-    ex:isTongueOf ex:God .
+ex:we a go:agent ;
+    rdfs:label "we"@en ;
+    go:hasidentity ex:baballah .
 
-ex:God a go:Deity .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/363-4> rdf:type owl:Ontology .
-
-ex:We a ex:Group ;
-    ex:isIdentifiedAs ex:FaceOfGod .
-
-ex:FaceOfGod a ex:Concept .
+ex:baballah a go:agent ;
+    rdfs:label "bab allah"@en .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/363-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/363-3> rdf:type owl:ontology .
 
-ex:We a go:Agent ;
-    ex:isEyesOf ex:God ;
-    ex:within ex:Creation .
+ex:we a go:group ;
+    ex:istongueof ex:god .
 
-ex:God a go:Agent ;
-    ex:isDivine true .
-
-ex:Creation a go:Substance .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:deity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/363-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/363-4> rdf:type owl:ontology .
 
-# Entities
-ex:We a go:Person ;
-    go:hasRole ex:RulerRole .
+ex:we a ex:group ;
+    ex:isidentifiedas ex:faceofgod .
 
-ex:God a go:Deity .
+ex:faceofgod a ex:concept .
 
-ex:Servants a go:Person .
 
-# Event: Appointment or governance
-ex:RulingEvent a go:Event ;
-    go:HasAgent ex:We ;
-    go:HasCause ex:God ;
-    go:HasTheme ex:Servants .
+@base <http://etratnet.ir/ontology/> .
 
-# Role definition
-ex:RulerRole a go:Role ;
-    go:roleHeldBy ex:We ;
-    go:roleAuthority ex:God ;
-    go:roleOver ex:Servants .
-go:Event rdfs:label "رخداد"@fa.
+<http://etratnet.ir/ontology/363-5> rdf:type owl:ontology .
+
+ex:we a go:agent ;
+    ex:iseyesof ex:god ;
+    ex:within ex:creation .
+
+ex:god a go:agent ;
+    ex:isdivine true .
+
+ex:creation a go:substance .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/363-6> rdf:type owl:ontology .
+
+# entities
+ex:we a go:person ;
+    go:hasrole ex:rulerrole .
+
+ex:god a go:deity .
+
+ex:servants a go:person .
+
+# event: appointment or governance
+ex:rulingevent a go:event ;
+    go:hasagent ex:we ;
+    go:hascause ex:god ;
+    go:hastheme ex:servants .
+
+# role definition
+ex:rulerrole a go:role ;
+    go:roleheldby ex:we ;
+    go:roleauthority ex:god ;
+    go:roleover ex:servants .
+go:event rdfs:label "رخداد"@fa.

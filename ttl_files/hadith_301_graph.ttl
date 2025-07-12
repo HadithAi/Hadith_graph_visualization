@@ -1,72 +1,75 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/301#> .
+@prefix ex: <http://etratnet.ir/graph/example/301#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/301> rdf:type go:ontology ;
+        go:hascontent "1.  به امام صادق عليه‌السلام عرض كردم: خدا از ازل مريد (اراده كننده) بوده است؟ فرمود: «مريد وجود نمى‌يابد مگر با مرادى كه همراه اوست. خدا از ازل دانا و توانا بود، ولى بعدا اراده كرد»."@fa,
+        "1.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: قُلْتُ: لَمْ يَزَلِ اللّه‌ُ مُرِيداً؟ قَالَ: «إِنَّ الْمُرِيدَ لاَ يَكُونُ إِلاَّ لِمُرَادٍ مَعَهُ، لَمْ يَزَلِ اللّه‌ُ عَالِماً قَادِراً، ثُمَّ أَرَادَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/301-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/301-1> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:Seeker a go:Substance ;
+ex:seeker a go:substance ;
     rdfs:label "the seeker"@en .
 
-ex:Intention a go:Concept ;
+ex:intention a go:concept ;
     rdfs:label "intention"@en .
 
-ex:IntentionPossessionEvent a go:Event ;
-    rdfs:label "seeker has intention for God"@en ;
-    go:HasAgent ex:Seeker ;
-    go:HasTheme ex:God ;
-    go:HasPatient ex:Intention .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:intentionpossessionevent a go:event ;
+    rdfs:label "seeker has intention for god"@en ;
+    go:hasagent ex:seeker ;
+    go:hastheme ex:god ;
+    go:haspatient ex:intention .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/301-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/301-2> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    ex:hasAttribute ex:AllKnowing , ex:AllPowerful ;
-    ex:since ex:Eternity .
+ex:allah a go:deity ;
+    ex:hasattribute ex:allknowing , ex:allpowerful ;
+    ex:since ex:eternity .
 
-ex:AllKnowing a ex:Attribute ;
-    rdfs:label "All-Knowing"@en .
+ex:allknowing a ex:attribute ;
+    rdfs:label "all-knowing"@en .
 
-ex:AllPowerful a ex:Attribute ;
-    rdfs:label "All-Powerful"@en .
+ex:allpowerful a ex:attribute ;
+    rdfs:label "all-powerful"@en .
 
-ex:Eternity a ex:TimePeriod ;
-    rdfs:label "Eternity"@en .
+ex:eternity a ex:timeperiod ;
+    rdfs:label "eternity"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/301-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/301-3> rdf:type owl:ontology .
 
-ex:Event_Willing a go:Event ;
-    go:HasAgent ex:Entity_God .
+ex:event_willing a go:event ;
+    go:hasagent ex:entity_god .
 
-ex:Entity_God a go:Agent, go:Substance ;
-    go:hasProperty ex:Property_Knowledgeable, ex:Property_Powerful .
+ex:entity_god a go:agent, go:substance ;
+    go:hasproperty ex:property_knowledgeable, ex:property_powerful .
 
-ex:Property_Knowledgeable a go:Property ;
+ex:property_knowledgeable a go:property ;
     rdfs:label "knowledgeable" .
 
-ex:Property_Powerful a go:Property ;
+ex:property_powerful a go:property ;
     rdfs:label "powerful" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

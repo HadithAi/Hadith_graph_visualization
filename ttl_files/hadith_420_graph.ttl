@@ -1,53 +1,56 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/420#> .
+@prefix ex: <http://etratnet.ir/graph/example/420#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/420> rdf:type go:ontology ;
+        go:hascontent "2. به امام صادق عليه‌السلام عرض كردم: شناخت، كار كيست؟ فرمود: «كار خداوند، و مردم را در آن دستى نيست»."@fa,
+        "2.  قُلْتُ لِأَبِي عَبْدِ اللّه‌ِ عليه‌السلام: الْمَعْرِفَةُ مِنْ صُنْعِ مَنْ هِيَ؟ قَالَ: «مِنْ صُنْعِ اللّه‌ِ، لَيْسَ لِلْعِبَادِ فِيهَا صُنْعٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/420-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/420-1> rdf:type owl:ontology .
 
-ex:Knowledge a go:Substance ;
-    rdfs:label "Knowledge" .
+ex:knowledge a go:substance ;
+    rdfs:label "knowledge" .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:god a go:agent ;
+    rdfs:label "god" .
 
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Knowledge ;
-    rdfs:label "Creation of Knowledge by God" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:knowledge ;
+    rdfs:label "creation of knowledge by god" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/420-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/420-2> rdf:type owl:ontology .
 
-ex:People a go:Agent ;
-    rdfs:label "People" .
+ex:people a go:agent ;
+    rdfs:label "people" .
 
-ex:Knowledge a go:Substance ;
-    rdfs:label "Knowledge" .
+ex:knowledge a go:substance ;
+    rdfs:label "knowledge" .
 
-ex:CreatingKnowledge a go:Event ;
-    rdfs:label "Creating Knowledge" ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:Knowledge .
+ex:creatingknowledge a go:event ;
+    rdfs:label "creating knowledge" ;
+    go:hasagent ex:people ;
+    go:hastheme ex:knowledge .
 
-# The sentence implies negation of the above event's existence involving these agents and themes.
-# Representing negation explicitly in RDF is challenging, so this triple set captures involved concepts.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# the sentence implies negation of the above event's existence involving these agents and themes.
+# representing negation explicitly in rdf is challenging, so this triple set captures involved concepts.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

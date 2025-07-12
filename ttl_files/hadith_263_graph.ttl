@@ -1,258 +1,261 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/263#> .
+@prefix ex: <http://etratnet.ir/graph/example/263#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/263> rdf:type go:ontology ;
+        go:hascontent "3.  به ابو الحسن الرضا عليه‌السلام [نامه] نوشتم و از آن حضرت در باره ديدن خدا [در آخرت]و آنچه عامّه [مبنى بر جواز رؤيت در آخرت] و خاصه [مبنى بر عدم جواز آن] روايت مى‌كنند پرسيدم و خواهش كردم آن را برايم شرح دهند. حضرت به خط خود نوشت: «همگان ـ بدون هيچ اختلافى ـ بر اين مطلب همداستان‌اند كه شناخت از راه ديدن، ضرورى [قطعى و بديهى] است. حال اگر روا باشد كه خدا [در آخرت] با چشم ديده شود، بالضروره شناخت حاصل شده است. آن گاه اين شناخت [از راه ديدن] از دو حال بيرون نيست: يا ايمان است، يا ايمان نيست. اگر اين شناختِ از راه ديدن ايمان باشد پس، شناخت در دنيا كه از راه نظرى به دست مى‌آيد ايمان نمى‌باشد؛ چون اين شناخت ضدّ آن شناخت [نظرى]است؛ بنابراين، در دنيا مؤمنى وجود ندارد؛ زيرا، خداى عز و جل را نديده‌اند، و اگر شناختى كه از راه ديدن حاصل مى‌شود ايمان نيست، اين شناختى كه از راه نظرى به دست مى‌آيد بايد [در آخرت و با ديدن خدا] از بين برود، در حالى كه از بين نمى‌رود. و اين دليل است بر اين كه خداى عز و جل با چشم ديده نمى‌شود؛ زيرا [ديدن با] چشم به نتيجه‌اى كه گفتيم مى‌انجامد»."@fa,
+        "3.  كَتَبْتُ إِلى أَبِي الْحَسَنِ الرِّضَا عليه‌السلام أَسْأَلُهُ عَنِ الرُّؤيَةِ وَمَا تَرْوِيهِ الْعَامَّةُ وَالْخَاصَّةُ، وَسَأَلْتُهُ أَنْ يَشْرَحَ لِي ذلِكَ. فَكَتَبَ بِخَطِّهِ: «اتَّفَقَ الْجَمِيعُ ـ لاَ تَمَانُعَ بَيْنَهُمْ ـ أَنَّ الْمَعْرِفَةَ مِنْ جِهَةِ الرُّؤيَةِ ضَرُورَةٌ، فَإِذَا جَازَ أَنْ يُرَى اللّه‌ُ بِالْعَيْنِ، وَقَعَتِ الْمَعْرِفَةُ ضَرُورَةً، ثُمَّ لَمْ تَخْلُ تِلْكَ الْمَعْرِفَةُ مِنْ أَنْ تَكُونَ إِيمَاناً، أَوْ لَيْسَتْ بِإِيمَانٍ، فَإِنْ كَانَتْ تِلْكَ الْمَعْرِفَةُ مِنْ جِهَةِ الرُّؤيَةِ إِيمَاناً، فَالْمَعْرِفَةُ الَّتِي فِي دَارِ الدُّنْيَا مِنْ جِهَةِ الاِكْتِسَابِ لَيْسَتْ بِإِيمَانٍ؛ لِأَنَّهَا ضِدُّهُ، فَلاَ يَكُونُ فِي الدُّنْيَا مُؤمِنٌ؛ لِأَنَّهُمْ لَمْ يَرَوُا اللّه‌َ عَزَّ ذِكْرُهُ، وَإِنْ لَمْ تَكُنْ تِلْكَ الْمَعْرِفَةُ الَّتِي مِنْ جِهَةِ الرُّؤيَةِ إِيمَاناً، لَمْ تَخْلُ هذِهِ الْمَعْرِفَةُ ـ الَّتِي مِنْ جِهَةِ الاِكْتِسَابِ ـ أَنْ تَزُولَ، وَ لاَ تَزُولُ فِي الْمَعَادِ، فَهذَا دَلِيلٌ عَلى أَنَّ اللّه‌َ ـ عَزَّ وَجَلَّ ـ لاَ يُرى بِالْعَيْنِ؛ إِذِ الْعَيْنُ تُؤدِّي إِلى مَا وَصَفْنَاهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-1> rdf:type owl:ontology .
 
-ex:WritingEvent1 a go:Event ;
-    go:HasAgent ex:Speaker ;
-    go:HasRecipient ex:AlHasanAlRidha ;
-    go:HasTheme ex:QuestionAboutVisionAndNarration .
+ex:writingevent1 a go:event ;
+    go:hasagent ex:speaker ;
+    go:hasrecipient ex:alhasanalridha ;
+    go:hastheme ex:questionaboutvisionandnarration .
 
-ex:Speaker a go:person ;
-    rdfs:label "Speaker" .
+ex:speaker a go:person ;
+    rdfs:label "speaker" .
 
-ex:AlHasanAlRidha a go:person ;
-    rdfs:label "Al-Hasan Al-Ridha" ;
-    go:Honorific "peace be upon him" .
-
-ex:QuestionAboutVisionAndNarration a go:concept ;
-    go:hasParts ex:Vision, ex:CommonAndEliteNarration .
-
-ex:Vision a go:concept ;
-    rdfs:label "Vision" .
-
-ex:CommonAndEliteNarration a go:Event ;
-    go:HasAgent ex:CommonPeople, ex:ElitePeople ;
-    go:HasTheme ex:NarrationContent .
-
-ex:CommonPeople a go:group ;
-    rdfs:label "common people" .
-
-ex:ElitePeople a go:group ;
-    rdfs:label "elite people" .
-
-ex:NarrationContent a go:concept ;
-    rdfs:label "narratives" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/263-2> rdf:type owl:Ontology .
-
-ex:askingEvent a go:AskEvent ;
-    go:HasAgent ex:Speaker ;
-    go:HasRecipient ex:AlHassanAlRidha ;
-    go:HasTheme ex:ExplanationRequest .
-
-ex:Speaker a foaf:Person ;
-    foaf:name "I" .
-
-ex:AlHassanAlRidha a foaf:Person ;
-    foaf:name "Al-Hassan Al-Ridha" ;
+ex:alhasanalridha a go:person ;
+    rdfs:label "al-hasan al-ridha" ;
     go:honorific "peace be upon him" .
 
-ex:ExplanationRequest a go:Explanation .
+ex:questionaboutvisionandnarration a go:concept ;
+    go:hasparts ex:vision, ex:commonandelitenarration .
+
+ex:vision a go:concept ;
+    rdfs:label "vision" .
+
+ex:commonandelitenarration a go:event ;
+    go:hasagent ex:commonpeople, ex:elitepeople ;
+    go:hastheme ex:narrationcontent .
+
+ex:commonpeople a go:group ;
+    rdfs:label "common people" .
+
+ex:elitepeople a go:group ;
+    rdfs:label "elite people" .
+
+ex:narrationcontent a go:concept ;
+    rdfs:label "narratives" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-2> rdf:type owl:ontology .
 
-ex:AgreementEvent1 a go:Event ;
-    go:HasAgent ex:Everyone ;
-    go:HasTheme ex:Proposition1 .
+ex:askingevent a go:askevent ;
+    go:hasagent ex:speaker ;
+    go:hasrecipient ex:alhassanalridha ;
+    go:hastheme ex:explanationrequest .
 
-ex:Everyone a go:collective_agent .
+ex:speaker a foaf:person ;
+    foaf:name "i" .
 
-ex:Proposition1 a go:state ;
-    go:HasSubject ex:Knowledge ;
-    go:HasProperty ex:NecessityFromVision .
+ex:alhassanalridha a foaf:person ;
+    foaf:name "al-hassan al-ridha" ;
+    go:honorific "peace be upon him" .
 
-ex:Knowledge a go:Substance .
-
-ex:NecessityFromVision a go:property ;
-    go:HasQualifier ex:Vision .
-
-ex:Vision a go:perspective .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:explanationrequest a go:explanation .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-3> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Eye a go:Substance .
-ex:SeeingEvent a go:Event ;
-    go:HasAgent ex:Observer ;
-    go:HasTheme ex:God ;
-    go:UsingInstrument ex:Eye .
+ex:agreementevent1 a go:event ;
+    go:hasagent ex:everyone ;
+    go:hastheme ex:proposition1 .
 
-ex:KnowledgeEvent a go:Event ;
-    go:OccursNecessarily true .
+ex:everyone a go:collective_agent .
 
-ex:ConditionalRelation a go:Condition ;
-    go:If ex:SeeingEvent ;
-    go:Then ex:KnowledgeEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:proposition1 a go:state ;
+    go:hassubject ex:knowledge ;
+    go:hasproperty ex:necessityfromvision .
 
+ex:knowledge a go:substance .
 
-@base <http://etratnet.ir/ontology/> .
+ex:necessityfromvision a go:property ;
+    go:hasqualifier ex:vision .
 
-<http://etratnet.ir/ontology/263-5> rdf:type owl:Ontology .
-
-ex:Knowledge a go:Substance ;
-    ex:hasPerspective ex:Vision ;
-    ex:isEither ex:Faith , ex:NotFaith .
-
-ex:Vision a ex:Perspective .
-ex:Faith a go:Substance .
-ex:NotFaith a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:vision a go:perspective .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-4> rdf:type owl:ontology .
 
-ex:Knowledge_from_Vision a go:Substance ;
-    rdfs:subClassOf ex:Faith .
+ex:god a go:substance .
+ex:eye a go:substance .
+ex:seeingevent a go:event ;
+    go:hasagent ex:observer ;
+    go:hastheme ex:god ;
+    go:usinginstrument ex:eye .
 
-ex:Knowledge_from_Acquisition_in_Worldly_Abode a go:Substance ;
-    owl:disjointWith ex:Faith .
-go:Substance rdfs:label "شی"@fa.
+ex:knowledgeevent a go:event ;
+    go:occursnecessarily true .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/263-7> rdf:type owl:Ontology .
-
-ex:Knowledge_Acquired a go:Knowledge ;
-    go:method ex:Acquisition ;
-    go:locatedIn ex:WorldlyRealm .
-
-ex:Knowledge_Vision a go:Knowledge ;
-    go:method ex:Vision .
-
-ex:Knowledge_Acquired ex:isOpposedTo ex:Knowledge_Vision .
-
-ex:Acquisition a go:Method .
-ex:Vision a go:Method .
-ex:WorldlyRealm a go:Place .
+ex:conditionalrelation a go:condition ;
+    go:if ex:seeingevent ;
+    go:then ex:knowledgeevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-5> rdf:type owl:ontology .
 
-ex:Believer a go:Person .
-ex:World a go:Location .
-ex:Allah a ex:DivineEntity .
+ex:knowledge a go:substance ;
+    ex:hasperspective ex:vision ;
+    ex:iseither ex:faith , ex:notfaith .
 
-ex:SeeingEvent a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:Allah .
-
-ex:NonSeeingEvent a go:Event ;
-    go:HasAgent ex:People ;
-    go:HasTheme ex:Allah ;
-    ex:isNegationOf ex:SeeingEvent .
-
-ex:NoBelieverInWorld a ex:State ;
-    ex:appliesTo ex:World ;
-    ex:about ex:Believer ;
-    ex:causedBy ex:NonSeeingEvent .
-go:Event rdfs:label "رخداد"@fa.
+ex:vision a ex:perspective .
+ex:faith a go:substance .
+ex:notfaith a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-6> rdf:type owl:ontology .
 
-ex:KnowledgeFromVision a go:Substance ;
-    go:hasType ex:Faith .
+ex:knowledge_from_vision a go:substance ;
+    rdfs:subclassof ex:faith .
 
-ex:KnowledgeFromAcquisition a go:Substance .
+ex:knowledge_from_acquisition_in_worldly_abode a go:substance ;
+    owl:disjointwith ex:faith .
+go:substance rdfs:label "شی"@fa.
 
-ex:PerishEvent a go:Event ;
-    go:hasTheme ex:KnowledgeFromAcquisition ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/263-7> rdf:type owl:ontology .
+
+ex:knowledge_acquired a go:knowledge ;
+    go:method ex:acquisition ;
+    go:locatedin ex:worldlyrealm .
+
+ex:knowledge_vision a go:knowledge ;
+    go:method ex:vision .
+
+ex:knowledge_acquired ex:isopposedto ex:knowledge_vision .
+
+ex:acquisition a go:method .
+ex:vision a go:method .
+ex:worldlyrealm a go:place .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/263-8> rdf:type owl:ontology .
+
+ex:believer a go:person .
+ex:world a go:location .
+ex:allah a ex:divineentity .
+
+ex:seeingevent a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:allah .
+
+ex:nonseeingevent a go:event ;
+    go:hasagent ex:people ;
+    go:hastheme ex:allah ;
+    ex:isnegationof ex:seeingevent .
+
+ex:nobelieverinworld a ex:state ;
+    ex:appliesto ex:world ;
+    ex:about ex:believer ;
+    ex:causedby ex:nonseeingevent .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/263-9> rdf:type owl:ontology .
+
+ex:knowledgefromvision a go:substance ;
+    go:hastype ex:faith .
+
+ex:knowledgefromacquisition a go:substance .
+
+ex:perishevent a go:event ;
+    go:hastheme ex:knowledgefromacquisition ;
     go:condition [ a go:condition ;
-                   go:conditionSubject ex:KnowledgeFromVision ;
-                   go:conditionProperty go:isNot ;
-                   go:conditionValue ex:Faith ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+                   go:conditionsubject ex:knowledgefromvision ;
+                   go:conditionproperty go:isnot ;
+                   go:conditionvalue ex:faith ] .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-10> rdf:type owl:ontology .
 
-ex:Knowledge_Acquired a go:Information ;
-    go:hasOrigin ex:Acquisition .
+ex:knowledge_acquired a go:information ;
+    go:hasorigin ex:acquisition .
 
-ex:Acquisition a go:Process .
+ex:acquisition a go:process .
 
-ex:Afterlife a go:TimeInterval .
+ex:afterlife a go:timeinterval .
 
-ex:VanishingEvent a go:Event ;
-    go:HasTheme ex:Knowledge_Acquired ;
-    go:OccursIn ex:Afterlife .
+ex:vanishingevent a go:event ;
+    go:hastheme ex:knowledge_acquired ;
+    go:occursin ex:afterlife .
 
-# Assert that the vanishing of acquired knowledge in the afterlife does not happen (negation not represented in triples).
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Time rdfs:label "زمان"@fa.
+# assert that the vanishing of acquired knowledge in the afterlife does not happen (negation not represented in triples).
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:time rdfs:label "زمان"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-11> rdf:type owl:ontology .
 
-ex:Proof1 a go:Proof ;
-    go:HasTheme ex:EventNotSeen1 .
+ex:proof1 a go:proof ;
+    go:hastheme ex:eventnotseen1 .
 
-ex:God_Almighty a go:Deity ;
-    rdfs:label "God Almighty" .
+ex:god_almighty a go:deity ;
+    rdfs:label "god almighty" .
 
-ex:Eye a go:Organ ;
+ex:eye a go:organ ;
     rdfs:label "eye" .
 
-ex:EventNotSeen1 a go:PerceptionEvent ;
-    go:HasAgent ex:Eye ;
-    go:HasTheme ex:God_Almighty ;
-    go:hasProperty go:NotVisible .
+ex:eventnotseen1 a go:perceptionevent ;
+    go:hasagent ex:eye ;
+    go:hastheme ex:god_almighty ;
+    go:hasproperty go:notvisible .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/263-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/263-12> rdf:type owl:ontology .
 
-ex:Eye a go:Substance ;
-    rdfs:label "Eye"@en .
+ex:eye a go:substance ;
+    rdfs:label "eye"@en .
 
-ex:DescribedEntity a go:Substance ;
-    rdfs:label "Described Entity"@en .
+ex:describedentity a go:substance ;
+    rdfs:label "described entity"@en .
 
-ex:Event_1 a go:Event ;
-    go:HasAgent ex:Eye ;
-    go:HasTheme ex:DescribedEntity ;
-    rdfs:label "Leading event"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:event_1 a go:event ;
+    go:hasagent ex:eye ;
+    go:hastheme ex:describedentity ;
+    rdfs:label "leading event"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

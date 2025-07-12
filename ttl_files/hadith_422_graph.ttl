@@ -1,50 +1,53 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/422#> .
+@prefix ex: <http://etratnet.ir/graph/example/422#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/422> rdf:type go:ontology ;
+        go:hascontent "4.  از امام صادق عليه‌السلام درباره سخن خداى عز و جل كه: «و دو راه را به او نمايانديم» پرسيدم. فرمود: «[يعنى]راه نيك و بد را»."@fa,
+        "4.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: سَأَلْتُهُ عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «وَ هَدَيْنَهُ النَّجْدَيْنِ» قَالَ: «نَجْدَ الْخَيْرِ وَالشَّرِّ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/422-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/422-1> rdf:type owl:ontology .
 
-ex:Sentence1 a ex:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Quotation1 .
+ex:sentence1 a ex:speechevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:quotation1 .
 
-ex:God a go:Deity .
+ex:god a go:deity .
 
-ex:Quotation1 a ex:Statement ;
-    ex:containsEvent ex:GuidanceEvent1 .
+ex:quotation1 a ex:statement ;
+    ex:containsevent ex:guidanceevent1 .
 
-ex:GuidanceEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Person1 ;
-    go:HasGoal ex:TwoPaths .
+ex:guidanceevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:person1 ;
+    go:hasgoal ex:twopaths .
 
-ex:Person1 a go:Person .
-ex:TwoPaths a ex:Path .
-go:Event rdfs:label "رخداد"@fa.
+ex:person1 a go:person .
+ex:twopaths a ex:path .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/422-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/422-2> rdf:type owl:ontology .
 
-ex:An_Najdan a go:Collection ;
-    rdfs:label "An-Najdan"@en ;
-    go:hasPart ex:Najd_al_Khayr , ex:Najd_al_Shar .
+ex:an_najdan a go:collection ;
+    rdfs:label "an-najdan"@en ;
+    go:haspart ex:najd_al_khayr , ex:najd_al_shar .
 
-ex:Najd_al_Khayr a go:Place ;
-    rdfs:label "Najd al-Khayr"@en .
+ex:najd_al_khayr a go:place ;
+    rdfs:label "najd al-khayr"@en .
 
-ex:Najd_al_Shar a go:Place ;
-    rdfs:label "Najd al-Shar"@en .
+ex:najd_al_shar a go:place ;
+    rdfs:label "najd al-shar"@en .

@@ -1,63 +1,66 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/414#> .
+@prefix ex: <http://etratnet.ir/graph/example/414#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/414> rdf:type go:ontology ;
+        go:hascontent "14.  «خداوند كريم‌تر از آن است كه به مردم بيش از توانشان تكليف دهد، و خداوند تواناتر از آن است كه در قلمرو سلطنتش چيزى كه او اراده نكند رخ دهد»."@fa,
+        "14.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «اللّه‌ُ أَكْرَمُ مِنْ أَنْ يُكَلِّفَ النَّاسَ مَا لاَ يُطِيقُونَ، وَاللّه‌ُ أَعَزُّ مِنْ أَنْ يَكُونَ فِي سُلْطَانِهِ مَا لاَ يُرِيدُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/414-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/414-1> rdf:type owl:ontology .
 
-ex:God a go:Agent , go:Deity ;
-    go:hasProperty ex:Generosity .
+ex:god a go:agent , go:deity ;
+    go:hasproperty ex:generosity .
 
-ex:People a go:Person .
+ex:people a go:person .
 
-ex:BurdeningEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ImpossibleBurden ;
-    go:HasRecipient ex:People ;
-    go:Status ex:NotPerformed .
+ex:burdeningevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:impossibleburden ;
+    go:hasrecipient ex:people ;
+    go:status ex:notperformed .
 
-ex:ImpossibleBurden a go:Burden ;
-    go:CanBeFinishedBy ex:People ;
-    go:Possibility go:Impossible .
+ex:impossibleburden a go:burden ;
+    go:canbefinishedby ex:people ;
+    go:possibility go:impossible .
 
-ex:Generosity a go:Property ;
-    rdfs:label "Generosity"@en .
+ex:generosity a go:property ;
+    rdfs:label "generosity"@en .
 
-ex:NotPerformed a go:Status ;
-    rdfs:label "Not Performed"@en .
+ex:notperformed a go:status ;
+    rdfs:label "not performed"@en .
 
-go:Impossible a go:Possibility ;
-    rdfs:label "Impossible"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:impossible a go:possibility ;
+    rdfs:label "impossible"@en .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/414-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/414-2> rdf:type owl:ontology .
 
-ex:God a ex:DivineEntity ;
-    ex:hasAttribute ex:Might .
+ex:god a ex:divineentity ;
+    ex:hasattribute ex:might .
 
-ex:Might a go:Quality ;
-    go:HasSubject ex:God .
+ex:might a go:quality ;
+    go:hassubject ex:god .
 
-ex:Dominion a go:Region ;
-    go:ControlledBy ex:God .
+ex:dominion a go:region ;
+    go:controlledby ex:god .
 
-ex:GodWillingState a go:State ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Dominion ;
-    ex:excludesUndesiredContent true .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:godwillingstate a go:state ;
+    go:hasagent ex:god ;
+    go:hastheme ex:dominion ;
+    ex:excludesundesiredcontent true .
+go:quality rdfs:label "ویژگی"@fa.

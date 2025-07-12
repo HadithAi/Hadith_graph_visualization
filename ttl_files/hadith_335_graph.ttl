@@ -1,119 +1,122 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/335#> .
+@prefix ex: <http://etratnet.ir/graph/example/335#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/335> rdf:type go:ontology ;
+        go:hascontent "8.  از امام صادق عليه‌السلام درباره سخن خداى عز و جل كه: «خداى مهر گستر بر عرش استوا دارد»پرسيدم. فرمود: «يعنى با همه اشيا نسبت يكسان دارد. پس، چيزى به او نزديك‌تر از چيز ديگر نيست. هيچ دورى از او دور و هيچ نزديكى به او نزديك نيست. با همه چيز نسبت يكسان دارد»."@fa,
+        "8.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «الرَّحْمَنُ عَلَى الْعَرْشِ اسْتَوى» فَقَالَ: «اسْتَوى فِي كُلِّ شَيْءٍ؛ فَلَيْسَ شَيْءٌ أَقْرَبَ إِلَيْهِ مِنْ شَيْءٍ، لَمْ يَبْعُدْ مِنْهُ بَعِيدٌ، وَلَمْ يَقْرُبْ مِنْهُ قَرِيبٌ، اسْتَوى فِي كُلِّ شَيْءٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/335-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/335-1> rdf:type owl:ontology .
 
-ex:Utterance1 a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Prophecy1 .
+ex:utterance1 a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:prophecy1 .
 
-ex:Prophecy1 a go:proposition ;
-    go:HasAgent ex:The_Most_Merciful ;
-    go:HasAction ex:Establishment1 .
+ex:prophecy1 a go:proposition ;
+    go:hasagent ex:the_most_merciful ;
+    go:hasaction ex:establishment1 .
 
-ex:Establishment1 a go:Event ;
-    go:HasAgent ex:The_Most_Merciful ;
-    go:HasTheme ex:Self ;
-    go:HasLocation ex:Throne .
+ex:establishment1 a go:event ;
+    go:hasagent ex:the_most_merciful ;
+    go:hastheme ex:self ;
+    go:haslocation ex:throne .
 
-ex:God_Almighty a go:Deity ;
-    rdfs:label "God Almighty" .
+ex:god_almighty a go:deity ;
+    rdfs:label "god almighty" .
 
-ex:The_Most_Merciful a go:AttributeOfDeity ;
-    go:refersTo ex:God_Almighty ;
-    rdfs:label "The Most Merciful" .
+ex:the_most_merciful a go:attributeofdeity ;
+    go:refersto ex:god_almighty ;
+    rdfs:label "the most merciful" .
 
-ex:Throne a go:Place ;
-    rdfs:label "Throne" .
+ex:throne a go:place ;
+    rdfs:label "throne" .
 
-ex:Self a go:Agent ;
-    go:refersTo ex:The_Most_Merciful .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/335-2> rdf:type owl:Ontology .
-
-ex:Ar-Rahman a go:Substance ;
-    rdfs:label "Ar-Rahman (The Merciful)"@en .
-
-ex:Everything a go:Substance ;
-    rdfs:label "Everything"@en .
-
-ex:State_1 a go:State ;
-    go:HasAgent ex:Ar-Rahman ;
-    go:HasTheme ex:Everything .
-go:Substance rdfs:label "شی"@fa.
+ex:self a go:agent ;
+    go:refersto ex:the_most_merciful .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/335-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/335-2> rdf:type owl:ontology .
 
-ex:Allah_Almighty a go:Substance ;
-    rdfs:label "Allah Almighty"@en .
+ex:ar-rahman a go:substance ;
+    rdfs:label "ar-rahman (the merciful)"@en .
 
-ex:Nothing a go:Concept ;
-    rdfs:label "Nothing"@en .
+ex:everything a go:substance ;
+    rdfs:label "everything"@en .
 
-ex:Anything a go:Concept ;
-    rdfs:label "Anything"@en .
-
-ex:ProximityComparison_3 a ex:ComparativeProximityEvent ;
-    ex:closerTo ex:Allah_Almighty ;
-    ex:comparedEntities ex:Nothing , ex:Anything ;
-    ex:isNegation true .
-go:Substance rdfs:label "شی"@fa.
+ex:state_1 a go:state ;
+    go:hasagent ex:ar-rahman ;
+    go:hastheme ex:everything .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/335-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/335-3> rdf:type owl:ontology .
 
-:Allah a go:Deity ;
-       ex:hasNoFarEntity go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:allah_almighty a go:substance ;
+    rdfs:label "allah almighty"@en .
+
+ex:nothing a go:concept ;
+    rdfs:label "nothing"@en .
+
+ex:anything a go:concept ;
+    rdfs:label "anything"@en .
+
+ex:proximitycomparison_3 a ex:comparativeproximityevent ;
+    ex:closerto ex:allah_almighty ;
+    ex:comparedentities ex:nothing , ex:anything ;
+    ex:isnegation true .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/335-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/335-4> rdf:type owl:ontology .
 
-ex:Allah a go:Substance ;
-    go:hasProperty ex:MaxClosenessToDivine .
-
-ex:MaxClosenessToDivine a go:property ;
-    go:defines "Maximum closeness, no other entity is closer." .
-go:Substance rdfs:label "شی"@fa.
+:allah a go:deity ;
+       ex:hasnofarentity go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/335-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/335-5> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:EstablishmentEvent ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:Everything .
+ex:allah a go:substance ;
+    go:hasproperty ex:maxclosenesstodivine .
 
-ex:Allah a go:Agent ;
-    rdfs:label "Allah" .
+ex:maxclosenesstodivine a go:property ;
+    go:defines "maximum closeness, no other entity is closer." .
+go:substance rdfs:label "شی"@fa.
 
-ex:Everything a go:Substance ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/335-6> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:establishmentevent ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:everything .
+
+ex:allah a go:agent ;
+    rdfs:label "allah" .
+
+ex:everything a go:substance ;
     rdfs:label "everything" .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

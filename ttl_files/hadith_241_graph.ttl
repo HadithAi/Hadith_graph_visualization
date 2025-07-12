@@ -1,366 +1,369 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/241#> .
+@prefix ex: <http://etratnet.ir/graph/example/241#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/241> rdf:type go:ontology ;
+        go:hascontent "4. يهوديان نزد رأس الجالوت جمع شدند و گفتند: اين مرد ـ مقصودشان امير المؤمنين عليه‌السلام بود ـ دانشمند است. بيا نزدش برويم و از او پرسش كنيم. پس، نزد حضرت رفتند. به آنها گفته شد: حضرت در قصر (دار الاماره) است. منتظرش ماندند تا بيرون آمد. رأس الجالوت به حضرت گفت: آمده‌ايم تا از شما پرسشى كنيم. فرمود: «هر چه مى‌خواهى بپرس». آن مرد يهودى عرض كرد: درباره پروردگارت مى‌پرسم: او از كى بوده است؟ حضرت فرمود: «او بوده است بى آن كه بود شده باشد؛ بوده است بدون چگونگى داشتن. از ازل بوده است بى چندى و چونى. بوده است و چيزى پيش از او نبوده (مسبوق به زمان نمى‌باشد)؛ او پيش از هر هر پيشى است، نه پيشى دارد و نه پايانى و فرجامى. پايان در او نيست، و او خود پايان هر پايانى است». رأس الجالوت [به يهوديان همراهش] گفت: برويم. او از آنچه درباره‌اش مى‌گويند هم دانشمندتر است."@fa,
+        "4. اجْتَمَعَتِ الْيَهُودُ إِلى رَأْسِ الْجَالُوتِ، فَقَالُوا لَهُ: إِنَّ هذَا الرَّجُلَ عَالِمٌ ـ يَعْنُونَ أَمِيرَ الْمُؤمِنِينَ عليه‌السلام ـ فَانْطَلِقْ بِنَا إِلَيْهِ؛ نَسْأَلْهُ، فَأَتَوْهُ، فَقِيلَ لَهُمْ: هُوَ فِي الْقَصْرِ، فَانْتَظَرُوهُ حَتّى خَرَجَ، فَقَالَ لَهُ رَأْسُ الْجَالُوتِ: جِئْنَاكَ نَسْأَلُكَ، فَقَالَ: «سَلْ يَا يَهُودِيُّ، عَمَّا بَدَا لَكَ» فَقَالَ: أَسْأَلُكَ عَنْ رَبِّكَ: مَتى كَانَ؟ فَقَالَ: «كَانَ بِلاَ كَيْنُونِيَّةٍ، كَانَ بِلاَ كَيْفٍ، كَانَ لَمْ يَزَلْ بِلاَ كَمٍّ وَبِلاَ كَيْفٍ، كَانَ لَيْسَ لَهُ قَبْلٌ، هُوَ قَبْلَ الْقَبْلِ بِلاَ قَبْلٍ وَلاَ غَايَةٍ وَلاَ مُنْتَهىً، انْقَطَعَتْ عَنْهُ الْغَايَةُ وَهُوَ غَايَةُ كُلِّ غَايَةٍ». فَقَالَ رَأْسُ الْجَالُوتِ: امْضُوا بِنَا؛ فَهُوَ أَعْلَمُ مِمَّا يُقَالُ فِيهِ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-1> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:Jews ;
-    go:HasLocation ex:HeadOfGalut .
+ex:event1 a go:event ;
+    go:hasagent ex:jews ;
+    go:haslocation ex:headofgalut .
 
-ex:Jews a go:Substance ;
-    go:denotation "Jews" .
+ex:jews a go:substance ;
+    go:denotation "jews" .
 
-ex:HeadOfGalut a go:location ;
-    go:denotation "Head of the Galut" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/241-2> rdf:type owl:Ontology .
-
-ex:speechEvent1 rdf:type go:Event ;
-    go:HasAgent ex:Jews ;
-    go:HasRecipient ex:HeadOfGoliath ;
-    go:HasTheme ex:speechContent1 .
-
-ex:Jews rdf:type go:human .
-ex:HeadOfGoliath rdf:type go:human .
-ex:CommanderOfTheFaithful rdf:type go:human ;
-    rdfs:label "Commander of the Faithful (peace be upon him)" .
-
-ex:speechContent1 rdf:type go:utteranceContent ;
-    go:HasSubject ex:CommanderOfTheFaithful ;
-    go:HasProperty ex:knowledgeable .
-
-ex:knowledgeable rdf:type go:Quality .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:headofgalut a go:location ;
+    go:denotation "head of the galut" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-2> rdf:type owl:ontology .
 
-ex:Jews a foaf:Group ;
-    a go:Agent .
+ex:speechevent1 rdf:type go:event ;
+    go:hasagent ex:jews ;
+    go:hasrecipient ex:headofgoliath ;
+    go:hastheme ex:speechcontent1 .
 
-ex:HeadOfCommunity a foaf:Person ;
-    a go:Agent .
+ex:jews rdf:type go:human .
+ex:headofgoliath rdf:type go:human .
+ex:commanderofthefaithful rdf:type go:human ;
+    rdfs:label "commander of the faithful (peace be upon him)" .
 
-ex:ThisMan a foaf:Person .
+ex:speechcontent1 rdf:type go:utterancecontent ;
+    go:hassubject ex:commanderofthefaithful ;
+    go:hasproperty ex:knowledgeable .
 
-# Event: The request by the Jews to the head of the community
-event:Request1 a go:Event ;
-    go:HasAgent ex:Jews ;
-    go:HasRecipient ex:HeadOfCommunity ;
-    go:HasTheme event:MovementToThisMan .
-
-# Event: Movement of head to this man
-event:MovementToThisMan a go:Event ;
-    go:HasAgent ex:HeadOfCommunity ;
-    go:HasDestination ex:ThisMan ;
-    go:HasPurpose event:AskQuestion .
-
-# Event: Asking a question
-event:AskQuestion a go:Event ;
-    go:HasAgent ex:HeadOfCommunity ;
-    go:HasTheme ex:Question .
-
-ex:Question a go:Information .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:knowledgeable rdf:type go:quality .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-3> rdf:type owl:ontology .
 
-ex:event1 rdf:type go:Event , ex:ComingEvent ;
-          go:HasAgent ex:Jews ;
-          go:HasGoal ex:CommanderOfTheFaithful .
+ex:jews a foaf:group ;
+    a go:agent .
 
-ex:Jews rdf:type go:ethnicGroup ;
-        rdfs:label "the Jews"@en .
+ex:headofcommunity a foaf:person ;
+    a go:agent .
 
-ex:CommanderOfTheFaithful rdf:type go:person ;
-                           rdfs:label "Commander of the Faithful (peace be upon him)"@en .
-go:Event rdfs:label "رخداد"@fa.
+ex:thisman a foaf:person .
 
+# event: the request by the jews to the head of the community
+event:request1 a go:event ;
+    go:hasagent ex:jews ;
+    go:hasrecipient ex:headofcommunity ;
+    go:hastheme event:movementtothisman .
 
-@base <http://etratnet.ir/ontology/> .
+# event: movement of head to this man
+event:movementtothisman a go:event ;
+    go:hasagent ex:headofcommunity ;
+    go:hasdestination ex:thisman ;
+    go:haspurpose event:askquestion .
 
-<http://etratnet.ir/ontology/241-5> rdf:type owl:Ontology .
+# event: asking a question
+event:askquestion a go:event ;
+    go:hasagent ex:headofcommunity ;
+    go:hastheme ex:question .
 
-ex:SpeechEvent1 rdf:type go:SpeechEvent ;
-    go:HasRecipient ex:Jews ;
-    go:HasTheme ex:CommanderOfTheFaithful_PeaceBeUponHim .
-
-ex:Jews rdf:type go:Group .
-
-ex:CommanderOfTheFaithful_PeaceBeUponHim rdf:type go:Person ;
-    go:location ex:Palace .
-
-ex:Palace rdf:type go:Location .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/241-6> rdf:type owl:Ontology .
-
-ex:Jews a go:Group ;
-    foaf:name "The Jews" .
-
-ex:CommanderOfTheFaithful a foaf:Person ;
-    foaf:name "Commander of the Faithful (peace be upon him)" .
-
-ex:WaitingEvent a go:Event ;
-    go:HasAgent ex:Jews ;
-    go:IsTemporallyBoundedBy ex:ComingOutEvent .
-
-ex:ComingOutEvent a go:Event ;
-    go:HasAgent ex:CommanderOfTheFaithful .
-go:Event rdfs:label "رخداد"@fa.
+ex:question a go:information .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-4> rdf:type owl:ontology .
 
-ex:event1 a go:SpeechEvent ;
-    go:HasAgent ex:Goliath ;
-    go:HasRecipient ex:CommanderOfTheFaithful ;
-    go:HasTheme ex:RequestToAsk .
+ex:event1 rdf:type go:event , ex:comingevent ;
+          go:hasagent ex:jews ;
+          go:hasgoal ex:commanderofthefaithful .
 
-ex:Goliath a go:Agent ;
-    rdfs:label "Goliath" .
+ex:jews rdf:type go:ethnicgroup ;
+        rdfs:label "the jews"@en .
 
-ex:CommanderOfTheFaithful a go:Agent ;
-    go:hasTitle "Commander of the Faithful" ;
-    go:hasHonorific "peace be upon him" .
-
-ex:RequestToAsk a go:Purpose ;
-    go:hasContent "We have come to ask you" .
-go:Agent rdfs:label "عامل"@fa.
+ex:commanderofthefaithful rdf:type go:person ;
+                           rdfs:label "commander of the faithful (peace be upon him)"@en .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-5> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:Event ;
-    go:HasAgent ex:AmirAlMu_minin ;
-    go:HasRecipient ex:Jew ;
-    go:HasTheme ex:AskCommand .
+ex:speechevent1 rdf:type go:speechevent ;
+    go:hasrecipient ex:jews ;
+    go:hastheme ex:commanderofthefaithful_peacebeuponhim .
 
-ex:AmirAlMu_minin a go:Person ;
-    go:hasTitle "Commander of the Faithful (peace be upon him)" .
+ex:jews rdf:type go:group .
 
-ex:Jew a go:Person ;
-    go:hasEthnicIdentity "Jew" .
+ex:commanderofthefaithful_peacebeuponhim rdf:type go:person ;
+    go:location ex:palace .
 
-ex:AskCommand a go:Command ;
-    go:hasContent "Ask about whatever you desire" .
-go:Event rdfs:label "رخداد"@fa.
+ex:palace rdf:type go:location .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-6> rdf:type owl:ontology .
 
-ex:AskingEvent_1 a go:Event ;
-    go:HasAgent ex:Ras_Al_Jalut ;
-    go:HasTheme ex:Commander_of_the_Faithful ;
-    go:HasPurpose ex:QuestionAboutLordExistence .
+ex:jews a go:group ;
+    foaf:name "the jews" .
 
-ex:Ras_Al_Jalut a go:Agent, go:Person .
-ex:Commander_of_the_Faithful a go:Agent, go:Person .
-ex:Lord a go:Agent, go:Person .
+ex:commanderofthefaithful a foaf:person ;
+    foaf:name "commander of the faithful (peace be upon him)" .
 
-ex:QuestionAboutLordExistence a go:InformationContent ;
-    go:About ex:Lord ;
-    go:TemporalQuestion "When does the Lord exist?" .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:waitingevent a go:event ;
+    go:hasagent ex:jews ;
+    go:istemporallyboundedby ex:comingoutevent .
+
+ex:comingoutevent a go:event ;
+    go:hasagent ex:commanderofthefaithful .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-7> rdf:type owl:ontology .
 
-ex:CommanderOfFaithful a go:Person ;
-    rdfs:label "Commander of the Faithful"@en .
+ex:event1 a go:speechevent ;
+    go:hasagent ex:goliath ;
+    go:hasrecipient ex:commanderofthefaithful ;
+    go:hastheme ex:requesttoask .
 
-ex:He a go:Person ;
-    rdfs:label "He"@en .
+ex:goliath a go:agent ;
+    rdfs:label "goliath" .
 
-ex:OntologicalStatus a go:Quality ;
-    rdfs:label "Ontological Status"@en .
+ex:commanderofthefaithful a go:agent ;
+    go:hastitle "commander of the faithful" ;
+    go:hashonorific "peace be upon him" .
 
-ex:NoOntologicalStatus a ex:OntologicalStatus ;
-    ex:hasValue "false"^^xsd:boolean ;
-    rdfs:label "Without ontological status"@en .
-
-ex:ExistenceState a go:State ;
-    ex:hasQuality ex:NoOntologicalStatus ;
-    go:HasTheme ex:He .
-
-ex:SpeechEvent a go:Event ;
-    go:HasAgent ex:CommanderOfFaithful ;
-    go:HasTheme ex:ExistenceState ;
-    rdfs:label "Saying that He was without ontological status"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:requesttoask a go:purpose ;
+    go:hascontent "we have come to ask you" .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-8> rdf:type owl:ontology .
 
-ex:CommanderOfFaithful a go:Agent ;
-    rdfs:label "Amir al-Mu'minin" ;
-    go:hasHonorific "Peace be upon him" .
+ex:speechevent1 a go:event ;
+    go:hasagent ex:amiralmu_minin ;
+    go:hasrecipient ex:jew ;
+    go:hastheme ex:askcommand .
 
-ex:kif a go:Substance ;
+ex:amiralmu_minin a go:person ;
+    go:hastitle "commander of the faithful (peace be upon him)" .
+
+ex:jew a go:person ;
+    go:hasethnicidentity "jew" .
+
+ex:askcommand a go:command ;
+    go:hascontent "ask about whatever you desire" .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/241-9> rdf:type owl:ontology .
+
+ex:askingevent_1 a go:event ;
+    go:hasagent ex:ras_al_jalut ;
+    go:hastheme ex:commander_of_the_faithful ;
+    go:haspurpose ex:questionaboutlordexistence .
+
+ex:ras_al_jalut a go:agent, go:person .
+ex:commander_of_the_faithful a go:agent, go:person .
+ex:lord a go:agent, go:person .
+
+ex:questionaboutlordexistence a go:informationcontent ;
+    go:about ex:lord ;
+    go:temporalquestion "when does the lord exist?" .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/241-10> rdf:type owl:ontology .
+
+ex:commanderoffaithful a go:person ;
+    rdfs:label "commander of the faithful"@en .
+
+ex:he a go:person ;
+    rdfs:label "he"@en .
+
+ex:ontologicalstatus a go:quality ;
+    rdfs:label "ontological status"@en .
+
+ex:noontologicalstatus a ex:ontologicalstatus ;
+    ex:hasvalue "false"^^xsd:boolean ;
+    rdfs:label "without ontological status"@en .
+
+ex:existencestate a go:state ;
+    ex:hasquality ex:noontologicalstatus ;
+    go:hastheme ex:he .
+
+ex:speechevent a go:event ;
+    go:hasagent ex:commanderoffaithful ;
+    go:hastheme ex:existencestate ;
+    rdfs:label "saying that he was without ontological status"@en .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/241-11> rdf:type owl:ontology .
+
+ex:commanderoffaithful a go:agent ;
+    rdfs:label "amir al-mu'minin" ;
+    go:hashonorific "peace be upon him" .
+
+ex:kif a go:substance ;
     rdfs:label "kif" .
 
-ex:He a go:Agent ;
-    rdfs:label "He" .
+ex:he a go:agent ;
+    rdfs:label "he" .
 
-ex:speechEvent_11 a go:SpeechAct, go:Event ;
-    go:HasAgent ex:CommanderOfFaithful ;
-    go:HasTheme ex:statement_11 .
+ex:speechevent_11 a go:speechact, go:event ;
+    go:hasagent ex:commanderoffaithful ;
+    go:hastheme ex:statement_11 .
 
 ex:statement_11 a go:proposition ;
-    go:states "He was without kif" ;
-    go:HasAgent ex:He ;
-    go:negatesPossession ex:kif .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+    go:states "he was without kif" ;
+    go:hasagent ex:he ;
+    go:negatespossession ex:kif .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-12> rdf:type owl:ontology .
 
-ex:Amir_al_Mu_minin a go:Person ;
-    rdfs:label "Amir al-Mu'minin (peace be upon him)" .
+ex:amir_al_mu_minin a go:person ;
+    rdfs:label "amir al-mu'minin (peace be upon him)" .
 
-ex:SayingEvent1 a go:Event ;
-    go:HasAgent ex:Amir_al_Mu_minin ;
-    go:HasTheme ex:Quotation1 .
+ex:sayingevent1 a go:event ;
+    go:hasagent ex:amir_al_mu_minin ;
+    go:hastheme ex:quotation1 .
 
-ex:Quotation1 a go:Statement ;
-    go:hasText "He was always without 'how much' and without 'how'" .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/241-13> rdf:type owl:Ontology .
-
-ex:CommanderOfTheFaithful a go:Agent ;
-    go:hasRole "Commander of the Faithful" .
-
-ex:SpeakingEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:CommanderOfTheFaithful ;
-    go:HasTheme ex:Statement1 .
-
-ex:Statement1 a go:Proposition ;
-    go:asserts ex:EntityHe .
-
-ex:EntityHe a go:Individual ;
-    ex:hasPredecessor "false"^^xsd:boolean .
-go:Agent rdfs:label "عامل"@fa.
+ex:quotation1 a go:statement ;
+    go:hastext "he was always without 'how much' and without 'how'" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-13> rdf:type owl:ontology .
 
-ex:SpeechEvent_AmirAlMu'minin_001 a go:SpeechEvent ;
-    go:HasAgent ex:AmirAlMu'minin ;
-    go:HasTheme ex:Quote_Before_before_Limit_Concept .
+ex:commanderofthefaithful a go:agent ;
+    go:hasrole "commander of the faithful" .
 
-ex:AmirAlMu'minin a go:Person ;
-    rdfs:label "Amir al-Mu'minin (peace be upon him)" .
+ex:speakingevent1 a go:communicationevent ;
+    go:hasagent ex:commanderofthefaithful ;
+    go:hastheme ex:statement1 .
 
-ex:Quote_Before_before_Limit_Concept a go:AbstractConcept ;
-    go:hasText "It is before the 'before', without a 'before' and without an end or limit." .
+ex:statement1 a go:proposition ;
+    go:asserts ex:entityhe .
+
+ex:entityhe a go:individual ;
+    ex:haspredecessor "false"^^xsd:boolean .
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-14> rdf:type owl:ontology .
 
-ex:sayingEvent1 a ex:SayingEvent ;
-    go:HasAgent ex:CommanderOfTheFaithful ;
-    ex:hasContent ex:UltimateGoalCutOff .
+ex:speechevent_amiralmu'minin_001 a go:speechevent ;
+    go:hasagent ex:amiralmu'minin ;
+    go:hastheme ex:quote_before_before_limit_concept .
 
-ex:CommanderOfTheFaithful a go:Person ;
-    go:name "Commander of the Faithful (peace be upon him)" .
+ex:amiralmu'minin a go:person ;
+    rdfs:label "amir al-mu'minin (peace be upon him)" .
 
-ex:UltimateGoalCutOff a go:Event ;
-    go:HasTheme ex:UltimateGoal ;
-    ex:CutOffFrom ex:UnknownRecipient .
+ex:quote_before_before_limit_concept a go:abstractconcept ;
+    go:hastext "it is before the 'before', without a 'before' and without an end or limit." .
 
-ex:UltimateGoal a go:Substance ;
-    go:name "Ultimate Goal" .
 
-ex:UnknownRecipient a go:Person ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/241-15> rdf:type owl:ontology .
+
+ex:sayingevent1 a ex:sayingevent ;
+    go:hasagent ex:commanderofthefaithful ;
+    ex:hascontent ex:ultimategoalcutoff .
+
+ex:commanderofthefaithful a go:person ;
+    go:name "commander of the faithful (peace be upon him)" .
+
+ex:ultimategoalcutoff a go:event ;
+    go:hastheme ex:ultimategoal ;
+    ex:cutofffrom ex:unknownrecipient .
+
+ex:ultimategoal a go:substance ;
+    go:name "ultimate goal" .
+
+ex:unknownrecipient a go:person ;
     go:name "him" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-16> rdf:type owl:ontology .
 
-ex:CommanderOfFaithful a go:Person ;
-  go:hasProperName "Amir al-Mu'minin" .
+ex:commanderoffaithful a go:person ;
+  go:haspropername "amir al-mu'minin" .
 
-ex:He a go:Substance ;
+ex:he a go:substance ;
   rdfs:label "ultimate of every ultimate" .
 
-ex:SayingEvent a go:Event ;
-  go:HasAgent ex:CommanderOfFaithful ;
-  go:HasTheme ex:Statement1 .
+ex:sayingevent a go:event ;
+  go:hasagent ex:commanderoffaithful ;
+  go:hastheme ex:statement1 .
 
-ex:Statement1 a go:Statement ;
-  go:refersTo ex:He ;
-  go:hasContent "He is the ultimate of every ultimate" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:statement1 a go:statement ;
+  go:refersto ex:he ;
+  go:hascontent "he is the ultimate of every ultimate" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/241-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/241-17> rdf:type owl:ontology .
 
-ex:Goliath a go:Substance .
-ex:Jews a go:Substance .
+ex:goliath a go:substance .
+ex:jews a go:substance .
 
-ex:SpeechEvent1 a go:Event ;
-    go:HasAgent ex:Goliath ;
-    go:HasTheme ex:Jews ;
-    go:hasContent "Let us go together, for he knows better what is said about him." .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:speechevent1 a go:event ;
+    go:hasagent ex:goliath ;
+    go:hastheme ex:jews ;
+    go:hascontent "let us go together, for he knows better what is said about him." .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

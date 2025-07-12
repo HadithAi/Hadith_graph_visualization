@@ -1,36 +1,39 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/394#> .
+@prefix ex: <http://etratnet.ir/graph/example/394#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/394> rdf:type go:ontology ;
+        go:hascontent "2.  «در هيچ چيزى از اوامر و نواهى خداوند گرفت و يا گشايشى نيست مگر اين كه با قضاى الهى و براى آزمايش است»."@fa,
+        "2.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «إِنَّهُ لَيْسَ شَيْءٌ فِيهِ قَبْضٌ أَوْ بَسْطٌ ـ مِمَّا أَمَرَ اللّه‌ُ بِهِ أَوْ نَهى عَنْهُ ـ إِلاَّ وَفِيهِ لِلّهِ ـ عَزَّ وَجَلَّ ـ ابْتِلاَءٌ وَقَضَاءٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/394-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/394-1> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    rdfs:label "Allah Almighty"@en .
+ex:allah a go:deity ;
+    rdfs:label "allah almighty"@en .
 
-ex:CommandOrProhibition a go:Event ;
-    rdfs:label "Divine command or prohibition"@en ;
-    go:HasAgent ex:Allah ;
-    go:HasTheme ex:RestrictionOrExtension .
+ex:commandorprohibition a go:event ;
+    rdfs:label "divine command or prohibition"@en ;
+    go:hasagent ex:allah ;
+    go:hastheme ex:restrictionorextension .
 
-ex:RestrictionOrExtension a go:Concept ;
-    rdfs:label "Restriction or Extension"@en .
+ex:restrictionorextension a go:concept ;
+    rdfs:label "restriction or extension"@en .
 
-ex:TrialAndDecree a go:Event ;
-    rdfs:label "Divine trial and decree"@en ;
-    go:HasAgent ex:Allah ;
-    go:HasCause ex:CommandOrProhibition .
+ex:trialanddecree a go:event ;
+    rdfs:label "divine trial and decree"@en ;
+    go:hasagent ex:allah ;
+    go:hascause ex:commandorprohibition .
 
-ex:CommandOrProhibition go:HasResult ex:TrialAndDecree .
-go:Event rdfs:label "رخداد"@fa.
+ex:commandorprohibition go:hasresult ex:trialanddecree .
+go:event rdfs:label "رخداد"@fa.

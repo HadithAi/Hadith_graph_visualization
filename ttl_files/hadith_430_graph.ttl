@@ -1,288 +1,291 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/430#> .
+@prefix ex: <http://etratnet.ir/graph/example/430#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/430> rdf:type go:ontology ;
+        go:hascontent "1.  امام صادق عليه‌السلام فرمود: «اى ثابت، شما را با مردم چه كار؟ از مردم دست بداريد، و كسى را به عقيده خود دعوت نكنيد؛ زيرا، به خدا سوگند، اگر همه آسمانيان و زمينيان دست به دست هم دهند تا بنده‌اى را كه خدا گمراهى او را خواسته است هدايت كنند، نتوانند هدايتش كنند؛ و اگر همه آسمانيان و زمينيان دست به دست هم دهند تا بنده‌اى را كه خدا هدايت او را خواسته است گمراه كنند نتوانند گمراهش كنند. از مردم دست بداريد، و كسى نگويد: عمويم، برادرم، پسر عمويم، و همسايه‌ام. چرا كه خداوند هرگاه براى بنده‌اى خيرى بخواهد، روان او را پاك گرداند چنان كه هر معروفى را بشنود آن را بپذيرد و هر منكرى را بشنود آن را رد كند. سپس خداوند در دل او كلمه‌اى [و عقيده‌اى]را بيفكند كه با آن، كار او را سامان بخشد»."@fa,
+        "1.  قَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «يَا ثَابِتُ، مَا لَكُمْ وَلِلنَّاسِ، كُفُّوا عَنِ النَّاسِ، وَلاَ تَدْعُوا أَحَداً إِلى أَمْرِكُمْ؛ فَوَ اللّه‌ِ، لَوْ أَنَّ أَهْلَ السَّمَاوَاتِ وَأَهْلَ الْأَرَضِينَ اجْتَمَعُوا عَلى أَنْ يَهْدُوا عَبْداً يُرِيدُ اللّه‌ُ ضَلاَلَتَهُ، مَا اسْتَطَاعُوا عَلى أَنْ يَهْدُوهُ؛ وَلَوْ أَنَّ أَهْلَ السَّمَاوَاتِ وَأَهْلَ الْأَرَضِينَ اجْتَمَعُوا عَلى أَنْ يُضِلُّوا عَبْداً يُرِيدُ اللّه‌ُ هِدَايَتَهُ، مَا اسْتَطَاعُوا أَنْ يُضِلُّوهُ، كُفُّوا عَنِ النَّاسِ، وَلاَ يَقُولُ أَحَدٌ: عَمِّي وَأَخِي وَابْنُ عَمِّي وَجَارِي؛ فَإِنَّ اللّه‌َ إِذَا أَرَادَ بِعَبْدٍ خَيْراً، طَيَّبَ رُوحَهُ، فَلاَ يَسْمَعُ مَعْرُوفاً إِلاَّ عَرَفَهُ، وَلاَ مُنْكَراً إِلاَّ أَنْكَرَهُ، ثُمَّ يَقْذِفُ اللّه‌ُ فِي قَلْبِهِ كَلِمَةً يَجْمَعُ بِهَا أَمْرَهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/430-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/430-1> rdf:type owl:ontology .
 
-ex:Imam_Abu_Abdullah a go:Agent, go:Substance ;
-    rdfs:label "Imam Abu Abdullah" .
+ex:imam_abu_abdullah a go:agent, go:substance ;
+    rdfs:label "imam abu abdullah" .
 
-ex:Thabit a go:Agent, go:Substance ;
-    rdfs:label "Thabit" .
+ex:thabit a go:agent, go:substance ;
+    rdfs:label "thabit" .
 
-ex:People a go:Group, go:Substance ;
-    rdfs:label "People" .
+ex:people a go:group, go:substance ;
+    rdfs:label "people" .
 
-ex:CallEvent_1 a go:Event ;
-    go:HasAgent ex:Imam_Abu_Abdullah ;
-    go:HasRecipient ex:Thabit ;
-    go:HasTheme ex:Action_Stop ;
-    go:HasTheme ex:Action_NotInvite .
+ex:callevent_1 a go:event ;
+    go:hasagent ex:imam_abu_abdullah ;
+    go:hasrecipient ex:thabit ;
+    go:hastheme ex:action_stop ;
+    go:hastheme ex:action_notinvite .
 
-ex:Action_Stop a go:Action ;
-    rdfs:label "Stop actions towards people" ;
-    go:HasTheme ex:People .
+ex:action_stop a go:action ;
+    rdfs:label "stop actions towards people" ;
+    go:hastheme ex:people .
 
-ex:Action_NotInvite a go:Action ;
-    rdfs:label "Do not invite anyone to his matter" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/430-2> rdf:type owl:Ontology .
-
-ex:Abu_Abdullah a go:Person ;
-    rdfs:label "Abu Abdullah" ;
-    go:isHonoredBy "peace be upon him" .
-
-ex:God a go:Deity ;
-    rdfs:label "God" .
-
-ex:People_Heavens a go:Group ;
-    go:hasLabel "People of the Heavens" .
-
-ex:People_Earth a go:Group ;
-    go:hasLabel "People of the Earth" .
-
-ex:Servant a go:Person ;
-    go:hasLabel "Servant" .
-
-# Event: Abu Abdullah speaking
-ex:SpeakingEvent_1 a go:Event ;
-    go:HasAgent ex:Abu_Abdullah ;
-    go:HasTheme ex:Statement_1 .
-
-# The Statement content
-ex:Statement_1 a go:Statement ;
-    go:describesEvent ex:Hypothetical_Union_Guidance .
-
-# Hypothetical event: people of heavens and earth unite and attempt to guide the servant
-ex:Hypothetical_Union_Guidance a go:HypotheticalEvent ;
-    go:HasAgent ex:People_Heavens , ex:People_Earth ;
-    go:HasTheme ex:Guidance_Attempt .
-
-ex:Guidance_Attempt a go:Event ;
-    go:HasAgent ex:People_Heavens , ex:People_Earth ;
-    go:HasTheme ex:Servant ;
-    go:result ex:Failed_Guidance .
-
-ex:Failed_Guidance a go:NegativeResult ;
-    go:description "Failure to guide the servant despite joint effort" .
-
-# God's intention for servant
-ex:GodIntends_Misguidance a go:Intention ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Servant ;
-    go:hasIntention "Misguidance" .
-
-ex:Hypothetical_Union_Guidance go:condition ex:GodIntends_Misguidance .
-go:Event rdfs:label "رخداد"@fa.
+ex:action_notinvite a go:action ;
+    rdfs:label "do not invite anyone to his matter" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/430-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/430-2> rdf:type owl:ontology .
 
-ex:Speech_AbuAbdullah a go:SpeechAct ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme ex:HypotheticalEvent_GatherMisguide .
+ex:abu_abdullah a go:person ;
+    rdfs:label "abu abdullah" ;
+    go:ishonoredby "peace be upon him" .
 
-ex:AbuAbdullah a go:Person .
-ex:God a go:Person .
-ex:Servant a go:Person .
-ex:PeopleOfHeavens a go:Group ; go:hasDomain "heavens"^^xsd:string .
-ex:PeopleOfEarth a go:Group ; go:hasDomain "earth"^^xsd:string .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:HypotheticalEvent_GatherMisguide a go:Event ;
-    go:HasAgent ex:PeopleOfHeavens, ex:PeopleOfEarth ;
-    go:HasTheme ex:Servant ;
-    ex:hasIntendedAction ex:MisguideServant ;
-    ex:isCounteredBy ex:GodsGuidance ;
-    ex:hasOutcome "could not misguide"^^xsd:string .
+ex:people_heavens a go:group ;
+    go:haslabel "people of the heavens" .
 
-ex:MisguideServant a go:Event ;
-    go:HasAgent ex:PeopleOfHeavens, ex:PeopleOfEarth ;
-    go:HasTheme ex:Servant .
+ex:people_earth a go:group ;
+    go:haslabel "people of the earth" .
 
-ex:GodsGuidance a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Servant ;
+ex:servant a go:person ;
+    go:haslabel "servant" .
+
+# event: abu abdullah speaking
+ex:speakingevent_1 a go:event ;
+    go:hasagent ex:abu_abdullah ;
+    go:hastheme ex:statement_1 .
+
+# the statement content
+ex:statement_1 a go:statement ;
+    go:describesevent ex:hypothetical_union_guidance .
+
+# hypothetical event: people of heavens and earth unite and attempt to guide the servant
+ex:hypothetical_union_guidance a go:hypotheticalevent ;
+    go:hasagent ex:people_heavens , ex:people_earth ;
+    go:hastheme ex:guidance_attempt .
+
+ex:guidance_attempt a go:event ;
+    go:hasagent ex:people_heavens , ex:people_earth ;
+    go:hastheme ex:servant ;
+    go:result ex:failed_guidance .
+
+ex:failed_guidance a go:negativeresult ;
+    go:description "failure to guide the servant despite joint effort" .
+
+# god's intention for servant
+ex:godintends_misguidance a go:intention ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servant ;
+    go:hasintention "misguidance" .
+
+ex:hypothetical_union_guidance go:condition ex:godintends_misguidance .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/430-3> rdf:type owl:ontology .
+
+ex:speech_abuabdullah a go:speechact ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme ex:hypotheticalevent_gathermisguide .
+
+ex:abuabdullah a go:person .
+ex:god a go:person .
+ex:servant a go:person .
+ex:peopleofheavens a go:group ; go:hasdomain "heavens"^^xsd:string .
+ex:peopleofearth a go:group ; go:hasdomain "earth"^^xsd:string .
+
+ex:hypotheticalevent_gathermisguide a go:event ;
+    go:hasagent ex:peopleofheavens, ex:peopleofearth ;
+    go:hastheme ex:servant ;
+    ex:hasintendedaction ex:misguideservant ;
+    ex:iscounteredby ex:godsguidance ;
+    ex:hasoutcome "could not misguide"^^xsd:string .
+
+ex:misguideservant a go:event ;
+    go:hasagent ex:peopleofheavens, ex:peopleofearth ;
+    go:hastheme ex:servant .
+
+ex:godsguidance a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servant ;
     ex:wills "guidance"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/430-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/430-4> rdf:type owl:ontology .
 
-ex:AbuAbdullah rdf:type go:Person ;
-    rdfs:label "Abu Abdullah" .
+ex:abuabdullah rdf:type go:person ;
+    rdfs:label "abu abdullah" .
 
-ex:People rdf:type go:Group ;
-    rdfs:label "People" .
+ex:people rdf:type go:group ;
+    rdfs:label "people" .
 
-ex:OrderEvent1 rdf:type go:OrderEvent ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme ex:People ;
-    go:hasContent ex:ProhibitionOnCalling .
+ex:orderevent1 rdf:type go:orderevent ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme ex:people ;
+    go:hascontent ex:prohibitiononcalling .
 
-ex:ProhibitionOnCalling rdf:type go:Prohibition ;
-    go:relatedToTerms ex:TermList .
+ex:prohibitiononcalling rdf:type go:prohibition ;
+    go:relatedtoterms ex:termlist .
 
-ex:TermList rdf:type go:List ;
-    go:hasItem ex:TermUncle , ex:TermBrother , ex:TermCousin , ex:TermNeighbor .
+ex:termlist rdf:type go:list ;
+    go:hasitem ex:termuncle , ex:termbrother , ex:termcousin , ex:termneighbor .
 
-ex:TermUncle rdf:type go:Expression ;
-    go:hasLabel "uncle" .
+ex:termuncle rdf:type go:expression ;
+    go:haslabel "uncle" .
 
-ex:TermBrother rdf:type go:Expression ;
-    go:hasLabel "brother" .
+ex:termbrother rdf:type go:expression ;
+    go:haslabel "brother" .
 
-ex:TermCousin rdf:type go:Expression ;
-    go:hasLabel "cousin" .
+ex:termcousin rdf:type go:expression ;
+    go:haslabel "cousin" .
 
-ex:TermNeighbor rdf:type go:Expression ;
-    go:hasLabel "neighbor" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/430-5> rdf:type owl:Ontology .
-
-# Entities
-ex:AbuAbdullah a go:Person ;
-    rdfs:label "Abu Abdullah (عليه السلام)" .
-
-ex:God a go:Deity ;
-    rdfs:label "الله (God)" .
-
-ex:Servant a go:Person ;
-    go:hasRole "Servant" .
-
-ex:ServantSoul a go:Substance ;
-    go:isPartOf ex:Servant ;
-    rdfs:label "Soul" .
-
-# Events
-ex:SayingEvent a go:SpeechEvent ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme ex:SayingContent .
-
-ex:SayingContent a go:Proposition ;
-    go:expresses ex:GoodIntentionEvent , ex:PurificationEvent ;
-    rdf:type go:Statement .
-
-ex:GoodIntentionEvent a go:IntentEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Servant ;
-    go:resultsIn ex:PurificationEvent .
-
-ex:PurificationEvent a go:PurificationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ServantSoul .
-go:Substance rdfs:label "شی"@fa.
+ex:termneighbor rdf:type go:expression ;
+    go:haslabel "neighbor" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/430-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/430-5> rdf:type owl:ontology .
 
-ex:QuotationAbuAbdullah a go:StatementEvent ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme ex:GoodIntentEvent ;
-    go:hasText "When God intends good for a servant, the servant hears a kindness only if he recognizes it." .
+# entities
+ex:abuabdullah a go:person ;
+    rdfs:label "abu abdullah (عليه السلام)" .
 
-ex:AbuAbdullah a go:Person .
-ex:God a go:Deity .
-ex:Servant a go:Person .
-ex:Kindness a go:AbstractConcept .
+ex:god a go:deity ;
+    rdfs:label "الله (god)" .
 
-ex:GoodIntentEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Servant ;
-    go:Causes ex:PerceptionKindnessEvent .
+ex:servant a go:person ;
+    go:hasrole "servant" .
 
-ex:PerceptionKindnessEvent a go:Event ;
-    go:HasAgent ex:Servant ;
-    go:HasTheme ex:Kindness .
-go:Event rdfs:label "رخداد"@fa.
+ex:servantsoul a go:substance ;
+    go:ispartof ex:servant ;
+    rdfs:label "soul" .
 
+# events
+ex:sayingevent a go:speechevent ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme ex:sayingcontent .
 
-@base <http://etratnet.ir/ontology/> .
+ex:sayingcontent a go:proposition ;
+    go:expresses ex:goodintentionevent , ex:purificationevent ;
+    rdf:type go:statement .
 
-<http://etratnet.ir/ontology/430-7> rdf:type owl:Ontology .
+ex:goodintentionevent a go:intentevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servant ;
+    go:resultsin ex:purificationevent .
 
-ex:Utterance1 a go:Event ;
-  go:HasAgent ex:Abu_Abdullah ;
-  go:HasTheme ex:TruthStatement1 .
-
-ex:TruthStatement1 a go:InformationContent ;
-  go:refersTo ex:ServantBehavior .
-
-ex:ServantBehavior a go:State ;
-  go:HasAgent ex:Servant ;
-  go:HasCause ex:God ;
-  go:HasProperty ex:RejectWrongdoing .
-
-ex:RejectWrongdoing a go:Event ;
-  go:HasAgent ex:Servant ;
-  go:HasTheme ex:Wrongdoing .
-
-ex:HearingEvent a go:Event ;
-  go:HasAgent ex:Servant ;
-  go:HasTheme ex:Wrongdoing ;
-  go:Precedes ex:RejectWrongdoing .
-
-ex:Wrongdoing a go:Substance .
-ex:Servant a go:Person .
-ex:Abu_Abdullah a go:Person .
-ex:God a go:Deity .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:purificationevent a go:purificationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servantsoul .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/430-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/430-6> rdf:type owl:ontology .
 
-ex:Abu_Abdullah a go:Person ;
-    go:uttered ex:Statement_1 .
+ex:quotationabuabdullah a go:statementevent ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme ex:goodintentevent ;
+    go:hastext "when god intends good for a servant, the servant hears a kindness only if he recognizes it." .
 
-ex:Statement_1 a go:SpeechAct ;
-    go:hasSpeaker ex:Abu_Abdullah ;
-    go:content ex:Event_1 .
+ex:abuabdullah a go:person .
+ex:god a go:deity .
+ex:servant a go:person .
+ex:kindness a go:abstractconcept .
 
-ex:God a go:DivineBeing .
+ex:goodintentevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:servant ;
+    go:causes ex:perceptionkindnessevent .
 
-ex:Servant a go:Person ;
-    go:hasPart ex:Servant_Heart .
+ex:perceptionkindnessevent a go:event ;
+    go:hasagent ex:servant ;
+    go:hastheme ex:kindness .
+go:event rdfs:label "رخداد"@fa.
 
-ex:Servant_Heart a go:AnatomicalPart .
 
-ex:Word a go:Concept ;
-    go:hasAttribute ex:Gathers_Affairs .
+@base <http://etratnet.ir/ontology/> .
 
-ex:Gathers_Affairs a go:Attribute .
+<http://etratnet.ir/ontology/430-7> rdf:type owl:ontology .
 
-ex:Event_1 a go:Event ;
-    go:type "PlantingWord" ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Word ;
-    go:hasRecipient ex:Servant_Heart .
-go:Event rdfs:label "رخداد"@fa.
+ex:utterance1 a go:event ;
+  go:hasagent ex:abu_abdullah ;
+  go:hastheme ex:truthstatement1 .
+
+ex:truthstatement1 a go:informationcontent ;
+  go:refersto ex:servantbehavior .
+
+ex:servantbehavior a go:state ;
+  go:hasagent ex:servant ;
+  go:hascause ex:god ;
+  go:hasproperty ex:rejectwrongdoing .
+
+ex:rejectwrongdoing a go:event ;
+  go:hasagent ex:servant ;
+  go:hastheme ex:wrongdoing .
+
+ex:hearingevent a go:event ;
+  go:hasagent ex:servant ;
+  go:hastheme ex:wrongdoing ;
+  go:precedes ex:rejectwrongdoing .
+
+ex:wrongdoing a go:substance .
+ex:servant a go:person .
+ex:abu_abdullah a go:person .
+ex:god a go:deity .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/430-8> rdf:type owl:ontology .
+
+ex:abu_abdullah a go:person ;
+    go:uttered ex:statement_1 .
+
+ex:statement_1 a go:speechact ;
+    go:hasspeaker ex:abu_abdullah ;
+    go:content ex:event_1 .
+
+ex:god a go:divinebeing .
+
+ex:servant a go:person ;
+    go:haspart ex:servant_heart .
+
+ex:servant_heart a go:anatomicalpart .
+
+ex:word a go:concept ;
+    go:hasattribute ex:gathers_affairs .
+
+ex:gathers_affairs a go:attribute .
+
+ex:event_1 a go:event ;
+    go:type "plantingword" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:word ;
+    go:hasrecipient ex:servant_heart .
+go:event rdfs:label "رخداد"@fa.

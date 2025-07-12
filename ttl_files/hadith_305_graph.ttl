@@ -1,120 +1,123 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/305#> .
+@prefix ex: <http://etratnet.ir/graph/example/305#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/305> rdf:type go:ontology ;
+        go:hascontent "5.  در مجلس امام باقر عليه‌السلام بودم كه عمرو بن عُبيد درآمد و عرض كرد: فدايت گردم، خداوند، تبارك و تعالى، مى‌فرمايد: «و هر كس خشم من بر او فرود آيد قطعا هلاك شده است»، اين خشم چيست؟ امام باقر عليه‌السلام فرمود: «كيفر است اى عمرو. كسى كه بگويد خدا از حالى به حالى ديگر در مى‌آيد او را به صفت مخلوق وصف كرده است. خداى تعالى را چيزى بر نمى‌انگيزد تا دستخوش دگرگونى [حالات]شود»."@fa,
+        "5.  كُنْتُ فِي مَجْلِسِ أَبِي جَعْفَرٍ عليه‌السلام إِذْ دَخَلَ عَلَيْهِ عَمْرُو بْنُ عُبَيْدٍ، فَقَالَ لَهُ: جُعِلْتُ فِدَاكَ، قَوْلُ اللّه‌ِ تَبَارَكَ وَتَعَالى: «وَ مَن يَحْلِلْ عَلَيْهِ غَضَبِى فَقَدْ هَوى» مَا ذلِكَ الْغَضَبُ؟ فَقَالَ أَبُو جَعْفَرٍ عليه‌السلام: «هُوَ الْعِقَابُ يَا عَمْرُو؛ إِنَّهُ مَنْ زَعَمَ أَنَّ اللّه‌َ قَدْ زَالَ مِنْ شَيْءٍ إِلى شَيْءٍ، فَقَدْ وَصَفَهُ صِفَةَ مَخْلُوقٍ، وَ إِنَّ اللّه‌َ تَعَالى لاَ يَسْتَفِزُّهُ شَيْءٌ؛ فَيُغَيِّرَهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/305-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/305-1> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    rdfs:label "Allah" .
+ex:allah a go:deity ;
+    rdfs:label "allah" .
 
-ex:Quran a go:Text ;
-    go:hasTitle "Quran" .
+ex:quran a go:text ;
+    go:hastitle "quran" .
 
-ex:Saying1 a go:Statement ;
-    go:HasAgent ex:Allah ;
-    go:hasContent "And whoever brings upon himself My anger has certainly fallen" ;
-    go:IsPartOf ex:Quran .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/305-2> rdf:type owl:Ontology .
-
-# Entities
-ex:Anger a go:Substance ;
-    rdfs:label "Anger"@en .
-
-ex:Punishment a go:Substance ;
-    rdfs:label "Punishment"@en .
-
-quran:Verse17_8 a go:text ;
-    rdfs:label "Quranic verse \"And whoever is granted My anger has certainly fallen\""@en .
-
-# Event mention
-quran:Verse17_8 ex:mentions ex:Anger .
-
-# Semantic relation
-ex:Anger ex:isEquivalentTo ex:Punishment .
-go:Substance rdfs:label "شی"@fa.
+ex:saying1 a go:statement ;
+    go:hasagent ex:allah ;
+    go:hascontent "and whoever brings upon himself my anger has certainly fallen" ;
+    go:ispartof ex:quran .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/305-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/305-2> rdf:type owl:ontology .
 
-# Entities
-ex:God a go:DivineBeing ;
+# entities
+ex:anger a go:substance ;
+    rdfs:label "anger"@en .
+
+ex:punishment a go:substance ;
+    rdfs:label "punishment"@en .
+
+quran:verse17_8 a go:text ;
+    rdfs:label "quranic verse \"and whoever is granted my anger has certainly fallen\""@en .
+
+# event mention
+quran:verse17_8 ex:mentions ex:anger .
+
+# semantic relation
+ex:anger ex:isequivalentto ex:punishment .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/305-3> rdf:type owl:ontology .
+
+# entities
+ex:god a go:divinebeing ;
     rdfs:label "الله" .
 
-ex:Claimant a go:Agent ;
-    go:hasRole "generic claimant" .
+ex:claimant a go:agent ;
+    go:hasrole "generic claimant" .
 
-ex:State1 a go:Thing ;
+ex:state1 a go:thing ;
     rdfs:label "a state or thing" .
 
-ex:State2 a go:Thing ;
+ex:state2 a go:thing ;
     rdfs:label "another state or thing" .
 
-ex:CreatedAttribute a go:Attribute ;
-    go:attributeOf go:CreatedBeing ;
+ex:createdattribute a go:attribute ;
+    go:attributeof go:createdbeing ;
     rdfs:label "صفة مخلوق (attribute of a created being)" .
 
-# Events
-ex:ClaimingEvent a go:Event ;
-    go:HasAgent ex:Claimant ;
-    go:HasTheme ex:ChangeClaim .
+# events
+ex:claimingevent a go:event ;
+    go:hasagent ex:claimant ;
+    go:hastheme ex:changeclaim .
 
-ex:ChangeClaim a go:Event ;
-    go:HasTheme ex:God ;
-    go:HasProperty ex:ChangeFromOneToAnother .
+ex:changeclaim a go:event ;
+    go:hastheme ex:god ;
+    go:hasproperty ex:changefromonetoanother .
 
-ex:ChangeFromOneToAnother a go:Event ;
-    go:HasAgent ex:God ;
-    go:From ex:State1 ;
-    go:To ex:State2 .
+ex:changefromonetoanother a go:event ;
+    go:hasagent ex:god ;
+    go:from ex:state1 ;
+    go:to ex:state2 .
 
-ex:AttributionEvent a go:Event ;
-    go:HasAgent ex:Claimant ;
-    go:HasTheme ex:God ;
-    go:HasProperty ex:CreatedAttribute .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:attributionevent a go:event ;
+    go:hasagent ex:claimant ;
+    go:hastheme ex:god ;
+    go:hasproperty ex:createdattribute .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/305-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/305-4> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:HasName "God Almighty" .
+ex:god a go:deity ;
+    go:hasname "god almighty" .
 
-ex:Anything a go:Object ;
-    go:Label "anything" .
+ex:anything a go:object ;
+    go:label "anything" .
 
-ex:ChangeEvent a go:Event ;
-    go:HasTheme ex:God ;
-    go:Type "Change" .
+ex:changeevent a go:event ;
+    go:hastheme ex:god ;
+    go:type "change" .
 
-# Statement that no entity provokes God to change
-# Represented as a negative property assertion or a property indicating no causation
+# statement that no entity provokes god to change
+# represented as a negative property assertion or a property indicating no causation
 
-[] a go:Negation ;
-   go:NegatedProperty [
-       a go:Causation ;
-       go:Agent ex:Anything ;
-       go:Event ex:ChangeEvent
+[] a go:negation ;
+   go:negatedproperty [
+       a go:causation ;
+       go:agent ex:anything ;
+       go:event ex:changeevent
    ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.

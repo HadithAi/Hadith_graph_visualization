@@ -1,81 +1,84 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/315#> .
+@prefix ex: <http://etratnet.ir/graph/example/315#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/315> rdf:type go:ontology ;
+        go:hascontent "4. از حضرت رضا عليه‌السلام درباره اين سخن خداى عز و جل كه مى‌فرمايد: «خدا نور آسمان‌ها و زمين است» پرسيدم. فرمود: «[يعنى] راهنماى آسمانيان و راهنماى زمينيان است». در روايت برقى آمده است: «راهنماى كسى است كه در آسمان‌هاست و راهنماى كسى است كه در زمين است»."@fa,
+        "4.  سَأَلْتُ الرِّضَا عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «اللَّهُ نُورُ السَّموتِ وَالْأَرْضِ» فَقَالَ: «هَادٍ لِأَهْلِ السَّمَاءِ، وَهَادٍ لِأَهْلِ الْأَرْضِ». وَفِي رِوَايَةِ الْبَرْقِيِّ: «هُدى مَنْ فِي السَّمَاءِ، وَهُدى مَنْ فِي الْأَرْضِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/315-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/315-1> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Deity ;
-    go:HasProperty ex:Light .
+ex:god_almighty a go:deity ;
+    go:hasproperty ex:light .
 
-ex:Light a go:Substance .
+ex:light a go:substance .
 
-ex:Heavens a go:Location .
-ex:Earth a go:Location .
+ex:heavens a go:location .
+ex:earth a go:location .
 
-ex:God_Almighty go:IsLightOf ex:Heavens, ex:Earth .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/315-2> rdf:type owl:Ontology .
-
-ex:AllahAlmighty a go:Substance ;
-    go:hasRole ex:Guide ;
-    go:guides ex:InhabitantsOfHeavens .
-
-ex:Guide a go:Role .
-ex:InhabitantsOfHeavens a go:Group .
-go:Substance rdfs:label "شی"@fa.
+ex:god_almighty go:islightof ex:heavens, ex:earth .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/315-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/315-2> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
-    ex:isGuideFor ex:PeopleOfEarth .
+ex:allahalmighty a go:substance ;
+    go:hasrole ex:guide ;
+    go:guides ex:inhabitantsofheavens .
 
-ex:PeopleOfEarth a go:Group .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/315-4> rdf:type owl:Ontology .
-
-ex:God_Almighty a go:Deity ;
-    go:hasRole ex:Guidance .
-
-ex:Guidance a go:ConceptualRole ;
-    go:hasRecipient ex:Those_in_the_Sky .
-
-ex:Those_in_the_Sky a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:guide a go:role .
+ex:inhabitantsofheavens a go:group .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/315-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/315-3> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Agent ;
-    go:provides ex:Guidance .
+ex:godalmighty a go:deity ;
+    ex:isguidefor ex:peopleofearth .
 
-ex:Guidance a go:Role ;
-    go:hasRecipient ex:Beings_on_Earth .
+ex:peopleofearth a go:group .
 
-ex:Beings_on_Earth a go:Substance ;
-    go:locatedIn ex:Earth .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/315-4> rdf:type owl:ontology .
+
+ex:god_almighty a go:deity ;
+    go:hasrole ex:guidance .
+
+ex:guidance a go:conceptualrole ;
+    go:hasrecipient ex:those_in_the_sky .
+
+ex:those_in_the_sky a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/315-5> rdf:type owl:ontology .
+
+ex:god_almighty a go:agent ;
+    go:provides ex:guidance .
+
+ex:guidance a go:role ;
+    go:hasrecipient ex:beings_on_earth .
+
+ex:beings_on_earth a go:substance ;
+    go:locatedin ex:earth .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

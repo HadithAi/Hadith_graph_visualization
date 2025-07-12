@@ -1,73 +1,76 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/294#> .
+@prefix ex: <http://etratnet.ir/graph/example/294#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/294> rdf:type go:ontology ;
+        go:hascontent "2.  از امام باقر عليه‌السلام شنيدم كه مى‌فرمايد: «خدا بود و جز او هيچ نبود، و به آنچه پديد مى‌آيد از ازل دانا بود. پس، دانش او به چيزها پيش از بود شدنشان، مانند دانش اوست به آنها پس از بودشدنشان»."@fa,
+        "2.  عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: سَمِعْتُهُ يَقُولُ: «كَانَ اللّه‌ُ وَلاَ شَيْءَ غَيْرُهُ، وَلَمْ يَزَلْ عَالِماً بِمَا يَكُونُ؛ فَعِلْمُهُ بِهِ قَبْلَ كَوْنِهِ كَعِلْمِهِ بِهِ بَعْدَ كَوْنِهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/294-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/294-1> rdf:type owl:ontology .
 
-ex:God a go:Deity, go:Substance .
+ex:god a go:deity, go:substance .
 
-time:Beginning a time:Instant ;
-    time:inXSDDateTime "0000-01-01T00:00:00Z"^^xsd:dateTime .
+time:beginning a time:instant ;
+    time:inxsddatetime "0000-01-01t00:00:00z"^^xsd:datetime .
 
-ex:GodExistenceAtBeginning a go:ExistenceEvent ;
-    go:HasAgent ex:God ;
-    time:hasTime time:Beginning .
+ex:godexistenceatbeginning a go:existenceevent ;
+    go:hasagent ex:god ;
+    time:hastime time:beginning .
 
-ex:NothingElseAtBeginning a go:NonExistenceEvent ;
-    go:HasTheme ex:Entity ;
-    time:hasTime time:Beginning ;
-    go:excludes ex:God .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/294-2> rdf:type owl:Ontology .
-
-ex:God a go:agent ;
-    go:name "God" .
-
-ex:FutureEvents a go:Event ;
-    go:name "Future Events" .
-
-ex:KnowledgeEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:FutureEvents ;
-    go:name "God's knowledge of future events" .
-go:Event rdfs:label "رخداد"@fa.
+ex:nothingelseatbeginning a go:nonexistenceevent ;
+    go:hastheme ex:entity ;
+    time:hastime time:beginning ;
+    go:excludes ex:god .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/294-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/294-2> rdf:type owl:ontology .
 
-ex:eventInstance a go:Event .
+ex:god a go:agent ;
+    go:name "god" .
 
-ex:God a go:agent .
+ex:futureevents a go:event ;
+    go:name "future events" .
 
-ex:KnowledgeBefore a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:eventInstance ;
-    time:hasTime [ a time:ProperInterval ;
-                   time:hasEnd ex:eventInstanceStartTime ] .
+ex:knowledgeevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:futureevents ;
+    go:name "god's knowledge of future events" .
+go:event rdfs:label "رخداد"@fa.
 
-ex:KnowledgeAfter a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:eventInstance ;
-    time:hasTime [ a time:ProperInterval ;
-                   time:hasBegin ex:eventInstanceEndTime ] .
 
-ex:KnowledgeBefore ex:isSimilarTo ex:KnowledgeAfter .
-go:Event rdfs:label "رخداد"@fa.
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/294-3> rdf:type owl:ontology .
+
+ex:eventinstance a go:event .
+
+ex:god a go:agent .
+
+ex:knowledgebefore a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:eventinstance ;
+    time:hastime [ a time:properinterval ;
+                   time:hasend ex:eventinstancestarttime ] .
+
+ex:knowledgeafter a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:eventinstance ;
+    time:hastime [ a time:properinterval ;
+                   time:hasbegin ex:eventinstanceendtime ] .
+
+ex:knowledgebefore ex:issimilarto ex:knowledgeafter .
+go:event rdfs:label "رخداد"@fa.

@@ -1,126 +1,129 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/289#> .
+@prefix ex: <http://etratnet.ir/graph/example/289#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/289> rdf:type go:ontology ;
+        go:hascontent "5.  به ابو الحسن [امام هادى] عليه‌السلام نامه نوشتم و نظر آن حضرت را درباره عقيده هشام بن حكم پيرامون جسم بودن [خدا] و نظر هشام بن سالم راجع به شكل داشتن او پرسيدم. حضرت چنين مرقوم فرمود: «سرگردانى سرگردان را رها كن، و از شيطان به خدا پناه ببر. سخن درست، آن نيست كه هشام‌ها گفته‌اند»."@fa,
+        "5.  كَتَبْتُ إِلى أَبِي الْحَسَنِ عليه‌السلام أَسْأَلُهُ عَمَّا قَالَ هِشَامُ بْنُ الْحَكَمِ فِي الجِسْمِ، وَهِشَامُ بْنُ سَالِمٍ فِي الصُّورَةِ. فَكَتَبَ عليه‌السلام: «دَعْ عَنْكَ حَيْرَةَ الْحَيْرَانِ، وَاسْتَعِذْ بِاللّه‌ِ مِنَ الشَّيْطَانِ، لَيْسَ الْقَوْلُ مَا قَالَ الْهِشَامَانِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/289-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/289-1> rdf:type owl:ontology .
 
-ex:writing1 a go:CommunicativeEvent ;
-    go:HasAgent ex:speaker ;
-    go:HasRecipient ex:Abi_al-Hasan ;
-    go:HasTheme ex:asking1 .
+ex:writing1 a go:communicativeevent ;
+    go:hasagent ex:speaker ;
+    go:hasrecipient ex:abi_al-hasan ;
+    go:hastheme ex:asking1 .
 
-ex:asking1 a go:InquiryEvent ;
-    go:HasAgent ex:speaker ;
-    go:HasTheme ex:speechHisham ;
-    go:About ex:body .
+ex:asking1 a go:inquiryevent ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:speechhisham ;
+    go:about ex:body .
 
-ex:speechHisham a go:SpeechAct ;
-    go:HasAgent ex:Hisham_ibn_al-Hakam .
+ex:speechhisham a go:speechact ;
+    go:hasagent ex:hisham_ibn_al-hakam .
 
-ex:speaker a go:Person .
-ex:Abi_al-Hasan a go:Person ;
-    go:Honorific "alayhi as-salam" .
-ex:Hisham_ibn_al-Hakam a go:Person .
-ex:body a go:PhysicalObject .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/289-2> rdf:type owl:Ontology .
-
-ex:event1 a go:WrittenCommunication ;
-    go:HasAgent ex:speaker ;
-    go:HasRecipient ex:AlHasan ;
-    go:HasTheme ex:askEvent .
-
-ex:askEvent a go:InformationRequest ;
-    go:HasAgent ex:speaker ;
-    go:HasTheme ex:speechHisham .
-
-ex:speechHisham a go:Speech ;
-    go:HasAgent ex:HishamBinSalim ;
-    go:About ex:image .
-
-ex:speaker a go:Person .
-ex:AlHasan a go:Person .
-ex:HishamBinSalim a go:Person .
-ex:image a go:Image .
-go:Information rdfs:label "اطلاعات"@fa.
+ex:speaker a go:person .
+ex:abi_al-hasan a go:person ;
+    go:honorific "alayhi as-salam" .
+ex:hisham_ibn_al-hakam a go:person .
+ex:body a go:physicalobject .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/289-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/289-2> rdf:type owl:ontology .
 
-ex:AbuAlHasan a go:Person ;
-    rdfs:label "Abu al-Hasan (peace be upon him)" .
+ex:event1 a go:writtencommunication ;
+    go:hasagent ex:speaker ;
+    go:hasrecipient ex:alhasan ;
+    go:hastheme ex:askevent .
 
-ex:SpeechEvent1 a go:Say ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:Message1 .
+ex:askevent a go:informationrequest ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:speechhisham .
 
-ex:Message1 a go:Message ;
-    rdfs:label "Leave aside the confusion of the confused" .
+ex:speechhisham a go:speech ;
+    go:hasagent ex:hishambinsalim ;
+    go:about ex:image .
+
+ex:speaker a go:person .
+ex:alhasan a go:person .
+ex:hishambinsalim a go:person .
+ex:image a go:image .
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/289-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/289-3> rdf:type owl:ontology .
 
-ex:AlHassan a go:Person ;
-    rdfs:label "Al-Hassan" ;
+ex:abualhasan a go:person ;
+    rdfs:label "abu al-hasan (peace be upon him)" .
+
+ex:speechevent1 a go:say ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:message1 .
+
+ex:message1 a go:message ;
+    rdfs:label "leave aside the confusion of the confused" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/289-4> rdf:type owl:ontology .
+
+ex:alhassan a go:person ;
+    rdfs:label "al-hassan" ;
     go:honorific "peace be upon him" .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:Satan a go:SupernaturalBeing ;
-    rdfs:label "Satan" .
+ex:satan a go:supernaturalbeing ;
+    rdfs:label "satan" .
 
-ex:Speech1 a go:SpeechAct , go:Event ;
-    go:HasAgent ex:AlHassan ;
-    go:hasContent ex:RefugeRequest .
+ex:speech1 a go:speechact , go:event ;
+    go:hasagent ex:alhassan ;
+    go:hascontent ex:refugerequest .
 
-ex:RefugeRequest a go:Proposition ;
-    go:hasEvent ex:SeekRefugeEvent .
+ex:refugerequest a go:proposition ;
+    go:hasevent ex:seekrefugeevent .
 
-ex:SeekRefugeEvent a go:Event ;
-    go:HasAgent ex:Listener ; # implicit, unspecified
-    go:HasTheme ex:God ;
-    ex:sourceOfRefuge ex:Satan .
-go:Event rdfs:label "رخداد"@fa.
+ex:seekrefugeevent a go:event ;
+    go:hasagent ex:listener ; # implicit, unspecified
+    go:hastheme ex:god ;
+    ex:sourceofrefuge ex:satan .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/289-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/289-5> rdf:type owl:ontology .
 
-ex:AlHassan a go:Person ;
-    rdfs:label "Al-Hassan (peace be upon him)" .
+ex:alhassan a go:person ;
+    rdfs:label "al-hassan (peace be upon him)" .
 
-ex:TwoHishams a go:Person ;
-    rdfs:label "The two Hishams" .
+ex:twohishams a go:person ;
+    rdfs:label "the two hishams" .
 
-ex:SayingEvent a go:Event ;
-    go:HasAgent ex:AlHassan ;
-    go:HasTheme ex:NegationOfTwoHishamsStatement .
+ex:sayingevent a go:event ;
+    go:hasagent ex:alhassan ;
+    go:hastheme ex:negationoftwohishamsstatement .
 
-ex:NegationOfTwoHishamsStatement a go:Concept ;
-    go:refersTo ex:TwoHishams ;
-    go:hasAttribute ex:Negation .
+ex:negationoftwohishamsstatement a go:concept ;
+    go:refersto ex:twohishams ;
+    go:hasattribute ex:negation .
 
-ex:Negation a go:Attribute ;
-    go:hasValue "not"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
+ex:negation a go:attribute ;
+    go:hasvalue "not"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.

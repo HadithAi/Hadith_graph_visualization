@@ -1,59 +1,62 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/322#> .
+@prefix ex: <http://etratnet.ir/graph/example/322#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/322> rdf:type go:ontology ;
+        go:hascontent "11.  از امام صادق عليه‌السلام درباره معناى فرموده خداى عز و جل: «سبحان اللّه‌» پرسيدم. فرمود: «منزّه دانستن اوست»."@fa,
+        "11.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «سُبْحَانَ اللَّهِ»: مَا يُعْنى بِهِ؟ قَالَ: «تَنْزِيهُهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/322-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/322-1> rdf:type owl:ontology .
 
-ex:AskingEvent1 a go:Event ;
-    go:HasAgent ex:Speaker ;
-    go:HasRecipient ex:AbaAbdullah_PeaceBeUponHim ;
-    go:HasTheme ex:MeaningOfDivinePhrase1 .
+ex:askingevent1 a go:event ;
+    go:hasagent ex:speaker ;
+    go:hasrecipient ex:abaabdullah_peacebeuponhim ;
+    go:hastheme ex:meaningofdivinephrase1 .
 
-ex:Speaker a go:Person .
-ex:AbaAbdullah_PeaceBeUponHim a go:Person ;
-    go:HasHonorific "peace be upon him" .
-ex:MeaningOfDivinePhrase1 a go:Concept ;
-    go:refersToPhrase "سبحان الله" ;
-    go:MeaningRelatedTo ex:God .
-ex:God a go:DivineBeing .
-go:Event rdfs:label "رخداد"@fa.
+ex:speaker a go:person .
+ex:abaabdullah_peacebeuponhim a go:person ;
+    go:hashonorific "peace be upon him" .
+ex:meaningofdivinephrase1 a go:concept ;
+    go:referstophrase "سبحان الله" ;
+    go:meaningrelatedto ex:god .
+ex:god a go:divinebeing .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/322-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/322-2> rdf:type owl:ontology .
 
-ex:Abu_Abdullah a go:Person ;
-    rdfs:label "Abu Abdullah" .
+ex:abu_abdullah a go:person ;
+    rdfs:label "abu abdullah" .
 
-ex:Tasneeh_Allah a go:Concept ;
-    rdfs:label "Tasneeh Allah (تعظيم الله عز وجل)" .
+ex:tasneeh_allah a go:concept ;
+    rdfs:label "tasneeh allah (تعظيم الله عز وجل)" .
 
-ex:Subhan_Allah a go:Concept ;
-    rdfs:label "Subhan Allah (سبحان الله)" .
+ex:subhan_allah a go:concept ;
+    rdfs:label "subhan allah (سبحان الله)" .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:Abu_Abdullah ;
-    go:HasTheme ex:MeaningStatement1 .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:abu_abdullah ;
+    go:hastheme ex:meaningstatement1 .
 
-ex:MeaningStatement1 a go:Statement ;
-    rdfs:label "'Tasneeh Allah, the Almighty and Glorious' means 'Subhan Allah'" ;
-    ex:explains ex:Tasneeh_Allah, ex:Subhan_Allah ;
-    ex:hasMeaningRelation [
-        a ex:MeaningRelation ;
-        ex:source ex:Tasneeh_Allah ;
-        ex:target ex:Subhan_Allah ;
+ex:meaningstatement1 a go:statement ;
+    rdfs:label "'tasneeh allah, the almighty and glorious' means 'subhan allah'" ;
+    ex:explains ex:tasneeh_allah, ex:subhan_allah ;
+    ex:hasmeaningrelation [
+        a ex:meaningrelation ;
+        ex:source ex:tasneeh_allah ;
+        ex:target ex:subhan_allah ;
         rdfs:label "means"
     ] .

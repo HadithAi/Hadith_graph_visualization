@@ -1,250 +1,253 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/392#> .
+@prefix ex: <http://etratnet.ir/graph/example/392#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/392> rdf:type go:ontology ;
+        go:hascontent "6.  «خداوند فرمود: اى پسر آدم، به خواست من است كه تو براى خود مى‌خواهى آنچه را مىخواهى، و با نيروى من است كه واجبات مرا انجام مى‌دهى، و با نعمت [هاى]من است كه بر نافرمانى از من توانايى. من تو را شنوا و بينا و توانا قرار داده‌ام. «هر نيكى كه به تو رسد از خداست و هر بدى كه به تو رسد از خود توست»؛ زيرا كه من به نيكى‌هايت از تو سزاوارترم و تو به بدى‌هايت از من سزاوارترى؛ چرا كه من درباره كارى كه مى‌كنم بازخواست نمى‌شوم در حالى كه آنان بازخواست مى‌شوند»."@fa,
+        "6. قَالَ أَبُو الْحَسَنِ الرِّضَا عليه‌السلام: «قَالَ اللّه‌ُ: ابْنَ آدَمَ، بِمَشِيئَتِي كُنْتَ أَنْتَ الَّذِي تَشَاءُ لِنَفْسِكَ مَا تَشَاءُ، وَبِقُوَّتِي أَدَّيْتَ فَرَائِضِي، وَبِنِعْمَتِي قَوِيتَ عَلى مَعْصِيَتِي، جَعَلْتُكَ سَمِيعاً بَصِيراً قَوِيّاً «مَا أَصَابَكَ مِنْ حَسَنَةٍ فَمِنَ اللّه‌ِ وَمَا أَصَابَكَ مِنْ سَيِّئَةٍ فَمِنْ نَفْسِكَ» وَذَاكَ أَنِّي أَوْلى بِحَسَنَاتِكَ مِنْكَ، وَأَنْتَ أَوْلى بِسَيِّئَاتِكَ مِنِّي، وَذَاكَ أَنَّنِي لاَ أُسْأَلُ عَمَّا أَفْعَلُ وَهُمْ يُسْأَلُونَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/392-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/392-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:SubstanceCategory go:SpiritualEntity .
+ex:god a go:deity ;
+    go:substancecategory go:spiritualentity .
 
-ex:SonOfAdam a go:Human ;
-    go:SubstanceCategory go:Agent .
+ex:sonofadam a go:human ;
+    go:substancecategory go:agent .
 
-ex:Saying1 a go:SpeechAct ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SonOfAdam ;
-    go:HasContent ex:Content1 .
+ex:saying1 a go:speechact ;
+    go:hasagent ex:god ;
+    go:hastheme ex:sonofadam ;
+    go:hascontent ex:content1 .
 
-ex:Content1 a go:Statement ;
-    go:hasProposition ex:Proposition1 .
+ex:content1 a go:statement ;
+    go:hasproposition ex:proposition1 .
 
-ex:Proposition1 a go:Proposition ;
-    go:HasSubject ex:God ;
-    go:HasPredicate ex:Will ;
-    go:HasObject ex:DesireRelation .
+ex:proposition1 a go:proposition ;
+    go:hassubject ex:god ;
+    go:haspredicate ex:will ;
+    go:hasobject ex:desirerelation .
 
-ex:DesireRelation a go:Relation ;
-    go:HasAgent ex:SonOfAdam ;
-    go:HasTheme ex:DesiredThings .
+ex:desirerelation a go:relation ;
+    go:hasagent ex:sonofadam ;
+    go:hastheme ex:desiredthings .
 
-ex:DesiredThings a go:Concept ;
+ex:desiredthings a go:concept ;
     go:description "whatever you desire for yourself" .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/392-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/392-2> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasRecipient ex:SonOfAdam ;
-  go:HasTheme ex:statement1 .
+ex:event1 a go:event ;
+  go:hasagent ex:god ;
+  go:hasrecipient ex:sonofadam ;
+  go:hastheme ex:statement1 .
 
-ex:God a go:Substance .
-ex:SonOfAdam a go:Substance .
+ex:god a go:substance .
+ex:sonofadam a go:substance .
 
-ex:statement1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:fulfillment .
+ex:statement1 a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:fulfillment .
 
-ex:fulfillment a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasTheme ex:obligations ;
-  go:HasCause ex:power .
+ex:fulfillment a go:event ;
+  go:hasagent ex:god ;
+  go:hastheme ex:obligations ;
+  go:hascause ex:power .
 
-ex:obligations a go:Substance .
-ex:power a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/392-3> rdf:type owl:Ontology .
-
-ex:event1 a go:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:SonOfAdam ;
-    go:HasContent ex:Statement1 .
-
-ex:God a go:DivineBeing ;
-    rdfs:label "God"@en .
-
-ex:SonOfAdam a go:Human ;
-    rdfs:label "Son of Adam"@en .
-
-ex:Statement1 a go:Utterance ;
-    rdfs:label "By My blessing, you have power over My disobedience."@en ;
-    go:HasTheme ex:Blessing , ex:Disobedience .
-
-ex:Blessing a go:AbstractConcept ;
-    rdfs:label "Blessing"@en .
-
-ex:Disobedience a go:AbstractConcept ;
-    rdfs:label "Disobedience"@en .
+ex:obligations a go:substance .
+ex:power a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/392-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/392-3> rdf:type owl:ontology .
 
-ex:Event1 a go:CommunicationEvent ;
-    go:HasAgent go:God ;
-    go:HasRecipient ex:SonOfAdam ;
-    go:HasUtterance ex:Utterance1 .
+ex:event1 a go:speechevent ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:sonofadam ;
+    go:hascontent ex:statement1 .
 
-ex:Utterance1 a go:Utterance ;
-    go:HasContent "I have made you hearing, seeing, and strong." .
+ex:god a go:divinebeing ;
+    rdfs:label "god"@en .
 
-ex:SonOfAdam a ex:Person ;
-    ex:hasQuality ex:Hearing, ex:Seeing, ex:Strength .
+ex:sonofadam a go:human ;
+    rdfs:label "son of adam"@en .
 
-ex:Hearing a go:Quality .
-ex:Seeing a go:Quality .
-ex:Strength a go:Quality .
+ex:statement1 a go:utterance ;
+    rdfs:label "by my blessing, you have power over my disobedience."@en ;
+    go:hastheme ex:blessing , ex:disobedience .
 
-go:God a go:Substance .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:blessing a go:abstractconcept ;
+    rdfs:label "blessing"@en .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/392-5> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:SonOfAdam ;
-    go:hasMessage ex:Message1 .
-
-ex:God a go:Deity .
-ex:SonOfAdam a go:Human .
-
-ex:Message1 a ex:Statement ;
-    ex:expressesProposition ex:GoodFromGod .
-
-ex:GoodFromGod a ex:Proposition ;
-    ex:propositionContent "Whatever good happens to the son of Adam is from God" .
-go:Event rdfs:label "رخداد"@fa.
+ex:disobedience a go:abstractconcept ;
+    rdfs:label "disobedience"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/392-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/392-4> rdf:type owl:ontology .
 
-ex:Event_GodSaysToSonAdam a go:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:SonOfAdam ;
-    go:HasTheme ex:Content_Statement .
+ex:event1 a go:communicationevent ;
+    go:hasagent go:god ;
+    go:hasrecipient ex:sonofadam ;
+    go:hasutterance ex:utterance1 .
 
-ex:God a go:Substance ;
-    go:type "Deity" .
+ex:utterance1 a go:utterance ;
+    go:hascontent "i have made you hearing, seeing, and strong." .
 
-ex:SonOfAdam a go:Substance ;
-    go:type "Human" .
+ex:sonofadam a ex:person ;
+    ex:hasquality ex:hearing, ex:seeing, ex:strength .
 
-ex:Content_Statement a go:Statement ;
-    go:content "Whatever bad thing befalls you is from yourself" ;
-    go:HasTopic ex:BadThing .
+ex:hearing a go:quality .
+ex:seeing a go:quality .
+ex:strength a go:quality .
 
-ex:BadThing a go:NegativeEvent ;
-    go:HasPatient ex:SonOfAdam ;
-    go:HasCause ex:SonOfAdam .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/392-7> rdf:type owl:Ontology .
-
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:SonOfAdam ;
-    go:HasContent ex:Content1 .
-
-ex:God a go:Deity .
-ex:SonOfAdam a go:Human .
-
-ex:Content1 a go:Claim ;
-    go:HasClaimant ex:God ;
-    go:HasClaimedProperty ex:EntitlementToGoodDeeds .
-
-ex:EntitlementToGoodDeeds a go:Entitlement ;
-    go:RelatesTo ex:GoodDeeds ;
-    go:IsEntitled ex:God ;
-    go:IsOriginallyPossessedBy ex:SonOfAdam .
-
-ex:GoodDeeds a go:GoodDeeds .
+go:god a go:substance .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/392-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/392-5> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:Event ;
-  go:HasAgent ex:God ;
-  go:HasRecipient ex:SonOfAdam ;
-  go:hasContent ex:Proposition1 .
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:sonofadam ;
+    go:hasmessage ex:message1 .
 
-ex:God a go:divineBeing ;
-  rdfs:label "God"@en .
+ex:god a go:deity .
+ex:sonofadam a go:human .
 
-ex:SonOfAdam a go:human ;
-  rdfs:label "Son of Adam"@en .
+ex:message1 a ex:statement ;
+    ex:expressesproposition ex:goodfromgod .
 
-ex:Proposition1 a go:proposition ;
-  go:hasSubject ex:SonOfAdam ;
-  go:hasPredicate ex:MoreDeservingOfEvilDeeds ;
-  go:hasObject ex:God .
+ex:goodfromgod a ex:proposition ;
+    ex:propositioncontent "whatever good happens to the son of adam is from god" .
+go:event rdfs:label "رخداد"@fa.
 
-ex:MoreDeservingOfEvilDeeds a go:relation ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/392-6> rdf:type owl:ontology .
+
+ex:event_godsaystosonadam a go:speechevent ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:sonofadam ;
+    go:hastheme ex:content_statement .
+
+ex:god a go:substance ;
+    go:type "deity" .
+
+ex:sonofadam a go:substance ;
+    go:type "human" .
+
+ex:content_statement a go:statement ;
+    go:content "whatever bad thing befalls you is from yourself" ;
+    go:hastopic ex:badthing .
+
+ex:badthing a go:negativeevent ;
+    go:haspatient ex:sonofadam ;
+    go:hascause ex:sonofadam .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/392-7> rdf:type owl:ontology .
+
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:sonofadam ;
+    go:hascontent ex:content1 .
+
+ex:god a go:deity .
+ex:sonofadam a go:human .
+
+ex:content1 a go:claim ;
+    go:hasclaimant ex:god ;
+    go:hasclaimedproperty ex:entitlementtogooddeeds .
+
+ex:entitlementtogooddeeds a go:entitlement ;
+    go:relatesto ex:gooddeeds ;
+    go:isentitled ex:god ;
+    go:isoriginallypossessedby ex:sonofadam .
+
+ex:gooddeeds a go:gooddeeds .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/392-8> rdf:type owl:ontology .
+
+ex:speechevent1 a go:event ;
+  go:hasagent ex:god ;
+  go:hasrecipient ex:sonofadam ;
+  go:hascontent ex:proposition1 .
+
+ex:god a go:divinebeing ;
+  rdfs:label "god"@en .
+
+ex:sonofadam a go:human ;
+  rdfs:label "son of adam"@en .
+
+ex:proposition1 a go:proposition ;
+  go:hassubject ex:sonofadam ;
+  go:haspredicate ex:moredeservingofevildeeds ;
+  go:hasobject ex:god .
+
+ex:moredeservingofevildeeds a go:relation ;
   rdfs:label "more deserving of evil deeds than"@en .
-go:Event rdfs:label "رخداد"@fa.
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/392-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/392-9> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SonOfAdam ;
-    go:HasContent ex:Proposition1 .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:sonofadam ;
+    go:hascontent ex:proposition1 .
 
-ex:God a go:Deity .
-ex:SonOfAdam a go:Person .
+ex:god a go:deity .
+ex:sonofadam a go:person .
 
-ex:Proposition1 a go:Proposition ;
-    go:expresses ex:Statement1 .
+ex:proposition1 a go:proposition ;
+    go:expresses ex:statement1 .
 
-ex:Statement1 a go:Proposition ;
-    go:subject ex:God ;
-    go:predicate go:NotAskedAbout ;
-    go:object ex:HisActions .
+ex:statement1 a go:proposition ;
+    go:subject ex:god ;
+    go:predicate go:notaskedabout ;
+    go:object ex:hisactions .
 
-ex:HisActions a go:Action .
+ex:hisactions a go:action .
 
-go:NotAskedAbout a go:Property .
+go:notaskedabout a go:property .
 
-ex:Statement2 a go:Proposition ;
-    go:subject ex:Others ;
-    go:predicate go:AskedAbout ;
-    go:object ex:HisActions .
+ex:statement2 a go:proposition ;
+    go:subject ex:others ;
+    go:predicate go:askedabout ;
+    go:object ex:hisactions .
 
-ex:Others a go:PersonGroup .
+ex:others a go:persongroup .
 
-ex:Proposition1 go:hasRelated ex:Statement2 .
+ex:proposition1 go:hasrelated ex:statement2 .

@@ -1,75 +1,78 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/223#> .
+@prefix ex: <http://etratnet.ir/graph/example/223#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/223> rdf:type go:ontology ;
+        go:hascontent "2.  از ابو جعفر ثانى [امام جواد] عليه‌السلام سؤال شد: آيا جايز است كه به خدا، «چيز» گفته شود؟ فرمود: «آرى، [به شرط آن كه] او را از دو مرز تعطيل و تشبيه بيرون بَرَد»."@fa,
+        "2.  سُئِلَ أَبُو جَعْفَرٍ الثَّانِي عليه‌السلام: يَجُوزُ أَنْ يُقَالَ لِلّهِ: إِنَّهُ شَيْءٌ؟ قَالَ: «نَعَمْ، يُخْرِجُهُ مِنَ الْحَدَّيْنِ: حَدِّ التَّعْطِيلِ، وَحَدِّ التَّشْبِيهِ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/223-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/223-1> rdf:type owl:ontology .
 
-:SayEvent a go:Event ;
-    go:HasRecipient go:God ;
-    go:HasTheme :Proposition_HeIsThing ;
-    ex:hasModality ex:Permission .
+:sayevent a go:event ;
+    go:hasrecipient go:god ;
+    go:hastheme :proposition_heisthing ;
+    ex:hasmodality ex:permission .
 
-:Proposition_HeIsThing a go:concept ;
-    go:hasSubject go:God ;
-    go:hasPredicate go:isA ;
-    go:hasObject go:Thing .
+:proposition_heisthing a go:concept ;
+    go:hassubject go:god ;
+    go:haspredicate go:isa ;
+    go:hasobject go:thing .
 
-# Entities
+# entities
 
-go:God a go:Substance .
+go:god a go:substance .
 
-go:Thing a go:Substance .
+go:thing a go:substance .
 
-# Modality
+# modality
 
-ex:Permission a ex:Modality .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/223-2> rdf:type owl:Ontology .
-
-ex:God a go:DivineAgent .
-ex:GodsWord a go:Concept ;
-    go:HasAgent ex:God ;
-    ex:isDefinitive true ;
-    ex:derivedFrom ex:TwoLimits .
-
-ex:TwoLimits a go:Concept .
-ex:LimitOfNegation a go:Limit ;
-    ex:partOf ex:TwoLimits .
+ex:permission a ex:modality .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/223-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/223-2> rdf:type owl:ontology .
 
-ex:Statement3 a go:Utterance ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Speech .
+ex:god a go:divineagent .
+ex:godsword a go:concept ;
+    go:hasagent ex:god ;
+    ex:isdefinitive true ;
+    ex:derivedfrom ex:twolimits .
 
-ex:God a go:Agent ;
-    rdf:type go:Substance .
+ex:twolimits a go:concept .
+ex:limitofnegation a go:limit ;
+    ex:partof ex:twolimits .
 
-ex:Speech a go:Concept .
 
-ex:BeyondImitation a go:Concept ;
-    rdfs:label "Beyond imitation" .
+@base <http://etratnet.ir/ontology/> .
 
-ex:Speech go:hasProperty ex:BeyondImitation .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+<http://etratnet.ir/ontology/223-3> rdf:type owl:ontology .
+
+ex:statement3 a go:utterance ;
+    go:hasagent ex:god ;
+    go:hastheme ex:speech .
+
+ex:god a go:agent ;
+    rdf:type go:substance .
+
+ex:speech a go:concept .
+
+ex:beyondimitation a go:concept ;
+    rdfs:label "beyond imitation" .
+
+ex:speech go:hasproperty ex:beyondimitation .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

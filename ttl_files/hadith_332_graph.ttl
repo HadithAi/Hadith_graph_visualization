@@ -1,155 +1,158 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/332#> .
+@prefix ex: <http://etratnet.ir/graph/example/332#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/332> rdf:type go:ontology ;
+        go:hascontent "5.  امام صادق عليه‌السلام درباره اين سخن خداى تعالى كه مى‌فرمايد: «هيچ سخنِ در گوشى ميان سه نفر نباشد مگر اين كه او چهارمين آنهاست» فرمود: «او يكتا و ذاتش يگانه است. از آفريدگانش جداست و با اين وصف خويشتن را شناسانده است. او هر چيز را در ميان گرفته است؛ به اين معنا كه بر همه چيز اشراف و احاطه و قدرت دارد «و هموزن ذره‌اى، نه در آسمان‌ها و نه در زمين، از وى پوشيده نيست، و نه كوچك‌تر و نه بزرگ‌تر از آن». يعنى احاطه علمى دارد، نه احاطه ذاتى؛ زيرا، مكان‌ها به حدود چهارگانه محدودند. بنابراين، اگر احاطه ذاتى داشته باشد مُحاط بودنش لازم مى‌آيد."@fa,
+        "5.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام فِي قَوْلِهِ تَعَالى: «مَا يَكُونُ مِن نَّجْوى ثَلثَةٍ إِلاَّ هُوَ رَابِعُهُمْ وَ لاَخَمْسَةٍ إِلاَّ هُوَ سَادِسُهُمْ» فَقَالَ: «هُوَ وَاحِدٌ وَاحِدِيُّ الذَّاتِ، بَائِنٌ مِنْ خَلْقِهِ، وَبِذَاكَ وَصَفَ نَفْسَهُ، وَهُوَ بِكُلِّ شَيْءٍ مُحِيطٌ بِالاْءِشْرَافِ وَالاْءِحَاطَةِ وَالْقُدْرَةِ «لاَ يَعْزُبُ‌عَنْهُ مِثْقالُ ذَرَّةٍ فِى السَّماواتِ وَلاَ فِى الْأَرْضِ وَلاَ أَصْغَرُ مِنْ ذلِكَ وَلاَ أَكْبَرُ» بِالاْءِحَاطَةِ وَالْعِلْمِ، لاَ بِالذَّاتِ؛ لِأَنَّ الْأَمَاكِنَ مَحْدُودَةٌ تَحْوِيهَا حُدُودٌ أَرْبَعَةٌ، فَإِذَا كَانَ بِالذَّاتِ لَزِمَهَا الْحَوَايَةُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/332-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/332-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    ex:hasUnity true ;
-    ex:hasRevelation ex:Revelation ;
-    ex:isDistinctFrom ex:Creation .
+ex:god a go:deity ;
+    ex:hasunity true ;
+    ex:hasrevelation ex:revelation ;
+    ex:isdistinctfrom ex:creation .
 
-ex:Revelation a go:Attribute ;
-    ex:isIntrinsicTo ex:God .
+ex:revelation a go:attribute ;
+    ex:isintrinsicto ex:god .
 
-ex:Creation a go:Substance .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/332-2> rdf:type owl:Ontology .
-
-ex:event1 a go:DescriptionEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:GodSelf ;
-    go:describesAttribute ex:AttributeOne, ex:AttributeSelfManifested, ex:AttributeSeparate .
-
-ex:God a go:Deity .
-ex:GodSelf a go:DivineSelf .
-ex:AttributeOne a go:DivineAttribute ;
-    go:hasValue "One" .
-ex:AttributeSelfManifested a go:DivineAttribute ;
-    go:hasValue "Self-Manifested" .
-ex:AttributeSeparate a go:DivineAttribute ;
-    go:hasValue "Separate from Creation" ;
-    go:relatedTo go:Creation .
-
-go:Creation a go:Creation .
+ex:creation a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/332-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/332-2> rdf:type owl:ontology .
 
-ex:God rdf:type go:Deity ;
-  go:HasCapability ex:Supervision , ex:Comprehensiveness , ex:Capability ;
-  go:Encompasses ex:Everything .
+ex:event1 a go:descriptionevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:godself ;
+    go:describesattribute ex:attributeone, ex:attributeselfmanifested, ex:attributeseparate .
 
-ex:Everything rdf:type go:Thing .
+ex:god a go:deity .
+ex:godself a go:divineself .
+ex:attributeone a go:divineattribute ;
+    go:hasvalue "one" .
+ex:attributeselfmanifested a go:divineattribute ;
+    go:hasvalue "self-manifested" .
+ex:attributeseparate a go:divineattribute ;
+    go:hasvalue "separate from creation" ;
+    go:relatedto go:creation .
 
-ex:Supervision rdf:type go:Quality .
-ex:Comprehensiveness rdf:type go:Quality .
-ex:Capability rdf:type go:Quality .
-go:Quality rdfs:label "ویژگی"@fa.
+go:creation a go:creation .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/332-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/332-3> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god rdf:type go:deity ;
+  go:hascapability ex:supervision , ex:comprehensiveness , ex:capability ;
+  go:encompasses ex:everything .
 
-ex:Atom a go:Substance ;
+ex:everything rdf:type go:thing .
+
+ex:supervision rdf:type go:quality .
+ex:comprehensiveness rdf:type go:quality .
+ex:capability rdf:type go:quality .
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/332-4> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    rdfs:label "god"@en .
+
+ex:atom a go:substance ;
     rdfs:label "atom"@en .
 
-ex:Heavens a go:object ;
-    rdfs:label "Heavens"@en .
+ex:heavens a go:object ;
+    rdfs:label "heavens"@en .
 
-ex:Earth a go:object ;
-    rdfs:label "Earth"@en .
+ex:earth a go:object ;
+    rdfs:label "earth"@en .
 
-ex:AtomInHeavens a go:object ;
+ex:atominheavens a go:object ;
     rdfs:label "atom in the heavens"@en ;
-    go:partOf ex:Heavens ;
-    rdf:type ex:Atom .
+    go:partof ex:heavens ;
+    rdf:type ex:atom .
 
-ex:AtomInEarth a go:object ;
+ex:atominearth a go:object ;
     rdfs:label "atom in the earth"@en ;
-    go:partOf ex:Earth ;
-    rdf:type ex:Atom .
+    go:partof ex:earth ;
+    rdf:type ex:atom .
 
-ex:OmnipresenceEvent a go:Event ;
-    rdfs:label "God's Omnipresence"@en ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:AtomInHeavens, ex:AtomInEarth .
+ex:omnipresenceevent a go:event ;
+    rdfs:label "god's omnipresence"@en ;
+    go:hasagent ex:god ;
+    go:hastheme ex:atominheavens, ex:atominearth .
 
-# Since text says nothing escapes God, we infer the event encompasses all atoms in specified locations.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/332-5> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    go:hasProperty ex:God_Encompassing , ex:God_Knowledge ;
-    go:hasEssence ex:God_Essence .
-
-ex:God_Encompassing a go:Property ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Everything ;
-    go:doesNotApplyTo ex:God_Essence .
-
-ex:God_Knowledge a go:Property ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Everything ;
-    go:doesNotApplyTo ex:God_Essence .
-
-ex:Everything a go:UniversalEntity .
-
-ex:God_Essence a go:Essence .
+# since text says nothing escapes god, we infer the event encompasses all atoms in specified locations.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/332-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/332-5> rdf:type owl:ontology .
 
-ex:Places a go:SpatialEntity ;
-    go:hasState ex:LimitedState ;
-    go:isContainedBy ex:Boundaries .
+ex:god a go:deity ;
+    go:hasproperty ex:god_encompassing , ex:god_knowledge ;
+    go:hasessence ex:god_essence .
 
-ex:LimitedState a go:State ;
-    go:describes ex:Places .
+ex:god_encompassing a go:property ;
+    go:hasagent ex:god ;
+    go:hastheme ex:everything ;
+    go:doesnotapplyto ex:god_essence .
 
-ex:Boundaries a go:Boundary ;
+ex:god_knowledge a go:property ;
+    go:hasagent ex:god ;
+    go:hastheme ex:everything ;
+    go:doesnotapplyto ex:god_essence .
+
+ex:everything a go:universalentity .
+
+ex:god_essence a go:essence .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/332-6> rdf:type owl:ontology .
+
+ex:places a go:spatialentity ;
+    go:hasstate ex:limitedstate ;
+    go:iscontainedby ex:boundaries .
+
+ex:limitedstate a go:state ;
+    go:describes ex:places .
+
+ex:boundaries a go:boundary ;
     go:quantity "4"^^xsd:integer ;
-    go:quantityApproximation "about" .
+    go:quantityapproximation "about" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/332-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/332-7> rdf:type owl:ontology .
 
-ex:selfEnclosedEntity a go:Substance .
-ex:boundary a go:Boundary ;
-    rdfs:subClassOf go:Substance .
+ex:selfenclosedentity a go:substance .
+ex:boundary a go:boundary ;
+    rdfs:subclassof go:substance .
 
-ex:requirementEvent a ex:RequirementEvent ;
-    go:HasAgent ex:selfEnclosedEntity ;
-    go:HasTheme ex:boundary .
-go:Substance rdfs:label "شی"@fa.
+ex:requirementevent a ex:requirementevent ;
+    go:hasagent ex:selfenclosedentity ;
+    go:hastheme ex:boundary .
+go:substance rdfs:label "شی"@fa.

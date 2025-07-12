@@ -1,376 +1,379 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/290#> .
+@prefix ex: <http://etratnet.ir/graph/example/290#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/290> rdf:type go:ontology ;
+        go:hascontent "6.  از يونس بن ظَبيان شنيدم كه مى‌گويد: حضور امام صادق عليه‌السلام رسيدم و عرض كردم: هشام بن حكم حرف‌هاى عجيبى مى‌زند كه مختصرا خدمتتان عرض مى‌كنم: او مى‌گويد خدا جسم است؛ به اين دليل كه اشيا بر دو گونه‌اند: جسم و كُنش جسم؛ و روا نيست كه صانع به معناى كنش باشد اما رواست كه به معناى كننده باشد [پس، خدا جسم است]. امام صادق عليه‌السلام فرمود: «بيچاره او! مگر نمى‌داند كه جسم محدود و كران‌مند است، و شكل نيز محدود و كران‌مند مى‌باشد؟ پس، هرگاه حد پذيرد، افزايش و كاهش پذيرد، و هرگاه افزايش و كاهش پذيرد، آفريده است». عرض كردم: پس، چه بگويم؟ فرمود: «نه جسم است و نه شكل و صورت دارد. او جسميت‌بخش جسم‌ها و صورتگر صورت‌هاست. نه تجزيه پذيرد، نه كرانه دارد، نه افزايش يابد و نه كاستى گيرد. اگر او چنان بود كه آنها مى‌گويند، ميان آفريننده و آفريده و ميان پديد آورنده و پديدآمده فرقى نبود. امّا او پديده آورنده است. ميان [خود و] كسى كه به او جسميت و صورت بخشيده و پديدش آورده است فرق گذاشته است. نه چيزى به او مى‌ماند و نه او به چيزى شباهت دارد»."@fa,
+        "6.  سَمِعْتُ يُونُسَ بْنَ ظَبْيَانَ يَقُولُ: دَخَلْتُ عَلى أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، فَقُلْتُ لَهُ: إِنَّ هِشَامَ بْنَ الْحَكَمِ يَقُولُ قَوْلاً عَظِيماً إِلاَّ أَنِّي أَخْتَصِرُ لَكَ مِنْهُ أَحْرُفاً، فَزَعَمَ أَنَّ اللّه‌َ جِسْمٌ؛ لِأَنَّ الْأَشْيَاءَ شَيْئَانِ: جِسْمٌ، وَفِعْلُ الْجِسْمِ، فَلاَ يَجُوزُ أَنْ يَكُونَ الصَّانِعُ بِمَعْنَى الْفِعْلِ، وَيَجُوزُ أَنْ يَكُونَ بِمَعْنَى الْفَاعِلِ. فَقَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «وَيْحَهُ، أَمَا عَلِمَ أَنَّ الْجِسْمَ مَحْدُودٌ مُتَنَاهٍ، وَالصُّورَةَ مَحْدُودَةٌ مُتَنَاهِيَةٌ؟ فَإِذَا احْتَمَلَ الْحَدَّ، احْتَمَلَ الزِّيَادَةَ وَالنُّقْصَانَ، وَإِذَا احْتَمَلَ الزِّيَادَةَ وَالنُّقْصَانَ، كَانَ مَخْلُوقاً». قَالَ: قُلْتُ: فَمَا أَقُولُ؟ قَالَ: «لاَ جِسْمٌ وَلاَ صُورَةٌ، وَهُوَ مُجَسِّمُ الْأَجْسَامِ، وَمُصَوِّرُ الصُّوَرِ، لَمْ يَتَجَزَّأْ، وَلَمْ يَتَنَاهَ،وَلَمْ يَتَزَايَدْ، وَلَمْ يَتَنَاقَصْ، لَوْ كَانَ كَمَا يَقُولُونَ، لَمْ يَكُنْ بَيْنَ الْخَالِقِ وَالْمَخْلُوقِ فَرْقٌ، وَلاَ بَيْنَ الْمُنْشِئِ وَالْمُنْشَأَ لكِنْ هُوَ الْمُنْشِئُ، فَرَّقَ بَيْنَ مَنْ جَسَّمَهُ وَصَوَّرَهُ وَأَنْشَأَهُ؛ إِذْ كَانَ لاَ يُشْبِهُهُ شَيْءٌ، وَلاَ يُشْبِهُ هُوَ شَيْئاً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-1> rdf:type owl:ontology .
 
-ex:Hisham_ibn_al_Hakam a go:Substance .
-ex:God a go:Substance .
-ex:Body a go:Substance .
+ex:hisham_ibn_al_hakam a go:substance .
+ex:god a go:substance .
+ex:body a go:substance .
 
-ex:SayEvent1 a go:Event , ex:SayEvent ;
-    go:HasAgent ex:Hisham_ibn_al_Hakam ;
-    go:HasTheme ex:Proposition1 .
+ex:sayevent1 a go:event , ex:sayevent ;
+    go:hasagent ex:hisham_ibn_al_hakam ;
+    go:hastheme ex:proposition1 .
 
-ex:Proposition1 a go:Event ;
-    rdf:type rdf:Statement ;
-    go:HasSubject ex:God ;
-    go:HasPredicate rdf:type ;
-    go:HasObject ex:Body .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:proposition1 a go:event ;
+    rdf:type rdf:statement ;
+    go:hassubject ex:god ;
+    go:haspredicate rdf:type ;
+    go:hasobject ex:body .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-2> rdf:type owl:ontology .
 
-ex:HishamIbnAlHakam a go:Person ;
-    rdfs:label "Hisham ibn al-Hakam" .
+ex:hishamibnalhakam a go:person ;
+    rdfs:label "hisham ibn al-hakam" .
 
-ex:CommunicationEvent1 a go:Communication ;
-    go:hasAgent ex:HishamIbnAlHakam ;
-    go:hasTheme ex:Statement1 .
+ex:communicationevent1 a go:communication ;
+    go:hasagent ex:hishamibnalhakam ;
+    go:hastheme ex:statement1 .
 
-ex:Statement1 a ex:Statement ;
-    ex:asserts ex:ThingCategories .
+ex:statement1 a ex:statement ;
+    ex:asserts ex:thingcategories .
 
-ex:ThingCategories a ex:Concept ;
-    ex:hasType ex:Body , ex:ActionOfBody .
+ex:thingcategories a ex:concept ;
+    ex:hastype ex:body , ex:actionofbody .
 
-ex:Body a ex:Concept ;
+ex:body a ex:concept ;
     rdfs:label "body"@en .
 
-ex:ActionOfBody a ex:Concept ;
+ex:actionofbody a ex:concept ;
     rdfs:label "action of the body"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-3> rdf:type owl:ontology .
 
-ex:Hisham_ben_al-Hakam a go:Person ;
-    rdfs:label "Hisham ibn al-Hakam" .
+ex:hisham_ben_al-hakam a go:person ;
+    rdfs:label "hisham ibn al-hakam" .
 
-ex:SpeechEvent1 a go:Speech ;
-    go:HasAgent ex:Hisham_ben_al-Hakam ;
-    go:HasTheme ex:Statement1 .
+ex:speechevent1 a go:speech ;
+    go:hasagent ex:hisham_ben_al-hakam ;
+    go:hastheme ex:statement1 .
 
-ex:Concept_الصانع a go:Concept ;
+ex:concept_الصانع a go:concept ;
     rdfs:label "الصانع (the maker)" .
 
-ex:Concept_الفعل a go:Concept ;
+ex:concept_الفعل a go:concept ;
     rdfs:label "الفعل (the verb/action)" .
 
-ex:Statement1 a go:Intangible ;
-    rdf:value "It is not permissible for 'الصانع' to mean 'الفعل'" .
+ex:statement1 a go:intangible ;
+    rdf:value "it is not permissible for 'الصانع' to mean 'الفعل'" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-4> rdf:type owl:ontology .
 
-ex:Hisham_ibn_al-Hakam rdf:type go:Person ;
-    rdfs:label "Hisham ibn al-Hakam" .
+ex:hisham_ibn_al-hakam rdf:type go:person ;
+    rdfs:label "hisham ibn al-hakam" .
 
-ex:saying1 rdf:type go:CommunicationEvent ;
-    go:HasAgent ex:Hisham_ibn_al-Hakam ;
-    go:HasTheme ex:proposition1 .
+ex:saying1 rdf:type go:communicationevent ;
+    go:hasagent ex:hisham_ibn_al-hakam ;
+    go:hastheme ex:proposition1 .
 
-ex:proposition1 rdf:type go:Proposition ;
-    go:asserts "It is permissible that 'al-sani'' means 'al-fa'il'" .
+ex:proposition1 rdf:type go:proposition ;
+    go:asserts "it is permissible that 'al-sani'' means 'al-fa'il'" .
 
-ex:al-sani rdf:type go:LinguisticTerm ;
+ex:al-sani rdf:type go:linguisticterm ;
     go:label "al-sani'" .
 
-ex:al-fa_il rdf:type go:LinguisticTerm ;
+ex:al-fa_il rdf:type go:linguisticterm ;
     go:label "al-fa'il" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-5> rdf:type owl:ontology .
 
-ex:Body rdf:type go:Object .
-ex:FiniteLimited rdf:type go:Quality .
+ex:body rdf:type go:object .
+ex:finitelimited rdf:type go:quality .
 
-ex:Body go:hasQuality ex:FiniteLimited .
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/290-6> rdf:type owl:Ontology .
-
-ex:picture1 a go:Object ;
-  ex:hasProperty ex:Finite ;
-  ex:hasProperty ex:Limited .
-
-ex:Finite a go:Quality .
-ex:Limited a go:Quality .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:body go:hasquality ex:finitelimited .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-6> rdf:type owl:ontology .
 
-ex:assumptionLimit a go:Event ;
-    go:hasTheme ex:limit .
+ex:picture1 a go:object ;
+  ex:hasproperty ex:finite ;
+  ex:hasproperty ex:limited .
 
-ex:assumptionIncrease a go:Event ;
-    go:hasTheme ex:increase ;
-    go:precededBy ex:assumptionLimit .
-
-ex:assumptionDecrease a go:Event ;
-    go:hasTheme ex:decrease ;
-    go:precededBy ex:assumptionLimit .
-
-ex:limit a go:Phenomenon .
-ex:increase a go:Phenomenon .
-ex:decrease a go:Phenomenon .
-
-ex:assumptionLimit ex:conditionFor ex:assumptionIncrease, ex:assumptionDecrease .
-go:Event rdfs:label "رخداد"@fa.
+ex:finite a go:quality .
+ex:limited a go:quality .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-7> rdf:type owl:ontology .
 
-ex:Increase a go:Process ;
-    rdfs:label "Increase"@en .
+ex:assumptionlimit a go:event ;
+    go:hastheme ex:limit .
 
-ex:Decrease a go:Process ;
-    rdfs:label "Decrease"@en .
+ex:assumptionincrease a go:event ;
+    go:hastheme ex:increase ;
+    go:precededby ex:assumptionlimit .
 
-ex:Body a go:MaterialEntity ;
-    rdfs:label "Body"@en .
+ex:assumptiondecrease a go:event ;
+    go:hastheme ex:decrease ;
+    go:precededby ex:assumptionlimit .
 
-ex:CreationEvent a go:Event ;
-    rdfs:label "Creation Event"@en ;
-    go:HasTheme ex:Body .
+ex:limit a go:phenomenon .
+ex:increase a go:phenomenon .
+ex:decrease a go:phenomenon .
 
-ex:ConditionEvent a go:ConditionalEvent ;
-    rdfs:label "Condition of Increase and Decrease Leading to Creation"@en ;
-    go:HasAgent ex:Increase, ex:Decrease ;
-    go:HasEffect ex:CreationEvent .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/290-9> rdf:type owl:Ontology .
-
-ex:God a go:Substance .
-ex:Body a go:concept .
-ex:Image a go:concept .
-
-ex:God ex:lacksProperty ex:Body .
-ex:God ex:lacksProperty ex:Image .
-go:Substance rdfs:label "شی"@fa.
+ex:assumptionlimit ex:conditionfor ex:assumptionincrease, ex:assumptiondecrease .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-8> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-  go:hasAttribute ex:EmbodimentOfBodies .
+ex:increase a go:process ;
+    rdfs:label "increase"@en .
 
-ex:EmbodimentOfBodies a go:Attribute ;
-  go:hasTheme ex:Bodies .
+ex:decrease a go:process ;
+    rdfs:label "decrease"@en .
 
-ex:Bodies a go:PhysicalObject .
+ex:body a go:materialentity ;
+    rdfs:label "body"@en .
 
+ex:creationevent a go:event ;
+    rdfs:label "creation event"@en ;
+    go:hastheme ex:body .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/290-11> rdf:type owl:Ontology .
-
-god:God a go:DivineEntity ;
-    god:hasRole formGiver:FormGiver .
-
-formGiver:FormGiver a go:Role ;
-    go:hasTheme god:Images .
-
-god:Images a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:conditionevent a go:conditionalevent ;
+    rdfs:label "condition of increase and decrease leading to creation"@en ;
+    go:hasagent ex:increase, ex:decrease ;
+    go:haseffect ex:creationevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-9> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:hasQuality ex:Indivisibility .
+ex:god a go:substance .
+ex:body a go:concept .
+ex:image a go:concept .
 
-ex:Indivisibility a go:Quality ;
-    rdfs:label "Indivisibility" .
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/290-13> rdf:type owl:Ontology .
-
-ex:DesistingEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    ex:didNotOccur true .
-
-ex:God a go:DivineBeing .
-go:Event rdfs:label "رخداد"@fa.
+ex:god ex:lacksproperty ex:body .
+ex:god ex:lacksproperty ex:image .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-10> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+  go:hasattribute ex:embodimentofbodies .
 
-ex:IncreaseEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:isNegated "true"^^xsd:boolean .
-go:Event rdfs:label "رخداد"@fa.
+ex:embodimentofbodies a go:attribute ;
+  go:hastheme ex:bodies .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/290-15> rdf:type owl:Ontology .
-
-ex:Allah a go:Deity, go:Thing .
-
-ex:DiminishEvent a go:Event ;
-    go:HasAgent ex:Allah .
-
-# Since Allah did not diminish, we state that the DiminishEvent with Allah as agent does not occur.
-# In OWL or RDF, negative statements are complex; here we note that no such event is present.
-# Alternatively, we can annotate the event as a negative assertion:
-
-ex:DiminishEvent go:hasTruthValue false .
-go:Event rdfs:label "رخداد"@fa.
+ex:bodies a go:physicalobject .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-11> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+god:god a go:divineentity ;
+    god:hasrole formgiver:formgiver .
 
-ex:Creator a go:Substance ;
-    rdfs:label "Creator" .
+formgiver:formgiver a go:role ;
+    go:hastheme god:images .
 
-ex:Created a go:Substance ;
-    rdfs:label "Created" .
-
-ex:HypotheticalCondition a go:Event ;
-    rdfs:label "Hypothetical Condition: God as they say" ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:DifferenceBetweenCreatorAndCreated .
-
-ex:DifferenceBetweenCreatorAndCreated a go:Difference ;
-    rdfs:label "Difference between Creator and Created" ;
-    go:Involves ex:Creator , ex:Created .
-
-ex:NoDifference a go:Negation ;
-    rdfs:label "No difference if God were as they say" ;
-    go:Negates ex:DifferenceBetweenCreatorAndCreated ;
-    go:Context ex:HypotheticalCondition .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+god:images a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-12> rdf:type owl:ontology .
 
-ex:ConditionalEvent1 a go:Event ;
-    ex:hasCondition ex:GodAsTheySay ;
-    ex:hasOutcome ex:NoDifferenceCreatorCreated .
+ex:god a go:deity ;
+    go:hasquality ex:indivisibility .
 
-ex:GodAsTheySay a go:Statement ;
-    go:HasTheme ex:God ;
-    go:HasAgent ex:They .
-
-ex:God a go:Deity .
-ex:They a go:Agent .
-
-ex:NoDifferenceCreatorCreated a ex:ConceptualRelation ;
-    ex:indistinguishableBetween ( ex:Creator ex:Created ) .
-
-ex:Creator a go:Concept .
-ex:Created a go:Concept .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:indivisibility a go:quality ;
+    rdfs:label "indivisibility" .
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-13> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:desistingevent1 a go:event ;
+    go:hasagent ex:god ;
+    ex:didnotoccur true .
 
-ex:CreationEvent a go:Creation, go:Event ;
-    go:hasAgent ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:god a go:divinebeing .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-14> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:EmbodierDepicter a go:Substance .
-ex:Creator a go:Substance .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:DifferentiationByGod a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme [
-        a go:Thing ;
-        go:HasPart ex:EmbodierDepicter ;
-        go:HasPart ex:Creator
+ex:increaseevent a go:event ;
+    go:hasagent ex:god ;
+    go:isnegated "true"^^xsd:boolean .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/290-15> rdf:type owl:ontology .
+
+ex:allah a go:deity, go:thing .
+
+ex:diminishevent a go:event ;
+    go:hasagent ex:allah .
+
+# since allah did not diminish, we state that the diminishevent with allah as agent does not occur.
+# in owl or rdf, negative statements are complex; here we note that no such event is present.
+# alternatively, we can annotate the event as a negative assertion:
+
+ex:diminishevent go:hastruthvalue false .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/290-16> rdf:type owl:ontology .
+
+ex:god a go:deity ;
+    rdfs:label "god" .
+
+ex:creator a go:substance ;
+    rdfs:label "creator" .
+
+ex:created a go:substance ;
+    rdfs:label "created" .
+
+ex:hypotheticalcondition a go:event ;
+    rdfs:label "hypothetical condition: god as they say" ;
+    go:hasagent ex:god ;
+    go:hastheme ex:differencebetweencreatorandcreated .
+
+ex:differencebetweencreatorandcreated a go:difference ;
+    rdfs:label "difference between creator and created" ;
+    go:involves ex:creator , ex:created .
+
+ex:nodifference a go:negation ;
+    rdfs:label "no difference if god were as they say" ;
+    go:negates ex:differencebetweencreatorandcreated ;
+    go:context ex:hypotheticalcondition .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/290-17> rdf:type owl:ontology .
+
+ex:conditionalevent1 a go:event ;
+    ex:hascondition ex:godastheysay ;
+    ex:hasoutcome ex:nodifferencecreatorcreated .
+
+ex:godastheysay a go:statement ;
+    go:hastheme ex:god ;
+    go:hasagent ex:they .
+
+ex:god a go:deity .
+ex:they a go:agent .
+
+ex:nodifferencecreatorcreated a ex:conceptualrelation ;
+    ex:indistinguishablebetween ( ex:creator ex:created ) .
+
+ex:creator a go:concept .
+ex:created a go:concept .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/290-18> rdf:type owl:ontology .
+
+ex:god a go:agent ;
+    rdfs:label "god" .
+
+ex:creationevent a go:creation, go:event ;
+    go:hasagent ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/290-19> rdf:type owl:ontology .
+
+ex:god a go:substance .
+ex:embodierdepicter a go:substance .
+ex:creator a go:substance .
+
+ex:differentiationbygod a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme [
+        a go:thing ;
+        go:haspart ex:embodierdepicter ;
+        go:haspart ex:creator
     ] .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-20> rdf:type owl:ontology .
 
-ex:event_resemblance a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Nothing ;
-    go:Polarity "Negative" .
+ex:event_resemblance a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:nothing ;
+    go:polarity "negative" .
 
-ex:God a go:Substance .
-ex:Nothing a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:substance .
+ex:nothing a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/290-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/290-21> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:doesNotResemble go:Anything .
+ex:god a go:substance ;
+    go:doesnotresemble go:anything .
 
-go:Anything a go:Class .
-go:Substance rdfs:label "شی"@fa.
+go:anything a go:class .
+go:substance rdfs:label "شی"@fa.

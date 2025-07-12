@@ -1,117 +1,120 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/237#> .
+@prefix ex: <http://etratnet.ir/graph/example/237#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/237> rdf:type go:ontology ;
+        go:hascontent "3. به امام باقر عليه‌السلام نوشتم، يا به ايشان عرض كردم: خدا مرا فداى شما كناد، ما مهرگسترِ مهربانِ يگانه يكتاى بى‌نياز را مى‌پرستيم؟ فرمود: «كسى كه نام را پرستيد، نه صاحب نام‌ها را، مشرك و كافر و منكِر شده و چيزى را نپرستيده است. تو خداى يكتاى يگانه بى‌نياز را كه به اين نام‌ها نامبردار است بپرست، نه اين نام‌ها را. نام‌ها صفاتى هستند كه خداوند خود را با آنها شناسانده است»."@fa,
+        "3. كَتَبْتُ إِلى أَبِي جَعْفَرٍ عليه‌السلام، أَوْ قُلْتُ لَهُ: جَعَلَنِي اللّه‌ُ فِدَاكَ، نَعْبُدُ الرَّحْمنَ الرَّحِيمَ الْوَاحِدَ الْأَحَدَ الصَّمَدَ؟ قَالَ: فَقَالَ: «إِنَّ مَنْ عَبَدَ الاِسْمَ دُونَ الْمُسَمّى بِالْأَسْمَاءِ، فَقَدْ أَشْرَكَ وَكَفَرَ وَجَحَدَ وَلَمْ يَعْبُدْ شَيْئاً، بَلِ اعْبُدِ اللّه‌َ الْوَاحِدَ الْأَحَدَ الصَّمَدَ ـ الْمُسَمّى بِهذِهِ الْأَسْمَاءِ ـ دُونَ الْأَسْمَاءِ؛ إِنَّ الْأَسْمَاءَ صِفَاتٌ وَصَفَ بِهَا نَفْسَهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/237-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/237-1> rdf:type owl:ontology .
 
-ex:speaker a go:Agent ;
-    rdfs:label "Speaker" .
+ex:speaker a go:agent ;
+    rdfs:label "speaker" .
 
-ex:jaafar a go:Agent ;
-    rdfs:label "Ja'far (peace be upon him)" .
+ex:jaafar a go:agent ;
+    rdfs:label "ja'far (peace be upon him)" .
 
-ex:allah a go:Substance ;
-    rdfs:label "Allah" ;
-    go:hasAttribute "Most Compassionate" , "Most Merciful" , "One" , "Only" , "Eternal Refuge" .
+ex:allah a go:substance ;
+    rdfs:label "allah" ;
+    go:hasattribute "most compassionate" , "most merciful" , "one" , "only" , "eternal refuge" .
 
-ex:writeEvent a go:Event ;
-    go:hasAgent ex:speaker ;
-    go:hasTheme ex:jaafar ;
-    go:hasContent "I wrote to my father Ja'far (peace be upon him)" .
+ex:writeevent a go:event ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:jaafar ;
+    go:hascontent "i wrote to my father ja'far (peace be upon him)" .
 
-ex:sayEvent a go:Event ;
-    go:hasAgent ex:speaker ;
-    go:hasTheme ex:jaafar ;
-    go:hasContent "I said to him: May God make me your ransom, we worship the Most Compassionate, the Most Merciful, the One, the Only, the Eternal Refuge" .
+ex:sayevent a go:event ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:jaafar ;
+    go:hascontent "i said to him: may god make me your ransom, we worship the most compassionate, the most merciful, the one, the only, the eternal refuge" .
 
-ex:invocation a go:SpeechAct ;
-    go:expression "May God make me your ransom" ;
-    go:relatedTo ex:speaker, ex:jaafar, ex:allah .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:invocation a go:speechact ;
+    go:expression "may god make me your ransom" ;
+    go:relatedto ex:speaker, ex:jaafar, ex:allah .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/237-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/237-2> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-  go:HasAgent ex:Abu_Ja'far ;
-  go:utterance "Whoever worships the name instead of the named among the names has committed shirk, disbelieved, denied, and did not worship anything."^^xsd:string .
+ex:speechevent1 a go:speechevent ;
+  go:hasagent ex:abu_ja'far ;
+  go:utterance "whoever worships the name instead of the named among the names has committed shirk, disbelieved, denied, and did not worship anything."^^xsd:string .
 
-ex:Abu_Ja'far a go:Person ;
-  go:name "Abu Ja'far" .
+ex:abu_ja'far a go:person ;
+  go:name "abu ja'far" .
 
-ex:WorshipEvent1 a go:Worship ;
-  go:HasAgent ex:UnknownWorshipper ;
-  go:HasTheme ex:Name ;
-  go:wronglyDirectedTo ex:NamedEntity .
+ex:worshipevent1 a go:worship ;
+  go:hasagent ex:unknownworshipper ;
+  go:hastheme ex:name ;
+  go:wronglydirectedto ex:namedentity .
 
-ex:Name a go:Concept ;
+ex:name a go:concept ;
   go:denotes "name" .
 
-ex:NamedEntity a go:Substance ;
+ex:namedentity a go:substance ;
   go:denotes "named" .
 
-ex:Shirk a go:Event ;
-  go:HasCause ex:WorshipEvent1 .
+ex:shirk a go:event ;
+  go:hascause ex:worshipevent1 .
 
-ex:Disbelief a go:Event ;
-  go:HasCause ex:WorshipEvent1 .
+ex:disbelief a go:event ;
+  go:hascause ex:worshipevent1 .
 
-ex:Denial a go:Event ;
-  go:HasCause ex:WorshipEvent1 .
+ex:denial a go:event ;
+  go:hascause ex:worshipevent1 .
 
-ex:UnknownWorshipper a go:Person .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/237-3> rdf:type owl:Ontology .
-
-ex:Abu_Ja'far rdf:type go:Person ;
-  go:HasName "Abu Ja'far" .
-
-ex:SpeechEvent1 rdf:type go:Speech ;
-  go:HasAgent ex:Abu_Ja'far ;
-  go:HasTheme ex:Statement1 .
-
-ex:Statement1 rdf:type go:Directive ;
-  go:HasContent ex:WorshipEvent1 .
-
-ex:WorshipEvent1 rdf:type go:Worship ;
-  go:HasAgent ex:Believer ;
-  go:HasTheme ex:Allah .
-
-ex:Allah rdf:type go:Deity ;
-  go:HasName "Allah" ;
-  go:HasAttribute "The One" , "The Only" , "The Eternal Refuge" , "Named by these names instead of other names" .
+ex:unknownworshipper a go:person .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/237-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/237-3> rdf:type owl:ontology .
 
-ex:Names rdf:type go:Attribute .
-ex:God rdf:type go:Deity .
+ex:abu_ja'far rdf:type go:person ;
+  go:hasname "abu ja'far" .
 
-ex:DescribeEvent rdf:type go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Names ;
-    go:HasRecipient ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:speechevent1 rdf:type go:speech ;
+  go:hasagent ex:abu_ja'far ;
+  go:hastheme ex:statement1 .
+
+ex:statement1 rdf:type go:directive ;
+  go:hascontent ex:worshipevent1 .
+
+ex:worshipevent1 rdf:type go:worship ;
+  go:hasagent ex:believer ;
+  go:hastheme ex:allah .
+
+ex:allah rdf:type go:deity ;
+  go:hasname "allah" ;
+  go:hasattribute "the one" , "the only" , "the eternal refuge" , "named by these names instead of other names" .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/237-4> rdf:type owl:ontology .
+
+ex:names rdf:type go:attribute .
+ex:god rdf:type go:deity .
+
+ex:describeevent rdf:type go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:names ;
+    go:hasrecipient ex:god .
+go:event rdfs:label "رخداد"@fa.

@@ -1,124 +1,127 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/336#> .
+@prefix ex: <http://etratnet.ir/graph/example/336#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/336> rdf:type go:ontology ;
+        go:hascontent "9.  امام صادق عليه‌السلام فرمود: «هر كس معتقد باشد كه خدا از چيزى يا در چيزى يا بر چيزى است كافر است». عرض كردم: برايم توضيح دهيد. فرمود: «مقصودم اين است كه [تصور شود]چيزى او را در ميان گرفته يا او را نگه داشته، و يا از چيزى پيش از خود پديد آمده است»."@fa,
+        "9.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «مَنْ زَعَمَ أَنَّ اللّه‌َ مِنْ شَيْءٍ، أَوْ فِي شَيْءٍ، أَوْ عَلى شَيْءٍ، فَقَدْ كَفَرَ». قُلْتُ: فَسِّرْ لِي، قَالَ: «أَعْنِي بِالْحَوَايَةِ مِنَ الشَّيْءِ لَهُ، أَوْ بِإِمْسَاكٍ لَهُ، أَوْ مِنْ شَيْءٍ سَبَقَهُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/336-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/336-1> rdf:type owl:ontology .
 
-ex:event1 a go:Claiming ;
-    go:HasAgent ex:agent1 ;
-    go:HasTheme ex:proposition1 .
+ex:event1 a go:claiming ;
+    go:hasagent ex:agent1 ;
+    go:hastheme ex:proposition1 .
 
-ex:proposition1 a go:Proposition ;
-    go:States ex:statement1 .
+ex:proposition1 a go:proposition ;
+    go:states ex:statement1 .
 
-ex:statement1 a go:Statement ;
-    go:HasSubject go:Deity_God ;
-    go:HasPredicate go:Is ;
-    go:HasObject go:Substance_Something .
+ex:statement1 a go:statement ;
+    go:hassubject go:deity_god ;
+    go:haspredicate go:is ;
+    go:hasobject go:substance_something .
 
-ex:event2 a go:Disbelief ;
-    go:HasAgent ex:agent1 .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/336-2> rdf:type owl:Ontology .
-
-ex:Person1 a go:Human .
-ex:God a go:Deity .
-
-ex:ClaimEvent1 a go:ClaimEvent ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:Proposition1 .
-
-ex:Proposition1 a go:Proposition ;
-    go:About ex:God ;
-    go:Content "God is in something" .
-
-ex:DisbeliefEvent1 a go:DisbeliefEvent ;
-    go:HasAgent ex:Person1 .
+ex:event2 a go:disbelief ;
+    go:hasagent ex:agent1 .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/336-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/336-2> rdf:type owl:ontology .
 
-ex:Entity_God a go:Deity ;
-    rdfs:label "God" .
+ex:person1 a go:human .
+ex:god a go:deity .
 
-ex:Entity_Something a go:Substance ;
+ex:claimevent1 a go:claimevent ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:proposition1 .
+
+ex:proposition1 a go:proposition ;
+    go:about ex:god ;
+    go:content "god is in something" .
+
+ex:disbeliefevent1 a go:disbeliefevent ;
+    go:hasagent ex:person1 .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/336-3> rdf:type owl:ontology .
+
+ex:entity_god a go:deity ;
+    rdfs:label "god" .
+
+ex:entity_something a go:substance ;
     rdfs:label "something" .
 
-ex:Agent_Whoever a go:Agent ;
-    go:isGeneralAgent true .
+ex:agent_whoever a go:agent ;
+    go:isgeneralagent true .
 
-ex:Event_Claiming a go:Claiming ;
-    go:HasAgent ex:Agent_Whoever ;
-    go:HasTheme ex:Statement_God_On_Something .
+ex:event_claiming a go:claiming ;
+    go:hasagent ex:agent_whoever ;
+    go:hastheme ex:statement_god_on_something .
 
-ex:Statement_God_On_Something a go:Statement ;
-    go:hasSubject ex:Entity_God ;
-    go:hasRelation go:On ;
-    go:hasObject ex:Entity_Something .
+ex:statement_god_on_something a go:statement ;
+    go:hassubject ex:entity_god ;
+    go:hasrelation go:on ;
+    go:hasobject ex:entity_something .
 
-ex:Event_Disbelief a go:Disbelieving ;
-    go:HasAgent ex:Agent_Whoever ;
-    go:HasCause ex:Event_Claiming .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/336-4> rdf:type owl:Ontology .
-
-ex:God a go:Substance .
-ex:Something a go:Substance .
-ex:PropertyFromSomething a go:Substance ;
-    ex:isOriginatedFrom ex:Something .
-
-ex:God ex:HasProperty ex:PropertyFromSomething .
-go:Substance rdfs:label "شی"@fa.
+ex:event_disbelief a go:disbelieving ;
+    go:hasagent ex:agent_whoever ;
+    go:hascause ex:event_claiming .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/336-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/336-4> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:ThatThing a go:Substance .
-ex:HoldEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ThatThing .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:substance .
+ex:something a go:substance .
+ex:propertyfromsomething a go:substance ;
+    ex:isoriginatedfrom ex:something .
+
+ex:god ex:hasproperty ex:propertyfromsomething .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/336-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/336-5> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Something a go:Substance .
+ex:god a go:substance .
+ex:thatthing a go:substance .
+ex:holdevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:thatthing .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
-ex:SomethingPrecedesGod a go:Event ;
-    ex:Precedes ex:God .
 
-ex:GodComesFromSomething a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SomethingPrecedesGod .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/336-6> rdf:type owl:ontology .
+
+ex:god a go:substance .
+ex:something a go:substance .
+
+ex:somethingprecedesgod a go:event ;
+    ex:precedes ex:god .
+
+ex:godcomesfromsomething a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:somethingprecedesgod .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

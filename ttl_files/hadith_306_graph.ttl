@@ -1,163 +1,166 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/306#> .
+@prefix ex: <http://etratnet.ir/graph/example/306#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/306> rdf:type go:ontology ;
+        go:hascontent "6.  در داستان زنديقى كه از امام صادق عليه‌السلام پرسش‌هايى كرد يكى از پرسش‌هايش اين بود كه به امام گفت: آيا خداوند را نيز خشنودى و خشم است؟ حضرت صادق عليه‌السلام فرمود: «آرى، ليك نه از آن گونه كه در آفريدگان ديده مى‌شود. چون خشنودى [در آفريدگان] حالتى است كه به مخلوق دست مى‌دهد و او را از حالى به حالى ديگر مى‌برد. علتش هم آن است كه مخلوق، ميان‌تهى [ممكن الوجود و نيازمند] و مضطرب در كار و مركب است و اشيا در آن اثر مى‌گذارند، در حالى كه آفريدگار ما، اشيا در او تأثير نمى‌گذارند؛ زيرا كه او يگانه است: ذاتش يگانه (بسيط) و معنايش (صفتش) يگانه است. بنابراين، خشنودى او همان پاداش دادن اوست و خشمش كيفررسانى است، بدون آن كه چيزى در او تأثير بگذارد و او را بر انگيزاند و از حالى به حالى ديگرش بَرَد؛ چون اين [تأثيرپذيرى و دگرگونى حالات] از ويژگى آفريدگانِ ناتوانِ نيازمند است»."@fa,
+        "6.  فِي حَدِيثِ الزِّنْدِيقِ ـ الَّذِي سَأَلَ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام ـ فَكَانَ مِنْ سُؤالِهِ: أَنْ قَالَ لَهُ: فَلَهُ رِضا وَسَخَطٌ؟ فَقَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «نَعَمْ، وَلكِنْ لَيْسَ ذلِكَ عَلى مَا يُوجَدُ مِنَ الْمَخْلُوقِينَ؛ وَذلِكَ أَنَّ الرِّضَا حَالٌ تَدْخُلُ عَلَيْهِ، فَتَنْقُلُهُ مِنْ حَالٍ إِلى حَالٍ؛ لِأَنَّ الْمَخْلُوقَ أَجْوَفُ، مُعْتَمِلٌ، مُرَكَّبٌ، لِلْأَشْيَاءِ فِيهِ مَدْخَلٌ، وَخَالِقُنَا لاَ مَدْخَلَ لِلْأَشْيَاءِ فِيهِ؛ لِأَنَّهُ وَاحِدٌ: وَاحِدِيُّ الذَّاتِ، وَاحِدِيُّ الْمَعْنى؛ فَرِضَاهُ ثَوَابُهُ، وَسَخَطُهُ عِقَابُهُ، مِنْ غَيْرِ شَيْءٍ يَتَدَاخَلُهُ؛ فَيُهَيِّجُهُ وَيَنْقُلُهُ مِنْ حَالٍ إِلى حَالٍ؛ لِأَنَّ ذلِكَ مِنْ صِفَةِ الْمَخْلُوقِينَ الْعَاجِزِينَ الْمُحْتَاجِينَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/306-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/306-1> rdf:type owl:ontology .
 
-ex:Satisfaction a go:EmotionalState ;
-  go:HasExistence ex:ExistenceEvent1 .
+ex:satisfaction a go:emotionalstate ;
+  go:hasexistence ex:existenceevent1 .
 
-ex:Dissatisfaction a go:EmotionalState ;
-  go:HasExistence ex:ExistenceEvent1 .
+ex:dissatisfaction a go:emotionalstate ;
+  go:hasexistence ex:existenceevent1 .
 
-ex:ExistenceEvent1 a go:Existence .
+ex:existenceevent1 a go:existence .
 
-ex:Creatures a go:Organism .
+ex:creatures a go:organism .
 
-# The emotions exist
-ex:ExistenceEvent1 go:HasTheme ex:Satisfaction, ex:Dissatisfaction .
+# the emotions exist
+ex:existenceevent1 go:hastheme ex:satisfaction, ex:dissatisfaction .
 
-# But the emotions are not directed at creatures (negated thematic role)
-ex:Satisfaction go:NotDirectedAt ex:Creatures .
-ex:Dissatisfaction go:NotDirectedAt ex:Creatures .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/306-2> rdf:type owl:Ontology .
-
-ex:Satisfaction a go:State ;
-    rdfs:label "Satisfaction" .
-
-ex:Creature a go:Creature ;
-    rdfs:label "Creature" .
-
-ex:TransitionEvent a go:Event ;
-    go:HasAgent ex:Satisfaction ;
-    go:HasTheme ex:Creature ;
-    go:HasCause ex:Satisfaction ;
-    go:HasStartState [ a go:State ; rdfs:label "Initial State" ] ;
-    go:HasEndState [ a go:State ; rdfs:label "Resulting State" ] .
-go:Event rdfs:label "رخداد"@fa.
+# but the emotions are not directed at creatures (negated thematic role)
+ex:satisfaction go:notdirectedat ex:creatures .
+ex:dissatisfaction go:notdirectedat ex:creatures .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/306-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/306-2> rdf:type owl:ontology .
 
-ex:Creature a go:Substance ;
-    ex:isHollow true ;
-    ex:isDefective true ;
-    ex:isComposite true ;
-    ex:hasEntrance ex:Entrance .
+ex:satisfaction a go:state ;
+    rdfs:label "satisfaction" .
 
-ex:Entrance a ex:Entrance ;
-    ex:allowsEntryOf ex:Object .
+ex:creature a go:creature ;
+    rdfs:label "creature" .
 
-ex:Object a go:object .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/306-4> rdf:type owl:Ontology .
-
-ex:Creator a go:Substance ;
-    go:hasUnity "one"^^xsd:string ;
-    ex:hasSingularityOfEssence true ;
-    ex:hasSingularityOfMeaning true .
-
-ex:Things a go:Substance .
-
-# Statement: Things do not have entry into Creator
-ex:Creator ex:hasNoEntryFor ex:Things .
-go:Substance rdfs:label "شی"@fa.
+ex:transitionevent a go:event ;
+    go:hasagent ex:satisfaction ;
+    go:hastheme ex:creature ;
+    go:hascause ex:satisfaction ;
+    go:hasstartstate [ a go:state ; rdfs:label "initial state" ] ;
+    go:hasendstate [ a go:state ; rdfs:label "resulting state" ] .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/306-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/306-3> rdf:type owl:ontology .
 
-:God a go:Agent ;
-    ex:hasPleasure :GodPleasure ;
-    ex:hasAnger :GodAnger .
+ex:creature a go:substance ;
+    ex:ishollow true ;
+    ex:isdefective true ;
+    ex:iscomposite true ;
+    ex:hasentrance ex:entrance .
 
-:GodPleasure a go:EmotionalState ;
-    ex:resultsIn :Reward .
+ex:entrance a ex:entrance ;
+    ex:allowsentryof ex:object .
 
-:GodAnger a go:EmotionalState ;
-    ex:resultsIn :Punishment .
-
-:Reward a go:Substance .
-:Punishment a go:Substance .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:object a go:object .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/306-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/306-4> rdf:type owl:ontology .
 
-ex:Pleasure a go:EmotionalState ;
-    rdfs:label "Pleasure"@en .
+ex:creator a go:substance ;
+    go:hasunity "one"^^xsd:string ;
+    ex:hassingularityofessence true ;
+    ex:hassingularityofmeaning true .
 
-ex:Displeasure a go:EmotionalState ;
-    rdfs:label "Displeasure"@en .
+ex:things a go:substance .
 
-ex:Creator a go:Agent ;
-    rdfs:label "Creator"@en .
-
-ex:PleasureOccurrence a go:Event ;
-    go:HasTheme ex:Pleasure ;
-    go:HasAgent ex:Creator ;
-    go:OccursWithoutIntervention _:noEntity .
-
-ex:DispleasureOccurrence a go:Event ;
-    go:HasTheme ex:Displeasure ;
-    go:HasAgent ex:Creator ;
-    go:OccursWithoutIntervention _:noEntity .
-
-_:noEntity a go:Nothing .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# statement: things do not have entry into creator
+ex:creator ex:hasnoentryfor ex:things .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/306-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/306-5> rdf:type owl:ontology .
 
-ex:ExcitingAndMoving a go:Property ;
-    rdfs:label "Exciting and Moving from one state to another" .
+:god a go:agent ;
+    ex:haspleasure :godpleasure ;
+    ex:hasanger :godanger .
 
-ex:Creator a go:Substance ;
-    rdfs:label "Creator" .
+:godpleasure a go:emotionalstate ;
+    ex:resultsin :reward .
 
-ex:Creature a go:Substance ;
-    rdfs:label "Creatures" ;
-    ex:hasAttribute ex:Incapacitated ;
-    ex:hasAttribute ex:Needy .
+:godanger a go:emotionalstate ;
+    ex:resultsin :punishment .
 
-ex:Incapacitated a go:Attribute ;
-    rdfs:label "Incapacitated" .
+:reward a go:substance .
+:punishment a go:substance .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
-ex:Needy a go:Attribute ;
-    rdfs:label "Needy" .
 
-# Negation of attribute for Creator
-ex:Creator ex:doesNotHaveAttribute ex:ExcitingAndMoving .
+@base <http://etratnet.ir/ontology/> .
 
-# Creatures have the attribute
-ex:Creature ex:hasAttribute ex:ExcitingAndMoving .
-go:Substance rdfs:label "شی"@fa.
+<http://etratnet.ir/ontology/306-6> rdf:type owl:ontology .
+
+ex:pleasure a go:emotionalstate ;
+    rdfs:label "pleasure"@en .
+
+ex:displeasure a go:emotionalstate ;
+    rdfs:label "displeasure"@en .
+
+ex:creator a go:agent ;
+    rdfs:label "creator"@en .
+
+ex:pleasureoccurrence a go:event ;
+    go:hastheme ex:pleasure ;
+    go:hasagent ex:creator ;
+    go:occurswithoutintervention _:noentity .
+
+ex:displeasureoccurrence a go:event ;
+    go:hastheme ex:displeasure ;
+    go:hasagent ex:creator ;
+    go:occurswithoutintervention _:noentity .
+
+_:noentity a go:nothing .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/306-7> rdf:type owl:ontology .
+
+ex:excitingandmoving a go:property ;
+    rdfs:label "exciting and moving from one state to another" .
+
+ex:creator a go:substance ;
+    rdfs:label "creator" .
+
+ex:creature a go:substance ;
+    rdfs:label "creatures" ;
+    ex:hasattribute ex:incapacitated ;
+    ex:hasattribute ex:needy .
+
+ex:incapacitated a go:attribute ;
+    rdfs:label "incapacitated" .
+
+ex:needy a go:attribute ;
+    rdfs:label "needy" .
+
+# negation of attribute for creator
+ex:creator ex:doesnothaveattribute ex:excitingandmoving .
+
+# creatures have the attribute
+ex:creature ex:hasattribute ex:excitingandmoving .
+go:substance rdfs:label "شی"@fa.

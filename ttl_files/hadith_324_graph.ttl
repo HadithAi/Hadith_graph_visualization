@@ -1,1136 +1,1139 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/324#> .
+@prefix ex: <http://etratnet.ir/graph/example/324#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/324> rdf:type go:ontology ;
+        go:hascontent "1.  از ابو الحسن عليه‌السلام شنيدم كه مى‌فرمايد: «او لطيف [عالم به دقايق موجودات]و آگاه و شنوا و بينا و يگانه و يكتا و بى‌نياز است «نزاييده و زاييده نشده و هيچ كس همتاى او نيست». اگر او چنان باشد كه تشبيه‌كنندگان مى‌گويند، آفريننده از آفريده، و پديد آورنده از پديد آورده باز شناخته نمى‌شود، امّا او پديد آورنده است. فرق نهاده است ميان كسى كه به او جسميّت و صورت بخشيده و ايجادش كرده است؛ زيرا، نه چيزى مانند اوست و نه او مانند چيزى است». عرض كردم: همين طور است، خدا مرا فداى شما كند. ليكن شما فرموديد: يگانه و بى‌نياز است و فرموديد: هيچ چيزى به او مانند نيست، در صورتى كه ما مى‌گوييم خداى واحد و انسان واحد. آيا نه اين است كه در واحد بودن شباهت [و اشتراك] پيش مى‌آيد؟ حضرت فرمود: «اى فتح، خطا كردى. خدايت استوار بدارد. [منظور ما] همانندى در معانى است، امّا در نام‌ها، آنها يكى هستند و همه آنها به صاحب نام دلالت دارند. توضيح آن كه اگرچه گفته مى‌شود: انسان واحد، ولى مقصود اين است كه او يك تن است و نه دو تن. اما پيكر انسان واحد نيست؛ زيرا اندام‌ها و رنگ‌هايش گونه‌گون [و متعدد]است، و كسى كه رنگ‌هاى گوناگون داشته باشد واحد نيست. داراى اجزاى جداشدنى و نايكسان است: خون او غير از گوشت اوست، و گوشتش غير از خونش، و عصبش غير از رگ‌هايش، و مويش غير از پوستش و سياهى‌اش غير از سفيدى‌اش. همچنين است ديگر آفريدگان. پس، انسان در نام واحد است ولى در معنا واحد نيست. در حالى كه خداوند، جلّ جلاله، واحد [و بسيط] است و واحدى جز او وجود ندارد. گوناگونى و تفاوت و فزونى و كاستى در او نيست. اما انسان، موجودى آفريده شده و ساخته و فراهم آمده از اجزاى گوناگون و مواد متعدّد است، منتها با به هم پيوستن اينها يك چيز حاصل مى‌شود [به نام انسان]». عرض كردم: فدايت گردم، آسوده‌ام نمودى، خدايت آسوده كناد. حال، لطيف و آگاه بودن را برايم شرح دهيد، چنان كه يكتا بودن را شرح داديد. البته من مى‌دانم كه لطيف بودن او غير از لطيف بودن مخلوق اوست به سبب جدايى [و فرق آفريننده و آفريدگان]. اما دوست دارم آن را برايم باز كنيد. فرمود: «اى فتح، او را لطيف مى‌ناميم چون موجودات لطيف [ريز] آفريده و به موجودات ريز داناست. خدايت توفيق دهد و استوارت بدارد. آيا آثار صنع او را در گياهان ريز و درشت، و آفريدگان ريز، و جانوران ريز، و پشه و كك و موجودات ريزتر از اينها نمى‌بينى كه تقريبا به چشم ديده نمى‌شوند، بلكه از شدّت ريز بودنشان، نر از ماده و نوزاد از ديرزادشان باز شناخته نمى‌گردد. پس، با مشاهده اين جاندار كوچك كه با همه ريزى‌اش مى‌داند كه چگونه جفت‌گيرى كند، و از مرگ بگريزد، و آنچه را به نفع [و مايه بقاى] اوست گرد آورد، و نيز با مشاهده موجوداتى كه در اعماق درياها، و در لابه لاى پوست درختان و در كويرها و بيابان‌ها زندگى مى‌كنند، و زبان يكديگر را مى‌فهمند، و بچه‌هايشان زبان آنها را مى‌فهمند، و براى بچه‌هايشان غذا مى‌برند، و نيز از تركيب رنگ‌هاى آنها ـ قرمز با زرد، و سفيد با قرمز ـ و جاندارانى كه بر اثر خُردى جثّه‌شان تقريبا به چشم نمى‌آيند و با دست لمس نمى‌شوند، [با مشاهده تمام اينها]پى مى‌بريم كه آفريننده اين موجود نيز لطيف است و در آفريدنِ آنچه نام برديم، لطافت و ظرافت به خرج داده است بى آن كه [براى اين كار]انديشه‌اى به كار زند يا از ابزار و آلتى استفاده كند، و پى مى‌بريم كه سازنده هر چيزى آن چيز را از ماده‌اى سازد امّا خداى آفريننده و لطيف و جليل، آفريده و ساخته است امّا نه از چيزى [و ماده‌اى]»."@fa,
+        "1.  عَنْ أَبِي الْحَسَنِ عليه‌السلام، قَالَ: سَمِعْتُهُ يَقُولُ: «وَهُوَ اللَّطِيفُ الْخَبِيرُ، السَّمِيعُ الْبَصِيرُ، الْوَاحِدُ الْأَحَدُ الصَّمَدُ «لَمْ‌يَلِدْ وَلَمْ يُولَدْ وَلَمْ يَكُنْ لَهُ كُفُواً أَحَدٌ»، لَوْ كَانَ كَمَا يَقُولُ الْمُشَبِّهَةُ، لَمْ يُعْرَفِ الْخَالِقُ مِنَ الْمَخْلُوقِ، وَلاَ الْمُنْشِئُ مِنَ الْمُنْشَأَ لكِنَّهُ الْمُنْشِئُ، فَرَّقَ بَيْنَ مَنْ جَسَّمَهُ وَصَوَّرَهُ وَأَنْشَأَهُ؛ إِذْ كَانَ لاَ يُشْبِهُهُ شَيْءٌ، وَلاَ يُشْبِهُ هُوَ شَيْئاً». قُلْتُ: أَجَلْ ـ جَعَلَنِيَ اللّه‌ُ فِدَاكَ ـ لكِنَّكَ قُلْتَ: الْأَحَدُ الصَّمَدُ، وَقُلْتَ: لاَ يُشْبِهُهُ شَيْءٌ، وَاللّه‌ُ وَاحِدٌ، وَالاْءِنْسَانُ وَاحِدٌ، أَ لَيْسَ قَدْ تَشَابَهَتِ الْوَحْدَانِيَّةُ؟ قَالَ: «يَا فَتْحُ، أَحَلْتَ ـ ثَبَّتَكَ اللّه‌ُ ـ إِنَّمَا التَّشْبِيهُ فِي الْمَعَانِي، فَأَمَّا فِي الْأَسْمَاءِ، فَهِيَ وَاحِدَةٌ، وَهِيَ دَلاَلَةٌ عَلَى الْمُسَمّى، وَذلِكَ أَنَّ الاْءِنْسَانَ وَإِنْ قِيلَ: وَاحِدٌ، فَإِنَّهُ يُخْبَرُ أَنَّهُ جُثَّةٌ وَاحِدَةٌ وَلَيْسَ بِاثْنَيْنِ، وَالاْءِنْسَانُ نَفْسُهُ لَيْسَ بِوَاحِدٍ؛ لِأَنَّ أَعْضَاءَهُ مُخْتَلِفَةٌ، وَأَلْوَانَهُ مُخْتَلِفَةٌ، وَمَنْ أَلْوَانُهُ مُخْتَلِفَةٌ غَيْرُ وَاحِدٍ، وَهُوَ أَجْزَاءٌ مُجَزَّأَةٌ لَيْسَتْ بِسَوَاءٍ: دَمُهُ غَيْرُ لَحْمِهِ، وَلَحْمُهُ غَيْرُ دَمِهِ، وَعَصَبُهُ غَيْرُ عُرُوقِهِ، وَشَعْرُهُ غَيْرُ بَشَرِهِ، وَسَوَادُهُ غَيْرُ بَيَاضِهِ، وَكَذلِكَ سَائِرُ جَمِيعِ الْخَلْقِ؛ فَالاْءِنْسَانُ وَاحِدٌ فِي الاِسْمِ، وَلاَ وَاحِدٌ فِي الْمَعْنى، وَاللّه‌ُ ـ جَلَّ جَلاَلُهُ ـ هُوَ وَاحِدٌ لاَ وَاحِدَ غَيْرُهُ، لاَ اخْتِلاَفَ فِيهِ وَلاَ تَفَاوُتَ، وَلاَ زِيَادَةَ وَلاَ نُقْصَانَ، فَأَمَّا الاْءِنْسَانُ الْمَخْلُوقُ الْمَصْنُوعُ الْمُؤلَّفُ مِنْ أَجْزَاءٍ مُخْتَلِفَةٍ وَجَوَاهِرَ شَتّى غَيْرَ أَنَّهُ بِالاِجْتِمَاعِ شَيْءٌ وَاحِدٌ». قُلْتُ: جُعِلْتُ فِدَاكَ، فَرَّجْتَ عَنِّي فَرَّجَ اللّه‌ُ عَنْكَ، فَقَوْلَكَ: اللَّطِيفُ الْخَبِيرُ فَسِّرْهُ لِي كَمَا فَسَّرْتَ الْوَاحِدَ؛ فَإِنِّي أَعْلَمُ أَنَّ لُطْفَهُ عَلى خِلاَفِ لُطْفِ خَلْقِهِ لِلْفَصْلِ، غَيْرَ أَنِّي أُحِبُّ أَنْ تَشْرَحَ ذلِكَ لِي، فَقَالَ: «يَا فَتْحُ، إِنَّمَا قُلْنَا: اللَّطِيفُ؛ لِلْخَلْقِ اللَّطِيفِ، وَ لِعِلْمِهِ بِالشَّيْءِ اللَّطِيفِ، أَ وَلاَ تَرى ـ وَفَّقَكَ اللّه‌ُ وَثَبَّتَكَ ـ إِلى أَثَرِ صُنْعِهِ فِي النَّبَاتِ اللَّطِيفِ وَغَيْرِ اللَّطِيفِ؛ وَمِنَ الْخَلْقِ اللَّطِيفِ، وَ مِنَ الْحَيَوَانِ الصُّغَارِ، وَمِنَ الْبَعُوضِ وَالْجِرْجِسِ، وَمَا هُوَ أَصْغَرُ مِنْهَا مَا لاَ يَكَادُ تَسْتَبِينُهُ الْعُيُونُ، بَلْ لاَ يَكَادُ يُسْتَبَانُ ـ لِصِغَرِهِ ـ الذَّكَرُ مِنَ الاُْنْثى، وَالْحَدَثُ الْمَوْلُودُ مِنَ الْقَدِيمِ. فَلَمَّا رَأَيْنَا صِغَرَ ذلِكَ فِي لُطْفِهِ، وَاهْتِدَاءَهُ لِلسَّفَادِ، والْهَرَبَ مِنَ الْمَوْتِ، وَالْجَمْعَ لِمَا يُصْلِحُهُ، وَمَا فِي لُجَجِ الْبِحَارِ، وَمَا فِي لِحَاءِ الْأَشْجَارِ وَالْمَفَاوِزِ وَالْقِفَارِ، وَإِفْهَامَ بَعْضِهَا عَنْ بَعْضٍ مَنْطِقَهَا، وَمَا يَفْهَمُ بِهِ أَوْلاَدُهَا عَنْهَا، وَنَقْلَهَا الْغِذَاءَ إِلَيْهَا، ثُمَّ تَأْلِيفَ أَلْوَانِهَا: حُمْرَةٍ مَعَ صُفْرَةٍ، وَبَيَاضٍ مَعَ حُمْرَةٍ، وَأَنَّهُ مَا لاَ تَكَادُ عُيُونُنَا تَسْتَبِينُهُ، لِدَمَامَةِ خَلْقِهَا لاَ تَرَاهُ عُيُونُنَا، وَلاَ تَلْمِسُهُ أَيْدِينَا، عَلِمْنَا أَنَّ خَالِقَ هذَا الْخَلْقِ لَطِيفٌ، لَطُفَ بِخَلْقِ مَا سَمَّيْنَاهُ بِلاَ عِلاَجٍ وَلاَ أَدَاةٍ وَلاَ آلَةٍ، وَأَنَّ كُلَّ صَانِعِ شَيْءٍ فَمِنْ شَيْءٍ صَنَعَ، وَاللّه‌ُ ـ الْخَالِقُ اللَّطِيفُ الْجَلِيلُ ـ خَلَقَ وَصَنَعَ لاَ مِنْ شَيْءٍ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-1> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:hasQuality ex:Kind, ex:AllAware, ex:AllHearing, ex:AllSeeing .
+ex:god a go:substance ;
+    go:hasquality ex:kind, ex:allaware, ex:allhearing, ex:allseeing .
 
-ex:Kind a go:Quality .
-ex:AllAware a go:Quality .
-ex:AllHearing a go:Quality .
-ex:AllSeeing a go:Quality .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-2> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    go:hasAttribute ex:TheOne , ex:TheOnly , ex:TheEternalRefuge .
-
-ex:TheOne a go:Attribute ;
-    rdfs:label "The One"@en .
-
-ex:TheOnly a go:Attribute ;
-    rdfs:label "The Only"@en .
-
-ex:TheEternalRefuge a go:Attribute ;
-    rdfs:label "The Eternal Refuge"@en .
+ex:kind a go:quality .
+ex:allaware a go:quality .
+ex:allhearing a go:quality .
+ex:allseeing a go:quality .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-2> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    go:HasAgent ex:begettingEvent , ex:begottenEvent ;
-    go:HasTheme ex:None , ex:None .
+ex:god a go:deity ;
+    go:hasattribute ex:theone , ex:theonly , ex:theeternalrefuge .
 
-ex:begettingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Offspring ;
-    go:Negated true .
+ex:theone a go:attribute ;
+    rdfs:label "the one"@en .
 
-ex:begottenEvent a go:Event ;
-    go:HasTheme ex:God ;
-    go:HasAgent ex:Parent ;
-    go:Negated true .
+ex:theonly a go:attribute ;
+    rdfs:label "the only"@en .
 
-ex:equalityEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:None ;
-    go:Negated true .
-
-ex:None a go:Substance .
-ex:Offspring a go:Substance .
-ex:Parent a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:theeternalrefuge a go:attribute ;
+    rdfs:label "the eternal refuge"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-3> rdf:type owl:ontology .
 
-ex:God a go:Substance, go:creator .
-ex:Likeners a go:agentGroup ;
-    go:describes ex:God .
+ex:god a go:deity ;
+    go:hasagent ex:begettingevent , ex:begottenevent ;
+    go:hastheme ex:none , ex:none .
 
-ex:CreatedEntities a go:Substance ;
-    go:createdBy ex:God .
+ex:begettingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:offspring ;
+    go:negated true .
 
-# Hypothetical event if God were as likened
-_:event1 a go:hypotheticalCondition ;
+ex:begottenevent a go:event ;
+    go:hastheme ex:god ;
+    go:hasagent ex:parent ;
+    go:negated true .
+
+ex:equalityevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:none ;
+    go:negated true .
+
+ex:none a go:substance .
+ex:offspring a go:substance .
+ex:parent a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-4> rdf:type owl:ontology .
+
+ex:god a go:substance, go:creator .
+ex:likeners a go:agentgroup ;
+    go:describes ex:god .
+
+ex:createdentities a go:substance ;
+    go:createdby ex:god .
+
+# hypothetical event if god were as likened
+_:event1 a go:hypotheticalcondition ;
     go:condition [
         a go:state ;
-        go:hasTheme ex:God ;
-        go:description "God is as the likeners say"
+        go:hastheme ex:god ;
+        go:description "god is as the likeners say"
     ] ;
     go:consequence [
         a go:state ;
-        go:hasTheme ex:God, ex:CreatedEntities ;
-        go:relation go:isDistinguishedFrom ;
+        go:hastheme ex:god, ex:createdentities ;
+        go:relation go:isdistinguishedfrom ;
         go:negation true
     ] .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-5> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God"@en .
+ex:god a go:deity ;
+    rdfs:label "god"@en .
 
-ex:Creator a go:Agent ;
-    rdfs:label "Creator"@en .
+ex:creator a go:agent ;
+    rdfs:label "creator"@en .
 
-ex:Created a go:Object ;
-    rdfs:label "Created"@en .
+ex:created a go:object ;
+    rdfs:label "created"@en .
 
-ex:KnowingEvent a go:Event ;
-    go:HasAgent ex:Creator ;
-    go:HasTheme ex:Created ;
-    rdfs:label "Knowing the created by the creator"@en .
+ex:knowingevent a go:event ;
+    go:hasagent ex:creator ;
+    go:hastheme ex:created ;
+    rdfs:label "knowing the created by the creator"@en .
 
-# Note: This set represents the entities and their relations regarding the event of knowing, reflecting the original sentence's meaning.
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-6> rdf:type owl:Ontology .
-
-ex:God a go:Person ;
-    go:hasRole ex:CreatorRole .
-
-ex:CreatorRole a go:Role ;
-    go:roleIn ex:CreationEvent .
-
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God .
-go:Event rdfs:label "رخداد"@fa.
+# note: this set represents the entities and their relations regarding the event of knowing, reflecting the original sentence's meaning.
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-6> rdf:type owl:ontology .
 
-ex:God a go:Deity .
+ex:god a go:person ;
+    go:hasrole ex:creatorrole .
 
-exv:DifferentiationEvent_1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Embodier, ex:Depicter, ex:Creator .
+ex:creatorrole a go:role ;
+    go:rolein ex:creationevent .
 
-ex:Embodier a go:Role ;
-    go:RoleOf ex:God .
-
-ex:Depicter a go:Role ;
-    go:RoleOf ex:God .
-
-ex:Creator a go:Role ;
-    go:RoleOf ex:God .
-go:Event rdfs:label "رخداد"@fa.
+ex:creationevent a go:event ;
+    go:hasagent ex:god .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-7> rdf:type owl:ontology .
 
-ex:God a go:Deity .
+ex:god a go:deity .
 
-# The statement "Nothing resembles God" is represented as a negative fact:
-# No entity has the property go:resemblesObject with value ex:God.
-# Since RDF cannot express universal negation directly, we represent it semantically as below.
+exv:differentiationevent_1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:embodier, ex:depicter, ex:creator .
 
-# Using a OWL axiom placeholder (non-standard turtle):
-# There is no x such that x go:resemblesObject ex:God
+ex:embodier a go:role ;
+    go:roleof ex:god .
 
-# For demonstration, we assert explicitly that no go:Substance resembles ex:God
+ex:depicter a go:role ;
+    go:roleof ex:god .
 
-# Example entities (for context, not part of original):
-# ex:someEntity a go:Substance .
-# We do NOT assert: ex:someEntity go:resemblesObject ex:God .
-
-# Thus, the ontology encodes the absence of resemblance to God.
-go:Substance rdfs:label "شی"@fa.
+ex:creator a go:role ;
+    go:roleof ex:god .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-8> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme go:Substance ;
-    go:isNegated true .
+ex:god a go:deity .
 
-ex:God a go:Deity .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# the statement "nothing resembles god" is represented as a negative fact:
+# no entity has the property go:resemblesobject with value ex:god.
+# since rdf cannot express universal negation directly, we represent it semantically as below.
 
+# using a owl axiom placeholder (non-standard turtle):
+# there is no x such that x go:resemblesobject ex:god
 
-@base <http://etratnet.ir/ontology/> .
+# for demonstration, we assert explicitly that no go:substance resembles ex:god
 
-<http://etratnet.ir/ontology/324-10> rdf:type owl:Ontology .
+# example entities (for context, not part of original):
+# ex:someentity a go:substance .
+# we do not assert: ex:someentity go:resemblesobject ex:god .
 
-ex:God a go:Substance ;
-    ex:isOne true .
-
-ex:Human a go:Substance ;
-    ex:isOne true .
-go:Substance rdfs:label "شی"@fa.
+# thus, the ontology encodes the absence of resemblance to god.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-9> rdf:type owl:ontology .
 
-ex:OnenessOfGod a go:Concept ;
-    go:hasEntity ex:God .
+ex:event1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme go:substance ;
+    go:isnegated true .
 
-ex:OnenessOfHuman a go:Concept ;
-    go:hasEntity ex:Human .
-
-ex:SimilarityBetweenOneness a go:Relation ;
-    go:relates ex:OnenessOfGod , ex:OnenessOfHuman .
+ex:god a go:deity .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-10> rdf:type owl:ontology .
 
-ex:Simile a go:Substance ;
-  go:hasScope ex:Meanings .
+ex:god a go:substance ;
+    ex:isone true .
 
-ex:Meanings a go:Substance .
+ex:human a go:substance ;
+    ex:isone true .
+go:substance rdfs:label "شی"@fa.
 
-# Note: The exclusivity 'only' is a linguistic nuance often handled outside core triples,
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-11> rdf:type owl:ontology .
+
+ex:onenessofgod a go:concept ;
+    go:hasentity ex:god .
+
+ex:onenessofhuman a go:concept ;
+    go:hasentity ex:human .
+
+ex:similaritybetweenoneness a go:relation ;
+    go:relates ex:onenessofgod , ex:onenessofhuman .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-12> rdf:type owl:ontology .
+
+ex:simile a go:substance ;
+  go:hasscope ex:meanings .
+
+ex:meanings a go:substance .
+
+# note: the exclusivity 'only' is a linguistic nuance often handled outside core triples,
 # but the triple captures the key relationship of simile's domain being meanings.
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-13> rdf:type owl:ontology .
 
-ex:Simile a go:LinguisticPhenomenon ;
-    rdfs:label "Simile"@en .
+ex:simile a go:linguisticphenomenon ;
+    rdfs:label "simile"@en .
 
-ex:Nouns a go:LinguisticCategory ;
-    rdfs:label "Nouns"@en .
+ex:nouns a go:linguisticcategory ;
+    rdfs:label "nouns"@en .
 
-ex:Rule_SimileNotInNouns a go:State ;
-    rdfs:label "Simile does not occur in nouns"@en ;
-    ex:phenomenon ex:Simile ;
-    ex:targetCategory ex:Nouns ;
+ex:rule_similenotinnouns a go:state ;
+    rdfs:label "simile does not occur in nouns"@en ;
+    ex:phenomenon ex:simile ;
+    ex:targetcategory ex:nouns ;
     ex:applies false .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-14> rdf:type owl:ontology .
 
-ex:Names a go:Substance ;
-    ex:hasSingularity "true"^^<http://www.w3.org/2001/XMLSchema#boolean> ;
-    ex:indicates ex:DesignatedTerm .
+ex:names a go:substance ;
+    ex:hassingularity "true"^^<http://www.w3.org/2001/xmlschema#boolean> ;
+    ex:indicates ex:designatedterm .
 
-ex:DesignatedTerm a go:concept .
-go:Substance rdfs:label "شی"@fa.
+ex:designatedterm a go:concept .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-15> rdf:type owl:ontology .
 
-ex:HumanBeing a go:Substance ;
+ex:humanbeing a go:substance ;
     rdfs:label "human being"@en .
 
-ex:SingleBody a go:Substance ;
+ex:singlebody a go:substance ;
     rdfs:label "single body"@en .
 
-ex:ReportingEvent a go:EventInstance ;
-    go:HasAgent ex:Speaker ;
-    go:HasTheme ex:HumanBeing ;
-    go:HasDescription ex:Description .
+ex:reportingevent a go:eventinstance ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:humanbeing ;
+    go:hasdescription ex:description .
 
-ex:Description a go:Concept ;
-    go:describes ex:HumanBeing ;
+ex:description a go:concept ;
+    go:describes ex:humanbeing ;
     go:states "is a single body, not two bodies" .
 
-ex:Negation a go:negation ;
-    go:negates ex:TwoBodies .
+ex:negation a go:negation ;
+    go:negates ex:twobodies .
 
-ex:TwoBodies a go:concept ;
+ex:twobodies a go:concept ;
     rdfs:label "two bodies"@en .
 
-ex:HumanBeing go:isDescribedBy ex:Description .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:humanbeing go:isdescribedby ex:description .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-16> rdf:type owl:ontology .
 
-ex:Human a go:Substance ;
-    go:hasPart ex:Organs ;
-    ex:isNotOne true ;
-    ex:reason ex:OrgansAreDifferent .
+ex:human a go:substance ;
+    go:haspart ex:organs ;
+    ex:isnotone true ;
+    ex:reason ex:organsaredifferent .
 
-ex:Organs a go:Substance ;
-    ex:areDifferent true .
+ex:organs a go:substance ;
+    ex:aredifferent true .
 
-ex:OrgansAreDifferent a go:Event ;
-    go:HasTheme ex:Organs .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-17> rdf:type owl:Ontology .
-
-ex:Human a go:Human .
-ex:HumanColorDiversityState a go:ColorDiversityState ;
-    go:HasAgent ex:Human ;
-    go:hasColor ex:HumanColor ;
-    go:diversityType "different" .
-
-ex:HumanColor a go:Color .
+ex:organsaredifferent a go:event ;
+    go:hastheme ex:organs .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-17> rdf:type owl:ontology .
 
-ex:Human a go:Substance .
-ex:SkinColorDifference a ex:Property ;
-  ex:appliesTo ex:Human ;
-  ex:hasValue "difference"^^xsd:string .
+ex:human a go:human .
+ex:humancolordiversitystate a go:colordiversitystate ;
+    go:hasagent ex:human ;
+    go:hascolor ex:humancolor ;
+    go:diversitytype "different" .
 
-ex:NonUniformity a ex:Concept .
-
-ex:IndicationEvent a go:Event ;
-  go:HasAgent ex:SkinColorDifference ;
-  go:HasTheme ex:NonUniformity .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:humancolor a go:color .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-18> rdf:type owl:ontology .
 
-ex:Human a go:Substance ;
-    go:hasPart ex:HumanParts .
+ex:human a go:substance .
+ex:skincolordifference a ex:property ;
+  ex:appliesto ex:human ;
+  ex:hasvalue "difference"^^xsd:string .
 
-ex:HumanParts a go:ComponentCollection .
+ex:nonuniformity a ex:concept .
 
-ex:FragmentationState a go:State ;
-    go:HasTheme ex:HumanParts ;
-    go:hasCharacteristic ex:FragmentedAndNonUniform .
+ex:indicationevent a go:event ;
+  go:hasagent ex:skincolordifference ;
+  go:hastheme ex:nonuniformity .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
-ex:FragmentedAndNonUniform a go:Quality ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-19> rdf:type owl:ontology .
+
+ex:human a go:substance ;
+    go:haspart ex:humanparts .
+
+ex:humanparts a go:componentcollection .
+
+ex:fragmentationstate a go:state ;
+    go:hastheme ex:humanparts ;
+    go:hascharacteristic ex:fragmentedandnonuniform .
+
+ex:fragmentedandnonuniform a go:quality ;
     rdfs:label "fragmented and not uniform" .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-20> rdf:type owl:ontology .
 
-ex:Human a go:Organism .
-ex:HumanBlood a go:Substance ;
-    go:isPartOf ex:Human .
-ex:HumanFlesh a go:Substance ;
-    go:isPartOf ex:Human .
+ex:human a go:organism .
+ex:humanblood a go:substance ;
+    go:ispartof ex:human .
+ex:humanflesh a go:substance ;
+    go:ispartof ex:human .
 
-ex:HumanBlood go:isDifferentFrom ex:HumanFlesh .
-go:Substance rdfs:label "شی"@fa.
+ex:humanblood go:isdifferentfrom ex:humanflesh .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-21> rdf:type owl:ontology .
 
-ex:HumanFlesh a go:Substance ;
+ex:humanflesh a go:substance ;
     rdfs:label "human flesh"@en .
 
-ex:HumanBlood a go:Substance ;
+ex:humanblood a go:substance ;
     rdfs:label "human blood"@en .
 
-ex:NegationOfEquivalence a go:relation ;
-    go:HasTheme [ a go:equivalence ;
-                   go:HasEntity1 ex:HumanFlesh ;
-                   go:HasEntity2 ex:HumanBlood ] ;
-    go:HasPolarity "negative" .
-go:Substance rdfs:label "شی"@fa.
+ex:negationofequivalence a go:relation ;
+    go:hastheme [ a go:equivalence ;
+                   go:hasentity1 ex:humanflesh ;
+                   go:hasentity2 ex:humanblood ] ;
+    go:haspolarity "negative" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-22> rdf:type owl:ontology .
 
-ex:Human1 a go:Organism ;
-    ex:hasNerve ex:HumanNerve1 ;
-    ex:hasBloodVessels ex:HumanBloodVessels1 .
+ex:human1 a go:organism ;
+    ex:hasnerve ex:humannerve1 ;
+    ex:hasbloodvessels ex:humanbloodvessels1 .
 
-ex:HumanNerve1 a go:Nerve ;
-    ex:partOf ex:Human1 .
+ex:humannerve1 a go:nerve ;
+    ex:partof ex:human1 .
 
-ex:HumanBloodVessels1 a go:BloodVessel ;
-    ex:partOf ex:Human1 .
+ex:humanbloodvessels1 a go:bloodvessel ;
+    ex:partof ex:human1 .
 
-ex:HumanNerve1 owl:differentFrom ex:HumanBloodVessels1 .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-23> rdf:type owl:Ontology .
-
-ex:Human rdf:type go:Person .
-ex:Feeling rdf:type go:Emotion .
-ex:Skin rdf:type go:PhysicalAttribute .
-
-ex:Human ex:hasFeeling ex:Feeling .
-ex:Human ex:hasPhysicalAttribute ex:Skin .
-
-ex:Feeling owl:differentFrom ex:Skin .
+ex:humannerve1 owl:differentfrom ex:humanbloodvessels1 .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-24> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-23> rdf:type owl:ontology .
 
-:Humankind a go:species ;
-    ex:hasBlackness :Blackness ;
-    ex:hasWhiteness :Whiteness .
+ex:human rdf:type go:person .
+ex:feeling rdf:type go:emotion .
+ex:skin rdf:type go:physicalattribute .
 
-:Blackness a go:Quality ;
-    go:isPropertyOf :Humankind .
+ex:human ex:hasfeeling ex:feeling .
+ex:human ex:hasphysicalattribute ex:skin .
 
-:Whiteness a go:Quality ;
-    go:isPropertyOf :Humankind .
-
-:HumankindBlackIsNotWhite a go:Event ;
-    a ex:StateAssertion ;
-    ex:subject :Humankind ;
-    ex:property1 :Blackness ;
-    ex:property2 :Whiteness ;
-    ex:relation ex:NotEqual .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:feeling owl:differentfrom ex:skin .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-25> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-24> rdf:type owl:ontology .
 
-ex:God a go:Agent .
-ex:AllCreations a go:Substance ;
-    go:HasAgent ex:God ;
-    ex:hasCharacteristic ex:LikeThat .
+:humankind a go:species ;
+    ex:hasblackness :blackness ;
+    ex:haswhiteness :whiteness .
 
-ex:LikeThat a go:Attribute .
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+:blackness a go:quality ;
+    go:ispropertyof :humankind .
 
+:whiteness a go:quality ;
+    go:ispropertyof :humankind .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-26> rdf:type owl:Ontology .
-
-ex:Human a go:PhysicalObject ;
-    rdfs:label "Human"@en .
-
-ex:Statement1 a ex:ConceptualStatement ;
-    ex:aboutClass ex:Human ;
-    ex:hasSameName true ;
-    ex:hasSameMeaning false .
+:humankindblackisnotwhite a go:event ;
+    a ex:stateassertion ;
+    ex:subject :humankind ;
+    ex:property1 :blackness ;
+    ex:property2 :whiteness ;
+    ex:relation ex:notequal .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-27> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-25> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
-    go:HasProperty ex:UniqueOneness .
+ex:god a go:agent .
+ex:allcreations a go:substance ;
+    go:hasagent ex:god ;
+    ex:hascharacteristic ex:likethat .
 
-ex:UniqueOneness a go:Property ;
-    rdfs:label "Oneness - Only One" ;
-    dcterms:description "God Almighty is uniquely one and there is none other like Him" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-28> rdf:type owl:Ontology .
-
-ex:God a go:Deity .
-
-# Negation of difference and variance
-ex:God go:hasDifference false ;
-       go:hasVariance false .
+ex:likethat a go:attribute .
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-29> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-26> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:agentOf ex:IncreaseEvent, ex:DecreaseEvent .
+ex:human a go:physicalobject ;
+    rdfs:label "human"@en .
 
-ex:IncreaseEvent a go:Event ;
-    go:hasAgent ex:God ;
-    go:EventType "increase" ;
-    go:isNegated true .
-
-ex:DecreaseEvent a go:Event ;
-    go:hasAgent ex:God ;
-    go:EventType "decrease" ;
-    go:isNegated true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:statement1 a ex:conceptualstatement ;
+    ex:aboutclass ex:human ;
+    ex:hassamename true ;
+    ex:hassamemeaning false .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-30> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-27> rdf:type owl:ontology .
 
-ex:Human a go:agent, go:Substance, go:Creature ;
-    go:HasComponent ex:Parts ;
-    go:HasComponent ex:Gems .
+ex:godalmighty a go:deity ;
+    go:hasproperty ex:uniqueoneness .
 
-ex:Parts a go:Substance .
-ex:Gems a go:Substance .
-
-ex:HumanCreation a go:Event ;
-    go:HasTheme ex:Human ;
-    go:HasMaterial ex:Parts , ex:Gems .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:uniqueoneness a go:property ;
+    rdfs:label "oneness - only one" ;
+    dcterms:description "god almighty is uniquely one and there is none other like him" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-31> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-28> rdf:type owl:ontology .
 
-ex:Text a go:InformationObject ;
-    go:refersTo ex:Matters .
+ex:god a go:deity .
 
-ex:Matters a go:Substance ;
-    ex:hasEssence ex:Diverse .
-
-ex:ReferenceEvent a go:Event ;
-    go:HasAgent ex:Text ;
-    go:HasTheme ex:Matters .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
+# negation of difference and variance
+ex:god go:hasdifference false ;
+       go:hasvariance false .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-32> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-29> rdf:type owl:ontology .
 
-ex:Text1 a go:Text ;
-    go:PerformsEvent ex:ConfirmationEvent1 .
+ex:god a go:substance ;
+    go:agentof ex:increaseevent, ex:decreaseevent .
 
-ex:ConfirmationEvent1 a go:ConfirmationEvent ;
-    go:HasAgent ex:Text1 ;
-    go:HasTheme ex:OneThing ;
-    ex:hasCondition ex:AllThatDifference .
+ex:increaseevent a go:event ;
+    go:hasagent ex:god ;
+    go:eventtype "increase" ;
+    go:isnegated true .
 
-ex:OneThing a go:Concept .
-
-ex:AllThatDifference a go:Concept .
+ex:decreaseevent a go:event ;
+    go:hasagent ex:god ;
+    go:eventtype "decrease" ;
+    go:isnegated true .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-33> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-30> rdf:type owl:ontology .
 
-ex:God a go:DivineEntity ;
-    go:hasAttribute ex:Gentle ;
-    go:hasAttribute ex:AllAware .
+ex:human a go:agent, go:substance, go:creature ;
+    go:hascomponent ex:parts ;
+    go:hascomponent ex:gems .
 
-ex:Gentle a go:Attribute ;
+ex:parts a go:substance .
+ex:gems a go:substance .
+
+ex:humancreation a go:event ;
+    go:hastheme ex:human ;
+    go:hasmaterial ex:parts , ex:gems .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-31> rdf:type owl:ontology .
+
+ex:text a go:informationobject ;
+    go:refersto ex:matters .
+
+ex:matters a go:substance ;
+    ex:hasessence ex:diverse .
+
+ex:referenceevent a go:event ;
+    go:hasagent ex:text ;
+    go:hastheme ex:matters .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-32> rdf:type owl:ontology .
+
+ex:text1 a go:text ;
+    go:performsevent ex:confirmationevent1 .
+
+ex:confirmationevent1 a go:confirmationevent ;
+    go:hasagent ex:text1 ;
+    go:hastheme ex:onething ;
+    ex:hascondition ex:allthatdifference .
+
+ex:onething a go:concept .
+
+ex:allthatdifference a go:concept .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-33> rdf:type owl:ontology .
+
+ex:god a go:divineentity ;
+    go:hasattribute ex:gentle ;
+    go:hasattribute ex:allaware .
+
+ex:gentle a go:attribute ;
     rdfs:label "gentle"@en .
 
-ex:AllAware a go:Attribute ;
+ex:allaware a go:attribute ;
     rdfs:label "all-aware"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-34> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-34> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-  go:HasAttribute ex:Gentleness .
+ex:god a go:deity ;
+  go:hasattribute ex:gentleness .
 
-ex:Gentleness a go:Attribute ;
+ex:gentleness a go:attribute ;
   rdfs:label "gentle" ;
-  go:HasTheme ex:GentleCreatures .
+  go:hastheme ex:gentlecreatures .
 
-ex:GentleCreatures a go:Creature ;
+ex:gentlecreatures a go:creature ;
   rdfs:label "gentle creatures" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-35> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-35> rdf:type owl:ontology .
 
-ex:God rdf:type go:Substance ;
-       ex:hasAttribute ex:Gentle .
+ex:god rdf:type go:substance ;
+       ex:hasattribute ex:gentle .
 
-ex:Gentle rdf:type go:State ;
-          go:HasCause ex:KnowledgeOfSubtleThings .
+ex:gentle rdf:type go:state ;
+          go:hascause ex:knowledgeofsubtlethings .
 
-ex:KnowledgeOfSubtleThings rdf:type go:State ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SubtleThings .
+ex:knowledgeofsubtlethings rdf:type go:state ;
+    go:hasagent ex:god ;
+    go:hastheme ex:subtlethings .
 
-ex:SubtleThings rdf:type go:Substance .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-36> rdf:type owl:Ontology .
-
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
-
-ex:DelicatePlant a go:Substance ;
-    rdfs:label "Delicate Plant"@en .
-
-ex:NonDelicatePlant a go:Substance ;
-    rdfs:label "Non-Delicate Plant"@en .
-
-ex:EffectOfCreationOnPlants a go:Event ;
-    rdfs:label "Effect of Creation on Plants"@en ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:DelicatePlant, ex:NonDelicatePlant ;
-    ex:hasQuality "Subtle" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:subtlethings rdf:type go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-37> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-36> rdf:type owl:ontology .
 
-ex:Creatures a go:Substance ;
-    go:hasPart ex:SmallAnimals .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:SmallAnimals a go:Substance ;
-    go:hasQuality ex:Gentleness .
+ex:delicateplant a go:substance ;
+    rdfs:label "delicate plant"@en .
 
-ex:Gentleness a go:Quality ;
-    rdfs:label "Gentle"@en .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:nondelicateplant a go:substance ;
+    rdfs:label "non-delicate plant"@en .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-38> rdf:type owl:Ontology .
-
-ex:delicate_creature a go:Class .
-
-ex:mosquito a go:Animal ;
-    go:memberOf ex:delicate_creature .
-
-ex:fly a go:Animal ;
-    go:memberOf ex:delicate_creature .
-
-# Note: 'جرجس' here is interpreted as 'fly' (common meaning in Arabic context)
+ex:effectofcreationonplants a go:event ;
+    rdfs:label "effect of creation on plants"@en ;
+    go:hasagent ex:god ;
+    go:hastheme ex:delicateplant, ex:nondelicateplant ;
+    ex:hasquality "subtle" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-39> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-37> rdf:type owl:ontology .
 
-ex:sentence7 a go:Statement ;
-    go:HasTheme ex:smallerCreatures .
+ex:creatures a go:substance ;
+    go:haspart ex:smallanimals .
 
-ex:smallerCreatures a go:Creature ;
-    go:isSmallerThan ex:Mosquito , ex:Midge .
+ex:smallanimals a go:substance ;
+    go:hasquality ex:gentleness .
 
-ex:Mosquito a go:Creature ;
-    rdfs:label "Mosquito"@en .
+ex:gentleness a go:quality ;
+    rdfs:label "gentle"@en .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
-ex:Midge a go:Creature ;
-    rdfs:label "Midge"@en .
 
-ex:eye a go:Organ ;
-    rdfs:label "Eye"@en .
+@base <http://etratnet.ir/ontology/> .
 
-ex:perceptionDifficulty a go:Event ;
-    go:HasAgent ex:eye ;
-    go:HasTheme ex:Mosquito , ex:Midge ;
-    go:hasQuality ex:hardToDistinguish .
+<http://etratnet.ir/ontology/324-38> rdf:type owl:ontology .
 
-ex:hardToDistinguish a go:Quality ;
+ex:delicate_creature a go:class .
+
+ex:mosquito a go:animal ;
+    go:memberof ex:delicate_creature .
+
+ex:fly a go:animal ;
+    go:memberof ex:delicate_creature .
+
+# note: 'جرجس' here is interpreted as 'fly' (common meaning in arabic context)
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-39> rdf:type owl:ontology .
+
+ex:sentence7 a go:statement ;
+    go:hastheme ex:smallercreatures .
+
+ex:smallercreatures a go:creature ;
+    go:issmallerthan ex:mosquito , ex:midge .
+
+ex:mosquito a go:creature ;
+    rdfs:label "mosquito"@en .
+
+ex:midge a go:creature ;
+    rdfs:label "midge"@en .
+
+ex:eye a go:organ ;
+    rdfs:label "eye"@en .
+
+ex:perceptiondifficulty a go:event ;
+    go:hasagent ex:eye ;
+    go:hastheme ex:mosquito , ex:midge ;
+    go:hasquality ex:hardtodistinguish .
+
+ex:hardtodistinguish a go:quality ;
     rdfs:label "hard to distinguish by eyes"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-40> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-40> rdf:type owl:ontology .
 
-ex:Creation a go:Substance ;
-    go:hasAttribute ex:SmallSize .
+ex:creation a go:substance ;
+    go:hasattribute ex:smallsize .
 
-ex:Female a go:Subtype ;
-    rdfs:label "Female"@en .
+ex:female a go:subtype ;
+    rdfs:label "female"@en .
 
-ex:MentionFemaleEvent a go:Event ;
-    go:HasAgent ex:Creation ;
-    go:HasTheme ex:Female ;
-    go:hasDegree "Hardly distinguishable" .
+ex:mentionfemaleevent a go:event ;
+    go:hasagent ex:creation ;
+    go:hastheme ex:female ;
+    go:hasdegree "hardly distinguishable" .
 
-ex:SmallSize a go:Attribute ;
-    rdfs:label "Small size of the creation"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-41> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasOrigin ex:old ;
-    go:HasCharacteristic ex:strangeCreation .
-
-ex:old a go:Substance .
-ex:strangeCreation a go:concept .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:smallsize a go:attribute ;
+    rdfs:label "small size of the creation"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-42> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-41> rdf:type owl:ontology .
 
-ex:Kindness rdf:type go:Attribute .
-ex:CreationEvent rdf:type go:Event ;
-  go:HasAgent ex:Kindness ;
-  go:HasTheme ex:ThisWorld .
+ex:event1 a go:event ;
+    go:hasorigin ex:old ;
+    go:hascharacteristic ex:strangecreation .
 
-ex:ThisWorld rdf:type go:Object ;
-  go:HasQuality ex:Smallness , ex:Precision , ex:Detail .
-
-ex:Smallness rdf:type go:Quality .
-ex:Precision rdf:type go:Quality .
-ex:Detail rdf:type go:Quality .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:old a go:substance .
+ex:strangecreation a go:concept .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-43> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-42> rdf:type owl:ontology .
 
-ex:God_Almighty a go:Deity ;
-    rdfs:label "God Almighty" .
+ex:kindness rdf:type go:attribute .
+ex:creationevent rdf:type go:event ;
+  go:hasagent ex:kindness ;
+  go:hastheme ex:thisworld .
 
-ex:The_Misled a go:Group ;
+ex:thisworld rdf:type go:object ;
+  go:hasquality ex:smallness , ex:precision , ex:detail .
+
+ex:smallness rdf:type go:quality .
+ex:precision rdf:type go:quality .
+ex:detail rdf:type go:quality .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-43> rdf:type owl:ontology .
+
+ex:god_almighty a go:deity ;
+    rdfs:label "god almighty" .
+
+ex:the_misled a go:group ;
     rdfs:label "the misled" .
 
-ex:Death a go:Substance ;
+ex:death a go:substance ;
     rdfs:label "death" .
 
-ex:Guidance_Event a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:The_Misled ;
+ex:guidance_event a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:the_misled ;
     rdfs:label "guiding the misled" .
 
-ex:Command_Event a go:Event ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:The_Misled ;
-    go:hasContent "command to flee from death" .
+ex:command_event a go:event ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:the_misled ;
+    go:hascontent "command to flee from death" .
 
-ex:Fleeing_Event a go:Event ;
-    go:HasAgent ex:The_Misled ;
-    go:HasGoal ex:Death ;
+ex:fleeing_event a go:event ;
+    go:hasagent ex:the_misled ;
+    go:hasgoal ex:death ;
     rdfs:label "fleeing from death" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-44> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-44> rdf:type owl:ontology .
 
-ex:gatheringEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:SuitableThings .
+ex:gatheringevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:suitablethings .
 
-ex:God a go:Agent .
+ex:god a go:agent .
 
-ex:Army a go:Substance .
+ex:army a go:substance .
 
-ex:SuitableThings a go:Object ;
-    ex:isSuitableFor ex:Army ;
-    ex:surroundedBy ex:ArmySurroundings .
+ex:suitablethings a go:object ;
+    ex:issuitablefor ex:army ;
+    ex:surroundedby ex:armysurroundings .
 
-ex:ArmySurroundings a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:armysurroundings a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-45> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-45> rdf:type owl:ontology .
 
-ex:DepthsOfSeas a go:Location ;
+ex:depthsofseas a go:location ;
     go:label "depths of seas" .
 
-ex:TinyCreatures a go:PhysicalEntity ;
+ex:tinycreatures a go:physicalentity ;
     go:label "tiny creatures" ;
-    go:hasLocation ex:DepthsOfSeas .
+    go:haslocation ex:depthsofseas .
 
-ex:TinyThings a go:PhysicalEntity ;
+ex:tinythings a go:physicalentity ;
     go:label "tiny things" ;
-    go:hasLocation ex:DepthsOfSeas .
+    go:haslocation ex:depthsofseas .
 
-ex:KindnessOfCreation a go:Quality ;
+ex:kindnessofcreation a go:quality ;
     go:label "kindness of creation" .
 
-ex:ShowKindnessEvent a go:Event ;
+ex:showkindnessevent a go:event ;
     go:label "show kindness of creation" ;
-    go:HasAgent ex:TinyCreatures , ex:TinyThings ;
-    go:HasTheme ex:KindnessOfCreation .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+    go:hasagent ex:tinycreatures , ex:tinythings ;
+    go:hastheme ex:kindnessofcreation .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-46> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-46> rdf:type owl:ontology .
 
-# Entities
-ex:bark_of_trees a go:Substance ;
-  rdfs:label "Bark of trees"@en .
-ex:thresholds a go:Substance ;
-  rdfs:label "Thresholds"@en .
-ex:graves a go:Substance ;
-  rdfs:label "Graves"@en .
-ex:details a go:Substance ;
-  rdfs:label "Details"@en ;
-  go:locatedIn ex:bark_of_trees , ex:thresholds , ex:graves .
+# entities
+ex:bark_of_trees a go:substance ;
+  rdfs:label "bark of trees"@en .
+ex:thresholds a go:substance ;
+  rdfs:label "thresholds"@en .
+ex:graves a go:substance ;
+  rdfs:label "graves"@en .
+ex:details a go:substance ;
+  rdfs:label "details"@en ;
+  go:locatedin ex:bark_of_trees , ex:thresholds , ex:graves .
 
-ex:wisdom_creation a go:Substance ;
-  rdfs:label "Wisdom of creation"@en .
+ex:wisdom_creation a go:substance ;
+  rdfs:label "wisdom of creation"@en .
 
-# Event: Indication
-ex:event_indication a go:Event , ex:eventInstance ;
-  rdfs:label "Indication event"@en ;
-  go:HasAgent ex:details ;
-  go:HasTheme ex:wisdom_creation .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-47> rdf:type owl:Ontology .
-
-ex:Creatures rdf:type go:Substance ;
-    rdfs:label "Some Creatures" .
-
-ex:Language rdf:type go:Substance ;
-    rdfs:label "Language of Creatures" .
-
-ex:Understanding_Event rdf:type go:Event ;
-    go:HasAgent ex:Creatures ;
-    go:HasTheme ex:Language ;
-    go:HasRecipient ex:Creatures ;
-    rdfs:label "Understanding among some creatures" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# event: indication
+ex:event_indication a go:event , ex:eventinstance ;
+  rdfs:label "indication event"@en ;
+  go:hasagent ex:details ;
+  go:hastheme ex:wisdom_creation .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-48> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-47> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-    go:HasAgent ex:ChildrenOfCreatures ;
-    go:HasTheme ex:TheirLanguage .
+ex:creatures rdf:type go:substance ;
+    rdfs:label "some creatures" .
 
-ex:Creatures a go:Organism .
+ex:language rdf:type go:substance ;
+    rdfs:label "language of creatures" .
 
-ex:ChildrenOfCreatures a go:Group ;
-    go:IsPartOf ex:Creatures .
-
-ex:TheirLanguage a go:Language ;
-    go:IsLanguageOf ex:Creatures .
-go:Event rdfs:label "رخداد"@fa.
+ex:understanding_event rdf:type go:event ;
+    go:hasagent ex:creatures ;
+    go:hastheme ex:language ;
+    go:hasrecipient ex:creatures ;
+    rdfs:label "understanding among some creatures" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-49> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-48> rdf:type owl:ontology .
 
-ex:CreatureGroup a go:OrganismGroup ;
-    go:hasMember ex:Creature1, ex:Creature2 ; # illustrative members
+ex:event1 a go:event ;
+    go:hasagent ex:childrenofcreatures ;
+    go:hastheme ex:theirlanguage .
+
+ex:creatures a go:organism .
+
+ex:childrenofcreatures a go:group ;
+    go:ispartof ex:creatures .
+
+ex:theirlanguage a go:language ;
+    go:islanguageof ex:creatures .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-49> rdf:type owl:ontology .
+
+ex:creaturegroup a go:organismgroup ;
+    go:hasmember ex:creature1, ex:creature2 ; # illustrative members
     .
 
-ex:Food a go:Substance .
+ex:food a go:substance .
 
-ex:TransportEvent a go:Event ;
-    go:hasAgent ex:CreatureGroup ;
-    go:hasTheme ex:Food ;
-    go:hasRecipient ex:CreatureGroup .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-50> rdf:type owl:Ontology .
-
-ex:event1 a go:Event ;
-    go:HasAgent go:God ;
-    go:HasTheme go:RedColor , go:YellowColor ;
-    go:relatedTo go:CreatureColors .
-
-go:God a go:Substance ;
-    go:name "God" .
-
-go:RedColor a go:color ;
-    go:name "Red" ;
-    go:belongsTo go:Creatures .
-
-go:YellowColor a go:color ;
-    go:name "Yellow" ;
-    go:belongsTo go:Creatures .
-
-go:CreatureColors a go:concept ;
-    go:description "Colors of creatures" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:transportevent a go:event ;
+    go:hasagent ex:creaturegroup ;
+    go:hastheme ex:food ;
+    go:hasrecipient ex:creaturegroup .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-51> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-50> rdf:type owl:ontology .
 
-ex:God a go:Agent ;
-    rdfs:label "God" .
+ex:event1 a go:event ;
+    go:hasagent go:god ;
+    go:hastheme go:redcolor , go:yellowcolor ;
+    go:relatedto go:creaturecolors .
 
-ex:CreationColorsEvent a ex:CreationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ColorsOfCreatures .
+go:god a go:substance ;
+    go:name "god" .
 
-ex:ColorsOfCreatures a go:Attribute ;
+go:redcolor a go:color ;
+    go:name "red" ;
+    go:belongsto go:creatures .
+
+go:yellowcolor a go:color ;
+    go:name "yellow" ;
+    go:belongsto go:creatures .
+
+go:creaturecolors a go:concept ;
+    go:description "colors of creatures" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-51> rdf:type owl:ontology .
+
+ex:god a go:agent ;
+    rdfs:label "god" .
+
+ex:creationcolorsevent a ex:creationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:colorsofcreatures .
+
+ex:colorsofcreatures a go:attribute ;
     rdfs:label "colors of creatures" ;
-    go:HasPart ex:WhiteColor, ex:RedColor .
+    go:haspart ex:whitecolor, ex:redcolor .
 
-ex:WhiteColor a go:Color ;
+ex:whitecolor a go:color ;
     rdfs:label "white" .
 
-ex:RedColor a go:Color ;
+ex:redcolor a go:color ;
     rdfs:label "red" .
-go:Agent rdfs:label "عامل"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-52> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-52> rdf:type owl:ontology .
 
-ex:color1 a go:Color .
-ex:eyes1 a go:Organ .
-ex:details1 a go:PhenotypeFeature ;
-    go:isDetailOf ex:color1 .
+ex:color1 a go:color .
+ex:eyes1 a go:organ .
+ex:details1 a go:phenotypefeature ;
+    go:isdetailof ex:color1 .
 
-ex:seeingEvent1 a go:Event ;
-    go:HasAgent ex:eyes1 ;
-    go:HasTheme ex:details1 .
+ex:seeingevent1 a go:event ;
+    go:hasagent ex:eyes1 ;
+    go:hastheme ex:details1 .
 
-ex:creation1 a go:Event ;
-    go:HasTheme ex:color1 ;
-    go:HasQuality ex:precision1 .
+ex:creation1 a go:event ;
+    go:hastheme ex:color1 ;
+    go:hasquality ex:precision1 .
 
-ex:precision1 a go:Quality ;
-    go:QualityValue "high"^^go:QualityScale .
+ex:precision1 a go:quality ;
+    go:qualityvalue "high"^^go:qualityscale .
 
-ex:precision1 go:causes ex:seeingEvent1 .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:precision1 go:causes ex:seeingevent1 .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-53> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-53> rdf:type owl:ontology .
 
-ex:PerceptionEvent1 a go:perception_event ;
-    go:has_agent ex:Eyes ;
-    go:has_theme ex:PerceivedEntity ;
-    go:has_manner ex:GreatCare , ex:KindnessInCharacter .
+ex:perceptionevent1 a go:perception_event ;
+    go:has_agent ex:eyes ;
+    go:has_theme ex:perceivedentity ;
+    go:has_manner ex:greatcare , ex:kindnessincharacter .
 
-ex:Eyes a go:sense_organ ;
+ex:eyes a go:sense_organ ;
     rdfs:label "the eyes"@en .
 
-ex:PerceivedEntity a go:entity ;
+ex:perceivedentity a go:entity ;
     rdfs:label "perceived entity"@en .
 
-ex:GreatCare a go:Quality ;
+ex:greatcare a go:quality ;
     rdfs:label "great care"@en .
 
-ex:KindnessInCharacter a go:Quality ;
+ex:kindnessincharacter a go:quality ;
     rdfs:label "kindness in character"@en .
-go:Quality rdfs:label "ویژگی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-54> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-54> rdf:type owl:ontology .
 
-ex:Hands a go:Substance ;
-    go:label "Hands" .
+ex:hands a go:substance ;
+    go:label "hands" .
 
-ex:ThisPrecision a go:Substance ;
-    go:label "ThisPrecision" .
+ex:thisprecision a go:substance ;
+    go:label "thisprecision" .
 
-ex:TouchingEvent a go:Event ;
-    go:HasAgent ex:Hands ;
-    go:HasTheme ex:ThisPrecision ;
+ex:touchingevent a go:event ;
+    go:hasagent ex:hands ;
+    go:hastheme ex:thisprecision ;
     go:negation true .
 
-ex:SeeingEvent a go:Event ;
-    go:HasAgent ex:Hands ;
-    go:HasTheme ex:ThisPrecision ;
+ex:seeingevent a go:event ;
+    go:hasagent ex:hands ;
+    go:hastheme ex:thisprecision ;
     go:degree "not easily" ;
     go:negation true .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-55> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-55> rdf:type owl:ontology .
 
-# Define entities
-ex:We rdf:type go:Agent .
-ex:Creator rdf:type go:Substance ; rdfs:label "Creator"@en .
-ex:Creation rdf:type go:Substance ; rdfs:label "this creation"@en .
+# define entities
+ex:we rdf:type go:agent .
+ex:creator rdf:type go:substance ; rdfs:label "creator"@en .
+ex:creation rdf:type go:substance ; rdfs:label "this creation"@en .
 
-# Define the knowing event
-ex:KnowingEvent rdf:type go:Event , ex:KnowingEventInstance ; 
-  go:HasAgent ex:We ;
-  go:HasTheme ex:Proposition .
+# define the knowing event
+ex:knowingevent rdf:type go:event , ex:knowingeventinstance ; 
+  go:hasagent ex:we ;
+  go:hastheme ex:proposition .
 
-# Proposition that Creator is kind in his creation (modeled as an event of kindness)
-ex:KindnessEvent rdf:type go:Event ;
-  go:HasAgent ex:Creator ;
-  go:HasTheme ex:Creation ;
-  rdfs:label "Creator is kind in his creation"@en .
+# proposition that creator is kind in his creation (modeled as an event of kindness)
+ex:kindnessevent rdf:type go:event ;
+  go:hasagent ex:creator ;
+  go:hastheme ex:creation ;
+  rdfs:label "creator is kind in his creation"@en .
 
-# The proposition is represented as a statement about KindnessEvent
-ex:Proposition rdf:type go:proposition ;
-  go:describes ex:KindnessEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/324-56> rdf:type owl:Ontology .
-
-ex:creationEvent1 a go:CreationEvent ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Everything ;
-    go:HasManner ex:WithoutTreatment ;
-    go:HasManner ex:WithoutTools .
-
-ex:God_Almighty a go:Deity .
-
-ex:Everything a go:Substance .
-
-ex:WithoutTreatment a go:Manner .
-
-ex:WithoutTools a go:Manner .
-go:Substance rdfs:label "شی"@fa.
+# the proposition is represented as a statement about kindnessevent
+ex:proposition rdf:type go:proposition ;
+  go:describes ex:kindnessevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-57> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-56> rdf:type owl:ontology .
 
-# Class definitions
-ex:Maker a rdfs:Class ; rdfs:subClassOf go:Maker .
-ex:Thing a rdfs:Class ; rdfs:subClassOf go:Object .
-ex:CreateEvent a rdfs:Class ; rdfs:subClassOf go:Event .
+ex:creationevent1 a go:creationevent ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:everything ;
+    go:hasmanner ex:withouttreatment ;
+    go:hasmanner ex:withouttools .
 
-# General statement expressed as a blank node representing universal quantification
-_:stmt a rdf:Statement ;
-    rdf:subject ex:Maker ;
+ex:god_almighty a go:deity .
+
+ex:everything a go:substance .
+
+ex:withouttreatment a go:manner .
+
+ex:withouttools a go:manner .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/324-57> rdf:type owl:ontology .
+
+# class definitions
+ex:maker a rdfs:class ; rdfs:subclassof go:maker .
+ex:thing a rdfs:class ; rdfs:subclassof go:object .
+ex:createevent a rdfs:class ; rdfs:subclassof go:event .
+
+# general statement expressed as a blank node representing universal quantification
+_:stmt a rdf:statement ;
+    rdf:subject ex:maker ;
     rdf:predicate go:performs ;
     rdf:object _:event .
 
-_:event a ex:CreateEvent ;
-    go:HasAgent ex:Maker ;
-    go:HasTheme ex:Thing .
-go:Event rdfs:label "رخداد"@fa.
+_:event a ex:createevent ;
+    go:hasagent ex:maker ;
+    go:hastheme ex:thing .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/324-58> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/324-58> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
+ex:god a go:substance ;
     rdfs:label "الله" ;
-    go:hasAttribute ex:Creator, ex:Gentle, ex:Majestic .
+    go:hasattribute ex:creator, ex:gentle, ex:majestic .
 
-ex:Creator a go:Attribute .
-ex:Gentle a go:Attribute .
-ex:Majestic a go:Attribute .
+ex:creator a go:attribute .
+ex:gentle a go:attribute .
+ex:majestic a go:attribute .
 
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:CreatedThing ;
-    go:HasOrigin ex:Nothing .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:createdthing ;
+    go:hasorigin ex:nothing .
 
-ex:CreatedThing a go:Substance ;
-    go:createdBy ex:God .
+ex:createdthing a go:substance ;
+    go:createdby ex:god .
 
-ex:Nothing a go:Substance ;
-    go:exists "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:nothing a go:substance ;
+    go:exists "false"^^<http://www.w3.org/2001/xmlschema#boolean> .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

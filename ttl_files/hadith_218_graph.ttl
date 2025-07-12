@@ -1,754 +1,757 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/218#> .
+@prefix ex: <http://etratnet.ir/graph/example/218#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/218> rdf:type go:ontology ;
+        go:hascontent "4.  مردى از زنديقان بر ابو الحسن عليه‌السلام درآمد و جماعتى در حضور امام عليه‌السلام بودند. ابوالحسن عليه‌السلام فرمود: «اى مرد، بگو ببينم، اگر عقيده شما درست باشد ـ كه البته نيست ـ در اين صورت آيا نه اين است كه ما و شما يكسانيم و نماز خواندن و روزه گرفتن و زكات دادن ما و ايمانى كه آورده‌ايم زيانى به ما نرساند؟» آن مرد خاموش ماند. ابو الحسن عليه‌السلام سپس فرمود: «اگر عقيده ما درست باشد ـ كه هست ـ آيا نه اين است كه شما به هلاكت درافتاده‌ايد و ما رهيده‌ايم؟» مرد گفت: خدايت رحمت كناد، برايم توضيح دهيد كه خدا چگونه است و در كجاست. حضرت فرمود: «واى بر تو! راهى كه رفتى خطاست. او جا را جا قرار داد بى آن كه خود جايى داشته باشد، و چگونگى را چگونگى قرار داد بى آن كه خود چگونگى داشته باشد. بنابراين، به چگونه بودن و جا داشتن شناخته نشود، و با هيچ حسّى دريافت نشود، و با چيزى سنجيده نگردد». مرد گفت: بنابراين، وقتى با هيچ حسّى از حواس دريافت نشود پس موجود نيست. ابوالحسن عليه‌السلام فرمود: «واى بر تو! كه چون حواسّ تو از دريافت او ناتوان است، خداوندگارى‌اش را انكار مى‌كنى، در صورتى كه ما چون حواسمان از دريافت او ناتوان شد تازه يقين كرديم كه او خداوندگار ماست و موجودى متفاوت با ديگر موجودات مى‌باشد». مرد گفت: به من خبر دهيد كه او از چه زمانى بوده است؟ ابو الحسن عليه‌السلام فرمود: «تو به من بگو از چه زمانى نبوده است تا من به تو بگويم از كى بوده است». مرد گفت: پس نشانه او چيست؟ ابوالحسن عليه‌السلام فرمود: «چون به تن خويش نگريستم و ديدم كه نمى‌توانم بر پهنا و درازاى آن بيفزايم و بكاهم و ناخوشايندها را از آن دور سازم و به آن سود رسانم، دريافتم كه اين ساختمان سازنده‌اى دارد و به هستى او اقرار نمودم. افزون بر اين، از مشاهده گردش فلك به قدرت او، و پديد آوردن ابرها، و جابه جا كردن بادها، و حركت خورشيد و ماه و ستارگان، و ديگر پديده‌هاى شگفت و روشنگر، پى بردم كه اينها را طراح و پديد آورنده‌اى است»."@fa,
+        "4.  دَخَلَ رَجُلٌ مِنَ الزَّنَادِقَةِ عَلى أَبِي الْحَسَنِ عليه‌السلام وَعِنْدَهُ جَمَاعَةٌ، فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «أَيُّهَا الرَّجُلُ، أَ رَأَيْتَ، إِنْ كَانَ الْقَوْلُ قَوْلَكُمْ ـ وَلَيْسَ هُوَ كَمَا تَقُولُونَ ـ أَ لَسْنَا وَإِيَّاكُمْ شَرَعاً سَوَاءً، لاَ يَضُرُّنَا مَا صَلَّيْنَا وَصُمْنَا، وَزَكَّيْنَا وَأَقْرَرْنَا؟» فَسَكَتَ الرَّجُلُ. ثُمَّ قَالَ أَبُو الْحَسَنِ عليه‌السلام: «وَإِنْ كَانَ الْقَوْلُ قَوْلَنَا ـ وَهُوَ قَوْلُنَا ـ أَلَسْتُمْ قَدْ هَلَكْتُمْ وَنَجَوْنَا؟». فَقَالَ: رَحِمَكَ اللّه‌ُ، أَوْجِدْنِي كَيْفَ هُوَ؟ وَأَيْنَ هُوَ؟ فَقَالَ: «وَيْلَكَ، إِنَّ الَّذِي ذَهَبْتَ إِلَيْهِ غَلَطٌ؛ هُوَ أَيَّنَ الْأَيْنَ بِلاَ أَيْنٍ، وَكَيَّفَ الْكَيْفَ بِلاَ كَيْفٍ، فَلاَ يُعْرَفُ بِالْكَيْفُوفِيَّةِ، وَلاَ بِأَيْنُونِيَّةٍ، وَلاَ يُدْرَكُ بِحَاسَّةٍ، وَلاَ يُقَاسُ بِشَيْءٍ». فَقَالَ الرَّجُلُ: فَإِذاً إِنَّهُ لاَ شَيْءَ إِذَا لَمْ يُدْرَكْ بِحَاسَّةٍ مِنَ الْحَوَاسِّ، فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «وَيْلَكَ، لَمَّا عَجَزَتْ حَوَاسُّكَ عَنْ إِدْرَاكِهِ، أَنْكَرْتَ رُبُوبِيَّتَهُ، وَنَحْنُ إِذَا عَجَزَتْ حَوَاسُّنَا عَنْ إِدْرَاكِهِ، أَيْقَنَّا أَنَّهُ رَبُّنَا بِخِلاَفِ شَيْءٍ مِنَ الْأَشْيَاءِ». قَالَ الرَّجُلُ: فَأَخْبِرْنِي مَتى كَانَ؟ قَالَ أَبُو الْحَسَنِ عليه‌السلام: «أَخْبِرْنِي مَتى لَمْ يَكُنْ؛ فَأُخْبِرَكَ مَتى كَانَ؟» قَالَ الرَّجُلُ: فَمَا الدَّلِيلُ عَلَيْهِ؟ فَقَالَ أَبُو الْحَسَنِ عليه‌السلام: «إِنِّي لَمَّا نَظَرْتُ إِلى جَسَدِي، وَلَمْ يُمْكِنِّي فِيهِ زِيَادَةٌ وَلاَ نُقْصَانٌ فِي الْعَرْضِ وَالطُّولِ، وَدَفْعِ الْمَكَارِهِ عَنْهُ، وَجَرِّ الْمَنْفَعَةِ إِلَيْهِ، عَلِمْتُ أَنَّ لِهذَا الْبُنْيَانِ بَانِياً، فَأَقْرَرْتُ بِهِ؛ مَعَ مَا أَرى ـ مِنْ دَوَرَانِ الْفَلَكِ بِقُدْرَتِهِ، وَإِنْشَاءِ السَّحَابِ، وَتَصْرِيفِ الرِّيَاحِ، وَمَجْرَى الشَّمْسِ وَالْقَمَرِ وَالنُّجُومِ، وَغَيْرِ ذلِكَ مِنَ الاْيَاتِ الْعَجِيبَاتِ الْمُبَيِّنَاتِ ـ عَلِمْتُ أَنَّ لِهذَا مُقَدِّراً وَمُنْشِئاً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-1> rdf:type owl:ontology .
 
-ex:enteringEvent1 a go:Event ;
-    go:HasAgent ex:hereticMan1 ;
-    go:HasRecipient ex:AbuAlHasan ;
-    go:HasCircumstance ex:group1 .
+ex:enteringevent1 a go:event ;
+    go:hasagent ex:hereticman1 ;
+    go:hasrecipient ex:abualhasan ;
+    go:hascircumstance ex:group1 .
 
-ex:hereticMan1 a ex:Heretic , go:physEntity ;
-    go:hasRole "agent"^^xsd:string .
+ex:hereticman1 a ex:heretic , go:physentity ;
+    go:hasrole "agent"^^xsd:string .
 
-ex:AbuAlHasan a go:physEntity ;
-    go:hasRole "recipient"^^xsd:string .
+ex:abualhasan a go:physentity ;
+    go:hasrole "recipient"^^xsd:string .
 
 ex:group1 a go:collection ;
-    go:hasRole "circumstance"^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
+    go:hasrole "circumstance"^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-2> rdf:type owl:ontology .
 
-ex:Abu_al_Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan" .
+ex:abu_al_hasan a go:person ;
+    rdfs:label "abu al-hasan" .
 
-ex:Man a go:Person ;
-    rdfs:label "Man" .
+ex:man a go:person ;
+    rdfs:label "man" .
 
-ex:SayingEvent1 a go:Event, go:say ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasRecipient ex:Man ;
-    go:HasTheme ex:Statement1 .
+ex:sayingevent1 a go:event, go:say ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hasrecipient ex:man ;
+    go:hastheme ex:statement1 .
 
-ex:Statement1 a go:Concept ;
-    go:hasText "O man, if the statement is your statement and it is not as you say, aren't we and you equal in the law?" .
-go:Event rdfs:label "رخداد"@fa.
+ex:statement1 a go:concept ;
+    go:hastext "o man, if the statement is your statement and it is not as you say, aren't we and you equal in the law?" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-3> rdf:type owl:ontology .
 
-ex:Sharia a go:Substance ;
-    rdfs:label "Sharia"@en .
+ex:sharia a go:substance ;
+    rdfs:label "sharia"@en .
 
-ex:Us a go:Agent ;
+ex:us a go:agent ;
     rdfs:label "us"@en .
 
-ex:Praying a go:Event ;
+ex:praying a go:event ;
     rdfs:label "praying"@en .
 
-ex:Fasting a go:Event ;
+ex:fasting a go:event ;
     rdfs:label "fasting"@en .
 
-ex:GivingZakah a go:Event ;
+ex:givingzakah a go:event ;
     rdfs:label "giving zakah"@en .
 
-ex:Acknowledging a go:Event ;
+ex:acknowledging a go:event ;
     rdfs:label "acknowledging"@en .
 
-ex:ReligiousActions a go:Event ;
-    go:HasPart ex:Praying, ex:Fasting, ex:GivingZakah, ex:Acknowledging ;
+ex:religiousactions a go:event ;
+    go:haspart ex:praying, ex:fasting, ex:givingzakah, ex:acknowledging ;
     rdfs:label "religious actions"@en .
 
-ex:NoHarmEvent a go:Event ;
-    rdfs:label "no harm by Sharia"@en ;
-    go:HasAgent ex:Sharia ;
-    go:HasTheme ex:Us ;
-    go:HasCause ex:ReligiousActions .
+ex:noharmevent a go:event ;
+    rdfs:label "no harm by sharia"@en ;
+    go:hasagent ex:sharia ;
+    go:hastheme ex:us ;
+    go:hascause ex:religiousactions .
 
-# Note: The sentence expresses absence of harm, so NoHarmEvent represents negated effect.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+# note: the sentence expresses absence of harm, so noharmevent represents negated effect.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-4> rdf:type owl:ontology .
 
-ex:Abu_al-Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan" .
+ex:abu_al-hasan a go:person ;
+    rdfs:label "abu al-hasan" .
 
-ex:Man a go:Person ;
+ex:man a go:person ;
     rdfs:label "the man" .
 
-ex:SpeechEvent a go:Event ;
-    go:HasAgent ex:Abu_al-Hasan ;
-    go:hasAction "speech" .
+ex:speechevent a go:event ;
+    go:hasagent ex:abu_al-hasan ;
+    go:hasaction "speech" .
 
-ex:SilenceEvent a go:Event ;
-    go:HasAgent ex:Man ;
-    go:hasAction "silence" ;
-    go:after ex:SpeechEvent .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/218-5> rdf:type owl:Ontology .
-
-ex:Abu_al_Hasan_a_s rdf:type go:Person ;
-    rdfs:label "Abu al-Hasan" .
-
-ex:Say_Event_1 rdf:type go:Event , ex:SpeechEvent ;
-    go:HasAgent ex:Abu_al_Hasan_a_s ;
-    go:HasTheme ex:Quoted_Statement_1 .
-
-ex:Quoted_Statement_1 rdf:type go:Statement ;
-    go:hasContent "And when the statement is our statement and it is our statement, have you not perished and we have survived?" .
-
-ex:Perish_Event rdf:type go:Event ;
-    go:HasAgent ex:You_Group .
-
-ex:Survive_Event rdf:type go:Event ;
-    go:HasAgent ex:We_Group .
-
-ex:You_Group rdf:type go:GroupPerson .
-ex:We_Group rdf:type go:GroupPerson .
-go:Event rdfs:label "رخداد"@fa.
+ex:silenceevent a go:event ;
+    go:hasagent ex:man ;
+    go:hasaction "silence" ;
+    go:after ex:speechevent .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-5> rdf:type owl:ontology .
 
-ex:man a go:Person ;
+ex:abu_al_hasan_a_s rdf:type go:person ;
+    rdfs:label "abu al-hasan" .
+
+ex:say_event_1 rdf:type go:event , ex:speechevent ;
+    go:hasagent ex:abu_al_hasan_a_s ;
+    go:hastheme ex:quoted_statement_1 .
+
+ex:quoted_statement_1 rdf:type go:statement ;
+    go:hascontent "and when the statement is our statement and it is our statement, have you not perished and we have survived?" .
+
+ex:perish_event rdf:type go:event ;
+    go:hasagent ex:you_group .
+
+ex:survive_event rdf:type go:event ;
+    go:hasagent ex:we_group .
+
+ex:you_group rdf:type go:groupperson .
+ex:we_group rdf:type go:groupperson .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/218-6> rdf:type owl:ontology .
+
+ex:man a go:person ;
     go:label "the man" .
 
-ex:god a go:Person ;
-    go:label "God" .
+ex:god a go:person ;
+    go:label "god" .
 
-ex:thirdPerson a go:Person ;
+ex:thirdperson a go:person ;
     go:label "he" .
 
-ex:speech1 a go:Speech , go:Event ;
-    go:HasAgent ex:man ;
-    go:HasTheme ex:utterance1 .
+ex:speech1 a go:speech , go:event ;
+    go:hasagent ex:man ;
+    go:hastheme ex:utterance1 .
 
-# Utterance composed of greeting and questions
-ex:utterance1 a go:Utterance ;
-    go:containsExpression ex:greeting1 , ex:question1 , ex:question2 .
+# utterance composed of greeting and questions
+ex:utterance1 a go:utterance ;
+    go:containsexpression ex:greeting1 , ex:question1 , ex:question2 .
 
-ex:greeting1 a go:Expression ;
-    go:hasText "May God have mercy on you" ;
-    go:HasTheme ex:god .
+ex:greeting1 a go:expression ;
+    go:hastext "may god have mercy on you" ;
+    go:hastheme ex:god .
 
-ex:question1 a go:InformationRequest ;
-    go:hasText "How is he?" ;
-    go:HasTheme ex:thirdPerson ;
-    go:asksAbout ex:state .
+ex:question1 a go:informationrequest ;
+    go:hastext "how is he?" ;
+    go:hastheme ex:thirdperson ;
+    go:asksabout ex:state .
 
-ex:question2 a go:InformationRequest ;
-    go:hasText "Where is he?" ;
-    go:HasTheme ex:thirdPerson ;
-    go:asksAbout ex:location .
+ex:question2 a go:informationrequest ;
+    go:hastext "where is he?" ;
+    go:hastheme ex:thirdperson ;
+    go:asksabout ex:location .
 
-ex:state a go:Concept ;
+ex:state a go:concept ;
     go:label "state" .
 
-ex:location a go:Concept ;
+ex:location a go:concept ;
     go:label "location" .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-7> rdf:type owl:ontology .
 
-ex:sayEvent1 a go:SpeechAct ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:utterance1 .
+ex:sayevent1 a go:speechact ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:utterance1 .
 
-ex:utterance1 a go:DeclarativeContent ;
-    go:HasTheme ex:condemnation1 .
+ex:utterance1 a go:declarativecontent ;
+    go:hastheme ex:condemnation1 .
 
-ex:condemnation1 a go:Condemnation ;
-    go:HasTheme ex:wrongDestination .
+ex:condemnation1 a go:condemnation ;
+    go:hastheme ex:wrongdestination .
 
-ex:wrongDestination a go:Event ;
-    go:HasAgent ex:listener ;
-    go:EventType go:GoTowardsWrongThing .
+ex:wrongdestination a go:event ;
+    go:hasagent ex:listener ;
+    go:eventtype go:gotowardswrongthing .
 
-ex:Abu_al_Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan (peace be upon him)" .
+ex:abu_al_hasan a go:person ;
+    rdfs:label "abu al-hasan (peace be upon him)" .
 
-ex:listener a go:Person .
-go:Event rdfs:label "رخداد"@fa.
+ex:listener a go:person .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-8> rdf:type owl:ontology .
 
-ex:Event1 a go:Event ;
-    go:HasAgent ex:Ayyan_AlAin ;
-    go:HasTheme ex:Destination_Him ;
-    rdfs:comment "The event of going to 'him'" .
+ex:event1 a go:event ;
+    go:hasagent ex:ayyan_alain ;
+    go:hastheme ex:destination_him ;
+    rdfs:comment "the event of going to 'him'" .
 
-ex:Ayyan_AlAin a go:Person ;
-    rdfs:label "Ayyan Al-Ain" ;
-    go:hasAttribute "without a place" .
+ex:ayyan_alain a go:person ;
+    rdfs:label "ayyan al-ain" ;
+    go:hasattribute "without a place" .
 
-ex:Destination_Him a go:Substance ;
+ex:destination_him a go:substance ;
     rdfs:label "him" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-9> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:HeWhoWentToHim ;
-    go:HasTheme ex:Him .
+ex:event1 a go:event ;
+    go:hasagent ex:hewhowenttohim ;
+    go:hastheme ex:him .
 
-ex:HeWhoWentToHim a go:Agent ;
-    go:hasQuality ex:QualityWithoutQuality .
+ex:hewhowenttohim a go:agent ;
+    go:hasquality ex:qualitywithoutquality .
 
-ex:QualityWithoutQuality a go:Quality ;
-    go:QualityDescription "quality without quality" .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/218-10> rdf:type owl:Ontology .
-
-ex:God a go:Deity .
-ex:Anthropomorphism a go:Concept .
-
-ex:Event1 a go:Event ;
-    go:HasTheme ex:God ;
-    go:HasCause ex:Anthropomorphism ;
-    go:isNegated true .
-go:Event rdfs:label "رخداد"@fa.
+ex:qualitywithoutquality a go:quality ;
+    go:qualitydescription "quality without quality" .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-10> rdf:type owl:ontology .
 
-:God a go:Substance .
-:AlAyouniya a go:Substance .
+ex:god a go:deity .
+ex:anthropomorphism a go:concept .
 
-:KnowledgeEvent1 a ex:knowledgeEvent ;
-    go:HasAgent :God ;
-    go:HasTheme :AlAyouniya ;
+ex:event1 a go:event ;
+    go:hastheme ex:god ;
+    go:hascause ex:anthropomorphism ;
+    go:isnegated true .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/218-11> rdf:type owl:ontology .
+
+:god a go:substance .
+:alayouniya a go:substance .
+
+:knowledgeevent1 a ex:knowledgeevent ;
+    go:hasagent :god ;
+    go:hastheme :alayouniya ;
     ex:negated true .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-12> rdf:type owl:ontology .
 
-ex:God a go:deity .
-ex:Sense a go:Substance ;
+ex:god a go:deity .
+ex:sense a go:substance ;
   rdfs:label "sense" .
 
-# Define a perception event type
-ex:PerceptionEvent a go:Event .
+# define a perception event type
+ex:perceptionevent a go:event .
 
-# Statement: God is not perceivable by any sense
-# Represent as: No perception event with God as theme exists
+# statement: god is not perceivable by any sense
+# represent as: no perception event with god as theme exists
 
-# Alternatively, we add a negative property statement via a blank node or annotation
+# alternatively, we add a negative property statement via a blank node or annotation
 
-ex:God go:isNotPerceivedBy ex:Sense .
+ex:god go:isnotperceivedby ex:sense .
 
-# Note: The ontology does not have a direct negative property; this triple shows the semantic intent.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/218-13> rdf:type owl:Ontology .
-
-ex:God a go:Deity .
-
-# There is no comparison event where God is the theme compared to anything.
-
-# Representing the negation of comparison:
-ex:NoComparisonEvent a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Nothing .
-
-ex:Nothing a go:Substance .
-
-# Stating that God cannot be compared to any entity
-ex:God go:isNotComparableTo ex:Nothing .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# note: the ontology does not have a direct negative property; this triple shows the semantic intent.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-13> rdf:type owl:ontology .
 
-ex:SpeechEvent1 a go:Event ;
-  go:HasAgent ex:TheMan ;
-  go:HasTheme ex:PhilosophicalAssertion1 .
+ex:god a go:deity .
 
-ex:TheMan a go:Person .
+# there is no comparison event where god is the theme compared to anything.
 
-ex:PhilosophicalAssertion1 a go:ConceptualContent ;
-  go:asserts "Nothing exists if it is not perceived by a sense" .
-go:Event rdfs:label "رخداد"@fa.
+# representing the negation of comparison:
+ex:nocomparisonevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:nothing .
+
+ex:nothing a go:substance .
+
+# stating that god cannot be compared to any entity
+ex:god go:isnotcomparableto ex:nothing .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-14> rdf:type owl:ontology .
 
-ex:AbuAlHasan a go:Person ;
-    go:hasAlias "Abu al-Hasan (peace be upon him)" .
+ex:speechevent1 a go:event ;
+  go:hasagent ex:theman ;
+  go:hastheme ex:philosophicalassertion1 .
 
-ex:HisLordship a go:DivineAttribute ;
-    rdfs:label "His Lordship" .
+ex:theman a go:person .
 
-ex:SpeechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:UtteranceContent1 .
+ex:philosophicalassertion1 a go:conceptualcontent ;
+  go:asserts "nothing exists if it is not perceived by a sense" .
+go:event rdfs:label "رخداد"@fa.
 
-ex:UtteranceContent1 a go:Utterance ;
-    rdfs:label "Woe to you, when your senses fail to comprehend it, you deny His Lordship." ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/218-15> rdf:type owl:ontology .
+
+ex:abualhasan a go:person ;
+    go:hasalias "abu al-hasan (peace be upon him)" .
+
+ex:hislordship a go:divineattribute ;
+    rdfs:label "his lordship" .
+
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:utterancecontent1 .
+
+ex:utterancecontent1 a go:utterance ;
+    rdfs:label "woe to you, when your senses fail to comprehend it, you deny his lordship." ;
     go:negation true ;
-    go:HasCause ex:SensesFailure .
+    go:hascause ex:sensesfailure .
 
-ex:SensesFailure a go:Event ;
+ex:sensesfailure a go:event ;
     rdfs:label "failure of senses to comprehend" .
 
-ex:DenialEvent a go:Denial ;
-    go:HasAgent ex:You ;
-    go:HasTheme ex:HisLordship .
-go:Event rdfs:label "رخداد"@fa.
+ex:denialevent a go:denial ;
+    go:hasagent ex:you ;
+    go:hastheme ex:hislordship .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-16> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-16> rdf:type owl:ontology .
 
-ex:statement1 a go:Event, ex:SpeechEvent ;
-    go:HasAgent ex:Abu_al-Hasan ;
-    go:HasTheme ex:proposition1 .
+ex:statement1 a go:event, ex:speechevent ;
+    go:hasagent ex:abu_al-hasan ;
+    go:hastheme ex:proposition1 .
 
-ex:Abu_al-Hasan a go:Person .
+ex:abu_al-hasan a go:person .
 
-ex:proposition1 a ex:Proposition ;
-    ex:concerns ex:God, ex:Senses, ex:Things ;
-    ex:content "If our senses fail to perceive Him, we are certain that He is our Lord, unlike any of the things."^^xsd:string .
+ex:proposition1 a ex:proposition ;
+    ex:concerns ex:god, ex:senses, ex:things ;
+    ex:content "if our senses fail to perceive him, we are certain that he is our lord, unlike any of the things."^^xsd:string .
 
-ex:Senses a go:HumanAbility .
-ex:God a go:DivineEntity .
-ex:Things a go:PhysicalObject .
+ex:senses a go:humanability .
+ex:god a go:divineentity .
+ex:things a go:physicalobject .
 
-ex:perceptionEvent a go:Event ;
-    go:HasAgent ex:Senses ;
-    go:HasTheme ex:God ;
-    go:HasStatus ex:Failure .
+ex:perceptionevent a go:event ;
+    go:hasagent ex:senses ;
+    go:hastheme ex:god ;
+    go:hasstatus ex:failure .
 
-ex:certaintyEvent a go:Event ;
-    go:HasAgent ex:HumanAgent ;
-    go:HasTheme ex:God ;
-    go:HasStatus ex:Certainty .
+ex:certaintyevent a go:event ;
+    go:hasagent ex:humanagent ;
+    go:hastheme ex:god ;
+    go:hasstatus ex:certainty .
 
-ex:HumanAgent a go:Person ;
-    ex:refersTo "our senses and human cognition" .
+ex:humanagent a go:person ;
+    ex:refersto "our senses and human cognition" .
 
-ex:Failure a go:Status .
-ex:Certainty a go:Status .
-go:Event rdfs:label "رخداد"@fa.
+ex:failure a go:status .
+ex:certainty a go:status .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-17> rdf:type owl:ontology .
 
-ex:Man1 a go:Person ;
+ex:man1 a go:person ;
     rdfs:label "الرجل" .
 
-ex:Thing1 a go:Object ;
+ex:thing1 a go:object ;
     rdfs:label "الشيء" .
 
-ex:KnowledgeEvent1 a go:KnowledgeEvent ;
-    go:about ex:Thing1 ;
-    go:hasTemporalRelation "when" .
+ex:knowledgeevent1 a go:knowledgeevent ;
+    go:about ex:thing1 ;
+    go:hastemporalrelation "when" .
 
-ex:RequestEvent1 a go:RequestEvent ;
-    go:HasAgent ex:Man1 ;
-    go:HasTheme ex:KnowledgeEvent1 .
+ex:requestevent1 a go:requestevent ;
+    go:hasagent ex:man1 ;
+    go:hastheme ex:knowledgeevent1 .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-18> rdf:type owl:ontology .
 
-ex:Abu_al_Hasan a go:Substance ;
-    dcterms:title "Abu al-Hasan (peace be upon him)" .
+ex:abu_al_hasan a go:substance ;
+    dcterms:title "abu al-hasan (peace be upon him)" .
 
-ex:Thing a go:Substance ;
+ex:thing a go:substance ;
     dcterms:description "an unspecified thing" .
 
-ex:UtteranceEvent1 a go:Event, ex:SpeechEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:ConditionalContent1 .
+ex:utteranceevent1 a go:event, ex:speechevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:conditionalcontent1 .
 
-ex:ConditionalContent1 a ex:ConditionalContent ;
-    ex:ConditionalIf ex:NonExistenceEvent1 ;
-    ex:ConditionalThen ex:ExistenceEvent1 .
+ex:conditionalcontent1 a ex:conditionalcontent ;
+    ex:conditionalif ex:nonexistenceevent1 ;
+    ex:conditionalthen ex:existenceevent1 .
 
-ex:NonExistenceEvent1 a go:Event ;
-    ex:aboutEntity ex:Thing ;
+ex:nonexistenceevent1 a go:event ;
+    ex:aboutentity ex:thing ;
     ex:state "non-existence" .
 
-ex:ExistenceEvent1 a go:Event ;
-    ex:aboutEntity ex:Thing ;
+ex:existenceevent1 a go:event ;
+    ex:aboutentity ex:thing ;
     ex:state "existence" .
 
-ex:ConditionalContent1 ex:expressesRelation "if non-existence then existence" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:conditionalcontent1 ex:expressesrelation "if non-existence then existence" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-19> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-19> rdf:type owl:ontology .
 
-ex:Man a go:Agent ;
+ex:man a go:agent ;
     go:label "man"@en .
 
-ex:That a go:Substance ;
+ex:that a go:substance ;
     go:label "that"@en .
 
-ex:Evidence a go:Information ;
+ex:evidence a go:information ;
     go:label "evidence"@en ;
-    go:about ex:That .
+    go:about ex:that .
 
-ex:AskEvent a go:Event ;
-    go:HasAgent ex:Man ;
-    go:HasTheme ex:Inquiry .
+ex:askevent a go:event ;
+    go:hasagent ex:man ;
+    go:hastheme ex:inquiry .
 
-ex:Inquiry a go:Event ;
-    go:about ex:Evidence .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/218-20> rdf:type owl:Ontology .
-
-ex:Abu_al_Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan" .
-
-ex:Body_Abu_al_Hasan a go:PhysicalObject ;
-    go:isPartOf ex:Abu_al_Hasan ;
-    go:hasProperty ex:Width ;
-    go:hasProperty ex:Length .
-
-# Saying event
-ex:Saying_1 a go:Event, go:SpeechEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:Saying_Content_1 .
-
-ex:Saying_Content_1 a go:Proposition ;
-    go:hasContent ex:Looking_at_Body_1 .
-
-# Looking event
-ex:Looking_at_Body_1 a go:Event, go:PerceptionEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:Body_Abu_al_Hasan ;
-    go:hasResult ex:Finding_No_Change_1 .
-
-# Finding event
-ex:Finding_No_Change_1 a go:Event, go:Finding ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:No_Increase_Decrease_Width_Length .
-
-ex:No_Increase_Decrease_Width_Length a go:QualityStatement ;
-    go:qualifies ex:Body_Abu_al_Hasan ;
-    go:hasProperty ex:Width ;
-    go:hasProperty ex:Length ;
-    go:hasValue "No increase or decrease" .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:inquiry a go:event ;
+    go:about ex:evidence .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-21> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-20> rdf:type owl:ontology .
 
-ex:Abu_al-Hasan a go:Person .
-ex:Body_Abu_al-Hasan a go:AnatomicalStructure ;
-    go:isPartOf ex:Abu_al-Hasan ;
-    ex:cannotIncrease true ;
-    ex:cannotDecrease true .
+ex:abu_al_hasan a go:person ;
+    rdfs:label "abu al-hasan" .
 
-evt:SpeechEvent1 a go:Communication ;
-    go:HasAgent ex:Abu_al-Hasan ;
-    go:hasContent evt:Content1 .
+ex:body_abu_al_hasan a go:physicalobject ;
+    go:ispartof ex:abu_al_hasan ;
+    go:hasproperty ex:width ;
+    go:hasproperty ex:length .
 
-evt:Content1 a go:Statement ;
-    go:expresses [ a go:State ;
-                 go:about ex:Body_Abu_al-Hasan ;
-                 ex:hasProperty [ a go:Negation ;
-                                 go:negatedProperty ex:canIncrease ] ,
-                               [ a go:Negation ;
-                                 go:negatedProperty ex:canDecrease ]
+# saying event
+ex:saying_1 a go:event, go:speechevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:saying_content_1 .
+
+ex:saying_content_1 a go:proposition ;
+    go:hascontent ex:looking_at_body_1 .
+
+# looking event
+ex:looking_at_body_1 a go:event, go:perceptionevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:body_abu_al_hasan ;
+    go:hasresult ex:finding_no_change_1 .
+
+# finding event
+ex:finding_no_change_1 a go:event, go:finding ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:no_increase_decrease_width_length .
+
+ex:no_increase_decrease_width_length a go:qualitystatement ;
+    go:qualifies ex:body_abu_al_hasan ;
+    go:hasproperty ex:width ;
+    go:hasproperty ex:length ;
+    go:hasvalue "no increase or decrease" .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/218-21> rdf:type owl:ontology .
+
+ex:abu_al-hasan a go:person .
+ex:body_abu_al-hasan a go:anatomicalstructure ;
+    go:ispartof ex:abu_al-hasan ;
+    ex:cannotincrease true ;
+    ex:cannotdecrease true .
+
+evt:speechevent1 a go:communication ;
+    go:hasagent ex:abu_al-hasan ;
+    go:hascontent evt:content1 .
+
+evt:content1 a go:statement ;
+    go:expresses [ a go:state ;
+                 go:about ex:body_abu_al-hasan ;
+                 ex:hasproperty [ a go:negation ;
+                                 go:negatedproperty ex:canincrease ] ,
+                               [ a go:negation ;
+                                 go:negatedproperty ex:candecrease ]
                ] .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-22> rdf:type owl:ontology .
 
-ex:AbuAlHasan a go:Person ;
-    go:hasPart ex:AbuAlHasanBody .
+ex:abualhasan a go:person ;
+    go:haspart ex:abualhasanbody .
 
-ex:AbuAlHasanBody a go:PhysiologicalObject ;
-    go:isPartOf ex:AbuAlHasan .
+ex:abualhasanbody a go:physiologicalobject ;
+    go:ispartof ex:abualhasan .
 
-ex:Harms a go:Substance .
-ex:Benefits a go:Substance .
+ex:harms a go:substance .
+ex:benefits a go:substance .
 
-ex:RepelHarmsEvent a go:Event ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:Harms ;
-    go:HasTarget ex:AbuAlHasanBody ;
-    ex:eventType "RepetitionOfRepelling"^^xsd:string .
+ex:repelharmsevent a go:event ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:harms ;
+    go:hastarget ex:abualhasanbody ;
+    ex:eventtype "repetitionofrepelling"^^xsd:string .
 
-ex:AttractBenefitsEvent a go:Event ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:Benefits ;
-    go:HasTarget ex:AbuAlHasanBody ;
-    ex:eventType "RepetitionOfAttracting"^^xsd:string .
+ex:attractbenefitsevent a go:event ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:benefits ;
+    go:hastarget ex:abualhasanbody ;
+    ex:eventtype "repetitionofattracting"^^xsd:string .
 
-ex:Obligation a go:modalCondition ;
-    go:modalFor ex:RepelHarmsEvent , ex:AttractBenefitsEvent ;
+ex:obligation a go:modalcondition ;
+    go:modalfor ex:repelharmsevent , ex:attractbenefitsevent ;
     ex:status "obligatory"^^xsd:string .
 
-ex:SpeechEvent a go:CommunicationEvent ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:utterance "It is obligatory to repel harms from my body and to attract benefits to it."^^xsd:string .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:speechevent a go:communicationevent ;
+    go:hasagent ex:abualhasan ;
+    go:utterance "it is obligatory to repel harms from my body and to attract benefits to it."^^xsd:string .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-23> rdf:type owl:ontology .
 
-# Entities
-ex:AbuAlHasan a go:Person .
-ex:Building1 a go:Artifact .
-ex:Builder1 a go:Person .
+# entities
+ex:abualhasan a go:person .
+ex:building1 a go:artifact .
+ex:builder1 a go:person .
 
-# Events
-ex:SpeechEvent1 a ex:SpeechEvent ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:SpeechContent1 .
+# events
+ex:speechevent1 a ex:speechevent ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:speechcontent1 .
 
-ex:KnowingEvent1 a ex:KnowingEvent ;
-    go:HasAgent ex:AbuAlHasan ;
-    go:HasTheme ex:BuilderExistenceStatement .
+ex:knowingevent1 a ex:knowingevent ;
+    go:hasagent ex:abualhasan ;
+    go:hastheme ex:builderexistencestatement .
 
-# Speech Content
-ex:SpeechContent1 a ex:Statement ;
-    ex:asserts ex:BuilderExistenceStatement .
+# speech content
+ex:speechcontent1 a ex:statement ;
+    ex:asserts ex:builderexistencestatement .
 
-ex:BuilderExistenceStatement a ex:ExistenceStatement ;
-    ex:subject ex:Building1 ;
-    ex:hasBuilder ex:Builder1 .
+ex:builderexistencestatement a ex:existencestatement ;
+    ex:subject ex:building1 ;
+    ex:hasbuilder ex:builder1 .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-24> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-24> rdf:type owl:ontology .
 
-ex:Abu_al_Hasan a go:Person ;
-    go:fullName "Abu al-Hasan" ;
+ex:abu_al_hasan a go:person ;
+    go:fullname "abu al-hasan" ;
     go:title "peace be upon him" .
 
-ex:This_Building a go:Building .
+ex:this_building a go:building .
 
-ex:The_Builder a go:Person ;
-    go:role "Builder" .
+ex:the_builder a go:person ;
+    go:role "builder" .
 
-ex:Acknowledgment_Event a go:Event ;
-    go:EventType "Acknowledgment" ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:This_Building ;
-    go:HasParticipant ex:The_Builder .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/218-25> rdf:type owl:Ontology .
-
-:Abu_al-Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan" .
-
-:GOD a go:Deity .
-
-:CelestialSphere a go:CelestialObject ;
-    rdfs:label "Celestial Sphere" .
-
-:RotationEvent a go:Event ;
-    go:hasTheme :CelestialSphere ;
-    go:causedBy :GOD .
-
-:ObservationEvent a go:Event ;
-    go:HasAgent :Abu_al-Hasan ;
-    go:HasTheme :RotationEvent .
-go:Event rdfs:label "رخداد"@fa.
+ex:acknowledgment_event a go:event ;
+    go:eventtype "acknowledgment" ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:this_building ;
+    go:hasparticipant ex:the_builder .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-26> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-25> rdf:type owl:ontology .
 
-ex:Abu_al-Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan" .
+:abu_al-hasan a go:person ;
+    rdfs:label "abu al-hasan" .
 
-ex:Clouds a go:Substance ;
+:god a go:deity .
+
+:celestialsphere a go:celestialobject ;
+    rdfs:label "celestial sphere" .
+
+:rotationevent a go:event ;
+    go:hastheme :celestialsphere ;
+    go:causedby :god .
+
+:observationevent a go:event ;
+    go:hasagent :abu_al-hasan ;
+    go:hastheme :rotationevent .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/218-26> rdf:type owl:ontology .
+
+ex:abu_al-hasan a go:person ;
+    rdfs:label "abu al-hasan" .
+
+ex:clouds a go:substance ;
     rdfs:label "clouds" .
 
-ex:FormationEvent a go:CreationEvent ;
-    go:HasTheme ex:Clouds .
+ex:formationevent a go:creationevent ;
+    go:hastheme ex:clouds .
 
-ex:SawFormation a go:PerceptionEvent ;
-    go:HasAgent ex:Abu_al-Hasan ;
-    go:HasTheme ex:FormationEvent .
+ex:sawformation a go:perceptionevent ;
+    go:hasagent ex:abu_al-hasan ;
+    go:hastheme ex:formationevent .
 
-ex:SpeechEvent a go:CommunicationEvent ;
-    go:HasAgent ex:Abu_al-Hasan ;
-    go:hasContent "I saw the formation of clouds." .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/218-27> rdf:type owl:Ontology .
-
-ex:SpeechEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:AbuHasan ;
-    go:HasTheme ex:PerceptionEvent1 .
-
-ex:PerceptionEvent1 a go:PerceptionEvent ;
-    go:HasAgent ex:AbuHasan ;
-    go:HasTheme ex:ChangingWindsEvent1 .
-
-ex:ChangingWindsEvent1 a go:TransformationEvent ;
-    go:HasTheme ex:Winds .
-
-ex:AbuHasan a go:Person ;
-    rdfs:label "Abu al-Hasan" ;
-    go:hasHonorific "peace be upon him" .
-
-ex:Winds a go:NaturalPhenomenon .
+ex:speechevent a go:communicationevent ;
+    go:hasagent ex:abu_al-hasan ;
+    go:hascontent "i saw the formation of clouds." .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-28> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-27> rdf:type owl:ontology .
 
-:Abu_al_Hasan a go:Person .
-:Sun a go:CelestialBody .
-:Moon a go:CelestialBody .
-:Stars a go:CelestialBody .
+ex:speechevent1 a go:communicationevent ;
+    go:hasagent ex:abuhasan ;
+    go:hastheme ex:perceptionevent1 .
 
-:Say_Abu_al_Hasan a ex:Saying ;
-    go:HasAgent :Abu_al_Hasan ;
-    go:HasTheme :See_Abu_al_Hasan_Path_CelestialBodies .
+ex:perceptionevent1 a go:perceptionevent ;
+    go:hasagent ex:abuhasan ;
+    go:hastheme ex:changingwindsevent1 .
 
-:See_Abu_al_Hasan_Path_CelestialBodies a ex:Seeing ;
-    go:HasAgent :Abu_al_Hasan ;
-    go:HasTheme [ a go:Course ;
-                  go:Of :Sun, :Moon, :Stars
+ex:changingwindsevent1 a go:transformationevent ;
+    go:hastheme ex:winds .
+
+ex:abuhasan a go:person ;
+    rdfs:label "abu al-hasan" ;
+    go:hashonorific "peace be upon him" .
+
+ex:winds a go:naturalphenomenon .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/218-28> rdf:type owl:ontology .
+
+:abu_al_hasan a go:person .
+:sun a go:celestialbody .
+:moon a go:celestialbody .
+:stars a go:celestialbody .
+
+:say_abu_al_hasan a ex:saying ;
+    go:hasagent :abu_al_hasan ;
+    go:hastheme :see_abu_al_hasan_path_celestialbodies .
+
+:see_abu_al_hasan_path_celestialbodies a ex:seeing ;
+    go:hasagent :abu_al_hasan ;
+    go:hastheme [ a go:course ;
+                  go:of :sun, :moon, :stars
                 ] .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-29> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-29> rdf:type owl:ontology .
 
-ex:Abu_al-Hasan a go:Human ;
-    rdfs:label "Abu al-Hasan" ;
-    go:hasHonorific "peace be upon him" .
+ex:abu_al-hasan a go:human ;
+    rdfs:label "abu al-hasan" ;
+    go:hashonorific "peace be upon him" .
 
-ex:SeeingEvent1 a go:PerceptionEvent ;
-    go:HasAgent ex:Abu_al-Hasan ;
-    go:HasTheme ex:Signs1 .
+ex:seeingevent1 a go:perceptionevent ;
+    go:hasagent ex:abu_al-hasan ;
+    go:hastheme ex:signs1 .
 
-ex:Signs1 a ex:SignCollection ;
-    ex:hasSign ex:Sign1 ;
-    ex:hasSign ex:Sign2 .
+ex:signs1 a ex:signcollection ;
+    ex:hassign ex:sign1 ;
+    ex:hassign ex:sign2 .
 
-ex:Sign1 a ex:Sign ;
-    ex:isExtraordinary true ;
-    ex:isClear true .
+ex:sign1 a ex:sign ;
+    ex:isextraordinary true ;
+    ex:isclear true .
 
-ex:Sign2 a ex:Sign ;
-    ex:isExtraordinary true ;
-    ex:isClear true .
+ex:sign2 a ex:sign ;
+    ex:isextraordinary true ;
+    ex:isclear true .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/218-30> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/218-30> rdf:type owl:ontology .
 
-ex:Abu_al_Hasan a go:Person ;
-    rdfs:label "Abu al-Hasan" ;
+ex:abu_al_hasan a go:person ;
+    rdfs:label "abu al-hasan" ;
     ex:title "peace be upon him" .
 
-ex:Building1 a go:Building .
+ex:building1 a go:building .
 
-ex:SayEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:hasContent ex:KnowledgeEvent1 .
+ex:sayevent1 a go:communicationevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hascontent ex:knowledgeevent1 .
 
-ex:KnowledgeEvent1 a go:KnowledgeEvent ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:HasTheme ex:Building1 .
+ex:knowledgeevent1 a go:knowledgeevent ;
+    go:hasagent ex:abu_al_hasan ;
+    go:hastheme ex:building1 .
 
-ex:Building1 ex:hasMeasure ex:Measure1 ;
-    ex:hasOrigin ex:Origin1 .
+ex:building1 ex:hasmeasure ex:measure1 ;
+    ex:hasorigin ex:origin1 .
 
-ex:Measure1 a go:Quantity .
-ex:Origin1 a go:Origin .
+ex:measure1 a go:quantity .
+ex:origin1 a go:origin .

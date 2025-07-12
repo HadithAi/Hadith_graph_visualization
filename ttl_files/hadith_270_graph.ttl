@@ -1,112 +1,115 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/270#> .
+@prefix ex: <http://etratnet.ir/graph/example/270#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/270> rdf:type go:ontology ;
+        go:hascontent "10.  از ابوالحسن الرضا عليه‌السلام پرسيدم: آيا خدا وصف مى‌شود؟ فرمود: «مگر قرآن را نمى‌خوانى؟» عرض كردم: چرا. فرمود: «مگر اين سخن خداى تعالى را نمى‌خوانى كه: «ديده‌ها او را در نمى‌يابند و او ديده‌ها را در مى‌يابد»؟» عرض كردم: چرا. فرمود: «مى‌دانيد ديده‌ها چيست؟» عرض كردم: بلى. فرمود: «چيست؟» عرض كردم: بينايى‌هاى چشم‌ها. فرمود: اوهام دل‌ها بزرگ‌تر از بينايى چشم‌هاست. اوهام او را در نمى‌يابند و او اوهام را در مى‌يابد»."@fa,
+        "10.  عَنْ أَبِي الْحَسَنِ الرِّضَا عليه‌السلام، قَالَ: سَأَلْتُهُ عَنِ اللّه‌ِ: هَلْ يُوصَفُ؟ فَقَالَ: «أَ مَا تَقْرَأُ الْقُرْآنَ؟»، قُلْتُ: بَلى، قَالَ: «أَ مَا تَقْرَأُ قَوْلَهُ تَعَالى: «لاَ تُدْرِكُهُ الْأَبْصارُ وَهُوَ يُدْرِكُ الْأَبْصارَ»؟»، قُلْتُ: بَلى، قَالَ: «فَتَعْرِفُونَ الْأَبْصَارَ؟»، قُلْتُ: بَلى، قَالَ: «مَا هِيَ؟»، قُلْتُ: أَبْصَارُ الْعُيُونِ، فَقَالَ: «إِنَّ أَوْهَامَ الْقُلُوبِ أَكْبَرُ مِنْ أَبْصَارِ الْعُيُونِ، فَهُوَ لاَ تُدْرِكُهُ الْأَوْهَامُ، وَهُوَ يُدْرِكُ الْأَوْهَامَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/270-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/270-1> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    rdfs:label "God Almighty" .
+ex:god a go:substance ;
+    rdfs:label "god almighty" .
 
-ex:Eyes a go:Substance ;
+ex:eyes a go:substance ;
     rdfs:label "the eyes" .
 
-ex:Event1 a go:Event ;
-    go:hasAgent ex:Eyes ;
-    go:hasTheme ex:God ;
-    go:hasAction "perceive" ;
-    go:hasNegation true .
+ex:event1 a go:event ;
+    go:hasagent ex:eyes ;
+    go:hastheme ex:god ;
+    go:hasaction "perceive" ;
+    go:hasnegation true .
 
-ex:Event2 a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:Eyes ;
-    go:hasAction "perceive" ;
-    go:hasNegation false .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:event2 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:eyes ;
+    go:hasaction "perceive" ;
+    go:hasnegation false .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/270-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/270-2> rdf:type owl:ontology .
 
-ex:Al-Absar a go:VisualPerception ;
+ex:al-absar a go:visualperception ;
     rdfs:label "الأبصار"@ar ;
-    rdfs:comment "The eyesight"@en .
+    rdfs:comment "the eyesight"@en .
 
-ex:Absar_Al-Oyoon a go:VisualPerception ;
+ex:absar_al-oyoon a go:visualperception ;
     rdfs:label "أبصار العيون"@ar ;
     rdfs:comment "visions of the eyes"@en .
 
-# Statement indicating equivalence or definition
-ex:Al-Absar go:definition ex:Absar_Al-Oyoon .
+# statement indicating equivalence or definition
+ex:al-absar go:definition ex:absar_al-oyoon .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/270-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/270-3> rdf:type owl:ontology .
 
-# Entities
-ex:Heart a go:organ .
-ex:Eye a go:organ .
+# entities
+ex:heart a go:organ .
+ex:eye a go:organ .
 
-# Perceptions
-ex:IllusionOfHeart a go:conceptualState ;
-    go:hasAgent ex:Heart ;
-    rdfs:label "Illusions of hearts" .
+# perceptions
+ex:illusionofheart a go:conceptualstate ;
+    go:hasagent ex:heart ;
+    rdfs:label "illusions of hearts" .
 
-ex:VisionOfEye a go:conceptualState ;
-    go:hasAgent ex:Eye ;
-    rdfs:label "Visions of eyes" .
+ex:visionofeye a go:conceptualstate ;
+    go:hasagent ex:eye ;
+    rdfs:label "visions of eyes" .
 
-# Comparison event
-ex:IllusionGreaterThanVision a go:Event , ex:ComparisonEvent ;
-    ex:comparesGreaterThan ex:IllusionOfHeart , ex:VisionOfEye .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/270-4> rdf:type owl:Ontology .
-
-ex:Allah a go:DivineAgent ;
-    rdfs:label "Allah the Almighty"@en .
-
-ex:IllusionsOfHearts a go:MentalPhenomenon ;
-    rdfs:label "Illusions of the Hearts"@en .
-
-ex:NonComprehensionEvent a go:NegativeCognitiveEvent ;
-    rdfs:label "Illusions do not comprehend Allah"@en ;
-    go:HasAgent ex:IllusionsOfHearts ;
-    go:HasTheme ex:Allah .
+# comparison event
+ex:illusiongreaterthanvision a go:event , ex:comparisonevent ;
+    ex:comparesgreaterthan ex:illusionofheart , ex:visionofeye .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/270-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/270-4> rdf:type owl:ontology .
 
-ex:Event1 rdf:type go:PerceptionEvent ;
-    go:HasAgent ex:God_Almighty ;
-    go:HasTheme ex:Illusions_of_Hearts .
+ex:allah a go:divineagent ;
+    rdfs:label "allah the almighty"@en .
 
-ex:God_Almighty rdf:type go:Agent ;
-    rdfs:label "God Almighty" .
+ex:illusionsofhearts a go:mentalphenomenon ;
+    rdfs:label "illusions of the hearts"@en .
 
-ex:Illusions_of_Hearts rdf:type go:MentalState ;
-    go:possessedBy ex:Hearts ;
+ex:noncomprehensionevent a go:negativecognitiveevent ;
+    rdfs:label "illusions do not comprehend allah"@en ;
+    go:hasagent ex:illusionsofhearts ;
+    go:hastheme ex:allah .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/270-5> rdf:type owl:ontology .
+
+ex:event1 rdf:type go:perceptionevent ;
+    go:hasagent ex:god_almighty ;
+    go:hastheme ex:illusions_of_hearts .
+
+ex:god_almighty rdf:type go:agent ;
+    rdfs:label "god almighty" .
+
+ex:illusions_of_hearts rdf:type go:mentalstate ;
+    go:possessedby ex:hearts ;
     rdfs:label "illusions of the hearts" .
 
-ex:Hearts rdf:type go:AnatomicalEntity ;
+ex:hearts rdf:type go:anatomicalentity ;
     rdfs:label "hearts" .
-go:Agent rdfs:label "عامل"@fa.
+go:agent rdfs:label "عامل"@fa.

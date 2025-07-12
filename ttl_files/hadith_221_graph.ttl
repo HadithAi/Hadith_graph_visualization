@@ -1,163 +1,166 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/221#> .
+@prefix ex: <http://etratnet.ir/graph/example/221#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/221> rdf:type go:ontology ;
+        go:hascontent "7. «آفرينشِ خداوندِ تسخيرگر، سلطنت خداوندِ قاهر، شكوه آشكار خداوند، روشنايى خيره‌كننده خداوند، برهان راستين خداوند، و آنچه زبان بندگان بدان گويا [و معترف]شده، و آنچه خداوند توسط پيامبران فرستاده، و آنچه بر بندگان نازل فرموده، خود براى خردمندان دليلى كافى بر وجود خداوندگار ارجمند و شكوهمند است»."@fa,
+        "7. عَنْ أَبِي جَعْفَرٍ عليه‌السلام، قَالَ: «كَفى لِأُولِي الْأَلْبَابِ بِخَلْقِ الرَّبِّ الْمُسَخِّرِ، وَمُلْكِ الرَّبِّ الْقَاهِرِ، وَجَلاَلِ الرَّبِّ الظَّاهِرِ، وَنُورِ الرَّبِّ الْبَاهِرِ، وَبُرْهَانِ الرَّبِّ الصَّادِقِ، وَمَا أَنْطَقَ بِهِ أَلْسُنَ الْعِبَادِ، وَمَا أَرْسَلَ بِهِ الرُّسُلَ، وَمَا أَنْزَلَ عَلَى الْعِبَادِ، دَلِيلاً عَلَى الرَّبِّ عَزَّ وَجَلَّ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/221-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/221-1> rdf:type owl:ontology .
 
-ex:CreationEvent1 a go:Creation, go:Event ;
-    go:HasAgent ex:TheLord ;
-    go:HasTheme ex:Livestock ;
-    go:HasRecipient ex:PeopleOfUnderstanding .
+ex:creationevent1 a go:creation, go:event ;
+    go:hasagent ex:thelord ;
+    go:hastheme ex:livestock ;
+    go:hasrecipient ex:peopleofunderstanding .
 
-ex:TheLord a go:Substance .
-ex:Livestock a go:Substance ;
-    ex:sufficient "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
-ex:PeopleOfUnderstanding a go:Substance .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:thelord a go:substance .
+ex:livestock a go:substance ;
+    ex:sufficient "true"^^<http://www.w3.org/2001/xmlschema#boolean> .
+ex:peopleofunderstanding a go:substance .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/221-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/221-2> rdf:type owl:ontology .
 
-ex:Event1 a go:State ;
-    go:HasAgent ex:LordGodAlmighty ;
-    go:HasTheme ex:WisePeople ;
-    go:StateType ex:Sufficiency .
+ex:event1 a go:state ;
+    go:hasagent ex:lordgodalmighty ;
+    go:hastheme ex:wisepeople ;
+    go:statetype ex:sufficiency .
 
-ex:LordGodAlmighty a go:Deity ;
-    rdfs:label "Lord God Almighty"@en .
+ex:lordgodalmighty a go:deity ;
+    rdfs:label "lord god almighty"@en .
 
-ex:WisePeople a go:PersonGroup ;
+ex:wisepeople a go:persongroup ;
     rdfs:label "those who have understanding"@en .
 
-ex:Sufficiency a go:StateType ;
+ex:sufficiency a go:statetype ;
     rdfs:label "sufficiency"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/221-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/221-3> rdf:type owl:ontology .
 
-ex:ManifestLordMajesty a go:Substance ;
-    rdfs:label "Manifest Lord's Majesty"@en .
+ex:manifestlordmajesty a go:substance ;
+    rdfs:label "manifest lord's majesty"@en .
 
-ex:PeopleOfUnderstanding a go:Substance ;
-    rdfs:label "People of Understanding"@en .
+ex:peopleofunderstanding a go:substance ;
+    rdfs:label "people of understanding"@en .
 
-ex:SufficiencyEvent a go:Event ;
-    rdfs:label "Sufficiency"@en ;
-    go:HasTheme ex:ManifestLordMajesty ;
-    go:HasRecipient ex:PeopleOfUnderstanding .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/221-4> rdf:type owl:Ontology .
-
-ex:BrightLightOfLord a go:Substance ;
-    rdfs:label "Bright Light of the Lord"@en .
-
-ex:PeopleOfUnderstanding a go:group ;
-    rdfs:label "People of Understanding"@en .
-
-ex:SufficiencyState a go:State ;
-    rdfs:label "Sufficiency of Bright Light for People of Understanding"@en ;
-    go:HasTheme ex:BrightLightOfLord ;
-    go:HasRecipient ex:PeopleOfUnderstanding ;
-    go:hasProperty ex:Sufficiency .
-
-ex:Sufficiency a go:Property ;
-    rdfs:label "Sufficient"@en .
-go:Substance rdfs:label "شی"@fa.
+ex:sufficiencyevent a go:event ;
+    rdfs:label "sufficiency"@en ;
+    go:hastheme ex:manifestlordmajesty ;
+    go:hasrecipient ex:peopleofunderstanding .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/221-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/221-4> rdf:type owl:ontology .
 
-ex:ProofOfTruthfulLord a go:Substance ;
-    ex:hasAttribute ex:TruthfulLord .
+ex:brightlightoflord a go:substance ;
+    rdfs:label "bright light of the lord"@en .
 
-ex:ThoseOfSoundUnderstanding a go:group .
+ex:peopleofunderstanding a go:group ;
+    rdfs:label "people of understanding"@en .
 
-ex:SufficiencyRelation a go:state ;
-    go:HasTheme ex:ProofOfTruthfulLord ;
-    go:HasRecipient ex:ThoseOfSoundUnderstanding .
-go:Substance rdfs:label "شی"@fa.
+ex:sufficiencystate a go:state ;
+    rdfs:label "sufficiency of bright light for people of understanding"@en ;
+    go:hastheme ex:brightlightoflord ;
+    go:hasrecipient ex:peopleofunderstanding ;
+    go:hasproperty ex:sufficiency .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/221-6> rdf:type owl:Ontology .
-
-ex:Event_Pronouncing a go:Event ;
-    go:HasAgent ex:Entity_Tongues_of_Servants ;
-    go:HasTheme ex:Entity_Statement_Uttered .
-
-ex:Entity_Tongues_of_Servants a go:Agent ;
-    go:PartOf ex:Entity_Servants .
-
-ex:Entity_Statement_Uttered a go:Substance ;
-    go:IsEvidenceOf ex:Entity_Lord_Almighty .
-
-ex:Entity_Servants a go:Group .
-
-ex:Entity_Lord_Almighty a go:Deity ;
-    go:HasAttribute ex:Attribute_Almighty .
-
-ex:Attribute_Almighty a go:Attribute .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:sufficiency a go:property ;
+    rdfs:label "sufficient"@en .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/221-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/221-5> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:Messengers ;
-    ex:isEvidenceOf ex:Lord_Almighty .
+ex:proofoftruthfullord a go:substance ;
+    ex:hasattribute ex:truthfullord .
 
-ex:Messengers a go:agent .
-ex:Lord_Almighty a go:deity .
-go:Event rdfs:label "رخداد"@fa.
+ex:thoseofsoundunderstanding a go:group .
+
+ex:sufficiencyrelation a go:state ;
+    go:hastheme ex:proofoftruthfullord ;
+    go:hasrecipient ex:thoseofsoundunderstanding .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/221-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/221-6> rdf:type owl:ontology .
 
-ex:Guidance a go:Substance ;
+ex:event_pronouncing a go:event ;
+    go:hasagent ex:entity_tongues_of_servants ;
+    go:hastheme ex:entity_statement_uttered .
+
+ex:entity_tongues_of_servants a go:agent ;
+    go:partof ex:entity_servants .
+
+ex:entity_statement_uttered a go:substance ;
+    go:isevidenceof ex:entity_lord_almighty .
+
+ex:entity_servants a go:group .
+
+ex:entity_lord_almighty a go:deity ;
+    go:hasattribute ex:attribute_almighty .
+
+ex:attribute_almighty a go:attribute .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-7> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:messengers ;
+    ex:isevidenceof ex:lord_almighty .
+
+ex:messengers a go:agent .
+ex:lord_almighty a go:deity .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/221-8> rdf:type owl:ontology .
+
+ex:guidance a go:substance ;
     go:label "guidance" .
 
-ex:Servants a go:Agent ;
+ex:servants a go:agent ;
     go:label "servants" .
 
-ex:Lord_a a go:Agent ;
-    go:label "Lord, the Almighty" .
+ex:lord_a a go:agent ;
+    go:label "lord, the almighty" .
 
-ex:SendingDownGuidance a go:Event ;
-    go:HasTheme ex:Guidance ;
-    go:HasRecipient ex:Servants ;
-    go:HasTopic ex:Lord_a ;
-    go:EventStatus "notOccurred"^^<http://www.w3.org/2001/XMLSchema#string> .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:sendingdownguidance a go:event ;
+    go:hastheme ex:guidance ;
+    go:hasrecipient ex:servants ;
+    go:hastopic ex:lord_a ;
+    go:eventstatus "notoccurred"^^<http://www.w3.org/2001/xmlschema#string> .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.

@@ -1,115 +1,118 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/399#> .
+@prefix ex: <http://etratnet.ir/graph/example/399#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/399> rdf:type go:ontology ;
+        go:hascontent "2. از امام باقر عليه‌السلام شنيدم كه مى‌فرمايد: «در يكى از كتاب‌هايى كه خداوند فرو فرستاده آمده است: منم، خدا. خدايى جز من نيست. خوبى و بدى را آفريدم. پس، خوشا به حال كسى كه خوبى را با دستان او به اجرا درآورم، و بدا به حال كسى كه بدى را با دستان او به اجرا درآورم، و واى به حال كسى كه بگويد: چرا آن؟ و چرا اين؟»."@fa,
+        "2.  سَمِعْتُ أَبَا جَعْفَرٍ عليه‌السلام يَقُولُ: «إِنَّ فِي بَعْضِ مَا أَنْزَلَ اللّه‌ُ مِنْ كُتُبِهِ: أَنِّي أَنَا اللّه‌ُ لاَ إِلهَ إِلاَّ أَنَا، خَلَقْتُ الْخَيْرَ، وَخَلَقْتُ الشَّرَّ، فَطُوبى لِمَنْ أَجْرَيْتُ عَلى يَدَيْهِ الْخَيْرَ، وَوَيْلٌ لِمَنْ أَجْرَيْتُ عَلى يَدَيْهِ الشَّرَّ، وَوَيْلٌ لِمَنْ يَقُولُ: كَيْفَ ذَا؟ وَكَيْفَ ذَا؟»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/399-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/399-1> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    ex:isOnlyDeity true ;
-    ex:hasExclusiveDeity ex:God .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/399-2> rdf:type owl:Ontology .
-
-ex:God a go:Person .
-ex:Good a go:Substance .
-ex:CreationEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Good .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:substance ;
+    ex:isonlydeity true ;
+    ex:hasexclusivedeity ex:god .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/399-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/399-2> rdf:type owl:ontology .
 
-ex:CreationEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Evil .
-
-ex:God a go:Substance ;
-    go:label "God"@en .
-
-ex:Evil a go:Substance ;
-    go:label "Evil"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god a go:person .
+ex:good a go:substance .
+ex:creationevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:good .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/399-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/399-3> rdf:type owl:ontology .
 
-ex:BlessedPerson a go:Substance ;
-    go:hasState ex:BlessedState .
+ex:creationevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:evil .
 
-ex:God a go:Substance .
+ex:god a go:substance ;
+    go:label "god"@en .
 
-ex:GoodEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:BlessedPerson ;
-    go:hasEffect ex:Good .
-
-ex:Good a go:Quality .
-
-ex:BlessedState a go:state ;
-    go:causedBy ex:GoodEvent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:evil a go:substance ;
+    go:label "evil"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/399-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/399-4> rdf:type owl:ontology .
 
-ex:Person1 a go:Human ;
-    go:hasState ex:WoeState1 .
+ex:blessedperson a go:substance ;
+    go:hasstate ex:blessedstate .
 
-ex:God1 a go:Deity .
+ex:god a go:substance .
 
-ex:Evil1 a go:NegativeEvent .
+ex:goodevent a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:blessedperson ;
+    go:haseffect ex:good .
 
-ex:CauseEvilEvent1 a go:Event ;
-    go:HasAgent ex:God1 ;
-    go:HasInstrument ex:Person1 ;
-    go:HasTheme ex:Evil1 .
+ex:good a go:quality .
 
-ex:WoeState1 a go:NegativeState ;
-    go:appliesTo ex:Person1 .
-go:Event rdfs:label "رخداد"@fa.
+ex:blessedstate a go:state ;
+    go:causedby ex:goodevent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/399-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/399-5> rdf:type owl:ontology .
 
-ex:WoeEvent rdf:type go:State ;
-    go:affects ex:PersonWhoSays .
+ex:person1 a go:human ;
+    go:hasstate ex:woestate1 .
 
-ex:SayingEvent rdf:type go:CommunicationEvent ;
-    go:HasAgent ex:PersonWhoSays ;
-    go:HasTheme ex:QuestionContent .
+ex:god1 a go:deity .
 
-ex:PersonWhoSays rdf:type go:Agent .
+ex:evil1 a go:negativeevent .
 
-ex:QuestionContent rdf:type go:InformationContent ;
-    go:hasText "How is this so?" .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:causeevilevent1 a go:event ;
+    go:hasagent ex:god1 ;
+    go:hasinstrument ex:person1 ;
+    go:hastheme ex:evil1 .
+
+ex:woestate1 a go:negativestate ;
+    go:appliesto ex:person1 .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/399-6> rdf:type owl:ontology .
+
+ex:woeevent rdf:type go:state ;
+    go:affects ex:personwhosays .
+
+ex:sayingevent rdf:type go:communicationevent ;
+    go:hasagent ex:personwhosays ;
+    go:hastheme ex:questioncontent .
+
+ex:personwhosays rdf:type go:agent .
+
+ex:questioncontent rdf:type go:informationcontent ;
+    go:hastext "how is this so?" .
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.

@@ -1,211 +1,214 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/300#> .
+@prefix ex: <http://etratnet.ir/graph/example/300#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/300> rdf:type go:ontology ;
+        go:hascontent "2.  در داستان زنديقى كه از امام صادق عليه‌السلام پرسش‌هايى كرد آمده است كه گفت: آيا شما مى‌گويى او شنوا و بيناست؟ امام صادق عليه‌السلام فرمود: «او شنوا و بيناست؛ شنواست بدون عضوى [براى شنوايى]، و بيناست بدون اندامى [براى بينايى]، بلكه به ذات خود مى‌شنود و به ذات خود مى‌بيند. معناى اين كه مى‌گويم: "او به ذات خود مى‌شنود" آن نيست كه او يك چيز است و ذات چيز ديگر؛ بلكه چون تو از من پرسيدى، خواستم براى فهماندن مطلب به تو آنچه را در انديشه‌ام دارم به عبارت درآورم. به تعبير ديگر، او با كلّ وجودش مى‌شنود امّا نه كلّى كه جزء دارد؛ چون كل از نظر ما چيزى است كه جزء و پاره دارد؛ بلكه مقصودم فهمانيدن به تو و بيان ما فى الضميرم بود. خلاصه اين كه او شنوا و بينا و دانا و آگاه است بى آن كه گونه‌گونى [و كثرت] در ذات و معنا باشد»."@fa,
+        "2.  فِي حَدِيثِ الزِّنْدِيقِ ـ الَّذِي سَأَلَ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام ـ أَنَّهُ قَالَ لَهُ: أَ تَقُولُ: إِنَّهُ سَمِيعٌ بَصِيرٌ؟ فَقَالَ أَبُو عَبْدِ اللّه‌ِ عليه‌السلام: «هُوَ سَمِيعٌ بَصِيرٌ، سَمِيعٌ بِغَيْرِ جَارِحَةٍ، وَبَصِيرٌ بِغَيْرِ آلَةٍ، بَلْ يَسْمَعُ بِنَفْسِهِ، وَيُبْصِرُ بِنَفْسِهِ، وَلَيْسَ قَوْلِي: إِنَّهُ سَمِيعٌ بِنَفْسِهِ أَنَّهُ شَيْءٌ وَالنَّفْسُ شَيْءٌ آخَرُ، وَلكِنِّي أَرَدْتُ عِبَارَةً عَنْ نَفْسِي؛ إِذْ كُنْتُ مَسْؤُولاً، وَإِفْهَاماً لَكَ؛ إِذْ كُنْتَ سَائِلاً، فَأَقُولُ: يَسْمَعُ بِكُلِّهِ لاَ أَنَّ كُلَّهُ لَهُ بَعْضٌ؛ لِأَنَّ الْكُلَّ لَنَا لَهُ بَعْضٌ، ولكِنْ أَرَدْتُ إِفْهَامَكَ، وَالتَّعْبِيرَ عَنْ نَفْسِي، وَلَيْسَ مَرْجِعِي فِي ذلِكَ كُلِّهِ إِلاَّ إِلى أَنَّهُ السَّمِيعُ الْبَصِيرُ، الْعَالِمُ الْخَبِيرُ، بِلاَ اخْتِلاَفِ الذَّاتِ، وَلاَ اخْتِلاَفِ مَعْنىً»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-1> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:hasQuality ex:AllHearing, ex:AllSeeing .
+ex:god a go:substance ;
+    go:hasquality ex:allhearing, ex:allseeing .
 
-ex:AllHearing a go:Quality ;
-    rdfs:label "All-Hearing"@en .
+ex:allhearing a go:quality ;
+    rdfs:label "all-hearing"@en .
 
-ex:AllSeeing a go:Quality ;
-    rdfs:label "All-Seeing"@en .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/300-2> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-  go:hasProperty ex:AllHearing .
-
-ex:AllHearing a go:Property ;
-  go:isUnaided true ;
-  go:mediator ex:NoPainfulInstrument .
-
-ex:NoPainfulInstrument a go:Object ;
-  go:hasQuality ex:NonInjurious .
+ex:allseeing a go:quality ;
+    rdfs:label "all-seeing"@en .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-2> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-    rdfs:label "God" .
+ex:god a go:deity ;
+  go:hasproperty ex:allhearing .
 
-ex:DifferentTool a go:Object ;
-    rdfs:label "Different Tool" .
+ex:allhearing a go:property ;
+  go:isunaided true ;
+  go:mediator ex:nopainfulinstrument .
 
-ex:AwarenessEvent a go:State ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:DifferentTool ;
-    rdfs:label "God's awareness of using a different tool" .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/300-4> rdf:type owl:Ontology .
-
-ex:God a go:Deity ;
-    rdfs:label "God" .
-
-ex:GodHearingEvent a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasIntensity "personal" .
-go:Event rdfs:label "رخداد"@fa.
+ex:nopainfulinstrument a go:object ;
+  go:hasquality ex:noninjurious .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-3> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasInstrument ex:GodSelf .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:God a go:Agent ;
-    a go:Substance .
+ex:differenttool a go:object ;
+    rdfs:label "different tool" .
 
-ex:GodSelf a go:Self .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:awarenessevent a go:state ;
+    go:hasagent ex:god ;
+    go:hastheme ex:differenttool ;
+    rdfs:label "god's awareness of using a different tool" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-4> rdf:type owl:ontology .
 
-ex:Statement1 a go:AssertionEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:God_Hearing_Self_Attribute .
+ex:god a go:deity ;
+    rdfs:label "god" .
 
-ex:God a go:Substance ;
-    go:HasAttribute ex:HearingBySelf .
+ex:godhearingevent a go:event ;
+    go:hasagent ex:god ;
+    go:hasintensity "personal" .
+go:event rdfs:label "رخداد"@fa.
 
-ex:HearingBySelf a go:Property ;
-    go:HasAgent ex:God ;
-    go:HasMethod ex:Self .
 
-ex:Self a go:Concept .
+@base <http://etratnet.ir/ontology/> .
 
-ex:NegationOfSeparateEntities a go:NegationAssertion ;
-    go:NegatesStatement [
-        go:HasTheme ex:Hearing ;
-        go:HasTheme ex:Self
+<http://etratnet.ir/ontology/300-5> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:god ;
+    go:hasinstrument ex:godself .
+
+ex:god a go:agent ;
+    a go:substance .
+
+ex:godself a go:self .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/300-6> rdf:type owl:ontology .
+
+ex:statement1 a go:assertionevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:god_hearing_self_attribute .
+
+ex:god a go:substance ;
+    go:hasattribute ex:hearingbyself .
+
+ex:hearingbyself a go:property ;
+    go:hasagent ex:god ;
+    go:hasmethod ex:self .
+
+ex:self a go:concept .
+
+ex:negationofseparateentities a go:negationassertion ;
+    go:negatesstatement [
+        go:hastheme ex:hearing ;
+        go:hastheme ex:self
     ] .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-7> rdf:type owl:ontology .
 
-ex:AbuAbdullah a go:Person .
-ex:AllahSelfHearing a ex:Statement ;
-    ex:content "Allah is self-hearing" .
+ex:abuabdullah a go:person .
+ex:allahselfhearing a ex:statement ;
+    ex:content "allah is self-hearing" .
 
-ex:ExpressionEvent1 a go:Expression ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasTheme ex:AllahSelfHearing .
+ex:expressionevent1 a go:expression ;
+    go:hasagent ex:abuabdullah ;
+    go:hastheme ex:allahselfhearing .
 
-ex:AskingEvent1 a go:Asking ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasRecipient ex:AbuAbdullah .
+ex:askingevent1 a go:asking ;
+    go:hasagent ex:abuabdullah ;
+    go:hasrecipient ex:abuabdullah .
 
-ex:AnsweringEvent1 a go:Answering ;
-    go:HasAgent ex:AbuAbdullah ;
-    go:HasRecipient ex:AbuAbdullah .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/300-8> rdf:type owl:Ontology .
-
-ex:event1 a go:AuditoryPerceptionEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:EverythingInTheUniverse .
-
-ex:God a go:Deity .
-ex:Universe a go:Substance .
-ex:EverythingInTheUniverse a go:thematicConcept ;
-    go:isPartOf ex:Universe .
-go:Substance rdfs:label "شی"@fa.
+ex:answeringevent1 a go:answering ;
+    go:hasagent ex:abuabdullah ;
+    go:hasrecipient ex:abuabdullah .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-8> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    ex:isWholeOf ex:Universe .
+ex:event1 a go:auditoryperceptionevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:everythingintheuniverse .
 
-ex:Universe a go:Substance ;
-    ex:isPartOf ex:God .
+ex:god a go:deity .
+ex:universe a go:substance .
+ex:everythingintheuniverse a go:thematicconcept ;
+    go:ispartof ex:universe .
+go:substance rdfs:label "شی"@fa.
 
-ex:Negation1 a ex:Negation ;
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/300-9> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    ex:iswholeof ex:universe .
+
+ex:universe a go:substance ;
+    ex:ispartof ex:god .
+
+ex:negation1 a ex:negation ;
     ex:negates [
-        ex:subject ex:Universe ;
-        ex:predicate ex:isPartOf ;
-        ex:object ex:God
+        ex:subject ex:universe ;
+        ex:predicate ex:ispartof ;
+        ex:object ex:god
     ] .
-go:Substance rdfs:label "شی"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-10> rdf:type owl:ontology .
 
-ex:Expression1 a go:Event ;
-    go:HasTheme god:God ;
-    go:Attributes god:God god:AllHearing , god:AllSeeing , god:AllKnowing , god:AllAware ;
-    ex:DeniesDifferenceInEssence true .
+ex:expression1 a go:event ;
+    go:hastheme god:god ;
+    go:attributes god:god god:allhearing , god:allseeing , god:allknowing , god:allaware ;
+    ex:deniesdifferenceinessence true .
 
-god:God a go:Substance .
-god:AllHearing a go:Attribute .
-god:AllSeeing a go:Attribute .
-god:AllKnowing a go:Attribute .
-god:AllAware a go:Attribute .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+god:god a go:substance .
+god:allhearing a go:attribute .
+god:allseeing a go:attribute .
+god:allknowing a go:attribute .
+god:allaware a go:attribute .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/300-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/300-11> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:hasQuality ex:AllHearing , ex:AllSeeing , ex:AllKnowing , ex:AllAware .
+ex:god a go:substance ;
+    go:hasquality ex:allhearing , ex:allseeing , ex:allknowing , ex:allaware .
 
-ex:AllHearing a go:Quality .
-ex:AllSeeing a go:Quality .
-ex:AllKnowing a go:Quality .
-ex:AllAware a go:Quality .
+ex:allhearing a go:quality .
+ex:allseeing a go:quality .
+ex:allknowing a go:quality .
+ex:allaware a go:quality .
 
-ex:ExpressionOfGod a go:Event ;
-    go:hasAgent ex:God ;
-    go:hasTheme ex:AttributesList ;
-    ex:hasMeaningDifference false .
+ex:expressionofgod a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:attributeslist ;
+    ex:hasmeaningdifference false .
 
-ex:AttributesList a go:Collection ;
-    go:hasMember ex:AllHearing , ex:AllSeeing , ex:AllKnowing , ex:AllAware .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:attributeslist a go:collection ;
+    go:hasmember ex:allhearing , ex:allseeing , ex:allknowing , ex:allaware .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.

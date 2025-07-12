@@ -1,76 +1,79 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/426#> .
+@prefix ex: <http://etratnet.ir/graph/example/426#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/426> rdf:type go:ontology ;
+        go:hascontent "1.  «خدا را بر آفريدگانش اين حق نيست كه بشناسند. بلكه آفريدگان را بر خدا اين حق است كه به آنان بشناساند، و چون به آفريدگان شناساند آنان وظيفه دارند كه بپذيرند»."@fa,
+        "1.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ: «لَيْسَ لِلّهِ عَلى خَلْقِهِ أَنْ يَعْرِفُوا، وَلِلْخَلْقِ عَلَى اللّه‌ِ أَنْ يُعَرِّفَهُمْ، وَلِلّهِ عَلَى الْخَلْقِ إِذَا عَرَّفَهُمْ أَنْ يَقْبَلُوا»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/426-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/426-1> rdf:type owl:ontology .
 
-ex:God a go:Deity ;
-   rdfs:label "God" .
+ex:god a go:deity ;
+   rdfs:label "god" .
 
-ex:Creation a go:Substance ;
-   rdfs:label "Creation" .
+ex:creation a go:substance ;
+   rdfs:label "creation" .
 
-ex:KnowEvent a go:Event ;
-   rdfs:label "Knowing Event" ;
-   go:HasAgent ex:Creation ;
-   go:HasTheme ex:God .
+ex:knowevent a go:event ;
+   rdfs:label "knowing event" ;
+   go:hasagent ex:creation ;
+   go:hastheme ex:god .
 
-ex:NegativeAssertion a ex:Negation ;
-   ex:Negates ex:KnowEvent .
+ex:negativeassertion a ex:negation ;
+   ex:negates ex:knowevent .
 
-# Asserts that it is negated that Creation knows God, corresponding to the sentence meaning.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+# asserts that it is negated that creation knows god, corresponding to the sentence meaning.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/426-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/426-2> rdf:type owl:ontology .
 
-ex:DefiningEvent a go:EventInstance ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Them ;
-    go:HasRecipient ex:Creation .
+ex:definingevent a go:eventinstance ;
+    go:hasagent ex:god ;
+    go:hastheme ex:them ;
+    go:hasrecipient ex:creation .
 
-ex:God a go:Substance ;
-    rdfs:label "God"@en .
+ex:god a go:substance ;
+    rdfs:label "god"@en .
 
-ex:Them a go:Substance ;
+ex:them a go:substance ;
     rdfs:label "an unspecified group"@en .
 
-ex:Creation a go:Substance ;
-    rdfs:label "Creation"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:creation a go:substance ;
+    rdfs:label "creation"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/426-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/426-3> rdf:type owl:ontology .
 
-ex:God a go:Substance .
-ex:Creation a go:Substance .
-ex:CommandAcceptance a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creation ;
+ex:god a go:substance .
+ex:creation a go:substance .
+ex:commandacceptance a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creation ;
     ex:predicate "accept" ;
-    ex:condition ex:GodKnowsCreation .
+    ex:condition ex:godknowscreation .
 
-ex:GodKnowsCreation a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Creation ;
+ex:godknowscreation a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:creation ;
     ex:predicate "know" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

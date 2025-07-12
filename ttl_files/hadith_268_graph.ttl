@@ -1,80 +1,83 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/268#> .
+@prefix ex: <http://etratnet.ir/graph/example/268#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/268> rdf:type go:ontology ;
+        go:hascontent "8.  «پيامبر خدا صلى‌الله‌عليه‌و‌آله فرمود: شبى كه به آسمان برده شدم، جبرئيل مرا به جايى رساند كه او خود هرگز قدم به آن جا نگذاشته بود. پس، پرده برايش كنار زده شد و خداوند از نور عظمت خود تا دوست داشت به او نماياند»."@fa,
+        "8.  عَنْ أَبِي الْحَسَنِ الرِّضَا عليه‌السلام، قَالَ: «قَالَ رَسُولُ اللّه‌ِ صلى‌الله‌عليه‌و‌آله: لَمَّا أُسْرِيَ بِي إِلَى السَّمَاءِ، بَلَغَ بِي جَبْرَئِيلُ مَكَاناً لَمْ يَطَأْهُ قَطُّ جَبْرَئِيلُ، فَكُشِفَ لَهُ، فَأَرَاهُ اللّه‌ُ مِنْ نُورِ عَظَمَتِهِ مَا أَحَبَّ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/268-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/268-1> rdf:type owl:ontology .
 
-ex:Prophet_Muhammad a go:Person ;
-    rdfs:label "Prophet Muhammad (peace be upon him and his family)" .
+ex:prophet_muhammad a go:person ;
+    rdfs:label "prophet muhammad (peace be upon him and his family)" .
 
-ex:Gabriel a go:Person ;
-    rdfs:label "Gabriel" .
+ex:gabriel a go:person ;
+    rdfs:label "gabriel" .
 
-ex:AscensionEvent a go:Event ;
-    go:HasAgent ex:Prophet_Muhammad ;
-    go:HasLocation ex:Heavens .
+ex:ascensionevent a go:event ;
+    go:hasagent ex:prophet_muhammad ;
+    go:haslocation ex:heavens .
 
-ex:GabrielReachesPlace a go:Event ;
-    go:HasAgent ex:Gabriel ;
-    go:HasTheme ex:UniquePlace .
+ex:gabrielreachesplace a go:event ;
+    go:hasagent ex:gabriel ;
+    go:hastheme ex:uniqueplace .
 
-ex:UniquePlace a go:Place ;
-    go:description "A place in the heavens that Gabriel had never set foot on before" .
+ex:uniqueplace a go:place ;
+    go:description "a place in the heavens that gabriel had never set foot on before" .
 
-ex:Utterance1 a go:Event ;
-    go:HasAgent ex:Prophet_Muhammad ;
-    go:expresses ex:AscensionEvent, ex:GabrielReachesPlace .
-go:Event rdfs:label "رخداد"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/268-2> rdf:type owl:Ontology .
-
-ex:God a go:Agent .
-ex:Gabriel a go:Agent .
-ex:ThatPlace a go:Place .
-
-ex:revelationEvent1 a ex:RevelationEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:ThatPlace ;
-    go:HasRecipient ex:Gabriel .
-go:Agent rdfs:label "عامل"@fa.
+ex:utterance1 a go:event ;
+    go:hasagent ex:prophet_muhammad ;
+    go:expresses ex:ascensionevent, ex:gabrielreachesplace .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/268-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/268-2> rdf:type owl:ontology .
 
-ex:God a go:Substance ;
-    go:denotes <http://dbpedia.org/resource/God> .
+ex:god a go:agent .
+ex:gabriel a go:agent .
+ex:thatplace a go:place .
 
-ex:Gabriel a go:Substance ;
-    go:denotes <http://dbpedia.org/resource/Gabriel> .
+ex:revelationevent1 a ex:revelationevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:thatplace ;
+    go:hasrecipient ex:gabriel .
+go:agent rdfs:label "عامل"@fa.
 
-ex:LightOfGreatness a go:Substance ;
-    go:denotes "Light symbolizing God's greatness" .
 
-ex:ShowingLightEvent a go:Event, ex:eventInstance ;
-    go:HasAgent ex:God ;
-    go:HasRecipient ex:Gabriel ;
-    go:HasTheme ex:LightOfGreatness ;
-    go:hasManner ex:GodsLove .
+@base <http://etratnet.ir/ontology/> .
 
-ex:GodsLove a go:Quality ;
-    go:inheresIn ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+<http://etratnet.ir/ontology/268-3> rdf:type owl:ontology .
+
+ex:god a go:substance ;
+    go:denotes <http://dbpedia.org/resource/god> .
+
+ex:gabriel a go:substance ;
+    go:denotes <http://dbpedia.org/resource/gabriel> .
+
+ex:lightofgreatness a go:substance ;
+    go:denotes "light symbolizing god's greatness" .
+
+ex:showinglightevent a go:event, ex:eventinstance ;
+    go:hasagent ex:god ;
+    go:hasrecipient ex:gabriel ;
+    go:hastheme ex:lightofgreatness ;
+    go:hasmanner ex:godslove .
+
+ex:godslove a go:quality ;
+    go:inheresin ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.

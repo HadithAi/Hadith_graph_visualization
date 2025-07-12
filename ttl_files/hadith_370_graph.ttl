@@ -1,66 +1,69 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/370#> .
+@prefix ex: <http://etratnet.ir/graph/example/370#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/370> rdf:type go:ontology ;
+        go:hascontent "3. ـ درباره اين آيه: «خدا آنچه را بخواهد محو و يا اثبات مى‌كند».  رعد: آيه 39 . ـ: «آيا جز اين است كه آنچه ثابت بوده محو گردانيده مى‌شود، و يا آنچه نبوده است ثبت گردانيده مى‌شود؟»."@fa,
+        "3.  عَنْ أَبِي عَبْدِ اللّه‌ِ عليه‌السلام، قَالَ فِي هذِهِ الاْيَةِ: «يَمْحُواْ اللَّهُ مَا يَشَآءُ وَ يُثْبِتُ» قَالَ: فَقَالَ: «وَهَلْ يُمْحى إِلاَّ مَا كَانَ ثَابِتاً؟ وَهَلْ يُثْبَتُ إِلاَّ مَا لَمْ يَكُنْ؟»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/370-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/370-1> rdf:type owl:ontology .
 
-ex:event1 a go:EraseEvent ;
-    go:HasAgent go:God ;
-    go:HasTheme ex:WhateverHeWills .
+ex:event1 a go:eraseevent ;
+    go:hasagent go:god ;
+    go:hastheme ex:whateverhewills .
 
-go:God a go:Substance .
-ex:WhateverHeWills a go:Substance .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/370-2> rdf:type owl:Ontology .
-
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:WilledThing .
-
-ex:God a go:Agent, go:Substance .
-ex:WilledThing a go:Substance ;
-    go:HasCause ex:God_will .
-
-ex:God_will a go:Volition ;
-    go:HasAgent ex:God .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Agent rdfs:label "عامل"@fa.
+go:god a go:substance .
+ex:whateverhewills a go:substance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/370-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/370-2> rdf:type owl:ontology .
 
-ex:erasureEvent1 a go:ErasureEvent ;
-    go:HasTheme ex:establishedEntity1 .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:willedthing .
 
-ex:establishedEntity1 a go:EstablishedEntity .
+ex:god a go:agent, go:substance .
+ex:willedthing a go:substance ;
+    go:hascause ex:god_will .
+
+ex:god_will a go:volition ;
+    go:hasagent ex:god .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/370-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/370-3> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasTheme ex:nonexistentEntity .
+ex:erasureevent1 a go:erasureevent ;
+    go:hastheme ex:establishedentity1 .
 
-ex:nonexistentEntity a go:entity ;
-    go:hasProperty "did not exist" .
-go:Event rdfs:label "رخداد"@fa.
+ex:establishedentity1 a go:establishedentity .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/370-4> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hastheme ex:nonexistententity .
+
+ex:nonexistententity a go:entity ;
+    go:hasproperty "did not exist" .
+go:event rdfs:label "رخداد"@fa.

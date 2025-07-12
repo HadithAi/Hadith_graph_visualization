@@ -1,187 +1,190 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/338#> .
+@prefix ex: <http://etratnet.ir/graph/example/338#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/338> rdf:type go:ontology ;
+        go:hascontent "11.  ابو شاكر دَيَصانى گفت: در قرآن آيه‌اى است كه همان گفته ماست. گفتم: چه آيه‌اى؟ گفت: «او كسى است كه در آسمان خداست و در زمين نيز خداست». من ندانستم چه پاسخى به او بدهم. به حج كه رفتم، ماجرا را به آگاهى امام صادق عليه‌السلام رساندم. حضرت فرمود: «اين، سخن يك زنديق پليد است. چون نزدش بازگشتى، به او بگو: نام تو در كوفه چيست؟ خواهد گفت: فلان. بگو: نامت در بصره چيست؟ خواهد گفت: همان. بگو: خداوندگار ما اللّه‌، نيز چنين است. در آسمان خداست؛ در زمين خداست؛ در درياها خداست؛ در بيابان‌ها خداست؛ در همه جا خداست». هشام گفت: من آمدم و نزد ابوشاكر رفتم و [همان را كه امام فرموده بود] به او گفتم. او گفت: اين [پاسخ] از حجاز آورده شده است."@fa,
+        "11.  قَالَ أَبُو شَاكِرٍ الدَّيَصَانِيُّ: إِنَّ فِي الْقُرْآنِ آيَةً هِيَ قَوْلُنَا، قُلْتُ: مَا هِيَ؟ فَقَالَ: «وَ هُوَ الَّذِى فِى السَّمَآءِ إِلَهٌ وَ فِى الْأَرْضِ إِلَهٌ» فَلَمْ أَدْرِ بِمَا أُجِيبُهُ، فَحَجَجْتُ، فَخَبَّرْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام، فَقَالَ: «هذَا كَلاَمُ زِنْدِيقٍ خَبِيثٍ، إِذَا رَجَعْتَ إِلَيْهِ، فَقُلْ لَهُ: مَا اسْمُكَ بِالْكُوفَةِ؟ فَإِنَّهُ يَقُولُ: فُلاَنٌ، فَقُلْ لَهُ: مَا اسْمُكَ بِالْبَصْرَةِ؟ فَإِنَّهُ يَقُولُ: فُلاَنٌ، فَقُلْ: كَذلِكَ اللّه‌ُ رَبُّنَا فِي السَّمَاءِ إِلهٌ، وَفِي الْأَرْضِ إِلهٌ، وَفِي الْبِحَارِ إِلهٌ، وَفِي الْقِفَارِ إِلهٌ، وَفِي كُلِّ مَكَانٍ إِلهٌ». قَالَ: فَقَدِمْتُ، فَأَتَيْتُ أَبَا شَاكِرٍ، فَأَخْبَرْتُهُ، فَقَالَ: هذِهِ نُقِلَتْ مِنَ الْحِجَازِ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/338-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/338-1> rdf:type owl:ontology .
 
-ex:Ayah1 a go:Substance ;
-    go:hasPart ex:Quote1 ;
-    ex:isPartOf ex:Quran .
+ex:ayah1 a go:substance ;
+    go:haspart ex:quote1 ;
+    ex:ispartof ex:quran .
 
-ex:Quran a go:Substance .
+ex:quran a go:substance .
 
-ex:Quote1 a ex:eventInstance ;
+ex:quote1 a ex:eventinstance ;
     ex:content "وهو الذي في السماء إله وفي الأرض إله" ;
-    ex:HasAgent ex:God ;
-    ex:location ex:Sky, ex:Earth ;
-    ex:describes ex:God .
+    ex:hasagent ex:god ;
+    ex:location ex:sky, ex:earth ;
+    ex:describes ex:god .
 
-ex:God a go:agent .
+ex:god a go:agent .
 
-ex:Sky a go:location .
+ex:sky a go:location .
 
-ex:Earth a go:location .
-go:Substance rdfs:label "شی"@fa.
+ex:earth a go:location .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/338-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/338-2> rdf:type owl:ontology .
 
-ex:Statement1 a ex:Statement ;
-    ex:quotedContent "He is God in the heaven and God on the earth" .
+ex:statement1 a ex:statement ;
+    ex:quotedcontent "he is god in the heaven and god on the earth" .
 
-ex:HereticalSpeech1 a ex:HereticalSpeech, go:badQuality ;
-    ex:hasSubject ex:Statement1 ;
+ex:hereticalspeech1 a ex:hereticalspeech, go:badquality ;
+    ex:hassubject ex:statement1 ;
     rdfs:label "foul heretical speech" .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/338-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/338-3> rdf:type owl:ontology .
 
-ex:Human a go:Human .
-ex:Speaker a go:Person .
-ex:Verse a go:Text .
-ex:Kufa a go:Place ;
-    go:name "Kufa" .
+ex:human a go:human .
+ex:speaker a go:person .
+ex:verse a go:text .
+ex:kufa a go:place ;
+    go:name "kufa" .
 
-ex:ReturningEvent a go:Event ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:Speaker ;
-    go:EventType go:Returning .
+ex:returningevent a go:event ;
+    go:hasagent ex:human ;
+    go:hastheme ex:speaker ;
+    go:eventtype go:returning .
 
-ex:AskingEvent a go:Event ;
-    go:HasAgent ex:Human ;
-    go:HasRecipient ex:Speaker ;
-    go:HasTheme ex:NameInKufa ;
-    go:EventType go:Asking .
+ex:askingevent a go:event ;
+    go:hasagent ex:human ;
+    go:hasrecipient ex:speaker ;
+    go:hastheme ex:nameinkufa ;
+    go:eventtype go:asking .
 
-ex:NameInKufa a go:Substance ;
-    go:Description "Name of the speaker in Kufa" ;
-    go:LocatedIn ex:Kufa .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/338-4> rdf:type owl:Ontology .
-
-ex:AskingEvent a go:Event ;
-    go:HasAgent ex:You ;
-    go:HasTheme ex:Speaker ;
-    ex:askedProperty ex:Name ;
-    ex:location ex:Kufa .
-
-ex:AnsweringEvent a go:Event ;
-    go:HasAgent ex:Speaker ;
-    go:HasTheme "فلان"^^xsd:string ;
-    ex:answersTo ex:AskingEvent .
-
-ex:Speaker a go:Person .
-ex:You a go:Person .
-ex:Kufa a go:Place .
-ex:Name a go:Property .
-go:Event rdfs:label "رخداد"@fa.
+ex:nameinkufa a go:substance ;
+    go:description "name of the speaker in kufa" ;
+    go:locatedin ex:kufa .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/338-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/338-4> rdf:type owl:ontology .
 
-ex:eventAsk a go:Event ;
-  go:HasAgent ex:Person_You ;
-  go:HasTheme ex:Person_Speaker ;
-  go:HasLocation ex:Place_Basra .
+ex:askingevent a go:event ;
+    go:hasagent ex:you ;
+    go:hastheme ex:speaker ;
+    ex:askedproperty ex:name ;
+    ex:location ex:kufa .
 
-ex:eventSay a go:Event ;
-  go:HasAgent ex:Person_Speaker ;
-  go:HasTheme ex:Name_SoAndSo ;
-  go:isSubEventOf ex:eventInteraction .
+ex:answeringevent a go:event ;
+    go:hasagent ex:speaker ;
+    go:hastheme "فلان"^^xsd:string ;
+    ex:answersto ex:askingevent .
 
-ex:Person_You a go:Person ;
-  go:label "You" .
+ex:speaker a go:person .
+ex:you a go:person .
+ex:kufa a go:place .
+ex:name a go:property .
+go:event rdfs:label "رخداد"@fa.
 
-ex:Person_Speaker a go:Person ;
-  go:label "Speaker" .
 
-ex:Place_Basra a go:Place ;
-  go:label "Basra" .
+@base <http://etratnet.ir/ontology/> .
 
-ex:Name_SoAndSo a go:Name ;
+<http://etratnet.ir/ontology/338-5> rdf:type owl:ontology .
+
+ex:eventask a go:event ;
+  go:hasagent ex:person_you ;
+  go:hastheme ex:person_speaker ;
+  go:haslocation ex:place_basra .
+
+ex:eventsay a go:event ;
+  go:hasagent ex:person_speaker ;
+  go:hastheme ex:name_soandso ;
+  go:issubeventof ex:eventinteraction .
+
+ex:person_you a go:person ;
+  go:label "you" .
+
+ex:person_speaker a go:person ;
+  go:label "speaker" .
+
+ex:place_basra a go:place ;
+  go:label "basra" .
+
+ex:name_soandso a go:name ;
   go:label "so-and-so" .
 
-ex:eventInteraction a go:Event .
-go:Event rdfs:label "رخداد"@fa.
+ex:eventinteraction a go:event .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/338-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/338-6> rdf:type owl:ontology .
 
-ex:sayingEvent a go:Event ;
-    go:HasAgent ex:You ;
-    go:HasRecipient ex:Speaker ;
-    go:HasTheme ex:GodAsDeityStatement .
+ex:sayingevent a go:event ;
+    go:hasagent ex:you ;
+    go:hasrecipient ex:speaker ;
+    go:hastheme ex:godasdeitystatement .
 
-ex:You a go:Person .
-ex:Speaker a go:Person .
+ex:you a go:person .
+ex:speaker a go:person .
 
-ex:God a go:Deity ;
-    go:ExistsIn ex:Sky, ex:Earth, ex:Seas, ex:Deserts, ex:EveryPlace .
+ex:god a go:deity ;
+    go:existsin ex:sky, ex:earth, ex:seas, ex:deserts, ex:everyplace .
 
-ex:Sky a go:Location .
-ex:Earth a go:Location .
-ex:Seas a go:Location .
-ex:Deserts a go:Location .
-ex:EveryPlace a go:Location .
+ex:sky a go:location .
+ex:earth a go:location .
+ex:seas a go:location .
+ex:deserts a go:location .
+ex:everyplace a go:location .
 
-ex:GodAsDeityStatement a go:Statement ;
-    go:About ex:God ;
-    go:HasProperty ex:DeityInSky, ex:DeityOnEarth, ex:DeityInSeas, ex:DeityInDeserts, ex:DeityEverywhere .
+ex:godasdeitystatement a go:statement ;
+    go:about ex:god ;
+    go:hasproperty ex:deityinsky, ex:deityonearth, ex:deityinseas, ex:deityindeserts, ex:deityeverywhere .
 
-ex:DeityInSky a go:Property ;
-    go:PropertyValue "God is Lord in the sky" .
+ex:deityinsky a go:property ;
+    go:propertyvalue "god is lord in the sky" .
 
-ex:DeityOnEarth a go:Property ;
-    go:PropertyValue "God is Lord on the earth" .
+ex:deityonearth a go:property ;
+    go:propertyvalue "god is lord on the earth" .
 
-ex:DeityInSeas a go:Property ;
-    go:PropertyValue "God is Lord in the seas" .
+ex:deityinseas a go:property ;
+    go:propertyvalue "god is lord in the seas" .
 
-ex:DeityInDeserts a go:Property ;
-    go:PropertyValue "God is Lord in the deserts" .
+ex:deityindeserts a go:property ;
+    go:propertyvalue "god is lord in the deserts" .
 
-ex:DeityEverywhere a go:Property ;
-    go:PropertyValue "God is Lord in every place" .
-go:Event rdfs:label "رخداد"@fa.
+ex:deityeverywhere a go:property ;
+    go:propertyvalue "god is lord in every place" .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/338-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/338-7> rdf:type owl:ontology .
 
-ex:TransmissionEvent1 a go:Event ;
-    go:HasTheme ex:Sayings1 ;
-    go:HasSource ex:HejazRegion .
+ex:transmissionevent1 a go:event ;
+    go:hastheme ex:sayings1 ;
+    go:hassource ex:hejazregion .
 
-ex:Sayings1 a go:Substance ;
-    rdfs:label "Sayings"@en .
+ex:sayings1 a go:substance ;
+    rdfs:label "sayings"@en .
 
-ex:HejazRegion a go:Place ;
-    rdfs:label "Hejaz"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:hejazregion a go:place ;
+    rdfs:label "hejaz"@en .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

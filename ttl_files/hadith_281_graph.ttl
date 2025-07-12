@@ -1,184 +1,187 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/281#> .
+@prefix ex: <http://etratnet.ir/graph/example/281#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/281> rdf:type go:ontology ;
+        go:hascontent "9. به مرد [امام هادى] عليه‌السلام نوشتم: كسانى كه اين جا هستند، در باره خدا اختلاف نظر دارند. برخى از آنها مى‌گويند: جسم است، و برخى مى‌گويند: داراى شكل و صورت است. حضرت به من نوشت: «پاكا خدايى كه كرانه نپذيرد و در وصف نيايد و هيچ چيزى به او شباهت ندارد و «هيچ چيزى مانندش نيست و او شنوا و بيناست»."@fa,
+        "9.  كَتَبْتُ إِلَى الرَّجُلِ عليه‌السلام: أَنَّ مَنْ قِبَلَنَا قَدِ اخْتَلَفُوا فِي التَّوْحِيدِ: فَمِنْهُمْ مَنْ يَقُولُ: جِسْمٌ، وَمِنْهُمْ مَنْ يَقُولُ: صُورَةٌ. فَكَتَبَ إِلَيَّ: «سُبْحَانَ مَنْ لاَ يُحَدُّ، وَلاَ يُوصَفُ، وَلاَ يُشْبِهُهُ شَيْءٌ، وَ«لَيْسَ كَمِثْلِهِ شَىْ‌ءٌ وَهُوَ السَّمِيعُ الْبَصِيرُ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-1> rdf:type owl:ontology .
 
-ex:SomePeople a go:HumanGroup ;
-    rdfs:label "Some people who come to us" .
+ex:somepeople a go:humangroup ;
+    rdfs:label "some people who come to us" .
 
-ex:Us a go:Agent ;
-    rdfs:label "Us (the speaker group)" .
+ex:us a go:agent ;
+    rdfs:label "us (the speaker group)" .
 
-ex:Monotheism a go:Belief ;
-    rdfs:label "Monotheism" .
+ex:monotheism a go:belief ;
+    rdfs:label "monotheism" .
 
-ex:ApproachEvent a go:Event ;
-    rdfs:label "Approach Event" ;
-    go:HasAgent ex:SomePeople ;
-    go:HasTheme ex:Us .
+ex:approachevent a go:event ;
+    rdfs:label "approach event" ;
+    go:hasagent ex:somepeople ;
+    go:hastheme ex:us .
 
-ex:DifferEvent a go:Event ;
-    rdfs:label "Differ in Monotheism" ;
-    go:HasAgent ex:SomePeople ;
-    go:HasTheme ex:Monotheism .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/281-2> rdf:type owl:Ontology .
-
-ex:SayEvent1 a go:Event ;
-  go:HasAgent ex:SomePeople ;
-  go:HasTheme ex:Proposition1 .
-
-ex:SomePeople a go:Agent .
-
-ex:Proposition1 a go:State ;
-  go:HasSubject ex:God ;
-  go:HasAttribute ex:Body .
-
-ex:God a go:Agent .
-ex:Body a go:Object .
-go:Event rdfs:label "رخداد"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:differevent a go:event ;
+    rdfs:label "differ in monotheism" ;
+    go:hasagent ex:somepeople ;
+    go:hastheme ex:monotheism .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-2> rdf:type owl:ontology .
 
-ex:sayingEvent1 a go:Event ;
-    go:HasAgent ex:somePeople ;
-    go:HasTheme ex:proposition1 .
+ex:sayevent1 a go:event ;
+  go:hasagent ex:somepeople ;
+  go:hastheme ex:proposition1 .
 
-ex:somePeople a go:group ;
-    go:hasMember ex:thisPerson1, ex:thisPerson2 ;
-    go:hasQuantity "some"^^xsd:string .
+ex:somepeople a go:agent .
 
-ex:proposition1 a ex:eventInstance ;
-    ex:claims a ex:claimGodIsForm .
+ex:proposition1 a go:state ;
+  go:hassubject ex:god ;
+  go:hasattribute ex:body .
 
-ex:claimGodIsForm a go:statement ;
-    go:hasSubject god:God ;
-    go:hasPredicate go:isA ;
-    go:hasObject go:Form .
-
-god:God a go:Substance .
-go:Form a go:Quality .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:god a go:agent .
+ex:body a go:object .
+go:event rdfs:label "رخداد"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-3> rdf:type owl:ontology .
 
-ex:Man_PeaceBeUponHim rdf:type go:Person ;
-    rdfs:label "The man, peace be upon him"@en .
+ex:sayingevent1 a go:event ;
+    go:hasagent ex:somepeople ;
+    go:hastheme ex:proposition1 .
 
-ex:God rdf:type go:Deity ;
-    rdfs:label "God"@en .
+ex:somepeople a go:group ;
+    go:hasmember ex:thisperson1, ex:thisperson2 ;
+    go:hasquantity "some"^^xsd:string .
 
-ex:Utterance1 rdf:type go:SpeechEvent ;
-    go:HasAgent ex:Man_PeaceBeUponHim ;
-    go:HasTheme ex:Quotation1 .
+ex:proposition1 a ex:eventinstance ;
+    ex:claims a ex:claimgodisform .
 
-ex:Quotation1 rdf:type go:Quote ;
-    rdfs:label "Glory be to God, who is unlimited."@en .
+ex:claimgodisform a go:statement ;
+    go:hassubject god:god ;
+    go:haspredicate go:isa ;
+    go:hasobject go:form .
+
+god:god a go:substance .
+go:form a go:quality .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-4> rdf:type owl:ontology .
 
-ex:Speech1 a go:Speech ;
-    go:HasAgent ex:Man_PeaceBeUponHim ;
-    go:HasTheme ex:Proposition1 .
+ex:man_peacebeuponhim rdf:type go:person ;
+    rdfs:label "the man, peace be upon him"@en .
 
-ex:Man_PeaceBeUponHim a go:Person ;
+ex:god rdf:type go:deity ;
+    rdfs:label "god"@en .
+
+ex:utterance1 rdf:type go:speechevent ;
+    go:hasagent ex:man_peacebeuponhim ;
+    go:hastheme ex:quotation1 .
+
+ex:quotation1 rdf:type go:quote ;
+    rdfs:label "glory be to god, who is unlimited."@en .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/281-5> rdf:type owl:ontology .
+
+ex:speech1 a go:speech ;
+    go:hasagent ex:man_peacebeuponhim ;
+    go:hastheme ex:proposition1 .
+
+ex:man_peacebeuponhim a go:person ;
     rdfs:label "الرجل عليه السلام"@ar .
 
-ex:Proposition1 a go:Proposition ;
-    go:HasSubject ex:God ;
-    go:hasProperty ex:Indescribable ;
-    go:hasPolarity "Negative"^^xsd:boolean .
+ex:proposition1 a go:proposition ;
+    go:hassubject ex:god ;
+    go:hasproperty ex:indescribable ;
+    go:haspolarity "negative"^^xsd:boolean .
 
-ex:God a go:Deity ;
+ex:god a go:deity ;
     rdfs:label "الله"@ar .
 
-ex:Indescribable a go:Property ;
-    go:hasLabel "Cannot be described"@en .
+ex:indescribable a go:property ;
+    go:haslabel "cannot be described"@en .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-6> rdf:type owl:ontology .
 
-exEvent:speech1 a go:Speak ;
-  go:HasAgent ex:man_peace_be_upon_him ;
-  go:HasTheme ex:statement1 .
+exevent:speech1 a go:speak ;
+  go:hasagent ex:man_peace_be_upon_him ;
+  go:hastheme ex:statement1 .
 
-ex:man_peace_be_upon_him a go:Person ;
+ex:man_peace_be_upon_him a go:person ;
   rdfs:label "الرجل عليه السلام" .
 
-ex:Allah a go:deity ;
+ex:allah a go:deity ;
   rdfs:label "الله" .
 
-ex:statement1 a go:Proposition ;
-  go:hasSubject ex:Allah ;
-  go:hasPredicate ex:not_similar_to ;
-  go:hasObject ex:anything .
+ex:statement1 a go:proposition ;
+  go:hassubject ex:allah ;
+  go:haspredicate ex:not_similar_to ;
+  go:hasobject ex:anything .
 
-ex:not_similar_to a go:Relation ;
+ex:not_similar_to a go:relation ;
   go:label "is not similar to" .
 
-ex:anything a go:Thing .
+ex:anything a go:thing .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-7> rdf:type owl:ontology .
 
-ex:man_ALayhisSalaam a go:Individual ;
+ex:man_alayhissalaam a go:individual ;
     rdfs:label "الرجل عليه السلام"@ar .
 
-ex:speechEvent1 a go:SpeechEvent ;
-    go:HasAgent ex:man_ALayhisSalaam ;
-    go:HasTheme "There is nothing like him."^^xsd:string .
+ex:speechevent1 a go:speechevent ;
+    go:hasagent ex:man_alayhissalaam ;
+    go:hastheme "there is nothing like him."^^xsd:string .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/281-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/281-8> rdf:type owl:ontology .
 
-ex:man_AlayhisSalam a go:Person ;
-    go:hasTitle "peace be upon him" .
+ex:man_alayhissalam a go:person ;
+    go:hastitle "peace be upon him" .
 
-ex:God a go:Deity ;
-    go:hasAttribute go:AllHearing , go:AllSeeing .
+ex:god a go:deity ;
+    go:hasattribute go:allhearing , go:allseeing .
 
-go:AllHearing a go:Attribute ;
-    rdfs:label "All-Hearing"@en .
+go:allhearing a go:attribute ;
+    rdfs:label "all-hearing"@en .
 
-go:AllSeeing a go:Attribute ;
-    rdfs:label "All-Seeing"@en .
+go:allseeing a go:attribute ;
+    rdfs:label "all-seeing"@en .
 
-ex:sayingEvent1 a go:CommunicationEvent ;
-    go:HasAgent ex:man_AlayhisSalam ;
-    go:HasTheme ex:God .
+ex:sayingevent1 a go:communicationevent ;
+    go:hasagent ex:man_alayhissalam ;
+    go:hastheme ex:god .

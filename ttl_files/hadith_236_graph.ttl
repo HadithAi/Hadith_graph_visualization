@@ -1,313 +1,316 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/236#> .
+@prefix ex: <http://etratnet.ir/graph/example/236#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/236> rdf:type go:ontology ;
+        go:hascontent "2.  هشام بن حكم گفت كه از امام صادق عليه‌السلام درباره نام‌هاى خدا و اشتقاق آنها پرسيدم [و گفتم]: اللّه‌ از چه برگرفته شده است؟ به من فرمود: «اى هشام، اللّه‌ برگرفته از "اِله" است و اِله، مألوه (معبود) مى‌خواهد، و نام غير از ناميده است؛ پس، هر كه نام را بپرستد نه معنا (ذات) را، كافر است و چيزى نپرستيده است؛ هر كس نام و معنا را بپرستد او نيز كافر است و دو چيز پرستيده است؛ و هركس معنا را بپرستد نه نام را اين يكتاپرستى است. فهميدى اى هشام؟» عرض كرد: بيشتر بفرماييد. فرمود: «خداوند داراى نود و نه نام است. حال اگر نام همان ناميده باشد هر يك از اين نام‌ها خدايى خواهد بود. اما "اللّه‌" معنايى است كه اين نام‌ها بر او دلالت دارند و همه اين نام‌ها غير او هستند. اى هشام، كلمه "نان" نامى است براى آنچه خورند، و "آب" نامى است براى آنچه نوشند، و "جامه" نامى است براى آنچه پوشند و "آتش" نامى است براى آنچه مى‌سوزانَد. اى هشام آيا آن سان فهميدى كه بتوانى با آن در برابر دشمنان ما و كسانى كه همراه با خدا چيز ديگرى مى‌پرستند دفاع و مبارزه كنى؟» عرض كردم: بله. فرمود: «خداوند تو را به اين بيان سود رسانَد و استوارت بدارد اى هشام». هشام گفت: به خدا سوگند [از آن پس] تا اكنون كه اين جا ايستاده‌ام هيچ كس در [مباحثه]خداشناسى مرا شكست نداده است."@fa,
+        "2.  أَنَّهُ سَأَلَ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ أَسْمَاءِ اللّه‌ِ وَاشْتِقَاقِهَا: اللّه‌ُ مِمَّا هُوَ مُشْتَقٌّ؟ قَالَ: فَقَالَ لِي: «يَا هِشَامُ، اللّه‌ُ مُشْتَقٌّ مِنْ إِلهٍ، وَالاْءِلهُ يَقْتَضِي مَأْلُوهاً، وَالاِسْمُ غَيْرُ الْمُسَمّى، فَمَنْ عَبَدَ الاِسْمَ دُونَ المَعْنى، فَقَدْ كَفَرَ وَلَمْ يَعْبُدْ شَيْئاً؛ وَمَنْ عَبَدَ الاِسْمَ وَالْمَعْنى، فَقَدْ كَفَرَ وَعَبَدَ اثْنَيْنِ؛ وَمَنْ عَبَدَ الْمَعْنى دُونَ الاِسْمِ، فَذَاكَ التَّوْحِيدُ، أَ فَهِمْتَ يَا هِشَامُ؟». قَالَ: فَقُلْتُ: زِدْنِي، قَالَ: «إِنَّ لِلّهِ تِسْعَةً وَتِسْعِينَ اسْماً، فَلَوْ كَانَ الاِسْمُ هُوَ الْمُسَمّى، لَكَانَ كُلُّ اسْمٍ مِنْهَا إِلهاً، وَلكِنَّ اللّه‌َ مَعْنىً يُدَلُّ عَلَيْهِ بِهذِهِ الْأَسْمَاءِ وَكُلُّهَا غَيْرُهُ؛ يَا هِشَامُ، الْخُبْزُ اسْمٌ لِلْمَأْكُولِ، وَالْمَاءُ اسْمٌ لِلْمَشْرُوبِ، وَالثَّوْبُ اسْمٌ لِلْمَلْبُوسِ، وَالنَّارُ اسْمٌ لِلْمُحْرِقِ، أَ فَهِمْتَ يَا هِشَامُ، فَهْماً تَدْفَعُ بِهِ وَتُنَاضِلُ بِهِ أَعْدَاءَنَا وَالْمُتَّخِذِينَ مَعَ اللّه‌ِ ـ عَزَّ وَجَلَّ ـ غَيْرَهُ؟» قُلْتُ: نَعَمْ، قَالَ: فَقَالَ: «نَفَعَكَ اللّه‌ُ بِهِ، وَثَبَّتَكَ يَا هِشَامُ». قَالَ هِشَامٌ: فَوَ اللّه‌ِ، مَا قَهَرَنِي أَحَدٌ فِي التَّوْحِيدِ حَتّى قُمْتُ مَقَامِي هذَا."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-1> rdf:type owl:ontology .
 
-ex:DerivationEvent1 a go:Event ;
-    go:HasTheme ex:Allah ;
-    go:HasCaused ex:Ilah .
+ex:derivationevent1 a go:event ;
+    go:hastheme ex:allah ;
+    go:hascaused ex:ilah .
 
-ex:Allah a go:Concept ;
-    rdfs:label "Allah"@en .
+ex:allah a go:concept ;
+    rdfs:label "allah"@en .
 
-ex:Ilah a go:Concept ;
-    rdfs:label "Ilah"@en .
-go:Event rdfs:label "رخداد"@fa.
+ex:ilah a go:concept ;
+    rdfs:label "ilah"@en .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-2> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:god1 ;
-    go:HasTheme ex:worshipedOne1 .
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:god1 ;
+    go:hastheme ex:worshipedone1 .
 
-ex:god1 a go:Substance ;
+ex:god1 a go:substance ;
     rdfs:label "god" .
 
-ex:worshipedOne1 a go:Substance ;
-    go:hasProperty "worshiped" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:worshipedone1 a go:substance ;
+    go:hasproperty "worshiped" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-3> rdf:type owl:ontology .
 
-ex:Name a go:Substance ;
-    go:hasState ex:UnnamedName .
+ex:name a go:substance ;
+    go:hasstate ex:unnamedname .
 
-ex:UnnamedName a go:State .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/236-4> rdf:type owl:Ontology .
-
-ex:Person1 a go:Person .
-ex:Name a go:Substance .
-ex:Meaning a go:Substance .
-
-ex:WorshipEvent a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:Name .
-
-ex:DisbeliefEvent a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:CausedBy ex:WorshipEvent .
-
-ex:NoWorshipEvent a go:Event ;
-    go:HasAgent ex:Person1 ;
-    go:HasTheme ex:Nothing .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:unnamedname a go:state .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-5> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-4> rdf:type owl:ontology .
 
-ex:WorshipEvent a go:Event ;
-  go:HasAgent ex:UnspecifiedPerson ;
-  go:HasTheme ex:Name , ex:Meaning ;
-  go:HasResult ex:Disbelief , ex:DualWorship .
+ex:person1 a go:person .
+ex:name a go:substance .
+ex:meaning a go:substance .
 
-ex:Name a go:Substance .
-ex:Meaning a go:Substance .
-ex:Disbelief a go:Event .
-ex:DualWorship a go:Event ;
-  go:HasTheme ex:Name , ex:Meaning .
+ex:worshipevent a go:event ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:name .
 
-ex:UnspecifiedPerson a go:agent .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:disbeliefevent a go:event ;
+    go:hasagent ex:person1 ;
+    go:causedby ex:worshipevent .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/236-6> rdf:type owl:Ontology .
-
-ex:Monotheism a go:Concept ;
-    rdfs:label "Monotheism"@en ;
-    ex:hasSource ex:AbdAlMaanaWithoutName .
-
-ex:AbdAlMaanaWithoutName a go:Substance ;
-    rdfs:label "Abd al-Ma'na without the name"@en .
-go:Substance rdfs:label "شی"@fa.
+ex:noworshipevent a go:event ;
+    go:hasagent ex:person1 ;
+    go:hastheme ex:nothing .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-7> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-5> rdf:type owl:ontology .
 
-ex:Allah a go:Deity ;
-    rdfs:labelCollection ex:AllahNames .
+ex:worshipevent a go:event ;
+  go:hasagent ex:unspecifiedperson ;
+  go:hastheme ex:name , ex:meaning ;
+  go:hasresult ex:disbelief , ex:dualworship .
 
-ex:AllahNames a go:NameCollection ;
-    go:nameCount "99"^^xsd:integer .
+ex:name a go:substance .
+ex:meaning a go:substance .
+ex:disbelief a go:event .
+ex:dualworship a go:event ;
+  go:hastheme ex:name , ex:meaning .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/236-8> rdf:type owl:Ontology .
-
-ex:ConditionalStatement1 a go:ConditionalEvent ;
-    go:HasCondition ex:NameIsDesignated ;
-    go:HasConsequence ex:EveryNameIsDeity .
-
-ex:Name a go:Concept .
-ex:Deity a go:Concept .
-
-ex:NameIsDesignated a go:Situation ;
-    go:HasTheme ex:Name ;
-    go:HasProperty ex:Designated .
-
-ex:EveryNameIsDeity a go:Situation ;
-    go:HasTheme ex:Name ;
-    go:RelatedTo ex:Deity .
+ex:unspecifiedperson a go:agent .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-9> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-6> rdf:type owl:ontology .
 
-ex:God rdf:type go:Substance .
-ex:Meaning rdf:type ex:MeaningConcept ;
-    ex:refersTo ex:God .
+ex:monotheism a go:concept ;
+    rdfs:label "monotheism"@en ;
+    ex:hassource ex:abdalmaanawithoutname .
 
-ex:TheseNames rdf:type ex:NameCollection .
-
-ex:IndicationEvent rdf:type go:Event ;
-    go:HasAgent ex:TheseNames ;
-    go:HasTheme ex:Meaning .
-
-ex:TheseNames ex:indicates ex:Meaning .
-
-# The meaning indicated by the names is identified with God.
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:abdalmaanawithoutname a go:substance ;
+    rdfs:label "abd al-ma'na without the name"@en .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-7> rdf:type owl:ontology .
 
-ex:TheseNames a go:NameSet .
-ex:God a go:Deity .
+ex:allah a go:deity ;
+    rdfs:labelcollection ex:allahnames .
 
-# Assertion that these names are not God
-ex:TheseNames go:NotIdenticalTo ex:God .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/236-11> rdf:type owl:Ontology .
-
-ex:Bread a go:Substance ;
-    rdfs:label "Bread" ;
-    go:memberOf ex:Edible .
-
-ex:Edible a go:Concept .
-go:Substance rdfs:label "شی"@fa.
+ex:allahnames a go:namecollection ;
+    go:namecount "99"^^xsd:integer .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-12> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-8> rdf:type owl:ontology .
 
-ex:Water a go:Substance .
-ex:Beverage a go:Substance .
+ex:conditionalstatement1 a go:conditionalevent ;
+    go:hascondition ex:nameisdesignated ;
+    go:hasconsequence ex:everynameisdeity .
 
-ex:Water ex:nameFor ex:Beverage .
+ex:name a go:concept .
+ex:deity a go:concept .
 
-# Explanation:
-# - "الماء" (Water) and "المشروب" (Beverage) are substances.
-# - "is the name of" relation is represented as ex:nameFor.
-# No event instance as this is a naming/state relation.
-go:Substance rdfs:label "شی"@fa.
+ex:nameisdesignated a go:situation ;
+    go:hastheme ex:name ;
+    go:hasproperty ex:designated .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/236-13> rdf:type owl:Ontology .
-
-ex:AlThawb a go:Substance ;
-    ex:isNameFor ex:AlMalbus .
-
-ex:AlMalbus a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:everynameisdeity a go:situation ;
+    go:hastheme ex:name ;
+    go:relatedto ex:deity .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-9> rdf:type owl:ontology .
 
-ex:fire a go:Substance ;
+ex:god rdf:type go:substance .
+ex:meaning rdf:type ex:meaningconcept ;
+    ex:refersto ex:god .
+
+ex:thesenames rdf:type ex:namecollection .
+
+ex:indicationevent rdf:type go:event ;
+    go:hasagent ex:thesenames ;
+    go:hastheme ex:meaning .
+
+ex:thesenames ex:indicates ex:meaning .
+
+# the meaning indicated by the names is identified with god.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/236-10> rdf:type owl:ontology .
+
+ex:thesenames a go:nameset .
+ex:god a go:deity .
+
+# assertion that these names are not god
+ex:thesenames go:notidenticalto ex:god .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/236-11> rdf:type owl:ontology .
+
+ex:bread a go:substance ;
+    rdfs:label "bread" ;
+    go:memberof ex:edible .
+
+ex:edible a go:concept .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/236-12> rdf:type owl:ontology .
+
+ex:water a go:substance .
+ex:beverage a go:substance .
+
+ex:water ex:namefor ex:beverage .
+
+# explanation:
+# - "الماء" (water) and "المشروب" (beverage) are substances.
+# - "is the name of" relation is represented as ex:namefor.
+# no event instance as this is a naming/state relation.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/236-13> rdf:type owl:ontology .
+
+ex:althawb a go:substance ;
+    ex:isnamefor ex:almalbus .
+
+ex:almalbus a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/236-14> rdf:type owl:ontology .
+
+ex:fire a go:substance ;
     rdfs:label "fire" .
 
-ex:burnerThing a go:Substance ;
+ex:burnerthing a go:substance ;
     rdfs:label "burner thing" .
 
-ex:namingEvent a go:Event , ex:NamingEvent ;
-    go:HasAgent ex:fire ;
-    go:HasTheme ex:burnerThing .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:namingevent a go:event , ex:namingevent ;
+    go:hasagent ex:fire ;
+    go:hastheme ex:burnerthing .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-15> rdf:type owl:ontology .
 
-ex:Understanding a go:Substance ;
-  go:label "This Understanding"@en .
+ex:understanding a go:substance ;
+  go:label "this understanding"@en .
 
-ex:EnemiesOfGod a go:agentGroup ;
-  go:label "Enemies of God"@en .
+ex:enemiesofgod a go:agentgroup ;
+  go:label "enemies of god"@en .
 
-ex:FollowersWithHim a go:agentGroup ;
-  go:label "Those who have taken others with Him"@en .
+ex:followerswithhim a go:agentgroup ;
+  go:label "those who have taken others with him"@en .
 
-ex:PromotionEvent a go:Event ;
-  go:label "Promotion of Understanding"@en ;
-  go:HasAgent ex:EnemiesOfGod, ex:FollowersWithHim ;
-  go:HasTheme ex:Understanding .
+ex:promotionevent a go:event ;
+  go:label "promotion of understanding"@en ;
+  go:hasagent ex:enemiesofgod, ex:followerswithhim ;
+  go:hastheme ex:understanding .
 
-ex:FightingEvent a go:Event ;
-  go:label "Fighting with Understanding"@en ;
-  go:HasAgent ex:EnemiesOfGod, ex:FollowersWithHim ;
-  go:HasTheme ex:Understanding .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/236-16> rdf:type owl:Ontology .
-
-ex:BenefitingEvent1 a go:Event ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:TheseWords .
-
-ex:God a go:Substance .
-ex:TheseWords a go:Information .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:fightingevent a go:event ;
+  go:label "fighting with understanding"@en ;
+  go:hasagent ex:enemiesofgod, ex:followerswithhim ;
+  go:hastheme ex:understanding .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-16> rdf:type owl:ontology .
 
-ex:StrengthenEvent1 a go:StrengtheningEvent ;
-    go:HasAgent ex:God ;
-    go:HasTheme ex:Hisham ;
-    go:HasInstrument ex:Instrument1 .
+ex:benefitingevent1 a go:event ;
+    go:hasagent ex:god ;
+    go:hastheme ex:thesewords .
 
-ex:God a go:Agent ;
-    rdfs:label "God"^^xsd:string .
+ex:god a go:substance .
+ex:thesewords a go:information .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
+go:substance rdfs:label "شی"@fa.
 
-ex:Hisham a go:Agent ;
-    rdfs:label "Hisham"^^xsd:string .
 
-ex:Instrument1 a go:Object ;
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/236-17> rdf:type owl:ontology .
+
+ex:strengthenevent1 a go:strengtheningevent ;
+    go:hasagent ex:god ;
+    go:hastheme ex:hisham ;
+    go:hasinstrument ex:instrument1 .
+
+ex:god a go:agent ;
+    rdfs:label "god"^^xsd:string .
+
+ex:hisham a go:agent ;
+    rdfs:label "hisham"^^xsd:string .
+
+ex:instrument1 a go:object ;
     go:label "it"^^xsd:string .
-go:Agent rdfs:label "عامل"@fa.
+go:agent rdfs:label "عامل"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/236-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/236-18> rdf:type owl:ontology .
 
-ex:Hisham a go:Person .
-ex:Unification a go:UnificationEvent .
+ex:hisham a go:person .
+ex:unification a go:unificationevent .
 
-# First event: defeat
-ex:DefeatEvent1 a go:Event ;
-    go:HasTheme ex:Hisham ;
-    go:HasAgent ex:NoOne ;
-    go:OccursIn ex:Unification .
+# first event: defeat
+ex:defeatevent1 a go:event ;
+    go:hastheme ex:hisham ;
+    go:hasagent ex:noone ;
+    go:occursin ex:unification .
 
-# Second event: took the place
-ex:TakePlaceEvent1 a go:Event ;
-    go:HasAgent ex:Someone ;
-    go:HasTheme ex:Hisham ; # theme is the position of Hisham
-    go:OccursIn ex:Unification .
-go:Event rdfs:label "رخداد"@fa.
+# second event: took the place
+ex:takeplaceevent1 a go:event ;
+    go:hasagent ex:someone ;
+    go:hastheme ex:hisham ; # theme is the position of hisham
+    go:occursin ex:unification .
+go:event rdfs:label "رخداد"@fa.

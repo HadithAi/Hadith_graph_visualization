@@ -1,74 +1,77 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/292#> .
+@prefix ex: <http://etratnet.ir/graph/example/292#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/292> rdf:type go:ontology ;
+        go:hascontent "8.  عقيده هشام جواليقى و آنچه را درباره «جوان رشيد» مى‌گويد و نيز نظر هشام بن حكم را براى ابو الحسن عليه‌السلام بازگو كردم، حضرت فرمود: «هيچ چيزى به خدا شباهت ندارد»."@fa,
+        "8. وَصَفْتُ لِأَبِي الْحَسَنِ عليه‌السلام قَوْلَ هِشَامٍ الْجَوَالِيقِيِّ وَمَا يَقُولُ فِي الشَّابِّ الْمُوَفَّقِ، وَوَصَفْتُ لَهُ قَوْلَ هِشَامِ بْنِ الْحَكَمِ، فَقَالَ: «إِنَّ اللّه‌َ لاَ يُشْبِهُهُ شَيْءٌ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/292-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/292-1> rdf:type owl:ontology .
 
-ex:event1 a go:Event ;
-    go:HasAgent ex:I ;
-    go:HasRecipient ex:Abu_al_Hasan ;
-    go:HasTheme ex:statement_Hisham .
+ex:event1 a go:event ;
+    go:hasagent ex:i ;
+    go:hasrecipient ex:abu_al_hasan ;
+    go:hastheme ex:statement_hisham .
 
-ex:I a go:Person .
-ex:Abu_al_Hasan a go:Person .
-ex:Hisham_al_Jawaliqi a go:Person .
+ex:i a go:person .
+ex:abu_al_hasan a go:person .
+ex:hisham_al_jawaliqi a go:person .
 
-ex:statement_Hisham a go:Information ;
-    go:HasSource ex:Hisham_al_Jawaliqi ;
-    go:describes ex:Successful_Young_Man .
+ex:statement_hisham a go:information ;
+    go:hassource ex:hisham_al_jawaliqi ;
+    go:describes ex:successful_young_man .
 
-ex:Successful_Young_Man a go:Person .
-go:Event rdfs:label "رخداد"@fa.
-go:Information rdfs:label "اطلاعات"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/292-2> rdf:type owl:Ontology .
-
-ex:Speaker a go:Agent .
-ex:AbuAlHasan a go:Agent .
-ex:HishamIbnAlHakam a go:Agent .
-
-# The statement uttered by Hisham ibn al-Hakam
-ex:Statement1 a go:InformationObject ;
-    go:HasAgent ex:HishamIbnAlHakam .
-
-# Narration event where the speaker narrates the statement to Abu Al Hasan
-ex:NarrationEvent1 a go:Communication ;
-    go:HasAgent ex:Speaker ;
-    go:HasTheme ex:Statement1 ;
-    go:HasRecipient ex:AbuAlHasan .
-go:Information rdfs:label "اطلاعات"@fa.
-go:Agent rdfs:label "عامل"@fa.
+ex:successful_young_man a go:person .
+go:event rdfs:label "رخداد"@fa.
+go:information rdfs:label "اطلاعات"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/292-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/292-2> rdf:type owl:ontology .
 
-:AbuAlHasan a go:Person ;
-    rdfs:label "Abu al-Hasan (peace be upon him)" .
+ex:speaker a go:agent .
+ex:abualhasan a go:agent .
+ex:hishamibnalhakam a go:agent .
 
-:Allah a go:Deity ;
-    rdfs:label "Allah" .
+# the statement uttered by hisham ibn al-hakam
+ex:statement1 a go:informationobject ;
+    go:hasagent ex:hishamibnalhakam .
 
-:SayEvent1 a go:SpeechEvent ;
-    go:hasAgent :AbuAlHasan ;
-    go:hasTheme :Utterance1 .
+# narration event where the speaker narrates the statement to abu al hasan
+ex:narrationevent1 a go:communication ;
+    go:hasagent ex:speaker ;
+    go:hastheme ex:statement1 ;
+    go:hasrecipient ex:abualhasan .
+go:information rdfs:label "اطلاعات"@fa.
+go:agent rdfs:label "عامل"@fa.
 
-:Utterance1 a go:Message ;
-    rdfs:label "Indeed, nothing resembles Allah." ;
-    ex:deniesResemblanceTo :Allah .
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/292-3> rdf:type owl:ontology .
+
+:abualhasan a go:person ;
+    rdfs:label "abu al-hasan (peace be upon him)" .
+
+:allah a go:deity ;
+    rdfs:label "allah" .
+
+:sayevent1 a go:speechevent ;
+    go:hasagent :abualhasan ;
+    go:hastheme :utterance1 .
+
+:utterance1 a go:message ;
+    rdfs:label "indeed, nothing resembles allah." ;
+    ex:deniesresemblanceto :allah .

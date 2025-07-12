@@ -1,107 +1,110 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/342#> .
+@prefix ex: <http://etratnet.ir/graph/example/342#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/342> rdf:type go:ontology ;
+        go:hascontent "4.  از امام صادق عليه‌السلام درباره سخن خداى عز و جل كه مى‌فرمايد: «وَسِعَ كُرْسِيُّهُ السَّمَوَ تِ وَالْأَرْضَ» پرسيدم [و گفتم]: آيا آسمان‌ها و زمين كرسى را در برگرفته‌اند يا كرسى آسمان‌ها و زمين را؟ فرمود: «نه، كرسى آسمان‌ها و زمين و عرش را در برگرفته است. كرسى شامل همه چيز مى‌شود»."@fa,
+        "4.  سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «وَسِعَ كُرْسِيُّهُ السَّمَوَ تِ‌وَالْأَرْضَ»: السَّمَاوَاتُ وَالْأَرْضُ وَسِعْنَ الْكُرْسِيَّ، أَمِ الْكُرْسِيُّ وَسِعَ السَّمَاوَاتِ وَالْأَرْضَ؟ فَقَالَ: «بَلِ الْكُرْسِيُّ وَسِعَ السَّمَاوَاتِ وَالْأَرْضَ وَالْعَرْشَ، وَكُلُّ شَيْءٍ وَسِعَ الْكُرْسِيُّ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/342-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/342-1> rdf:type owl:ontology .
 
-ex:speechEvent1 a go:Event ;
-  go:HasAgent ex:God_Almighty ;
-  go:HasTheme ex:statement1 .
+ex:speechevent1 a go:event ;
+  go:hasagent ex:god_almighty ;
+  go:hastheme ex:statement1 .
 
-ex:God_Almighty a go:agent ;
-  go:label "God Almighty" .
+ex:god_almighty a go:agent ;
+  go:label "god almighty" .
 
 ex:statement1 a go:proposition ;
-  go:content "His Throne extends over the heavens and the earth" ;
-  go:HasSubject ex:Throne ;
-  go:HasSpatialScope ex:Heavens, ex:Earth .
+  go:content "his throne extends over the heavens and the earth" ;
+  go:hassubject ex:throne ;
+  go:hasspatialscope ex:heavens, ex:earth .
 
-ex:Throne a go:Substance ;
-  go:label "His Throne" .
+ex:throne a go:substance ;
+  go:label "his throne" .
 
-ex:Heavens a go:location ;
+ex:heavens a go:location ;
   go:label "the heavens" .
 
-ex:Earth a go:location ;
+ex:earth a go:location ;
   go:label "the earth" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/342-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/342-2> rdf:type owl:ontology .
 
-ex:Heavens rdf:type go:Substance ;
-    rdfs:label "Heavens" .
+ex:heavens rdf:type go:substance ;
+    rdfs:label "heavens" .
 
-ex:Earth rdf:type go:Substance ;
-    rdfs:label "Earth" .
+ex:earth rdf:type go:substance ;
+    rdfs:label "earth" .
 
-ex:Throne rdf:type go:Substance ;
-    rdfs:label "Throne" .
+ex:throne rdf:type go:substance ;
+    rdfs:label "throne" .
 
-# Composite entity: Heavens and Earth
-ex:HeavensAndEarth rdf:type go:Substance ;
-    ex:hasPart ex:Heavens, ex:Earth ;
-    rdfs:label "Heavens and Earth" .
+# composite entity: heavens and earth
+ex:heavensandearth rdf:type go:substance ;
+    ex:haspart ex:heavens, ex:earth ;
+    rdfs:label "heavens and earth" .
 
-# Encompass event 1: Heavens and Earth encompass the Throne
-ex:EncompassEvent1 rdf:type go:SpatialRelation ;
-    go:HasAgent ex:HeavensAndEarth ;
-    go:HasTheme ex:Throne ;
-    rdfs:label "Heavens and Earth encompass the Throne" .
+# encompass event 1: heavens and earth encompass the throne
+ex:encompassevent1 rdf:type go:spatialrelation ;
+    go:hasagent ex:heavensandearth ;
+    go:hastheme ex:throne ;
+    rdfs:label "heavens and earth encompass the throne" .
 
-# Encompass event 2: Throne encompasses the Heavens and Earth
-ex:EncompassEvent2 rdf:type go:SpatialRelation ;
-    go:HasAgent ex:Throne ;
-    go:HasTheme ex:HeavensAndEarth ;
-    rdfs:label "Throne encompasses the Heavens and Earth" .
+# encompass event 2: throne encompasses the heavens and earth
+ex:encompassevent2 rdf:type go:spatialrelation ;
+    go:hasagent ex:throne ;
+    go:hastheme ex:heavensandearth ;
+    rdfs:label "throne encompasses the heavens and earth" .
 
-# The question about the above two events
-ex:Question rdf:type go:Question ;
-    go:hasOption ex:EncompassEvent1, ex:EncompassEvent2 ;
-    rdfs:label "Is it that the heavens and earth encompass the Throne, or the Throne encompasses the heavens and earth?" .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/342-3> rdf:type owl:Ontology .
-
-ex:EncompassingEvent a ex:eventInstance ;
-    go:HasAgent ex:Chair ;
-    go:HasTheme ex:Heavens , ex:Earth , ex:Throne .
-
-ex:Chair a go:Substance .
-ex:Heavens a go:Substance .
-ex:Earth a go:Substance .
-ex:Throne a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+# the question about the above two events
+ex:question rdf:type go:question ;
+    go:hasoption ex:encompassevent1, ex:encompassevent2 ;
+    rdfs:label "is it that the heavens and earth encompass the throne, or the throne encompasses the heavens and earth?" .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/342-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/342-3> rdf:type owl:ontology .
 
-ex:eventInstance1 a go:Event ;
-    go:HasAgent ex:TheChair ;
-    go:HasTheme ex:Everything .
+ex:encompassingevent a ex:eventinstance ;
+    go:hasagent ex:chair ;
+    go:hastheme ex:heavens , ex:earth , ex:throne .
 
-ex:TheChair a go:Substance .
+ex:chair a go:substance .
+ex:heavens a go:substance .
+ex:earth a go:substance .
+ex:throne a go:substance .
+go:substance rdfs:label "شی"@fa.
 
-ex:Everything a go:object .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/342-4> rdf:type owl:ontology .
+
+ex:eventinstance1 a go:event ;
+    go:hasagent ex:thechair ;
+    go:hastheme ex:everything .
+
+ex:thechair a go:substance .
+
+ex:everything a go:object .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.

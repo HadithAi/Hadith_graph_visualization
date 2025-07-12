@@ -1,372 +1,375 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/316#> .
+@prefix ex: <http://etratnet.ir/graph/example/316#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/316> rdf:type go:ontology ;
+        go:hascontent "5.  از امام صادق عليه‌السلام درباره اين سخن خداى عز و جل كه مى‌فرمايد: «اوست اول و آخر» پرسيدم و عرض كردم: [معناى]اول بودن را مى‌دانيم، آخر بودنش را برايمان توضيح دهيد. حضرت فرمود: «هيچ چيزى نيست مگر اين كه نابود مى‌شود يا دگرگون مى‌شود، يا دگرگونى و نابودى به او راه مى‌يابد، يا از رنگى به رنگى و از شكلى به شكلى و از صفتى به صفتى و از فزونى به كاستى و از كاستى به فزونى مى‌رود، مگر خداوندگار جهانيان كه هميشه به يك حالت بوده است و خواهد بود. او اوّل است و پيش از هر چيز، و آخر است به همان گونه كه در ازل بوده است (بى هيچ تغييرى). اوصاف و نام‌هاى گوناگون به خود نمى‌گيرد، آن چنان كه ديگر موجودات مى‌گيرند و مانند انسان كه گاه خاك است و گاه گوشت و خون و گاهى ديگر استخوان پوسيده و خرد شده، يا مانند خرما كه گاه بَلَح است و گاه بُسر و گاهى رطب و گاهى تمر، و در نتيجه نام‌ها و اوصاف متفاوت به خود مى‌گيرد. خداوندِ بزرگ و ارجمند اين گونه نيست»."@fa,
+        "5. سَأَلْتُ أَبَا عَبْدِ اللّه‌ِ عليه‌السلام عَنْ قَوْلِ اللّه‌ِ عَزَّ وَجَلَّ: «هُوَ الْأَوَّلُ وَ الاْخِرُ» وَقُلْتُ: أَمَّا «الْأَوَّلُ» فَقَدْ عَرَفْنَاهُ، وَأَمَّا «الاْخِرُ» فَبَيِّنْ لَنَا تَفْسِيرَهُ. فَقَالَ: «إِنَّهُ لَيْسَ شَيْءٌ إِلاَّ أَنْ يَبِيدَ أَوْ يَتَغَيَّرَ، أَوْ يَدْخُلَهُ التَّغَيُّرُ وَالزَّوَالُ، أَوْ يَنْتَقِلَ مِنْ لَوْنٍ إِلى لَوْنٍ، وَمِنْ هَيْئَةٍ إِلى هَيْئَةٍ، وَمِنْ صِفَةٍ إِلى صِفَةٍ، وَمِنْ زِيَادَةٍ إِلى نُقْصَانٍ، وَمِنْ نُقْصَانٍ إِلى زِيَادَةٍ إِلاَّ رَبَّ الْعَالَمِينَ؛ فَإِنَّهُ لَمْ يَزَلْ وَلاَ يَزَالُ بِحَالَةٍ وَاحِدَةٍ، هُوَ الْأَوَّلُ قَبْلَ كُلِّ شَيْءٍ، وَهُوَ الاْخِرُ عَلى مَا لَمْ يَزَلْ، وَلاَ تَخْتَلِفُ عَلَيْهِ الصِّفَاتُ وَالْأَسْمَاءُ كَمَا تَخْتَلِفُ عَلى غَيْرِهِ، مِثْلُ الاْءِنْسَانِ الَّذِي يَكُونُ تُرَاباً مَرَّةً، وَمَرَّةً لَحْماً وَدَماً، وَمَرَّةً رُفَاتاً وَرَمِيماً، وَكَالْبُسْرِ الَّذِي يَكُونُ مَرَّةً بَلَحاً، وَمَرَّةً بُسْراً، وَمَرَّةً رُطَباً، وَمَرَّةً تَمْراً، فَتَتَبَدَّلُ عَلَيْهِ الْأَسْمَاءُ وَالصِّفَاتُ، وَاللّه‌ُ ـ جَلَّ وَعَزَّ ـ بِخِلاَفِ ذلِكَ»."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-1> rdf:type owl:ontology .
 
-ex:GodAlmighty a go:Deity ;
-    ex:isFirst true .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-2> rdf:type owl:Ontology .
-
-ex:God_Almighty a go:Deity ;
-  ex:isOther true .
+ex:godalmighty a go:deity ;
+    ex:isfirst true .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-3> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-2> rdf:type owl:ontology .
 
-ex:Thing a go:Substance .
-
-ex:PerishEvent a go:Event ;
-    go:HasTheme ex:Thing .
-
-ex:ChangeEvent a go:Event ;
-    go:HasTheme ex:Thing .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:god_almighty a go:deity ;
+  ex:isother true .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-4> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-3> rdf:type owl:ontology .
 
-ex:Thing a go:Substance .
-ex:Change a go:State .
-ex:Disappearance a go:State .
+ex:thing a go:substance .
 
-ex:Thing go:hasCharacteristic ex:Change .
-ex:Thing go:hasCharacteristic ex:Disappearance .
-go:Substance rdfs:label "شی"@fa.
+ex:perishevent a go:event ;
+    go:hastheme ex:thing .
 
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-5> rdf:type owl:Ontology .
-
-ex:Thing a go:Object ;
-    rdfs:label "Thing" .
-
-ex:Color1 a go:Color ;
-    rdfs:label "Color1" .
-
-ex:Color2 a go:Color ;
-    rdfs:label "Color2" .
-
-ex:ColorChange1 a go:ColorChangeEvent ;
-    go:HasTheme ex:Thing ;
-    go:fromColor ex:Color1 ;
-    go:toColor ex:Color2 .
+ex:changeevent a go:event ;
+    go:hastheme ex:thing .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-6> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-4> rdf:type owl:ontology .
 
-ex:TransitionEvent1 a go:PhysicalTransitionEvent ;
-  go:HasAgent ex:Thing1 ;
-  go:fromState ex:State1 ;
-  go:toState ex:State2 .
+ex:thing a go:substance .
+ex:change a go:state .
+ex:disappearance a go:state .
 
-ex:Thing1 a go:Object .
-ex:State1 a go:PhysicalState .
-ex:State2 a go:PhysicalState .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-7> rdf:type owl:Ontology .
-
-ex:TransitionEvent a go:Event ;
-    go:HasAgent ex:Thing ;
-    go:HasTheme ex:State1, ex:State2 .
-
-ex:Thing a go:PhysicalObject .
-
-ex:State1 a go:State .
-ex:State2 a go:State .
-go:Event rdfs:label "رخداد"@fa.
+ex:thing go:hascharacteristic ex:change .
+ex:thing go:hascharacteristic ex:disappearance .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-8> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-5> rdf:type owl:ontology .
 
-ex:TransitionEvent1 a go:Event ;
-    go:HasTheme ex:TheThing ;
-    ex:hasSourceState ex:Increase ;
-    ex:hasTargetState ex:Decrease .
+ex:thing a go:object ;
+    rdfs:label "thing" .
 
-ex:TheThing a go:Substance .
-ex:Increase a go:State .
-ex:Decrease a go:State .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:color1 a go:color ;
+    rdfs:label "color1" .
 
+ex:color2 a go:color ;
+    rdfs:label "color2" .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-9> rdf:type owl:Ontology .
-
-ex:event1 a go:TransitionEvent ;
-    go:HasAgent ex:thing1 ;
-    go:FromState ex:decreaseState1 ;
-    go:ToState ex:increaseState1 .
-
-ex:thing1 a go:Thing .
-
-ex:decreaseState1 a go:DecreaseState .
-ex:increaseState1 a go:IncreaseState .
+ex:colorchange1 a go:colorchangeevent ;
+    go:hastheme ex:thing ;
+    go:fromcolor ex:color1 ;
+    go:tocolor ex:color2 .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-10> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-6> rdf:type owl:ontology .
 
-# Entity: Lord of the Worlds
-ex:LordOfTheWorlds a go:Substance ;
-    go:label "Lord of the Worlds" .
+ex:transitionevent1 a go:physicaltransitionevent ;
+  go:hasagent ex:thing1 ;
+  go:fromstate ex:state1 ;
+  go:tostate ex:state2 .
 
-# Events: Change, Decay, Transition
-ex:Change a go:Event ;
-    go:label "Change" .
-ex:Decay a go:Event ;
-    go:label "Decay" .
-ex:Transition a go:Event ;
-    go:label "Transition" .
-
-# Entity: Things (general entities that undergo changes)
-ex:Things a go:Substance ;
-    go:label "Things" .
-
-# Statement: Lord of the Worlds does NOT undergo Change, Decay, Transition
-ex:LordOfTheWorlds ex:doesNotUndergoEvent ex:Change , ex:Decay , ex:Transition .
-
-# Statement: Things undergo Change, Decay, Transition
-ex:Things go:undergoEvent ex:Change , ex:Decay , ex:Transition .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:thing1 a go:object .
+ex:state1 a go:physicalstate .
+ex:state2 a go:physicalstate .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-11> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-7> rdf:type owl:ontology .
 
-ex:LordOfTheWorlds a go:DivineBeing ;
-    rdfs:label "Lord of the Worlds" .
+ex:transitionevent a go:event ;
+    go:hasagent ex:thing ;
+    go:hastheme ex:state1, ex:state2 .
 
-ex:SingleState a go:State ;
-    rdfs:label "Single State" .
+ex:thing a go:physicalobject .
 
-ex:ContinuousExistenceEvent a go:ContinuousStateEvent ;
-    go:HasAgent ex:LordOfTheWorlds ;
-    go:HasTheme ex:SingleState .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-12> rdf:type owl:Ontology .
-
-ex:LordOfTheWorlds a go:Deity ;
-    go:hasAttribute ex:TheFirst .
-
-ex:TheFirst a go:Quality .
-
-ex:Everything a go:Concept .
-
-ex:LordOfTheWorlds go:hasTemporalPrecedence ex:Everything .
-go:Quality rdfs:label "ویژگی"@fa.
+ex:state1 a go:state .
+ex:state2 a go:state .
+go:event rdfs:label "رخداد"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-13> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-8> rdf:type owl:ontology .
 
-ex:TheLordOfTheWorlds a go:Person ;
-    rdfs:label "Lord of the Worlds" .
+ex:transitionevent1 a go:event ;
+    go:hastheme ex:thething ;
+    ex:hassourcestate ex:increase ;
+    ex:hastargetstate ex:decrease .
 
-ex:StateOfUnchanging a go:Event ;
-    go:hasTheme ex:TheLordOfTheWorlds ;
-    go:hasState "unchanging" .
-
-ex:TheLordOfTheWorlds go:participatesIn ex:StateOfUnchanging .
-go:Event rdfs:label "رخداد"@fa.
+ex:thething a go:substance .
+ex:increase a go:state .
+ex:decrease a go:state .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-14> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-9> rdf:type owl:ontology .
 
-ex:AttributesAndNames a go:Substance .
-ex:LordOfTheWorlds a go:agent .
-ex:Others a go:agent .
+ex:event1 a go:transitionevent ;
+    go:hasagent ex:thing1 ;
+    go:fromstate ex:decreasestate1 ;
+    go:tostate ex:increasestate1 .
 
-ex:DifferEventOnLord a go:Event ;
-    go:HasTheme ex:AttributesAndNames ;
-    go:HasRecipient ex:LordOfTheWorlds ;
+ex:thing1 a go:thing .
+
+ex:decreasestate1 a go:decreasestate .
+ex:increasestate1 a go:increasestate .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-10> rdf:type owl:ontology .
+
+# entity: lord of the worlds
+ex:lordoftheworlds a go:substance ;
+    go:label "lord of the worlds" .
+
+# events: change, decay, transition
+ex:change a go:event ;
+    go:label "change" .
+ex:decay a go:event ;
+    go:label "decay" .
+ex:transition a go:event ;
+    go:label "transition" .
+
+# entity: things (general entities that undergo changes)
+ex:things a go:substance ;
+    go:label "things" .
+
+# statement: lord of the worlds does not undergo change, decay, transition
+ex:lordoftheworlds ex:doesnotundergoevent ex:change , ex:decay , ex:transition .
+
+# statement: things undergo change, decay, transition
+ex:things go:undergoevent ex:change , ex:decay , ex:transition .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-11> rdf:type owl:ontology .
+
+ex:lordoftheworlds a go:divinebeing ;
+    rdfs:label "lord of the worlds" .
+
+ex:singlestate a go:state ;
+    rdfs:label "single state" .
+
+ex:continuousexistenceevent a go:continuousstateevent ;
+    go:hasagent ex:lordoftheworlds ;
+    go:hastheme ex:singlestate .
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-12> rdf:type owl:ontology .
+
+ex:lordoftheworlds a go:deity ;
+    go:hasattribute ex:thefirst .
+
+ex:thefirst a go:quality .
+
+ex:everything a go:concept .
+
+ex:lordoftheworlds go:hastemporalprecedence ex:everything .
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-13> rdf:type owl:ontology .
+
+ex:thelordoftheworlds a go:person ;
+    rdfs:label "lord of the worlds" .
+
+ex:stateofunchanging a go:event ;
+    go:hastheme ex:thelordoftheworlds ;
+    go:hasstate "unchanging" .
+
+ex:thelordoftheworlds go:participatesin ex:stateofunchanging .
+go:event rdfs:label "رخداد"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-14> rdf:type owl:ontology .
+
+ex:attributesandnames a go:substance .
+ex:lordoftheworlds a go:agent .
+ex:others a go:agent .
+
+ex:differeventonlord a go:event ;
+    go:hastheme ex:attributesandnames ;
+    go:hasrecipient ex:lordoftheworlds ;
     ex:negation true .
 
-ex:DifferEventOnOthers a go:Event ;
-    go:HasTheme ex:AttributesAndNames ;
-    go:HasRecipient ex:Others .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:differeventonothers a go:event ;
+    go:hastheme ex:attributesandnames ;
+    go:hasrecipient ex:others .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-15> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-15> rdf:type owl:ontology .
 
-ex:Human rdf:type go:Human .
-ex:Dust rdf:type go:Substance .
+ex:human rdf:type go:human .
+ex:dust rdf:type go:substance .
 
-ex:BecomingDustEvent rdf:type go:TransformationEvent ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:Dust ;
-    go:OccursOnce true .
-go:Substance rdfs:label "شی"@fa.
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-16> rdf:type owl:Ontology .
-
-ex:transformation1 a go:Transformation ;
-    go:HasAgent ex:human1 ;
-    go:HasTheme ex:flesh ;
-    go:HasTheme ex:blood ;
-    go:hasOccurrence "once again" .
-
-ex:human1 a go:AnimateBeing .
-ex:flesh a go:Substance .
-ex:blood a go:Substance .
-go:Substance rdfs:label "شی"@fa.
+ex:becomingdustevent rdf:type go:transformationevent ;
+    go:hasagent ex:human ;
+    go:hastheme ex:dust ;
+    go:occursonce true .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-17> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-16> rdf:type owl:ontology .
 
-ex:Human a go:Substance ;
+ex:transformation1 a go:transformation ;
+    go:hasagent ex:human1 ;
+    go:hastheme ex:flesh ;
+    go:hastheme ex:blood ;
+    go:hasoccurrence "once again" .
+
+ex:human1 a go:animatebeing .
+ex:flesh a go:substance .
+ex:blood a go:substance .
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-17> rdf:type owl:ontology .
+
+ex:human a go:substance ;
     rdfs:label "human being"@en .
 
-ex:Remains a go:Substance ;
+ex:remains a go:substance ;
     rdfs:label "remains"@en .
 
-ex:Dust a go:Substance ;
+ex:dust a go:substance ;
     rdfs:label "dust"@en .
 
-ex:HumanTransformationEvent a go:EventTransformation ;
-    go:HasAgent ex:Human ;
-    go:HasTheme ex:Remains , ex:Dust ;
+ex:humantransformationevent a go:eventtransformation ;
+    go:hasagent ex:human ;
+    go:hastheme ex:remains , ex:dust ;
     rdfs:label "human becomes remains and dust"@en .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-18> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-18> rdf:type owl:ontology .
 
-ex:HumanEntity a go:Human .
-ex:Names a go:Name ;
-    go:isPropertyOf ex:HumanEntity .
-ex:Attributes a go:Property ;
-    go:isPropertyOf ex:HumanEntity .
-ex:States a go:State .
+ex:humanentity a go:human .
+ex:names a go:name ;
+    go:ispropertyof ex:humanentity .
+ex:attributes a go:property ;
+    go:ispropertyof ex:humanentity .
+ex:states a go:state .
 
-ex:ChangeEvent a go:StateChange ;
-    go:HasTheme ex:Names, ex:Attributes ;
-    go:HasAgent ex:HumanEntity ;
-    go:BecauseOf ex:States .
-
-
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-19> rdf:type owl:Ontology .
-
-ex:cucumber a go:Substance .
-ex:date a go:Substance .
-
-ex:cucumberTasteEvent a go:State ;
-    go:HasAgent ex:cucumber ;
-    go:hasQuality ex:bitterTaste ;
-    go:occursSometimes true .
-
-ex:bitterTaste a go:Quality ;
-    go:isComparedTo ex:dateTaste .
-
-ex:dateTaste a go:Quality .
-go:Substance rdfs:label "شی"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:changeevent a go:statechange ;
+    go:hastheme ex:names, ex:attributes ;
+    go:hasagent ex:humanentity ;
+    go:becauseof ex:states .
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-20> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-19> rdf:type owl:ontology .
 
-ex:DateFruit a go:Substance ;
-    ex:hasTaste ex:BitterTasteInstance1 .
+ex:cucumber a go:substance .
+ex:date a go:substance .
 
-ex:BitterTasteInstance1 a ex:BeingBitter ;
-    ex:hasAgent ex:DateFruit ;
-    ex:occursOnce true .
-go:Substance rdfs:label "شی"@fa.
+ex:cucumbertasteevent a go:state ;
+    go:hasagent ex:cucumber ;
+    go:hasquality ex:bittertaste ;
+    go:occurssometimes true .
 
+ex:bittertaste a go:quality ;
+    go:iscomparedto ex:datetaste .
 
-@base <http://etratnet.ir/ontology/> .
-
-<http://etratnet.ir/ontology/316-21> rdf:type owl:Ontology .
-
-ex:PalmDate_Basr a go:Substance ;
-    rdfs:label "Basr Palm Date"@en .
-
-ex:MoistState_Basr a ex:MoistState, go:Event ;
-    go:HasTheme ex:PalmDate_Basr ;
-    ex:hasFrequency "sometimes" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:datetaste a go:quality .
+go:substance rdfs:label "شی"@fa.
+go:quality rdfs:label "ویژگی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-22> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-20> rdf:type owl:ontology .
 
-ex:BitterTaste a go:Quality ;
-    go:HasState ex:BitterDate .
+ex:datefruit a go:substance ;
+    ex:hastaste ex:bittertasteinstance1 .
 
-ex:BitterDate a go:Food ;
-    go:hasTaste ex:BitterTaste .
-
-ex:BeingStateEvent a go:Event ;
-    go:HasAgent ex:BitterTaste ;
-    go:HasTheme ex:BitterDate .
-go:Event rdfs:label "رخداد"@fa.
-go:Quality rdfs:label "ویژگی"@fa.
+ex:bittertasteinstance1 a ex:beingbitter ;
+    ex:hasagent ex:datefruit ;
+    ex:occursonce true .
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-23> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-21> rdf:type owl:ontology .
 
-ex:basor a go:Substance ;
-    go:hasAttribute ex:names , ex:characteristics .
+ex:palmdate_basr a go:substance ;
+    rdfs:label "basr palm date"@en .
+
+ex:moiststate_basr a ex:moiststate, go:event ;
+    go:hastheme ex:palmdate_basr ;
+    ex:hasfrequency "sometimes" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-22> rdf:type owl:ontology .
+
+ex:bittertaste a go:quality ;
+    go:hasstate ex:bitterdate .
+
+ex:bitterdate a go:food ;
+    go:hastaste ex:bittertaste .
+
+ex:beingstateevent a go:event ;
+    go:hasagent ex:bittertaste ;
+    go:hastheme ex:bitterdate .
+go:event rdfs:label "رخداد"@fa.
+go:quality rdfs:label "ویژگی"@fa.
+
+
+@base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/ontology/316-23> rdf:type owl:ontology .
+
+ex:basor a go:substance ;
+    go:hasattribute ex:names , ex:characteristics .
 
 ex:names a go:attribute ;
     rdfs:label "names" .
@@ -374,20 +377,20 @@ ex:names a go:attribute ;
 ex:characteristics a go:attribute ;
     rdfs:label "characteristics" .
 
-ex:changeEvent1 a go:Event ;
-    go:HasAgent ex:basor ;
-    go:HasTheme ex:names , ex:characteristics ;
-    go:HasCause ex:stateCondition1 .
+ex:changeevent1 a go:event ;
+    go:hasagent ex:basor ;
+    go:hastheme ex:names , ex:characteristics ;
+    go:hascause ex:statecondition1 .
 
-ex:stateCondition1 a go:state ;
+ex:statecondition1 a go:state ;
     rdfs:label "different states" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/316-24> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/316-24> rdf:type owl:ontology .
 
-ex:God_AAA a go:Deity ;
-  ex:hasAttribute ex:notOtherwise .
+ex:god_aaa a go:deity ;
+  ex:hasattribute ex:nototherwise .

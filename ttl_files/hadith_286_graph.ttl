@@ -1,57 +1,60 @@
-@prefix ex: <http://etratnet.ir/graph/proposition/286#> .
+@prefix ex: <http://etratnet.ir/graph/example/286#> .
     @prefix bt: <http://borhan-onto.ir/ontology/time#> .
     @prefix go: <http://etratnet.ir/ontology#> .
     @prefix owl: <http://www.w3.org/2002/07/owl#> .
     @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/XML/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
+    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
     @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-
-
+    @prefix time: <http://www.w3.org/2006/time#> .
     @base <http://etratnet.ir/ontology/> .
+
+<http://etratnet.ir/graph/ontology/286> rdf:type go:ontology ;
+        go:hascontent "2. به ابو الحسن عليه‌السلام نوشتم و از آن حضرت درباره جسم و صورت [داشتن خدا]پرسيدم. حضرت نوشت: «پاكا خدايى كه هيچ چيزى همانند او نيست. نه جسم است و نه صورت دارد». اين روايت را محمد بن ابى عبد اللّه‌ نقل كرده، جز اينكه از «مرد» نام نبرده است."@fa,
+        "2.  كَتَبْتُ إِلى أَبِي الْحَسَنِ عليه‌السلام أَسْأَلُهُ عَنِ الْجِسْمِ وَالصُّورَةِ، فَكَتَبَ: «سُبْحَانَ مَنْ لَيْسَ كَمِثْلِهِ شَيْءٌ، لاَ جِسْمٌ وَلاَ صُورَةٌ». وَ رَوَاهُ مُحَمَّدُ بْنُ أَبِي عَبْدِ اللّه‌ِ إِلاَّ أَنَّهُ لَمْ يُسَمِّ الرَّجُلَ."@ar.
     
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/286-1> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/286-1> rdf:type owl:ontology .
 
-ex:writing1 a go:Event , ex:WritingEvent ;
-    go:HasAgent ex:person1 ;
-    go:HasRecipient ex:abu_alhasan ;
-    go:HasPurpose ex:asking1 .
+ex:writing1 a go:event , ex:writingevent ;
+    go:hasagent ex:person1 ;
+    go:hasrecipient ex:abu_alhasan ;
+    go:haspurpose ex:asking1 .
 
-ex:asking1 a go:Event , ex:AskingEvent ;
-    go:HasAgent ex:abu_alhasan ;
-    go:HasTheme ex:body , ex:form .
+ex:asking1 a go:event , ex:askingevent ;
+    go:hasagent ex:abu_alhasan ;
+    go:hastheme ex:body , ex:form .
 
-ex:person1 a go:Person ;
-    go:Name "الشخص" .
+ex:person1 a go:person ;
+    go:name "الشخص" .
 
-ex:abu_alhasan a go:Person ;
-    go:Name "أبي الحسن عليه السلام" .
+ex:abu_alhasan a go:person ;
+    go:name "أبي الحسن عليه السلام" .
 
-ex:body a go:Substance ;
-    go:Name "الجسم" .
+ex:body a go:substance ;
+    go:name "الجسم" .
 
-ex:form a go:Substance ;
-    go:Name "الصورة" .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:form a go:substance ;
+    go:name "الصورة" .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
 
 
 @base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/286-2> rdf:type owl:Ontology .
+<http://etratnet.ir/ontology/286-2> rdf:type owl:ontology .
 
-ex:event1 a go:Event, go:SpeechAct ;
-    go:HasAgent ex:Abu_al_Hasan ;
-    go:Utterance "Glory be to the One for whom there is nothing like Him, no body and no form." .
+ex:event1 a go:event, go:speechact ;
+    go:hasagent ex:abu_al_hasan ;
+    go:utterance "glory be to the one for whom there is nothing like him, no body and no form." .
 
-ex:Abu_al_Hasan a go:Person ;
-    go:name "Abu al-Hasan (peace be upon him)" .
+ex:abu_al_hasan a go:person ;
+    go:name "abu al-hasan (peace be upon him)" .
 
-ex:The_One a go:Substance ;
-    go:description "The unique being for whom there is nothing like Him, no body and no form." .
-go:Event rdfs:label "رخداد"@fa.
-go:Substance rdfs:label "شی"@fa.
+ex:the_one a go:substance ;
+    go:description "the unique being for whom there is nothing like him, no body and no form." .
+go:event rdfs:label "رخداد"@fa.
+go:substance rdfs:label "شی"@fa.
