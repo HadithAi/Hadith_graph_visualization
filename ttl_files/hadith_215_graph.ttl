@@ -1,13 +1,15 @@
 @prefix ex: <http://etratnet.ir/graph/example/215#> .
-    @prefix bt: <http://borhan-onto.ir/ontology/time#> .
-    @prefix go: <http://etratnet.ir/ontology#> .
-    @prefix owl: <http://www.w3.org/2002/07/owl#> .
-    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-    @prefix xml: <http://www.w3.org/xml/1998/namespace> .
-    @prefix xsd: <http://www.w3.org/2001/xmlschema#> .
-    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-    @prefix time: <http://www.w3.org/2006/time#> .
-    @base <http://etratnet.ir/ontology/> .
+@prefix bt: <http://borhan-onto.ir/ontology/time#> .
+@prefix go: <http://etratnet.ir/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/xml/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/xmlschema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@base <http://etratnet.ir/ontology/> .
+
 
 <http://etratnet.ir/graph/ontology/215> rdf:type go:ontology ;
         go:hascontent "1.  هشام بن حكم به من گفت: در مصر زنديقى زندگى مى‌كرد كه درباره حضرت صادق عليه‌السلام چيزهايى شنيده بود. از اين رو به مدينه آمد تا با آن حضرت مناظره كند ولى امام را در مدينه نيافت. به او گفتند: به مكه رفته است. زنديق به مكه آمد. ما با امام صادق عليه‌السلام طواف مى‌كرديم كه ما را ديد. نام او «عبدالملك» و كنيه‌اش «ابو عبداللّه‌» بود. شانه‌اش را به شانه امام صادق عليه‌السلام زد. حضرت به او فرمود: «نامت چيست؟» گفت: نامم عبدالملك [= بنده پادشاه]است. فرمود: «كنيه‌ات چيست؟» گفت: كنيه‌ام ابو عبداللّه‌ است. امام صادق عليه‌السلام به او فرمود: «اين پادشاهى كه تو بنده او هستى كيست؟ از پادشاهان زمين است يا از پادشاهان آسمان؟ پسرت چه؟ بنده خداى آسمان است يا بنده خداى زمين؟ هر پاسخى بدهى، محكومى». هشام بن حكم گفت: من به زنديق گفتم: پاسخش را نمى‌دهى؟ سخنم را تقبيح كرد. امام صادق عليه‌السلام فرمود: «طوافم كه تمام شد نزد ما بيا». چون حضرت از طواف فراغت يافت، زنديق نزد ايشان آمد و در برابر امام صادق عليه‌السلام نشست و ما نيز گرد آمده بوديم. حضرت عليه‌السلام به زنديق فرمود: «آيا مى‌دانى كه زمين زيرى و بالايى دارد؟» عرض كرد: آرى. فرمود: «آيا زير زمين رفته‌اى؟» عرض كرد: خير. فرمود: «پس از كجا مى‌دانى كه زير آن چيست؟» عرض كرد: نمى‌دانم، اما گمان مى‌كنم كه زير آن چيزى نباشد. امام عليه‌السلام فرمود: «گمان، يعنى ناتوانى از رسيدن به يقين». حضرت، سپس، فرمود: «آيا به آسمان بالا رفته‌اى؟» عرض كرد: خير. فرمود: «آيا مى‌دانى در آن جا چيست؟» عرض كرد: خير. فرمود: «شگفتا از تو! به مشرق نرفته‌اى؛ به مغرب نرفته‌اى؛ به زير زمين فرو نرفته‌اى؛ به آسمان بر نشده‌اى و از آن نگذشته‌اى تا بدانى فراسوى آنها چيست؛ و با اين حال آنچه را در آنهاست انكار مى‌كنى؟! آيا خردمند چيزى را كه نمى‌داند انكار مى‌كند؟» زنديق گفت: تاكنون كسى جز شما با من اين چنين سخن نگفته [يا: بحث نكرده] بود. حضرت فرمود: «بنابراين، تو در اين امر شك دارى؛ زيرا شايد چنين باشد و شايد چنين نباشد». زنديق گفت: شايد اين گونه باشد. امام عليه‌السلام فرمود: «اى مرد! آن را كه نمى‌داند بر آن كه مى‌داند حجتى نيست، و نادان را حجّت نباشد. اى مرد مصرى، از من بشنو؛ زيرا كه ما درباره خدا هرگز شك نداريم. آيا نمى‌بينى خورشيد و ماه و شب و روز بى آن كه دچار خطا شوند، مى‌آيند و بر مى‌گردند و ناگزيرند، و مسيرى جز مسير خود ندارند. اگر در رفتن قادر [و مختار] بودند پس چرا بر مى‌گردند؟ و اگر ناچار نيستند پس چرا شب روز نمى‌شود و روز شب؟ اى مرد مصرى، به خدا سوگند كه آنها تا هستند ناگزيرند و آن كه ناگزيرشان ساخته از آنها حكيم‌تر و با عظمت‌تر است». زنديق گفت: درست است. سپس امام عليه‌السلام فرمود: «اى مرد مصرى، آنچه شما بدان معتقديد و آن را دهر (روزگار، طبيعت) مى‌خوانيد، اگر دهر [فاقد شعور] آنها را مى‌بَرَد چرا بازشان نمى‌گرداند؟ و اگر آنها را باز مى‌گرداند چرا مى‌بردشان؟ اى مرد مصرى، همه ناگزيرند. چرا آسمان بالا و زمين پست است؟ چرا آسمان بر زمين نمى‌افتد؟ چرا زمين بالاى طبقات آسمان سرازير نمى‌شود و آسمان و زمين به هم نمى‌چسبند و كسانى كه روى آن هستند نمى‌چسبند؟» زنديق گفت: خداوندگار و سرور آسمان‌ها و زمين، خدا، آن دو را نگه داشته است. هشام گفت: سپس، آن زنديق به دست امام صادق عليه‌السلام ايمان آورد. حمران به حضرت عرض كرد: قربانت گردم، اگر زنديقان به دست شما ايمان آورند [تعجبى ندارد ؛ زيرا]كافران هم به دست پدر شما (رسول خدا) ايمان آوردند. آن مؤمن كه به دست امام صادق عليه‌السلام ايمان آورده بود عرض كرد: مرا به شاگردى خود بپذيريد. حضرت فرمود: «اى هشام بن حكم، او را ببر و تعلميش ده». هشام به او دانش آموخت، و او آموزگار ايمان به مردم شام و مصر شد و عقيده‌اش چنان پاك و نيكو گشت كه امام صادق عليه‌السلام آن را پسنديد."@fa,
@@ -15,9 +17,7 @@
     
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-1> rdf:type owl:ontology .
 
 ex:egypt a go:geographicallocation ;
     rdfs:label "egypt" .
@@ -34,9 +34,7 @@ ex:informevent1 a go:informingevent ;
     go:hastheme ex:abuabdullah .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-2> rdf:type owl:ontology .
 
 ex:heretic a go:agent ;
     rdfs:label "heretic"@en .
@@ -61,9 +59,7 @@ go:event rdfs:label "رخداد"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-3> rdf:type owl:ontology .
 
 ex:heretic a go:person ;
    rdfs:label "الزنديق" .
@@ -79,9 +75,7 @@ ex:encounterevent a go:event ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-4> rdf:type owl:ontology .
 
 ex:heretic a go:person ;
     foaf:name "the heretic" .
@@ -102,9 +96,7 @@ ex:communicationevent a go:communication ;
     go:hastheme ex:beingoutsidemecca .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-5> rdf:type owl:ontology .
 
 ex:heretic a go:agent ;
     rdfs:label "الزنديق"@ar .
@@ -120,9 +112,7 @@ go:event rdfs:label "رخداد"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-6> rdf:type owl:ontology .
 
 ex:event_we_abuabdullah_mecca a go:beingtogetheratlocation ;
     go:hasagent ex:we ;
@@ -134,9 +124,7 @@ ex:abuabdullah a go:person .
 ex:mecca a go:place .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-7> rdf:type owl:ontology .
 
 exres:event1 a ex:encounterevent ;
     go:hasagent exres:we ;
@@ -158,9 +146,7 @@ exres:circumambulation a ex:circumambulationevent ;
 exres:we go:isaccompaniedby exres:abu_abdullah .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-8> rdf:type owl:ontology .
 
 ex:heretic a rdfs:class ;
     rdfs:subclassof go:person .
@@ -175,17 +161,13 @@ ex:namingeventinstance a ex:namingevent ;
     ex:hasname ex:abdalmalik .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-9> rdf:type owl:ontology .
 
 ex:heretic a go:person ;
     ex:hasnickname "abu abdullah" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-10> rdf:type owl:ontology .
 
 ex:event1 a go:action ;
     go:hasagent ex:abdalmalik ;
@@ -199,9 +181,7 @@ ex:abuabdullah_shoulder a go:bodypart ;
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-11> rdf:type owl:ontology .
 
 # entities
 ex:abu_abdullah_a_s a go:substance ;
@@ -219,9 +199,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-12> rdf:type owl:ontology .
 
 ex:abdulmalik a go:substance, go:person ;
     rdfs:label "abdul malik" .
@@ -232,9 +210,7 @@ ex:speechevent123 a go:speechevent ;
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-13> rdf:type owl:ontology .
 
 ex:abuabdullah a go:person ;
     rdfs:label "abu abdullah" ;
@@ -252,9 +228,7 @@ ex:question_1 a go:question ;
     go:hascontent "what is your nickname?"^^xsd:string .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-14> rdf:type owl:ontology .
 
 ex:abdalmalik a go:person ;
     rdfs:label "abd al-malik" .
@@ -271,9 +245,7 @@ ex:statement1 a go:statement ;
     go:refersto ex:abuabdallah .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-15> rdf:type owl:ontology .
 
 ex:speechevent1 a go:speechevent ;
     go:hasagent ex:abu_abdullah ;
@@ -295,9 +267,7 @@ ex:king a go:person ;
     rdfs:label "the king whom abdul malik serves" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-16> rdf:type owl:ontology .
 
 ex:speechevent1 a go:speechevent ;
     go:hasagent ex:abu_abdullah ;
@@ -317,9 +287,7 @@ ex:kingsofheaven a go:king ;
     go:domain "heaven" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-17> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
     rdfs:label "abu abdullah" .
@@ -343,9 +311,7 @@ ex:question_1 a go:communicationevent ;
     go:hascontent "is he a servant of the god of the sky, or a servant of the god of the earth?"^^xsd:string .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-18> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
     rdfs:label "abu abdullah" .
@@ -359,9 +325,7 @@ ex:speechevent_1 a go:speechevent ;
     go:hastheme "say whatever you want to dispute."^^xsd:string .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-19> rdf:type owl:ontology .
 
 ex:speechevent1 a go:event , ex:speechevent ;
     go:hasagent ex:hisham_ibn_alhakam ;
@@ -373,9 +337,7 @@ ex:the_heretic a go:person .
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-20> rdf:type owl:ontology .
 
 ex:event1 a go:event ;
     go:hasagent ex:heretic ;
@@ -391,9 +353,7 @@ go:information rdfs:label "اطلاعات"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-21> rdf:type owl:ontology .
 
 # entity: abu abd allah
 ex:abu_abd_allah a foaf:person ;
@@ -428,9 +388,7 @@ ex:us a go:group .
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-22> rdf:type owl:ontology .
 
 ex:abuabdallah a go:person ;
     rdfs:label "abu abd allah (peace be upon him)" .
@@ -445,9 +403,7 @@ ex:finishtaawafevent a go:event ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-23> rdf:type owl:ontology .
 
 ex:heretic a go:person ;
     rdfs:label "the heretic"@en .
@@ -466,9 +422,7 @@ ex:group a go:group ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-24> rdf:type owl:ontology .
 
 ex:event1 a go:event, ex:speechevent ;
     go:hasagent ex:abuabdallah ;
@@ -497,9 +451,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-25> rdf:type owl:ontology .
 
 ex:heretic a go:person ;
     rdfs:label "الزنديق" .
@@ -512,9 +464,7 @@ ex:content1 a go:speechcontent ;
     go:utterance "نعم" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-26> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
     go:label "abu abdullah (peace be upon him)" .
@@ -524,9 +474,7 @@ ex:speechevent1 a go:speech ;
     go:hascontent "did you enter underneath it?" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-27> rdf:type owl:ontology .
 
 ex:heretic a go:person .
 ex:sayevent1 a go:speechevent ;
@@ -534,9 +482,7 @@ ex:sayevent1 a go:speechevent ;
     go:hastheme "no" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-28> rdf:type owl:ontology .
 
 ex:event1 a go:event ;
   go:hasagent ex:abu_abdullah ;
@@ -551,9 +497,7 @@ go:event rdfs:label "رخداد"@fa.
 go:information rdfs:label "اطلاعات"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-29> rdf:type owl:ontology .
 
 ex:event1 a go:speaking_event ;
     go:hasagent ex:heretic ;
@@ -582,9 +526,7 @@ ex:object1 a go:object .
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-30> rdf:type owl:ontology .
 
 ex:abuabdallah a go:person ;
     rdfs:label "abu abd allah (peace be upon him)" .
@@ -607,9 +549,7 @@ ex:uncertainty a go:concept ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-31> rdf:type owl:ontology .
 
 ex:splittingevent1 a ex:splittingevent ;
     go:hasagent ex:you ;
@@ -620,9 +560,7 @@ ex:sky a go:naturalphenomenon .
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-32> rdf:type owl:ontology .
 
 ex:speaker a go:agent ;
   rdfs:label "the speaker" .
@@ -644,9 +582,7 @@ go:substance rdfs:label "شی"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-33> rdf:type owl:ontology .
 
 ex:knowing_event a go:cognitiveevent ;
     go:hasagent ex:you ;
@@ -660,9 +596,7 @@ go:substance rdfs:label "شی"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-34> rdf:type owl:ontology .
 
 ex:event1 a go:event ;
     go:hasagent ex:speaker ;
@@ -677,9 +611,7 @@ go:substance rdfs:label "شی"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-35> rdf:type owl:ontology .
 
 ex:resorttoignorance a go:event ;
     go:hasagent ex:person1 ;
@@ -692,9 +624,7 @@ ex:ignorance a go:state .
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-36> rdf:type owl:ontology .
 
 ex:person1 a go:person .
 ex:east a go:location .
@@ -706,9 +636,7 @@ ex:event1 a go:event ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-37> rdf:type owl:ontology .
 
 ex:person1 a go:substance ;
     rdfs:label "الشخص" .
@@ -725,9 +653,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-38> rdf:type owl:ontology .
 
 ex:person1 a go:person .
 ex:ground a go:place .
@@ -740,9 +666,7 @@ ex:negation a go:negation ;
     go:negates ex:descendevent .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-39> rdf:type owl:ontology .
 
 ex:person a go:human .
 ex:sky a go:physical_object .
@@ -753,9 +677,7 @@ ex:ascendevent a go:event ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-40> rdf:type owl:ontology .
 
 ex:person_1 a go:person .
 ex:places_1 a go:place .
@@ -774,9 +696,7 @@ ex:beyondplaces_1 a go:conceptuallocation ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-41> rdf:type owl:ontology .
 
 ex:person1 a go:person .
 ex:placeset1 a go:place .
@@ -792,9 +712,7 @@ ex:neglectfulnessevent1 a ex:neglectfulness ;
     go:hastheme ex:content1 .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-42> rdf:type owl:ontology .
 
 ex:rationalperson a go:agent ;
     go:hasproperty ex:rationality .
@@ -816,9 +734,7 @@ go:information rdfs:label "اطلاعات"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-43> rdf:type owl:ontology .
 
 ex:heretic a go:substance ;
     rdfs:label "الزنديق"@ar .
@@ -834,9 +750,7 @@ go:information rdfs:label "اطلاعات"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-44> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:substance, go:agent ;
     rdfs:label "abu abdullah" .
@@ -853,9 +767,7 @@ go:substance rdfs:label "شی"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-45> rdf:type owl:ontology .
 
 ex:abuabdullah a go:person ;
     rdfs:label "abu abdullah" ;
@@ -888,9 +800,7 @@ ev:speculation2 a go:speculation ;
     go:possibletrue false .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-46> rdf:type owl:ontology .
 
 ex:theheretic a go:substance ;
     rdfs:label "the heretic" .
@@ -906,9 +816,7 @@ go:information rdfs:label "اطلاعات"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-47> rdf:type owl:ontology .
 
 ex:event1 a go:saying ;
     go:hasagent ex:abu_abdullah ;
@@ -925,9 +833,7 @@ ex:utterance1 a go:propositionalcontent ;
     go:hastext "he who does not know has no proof against the one who knows." .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-48> rdf:type owl:ontology .
 
 ex:speechevent1 a ex:speechevent ;
   go:hasagent ex:abuabdullah ;
@@ -941,9 +847,7 @@ ex:heretic a go:person ;
   go:hasrole "heretic" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-49> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
     rdfs:label "abu abdullah" ;
@@ -962,9 +866,7 @@ ex:speech1 a go:speechevent ;
     ex:utterance "o brother of the people of egypt, understand from me." .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-50> rdf:type owl:ontology .
 
 ex:person/abu_abdullah a go:person ;
     rdfs:label "abu abdullah" .
@@ -985,9 +887,7 @@ ex:concept/no_doubt_on_god a go:concept ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-51> rdf:type owl:ontology .
 
 ex:abuabdullah a go:person ;
     rdfs:label "abu abdullah (peace be upon him)" .
@@ -1025,9 +925,7 @@ go:event rdfs:label "رخداد"@fa.
 go:time rdfs:label "زمان"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-52> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:substance ;
     rdfs:label "abu abdullah" .
@@ -1066,9 +964,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-53> rdf:type owl:ontology .
 
 # entities
 ex:abuabdullah a go:person ;
@@ -1084,9 +980,7 @@ ex:speechevent_1 a go:communication ;
     go:hastheme "they have no place except their place." .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-54> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
   rdfs:label "abu abdullah (peace be upon him)" .
@@ -1100,9 +994,7 @@ exevent:speech1 a go:speechevent ;
   go:hastheme "if they are able to go, then why should they return?" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-55> rdf:type owl:ontology .
 
 ex:speechevent a go:communicationevent ;
     go:hasagent ex:abu_abdullah_alayh_al_salam ;
@@ -1127,9 +1019,7 @@ go:substance rdfs:label "شی"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-56> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
     rdfs:label "abu abdullah" .
@@ -1154,9 +1044,7 @@ ex:god a go:deity ;
     rdfs:label "god" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-57> rdf:type owl:ontology .
 
 ex:abuabdullah a go:person .
 ex:heretic a go:person .
@@ -1186,9 +1074,7 @@ ex:individual2 a go:person .
 go:quality rdfs:label "ویژگی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-58> rdf:type owl:ontology .
 
 ex:heretic a go:agent ;
     rdfs:label "the heretic" .
@@ -1201,9 +1087,7 @@ go:event rdfs:label "رخداد"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-59> rdf:type owl:ontology .
 
 ex:you rdf:type go:agent .
 ex:theone rdf:type go:substance ;
@@ -1227,9 +1111,7 @@ go:substance rdfs:label "شی"@fa.
 go:agent rdfs:label "عامل"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-60> rdf:type owl:ontology .
 
 ex:time a go:substance, go:agentiveentity ;
     rdfs:label "time"@en .
@@ -1256,9 +1138,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-61> rdf:type owl:ontology .
 
 ex:fate a go:substance ;
     rdfs:label "fate"@en .
@@ -1279,9 +1159,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-62> rdf:type owl:ontology .
 
 ex:people a go:humangroup .
 ex:peopleofegypt a go:humangroup .
@@ -1294,9 +1172,7 @@ ex:compelledstate a go:state ;
     go:description "compelled" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-63> rdf:type owl:ontology .
 
 ex:sky a go:naturalobject ;
     go:hasstate ex:sky_raised_state .
@@ -1308,9 +1184,7 @@ ex:raised a go:quality .
 go:quality rdfs:label "ویژگی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-64> rdf:type owl:ontology .
 
 ex:eventinstance1 a go:placement ;
     go:hastheme ex:earth .
@@ -1319,9 +1193,7 @@ ex:earth a go:substance .
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-65> rdf:type owl:ontology .
 
 ex:sky a go:physicalobject ;
     rdfs:label "the sky" .
@@ -1338,9 +1210,7 @@ ex:fallingevent a go:event ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-66> rdf:type owl:ontology .
 
 ex:earth a go:substance .
 ex:layeredstrata a go:substance .
@@ -1355,9 +1225,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-67> rdf:type owl:ontology .
 
 ex:earth a go:substance ;
     ex:cannotbeheldtogether true .
@@ -1367,9 +1235,7 @@ ex:sky a go:substance ;
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-68> rdf:type owl:ontology .
 
 ex:eventinstance1 a go:holdontoevent ;
     go:hasagent _:agent ;
@@ -1381,9 +1247,7 @@ _:entities a go:substance .
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-69> rdf:type owl:ontology .
 
 ex:god a go:deity ;
     go:hasauthorityover ex:sky , ex:earth ;
@@ -1399,9 +1263,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-70> rdf:type owl:ontology .
 
 ex:eventfaithaffirmation a go:event ;
     go:hasagent ex:heretic ;
@@ -1415,9 +1277,7 @@ ex:abdullah a go:person ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-71> rdf:type owl:ontology .
 
 ex:hamran a foaf:person ;
     foaf:name "hamran" .
@@ -1434,9 +1294,7 @@ ex:utterance1 a go:utterance ;
     go:utterancetext "may god make you a ransom for me." .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-72> rdf:type owl:ontology .
 
 ex:hamran rdf:type go:person .
 ex:abu_abdullah rdf:type go:person .
@@ -1460,9 +1318,7 @@ ex:father_abu_abdullah rdf:type go:person .
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-73> rdf:type owl:ontology .
 
 ex:believer1 rdf:type go:substance ;
     rdfs:label "the believer" .
@@ -1490,9 +1346,7 @@ go:event rdfs:label "رخداد"@fa.
 go:substance rdfs:label "شی"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-74> rdf:type owl:ontology .
 
 ex:speechevent1 rdf:type go:event ;
     go:hasagent ex:abuabdullah_alayhsalam ;
@@ -1520,9 +1374,7 @@ ex:takehimandteachhim rdf:type go:event ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-75> rdf:type owl:ontology .
 
 ex:eventteaching a go:event ;
     go:hasagent ex:hisham ;
@@ -1536,9 +1388,7 @@ ex:abuabdullah a go:person ;
 go:event rdfs:label "رخداد"@fa.
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-76> rdf:type owl:ontology .
 
 ex:believer1 a go:person, ex:believer ;
     go:hasbelief ex:belief1 ;
@@ -1566,9 +1416,7 @@ ex:peopleofegypt a go:group ;
     go:location "egypt" .
 
 
-@base <http://etratnet.ir/ontology/> .
 
-<http://etratnet.ir/ontology/215-77> rdf:type owl:ontology .
 
 ex:abu_abdullah a go:person ;
     rdfs:label "abu abdullah" ;
