@@ -189,23 +189,17 @@
         <div class="section-title"><i class="fa-solid fa-language"></i> Content (Arabic)</div>
         <div id="content_ar"></div>
       </div>
-      <div class="section">
-        <div class="section-title"><i class="fa-solid fa-list-check"></i> Propositions</div>
-        <table id="propositionsTable">
-          <thead>
-            <tr><th>ID</th><th>Content</th><th>Translation</th></tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-      <div class="section">
-        <div class="section-title"><i class="fa-solid fa-link"></i> Propositions Relations</div>
-        <table id="relationsTable">
-          <thead>
-            <tr><th>Source</th><th>Target</th><th>Relation(s)</th></tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <div class="section" style="display: flex; flex-direction: row; align-items: flex-start; position: relative; min-height: 260px;">
+        <div style="flex: 1; min-width: 0; max-width: calc(100% - 180px); margin-right: 16px;">
+          <div class="section-title"><i class="fa-solid fa-list-check"></i> Propositions</div>
+          <table id="propositionsTable">
+            <thead>
+              <tr><th>ID</th><th>Content</th><th>Translation</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <!-- Space for arrows is provided by the right margin, canvas will be positioned dynamically by JS -->
       </div>
       <div class="section">
         <div class="section-title"><i class="fa-solid fa-brain"></i> Knowledge Representation</div>
@@ -213,6 +207,7 @@
       </div>
     </div>
   </div>
+  <script src="viewer-edges.js"></script>
   <script>
     // Sample dataset
     const dataset = [
@@ -244,7 +239,6 @@
     const contentDiv = document.getElementById('content');
     const contentArDiv = document.getElementById('content_ar');
     const propositionsTable = document.getElementById('propositionsTable').querySelector('tbody');
-    const relationsTable = document.getElementById('relationsTable').querySelector('tbody');
     const knowledgeRepDiv = document.getElementById('knowledge-rep');
 
     function populateSelect() {
@@ -268,12 +262,11 @@
         propositionsTable.appendChild(tr);
       });
       // Relations
-      relationsTable.innerHTML = '';
-      item.props_relations.forEach(rel => {
-        const tr = document.createElement('tr');
-        tr.innerHTML = `<td>${rel.source}</td><td>${rel.target}</td><td>${rel.relation.join(', ')}</td>`;
-        relationsTable.appendChild(tr);
-      });
+      // Remove old relationsTable logic
+      // Instead, call the edge drawing logic
+      if (window.setupPropositionEdges) {
+        setupPropositionEdges(item.propositions, item.props_relations);
+      }
       // Knowledge Representation placeholder
       knowledgeRepDiv.textContent = '[Visualization will appear here]';
       // You can call your visualization script here, e.g.:
