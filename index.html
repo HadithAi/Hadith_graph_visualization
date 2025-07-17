@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نمایشگر آیتم‌های داده</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&family=Cairo:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Vazirmatn', 'Cairo', Arial, sans-serif;
+      margin: 0;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
+      color: #22223b;
+      direction: rtl;
+    }
+    .container {
+      background: rgba(255,255,255,0.95);
+      padding: 2.5em 2em 2em 2em;
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+      max-width: 900px;
+      margin: 3em auto 2em auto;
+      position: relative;
+      overflow: hidden;
+      transition: box-shadow 0.3s;
+    }
+    .container::before {
+      content: '';
+      position: absolute;
+      top: -80px; right: -80px;
+      width: 200px; height: 200px;
+      background: radial-gradient(circle, #a5b4fc 0%, #818cf8 80%, transparent 100%);
+      opacity: 0.18;
+      z-index: 0;
+      pointer-events: none;
+    }
+    h1 {
+      font-size: 2.2em;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 0.5em;
+      background: linear-gradient(90deg, #6366f1 30%, #818cf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: right;
+    }
+    label {
+      font-size: 1.1em;
+      font-weight: 600;
+      color: #6366f1;
+      display: flex;
+      align-items: center;
+      gap: 0.5em;
+      justify-content: flex-end;
+    }
+    select {
+      font-size: 1em;
+      padding: 0.5em 0.7em 0.5em 1.2em;
+      border-radius: 8px;
+      border: 1.5px solid #a5b4fc;
+      background: #f1f5ff;
+      color: #37306b;
+      margin-right: 0.5em;
+      box-shadow: 0 2px 8px #a5b4fc22;
+      transition: border 0.2s;
+    }
+    select:focus {
+      border: 2px solid #6366f1;
+      outline: none;
+    }
+    .section {
+      margin-top: 2.2em;
+      position: relative;
+      z-index: 1;
+      background: #f8fafc;
+      border-radius: 16px;
+      box-shadow: 0 2px 12px #a5b4fc11;
+      padding: 1.5em 1.2em 1.2em 1.2em;
+      transition: box-shadow 0.3s;
+      animation: fadeInUp 0.7s cubic-bezier(.39,.575,.56,1.000);
+      text-align: right;
+    }
+    .section:hover {
+      box-shadow: 0 4px 24px #6366f133;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      font-size: 1.3em;
+      font-weight: 700;
+      color: #37306b;
+      margin-bottom: 0.7em;
+      gap: 0.6em;
+      letter-spacing: 0.5px;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+    }
+    .section-title i {
+      color: #6366f1;
+      font-size: 1.2em;
+      min-width: 1.5em;
+      text-align: center;
+    }
+    #content, #content_ar {
+      font-size: 1.15em;
+      margin-bottom: 0.5em;
+      line-height: 1.7;
+      padding: 0.5em 0.2em;
+      text-align: right;
+    }
+    #content_ar {
+      font-family: 'Cairo', 'Vazirmatn', 'Noto Naskh Arabic', serif;
+      font-size: 1.25em;
+      direction: rtl;
+      color: #3b3b3b;
+      background: #e0e7ff33;
+      border-radius: 8px;
+      padding: 0.7em 1em;
+      margin-bottom: 0.5em;
+      text-align: right;
+    }
+    table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 100%;
+      margin-top: 0.5em;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 1px 6px #a5b4fc11;
+      font-size: 1em;
+      transition: box-shadow 0.2s;
+      direction: rtl;
+      text-align: right;
+    }
+    th, td {
+      border: none;
+      padding: 0.7em 0.6em;
+      text-align: right;
+    }
+    th {
+      background: #6366f1;
+      color: #fff;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+    tr {
+      transition: background 0.2s;
+    }
+    tbody tr:hover {
+      background: #e0e7ff55;
+    }
+    #knowledge-rep {
+      border: 2.5px dashed #a5b4fc;
+      min-height: 120px;
+      margin-top: 1em;
+      padding: 1.5em;
+      text-align: center;
+      color: #888;
+      border-radius: 14px;
+      background: #f1f5ff;
+      font-size: 1.1em;
+      transition: border 0.3s, background 0.3s;
+      animation: fadeIn 1.2s cubic-bezier(.39,.575,.56,1.000);
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1em; }
+      .section { padding: 1em 0.5em; }
+      h1 { font-size: 1.3em; }
+      .section-title { font-size: 1.1em; }
+      table, th, td { font-size: 0.95em; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><i class="fa-solid fa-diagram-project"></i> نمایشگر آیتم‌های داده</h1>
+    <label for="itemSelect"><i class="fa-solid fa-list-ul"></i> <strong>انتخاب آیتم:</strong>
+      <select id="itemSelect"></select>
+    </label>
+    <div id="itemDetails">
+      <div class="section">
+        <div class="section-title"><i class="fa-solid fa-align-left"></i> متن حدیث</div>
+        <div id="content"></div>
+      </div>
+      <div class="section">
+        <div class="section-title"><i class="fa-solid fa-language"></i> متن (عربی)</div>
+        <div id="content_ar"></div>
+      </div>
+      <div class="section" style="display: flex; flex-direction: row-reverse; align-items: flex-start; min-height: 260px;">
+        <div style="flex: 1; min-width: 0; max-width: calc(100% - 120px);">
+          <div class="section-title"><i class="fa-solid fa-list-check"></i> گزاره‌ها</div>
+          <table id="propositionsTable">
+            <thead>
+              <tr><th>شناسه</th><th>محتوا</th><th>ترجمه</th></tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+        <div id="edgesCanvasContainer" style="width: 120px; min-width: 120px; position: relative; height: 100%;">
+          <!-- canvas will be placed here by JS -->
+        </div>
+      </div>
+      <div class="section">
+        <div class="section-title"><i class="fa-solid fa-brain"></i> نمایش دانش</div>
+        <div id="knowledge-rep">[تصویرسازی اینجا نمایش داده می‌شود]</div>
+      </div>
+    </div>
+  </div>
+  <script src="viewer-edges-fa.js"></script>
+  <script>
+    // داده نمونه
+    const dataset = [
+      {
+        content: "پیامبر فرمود: ارزش اعمال به نیت‌هاست.",
+        content_ar: "إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ",
+        propositions: [
+          {id: "p1", content: "ارزش اعمال", translation: "الأعمال تُحكم", knowledge_representation: "..."},
+          {id: "p2", content: "بر اساس نیت‌ها", translation: "بالنیات", knowledge_representation: "..."}
+        ],
+        props_relations: [
+          {source: "p1", target: "p2", relation: ["بر اساس"]}
+        ]
+      },
+      {
+        content: "خداوند زیباست و زیبایی را دوست دارد.",
+        content_ar: "إِنَّ اللَّهَ جَمِيلٌ يُحِبُّ الْجَمَالَ",
+        propositions: [
+          {id: "p1", content: "خداوند زیباست", translation: "الله جميل", knowledge_representation: "..."},
+          {id: "p2", content: "خداوند زیبایی را دوست دارد", translation: "الله يحب الجمال", knowledge_representation: "..."}
+        ],
+        props_relations: [
+          {source: "p1", target: "p2", relation: ["و"]}
+        ]
+      }
+    ];
+
+    const itemSelect = document.getElementById('itemSelect');
+    const contentDiv = document.getElementById('content');
+    const contentArDiv = document.getElementById('content_ar');
+    const propositionsTable = document.getElementById('propositionsTable').querySelector('tbody');
+    const knowledgeRepDiv = document.getElementById('knowledge-rep');
+
+    function populateSelect() {
+      dataset.forEach((item, idx) => {
+        const opt = document.createElement('option');
+        opt.value = idx;
+        opt.textContent = `آیتم ${idx+1}`;
+        itemSelect.appendChild(opt);
+      });
+    }
+
+    function showItem(idx) {
+      const item = dataset[idx];
+      contentDiv.textContent = item.content;
+      contentArDiv.textContent = item.content_ar;
+      // گزاره‌ها
+      propositionsTable.innerHTML = '';
+      item.propositions.forEach(prop => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${prop.id}</td><td>${prop.content}</td><td>${prop.translation}</td>`;
+        propositionsTable.appendChild(tr);
+      });
+      // روابط
+      if (window.setupPropositionEdges) {
+        setupPropositionEdges(item.propositions, item.props_relations);
+      }
+      // نمایش دانش
+      knowledgeRepDiv.textContent = '[تصویرسازی اینجا نمایش داده می‌شود]';
+    }
+
+    itemSelect.addEventListener('change', e => showItem(e.target.value));
+    populateSelect();
+    showItem(0);
+  </script>
+</body>
+</html> 
